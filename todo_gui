@@ -1,0 +1,68 @@
+import tkinter as tk
+from tkinter import messagebox
+import json
+import os
+
+TODO_FILE = "todo_list.json"
+
+def load_todos():
+    if os.path.exists(TODO_FILE):
+        with open(TODO_FILE, "r") as file:
+            return json.load(file)
+    return []
+
+def save_todos(todos):
+    with open(TODO_FILE, "w") as file:
+        json.dump(todos, file, indent=4)
+
+class TodoApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("To-Do List")
+
+        self.todos = load_todos()
+
+        self.task_entry = tk.Entry(root, width=40)
+        self.task_entry.pack(pady=10)
+
+        self.add_button = tk.Button(root, text="Add Task", command=self.add_task)
+        self.add_button.pack()
+
+        self.tasks_listbox = tk.Listbox(root, width=50, selectmode=tk.SINGLE)
+        self.tasks_listbox.pack(pady=10)
+
+        self.done_button = tk.Button(root, text="Mark as Done", command=self.mark_done)
+        self.done_button.pack()
+
+        self.load_tasks()
+
+    def add_task(self):
+        task = self.task_entry.get().strip()
+        if task:
+            self.todos.append({"task": task, "done": False})
+            self.save_and_reload()
+            self.task_entry.delete(0, tk.END)
+
+    def mark_done(self):
+        selection = self.tasks_listbox.curselection()
+        if selection:
+            index = selection[0]
+            self.todos[index]["done"] = True
+            self.save_and_reload()
+        else:
+            messagebox.showinfo("No Selection", "Please select a task to mark as done.")
+
+    def load_tasks(self):
+        self.tasks_listbox.delete(0, tk.END)
+        for todo in self.todos:
+            status = "✓" if todo["done"] else "✗"
+            self.tasks_listbox.insert(tk.END, f"[{status}] {todo['task']}")
+
+    def save_and_reload(self):
+        save_todos(self.todos)
+        self.load_tasks()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = TodoApp(root)
+    root.mainloop()
