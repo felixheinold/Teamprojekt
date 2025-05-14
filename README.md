@@ -1,4 +1,4 @@
-Hier eine kurz der Gameplan aufgelistet für einen groben Überlick
+### Hier kurz der Gameplan aufgelistet für einen groben Überlick
 
 # AI-Assisted Learning Game
 
