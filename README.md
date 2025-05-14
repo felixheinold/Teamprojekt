@@ -1,3 +1,5 @@
+Hier eine kurz der Gameplan aufgelistet für einen groben Überlick
+
 # AI-Assisted Learning Game
 
 An educational app/video game powered by deep learning, designed to teach concepts from the media industry — or another approved field — in an engaging and interactive way.
