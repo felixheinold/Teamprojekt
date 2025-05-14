@@ -1,0 +1,88 @@
+<TopicScreen>:
+    name: "topic"
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: 20
+        padding: [20, 40]
+
+        Label:
+            text: "Wähle ein Modul aus"
+            font_size: 20
+            size_hint_y: None
+            height: self.texture_size[1]
+            color: 0, 0, 0, 1
+
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+
+            GridLayout:
+                cols: 1
+                spacing: 15
+                padding: [0, 0, 0, 20]
+                size_hint_y: None
+                height: self.minimum_height
+
+                Button:
+                    text: "Volkswirtschaftslehre 1"
+                    background_color: 0.5, 0.9, 0.6, 1
+                    on_press: root.select_module("VWL1")
+                    height: "50dp"
+                    size_hint_y: None
+
+                Button:
+                    text: "Volkswirtschaftslehre 2"
+                    background_color: 1, 0.8, 0.4, 1
+                    on_press: root.select_module("VWL2")
+                    height: "50dp"
+                    size_hint_y: None
+
+                Button:
+                    text: "Produktion und Logistik"
+                    background_color: 0.6, 0.8, 1, 1
+                    on_press: root.select_module("Logistik")
+                    height: "50dp"
+                    size_hint_y: None
+
+                Button:
+                    text: "Finanzierung und Rechnungswesen"
+                    background_color: 1, 0.4, 0.6, 1
+                    on_press: root.select_module("Finanz")
+                    height: "50dp"
+                    size_hint_y: None
+
+                Button:
+                    text: "Management und Marketing"
+                    background_color: 1, 0.5, 0.5, 1
+                    on_press: root.select_module("Marketing")
+                    height: "50dp"
+                    size_hint_y: None
+
+                Button:
+                    text: "Integrierte Produktionsplanung"
+                    background_color: 0.9, 0.6, 1, 1
+                    on_press: root.select_module("Produktion")
+                    height: "50dp"
+                    size_hint_y: None
+
+        Label:
+            text: "..."
+            font_size: 24
+            size_hint_y: None
+            height: "40dp"
+            color: 0.5, 0.5, 0.5, 1
+
+        BoxLayout:
+            size_hint_y: None
+            height: "50dp"
+            spacing: 10
+            padding: [10, 10]
+
+            Button:
+                text: "Zurück"
+                on_press: app.change_screen("login")
+
+            Button:
+                text: "Weiter"
+                on_press: app.change_screen("minigame")
