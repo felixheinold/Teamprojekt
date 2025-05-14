@@ -1,10 +1,36 @@
 # AI-Assisted Learning Game
 
-An educational app/video game powered by deep learning, designed to teach concepts from the media industry — or other chosen fields — in an engaging and interactive way.
+An educational app/video game powered by deep learning, designed to teach concepts from the media industry — or another approved field — in an engaging and interactive way.
 
 ## 🎯 Project Goal
 
 To develop a 2D or 3D educational game or app that uses artificial intelligence to assist users in the learning process. The game will include a deep learning model, such as a language model or content generator, embedded into the user experience (e.g., as an NPC tutor or in-game assistant).
+
+## 🎮 Game Concepts
+
+This project explores multiple mini-games that support learning through interaction. Below are some initial game design ideas:
+
+### 1. Klassisches Quizduell (Baseline)
+- Multiple choice questions with 4 answer options
+- Players have a fixed time (e.g., 10 seconds) to respond
+- Questions are categorized (e.g., by lecture chapters)
+- Scoring: Correct answers and faster response times yield more points
+- Answer validation using structured data (e.g., JSON: `"richtig": "C"`)
+- Modes: Single-player or versus AI
+
+### 2. Lückentext-Spiel (Fill-in-the-Blank)
+- Short educational text with 1–2 missing terms
+- Players drag and drop or select correct terms
+- Example: “Die Bilanz besteht aus ___ und ___.”
+- Validation through comparison with expected terms (e.g., `["Aktiva", "Passiva"]`)
+
+### 3. Memory mit Fachbegriffen (Memory Match Game)
+- Classic memory game with a learning twist
+- Cards show either a term and its definition, or a question and its correct answer
+- Players flip two cards per turn; matched pairs disappear
+- Matching logic based on defined pairs (e.g., `"Umlaufvermögen": "Vermögen, das nicht dauerhaft dem Unternehmen dient"`)
+
+More mini-games may be developed based on user testing and feedback.
 
 ## 📌 Task Description
 
@@ -15,15 +41,6 @@ This project is part of a university course assignment with the following goals:
 - Focus on learning topics relevant to the media industry, or another approved topic.
 - Create a dataset for training the model, then fine-tune and integrate the model into the game.
 - Ensure the final product works effectively through testing.
-
-## 🧠 Learning Objectives
-
-- App/Game Design (2D or 3D)
-- Use of AI models for interaction (e.g., LLMs like BERT variants, GPT)
-- Data collection and fine-tuning of deep learning models
-- Software development in Python or other preferred languages
-- Familiarization with tools like Unity/Unreal Engine or lightweight engines
-- Testing and deploying the application
 
 ## 🚀 Implementation Plan
 
