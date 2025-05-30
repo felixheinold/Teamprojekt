@@ -1,0 +1,407 @@
+[
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Marketing beschäftigt sich nur mit Werbung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Der Kunde steht im Mittelpunkt des modernen Marketings.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Marktforschung ist im Marketing irrelevant.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Marketing beginnt mit der Produktentwicklung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Zielgruppenanalyse ist ein Bestandteil des Marketings.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Der Preis hat keinen Einfluss auf die Nachfrage.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Rabatte gehören zur Preispolitik.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Die Kommunikationspolitik umfasst nur Social Media.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Vertriebskanäle sind Teil der Distributionspolitik.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Sponsoring zählt zur Kommunikationspolitik.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Branding stärkt die Wiedererkennung einer Marke.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Public Relations ist gleich Werbung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Der AIDA-Ansatz steht für Awareness, Interest, Demand, Action.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Promotion umfasst alle Kommunikationsmaßnahmen.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Guerilla-Marketing ist besonders teuer.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Liquidität bedeutet Zahlungsfähigkeit.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Eigenkapital ist geliehenes Kapital.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Der Finanzplan zeigt nur vergangene Zahlen.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Kapitalbedarf kann aus Investitionen entstehen.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Kurzfristige Kredite zählen zum Fremdkapital.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Ein Kredit ist ein Eigenkapitalgeber.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Die Rentabilität beschreibt die Verzinsung des eingesetzten Kapitals.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Cashflow ist der Gewinn eines Unternehmens.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Investitionen senken den Kapitalbedarf.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Finanzierungsformen beeinflussen die Bilanzstruktur.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Ein hoher Verschuldungsgrad senkt das Risiko.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Der Kapitalwert berücksichtigt zukünftige Rückflüsse.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Der interne Zinsfuß ist ein statisches Verfahren.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Tilgung ist Bestandteil der Kreditrückzahlung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Zinsen zählen zu den laufenden Kosten.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Die Bilanz ist eine Erfolgsrechnung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Die GuV zeigt Erträge und Aufwendungen.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Aktiva zeigt die Mittelverwendung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Passiva zeigt die Mittelherkunft.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "true-false",
+    "question": "Die Bilanz wird jährlich erstellt.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Ein Beleg ist nicht notwendig für die Buchführung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Abschreibungen erfassen Wertverluste.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Verbindlichkeiten gehören zum Umlaufvermögen.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Rechnungen sind keine Belege.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "true-false",
+    "question": "Der Buchungssatz besteht aus Soll und Haben.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Die doppelte Buchführung bucht jeden Betrag zweimal.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Die Kostenrechnung dient der externen Berichterstattung.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Ein Konto zeigt stets Einnahmen und Ausgaben.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "B"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Kalkulatorische Kosten sind fiktive Kosten.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "true-false",
+    "question": "Periodenabgrenzung erfasst Leistungen zeitlich korrekt.",
+    "option_a": "Wahr",
+    "option_b": "Falsch",
+    "answer": "A"
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ bedeutet die Ausrichtung des Unternehmens auf den Markt.",
+    "answer": "marktorientierung"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "Das __ ist eine umfassende Analyse des Unternehmensumfelds.",
+    "answer": "marketingkonzept"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ bezeichnet die Gewinnung neuer Kunden.",
+    "answer": "akquise"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "Die __ stellt die Bedürfnisse der Kunden ins Zentrum.",
+    "answer": "kundenorientierung"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__-Marketing fokussiert sich auf langfristige Kundenbindung.",
+    "answer": "beziehungs"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "Die __-Politik behandelt die Preisgestaltung.",
+    "answer": "preis"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ beschreibt die Distribution von Produkten.",
+    "answer": "vertrieb"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "Der __ bezeichnet den Vergleich mit Mitbewerbern.",
+    "answer": "benchmark"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ bezieht sich auf die physische Erscheinung der Marke.",
+    "answer": "corporate"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "Ein __ umfasst alle Maßnahmen zur Kommunikation.",
+    "answer": "werbemix"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "Das __-Modell steht für Attention, Interest, Desire, Action.",
+    "answer": "aida"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ Marketing setzt auf soziale Medien.",
+    "answer": "digitales"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ ist die gezielte Platzierung von Produkten in Medien.",
+    "answer": "productplacement"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ bezeichnet die emotionale Bindung an eine Marke.",
+    "answer": "branding"
+  },
+  {
+    "subject": "Marketing",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ bezeichnet den Anteil von Käufern in einer Zielgruppe.",
+    "answer": "marktdurchdringung"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ beschreibt die Fähigkeit, Zahlungsverpflichtungen zu erfüllen.",
+    "answer": "liquidität"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ umfasst alle finanziellen Mittel eines Unternehmens.",
+    "answer": "kapital"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "Ein __ zeigt die Struktur der Finanzierung.",
+    "answer": "finanzierungsplan"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ ist das Gegenteil von Eigenkapital.",
+    "answer": "fremdkapital"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ ist ein wichtiger Bestandteil der Unternehmensbewertung.",
+    "answer": "barwert"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "Ein __ ist ein befristetes Fremdkapitalinstrument.",
+    "answer": "kredit"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ beschreibt die Verzinsung von Kapital.",
+    "answer": "rendite"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ umfasst die Steuerung von Zahlungsflüssen.",
+    "answer": "cashflowmanagement"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ ist eine Methode zur Projektbewertung.",
+    "answer": "nettopresentvalue"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ ist die Aufstellung zukünftiger Einnahmen und Ausgaben.",
+    "answer": "finanzplan"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ misst die wirtschaftliche Effizienz eines Unternehmens.",
+    "answer": "rentabilität"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "Die __ misst die Kapitalstruktur.",
+    "answer": "verschuldungsgrad"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "Ein __ ermöglicht das Vergleichen von Investitionen.",
+    "answer": "kostenvergleich"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ ist der Betrag, der über die Kosten hinausgeht.",
+    "answer": "gewinn"
+  },
+  {
+    "subject": "Finance",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ ist der Zinssatz, bei dem Kapitalwert null ist.",
+    "answer": "internerzinssatz"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "Die __ stellt Vermögen und Schulden gegenüber.",
+    "answer": "bilanz"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "Die __ ist eine Erfolgsrechnung.",
+    "answer": "guv"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ erfassen die finanziellen Vorgänge systematisch.",
+    "answer": "konten"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "Ein __ ist die kleinste Einheit der Buchführung.",
+    "answer": "buchungssatz"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 1",
+    "type": "gap-fill",
+    "question": "__ beschreibt die Organisation der Buchhaltung.",
+    "answer": "kontenrahmen"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "Ein __ dokumentiert einen Geschäftsfall.",
+    "answer": "beleg"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ erfassen den Wertverlust von Anlagegütern.",
+    "answer": "abschreibungen"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ beschreibt die Inventur der Bestände.",
+    "answer": "bestandsaufnahme"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "__ sind Verbindlichkeiten gegenüber Lieferanten.",
+    "answer": "verbindlichkeiten"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 2",
+    "type": "gap-fill",
+    "question": "Die __ ist die Ordnung der Belege.",
+    "answer": "belegorganisation"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "Die __ Buchführung basiert auf Soll und Haben.",
+    "answer": "doppelte"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ ist ein Prinzip zur Aufzeichnung von Geschäftsfällen.",
+    "answer": "periodenabgrenzung"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ erfasst die Ermittlung von Selbstkosten.",
+    "answer": "kostenrechnung"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "Ein __ zeigt die Struktur des Eigenkapitals.",
+    "answer": "eigenkapitalkonto"
+  },
+  {
+    "subject": "Rechnungswesen",
+    "chapter": "Kapitel 3",
+    "type": "gap-fill",
+    "question": "__ ist der Saldo zwischen Aufwand und Ertrag.",
+    "answer": "betriebsergebnis"
+  }
+]
