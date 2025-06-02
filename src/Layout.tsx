@@ -1,25 +1,90 @@
-import { Link, Outlet } from "react-router-dom";
+import React from "react";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import { useUser } from "./context/UserContext";
 
-const Layout = () => (
-  <>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div className="container">
-        <Link className="navbar-brand" to="/">EduKIT</Link>
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav me-auto">
-            <li className="nav-item"><Link className="nav-link" to="/">Register</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/modules">Module</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/chapters/1">Kapitel</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/minigames/1/1">Minigames</Link></li>
+const Layout = () => {
+  const { user, setUser } = useUser();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setUser(null);
+    localStorage.removeItem("user");
+    navigate("/"); // Zurück zur Startseite
+  };
+
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-success px-3">
+        <Link to="/home" className="navbar-brand fw-bold">
+          EduKIT
+        </Link>
+
+        {/* Toggle Button für mobile Ansicht */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Collapsible Bereich */}
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          {/* Linke Navigation */}
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link to="/modules" className="nav-link">Module</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/chapters/1" className="nav-link">Kapitel</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/minigames/1/1" className="nav-link">Minigames</Link>
+            </li>
+          </ul>
+
+          {/* Rechte Navigation */}
+          <ul className="navbar-nav d-flex align-items-center gap-2">
+            <li className="nav-item d-flex align-items-center">
+              <Link to="/settings" className="nav-link">
+                <img
+                  src="/images/settings.png"
+                  alt="Einstellungen"
+                  style={{ width: "20px", height: "20px" }}
+                  className="me-1"
+                />
+                <span className="d-none d-md-inline">Einstellungen</span>
+              </Link>
+            </li>
+            <li className="nav-item d-flex align-items-center">
+              <Link to="/profile" className="nav-link d-flex align-items-center">
+                <img
+                  src={`/avatars/${user?.avatar || "avatar1.png"}`}
+                  alt="Profil"
+                  className="rounded-circle me-1"
+                  style={{ width: "32px", height: "32px", objectFit: "cover" }}
+                />
+                <span className="d-none d-md-inline">Profil</span>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <button onClick={handleLogout} className="btn btn-outline-light btn-sm">
+                Logout
+              </button>
+            </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <main className="container my-4">
-      <Outlet />
-    </main>
-  </>
-);
+      <main className="container py-4">
+        <Outlet />
+      </main>
+    </>
+  );
+};
 
 export default Layout;

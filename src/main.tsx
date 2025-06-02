@@ -1,19 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { UserProvider } from "./context/UserContext";
+import "./index.css";
 
-const rootElement = document.getElementById("root");
-
-if (!rootElement) {
-  throw new Error("Root-Element nicht gefunden!");
-}
-
-ReactDOM.createRoot(rootElement).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <UserProvider>
+        <App />
+      </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

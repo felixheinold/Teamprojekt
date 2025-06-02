@@ -1,21 +1,39 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import Register from "./pages/Register";
-import Modules from "./pages/Modules";
-import Chapters from "./pages/Chapters";
-import Minigames from "./pages/Minigames";
-import NotFound from "./pages/NotFound";
+
+import Start from "./pages/auth/Start";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
+
+import Home from "./pages/dashboard/Home";
+import Modules from "./pages/dashboard/Modules";
+import Chapters from "./pages/dashboard/Chapters";
+import Minigames from "./pages/dashboard/Minigames";
+import Profile from "./pages/user/Profile";
+import Settings from "./pages/dashboard/Settings";
+
+import NotFound from "./pages/common/NotFound";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Register />} />
-        <Route path="modules" element={<Modules />} />
-        <Route path="chapters/:id" element={<Chapters />} />
-        <Route path="minigames/:id/:chapter" element={<Minigames />} />
-        <Route path="*" element={<NotFound />} />
+      {/* Öffentliche Seiten (ohne Layout) */}
+      <Route path="/" element={<Start />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+
+      {/* Geschützte Seiten mit gemeinsamer Navbar/Layout */}
+      <Route element={<Layout />}>
+        <Route path="/home" element={<Home />} />
+        <Route path="/modules" element={<Modules />} />
+        <Route path="/chapters/:id" element={<Chapters />} />
+        <Route path="/minigames/:moduleId/:chapterId" element={<Minigames />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/settings" element={<Settings />} />
       </Route>
+
+      {/* 404 Seite */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
