@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { useUser } from "./context/UserContext";
+import { useAppFlow } from "./context/AppFlowContext";
 
 const Layout = () => {
   const { user, setUser } = useUser();
@@ -11,6 +12,8 @@ const Layout = () => {
     localStorage.removeItem("user");
     navigate("/"); // Zurück zur Startseite
   };
+
+  const { selectedModule, selectedChapter } = useAppFlow();
 
   return (
     <>
@@ -37,13 +40,47 @@ const Layout = () => {
           {/* Linke Navigation */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/modules" className="nav-link">Module</Link>
+              <Link to="/modules" className="nav-link">
+                Module
+              </Link>
             </li>
+
             <li className="nav-item">
-              <Link to="/chapters/1" className="nav-link">Kapitel</Link>
+              <Link
+                to={
+                  selectedModule
+                    ? `/chapters/${encodeURIComponent(selectedModule)}`
+                    : "#"
+                }
+                onClick={(e) => {
+                  if (!selectedModule) e.preventDefault();
+                }}
+                className={`nav-link ${
+                  !selectedModule ? "text-muted disabled" : ""
+                }`}
+              >
+                Kapitel
+              </Link>
             </li>
+
             <li className="nav-item">
-              <Link to="/minigames/1/1" className="nav-link">Minigames</Link>
+              <Link
+                to={
+                  selectedModule && selectedChapter
+                    ? `/minigames/${encodeURIComponent(
+                        selectedModule
+                      )}/${encodeURIComponent(selectedChapter)}`
+                    : "#"
+                }
+                onClick={(e) => {
+                  if (!selectedChapter) e.preventDefault();
+                }}
+                className={`nav-link ${
+                  !selectedChapter ? "text-muted disabled" : ""
+                }`}
+              >
+                Minigames
+              </Link>
             </li>
           </ul>
 
@@ -61,7 +98,10 @@ const Layout = () => {
               </Link>
             </li>
             <li className="nav-item d-flex align-items-center">
-              <Link to="/profile" className="nav-link d-flex align-items-center">
+              <Link
+                to="/profile"
+                className="nav-link d-flex align-items-center"
+              >
                 <img
                   src={`/avatars/${user?.avatar || "avatar1.png"}`}
                   alt="Profil"
@@ -72,7 +112,10 @@ const Layout = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <button onClick={handleLogout} className="btn btn-outline-light btn-sm">
+              <button
+                onClick={handleLogout}
+                className="btn btn-outline-light btn-sm"
+              >
                 Logout
               </button>
             </li>

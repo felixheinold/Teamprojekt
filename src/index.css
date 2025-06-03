@@ -25,3 +25,10 @@ body.dark .btn {
   border-color: #555;
   color: #f0f0f0;
 }
+
+.nav-link.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: default;
+}
+

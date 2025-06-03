@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useAppFlow } from "../../context/AppFlowContext";
+import { useEffect } from "react";
 
 const modules = [
   { title: "Produktion und Logistik", icon: "📦" },
@@ -11,12 +13,18 @@ const modules = [
 ];
 
 const Modules = () => {
+  const { setSelectedModule, setSelectedChapter } = useAppFlow();
+  useEffect(() => {
+    setSelectedModule("");
+    setSelectedChapter("");
+  }, []);
+
   return (
     <div
-      className="container pt-2 d-flex flex-column align-items-center"
+      className="container py-4 d-flex flex-column align-items-center"
       style={{ minHeight: "100vh" }}
     >
-      <h1 className="text-center fw-bold display-4 mb-5">
+      <h1 className="text-center fw-bold display-5 mb-4">
         📚 Wähle ein Modul aus
       </h1>
 
@@ -26,12 +34,16 @@ const Modules = () => {
             key={index}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            transition={{ type: "tween", duration: 0.25, ease: "easeOut" }}
+            transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
             className="w-100"
             style={{ maxWidth: "600px" }}
           >
             <Link
-              to="/chapters/:id"
+              to={`/chapters/${encodeURIComponent(modul.title)}`}
+              onClick={() => {
+                setSelectedModule(modul.title);
+                setSelectedChapter(""); // Kapitel zurücksetzen
+              }}
               className="btn btn-success btn-lg shadow w-100 text-start d-flex align-items-center gap-3"
             >
               <span style={{ fontSize: "1.5rem" }}>{modul.icon}</span>

@@ -1,5 +1,12 @@
 import React, { createContext, useState, useContext } from "react";
 
+export const AppFlowContext = createContext({
+  selectedModule: "",
+  selectedChapter: "",
+  setSelectedModule: (s: string) => {},
+  setSelectedChapter: (s: string) => {},
+});
+
 export type UserProfile = {
   username: string;
   email: string;
