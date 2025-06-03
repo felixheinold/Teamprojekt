@@ -25,6 +25,8 @@ function App() {
       {/* Geschützte Seiten mit gemeinsamer Navbar/Layout */}
       <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
+        <Route path="/__test_home" element={<Home />} />{" "}
+        {/* Vorübergehende Test-Route */}
         <Route path="/modules" element={<Modules />} />
         <Route path="/chapters/:id" element={<Chapters />} />
         <Route path="/minigames/:moduleId/:chapterId" element={<Minigames />} />
