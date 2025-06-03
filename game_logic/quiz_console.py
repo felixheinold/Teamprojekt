@@ -38,15 +38,15 @@ def import_questions_from_json(filename: str):
         session.commit()
     print(f"{added_count} neue Fragen aus '{filename}' importiert.")
 
-
 # Fragen filtern
 def get_questions(subject, chapter, q_type):
     with Session(engine) as session:
         stmt = select(Question).where(
             Question.subject.ilike(subject),
-            Question.chapter.ilike(chapter),
             Question.type.ilike(q_type)
         )
+        if chapter:
+            stmt = stmt.where(Question.chapter.ilike(chapter))
         return session.exec(stmt).all()
 
 # Highscore lade
@@ -66,13 +66,15 @@ def save_highscore(score):
 
 # Quiz starten
 def run_quiz():
-    current_highscore = load_highscore()
     print("🎮 Willkommen zum Quiz!")
-    print(f"⭐ Aktueller Highscore: {current_highscore} Punkte")
+    
     while True:
+        current_highscore = load_highscore()
+        print ("\n 🎮 Neue Runde")
+        print(f"⭐ Aktueller Highscore: {current_highscore} Punkte")
         subject = input("Fach (z.B. Marketing, Finance, Rechnungswesen): ").strip()
-        chapter_num = input("Kapitel (Nummer z.B. 1, 2, 3): ").strip()
-        chapter = f"Kapitel {chapter_num}"
+        chapter_input = input("Kapitel (Nummer z.B. 1, 2, 3 oder alle): ").strip()
+        chapter = None if chapter_input == "alle" else f"Kapitel {chapter_input}"
         q_type = input("Fragetyp (single-choice / true-false / gap-fill): ").strip().lower()
 
         # Wähle entsprechende JSON-Datei
@@ -121,7 +123,6 @@ def run_quiz():
     
                 correct = (user_answer == q.answer.upper())
 
-
             elif q.type == "gap-fill":
                 user_input = input("Ergänze die Lücke: ").strip().lower()
                 correct = (user_input == q.answer.lower())
@@ -137,7 +138,7 @@ def run_quiz():
                 print(f"❌ Falsch. Richtige Antwort: {q.answer}")
 
         new_total = current_highscore + score
-        save_highscore(new_total)
+        save_highscore(new_total) 
 
         print(f"\n🏁 Runde beendet. Punkte: {score}")
         print(f"🎯 Neuer Highscore: {new_total}")
@@ -150,3 +151,5 @@ def run_quiz():
 # Einstiegspunkt
 if __name__ == "__main__":
     run_quiz()
+
+
