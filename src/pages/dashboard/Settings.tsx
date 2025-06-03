@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 
 const Settings = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved === "true"; // Default: false
+  });
 
   useEffect(() => {
-    document.body.classList.toggle("dark", darkMode);
+    document.body.classList.toggle("bg-dark", darkMode);
+    document.body.classList.toggle("text-white", darkMode);
+    localStorage.setItem("darkMode", String(darkMode));
   }, [darkMode]);
 
   return (
-    <div className="card mx-auto" style={{ maxWidth: "500px" }}>
+    <div className="card mx-auto mt-5" style={{ maxWidth: "500px" }}>
       <div className="card-body">
         <h5 className="card-title text-center">⚙️ Einstellungen</h5>
 
@@ -30,7 +35,12 @@ const Settings = () => {
           </label>
         </div>
 
-        <button className="btn btn-primary w-100">Speichern</button>
+        <button
+          className="btn btn-primary w-100"
+          onClick={() => alert("Einstellungen gespeichert")}
+        >
+          Speichern
+        </button>
       </div>
     </div>
   );

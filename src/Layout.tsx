@@ -1,19 +1,12 @@
 import React from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useUser } from "./context/UserContext";
 import { useAppFlow } from "./context/AppFlowContext";
+import UserDropdown from "./components/UserDropdown";
 
 const Layout = () => {
-  const { user, setUser } = useUser();
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    setUser(null);
-    localStorage.removeItem("user");
-    navigate("/"); // Zurück zur Startseite
-  };
-
   const { selectedModule, selectedChapter } = useAppFlow();
+  const { user } = useUser();
 
   return (
     <>
@@ -22,21 +15,19 @@ const Layout = () => {
           EduKIT
         </Link>
 
-        {/* Toggle Button für mobile Ansicht */}
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible Bereich */}
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarNav">
           {/* Linke Navigation */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -44,7 +35,6 @@ const Layout = () => {
                 Module
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 to={
@@ -52,74 +42,35 @@ const Layout = () => {
                     ? `/chapters/${encodeURIComponent(selectedModule)}`
                     : "#"
                 }
-                onClick={(e) => {
-                  if (!selectedModule) e.preventDefault();
-                }}
-                className={`nav-link ${
-                  !selectedModule ? "text-muted disabled" : ""
-                }`}
+                onClick={(e) => !selectedModule && e.preventDefault()}
+                className={`nav-link ${!selectedModule ? "text-muted disabled" : ""}`}
               >
                 Kapitel
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 to={
                   selectedModule && selectedChapter
-                    ? `/minigames/${encodeURIComponent(
-                        selectedModule
-                      )}/${encodeURIComponent(selectedChapter)}`
+                    ? `/minigames/${encodeURIComponent(selectedModule)}/${encodeURIComponent(selectedChapter)}`
                     : "#"
                 }
-                onClick={(e) => {
-                  if (!selectedChapter) e.preventDefault();
-                }}
-                className={`nav-link ${
-                  !selectedChapter ? "text-muted disabled" : ""
-                }`}
+                onClick={(e) => !selectedChapter && e.preventDefault()}
+                className={`nav-link ${!selectedChapter ? "text-muted disabled" : ""}`}
               >
                 Minigames
               </Link>
             </li>
           </ul>
 
-          {/* Rechte Navigation */}
-          <ul className="navbar-nav d-flex align-items-center gap-2">
-            <li className="nav-item d-flex align-items-center">
-              <Link to="/settings" className="nav-link">
-                <img
-                  src="/images/settings.png"
-                  alt="Einstellungen"
-                  style={{ width: "20px", height: "20px" }}
-                  className="me-1"
-                />
-                <span className="d-none d-md-inline">Einstellungen</span>
-              </Link>
-            </li>
-            <li className="nav-item d-flex align-items-center">
-              <Link
-                to="/profile"
-                className="nav-link d-flex align-items-center"
-              >
-                <img
-                  src={`/avatars/${user?.avatar || "avatar1.png"}`}
-                  alt="Profil"
-                  className="rounded-circle me-1"
-                  style={{ width: "32px", height: "32px", objectFit: "cover" }}
-                />
-                <span className="d-none d-md-inline">Profil</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <button
-                onClick={handleLogout}
-                className="btn btn-outline-light btn-sm"
-              >
-                Logout
-              </button>
-            </li>
-          </ul>
+          {/* Rechte Navigation: Nur wenn User eingeloggt */}
+          {user && (
+            <ul className="navbar-nav d-flex align-items-center">
+              <li className="nav-item">
+                <UserDropdown />
+              </li>
+            </ul>
+          )}
         </div>
       </nav>
 

@@ -9,7 +9,7 @@ import Home from "./pages/dashboard/Home";
 import Modules from "./pages/dashboard/Modules";
 import Chapters from "./pages/dashboard/Chapters";
 import Minigames from "./pages/dashboard/Minigames";
-import Profile from "./pages/user/Profile";
+import User from "./pages/dashboard/User"; 
 import Settings from "./pages/dashboard/Settings";
 
 import NotFound from "./pages/common/NotFound";
@@ -22,13 +22,13 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
-      {/* Geschützte Seiten mit gemeinsamer Navbar/Layout */}
+      {/* Geschützte Seiten mit Layout */}
       <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/modules" element={<Modules />} />
         <Route path="/chapters/:moduleName" element={<Chapters />} />
         <Route path="/minigames/:moduleId/:chapterId" element={<Minigames />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/user" element={<User />} /> {/* ✅ geändert */}
         <Route path="/settings" element={<Settings />} />
       </Route>
 
