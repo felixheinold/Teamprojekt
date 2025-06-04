@@ -9,9 +9,11 @@ import Home from "./pages/dashboard/Home";
 import Modules from "./pages/dashboard/Modules";
 import Chapters from "./pages/dashboard/Chapters";
 import Minigames from "./pages/dashboard/Minigames";
-import User from "./pages/dashboard/User"; 
+import User from "./pages/dashboard/User";
 import Settings from "./pages/dashboard/Settings";
-
+import QuizGame from "./pages/gamescreens/QuizGame";
+import MemoryGame from "./pages/gamescreens/MemoryGame";
+import GapFillGame from "./pages/gamescreens/GapFillGame";
 import NotFound from "./pages/common/NotFound";
 
 function App() {
@@ -30,6 +32,9 @@ function App() {
         <Route path="/minigames/:moduleId/:chapterId" element={<Minigames />} />
         <Route path="/user" element={<User />} /> {/* ✅ geändert */}
         <Route path="/settings" element={<Settings />} />
+        <Route path="/quiz" element={<QuizGame />} />
+        <Route path="/memory" element={<MemoryGame />} />
+        <Route path="/gapfill" element={<GapFillGame />} />
       </Route>
 
       {/* 404 Seite */}

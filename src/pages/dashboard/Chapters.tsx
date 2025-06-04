@@ -154,7 +154,7 @@ const Chapters = () => {
                     fontWeight: "500",
                   }}
                 >
-                  📚 Alle Kapitel lernen
+                  Alle Kapitel lernen
                 </button>
               </motion.div>
             </div>
