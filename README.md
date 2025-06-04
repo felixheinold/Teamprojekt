@@ -1,3 +1,14 @@
+### Informationen zu Hosting+Firebase:
+
+- "edukit-tp" stellt ein leeres React-Projekt dar, das aktuell auf der Domain "edukit-tp.me" gehostet wird
+- Firebase deployed genau das Projekt, dessen build-Ordner in "firebase.json" hinterlegt ist.
+- "edukit-tp" kann später entweder ersetzt oder aber mit entsprechenden Files ergänzt werden
+- bei jedem push auf den Branch main wird firebase automatisch durch GitHub redeployed
+
+
+
+
+
 ### Hier kurz der Gameplan aufgelistet für einen groben Überlick
 
 # AI-Assisted Learning Game
