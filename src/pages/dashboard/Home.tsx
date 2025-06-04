@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useAppFlow } from "../../context/AppFlowContext";
+import { useEffect } from "react";
 
 const Home = () => {
+  const { setSelectedModule, setSelectedChapter } = useAppFlow();
+  useEffect(() => {
+    setSelectedModule("");
+    setSelectedChapter("");
+  }, []);
   return (
     <div className="container py-5">
       <div className="row align-items-center">
