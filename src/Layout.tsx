@@ -43,7 +43,9 @@ const Layout = () => {
                     : "#"
                 }
                 onClick={(e) => !selectedModule && e.preventDefault()}
-                className={`nav-link ${!selectedModule ? "text-muted disabled" : ""}`}
+                className={`nav-link ${
+                  !selectedModule ? "text-muted disabled" : ""
+                }`}
               >
                 Kapitel
               </Link>
@@ -52,11 +54,15 @@ const Layout = () => {
               <Link
                 to={
                   selectedModule && selectedChapter
-                    ? `/minigames/${encodeURIComponent(selectedModule)}/${encodeURIComponent(selectedChapter)}`
+                    ? `/minigames/${encodeURIComponent(
+                        selectedModule
+                      )}/${encodeURIComponent(selectedChapter)}`
                     : "#"
                 }
                 onClick={(e) => !selectedChapter && e.preventDefault()}
-                className={`nav-link ${!selectedChapter ? "text-muted disabled" : ""}`}
+                className={`nav-link ${
+                  !selectedChapter ? "text-muted disabled" : ""
+                }`}
               >
                 Minigames
               </Link>
