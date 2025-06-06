@@ -85,7 +85,7 @@ const MemoryStart = () => {
             textDecoration: "none",
           }}
         >
-          Starten
+          Direkt zum Memory starten
         </Link>
       </motion.div>
     </div>

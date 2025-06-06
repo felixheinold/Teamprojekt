@@ -85,7 +85,7 @@ const GapfillStart = () => {
             textDecoration: "none",
           }}
         >
-          Starten
+          Direkt zum Lückentext starten
         </Link>
       </motion.div>
     </div>

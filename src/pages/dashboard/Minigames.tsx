@@ -51,7 +51,7 @@ const Minigames = () => {
       <div className="w-100 d-flex justify-content-center mb-3">
         <div
           className="btn btn-success btn-lg rounded-pill text-center"
-          style={{ maxWidth: "600px", width: "100%" }}
+          style={{ maxWidth: "600px", width: "100%", marginTop: "12px" }}
         >
           {selectedModule}
         </div>

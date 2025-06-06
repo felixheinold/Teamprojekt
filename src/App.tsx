@@ -13,10 +13,13 @@ import User from "./pages/dashboard/User";
 import Settings from "./pages/dashboard/Settings";
 import QuizStart from "./pages/quiz/QuizStart";
 import QuizGame from "./pages/quiz/QuizGame";
-import MemoryGame from "./pages/memory/MemoryGame";
-import GapFillGame from "./pages/gapfill/GapFillGame";
+import QuizResult from "./pages/quiz/QuizResult";
 import MemoryStart from "./pages/memory/MemoryStart";
+import MemoryGame from "./pages/memory/MemoryGame";
+import MemoryResult from "./pages/memory/MemoryResult";
+import GapFillGame from "./pages/gapfill/GapFillGame";
 import GapFillStart from "./pages/gapfill/GapFillStart";
+import GapFillResult from "./pages/gapfill/GapFillResult";
 import NotFound from "./pages/common/NotFound";
 
 function App() {
@@ -41,6 +44,9 @@ function App() {
         <Route path="/quizgame" element={<QuizGame />} />
         <Route path="/memorygame" element={<MemoryGame />} />
         <Route path="/gapfillgame" element={<GapFillGame />} />
+        <Route path="/quizresult" element={<QuizResult />} />
+        <Route path="/memoryresult" element={<MemoryResult />} />
+        <Route path="/gapfillresult" element={<GapFillResult />} />
       </Route>
 
       {/* 404 Seite */}

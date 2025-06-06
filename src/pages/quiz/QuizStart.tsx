@@ -1,9 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const QuizStart = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { module, chapter, subject, questionCount, timeLimit } =
+    location.state || {};
 
   return (
     <div
@@ -30,7 +33,7 @@ const QuizStart = () => {
         <div
           className="py-2 px-3 fw-bold text-center flex-grow-1"
           style={{
-            backgroundColor: "#a7e6ff",
+            backgroundColor: "#b6efe1",
             borderRadius: "30px",
             fontSize: "1.25rem",
             color: "#000",
@@ -81,8 +84,12 @@ const QuizStart = () => {
       >
         <Link
           to="/quizgame"
-          className="fw-bold text-white d-block text-center py-2"
+          state={{ module, chapter, subject, questionCount, timeLimit }}
+          className="fw-bold text-white py-2 text-center"
           style={{
+            display: "block",
+            width: "100%",
+            maxWidth: "600px",
             backgroundColor: "#5ac0f0",
             border: "none",
             borderRadius: "12px",
@@ -90,7 +97,7 @@ const QuizStart = () => {
             textDecoration: "none",
           }}
         >
-          Starten
+          Direkt zum Quiz starten
         </Link>
       </motion.div>
     </div>
