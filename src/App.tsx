@@ -11,15 +11,21 @@ import Chapters from "./pages/dashboard/Chapters";
 import Minigames from "./pages/dashboard/Minigames";
 import User from "./pages/dashboard/User";
 import Settings from "./pages/dashboard/Settings";
+
 import QuizStart from "./pages/quiz/QuizStart";
 import QuizGame from "./pages/quiz/QuizGame";
 import QuizResult from "./pages/quiz/QuizResult";
+
 import MemoryStart from "./pages/memory/MemoryStart";
-import MemoryGame from "./pages/memory/MemoryGame";
-import MemoryResult from "./pages/memory/MemoryResult";
+import MemoryRound1 from "./pages/memory/MemoryRound1";
+import MemoryRound2 from "./pages/memory/MemoryRound2";
+import MemoryRound1Result from "./pages/memory/MemoryRound1Result";
+import MemoryRound2Result from "./pages/memory/MemoryRound2Result";
+
 import GapFillGame from "./pages/gapfill/GapFillGame";
 import GapFillStart from "./pages/gapfill/GapFillStart";
 import GapFillResult from "./pages/gapfill/GapFillResult";
+
 import NotFound from "./pages/common/NotFound";
 
 function App() {
@@ -42,10 +48,12 @@ function App() {
         <Route path="/memory" element={<MemoryStart />} />
         <Route path="/gapfill" element={<GapFillStart />} />
         <Route path="/quizgame" element={<QuizGame />} />
-        <Route path="/memorygame" element={<MemoryGame />} />
+        <Route path="/memoryround1" element={<MemoryRound1 />} />
+        <Route path="/memoryround2" element={<MemoryRound2 />} />
         <Route path="/gapfillgame" element={<GapFillGame />} />
         <Route path="/quizresult" element={<QuizResult />} />
-        <Route path="/memoryresult" element={<MemoryResult />} />
+        <Route path="/memoryround1result" element={<MemoryRound1Result />} />
+        <Route path="/memoryround2result" element={<MemoryRound2Result />} />
         <Route path="/gapfillresult" element={<GapFillResult />} />
       </Route>
 

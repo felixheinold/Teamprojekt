@@ -1,9 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const MemoryStart = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { module, chapter, subject, questionCount, timeLimit } =
+    location.state || {};
 
   return (
     <div
@@ -75,7 +78,8 @@ const MemoryStart = () => {
         style={{ width: "100%", maxWidth: "600px" }}
       >
         <Link
-          to="/memorygame"
+          to="/memoryround1"
+          state={{ module, chapter, subject, questionCount, timeLimit }}
           className="fw-bold text-white d-block text-center py-2"
           style={{
             backgroundColor: "#9a7fc6",
