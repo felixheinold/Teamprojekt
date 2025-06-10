@@ -169,8 +169,11 @@ const Minigames = () => {
               </h5>
 
               {/* Fragenanzahl */}
+              {/* Fragenanzahl oder Paare */}
               <div className="position-relative mb-3">
-                <label className="form-label mb-1">Fragen/Paare:</label>
+                <label className="form-label mb-1">
+                  {selectedGame?.name === "Memory" ? "Paare:" : "Fragen:"}
+                </label>
                 <select
                   value={questionCount}
                   onChange={(e) => setQuestionCount(parseInt(e.target.value))}
@@ -189,13 +192,19 @@ const Minigames = () => {
                     zIndex: 1000,
                   }}
                 >
-                  {Array.from({ length: 10 }, (_, i) => (i + 1) * 2).map(
-                    (val) => (
-                      <option key={val} value={val}>
-                        {val}
-                      </option>
-                    )
-                  )}
+                  {selectedGame?.name === "Memory"
+                    ? Array.from({ length: 11 }, (_, i) => i + 5).map((val) => (
+                        <option key={val} value={val}>
+                          {val}
+                        </option>
+                      ))
+                    : Array.from({ length: 10 }, (_, i) => (i + 1) * 2).map(
+                        (val) => (
+                          <option key={val} value={val}>
+                            {val}
+                          </option>
+                        )
+                      )}
                 </select>
               </div>
 

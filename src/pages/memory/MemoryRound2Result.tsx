@@ -1,18 +1,24 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const MemoryResult = () => {
+const MemoryRound2Result = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   const {
-    module,
-    subject,
-    chapter,
-    questionCount,
-    timeLimit,
-    score = 0,
+    module = "",
+    chapter = "",
+    questionCount = 0,
+    timeLimit = 20,
+    turns = 0, // Anzahl der Züge
+    pairs = [],
   } = location.state || {};
+
+  // Punkteberechnung:
+  const basePoints = pairs.length;
+  const maxPoints = basePoints * 4;
+  const extraTurns = Math.max(0, turns - basePoints);
+  const score = Math.max(basePoints, maxPoints - extraTurns * 2);
 
   return (
     <div
@@ -28,8 +34,12 @@ const MemoryResult = () => {
         <h1 className="fw-bold text-center display-5 mb-4">
           🎉 Super, du hast es geschafft!
         </h1>
+        <p className="fs-4 mb-2 text-center">
+          Du hast <strong>{pairs.length}</strong> Paare in{" "}
+          <strong>{turns}</strong> Zügen richtig zugeordnet.
+        </p>
         <p className="fs-4 mb-4 text-center">
-          Du hast für diesen Durchlauf <strong>{score}</strong> Punkte gewonnen
+          Dafür erhältst du <strong>{score}</strong> Punkte.
         </p>
 
         {/* Buttons */}
@@ -44,12 +54,18 @@ const MemoryResult = () => {
               borderRadius: "12px",
             }}
             onClick={() =>
-              navigate("/memory", {
-                state: { module, subject, chapter, questionCount, timeLimit },
+              navigate("/memoryround1", {
+                state: {
+                  module,
+                  chapter,
+                  questionCount: pairs.length,
+                  timeLimit,
+                  pairs,
+                },
               })
             }
           >
-            🔁 Erneut spielen
+            🔁 Kapitel erneut spielen
           </motion.button>
 
           <motion.button
@@ -104,4 +120,4 @@ const MemoryResult = () => {
   );
 };
 
-export default MemoryResult;
+export default MemoryRound2Result;

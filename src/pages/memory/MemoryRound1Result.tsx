@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 const MemoryRound1Result = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { correctCount = 0, total = 1, module, chapter } = location.state || {};
+  const {
+    correctCount = 0,
+    total = 1,
+    module,
+    chapter,
+    timeLimit = 20,
+    pairs = [],
+  } = location.state || {};
 
   const percentage = Math.round((correctCount / total) * 100);
   const passed = percentage >= 66;
@@ -38,7 +45,7 @@ const MemoryRound1Result = () => {
             }}
             onClick={() =>
               navigate("/memoryround2", {
-                state: { module, chapter },
+                state: { module, chapter, pairs, timeLimit },
               })
             }
           >
@@ -56,7 +63,13 @@ const MemoryRound1Result = () => {
             }}
             onClick={() =>
               navigate("/memoryround1", {
-                state: { module, chapter },
+                state: {
+                  module,
+                  chapter,
+                  questionCount: pairs.length,
+                  timeLimit,
+                  pairs,
+                },
               })
             }
           >
@@ -77,7 +90,13 @@ const MemoryRound1Result = () => {
             }}
             onClick={() =>
               navigate("/memoryround1", {
-                state: { module, chapter },
+                state: {
+                  module,
+                  chapter,
+                  questionCount: pairs.length,
+                  pairs,
+                  timeLimit,
+                },
               })
             }
           >
@@ -95,7 +114,7 @@ const MemoryRound1Result = () => {
             }}
             onClick={() =>
               navigate("/memoryround2", {
-                state: { module, chapter },
+                state: { module, chapter, pairs, timeLimit },
               })
             }
           >

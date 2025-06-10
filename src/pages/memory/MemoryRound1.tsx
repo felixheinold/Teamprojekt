@@ -16,11 +16,64 @@ const initialPairs = [
     term: "Abschreibung",
     definition: "Wertminderung von Anlagegütern durch Nutzung oder Zeitablauf.",
   },
+  {
+    term: "Bilanz",
+    definition: "Gegenüberstellung von Aktiva und Passiva zu einem Stichtag.",
+  },
+  {
+    term: "Eigenkapital",
+    definition:
+      "Finanzmittel, die dem Unternehmen von den Eigentümern zur Verfügung gestellt werden.",
+  },
+  {
+    term: "Fremdkapital",
+    definition:
+      "Kapital, das von Dritten (z. B. Banken) zur Verfügung gestellt wird.",
+  },
+  {
+    term: "Rendite",
+    definition:
+      "Ertrag einer Kapitalanlage im Verhältnis zum eingesetzten Kapital.",
+  },
+  {
+    term: "Liquiditätsgrad",
+    definition: "Kennzahl zur Beurteilung der kurzfristigen Zahlungsfähigkeit.",
+  },
+  {
+    term: "Break-even-Point",
+    definition: "Punkt, an dem Erlöse und Kosten gleich hoch sind.",
+  },
+  {
+    term: "Kalkulation",
+    definition:
+      "Ermittlung der Kosten und Preise von Produkten oder Leistungen.",
+  },
+  {
+    term: "Skonto",
+    definition: "Preisnachlass bei Zahlung innerhalb einer bestimmten Frist.",
+  },
+  {
+    term: "Deckungsbeitrag",
+    definition: "Differenz zwischen Erlös und variablen Kosten.",
+  },
+  {
+    term: "Fixkosten",
+    definition: "Kosten, die unabhängig von der Produktionsmenge anfallen.",
+  },
+  {
+    term: "Variable Kosten",
+    definition: "Kosten, die sich mit der Produktionsmenge ändern.",
+  },
+  {
+    term: "GuV",
+    definition:
+      "Gegenüberstellung von Aufwendungen und Erträgen in einer Abrechnungsperiode.",
+  },
 ];
 
 const shuffleArray = (arr: any[]) => [...arr].sort(() => Math.random() - 0.5);
 
-const MemoryGame = () => {
+const MemoryRound1 = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const {
@@ -28,12 +81,18 @@ const MemoryGame = () => {
     chapter = "",
     questionCount = 6,
     timeLimit = 20,
+    pairs = null,
   } = location.state || {};
 
-  const [terms, setTerms] = useState(() => shuffleArray(initialPairs));
-  const [definitions, setDefinitions] = useState(() =>
-    shuffleArray(initialPairs)
+  // 👇 entweder übergebene Paare oder neu gezogene verwenden
+  const [selectedPairs] = useState(() =>
+    pairs && Array.isArray(pairs)
+      ? pairs
+      : shuffleArray(initialPairs).slice(0, questionCount)
   );
+
+  const [terms] = useState(() => shuffleArray(selectedPairs));
+  const [definitions] = useState(() => shuffleArray(selectedPairs));
   const [assignments, setAssignments] = useState<{
     [key: string]: string | null;
   }>({});
@@ -43,11 +102,11 @@ const MemoryGame = () => {
 
   useEffect(() => {
     const startAssignments: { [key: string]: string | null } = {};
-    initialPairs.forEach((pair) => {
+    selectedPairs.forEach((pair) => {
       startAssignments[pair.definition] = null;
     });
     setAssignments(startAssignments);
-  }, []);
+  }, [selectedPairs]);
 
   const handleDrop = (def: string) => {
     if (!draggedTerm || submitted) return;
@@ -72,7 +131,7 @@ const MemoryGame = () => {
   };
 
   const checkCorrect = (def: string, term: string | null) => {
-    const pair = initialPairs.find((p) => p.definition === def);
+    const pair = selectedPairs.find((p) => p.definition === def);
     return pair && pair.term === term;
   };
 
@@ -102,6 +161,8 @@ const MemoryGame = () => {
         total: Object.keys(assignments).length,
         module,
         chapter,
+        timeLimit,
+        pairs: selectedPairs, // 👈 diese Zeile hinzufügen
       },
     });
   };
@@ -136,11 +197,7 @@ const MemoryGame = () => {
       {/* Kapitel-Kästchen */}
       <div
         className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{
-          backgroundColor: "#78ba84",
-          maxWidth: "600px",
-          width: "100%",
-        }}
+        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
       >
         {chapter}
       </div>
@@ -150,8 +207,13 @@ const MemoryGame = () => {
 
       {/* Begriffe und Definitionen */}
       <div
-        className="d-flex flex-wrap justify-content-center w-100"
-        style={{ maxWidth: 900 }}
+        className="d-flex justify-content-between"
+        style={{
+          width: "100%",
+          maxWidth: "1000px",
+          gap: "20px",
+          flexWrap: "nowrap",
+        }}
       >
         {/* Begriffe */}
         <div className="flex-grow-1 px-2">
@@ -252,4 +314,4 @@ const MemoryGame = () => {
   );
 };
 
-export default MemoryGame;
+export default MemoryRound1;
