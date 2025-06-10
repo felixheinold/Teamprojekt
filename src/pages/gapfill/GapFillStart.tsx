@@ -1,9 +1,18 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const GapfillStart = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { module, chapter, subject, questionCount, timeLimit } =
+    (location.state as {
+      module?: string;
+      chapter?: string;
+      subject?: string;
+      questionCount?: number;
+      timeLimit?: number;
+    }) || {};
 
   return (
     <div
@@ -76,6 +85,7 @@ const GapfillStart = () => {
       >
         <Link
           to="/gapfillgame"
+          state={{ module, chapter, subject, questionCount, timeLimit }}
           className="fw-bold text-white d-block text-center py-2"
           style={{
             backgroundColor: "#5989d6",

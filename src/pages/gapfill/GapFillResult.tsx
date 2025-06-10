@@ -44,7 +44,7 @@ const GapFillResult = () => {
               borderRadius: "12px",
             }}
             onClick={() =>
-              navigate("/quiz", {
+              navigate("/gapfill", {
                 state: { module, subject, chapter, questionCount, timeLimit },
               })
             }

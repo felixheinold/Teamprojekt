@@ -162,7 +162,7 @@ const MemoryRound1 = () => {
         module,
         chapter,
         timeLimit,
-        pairs: selectedPairs, // 👈 diese Zeile hinzufügen
+        pairs: selectedPairs,
       },
     });
   };
@@ -301,7 +301,7 @@ const MemoryRound1 = () => {
         onClick={submitted ? handleFinish : handleSubmit}
         className="fw-bold text-white mt-4"
         style={{
-          backgroundColor: "#9b59b6",
+          backgroundColor: "#9a7fc6",
           border: "none",
           borderRadius: "12px",
           padding: "10px 20px",

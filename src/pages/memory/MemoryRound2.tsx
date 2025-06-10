@@ -87,7 +87,7 @@ const MemoryRound2 = () => {
         setTimeout(() => {
           setFeedback(null);
           resetFlips();
-        }, 2000);
+        }, 3000);
       }
     }
   };
@@ -139,12 +139,15 @@ const MemoryRound2 = () => {
       <h1 className="fw-bold display-5 mb-3">🧠 Memory Runde 2</h1>
 
       {/* Statusleiste */}
-      <div className="mb-3 fs-5 fw-semibold d-flex gap-4">
-        <span>⏱️ {timer}s</span>
-        <span>
-          ✅ {matched.length / 2} / {cards.length / 2} Paare
-        </span>
-        <span>🔁 Züge: {turn - 1}</span>
+      <div
+        className="d-flex justify-content-between mb-3"
+        style={{ maxWidth: "600px", width: "100%" }}
+      >
+        <div className="fw-semibold">
+          {matched.length / 2} / {cards.length / 2} Paare
+        </div>
+        <div className="fw-semibold">Züge: {turn - 1}</div>
+        <div className="fw-semibold">⏳ {timer}s</div>
       </div>
 
       {/* Spielfeld */}
@@ -223,7 +226,7 @@ const MemoryRound2 = () => {
           }
           className="fw-bold text-white mt-4"
           style={{
-            backgroundColor: "#9b59b6",
+            backgroundColor: "#9a7fc6",
             border: "none",
             borderRadius: "12px",
             padding: "10px 20px",
