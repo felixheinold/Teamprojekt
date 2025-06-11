@@ -1,5 +1,5 @@
 import { useUser } from "../../context/UserContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const User = () => {
   const { user, setUser } = useUser();
@@ -8,6 +8,13 @@ const User = () => {
     username: user?.username || "",
     email: user?.email || "",
   });
+  const [totalPoints, setTotalPoints] = useState(0);
+
+  useEffect(() => {
+    const stats = JSON.parse(localStorage.getItem("userStats") || "{}");
+    const sum = Object.values(stats).reduce((acc: number, val: any) => acc + (val.totalPoints || 0), 0);
+    setTotalPoints(sum);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -89,6 +96,11 @@ const User = () => {
 
         <div className="mt-4 text-center">
           <button className="btn btn-outline-danger">🔑 Passwort zurücksetzen</button>
+        </div>
+
+        <hr className="my-4" />
+        <div className="text-center">
+          <p className="fs-5">📊 <strong>{totalPoints}</strong> Gesamtpunkte gesammelt</p>
         </div>
       </div>
     </div>

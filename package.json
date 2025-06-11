@@ -14,7 +14,8 @@
     "framer-motion": "^12.15.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "recharts": "^2.15.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

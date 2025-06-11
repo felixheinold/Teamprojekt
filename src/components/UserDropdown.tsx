@@ -90,6 +90,12 @@ const UserDropdown = () => {
           <Link to="/settings" className="dropdown-item text-dark">
             ⚙️ Einstellungen
           </Link>
+          <Link to="/stats" className="dropdown-item text-dark">
+            📊 Statistik
+          </Link>
+          <Link to="/leaderboard" className="dropdown-item text-dark">
+            🏆 Leaderboard
+          </Link>
           <div className="dropdown-divider"></div>
           <button onClick={handleLogout} className="dropdown-item text-danger">
             🚪 Abmelden
@@ -97,7 +103,6 @@ const UserDropdown = () => {
         </div>
       )}
 
-      {/* Animation Keyframes */}
       <style>
         {`
           @keyframes fadeIn {

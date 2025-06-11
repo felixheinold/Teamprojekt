@@ -28,12 +28,9 @@ const Layout = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          {/* Linke Navigation */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/modules" className="nav-link">
-                Module
-              </Link>
+              <Link to="/modules" className="nav-link">Module</Link>
             </li>
             <li className="nav-item">
               <Link
@@ -69,7 +66,6 @@ const Layout = () => {
             </li>
           </ul>
 
-          {/* Rechte Navigation: Nur wenn User eingeloggt */}
           {user && (
             <ul className="navbar-nav d-flex align-items-center">
               <li className="nav-item">

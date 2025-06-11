@@ -11,6 +11,8 @@ import Chapters from "./pages/dashboard/Chapters";
 import Minigames from "./pages/dashboard/Minigames";
 import User from "./pages/dashboard/User";
 import Settings from "./pages/dashboard/Settings";
+import Stats from "./pages/dashboard/Stats";          
+import Leaderboard from "./pages/dashboard/Leaderboard";
 
 import QuizStart from "./pages/quiz/QuizStart";
 import QuizGame from "./pages/quiz/QuizGame";
@@ -42,18 +44,23 @@ function App() {
         <Route path="/modules" element={<Modules />} />
         <Route path="/chapters/:moduleName" element={<Chapters />} />
         <Route path="/minigames/:moduleId/:chapterId" element={<Minigames />} />
-        <Route path="/user" element={<User />} /> {/* ✅ geändert */}
+        <Route path="/user" element={<User />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/stats" element={<Stats />} />               {/* ✅ NEU */}
+        <Route path="/leaderboard" element={<Leaderboard />} />   {/* ✅ NEU */}
+        
         <Route path="/quiz" element={<QuizStart />} />
-        <Route path="/memory" element={<MemoryStart />} />
-        <Route path="/gapfill" element={<GapFillStart />} />
         <Route path="/quizgame" element={<QuizGame />} />
+        <Route path="/quizresult" element={<QuizResult />} />
+
+        <Route path="/memory" element={<MemoryStart />} />
         <Route path="/memoryround1" element={<MemoryRound1 />} />
         <Route path="/memoryround2" element={<MemoryRound2 />} />
-        <Route path="/gapfillgame" element={<GapFillGame />} />
-        <Route path="/quizresult" element={<QuizResult />} />
         <Route path="/memoryround1result" element={<MemoryRound1Result />} />
         <Route path="/memoryround2result" element={<MemoryRound2Result />} />
+
+        <Route path="/gapfill" element={<GapFillStart />} />
+        <Route path="/gapfillgame" element={<GapFillGame />} />
         <Route path="/gapfillresult" element={<GapFillResult />} />
       </Route>
 
