@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LabelList } from "recharts";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  LabelList,
+} from "recharts";
 
 // Typen
 type GameKey = "quiz" | "gapfill" | "memory";
@@ -15,7 +23,7 @@ type LastPlayed = {
   timestamp: string;
 };
 
-// Defaults
+// Default-Werte
 const defaultStats: Record<GameKey, GameStats> = {
   quiz: { totalGames: 0, totalPoints: 0, maxPoints: 0, bestScore: 0 },
   memory: { totalGames: 0, totalPoints: 0, maxPoints: 0, bestScore: 0 },
@@ -33,31 +41,39 @@ const Stats = () => {
   const [lastPlayed, setLastPlayed] = useState<LastPlayed | null>(null);
 
   useEffect(() => {
-    const stored = localStorage.getItem("userStats");
-    if (stored) {
-      setStats({ ...defaultStats, ...JSON.parse(stored) });
+    // Sicheres Parsen der userStats
+    try {
+      const stored = localStorage.getItem("userStats");
+      const parsed = stored ? JSON.parse(stored) : {};
+      setStats({ ...defaultStats, ...parsed });
+    } catch (error) {
+      console.error("Fehler beim Parsen von userStats:", error);
+      localStorage.removeItem("userStats");
     }
 
-    const last = localStorage.getItem("lastPlayed");
-    if (last) {
-      setLastPlayed(JSON.parse(last));
+    // Last played Eintrag prüfen
+    try {
+      const last = localStorage.getItem("lastPlayed");
+      if (last) {
+        setLastPlayed(JSON.parse(last));
+      }
+    } catch (error) {
+      console.error("Fehler beim Parsen von lastPlayed:", error);
     }
   }, []);
 
-  const renderProgressBar = (percent: string) => {
-    return (
-      <div className="progress" style={{ height: "10px" }}>
-        <div
-          className="progress-bar bg-success"
-          role="progressbar"
-          style={{ width: `${percent}%` }}
-          aria-valuenow={parseFloat(percent)}
-          aria-valuemin={0}
-          aria-valuemax={100}
-        ></div>
-      </div>
-    );
-  };
+  const renderProgressBar = (percent: string) => (
+    <div className="progress" style={{ height: "10px" }}>
+      <div
+        className="progress-bar bg-success"
+        role="progressbar"
+        style={{ width: `${percent}%` }}
+        aria-valuenow={parseFloat(percent)}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      ></div>
+    </div>
+  );
 
   const renderGameStats = (title: string, gameKey: GameKey, data: GameStats) => {
     const progress =
@@ -66,7 +82,9 @@ const Stats = () => {
         : "0.0";
 
     const avgScore =
-      data.totalGames > 0 ? Math.round(data.totalPoints / data.totalGames) : 0;
+      data.totalGames > 0
+        ? Math.round(data.totalPoints / data.totalGames)
+        : 0;
 
     const questionCoverage =
       totalQuestions[gameKey] > 0
@@ -88,18 +106,9 @@ const Stats = () => {
   };
 
   const chartData = [
-    {
-      name: "Quiz",
-      Punkte: stats.quiz.totalPoints,
-    },
-    {
-      name: "Memory",
-      Punkte: stats.memory.totalPoints,
-    },
-    {
-      name: "Lückentext",
-      Punkte: stats.gapfill.totalPoints,
-    },
+    { name: "Quiz", Punkte: stats.quiz.totalPoints },
+    { name: "Memory", Punkte: stats.memory.totalPoints },
+    { name: "Lückentext", Punkte: stats.gapfill.totalPoints },
   ];
 
   return (
@@ -110,7 +119,8 @@ const Stats = () => {
         <div className="mb-4">
           <h5>🕹️ Zuletzt gespielt</h5>
           <p>
-            {new Date(lastPlayed.timestamp).toLocaleString()} – <strong>{lastPlayed.game.toUpperCase()}</strong>
+            {new Date(lastPlayed.timestamp).toLocaleString()} –{" "}
+            <strong>{lastPlayed.game.toUpperCase()}</strong>
           </p>
         </div>
       )}
