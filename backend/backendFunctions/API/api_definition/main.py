@@ -1,15 +1,16 @@
 from fastapi import FastAPI
-import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import credentials, firestore, initialize_app
 from pydantic import BaseModel
 from typing import Dict
+import json
+import os
 
 api = FastAPI()
 
 #Firebase initialisieren, firebase-admin-SDK Schlüssel muss hier abgelegt werden
 
-cred = credentials.Certificate("***HIER EIGENEN SCHLÜSSEL JSON EINFÜGEN***")
-firebase_admin.initialize_app(cred)
+cred = credentials.Certificate(json.loads(os.getenv("FIREBASE_CREDENTIALS_JSON")))
+initialize_app(cred)
 
 db = firestore.client()
 
