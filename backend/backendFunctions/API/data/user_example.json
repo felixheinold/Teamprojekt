@@ -1,0 +1,12 @@
+    {
+        "user_id" : "1A2B3C4D",
+        "user_name": "Hans",
+        "user_mail": "uhans@student.kit.edu",
+        "user_password":"passwort123",
+        "user_profile_picture": "hund",
+        "user_game_info": {"highscore": 1000, "last_game_date": "01.01.2025"},
+
+        "user_updates": {
+            "user_profile_picture": "Katze"
+        }
+    }
