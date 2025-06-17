@@ -16,7 +16,7 @@ class Language(str, Enum):
     de = "de"
     en = "en"
 
-class Answer():
+class Answer(BaseModel):
     answer_text: str
     is_correct: bool
 
