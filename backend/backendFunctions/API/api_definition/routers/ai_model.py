@@ -2,6 +2,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from firebase import db
 from typing import Optional, Dict, List
+from google.cloud import firestore
 from google.cloud.firestore_v1 import ArrayUnion
 from enum import Enum
 import json
@@ -41,7 +42,7 @@ async def new_question (question: Question):
     kapitel_doc_ref = vorlesung_doc_ref.collection("Kapitel").document(question.chapter)
 
     kapitel_doc_ref.set({
-        "Fragen": ArrayUnion(question)
+        "Fragen": ArrayUnion([question.model_dump_json()])
     }, 
     merge=True)
 
