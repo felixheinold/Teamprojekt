@@ -21,7 +21,7 @@ const Login = () => {
     const API = import.meta.env.VITE_API_BASE_URL;
 
     try {
-      const res = await fetch(`${API}/api/login`, {
+      const res = await fetch(`${API}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,15 +29,19 @@ const Login = () => {
         body: JSON.stringify(form),
       });
 
+      const result = await res.json();
+
       if (!res.ok) {
-        const err = await res.json();
-        alert(err.error || "Login fehlgeschlagen.");
+        alert(result.error || "Login fehlgeschlagen.");
         return;
       }
 
-      const result = await res.json(); // erwartet { user, token }
-      setUser(result.user);            // nur das User-Objekt speichern
-      localStorage.setItem("token", result.token); // Token speichern (optional)
+      // Benutzerobjekt + optionales Token
+      setUser(result.user);
+      if (result.token) {
+        localStorage.setItem("token", result.token);
+      }
+
       navigate("/home");
     } catch (err) {
       console.error("Login error:", err);
@@ -48,7 +52,9 @@ const Login = () => {
   return (
     <AuthLayout>
       <h2 className="fw-bold">Log in</h2>
-      <p className="text-muted mb-4">Willkommen zurück bei <strong>EduKIT</strong>.</p>
+      <p className="text-muted mb-4">
+        Willkommen zurück bei <strong>EduKIT</strong>.
+      </p>
 
       <form onSubmit={handleSubmit}>
         <input
@@ -69,7 +75,9 @@ const Login = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit" className="btn btn-dark w-100 mb-2">Sign In</button>
+        <button type="submit" className="btn btn-dark w-100 mb-2">
+          Sign In
+        </button>
         <a href="#" className="text-muted small">Passwort vergessen?</a>
       </form>
     </AuthLayout>

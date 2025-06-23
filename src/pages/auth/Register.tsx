@@ -24,7 +24,7 @@ const Register = () => {
     const API = import.meta.env.VITE_API_BASE_URL;
 
     try {
-      const res = await fetch(`${API}/api/register`, {
+      const res = await fetch(`${API}/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -34,16 +34,18 @@ const Register = () => {
 
       if (!res.ok) {
         const err = await res.json();
-        alert(err.error || "Registration failed.");
+        alert(err.error || "Registrierung fehlgeschlagen.");
         return;
       }
 
-      const user = await res.json();
-      setUser(user);
+      const result = await res.json();
+      setUser(result.user); // speichert Firestore-User
+      localStorage.setItem("token", result.token); // optional, wenn du später sichere Endpunkte brauchst
+
       navigate("/home");
     } catch (err) {
       console.error("Registration error:", err);
-      alert("Something went wrong.");
+      alert("Etwas ist schiefgelaufen.");
     }
   };
 
