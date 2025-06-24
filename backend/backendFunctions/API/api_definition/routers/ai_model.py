@@ -37,7 +37,8 @@ class Question(BaseModel):
 #eine neue Frage anlegen
 @router.post("/single-new-question")
 async def new_question (question: Question):
-    modul_doc_ref = db.collection("Module").document(question.module)
+    ai_model_doc_ref = db.collection("ai-model")
+    modul_doc_ref = ai_model_doc_ref.collection("Module").document(question.module)
     vorlesung_doc_ref = modul_doc_ref.collection("Vorlesungen").document(question.lecture)
     kapitel_doc_ref = vorlesung_doc_ref.collection("Kapitel").document(question.chapter)
 
