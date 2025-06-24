@@ -23,13 +23,27 @@ const Register = () => {
     e.preventDefault();
     const API = import.meta.env.VITE_API_BASE_URL;
 
+    const userId = crypto.randomUUID();
+
+    const payload = {
+      userId,
+      userName: form.username,
+      userMail: form.email,
+      userPassword: form.password,
+      userProfilePicture: form.avatar,
+      userGameInfo: {
+        highscore: 0,
+        lastGameDate: null,
+      },
+    };
+
     try {
-      const res = await fetch(`${API}/auth/register`, {
+      const res = await fetch(`${API}/users/new-user`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(form),
+        body: JSON.stringify(payload),
       });
 
       if (!res.ok) {
@@ -39,8 +53,16 @@ const Register = () => {
       }
 
       const result = await res.json();
-      setUser(result.user); // speichert Firestore-User
-      localStorage.setItem("token", result.token); // optional, wenn du später sichere Endpunkte brauchst
+      setUser({
+        userId,
+        userName: form.username,
+        userMail: form.email,
+        userProfilePicture: form.avatar,
+        userGameInfo: {
+          highscore: 0,
+          lastGameDate: null,
+        },
+      });
 
       navigate("/home");
     } catch (err) {

@@ -26,7 +26,10 @@ const Login = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          email: form.email,
+          password: form.password,
+        }),
       });
 
       const result = await res.json();
@@ -36,10 +39,24 @@ const Login = () => {
         return;
       }
 
-      // Benutzerobjekt + optionales Token
-      setUser(result.user);
-      if (result.token) {
-        localStorage.setItem("token", result.token);
+      const user = result.user;
+      const token = result.token;
+
+      if (!user) {
+        alert("Benutzerdaten fehlen in der Antwort.");
+        return;
+      }
+
+      setUser({
+        userId: user.userId,
+        userName: user.userName,
+        userMail: user.userMail,
+        userProfilePicture: user.userProfilePicture,
+        userGameInfo: user.userGameInfo || { highscore: 0, lastGameDate: null },
+      });
+
+      if (token) {
+        localStorage.setItem("token", token);
       }
 
       navigate("/home");

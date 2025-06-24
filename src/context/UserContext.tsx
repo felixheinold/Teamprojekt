@@ -1,16 +1,15 @@
+// src/context/UserContext.tsx
 import React, { createContext, useState, useContext } from "react";
 
-export const AppFlowContext = createContext({
-  selectedModule: "",
-  selectedChapter: "",
-  setSelectedModule: (s: string) => {},
-  setSelectedChapter: (s: string) => {},
-});
-
 export type UserProfile = {
-  username: string;
-  email: string;
-  avatar: string;
+  userId: string;
+  userName: string;
+  userMail: string;
+  userProfilePicture: string;
+  userGameInfo: {
+    highscore: number;
+    lastGameDate: string | null;
+  };
 };
 
 const UserContext = createContext<{
