@@ -2,13 +2,17 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const { setSelectedModule, setSelectedChapter } = useAppFlow();
+  const { t } = useTranslation();
+
   useEffect(() => {
     setSelectedModule("");
     setSelectedChapter("");
   }, []);
+
   return (
     <div className="container py-5">
       <div className="row align-items-center">
@@ -20,11 +24,9 @@ const Home = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="display-5 fw-bold mb-3">
-            👋 Willkommen bei <span className="text-success">EduKIT</span>
+            👋 {t("home.welcome")} <span className="text-success">EduKIT</span>
           </h1>
-          <p className="lead text-muted mb-4">
-            Deine smarte Plattform zum Lernen mit Spaß.
-          </p>
+          <p className="lead text-muted mb-4">{t("home.subtitle")}</p>
 
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -32,12 +34,12 @@ const Home = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <Link to="/modules" className="btn btn-success btn-lg shadow">
-              📚 Module ansehen
+              📚 {t("home.button")}
             </Link>
           </motion.div>
         </motion.div>
 
-        {/* Bildbereich mit einfacher Animation */}
+        {/* Bildbereich */}
         <motion.div
           className="col-lg-6 text-center"
           initial={{ opacity: 0, y: 50 }}
@@ -45,8 +47,8 @@ const Home = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <img
-            src="/images/home.png"
-            alt="Illustration"
+            src="/images/DinoKIT.png"
+            alt={t("home.imageAlt")}
             className="img-fluid"
             style={{ maxHeight: "350px" }}
           />

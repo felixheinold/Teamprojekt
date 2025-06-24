@@ -1,18 +1,25 @@
 import { useUser } from "../../context/UserContext";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const User = () => {
   const { user, setUser } = useUser();
+  const { t } = useTranslation();
   const [editMode, setEditMode] = useState(false);
+
   const [form, setForm] = useState({
-    username: user?.username || "",
-    email: user?.email || "",
+    userName: user?.userName || "",
+    userMail: user?.userMail || "",
   });
+
   const [totalPoints, setTotalPoints] = useState(0);
 
   useEffect(() => {
     const stats = JSON.parse(localStorage.getItem("userStats") || "{}");
-    const sum = Object.values(stats).reduce((acc: number, val: any) => acc + (val.totalPoints || 0), 0);
+    const sum = Object.values(stats).reduce(
+      (acc: number, val: any) => acc + (val.totalPoints || 0),
+      0
+    );
     setTotalPoints(sum);
   }, []);
 
@@ -21,39 +28,54 @@ const User = () => {
   };
 
   const handleSave = () => {
-    setUser({ ...user!, ...form });
+    if (!user) return;
+    const updatedUser = {
+      ...user,
+      userName: form.userName,
+      userMail: form.userMail,
+    };
+    setUser(updatedUser);
     setEditMode(false);
-    alert("Profil aktualisiert (Demo)");
+    alert(t("user.updated")); // ✅ i18n
   };
 
-  if (!user) return <p>Kein Benutzer angemeldet.</p>;
+  if (!user) {
+    return (
+      <p className="text-center mt-5">⚠️ {t("user.noUser")}</p>
+    );
+  }
 
   return (
     <div className="container mt-4">
-      <div className="bg-dark text-white rounded p-4 shadow-lg" style={{ maxWidth: "600px", margin: "0 auto" }}>
-        <h3 className="fw-bold mb-4">👤 Mein Account</h3>
+      <div
+        className="bg-dark text-white rounded p-4 shadow-lg"
+        style={{ maxWidth: "600px", margin: "0 auto" }}
+      >
+        <h3 className="fw-bold mb-4">👤 {t("user.title")}</h3>
 
         <div className="d-flex align-items-center mb-4">
           <img
-            src={`/avatars/${user.avatar}`}
+            src={user.userProfilePicture || "/avatars/default.png"}
             alt="Avatar"
             className="rounded-circle me-3"
             style={{ width: "70px", height: "70px", objectFit: "cover" }}
           />
           <div>
-            <h5 className="mb-0">{user.username}</h5>
-            <small className="text-muted">Angemeldet als {user.email}</small>
+            <h5 className="mb-0">{user.userName}</h5>
+            <small className="text-muted">
+              {t("user.loggedInAs")} {user.userMail}
+            </small>
           </div>
         </div>
 
         <div className="mb-3">
-          <label className="form-label">Benutzername</label>
+          <label className="form-label">{t("user.username")}</label>
           <div className="d-flex gap-2">
             <input
               type="text"
               className="form-control"
-              name="username"
-              value={form.username}
+              name="userName"
+              value={form.userName}
               disabled={!editMode}
               onChange={handleChange}
             />
@@ -61,19 +83,19 @@ const User = () => {
               className="btn btn-secondary"
               onClick={() => setEditMode(!editMode)}
             >
-              {editMode ? "Abbrechen" : "Bearbeiten"}
+              {editMode ? t("common.cancel") : t("common.edit")}
             </button>
           </div>
         </div>
 
         <div className="mb-3">
-          <label className="form-label">E-Mail</label>
+          <label className="form-label">{t("user.email")}</label>
           <div className="d-flex gap-2">
             <input
               type="email"
               className="form-control"
-              name="email"
-              value={form.email}
+              name="userMail"
+              value={form.userMail}
               disabled={!editMode}
               onChange={handleChange}
             />
@@ -81,7 +103,7 @@ const User = () => {
               className="btn btn-secondary"
               onClick={() => setEditMode(!editMode)}
             >
-              {editMode ? "Abbrechen" : "Bearbeiten"}
+              {editMode ? t("common.cancel") : t("common.edit")}
             </button>
           </div>
         </div>
@@ -89,18 +111,22 @@ const User = () => {
         {editMode && (
           <div className="text-end">
             <button className="btn btn-success" onClick={handleSave}>
-              Speichern
+              {t("common.save")}
             </button>
           </div>
         )}
 
         <div className="mt-4 text-center">
-          <button className="btn btn-outline-danger">🔑 Passwort zurücksetzen</button>
+          <button className="btn btn-outline-danger">
+            🔑 {t("user.resetPassword")}
+          </button>
         </div>
 
         <hr className="my-4" />
         <div className="text-center">
-          <p className="fs-5">📊 <strong>{totalPoints}</strong> Gesamtpunkte gesammelt</p>
+          <p className="fs-5">
+            📊 <strong>{totalPoints}</strong> {t("user.totalPoints")}
+          </p>
         </div>
       </div>
     </div>

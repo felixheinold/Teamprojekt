@@ -1,0 +1,104 @@
+{
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "chapters": "Chapters",
+    "edit": "Edit",
+    "guest": "Guest mode active",
+    "login": "Login",
+    "logout": "Logout",
+    "minigames": "Mini-Games",
+    "modules": "Modules",
+    "register": "Register",
+    "save": "Save",
+    "settings": "Settings",
+    "start": "Start"
+  },
+  "user": {
+    "email": "Email",
+    "loggedInAs": "Logged in as",
+    "noUser": "No user logged in.",
+    "resetPassword": "Reset password",
+    "title": "My Account",
+    "totalPoints": "Total points collected",
+    "updated": "Profile updated (Demo)",
+    "username": "Username"
+  },
+  "settings": {
+    "darkMode": "Enable Dark Mode",
+    "guestNotice": "You are not logged in. Some settings may not be saved permanently.",
+    "language": "Language",
+    "saved": "Settings saved!",
+    "title": "Settings",
+    "volume": "Volume"
+  },
+  "home": {
+    "button": "Get started",
+    "imageAlt": "Homepage illustration",
+    "subtitle": "Learn through play with interactive modules and mini-games!",
+    "welcome": "Welcome to"
+  },
+  "modules": {
+    "economics1": "Economics I",
+    "economics2": "Economics II",
+    "finance": "Finance and Accounting",
+    "management": "Management and Marketing",
+    "planning": "Integrated Production Planning",
+    "production": "Production and Logistics",
+    "select": "Select a module"
+  },
+  "chapters": {
+    "allChapters": "All chapters",
+    "chapter": "Chapter",
+    "learnAll": "Learn all chapters",
+    "selectSubchapter": "Choose a chapter",
+    "topic": "Topic"
+  },
+  "minigames": {
+    "gapfill": "Gap Fill",
+    "memory": "Memory",
+    "quiz": "Quiz",
+    "select": "Choose a mini-game",
+    "modal": {
+      "pairs": "Pairs:",
+      "questions": "Questions:",
+      "seconds": "seconds",
+      "timePerQuestion": "Time per question:",
+      "title": "Start Mini-Game"
+    }
+  },
+  "stats": {
+    "average": "Average",
+    "bestScore": "Best score",
+    "compare": "Points comparison",
+    "coverage": "Content coverage",
+    "gapfill": "Gap Fill",
+    "gamesPlayed": "Games played",
+    "lastPlayed": "Last played",
+    "memory": "Memory",
+    "progress": "Progress",
+    "quiz": "Quiz",
+    "title": "Your Statistics",
+    "totalPoints": "Total points"
+  },
+  "leaderboard": {
+    "place": "Place",
+    "points": "Points",
+    "title": "Leaderboard"
+  },
+  "subjects": {
+    "accounting": "Accounting",
+    "balance": "Annual Financial Statements and Valuation",
+    "economics1": "Economics I",
+    "economics2": "Economics II",
+    "energy": "Energy Economics",
+    "entrepreneurship": "Entrepreneurship",
+    "finance": "Finance",
+    "hr": "HR Management",
+    "integratedPlanning": "Integrated Production Planning",
+    "logistics": "Logistics",
+    "management": "Corporate Management",
+    "marketing": "Marketing",
+    "production": "Production"
+  }
+}
