@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "edukit-tp/dist/.",
+    "public": "edukit-tp-v2/dist/.",
     "ignore": [
       "firebase.json",
       "**/.*",
