@@ -1,0 +1,96 @@
+{
+  "common": {
+    "save": "Speichern",
+    "edit": "Bearbeiten",
+    "cancel": "Abbrechen",
+    "start": "Start",
+    "back": "Zurück"
+  },
+  "user": {
+    "title": "Mein Account",
+    "loggedInAs": "Angemeldet als",
+    "username": "Benutzername",
+    "email": "E-Mail",
+    "resetPassword": "Passwort zurücksetzen",
+    "totalPoints": "Gesamtpunkte gesammelt",
+    "updated": "Profil aktualisiert (Demo)",
+    "noUser": "Kein Benutzer angemeldet."
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "volume": "Lautstärke",
+    "darkMode": "Dark Mode aktivieren",
+    "language": "Sprache",
+    "saved": "Einstellungen gespeichert",
+    "guestNotice": "Du bist aktuell nicht angemeldet. Einige Einstellungen werden nicht dauerhaft gespeichert."
+  },
+  "home": {
+    "welcome": "Willkommen bei",
+    "subtitle": "Lerne spielerisch mit interaktiven Modulen und Minigames!",
+    "button": "Jetzt loslegen",
+    "imageAlt": "Startseiten-Illustration"
+  },
+  "modules": {
+    "select": "Wähle ein Modul aus",
+    "production": "Produktion und Logistik",
+    "finance": "Finanzierung und Rechnungswesen",
+    "management": "Management und Marketing",
+    "planning": "Integrierte Produktionsplanung",
+    "economics2": "Volkswirtschaftslehre 2",
+    "economics1": "Volkswirtschaftslehre 1"
+  },
+  "chapters": {
+    "selectSubchapter": "Wähle ein Kapitel",
+    "chapter": "Kapitel",
+    "topic": "Thema",
+    "learnAll": "Alle Kapitel üben",
+    "allChapters": "Alle Kapitel"
+  },
+  "minigames": {
+    "select": "Wähle ein Mini-Game aus",
+    "quiz": "Quiz",
+    "memory": "Memory",
+    "gapfill": "Lückentext",
+    "modal": {
+      "title": "Mini-Game starten",
+      "questions": "Fragen:",
+      "pairs": "Paare:",
+      "timePerQuestion": "Zeitlimit pro Frage:",
+      "seconds": "Sekunden"
+    }
+  },
+  "leaderboard": {
+    "title": "Bestenliste",
+    "place": "Platz",
+    "points": "Punkte"
+  },
+  "stats": {
+    "title": "Deine Statistik",
+    "lastPlayed": "Zuletzt gespielt",
+    "quiz": "Quiz",
+    "memory": "Memory",
+    "gapfill": "Lückentext",
+    "gamesPlayed": "Spiele gespielt",
+    "totalPoints": "Gesamtpunkte",
+    "bestScore": "Beste Punktzahl",
+    "average": "Durchschnitt",
+    "progress": "Fortschritt",
+    "coverage": "Abgedeckte Inhalte",
+    "compare": "Punktevergleich"
+  },
+  "subjects": {
+    "production": "Produktion",
+    "logistics": "Logistik",
+    "energy": "Energiewirtschaft",
+    "finance": "Finanzierung",
+    "accounting": "Rechnungswesen",
+    "balance": "Jahresabschluss und Bewertung",
+    "management": "Unternehmensführung",
+    "entrepreneurship": "Entrepreneurship",
+    "hr": "HR-Management",
+    "marketing": "Marketing",
+    "integratedPlanning": "Integrierte Produktionsplanung",
+    "economics1": "Volkswirtschaftslehre 1",
+    "economics2": "Volkswirtschaftslehre 2"
+  }
+}
