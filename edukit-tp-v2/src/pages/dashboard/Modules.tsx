@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Modules = () => {
   const { setSelectedModule, setSelectedChapter } = useAppFlow();
   const { t } = useTranslation();
+
+  const [uploadModule, setUploadModule] = useState("");
+  const [uploadChapter, setUploadChapter] = useState("");
+  const [file, setFile] = useState<File | null>(null);
 
   useEffect(() => {
     setSelectedModule("");
@@ -21,6 +25,26 @@ const Modules = () => {
     { key: "economics2", icon: "📉" },
     { key: "economics1", icon: "📈" },
   ];
+
+  const chapters = ["chapter1", "chapter2", "chapter3"]; // Optional dynamisch
+
+  const handleUpload = () => {
+    if (!uploadModule || !uploadChapter || !file) {
+      alert("Bitte Modul, Kapitel und Datei angeben.");
+      return;
+    }
+    // Beispielhafte Verarbeitung:
+    console.log("Uploading:", {
+      module: uploadModule,
+      chapter: uploadChapter,
+      file,
+    });
+    alert(`PDF erfolgreich hochgeladen für ${uploadModule} - ${uploadChapter}`);
+    // Reset
+    setUploadModule("");
+    setUploadChapter("");
+    setFile(null);
+  };
 
   return (
     <div
@@ -44,7 +68,7 @@ const Modules = () => {
             <Link
               to={`/chapters/${key}`}
               onClick={() => {
-                setSelectedModule(key); // Nutze den internen Key
+                setSelectedModule(key);
                 setSelectedChapter("");
               }}
               className="btn btn-success btn-lg shadow w-100 text-start d-flex align-items-center gap-3"
@@ -54,6 +78,56 @@ const Modules = () => {
             </Link>
           </motion.div>
         ))}
+
+        {/* Upload-Bereich */}
+        <div className="card mt-5 p-4 w-100" style={{ maxWidth: "600px" }}>
+          <h5 className="mb-3">{t("modules.uploadTitle") || "📤 PDF hochladen"}</h5>
+          <div className="mb-3">
+            <label className="form-label">Modul</label>
+            <select
+              className="form-select"
+              value={uploadModule}
+              onChange={(e) => setUploadModule(e.target.value)}
+            >
+              <option value="">Modul wählen</option>
+              {modules.map(({ key }) => (
+                <option key={key} value={key}>
+                  {t(`modules.${key}`)}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Kapitel</label>
+            <select
+              className="form-select"
+              value={uploadChapter}
+              onChange={(e) => setUploadChapter(e.target.value)}
+            >
+              <option value="">Kapitel wählen</option>
+              {chapters.map((chapter) => (
+                <option key={chapter} value={chapter}>
+                  {t(`chapters.${chapter}`) || chapter}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">PDF auswählen</label>
+            <input
+              type="file"
+              className="form-control"
+              accept="application/pdf"
+              onChange={(e) => setFile(e.target.files?.[0] || null)}
+            />
+          </div>
+
+          <button className="btn btn-primary w-100" onClick={handleUpload}>
+            Hochladen
+          </button>
+        </div>
       </div>
     </div>
   );

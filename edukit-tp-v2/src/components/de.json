@@ -31,14 +31,15 @@
     "imageAlt": "Startseiten-Illustration"
   },
   "modules": {
-    "select": "Wähle ein Modul aus",
-    "production": "Produktion und Logistik",
-    "finance": "Finanzierung und Rechnungswesen",
-    "management": "Management und Marketing",
-    "planning": "Integrierte Produktionsplanung",
-    "economics2": "Volkswirtschaftslehre 2",
-    "economics1": "Volkswirtschaftslehre 1"
-  },
+  "select": "Wähle ein Modul aus",
+  "production": "Produktion und Logistik",
+  "finance": "Finanzierung und Rechnungswesen",
+  "management": "Management und Marketing",
+  "planning": "Integrierte Produktionsplanung",
+  "economics2": "Volkswirtschaftslehre 2",
+  "economics1": "Volkswirtschaftslehre 1",
+  "uploadTitle": "📤 PDF hochladen"
+},
   "chapters": {
     "selectSubchapter": "Wähle ein Kapitel",
     "chapter": "Kapitel",

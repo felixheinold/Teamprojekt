@@ -39,14 +39,15 @@
     "welcome": "Welcome to"
   },
   "modules": {
-    "economics1": "Economics I",
-    "economics2": "Economics II",
-    "finance": "Finance and Accounting",
-    "management": "Management and Marketing",
-    "planning": "Integrated Production Planning",
-    "production": "Production and Logistics",
-    "select": "Select a module"
-  },
+  "economics1": "Economics I",
+  "economics2": "Economics II",
+  "finance": "Finance and Accounting",
+  "management": "Management and Marketing",
+  "planning": "Integrated Production Planning",
+  "production": "Production and Logistics",
+  "select": "Select a module",
+  "uploadTitle": "📤 Upload PDF"
+},
   "chapters": {
     "allChapters": "All chapters",
     "chapter": "Chapter",
