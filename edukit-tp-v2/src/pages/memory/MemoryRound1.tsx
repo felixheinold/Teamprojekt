@@ -84,7 +84,6 @@ const MemoryRound1 = () => {
     pairs = null,
   } = location.state || {};
 
-  // 👇 entweder übergebene Paare oder neu gezogene verwenden
   const [selectedPairs] = useState(() =>
     pairs && Array.isArray(pairs)
       ? pairs
@@ -98,6 +97,7 @@ const MemoryRound1 = () => {
   }>({});
   const [usedTerms, setUsedTerms] = useState<Set<string>>(new Set());
   const [draggedTerm, setDraggedTerm] = useState<string | null>(null);
+  const [selectedTerm, setSelectedTerm] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -108,26 +108,37 @@ const MemoryRound1 = () => {
     setAssignments(startAssignments);
   }, [selectedPairs]);
 
-  const handleDrop = (def: string) => {
-    if (!draggedTerm || submitted) return;
+  const isTouchDevice = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  };
 
-    if (usedTerms.has(draggedTerm)) return;
+  const handleTermClick = (term: string, isUsed: boolean) => {
+    if (isUsed || submitted || !isTouchDevice()) return;
+    setSelectedTerm(term === selectedTerm ? null : term);
+  };
+
+  const handleDrop = (def: string) => {
+    if ((!draggedTerm && !selectedTerm) || submitted) return;
+
+    const termToAssign = isTouchDevice() ? selectedTerm : draggedTerm;
+    if (!termToAssign || usedTerms.has(termToAssign)) return;
 
     setAssignments((prev) => {
       const prevTerm = prev[def];
-      const updatedAssignments = { ...prev, [def]: draggedTerm };
+      const updatedAssignments = { ...prev, [def]: termToAssign };
 
       setUsedTerms((prevUsed) => {
         const updated = new Set(prevUsed);
         if (prevTerm) updated.delete(prevTerm);
-        updated.add(draggedTerm);
+        updated.add(termToAssign);
         return updated;
       });
 
       return updatedAssignments;
     });
 
-    setDraggedTerm(null);
+    if (isTouchDevice()) setSelectedTerm(null);
+    else setDraggedTerm(null);
   };
 
   const checkCorrect = (def: string, term: string | null) => {
@@ -172,7 +183,6 @@ const MemoryRound1 = () => {
       className="container d-flex flex-column align-items-center pt-2"
       style={{ minHeight: "100vh" }}
     >
-      {/* Abbrechen-Button */}
       <button
         className="btn btn-dark position-absolute"
         style={{ top: "80px", left: "30px", zIndex: 10 }}
@@ -181,7 +191,6 @@ const MemoryRound1 = () => {
         Abbrechen
       </button>
 
-      {/* Modul-Kästchen */}
       <div
         className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
         style={{
@@ -193,19 +202,14 @@ const MemoryRound1 = () => {
       >
         {module}
       </div>
-
-      {/* Kapitel-Kästchen */}
       <div
         className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
         style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
       >
         {chapter}
       </div>
-
-      {/* Überschrift */}
       <h1 className="fw-bold display-5 mb-4">🧠 Memory Runde 1</h1>
 
-      {/* Begriffe und Definitionen */}
       <div
         className="d-flex justify-content-between"
         style={{
@@ -215,29 +219,40 @@ const MemoryRound1 = () => {
           flexWrap: "nowrap",
         }}
       >
-        {/* Begriffe */}
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Begriffe</h5>
           {terms.map((item, i) => {
             const isUsed = usedTerms.has(item.term);
+            const isSelected = item.term === selectedTerm;
             return (
               <motion.div
                 key={i}
-                draggable={!isUsed && !submitted}
+                draggable={!isUsed && !submitted && !isTouchDevice()}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => handleTermClick(item.term, isUsed)}
                 onDragStart={() => setDraggedTerm(item.term)}
                 className="mb-3 text-center p-3 shadow-sm"
                 style={{
-                  backgroundColor: isUsed ? "#b5a4d6" : "#d3bfff",
+                  backgroundColor: isUsed
+                    ? "#b5a4d6"
+                    : isSelected
+                    ? "#e6dcf9"
+                    : "#d3bfff",
                   borderRadius: "10px",
-                  cursor: isUsed || submitted ? "not-allowed" : "grab",
+                  cursor:
+                    isUsed || submitted
+                      ? "not-allowed"
+                      : isTouchDevice()
+                      ? "pointer"
+                      : "grab",
                   opacity: isUsed ? 0.5 : 1,
                   height: "60px",
                   fontWeight: "bold",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  border: isSelected ? "2px solid #7f56d9" : "none",
                 }}
               >
                 {item.term}
@@ -246,7 +261,6 @@ const MemoryRound1 = () => {
           })}
         </div>
 
-        {/* Definitionen */}
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Definitionen</h5>
           {definitions.map((item, i) => {
@@ -265,6 +279,7 @@ const MemoryRound1 = () => {
                 key={i}
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={() => handleDrop(item.definition)}
+                onTouchEnd={() => handleDrop(item.definition)}
                 className="mb-3 d-flex align-items-center justify-content-between p-3"
                 style={{
                   backgroundColor: bgColor,
@@ -272,6 +287,7 @@ const MemoryRound1 = () => {
                   height: "60px",
                   fontWeight: "500",
                   position: "relative",
+                  cursor: "pointer",
                 }}
               >
                 <span style={{ flex: 1 }}>{item.definition}</span>
@@ -283,7 +299,10 @@ const MemoryRound1 = () => {
                       fontSize: "1rem",
                       cursor: "pointer",
                     }}
-                    onClick={() => handleResetTerm(item.definition)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleResetTerm(item.definition);
+                    }}
                   >
                     {assignedTerm}
                   </motion.span>
@@ -294,7 +313,6 @@ const MemoryRound1 = () => {
         </div>
       </div>
 
-      {/* Button */}
       <motion.button
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
