@@ -1,10 +1,13 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const MemoryStart = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+
   const { module, chapter, subject, questionCount, timeLimit } =
     location.state || {};
 
@@ -13,13 +16,31 @@ const MemoryStart = () => {
       className="container d-flex flex-column align-items-center pt-4"
       style={{ minHeight: "100vh" }}
     >
-      <button
-        className="btn btn-dark position-absolute"
+      {/* Abbrechen-Button mit Bestätigung */}
+      <div
+        className="position-absolute"
         style={{ top: "80px", left: "30px", zIndex: 10 }}
-        onClick={() => navigate(-1)}
       >
-        Abbrechen
-      </button>
+        {!showCancelConfirm ? (
+          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+            Abbrechen
+          </button>
+        ) : (
+          <div className="d-flex flex-column gap-2">
+            <div className="text-white bg-dark rounded px-3 py-2">
+              Möchtest du wirklich abbrechen?
+            </div>
+            <div className="d-flex gap-2">
+              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+                Nein
+              </button>
+              <button className="btn btn-danger btn-sm" onClick={() => navigate(-1)}>
+                Ja, zurück
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
 
       <h1 className="text-center fw-bold display-5 mb-2">Memory</h1>
 

@@ -47,7 +47,7 @@ const Home = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <img
-            src="/images/DinoKIT.png"
+            src="/images/DinoKIT1.png"
             alt={t("home.imageAlt")}
             className="img-fluid"
             style={{ maxHeight: "350px" }}

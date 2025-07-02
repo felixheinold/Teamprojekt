@@ -26,31 +26,22 @@ const Modules = () => {
     { key: "economics1", icon: "📈" },
   ];
 
-  const chapters = ["chapter1", "chapter2", "chapter3"]; // Optional dynamisch
+  const chapters = ["chapter1", "chapter2", "chapter3"];
 
   const handleUpload = () => {
     if (!uploadModule || !uploadChapter || !file) {
       alert("Bitte Modul, Kapitel und Datei angeben.");
       return;
     }
-    // Beispielhafte Verarbeitung:
-    console.log("Uploading:", {
-      module: uploadModule,
-      chapter: uploadChapter,
-      file,
-    });
+    console.log("Uploading:", { module: uploadModule, chapter: uploadChapter, file });
     alert(`PDF erfolgreich hochgeladen für ${uploadModule} - ${uploadChapter}`);
-    // Reset
     setUploadModule("");
     setUploadChapter("");
     setFile(null);
   };
 
   return (
-    <div
-      className="container py-4 d-flex flex-column align-items-center"
-      style={{ minHeight: "100vh" }}
-    >
+    <div className="container py-4 d-flex flex-column align-items-center" style={{ minHeight: "100vh" }}>
       <h1 className="text-center fw-bold display-5 mb-4">
         📚 {t("modules.select")}
       </h1>
@@ -78,6 +69,11 @@ const Modules = () => {
             </Link>
           </motion.div>
         ))}
+
+        {/* ✅ Hinweis/Disclaimer */}
+        <div className="text-muted text-center mt-3" style={{ maxWidth: "600px", fontSize: "0.9rem" }}>
+          ⚠️ {t("modules.disclaimer") || "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."}
+        </div>
 
         {/* Upload-Bereich */}
         <div className="card mt-5 p-4 w-100" style={{ maxWidth: "600px" }}>

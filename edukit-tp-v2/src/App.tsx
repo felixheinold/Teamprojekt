@@ -13,8 +13,9 @@ import Chapters from "./pages/dashboard/Chapters";
 import Minigames from "./pages/dashboard/Minigames";
 import User from "./pages/dashboard/User";
 import Settings from "./pages/dashboard/Settings";
-import Stats from "./pages/dashboard/Stats";          
+import Stats from "./pages/dashboard/Stats";
 import Leaderboard from "./pages/dashboard/Leaderboard";
+import Guidelines from "./pages/dashboard/Guidelines";
 
 // Quiz
 import QuizStart from "./pages/quiz/QuizStart";
@@ -33,7 +34,7 @@ import GapFillGame from "./pages/gapfill/GapFillGame";
 import GapFillStart from "./pages/gapfill/GapFillStart";
 import GapFillResult from "./pages/gapfill/GapFillResult";
 
-// Fehlerseite
+// Weitere Seiten
 import NotFound from "./pages/common/NotFound";
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/guidelines" element={<Guidelines />} /> {/* ✅ NEU */}
 
         {/* Quiz */}
         <Route path="/quiz" element={<QuizStart />} />
@@ -67,7 +69,7 @@ function App() {
         <Route path="/memoryround1result" element={<MemoryRound1Result />} />
         <Route path="/memoryround2result" element={<MemoryRound2Result />} />
 
-        {/* Gapfill */}
+        {/* Lückentext */}
         <Route path="/gapfill" element={<GapFillStart />} />
         <Route path="/gapfillgame" element={<GapFillGame />} />
         <Route path="/gapfillresult" element={<GapFillResult />} />

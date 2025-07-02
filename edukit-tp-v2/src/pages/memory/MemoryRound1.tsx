@@ -3,72 +3,21 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const initialPairs = [
-  {
-    term: "Liquidität",
-    definition: "Fähigkeit, Zahlungsverpflichtungen fristgerecht nachzukommen.",
-  },
-  {
-    term: "Investition",
-    definition:
-      "Verwendung finanzieller Mittel zur Beschaffung von Vermögensgegenständen.",
-  },
-  {
-    term: "Abschreibung",
-    definition: "Wertminderung von Anlagegütern durch Nutzung oder Zeitablauf.",
-  },
-  {
-    term: "Bilanz",
-    definition: "Gegenüberstellung von Aktiva und Passiva zu einem Stichtag.",
-  },
-  {
-    term: "Eigenkapital",
-    definition:
-      "Finanzmittel, die dem Unternehmen von den Eigentümern zur Verfügung gestellt werden.",
-  },
-  {
-    term: "Fremdkapital",
-    definition:
-      "Kapital, das von Dritten (z. B. Banken) zur Verfügung gestellt wird.",
-  },
-  {
-    term: "Rendite",
-    definition:
-      "Ertrag einer Kapitalanlage im Verhältnis zum eingesetzten Kapital.",
-  },
-  {
-    term: "Liquiditätsgrad",
-    definition: "Kennzahl zur Beurteilung der kurzfristigen Zahlungsfähigkeit.",
-  },
-  {
-    term: "Break-even-Point",
-    definition: "Punkt, an dem Erlöse und Kosten gleich hoch sind.",
-  },
-  {
-    term: "Kalkulation",
-    definition:
-      "Ermittlung der Kosten und Preise von Produkten oder Leistungen.",
-  },
-  {
-    term: "Skonto",
-    definition: "Preisnachlass bei Zahlung innerhalb einer bestimmten Frist.",
-  },
-  {
-    term: "Deckungsbeitrag",
-    definition: "Differenz zwischen Erlös und variablen Kosten.",
-  },
-  {
-    term: "Fixkosten",
-    definition: "Kosten, die unabhängig von der Produktionsmenge anfallen.",
-  },
-  {
-    term: "Variable Kosten",
-    definition: "Kosten, die sich mit der Produktionsmenge ändern.",
-  },
-  {
-    term: "GuV",
-    definition:
-      "Gegenüberstellung von Aufwendungen und Erträgen in einer Abrechnungsperiode.",
-  },
+  { term: "Liquidität", definition: "Fähigkeit, Zahlungsverpflichtungen fristgerecht nachzukommen." },
+  { term: "Investition", definition: "Verwendung finanzieller Mittel zur Beschaffung von Vermögensgegenständen." },
+  { term: "Abschreibung", definition: "Wertminderung von Anlagegütern durch Nutzung oder Zeitablauf." },
+  { term: "Bilanz", definition: "Gegenüberstellung von Aktiva und Passiva zu einem Stichtag." },
+  { term: "Eigenkapital", definition: "Finanzmittel, die dem Unternehmen von den Eigentümern zur Verfügung gestellt werden." },
+  { term: "Fremdkapital", definition: "Kapital, das von Dritten (z. B. Banken) zur Verfügung gestellt wird." },
+  { term: "Rendite", definition: "Ertrag einer Kapitalanlage im Verhältnis zum eingesetzten Kapital." },
+  { term: "Liquiditätsgrad", definition: "Kennzahl zur Beurteilung der kurzfristigen Zahlungsfähigkeit." },
+  { term: "Break-even-Point", definition: "Punkt, an dem Erlöse und Kosten gleich hoch sind." },
+  { term: "Kalkulation", definition: "Ermittlung der Kosten und Preise von Produkten oder Leistungen." },
+  { term: "Skonto", definition: "Preisnachlass bei Zahlung innerhalb einer bestimmten Frist." },
+  { term: "Deckungsbeitrag", definition: "Differenz zwischen Erlös und variablen Kosten." },
+  { term: "Fixkosten", definition: "Kosten, die unabhängig von der Produktionsmenge anfallen." },
+  { term: "Variable Kosten", definition: "Kosten, die sich mit der Produktionsmenge ändern." },
+  { term: "GuV", definition: "Gegenüberstellung von Aufwendungen und Erträgen in einer Abrechnungsperiode." },
 ];
 
 const shuffleArray = (arr: any[]) => [...arr].sort(() => Math.random() - 0.5);
@@ -76,6 +25,8 @@ const shuffleArray = (arr: any[]) => [...arr].sort(() => Math.random() - 0.5);
 const MemoryRound1 = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+
   const {
     module = "",
     chapter = "",
@@ -84,7 +35,6 @@ const MemoryRound1 = () => {
     pairs = null,
   } = location.state || {};
 
-  // 👇 entweder übergebene Paare oder neu gezogene verwenden
   const [selectedPairs] = useState(() =>
     pairs && Array.isArray(pairs)
       ? pairs
@@ -93,9 +43,7 @@ const MemoryRound1 = () => {
 
   const [terms] = useState(() => shuffleArray(selectedPairs));
   const [definitions] = useState(() => shuffleArray(selectedPairs));
-  const [assignments, setAssignments] = useState<{
-    [key: string]: string | null;
-  }>({});
+  const [assignments, setAssignments] = useState<{ [key: string]: string | null }>({});
   const [usedTerms, setUsedTerms] = useState<Set<string>>(new Set());
   const [draggedTerm, setDraggedTerm] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
@@ -110,7 +58,6 @@ const MemoryRound1 = () => {
 
   const handleDrop = (def: string) => {
     if (!draggedTerm || submitted) return;
-
     if (usedTerms.has(draggedTerm)) return;
 
     setAssignments((prev) => {
@@ -168,53 +115,42 @@ const MemoryRound1 = () => {
   };
 
   return (
-    <div
-      className="container d-flex flex-column align-items-center pt-2"
-      style={{ minHeight: "100vh" }}
-    >
-      {/* Abbrechen-Button */}
-      <button
-        className="btn btn-dark position-absolute"
-        style={{ top: "80px", left: "30px", zIndex: 10 }}
-        onClick={() => navigate(-2)}
-      >
-        Abbrechen
-      </button>
-
-      {/* Modul-Kästchen */}
-      <div
-        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-        style={{
-          backgroundColor: "#228b57",
-          maxWidth: "600px",
-          width: "100%",
-          marginTop: "-8px",
-        }}
-      >
-        {module}
+    <div className="container d-flex flex-column align-items-center pt-2" style={{ minHeight: "100vh" }}>
+      {/* Abbrechen mit Bestätigungsdialog */}
+      <div className="position-absolute" style={{ top: "80px", left: "30px", zIndex: 10 }}>
+        {!showCancelConfirm ? (
+          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+            Abbrechen
+          </button>
+        ) : (
+          <div className="d-flex flex-column gap-2">
+            <div className="text-white bg-dark rounded px-3 py-2">Möchtest du wirklich abbrechen?</div>
+            <div className="d-flex gap-2">
+              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+                Nein
+              </button>
+              <button className="btn btn-danger btn-sm" onClick={() => navigate(-2)}>
+                Ja, zurück
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Kapitel-Kästchen */}
-      <div
-        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
-      >
+      {/* Modul- & Kapitelanzeige */}
+      <div className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
+           style={{ backgroundColor: "#228b57", maxWidth: "600px", width: "100%", marginTop: "-8px" }}>
+        {module}
+      </div>
+      <div className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
+           style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}>
         {chapter}
       </div>
 
-      {/* Überschrift */}
       <h1 className="fw-bold display-5 mb-4">🧠 Memory Runde 1</h1>
 
-      {/* Begriffe und Definitionen */}
-      <div
-        className="d-flex justify-content-between"
-        style={{
-          width: "100%",
-          maxWidth: "1000px",
-          gap: "20px",
-          flexWrap: "nowrap",
-        }}
-      >
+      {/* Memory Spielfeld */}
+      <div className="d-flex justify-content-between" style={{ width: "100%", maxWidth: "1000px", gap: "20px", flexWrap: "nowrap" }}>
         {/* Begriffe */}
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Begriffe</h5>
@@ -251,8 +187,7 @@ const MemoryRound1 = () => {
           <h5 className="text-center fw-bold mb-3">Definitionen</h5>
           {definitions.map((item, i) => {
             const assignedTerm = assignments[item.definition];
-            const isCorrect =
-              submitted && checkCorrect(item.definition, assignedTerm);
+            const isCorrect = submitted && checkCorrect(item.definition, assignedTerm);
             const isIncorrect = submitted && assignedTerm && !isCorrect;
             const bgColor = isCorrect
               ? "#198754"
@@ -294,7 +229,7 @@ const MemoryRound1 = () => {
         </div>
       </div>
 
-      {/* Button */}
+      {/* Submit Button */}
       <motion.button
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
