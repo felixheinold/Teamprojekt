@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const sampleQuestions = [
   {
@@ -78,12 +79,20 @@ const QuizGame = () => {
   const isLastQuestion = currentIndex + 1 === questionCount;
 
   return (
-    <div className="container d-flex flex-column align-items-center pt-2" style={{ minHeight: "100vh" }}>
-      
+    <div
+      className="container d-flex flex-column align-items-center pt-2"
+      style={{ minHeight: "100vh" }}
+    >
       {/* Abbrechen mit Bestätigung */}
-      <div className="position-absolute" style={{ top: "80px", left: "30px", zIndex: 10 }}>
+      <div
+        className="position-absolute"
+        style={{ top: "80px", left: "30px", zIndex: 10 }}
+      >
         {!showCancelConfirm ? (
-          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
             Abbrechen
           </button>
         ) : (
@@ -92,10 +101,16 @@ const QuizGame = () => {
               Möchtest du wirklich abbrechen?
             </div>
             <div className="d-flex gap-2">
-              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() => setShowCancelConfirm(false)}
+              >
                 Nein
               </button>
-              <button className="btn btn-danger btn-sm" onClick={() => navigate(-2)}>
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => navigate(-2)}
+              >
                 Ja, zurück
               </button>
             </div>
@@ -104,38 +119,57 @@ const QuizGame = () => {
       </div>
 
       {/* Modul & Kapitel */}
-      <div className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-           style={{ backgroundColor: "#228b57", maxWidth: "600px", width: "100%", marginTop: "-8px" }}>
+      <div
+        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
+        style={{
+          backgroundColor: "#228b57",
+          maxWidth: "600px",
+          width: "100%",
+          marginTop: "-8px",
+        }}
+      >
         {module}
       </div>
 
-      <div className="mb-5 px-4 py-2 rounded text-dark fw-semibold text-center"
-           style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}>
+      <div
+        className="mb-5 px-4 py-2 rounded text-dark fw-semibold text-center"
+        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
+      >
         {chapter}
       </div>
 
       {/* Fortschritt & Timer */}
-      <div className="d-flex justify-content-between mb-3" style={{ maxWidth: "600px", width: "100%" }}>
-        <div className="fw-semibold">Frage {currentIndex + 1} / {questionCount}</div>
+      <div
+        className="d-flex justify-content-between mb-3"
+        style={{ maxWidth: "600px", width: "100%" }}
+      >
+        <div className="fw-semibold">
+          Frage {currentIndex + 1} / {questionCount}
+        </div>
         <div className="fw-semibold">⏳ {timeLeft}s</div>
       </div>
 
       {/* Frage */}
-      <div className="mb-4 text-center fw-bold d-flex align-items-center justify-content-center"
-           style={{
-             backgroundColor: "#a7e6ff",
-             borderRadius: "12px",
-             width: "100%",
-             maxWidth: "600px",
-             minHeight: "100px",
-             fontSize: "1.25rem",
-             padding: "1rem",
-           }}>
+      <div
+        className="mb-4 text-center fw-bold d-flex align-items-center justify-content-center"
+        style={{
+          backgroundColor: "#a7e6ff",
+          borderRadius: "12px",
+          width: "100%",
+          maxWidth: "600px",
+          minHeight: "100px",
+          fontSize: "1.25rem",
+          padding: "1rem",
+        }}
+      >
         {currentQuestion.question}
       </div>
 
       {/* Optionen */}
-      <div className="d-flex flex-wrap justify-content-between gap-3 mb-4" style={{ maxWidth: "600px", width: "100%" }}>
+      <div
+        className="d-flex flex-wrap justify-content-between gap-3 mb-4"
+        style={{ maxWidth: "600px", width: "100%" }}
+      >
         {currentQuestion.options.map((opt, i) => {
           let bg = "#e0e0e0";
           if (showFeedback) {

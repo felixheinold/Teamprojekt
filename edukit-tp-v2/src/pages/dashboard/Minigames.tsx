@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import "./Minigames.css";
 
 const Minigames = () => {
   const { selectedModule, selectedChapter } = useAppFlow();
@@ -71,29 +72,13 @@ const Minigames = () => {
   const isMemory = selectedGame?.route === "/memory";
 
   return (
-    <div className="container py-4 d-flex flex-column align-items-center">
-      <div className="w-100 d-flex justify-content-center mb-3">
-        <div
-          className="btn btn-success btn-lg rounded-pill text-center"
-          style={{ maxWidth: "600px", width: "100%", marginTop: "12px" }}
-        >
-          {selectedModule}
-        </div>
+    <div className="minigames-wrapper container py-4 d-flex flex-column align-items-center">
+      <div className="modules-label btn btn-success btn-lg rounded-pill text-center d-flex justify-content-center align-items-center gap-2">
+        {selectedModule}
       </div>
 
-      <div className="w-100 d-flex justify-content-center mb-4">
-        <div
-          className="btn btn-lg text-center"
-          style={{
-            maxWidth: "600px",
-            width: "100%",
-            backgroundColor: "#78ba84",
-            fontWeight: "500",
-            border: "none",
-          }}
-        >
-          {secondLine}
-        </div>
+      <div className="chapter-label btn btn-lg text-center mt-3">
+        {secondLine}
       </div>
 
       <h1 className="fw-bold text-center display-5 mb-4">
@@ -108,60 +93,19 @@ const Minigames = () => {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
             onClick={() => handleGameClick(game)}
-            className="text-center rounded shadow"
-            style={{
-              backgroundColor: game.color,
-              width: "220px",
-              height: "200px",
-              padding: "1rem",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              cursor: "pointer",
-            }}
+            className="game-card text-center rounded shadow"
+            style={{ backgroundColor: game.color }}
           >
-            <img
-              src={game.icon}
-              alt={game.name}
-              style={{ width: "120px", height: "120px", marginBottom: "1rem" }}
-            />
-            <div className="fw-semibold fs-5">{game.name}</div>
+            <img src={game.icon} alt={game.name} className="game-icon" />
+            <div className="fw-semibold game-card-title">{game.name}</div>
           </motion.div>
         ))}
       </div>
 
       {showModal && selectedGame && (
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            backgroundColor: "rgba(0,0,0,0.4)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 9999,
-          }}
-        >
-          <div
-            className="d-flex rounded shadow-lg"
-            style={{
-              backgroundColor: "#fff",
-              minWidth: "380px",
-              overflow: "hidden",
-              boxShadow: "0 8px 20px rgba(0,0,0,0.3)",
-            }}
-          >
-            <div
-              style={{
-                background: "linear-gradient(180deg, #4a8f5c, #78ba84)",
-                width: "12px",
-              }}
-            ></div>
-
+        <div className="modal-overlay">
+          <div className="modal-content d-flex rounded shadow-lg">
+            <div className="modal-gradient"></div>
             <div className="p-4 flex-grow-1">
               <h5 className="fw-bold text-success mb-3 text-center">
                 {t("minigames.modal.title")}

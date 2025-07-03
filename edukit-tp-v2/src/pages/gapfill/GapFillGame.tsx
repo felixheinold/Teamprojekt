@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type Question = {
   sentence: string;
@@ -13,7 +14,8 @@ const exampleQuestions: Question[] = [
     answer: "Chloroplasten",
   },
   {
-    sentence: "Der pH-Wert einer Lösung wird durch die Konzentration von ___ bestimmt.",
+    sentence:
+      "Der pH-Wert einer Lösung wird durch die Konzentration von ___ bestimmt.",
     answer: "Wasserstoffionen",
   },
   {
@@ -43,7 +45,9 @@ const GapFillGame = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState("");
   const [score, setScore] = useState(0);
-  const [showFeedback, setShowFeedback] = useState<"correct" | "wrong" | null>(null);
+  const [showFeedback, setShowFeedback] = useState<"correct" | "wrong" | null>(
+    null
+  );
   const [timer, setTimer] = useState(timeLimit);
 
   useEffect(() => {
@@ -81,10 +85,13 @@ const GapFillGame = () => {
       setShowFeedback("wrong");
     }
 
-    setTimeout(() => {
-      setShowFeedback(null);
-      handleNext();
-    }, isCorrect ? 1500 : 3000);
+    setTimeout(
+      () => {
+        setShowFeedback(null);
+        handleNext();
+      },
+      isCorrect ? 1500 : 3000
+    );
   };
 
   const handleNext = () => {
@@ -112,10 +119,15 @@ const GapFillGame = () => {
   const isWrong = showFeedback === "wrong";
 
   return (
-    <div className="container d-flex flex-column align-items-center pt-2" style={{ minHeight: "100vh" }}>
-      
+    <div
+      className="container d-flex flex-column align-items-center pt-2"
+      style={{ minHeight: "100vh" }}
+    >
       {/* Abbrechen mit Bestätigung */}
-      <div className="position-absolute" style={{ top: "80px", left: "30px", zIndex: 10 }}>
+      <div
+        className="position-absolute"
+        style={{ top: "80px", left: "30px", zIndex: 10 }}
+      >
         {!showCancelConfirm ? (
           <button
             className="btn btn-dark"
@@ -147,7 +159,8 @@ const GapFillGame = () => {
       </div>
 
       {/* Anzeige: Modul */}
-      <div className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
+      <div
+        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
         style={{
           backgroundColor: "#228b57",
           maxWidth: "600px",
@@ -159,20 +172,27 @@ const GapFillGame = () => {
       </div>
 
       {/* Kapitel */}
-      <div className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
+      <div
+        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
         style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
       >
         {chapter}
       </div>
 
       {/* Fragezähler & Timer */}
-      <div className="d-flex justify-content-between mb-3 mt-4" style={{ maxWidth: "600px", width: "100%" }}>
-        <div className="fw-semibold">Frage {currentIndex + 1} / {questions.length}</div>
+      <div
+        className="d-flex justify-content-between mb-3 mt-4"
+        style={{ maxWidth: "600px", width: "100%" }}
+      >
+        <div className="fw-semibold">
+          Frage {currentIndex + 1} / {questions.length}
+        </div>
         <div className="fw-semibold">⏳ {timer}s</div>
       </div>
 
       {/* Frage */}
-      <div className="mb-4 text-center fw-bold d-flex align-items-center justify-content-center"
+      <div
+        className="mb-4 text-center fw-bold d-flex align-items-center justify-content-center"
         style={{
           backgroundColor: "#a4c4f4",
           borderRadius: "12px",
@@ -196,16 +216,28 @@ const GapFillGame = () => {
         style={{
           maxWidth: "600px",
           fontSize: "1.2rem",
-          border: `3px solid ${isCorrect ? "#198754" : isWrong ? "#dc3545" : "#ced4da"}`,
-          backgroundColor: isCorrect ? "#198754" : isWrong ? "#dc3545" : "white",
+          border: `3px solid ${
+            isCorrect ? "#198754" : isWrong ? "#dc3545" : "#ced4da"
+          }`,
+          backgroundColor: isCorrect
+            ? "#198754"
+            : isWrong
+            ? "#dc3545"
+            : "white",
         }}
         placeholder="Begriff eingeben..."
         disabled={showFeedback !== null}
       />
 
       {/* Feedback */}
-      {isCorrect && <div className="text-success fw-bold mb-2">✅ Richtig!</div>}
-      {isWrong && <div className="text-danger fw-bold mb-2">❌ Falsch! Richtige Antwort: <u>{current.answer}</u></div>}
+      {isCorrect && (
+        <div className="text-success fw-bold mb-2">✅ Richtig!</div>
+      )}
+      {isWrong && (
+        <div className="text-danger fw-bold mb-2">
+          ❌ Falsch! Richtige Antwort: <u>{current.answer}</u>
+        </div>
+      )}
 
       {/* Button */}
       <motion.button

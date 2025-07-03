@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type Card = {
   id: number;
@@ -35,8 +36,18 @@ const MemoryRound2 = () => {
   useEffect(() => {
     const allCards: Card[] = [];
     pairs.forEach((p: any, index: number) => {
-      allCards.push({ id: index * 2, type: "term", content: p.term, pairId: index });
-      allCards.push({ id: index * 2 + 1, type: "definition", content: p.definition, pairId: index });
+      allCards.push({
+        id: index * 2,
+        type: "term",
+        content: p.term,
+        pairId: index,
+      });
+      allCards.push({
+        id: index * 2 + 1,
+        type: "definition",
+        content: p.definition,
+        pairId: index,
+      });
     });
     setCards(shuffleArray(allCards));
   }, [pairs]);
@@ -56,7 +67,8 @@ const MemoryRound2 = () => {
   }, [disabled, flipped, timeLimit, cards.length, matched.length]);
 
   const handleCardClick = (card: Card) => {
-    if (disabled || flipped.includes(card.id) || matched.includes(card.id)) return;
+    if (disabled || flipped.includes(card.id) || matched.includes(card.id))
+      return;
 
     if (flipped.length === 0) {
       setFlipped([card.id]);
@@ -95,12 +107,20 @@ const MemoryRound2 = () => {
   const allMatched = matched.length === cards.length;
 
   return (
-    <div className="container d-flex flex-column align-items-center pt-2" style={{ minHeight: "100vh" }}>
-
+    <div
+      className="container d-flex flex-column align-items-center pt-2"
+      style={{ minHeight: "100vh" }}
+    >
       {/* Abbrechen mit Bestätigungsdialog */}
-      <div className="position-absolute" style={{ top: "80px", left: "30px", zIndex: 10 }}>
+      <div
+        className="position-absolute"
+        style={{ top: "80px", left: "30px", zIndex: 10 }}
+      >
         {!showCancelConfirm ? (
-          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
             Abbrechen
           </button>
         ) : (
@@ -109,10 +129,16 @@ const MemoryRound2 = () => {
               Möchtest du wirklich abbrechen?
             </div>
             <div className="d-flex gap-2">
-              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() => setShowCancelConfirm(false)}
+              >
                 Nein
               </button>
-              <button className="btn btn-danger btn-sm" onClick={() => navigate(-4)}>
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => navigate(-4)}
+              >
                 Ja, zurück
               </button>
             </div>
@@ -121,13 +147,22 @@ const MemoryRound2 = () => {
       </div>
 
       {/* Modul & Kapitelanzeige */}
-      <div className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-           style={{ backgroundColor: "#228b57", maxWidth: "600px", width: "100%", marginTop: "-8px" }}>
+      <div
+        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
+        style={{
+          backgroundColor: "#228b57",
+          maxWidth: "600px",
+          width: "100%",
+          marginTop: "-8px",
+        }}
+      >
         {module}
       </div>
 
-      <div className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-           style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}>
+      <div
+        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
+        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
+      >
         {chapter}
       </div>
 
@@ -135,14 +170,22 @@ const MemoryRound2 = () => {
       <h1 className="fw-bold display-5 mb-3">🧠 Memory Runde 2</h1>
 
       {/* Statusleiste */}
-      <div className="d-flex justify-content-between mb-3" style={{ maxWidth: "600px", width: "100%" }}>
-        <div className="fw-semibold">{matched.length / 2} / {cards.length / 2} Paare</div>
+      <div
+        className="d-flex justify-content-between mb-3"
+        style={{ maxWidth: "600px", width: "100%" }}
+      >
+        <div className="fw-semibold">
+          {matched.length / 2} / {cards.length / 2} Paare
+        </div>
         <div className="fw-semibold">Züge: {turn - 1}</div>
         <div className="fw-semibold">⏳ {timer}s</div>
       </div>
 
       {/* Spielfeld */}
-      <div className="d-flex flex-wrap justify-content-center mb-4" style={{ maxWidth: "1000px", gap: "12px" }}>
+      <div
+        className="d-flex flex-wrap justify-content-center mb-4"
+        style={{ maxWidth: "1000px", gap: "12px" }}
+      >
         {cards.map((card) => {
           const isFlipped = flipped.includes(card.id);
           const isMatched = matched.includes(card.id);
@@ -182,10 +225,16 @@ const MemoryRound2 = () => {
 
       {/* Legende */}
       <div className="d-flex gap-3 mt-2">
-        <div className="px-4 py-2 rounded-pill text-dark fw-semibold" style={{ backgroundColor: "#d3bfff" }}>
+        <div
+          className="px-4 py-2 rounded-pill text-dark fw-semibold"
+          style={{ backgroundColor: "#d3bfff" }}
+        >
           = Begriff
         </div>
-        <div className="px-4 py-2 rounded-pill text-dark fw-semibold" style={{ backgroundColor: "#fff59d" }}>
+        <div
+          className="px-4 py-2 rounded-pill text-dark fw-semibold"
+          style={{ backgroundColor: "#fff59d" }}
+        >
           = Definition
         </div>
       </div>

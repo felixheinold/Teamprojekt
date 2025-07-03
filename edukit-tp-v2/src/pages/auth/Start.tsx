@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./Start.css"; // Importiere die neue CSS-Datei
+import { useTranslation } from "react-i18next";
 
 const Start = () => {
   const navigate = useNavigate();
@@ -9,13 +10,13 @@ const Start = () => {
       {/* Textseite */}
       <div className="text-center text-lg-start mb-4 mb-lg-0 flex-grow-1 start-content">
         <h1 className="start-title fw-bold mb-4">
-          Study Smarter with <span className="text-success">EduKIT!</span>
+          Schlauer lernen mit <span className="text-success">EduKIT!</span>
         </h1>
         <p className="start-subtitle text-muted mb-4">
-          Tough exam coming up?
+          Steht bei dir eine harte Klausur an?
           <br />
-          We’ve got your back – with quick and fun mini-games to boost your exam
-          prep!
+          Wir helfen dir – mit einfachen, interaktiven Lernspielen, die Spaß
+          machen!
         </p>
 
         <div
@@ -26,13 +27,13 @@ const Start = () => {
             className="btn btn-dark start-button"
             onClick={() => navigate("/login")}
           >
-            Login
+            Log In
           </button>
           <button
             className="btn btn-dark start-button"
             onClick={() => navigate("/register")}
           >
-            Register
+            Registrieren
           </button>
         </div>
       </div>

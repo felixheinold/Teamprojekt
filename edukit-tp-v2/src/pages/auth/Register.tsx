@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import AvatarPicker from "../../components/AvatarPicker";
+import { useTranslation } from "react-i18next";
+import "./Register.css";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -73,43 +75,59 @@ const Register = () => {
 
   return (
     <AuthLayout>
-      <h2 className="fw-bold">Create Account</h2>
-      <p className="mb-3"><em>Choose your icon:</em></p>
+      <div className="d-flex register-wrapper align-items-start">
+        <div className="register-gradient-bar"></div>
 
-      <AvatarPicker
-        value={form.avatar}
-        onChange={(avatar) => setForm({ ...form, avatar })}
-      />
+        <div className="register-content">
+          <button
+            className="btn btn-dark back-button align-self-start"
+            onClick={() => navigate("/")}
+          >
+            ← Zurück
+          </button>
+          <h2 className="fw-bold">Erstelle einen Account</h2>
+          <p className="mb-3">
+            <em>Wähle deinen Avatar:</em>
+          </p>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          name="username"
-          type="text"
-          className="form-control mb-2"
-          placeholder="Username"
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="email"
-          type="email"
-          className="form-control mb-2"
-          placeholder="u....@student.kit.edu"
-          onChange={handleChange}
-          required
-          pattern=".+@student.kit.edu"
-          title="Nur KIT-E-Mail-Adressen erlaubt"
-        />
-        <input
-          name="password"
-          type="password"
-          className="form-control mb-3"
-          placeholder="Passwort"
-          onChange={handleChange}
-          required
-        />
-        <button type="submit" className="btn btn-dark w-100">Register</button>
-      </form>
+          <AvatarPicker
+            value={form.avatar}
+            onChange={(avatar) => setForm({ ...form, avatar })}
+          />
+
+          <form onSubmit={handleSubmit}>
+            <input
+              name="username"
+              type="text"
+              className="form-control mb-2"
+              placeholder="Username"
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              className="form-control mb-2"
+              placeholder="u....@student.kit.edu"
+              onChange={handleChange}
+              required
+              pattern=".+@student.kit.edu"
+              title="Nur KIT-E-Mail-Adressen erlaubt"
+            />
+            <input
+              name="password"
+              type="password"
+              className="form-control mb-3"
+              placeholder="Passwort"
+              onChange={handleChange}
+              required
+            />
+            <button type="submit" className="btn btn-dark w-100">
+              Registrieren
+            </button>
+          </form>
+        </div>
+      </div>
     </AuthLayout>
   );
 };

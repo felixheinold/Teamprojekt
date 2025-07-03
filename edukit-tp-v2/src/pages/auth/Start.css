@@ -70,11 +70,11 @@
 /* Tablet (ab 577px) */
 @media (min-width: 577px) and (max-width: 991px) {
   .start-title {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .start-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 
   .start-button {
@@ -82,7 +82,7 @@
     padding: 0.9rem 1.3rem;
   }
   .text-end img {
-    max-width: 80%;
+    width: 80%;
     height: auto;
   }
  
@@ -115,11 +115,11 @@
   }
 
   .start-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .start-button {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 1.2rem 1.8rem;
   }
 

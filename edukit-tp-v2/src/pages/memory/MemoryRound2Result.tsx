@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const MemoryRound2Result = () => {
   const navigate = useNavigate();
@@ -47,8 +48,10 @@ const MemoryRound2Result = () => {
   }, [score, maxPoints]);
 
   return (
-    <div className="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5" style={{ gap: "2rem" }}>
-      
+    <div
+      className="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5"
+      style={{ gap: "2rem" }}
+    >
       {/* Bild links */}
       <div className="text-center">
         <img
@@ -68,7 +71,8 @@ const MemoryRound2Result = () => {
           🎉 Super, du hast es geschafft!
         </h1>
         <p className="fs-4 text-center text-md-start mb-2">
-          Du hast <strong>{pairs.length}</strong> Paare in <strong>{turns}</strong> Zügen richtig zugeordnet.
+          Du hast <strong>{pairs.length}</strong> Paare in{" "}
+          <strong>{turns}</strong> Zügen richtig zugeordnet.
         </p>
         <p className="fs-4 text-center text-md-start mb-4">
           Dafür erhältst du <strong>{score}</strong> Punkte.
@@ -86,7 +90,13 @@ const MemoryRound2Result = () => {
             }}
             onClick={() =>
               navigate("/memoryround1", {
-                state: { module, chapter, questionCount: pairs.length, timeLimit, pairs },
+                state: {
+                  module,
+                  chapter,
+                  questionCount: pairs.length,
+                  timeLimit,
+                  pairs,
+                },
               })
             }
           >
@@ -103,7 +113,11 @@ const MemoryRound2Result = () => {
               borderRadius: "12px",
             }}
             onClick={() =>
-              navigate(`/minigames/${encodeURIComponent(module)}/${encodeURIComponent(chapter)}`)
+              navigate(
+                `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
+                  chapter
+                )}`
+              )
             }
           >
             🎮 Zurück zur Minigame Auswahl

@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const QuizResult = () => {
   const navigate = useNavigate();
@@ -42,8 +43,10 @@ const QuizResult = () => {
   }, [score, questionCount]);
 
   return (
-    <div className="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5" style={{ gap: "2rem" }}>
-      
+    <div
+      className="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5"
+      style={{ gap: "2rem" }}
+    >
       {/* Bild links */}
       <div className="text-center">
         <img
@@ -95,7 +98,11 @@ const QuizResult = () => {
               borderRadius: "12px",
             }}
             onClick={() =>
-              navigate(`/minigames/${encodeURIComponent(module)}/${encodeURIComponent(chapter)}`)
+              navigate(
+                `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
+                  chapter
+                )}`
+              )
             }
           >
             🎮 Zurück zur Minigame Auswahl

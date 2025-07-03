@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import "./Modules.css";
 
 const Modules = () => {
   const { setSelectedModule, setSelectedChapter } = useAppFlow();
@@ -20,7 +21,7 @@ const Modules = () => {
   const modules = [
     { key: "production", icon: "📦" },
     { key: "finance", icon: "💰" },
-    { key: "management", icon: "📊" },
+    { key: "management", icon: "📈" },
     { key: "planning", icon: "🏭" },
     { key: "economics2", icon: "📉" },
     { key: "economics1", icon: "📈" },
@@ -33,7 +34,11 @@ const Modules = () => {
       alert("Bitte Modul, Kapitel und Datei angeben.");
       return;
     }
-    console.log("Uploading:", { module: uploadModule, chapter: uploadChapter, file });
+    console.log("Uploading:", {
+      module: uploadModule,
+      chapter: uploadChapter,
+      file,
+    });
     alert(`PDF erfolgreich hochgeladen für ${uploadModule} - ${uploadChapter}`);
     setUploadModule("");
     setUploadChapter("");
@@ -41,7 +46,10 @@ const Modules = () => {
   };
 
   return (
-    <div className="container py-4 d-flex flex-column align-items-center" style={{ minHeight: "100vh" }}>
+    <div
+      className="modules-wrapper container py-4 d-flex flex-column align-items-center"
+      style={{ minHeight: "100vh" }}
+    >
       <h1 className="text-center fw-bold display-5 mb-4">
         📚 {t("modules.select")}
       </h1>
@@ -54,7 +62,6 @@ const Modules = () => {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
             className="w-100"
-            style={{ maxWidth: "600px" }}
           >
             <Link
               to={`/chapters/${key}`}
@@ -70,14 +77,18 @@ const Modules = () => {
           </motion.div>
         ))}
 
-        {/* ✅ Hinweis/Disclaimer */}
-        <div className="text-muted text-center mt-3" style={{ maxWidth: "600px", fontSize: "0.9rem" }}>
-          ⚠️ {t("modules.disclaimer") || "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."}
+        {/* Hinweis */}
+        <div className="text-muted text-center mt-3 disclaimer">
+          ⚠️{" "}
+          {t("modules.disclaimer") ||
+            "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."}
         </div>
 
         {/* Upload-Bereich */}
-        <div className="card mt-5 p-4 w-100" style={{ maxWidth: "600px" }}>
-          <h5 className="mb-3">{t("modules.uploadTitle") || "📤 PDF hochladen"}</h5>
+        <div className="card mt-5 p-4 upload-card">
+          <h5 className="mb-3">
+            {t("modules.uploadTitle") || "📄 PDF hochladen"}
+          </h5>
           <div className="mb-3">
             <label className="form-label">Modul</label>
             <select

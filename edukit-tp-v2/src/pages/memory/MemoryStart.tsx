@@ -2,6 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const MemoryStart = () => {
   const navigate = useNavigate();
@@ -22,7 +23,10 @@ const MemoryStart = () => {
         style={{ top: "80px", left: "30px", zIndex: 10 }}
       >
         {!showCancelConfirm ? (
-          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
             Abbrechen
           </button>
         ) : (
@@ -31,10 +35,16 @@ const MemoryStart = () => {
               Möchtest du wirklich abbrechen?
             </div>
             <div className="d-flex gap-2">
-              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() => setShowCancelConfirm(false)}
+              >
                 Nein
               </button>
-              <button className="btn btn-danger btn-sm" onClick={() => navigate(-1)}>
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => navigate(-1)}
+              >
                 Ja, zurück
               </button>
             </div>

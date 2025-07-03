@@ -31,7 +31,7 @@
     "imageAlt": "Startseiten-Illustration"
   },
   "modules": {
-    "select": "Wähle ein Modul aus",
+    "select": "Wähle ein Modul",
     "production": "Produktion und Logistik",
     "finance": "Finanzierung und Rechnungswesen",
     "management": "Management und Marketing",
@@ -49,7 +49,7 @@
     "allChapters": "Alle Kapitel"
   },
   "minigames": {
-    "select": "Wähle ein Mini-Game aus",
+    "select": "Wähle ein Mini-Game",
     "quiz": "Quiz",
     "memory": "Memory",
     "gapfill": "Lückentext",
