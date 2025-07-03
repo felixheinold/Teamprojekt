@@ -3,21 +3,72 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const initialPairs = [
-  { term: "Liquidität", definition: "Fähigkeit, Zahlungsverpflichtungen fristgerecht nachzukommen." },
-  { term: "Investition", definition: "Verwendung finanzieller Mittel zur Beschaffung von Vermögensgegenständen." },
-  { term: "Abschreibung", definition: "Wertminderung von Anlagegütern durch Nutzung oder Zeitablauf." },
-  { term: "Bilanz", definition: "Gegenüberstellung von Aktiva und Passiva zu einem Stichtag." },
-  { term: "Eigenkapital", definition: "Finanzmittel, die dem Unternehmen von den Eigentümern zur Verfügung gestellt werden." },
-  { term: "Fremdkapital", definition: "Kapital, das von Dritten (z. B. Banken) zur Verfügung gestellt wird." },
-  { term: "Rendite", definition: "Ertrag einer Kapitalanlage im Verhältnis zum eingesetzten Kapital." },
-  { term: "Liquiditätsgrad", definition: "Kennzahl zur Beurteilung der kurzfristigen Zahlungsfähigkeit." },
-  { term: "Break-even-Point", definition: "Punkt, an dem Erlöse und Kosten gleich hoch sind." },
-  { term: "Kalkulation", definition: "Ermittlung der Kosten und Preise von Produkten oder Leistungen." },
-  { term: "Skonto", definition: "Preisnachlass bei Zahlung innerhalb einer bestimmten Frist." },
-  { term: "Deckungsbeitrag", definition: "Differenz zwischen Erlös und variablen Kosten." },
-  { term: "Fixkosten", definition: "Kosten, die unabhängig von der Produktionsmenge anfallen." },
-  { term: "Variable Kosten", definition: "Kosten, die sich mit der Produktionsmenge ändern." },
-  { term: "GuV", definition: "Gegenüberstellung von Aufwendungen und Erträgen in einer Abrechnungsperiode." },
+  {
+    term: "Liquidität",
+    definition: "Fähigkeit, Zahlungsverpflichtungen fristgerecht nachzukommen.",
+  },
+  {
+    term: "Investition",
+    definition:
+      "Verwendung finanzieller Mittel zur Beschaffung von Vermögensgegenständen.",
+  },
+  {
+    term: "Abschreibung",
+    definition: "Wertminderung von Anlagegütern durch Nutzung oder Zeitablauf.",
+  },
+  {
+    term: "Bilanz",
+    definition: "Gegenüberstellung von Aktiva und Passiva zu einem Stichtag.",
+  },
+  {
+    term: "Eigenkapital",
+    definition:
+      "Finanzmittel, die dem Unternehmen von den Eigentümern zur Verfügung gestellt werden.",
+  },
+  {
+    term: "Fremdkapital",
+    definition:
+      "Kapital, das von Dritten (z. B. Banken) zur Verfügung gestellt wird.",
+  },
+  {
+    term: "Rendite",
+    definition:
+      "Ertrag einer Kapitalanlage im Verhältnis zum eingesetzten Kapital.",
+  },
+  {
+    term: "Liquiditätsgrad",
+    definition: "Kennzahl zur Beurteilung der kurzfristigen Zahlungsfähigkeit.",
+  },
+  {
+    term: "Break-even-Point",
+    definition: "Punkt, an dem Erlöse und Kosten gleich hoch sind.",
+  },
+  {
+    term: "Kalkulation",
+    definition:
+      "Ermittlung der Kosten und Preise von Produkten oder Leistungen.",
+  },
+  {
+    term: "Skonto",
+    definition: "Preisnachlass bei Zahlung innerhalb einer bestimmten Frist.",
+  },
+  {
+    term: "Deckungsbeitrag",
+    definition: "Differenz zwischen Erlös und variablen Kosten.",
+  },
+  {
+    term: "Fixkosten",
+    definition: "Kosten, die unabhängig von der Produktionsmenge anfallen.",
+  },
+  {
+    term: "Variable Kosten",
+    definition: "Kosten, die sich mit der Produktionsmenge ändern.",
+  },
+  {
+    term: "GuV",
+    definition:
+      "Gegenüberstellung von Aufwendungen und Erträgen in einer Abrechnungsperiode.",
+  },
 ];
 
 const shuffleArray = (arr: any[]) => [...arr].sort(() => Math.random() - 0.5);
@@ -43,9 +94,12 @@ const MemoryRound1 = () => {
 
   const [terms] = useState(() => shuffleArray(selectedPairs));
   const [definitions] = useState(() => shuffleArray(selectedPairs));
-  const [assignments, setAssignments] = useState<{ [key: string]: string | null }>({});
+  const [assignments, setAssignments] = useState<{
+    [key: string]: string | null;
+  }>({});
   const [usedTerms, setUsedTerms] = useState<Set<string>>(new Set());
   const [draggedTerm, setDraggedTerm] = useState<string | null>(null);
+  const [selectedTerm, setSelectedTerm] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -56,25 +110,37 @@ const MemoryRound1 = () => {
     setAssignments(startAssignments);
   }, [selectedPairs]);
 
+  const isTouchDevice = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  };
+
+  const handleTermClick = (term: string, isUsed: boolean) => {
+    if (isUsed || submitted || !isTouchDevice()) return;
+    setSelectedTerm(term === selectedTerm ? null : term);
+  };
+
   const handleDrop = (def: string) => {
-    if (!draggedTerm || submitted) return;
-    if (usedTerms.has(draggedTerm)) return;
+    if ((!draggedTerm && !selectedTerm) || submitted) return;
+
+    const termToAssign = isTouchDevice() ? selectedTerm : draggedTerm;
+    if (!termToAssign || usedTerms.has(termToAssign)) return;
 
     setAssignments((prev) => {
       const prevTerm = prev[def];
-      const updatedAssignments = { ...prev, [def]: draggedTerm };
+      const updatedAssignments = { ...prev, [def]: termToAssign };
 
       setUsedTerms((prevUsed) => {
         const updated = new Set(prevUsed);
         if (prevTerm) updated.delete(prevTerm);
-        updated.add(draggedTerm);
+        updated.add(termToAssign);
         return updated;
       });
 
       return updatedAssignments;
     });
 
-    setDraggedTerm(null);
+    if (isTouchDevice()) setSelectedTerm(null);
+    else setDraggedTerm(null);
   };
 
   const checkCorrect = (def: string, term: string | null) => {
@@ -115,21 +181,38 @@ const MemoryRound1 = () => {
   };
 
   return (
-    <div className="container d-flex flex-column align-items-center pt-2" style={{ minHeight: "100vh" }}>
+    <div
+      className="container d-flex flex-column align-items-center pt-2"
+      style={{ minHeight: "100vh" }}
+    >
       {/* Abbrechen mit Bestätigungsdialog */}
-      <div className="position-absolute" style={{ top: "80px", left: "30px", zIndex: 10 }}>
+      <div
+        className="position-absolute"
+        style={{ top: "80px", left: "30px", zIndex: 10 }}
+      >
         {!showCancelConfirm ? (
-          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
             Abbrechen
           </button>
         ) : (
           <div className="d-flex flex-column gap-2">
-            <div className="text-white bg-dark rounded px-3 py-2">Möchtest du wirklich abbrechen?</div>
+            <div className="text-white bg-dark rounded px-3 py-2">
+              Möchtest du wirklich abbrechen?
+            </div>
             <div className="d-flex gap-2">
-              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() => setShowCancelConfirm(false)}
+              >
                 Nein
               </button>
-              <button className="btn btn-danger btn-sm" onClick={() => navigate(-2)}>
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => navigate(-2)}
+              >
                 Ja, zurück
               </button>
             </div>
@@ -137,43 +220,68 @@ const MemoryRound1 = () => {
         )}
       </div>
 
-      {/* Modul- & Kapitelanzeige */}
-      <div className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-           style={{ backgroundColor: "#228b57", maxWidth: "600px", width: "100%", marginTop: "-8px" }}>
+      <div
+        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
+        style={{
+          backgroundColor: "#228b57",
+          maxWidth: "600px",
+          width: "100%",
+          marginTop: "-8px",
+        }}
+      >
         {module}
       </div>
-      <div className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-           style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}>
+      <div
+        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
+        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
+      >
         {chapter}
       </div>
-
       <h1 className="fw-bold display-5 mb-4">🧠 Memory Runde 1</h1>
 
-      {/* Memory Spielfeld */}
-      <div className="d-flex justify-content-between" style={{ width: "100%", maxWidth: "1000px", gap: "20px", flexWrap: "nowrap" }}>
-        {/* Begriffe */}
+      <div
+        className="d-flex justify-content-between"
+        style={{
+          width: "100%",
+          maxWidth: "1000px",
+          gap: "20px",
+          flexWrap: "nowrap",
+        }}
+      >
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Begriffe</h5>
           {terms.map((item, i) => {
             const isUsed = usedTerms.has(item.term);
+            const isSelected = item.term === selectedTerm;
             return (
               <motion.div
                 key={i}
-                draggable={!isUsed && !submitted}
+                draggable={!isUsed && !submitted && !isTouchDevice()}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => handleTermClick(item.term, isUsed)}
                 onDragStart={() => setDraggedTerm(item.term)}
                 className="mb-3 text-center p-3 shadow-sm"
                 style={{
-                  backgroundColor: isUsed ? "#b5a4d6" : "#d3bfff",
+                  backgroundColor: isUsed
+                    ? "#b5a4d6"
+                    : isSelected
+                    ? "#e6dcf9"
+                    : "#d3bfff",
                   borderRadius: "10px",
-                  cursor: isUsed || submitted ? "not-allowed" : "grab",
+                  cursor:
+                    isUsed || submitted
+                      ? "not-allowed"
+                      : isTouchDevice()
+                      ? "pointer"
+                      : "grab",
                   opacity: isUsed ? 0.5 : 1,
                   height: "60px",
                   fontWeight: "bold",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  border: isSelected ? "2px solid #7f56d9" : "none",
                 }}
               >
                 {item.term}
@@ -182,12 +290,12 @@ const MemoryRound1 = () => {
           })}
         </div>
 
-        {/* Definitionen */}
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Definitionen</h5>
           {definitions.map((item, i) => {
             const assignedTerm = assignments[item.definition];
-            const isCorrect = submitted && checkCorrect(item.definition, assignedTerm);
+            const isCorrect =
+              submitted && checkCorrect(item.definition, assignedTerm);
             const isIncorrect = submitted && assignedTerm && !isCorrect;
             const bgColor = isCorrect
               ? "#198754"
@@ -200,6 +308,7 @@ const MemoryRound1 = () => {
                 key={i}
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={() => handleDrop(item.definition)}
+                onTouchEnd={() => handleDrop(item.definition)}
                 className="mb-3 d-flex align-items-center justify-content-between p-3"
                 style={{
                   backgroundColor: bgColor,
@@ -207,6 +316,7 @@ const MemoryRound1 = () => {
                   height: "60px",
                   fontWeight: "500",
                   position: "relative",
+                  cursor: "pointer",
                 }}
               >
                 <span style={{ flex: 1 }}>{item.definition}</span>
@@ -218,7 +328,10 @@ const MemoryRound1 = () => {
                       fontSize: "1rem",
                       cursor: "pointer",
                     }}
-                    onClick={() => handleResetTerm(item.definition)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleResetTerm(item.definition);
+                    }}
                   >
                     {assignedTerm}
                   </motion.span>
@@ -229,10 +342,9 @@ const MemoryRound1 = () => {
         </div>
       </div>
 
-      {/* Submit Button */}
       <motion.button
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         onClick={submitted ? handleFinish : handleSubmit}
         className="fw-bold text-white mt-4"
         style={{
