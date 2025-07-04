@@ -11,6 +11,7 @@
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "bootstrap": "^5.3.6",
+    "firebase": "^11.10.0",
     "framer-motion": "^12.15.0",
     "i18next": "^25.2.1",
     "i18next-browser-languagedetector": "^8.2.0",
