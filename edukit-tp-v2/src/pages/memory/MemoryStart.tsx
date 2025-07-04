@@ -2,7 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+import "./MemoryStart.css";
 
 const MemoryStart = () => {
   const navigate = useNavigate();
@@ -13,15 +13,9 @@ const MemoryStart = () => {
     location.state || {};
 
   return (
-    <div
-      className="container d-flex flex-column align-items-center pt-4"
-      style={{ minHeight: "100vh" }}
-    >
+    <div className="memorystart-wrapper">
       {/* Abbrechen-Button mit Bestätigung */}
-      <div
-        className="position-absolute"
-        style={{ top: "80px", left: "30px", zIndex: 10 }}
-      >
+      <div className="cancel-button">
         {!showCancelConfirm ? (
           <button
             className="btn btn-dark"
@@ -30,21 +24,18 @@ const MemoryStart = () => {
             Abbrechen
           </button>
         ) : (
-          <div className="d-flex flex-column gap-2">
-            <div className="text-white bg-dark rounded px-3 py-2">
+          <div className="cancel-confirm-container">
+            <div className="cancel-confirm-text">
               Möchtest du wirklich abbrechen?
             </div>
-            <div className="d-flex gap-2">
+            <div className="cancel-confirm-buttons">
               <button
-                className="btn btn-secondary btn-sm"
+                className="btn btn-secondary"
                 onClick={() => setShowCancelConfirm(false)}
               >
                 Nein
               </button>
-              <button
-                className="btn btn-danger btn-sm"
-                onClick={() => navigate(-1)}
-              >
+              <button className="btn btn-danger" onClick={() => navigate(-1)}>
                 Ja, zurück
               </button>
             </div>
@@ -52,73 +43,40 @@ const MemoryStart = () => {
         )}
       </div>
 
-      <h1 className="text-center fw-bold display-5 mb-2">Memory</h1>
-
-      <div
-        className="d-flex align-items-center justify-content-between mb-2"
-        style={{ maxWidth: "600px", width: "100%" }}
-      >
-        <div
-          className="py-2 px-3 fw-bold text-center flex-grow-1"
-          style={{
-            backgroundColor: "#d3bfff",
-            borderRadius: "30px",
-            fontSize: "1.25rem",
-            color: "#000",
-          }}
-        >
-          <img
-            src="/images/memory.png"
-            alt="Memory Icon"
-            className="position-absolute"
-            style={{
-              top: "85px",
-              right: "500px",
-              height: "80px",
-              width: "80px",
-              objectFit: "contain",
-              zIndex: 10,
-            }}
-          />
-          🎥 Video Tutorial anschauen:
-        </div>
+      {/* Titel */}
+      <div className="quiz-title-container">
+        <h1 className="quiz-title">MEMORY</h1>
+        <img
+          src="/images/memory.png"
+          alt="Memory Icon"
+          className="tutorial-icon"
+        />
       </div>
 
-      <div
-        className="mb-3"
-        style={{
-          width: "100%",
-          maxWidth: "600px",
-          height: "280px",
-          backgroundColor: "#ddd",
-        }}
-      >
+      {/* Tutorial-Box */}
+      <div className="memorytutorial-box">
+        <div className="tutorial-text">🎥 Video Tutorial anschauen:</div>
+      </div>
+
+      {/* Video */}
+      <div className="tutorial-video">
         <iframe
-          width="100%"
-          height="100%"
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="YouTube Video Tutorial"
           allowFullScreen
-          style={{ border: "none" }}
         ></iframe>
       </div>
 
+      {/* Start Button */}
       <motion.div
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
-        style={{ width: "100%", maxWidth: "600px" }}
+        className="start-button-wrapper"
       >
         <Link
           to="/memoryround1"
           state={{ module, chapter, subject, questionCount, timeLimit }}
-          className="fw-bold text-white d-block text-center py-2"
-          style={{
-            backgroundColor: "#9a7fc6",
-            border: "none",
-            borderRadius: "12px",
-            fontSize: "1.3rem",
-            textDecoration: "none",
-          }}
+          className="memorystart-button"
         >
           Direkt zum Memory starten
         </Link>

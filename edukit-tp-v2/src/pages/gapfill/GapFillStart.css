@@ -1,0 +1,233 @@
+.gapfillstart-wrapper {
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.cancel-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+}
+
+.cancel-button .btn {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.cancel-confirm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.25rem;
+  max-width: max-content;
+  background-color: white;
+    
+}
+
+.cancel-confirm-text {
+  white-space: nowrap;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+
+.cancel-confirm-buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.cancel-confirm-buttons .btn {
+  flex: 1;
+  font-size: inherit;
+  padding: 0.4rem 0.8rem;
+}
+
+
+/* Titelbereich mit Icon */
+.quiz-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.quiz-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.tutorial-icon {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  margin-left: -0.8rem; ;
+}
+
+/* Tutorial-Box */
+.gaptutorial-box {
+  width: 100%;
+  max-width: 800px;
+  background-color: #a4c4f4;
+  border-radius: 999px;
+  padding: 0.75rem 1.6rem;
+  text-align: center;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tutorial-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Video */
+.tutorial-video {
+  width: 100%;
+  max-width: 600px;
+  height: 280px;
+  background-color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.tutorial-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Startbutton */
+.start-button-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.gapstart-button {
+  display: block;
+  width: 100%;
+  background-color: #5989d6;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .quiz-title {
+    font-size: 2.5rem;
+  }
+  .tutorial-box{
+    max-width: 600px;
+    padding: 0.75rem 1.6rem;;
+  }
+  .tutorial-icon {
+    height: 60px;
+    width: 60px;
+  }
+  .tutorial-text {
+    font-size: 1.25rem;
+  }
+  .tutorial-video {
+    max-width: 600px;
+    height: 320px;
+  }
+  .start-button-wrapper {
+    max-width: 600px;
+  }
+  .gapstart-button {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.6rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1399px) {
+   .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1.1rem;
+    padding: 0.45rem 1rem;
+  }
+  .quiz-title {
+    font-size: 3rem;
+  }
+  .tutorial-icon {
+    height: 70px;
+    width: 70px;
+  }
+  .tutorial-box{
+    max-width: 800px;
+    padding: 0.9rem 2rem;
+  }
+  .tutorial-text {
+    font-size: 1.4rem;
+  }
+  .tutorial-video {
+    max-width: 800px;
+    height: 360px;
+  }
+  .start-button-wrapper {
+    max-width: 800px;
+  }
+  .gapstart-button {
+    font-size: 1.4rem;
+    padding: 0.9rem 2rem;
+  }
+}
+
+/* Großer Desktop */
+@media (min-width: 1400px) {
+   .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+  }
+  .quiz-title {
+    font-size: 3.4rem;
+  }
+  .tutorial-icon {
+    height: 80px;
+    width: 80px;
+  }
+  .tutorial-box{
+    max-width: 1000px;
+     padding: 1.1rem 2.2rem;
+  }
+  .tutorial-text {
+    font-size: 1.5rem;
+  }
+  .tutorial-video {
+    max-width: 1000px;
+    height: 400px;
+  }
+  .start-button-wrapper {
+    max-width: 1000px;
+  }
+  .gapstart-button {
+    font-size: 1.5rem;
+    padding: 1.1rem 2.2rem;
+  }
+}

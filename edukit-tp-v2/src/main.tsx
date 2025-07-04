@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "./context/UserContext";
 import { AppFlowProvider } from "./context/AppFlowContext";
 import "./index.css";
-import "./i18n"; // <-- wichtig: i18n initialisieren
+import "./i18n";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

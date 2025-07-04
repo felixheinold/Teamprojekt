@@ -24,13 +24,13 @@ const Start = () => {
           style={{ maxWidth: "280px" }}
         >
           <button
-            className="btn btn-dark start-button"
+            className="btn btn-dark startscreen-button"
             onClick={() => navigate("/login")}
           >
             Log In
           </button>
           <button
-            className="btn btn-dark start-button"
+            className="btn btn-dark startscreen-button"
             onClick={() => navigate("/register")}
           >
             Registrieren

@@ -1,8 +1,10 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import { useUser } from "./context/UserContext";
 import { useAppFlow } from "./context/AppFlowContext";
 import UserDropdown from "./components/UserDropdown";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+import "./Layout.css"; // Layout.css wird verwendet für Schriftgrößen & Abstände
 
 const Layout = () => {
   const { selectedModule, selectedChapter } = useAppFlow();
@@ -27,10 +29,12 @@ const Layout = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNav">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
               <li className="nav-item">
-                <Link to="/modules" className="nav-link">Module</Link>
+                <Link to="/modules" className="nav-link">
+                  Module
+                </Link>
               </li>
               <li className="nav-item">
                 <Link
@@ -51,7 +55,9 @@ const Layout = () => {
                 <Link
                   to={
                     selectedModule && selectedChapter
-                      ? `/minigames/${encodeURIComponent(selectedModule)}/${encodeURIComponent(selectedChapter)}`
+                      ? `/minigames/${encodeURIComponent(
+                          selectedModule
+                        )}/${encodeURIComponent(selectedChapter)}`
                       : "#"
                   }
                   onClick={(e) => !selectedChapter && e.preventDefault()}
@@ -64,7 +70,6 @@ const Layout = () => {
               </li>
             </ul>
 
-            {/* Immer anzeigen */}
             <ul className="navbar-nav d-flex align-items-center ms-auto">
               <li className="nav-item dropdown">
                 <UserDropdown />
