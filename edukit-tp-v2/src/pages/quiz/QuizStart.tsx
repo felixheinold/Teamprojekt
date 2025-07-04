@@ -33,7 +33,7 @@ const QuizStart = () => {
         <div
           className="py-2 px-3 fw-bold text-center flex-grow-1"
           style={{
-            backgroundColor: "#b6efe1",
+            backgroundColor: "#a7e6ff",
             borderRadius: "30px",
             fontSize: "1.25rem",
             color: "#000",
