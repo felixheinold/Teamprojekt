@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install & Build
         run: |
-          cd edukit-tp
+          cd edukit-tp-v2
           npm ci
           npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
