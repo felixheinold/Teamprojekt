@@ -34,7 +34,7 @@ import GapFillStart from "./pages/gapfill/GapFillStart";
 import GapFillResult from "./pages/gapfill/GapFillResult";
 
 // Hilfe-Bereich (HelpDesk)
-import Help from "./pages/dashboard/HelpDesk/help";
+import Help from "./pages/dashboard/HelpDesk/Help";
 import FAQ from "./pages/dashboard/HelpDesk/FAQ";
 import Guidelines from "./pages/dashboard/HelpDesk/Guidelines";
 import Datenschutz from "./pages/dashboard/HelpDesk/Datenschutz";
