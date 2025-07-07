@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import "./Home.css"; // <— NEU: CSS für Responsive Layout
+import "./Home.css";
 
 const Home = () => {
   const { setSelectedModule, setSelectedChapter } = useAppFlow();

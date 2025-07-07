@@ -1,0 +1,195 @@
+.memory-wrapper {
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.cancel-button {
+  position: static;
+  align-self: flex-start;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+}
+
+.cancel-button .btn {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cancel-confirm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -0.5rem;
+  max-width: max-content;
+}
+
+.cancel-confirm-text {
+  white-space: nowrap;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.cancel-confirm-buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.cancel-confirm-buttons .btn {
+  flex: 1;
+  font-size: inherit;
+  padding: 0.4rem 0.8rem;
+}
+
+.memory-header {
+  background-color: #228b57;
+  color: white;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.memory-subheader {
+  background-color: #78ba84;
+  color: black;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.memoryr1-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+.memory-wrapper .memory-badge {
+  font-size: 1rem;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+/* Mobil */
+@media (max-width: 576px) {
+  .cancel-button {
+    position: static;
+    align-self: flex-start;
+    margin-top: -2.2rem;
+  }
+  .memory-header {
+    margin-top: -0.3rem;
+    width: 100%;
+  }
+  .memory-subheader {
+    margin-bottom: 0.6rem;
+    width: 100%;
+  }
+  .memoryr1-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .memory-wrapper .d-flex.justify-content-between {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 0px !important;
+    width: 100%;
+  }
+
+.memory-wrapper .d-flex.justify-content-between > div:first-child {
+  flex: 0 0 120px;
+  max-width: 120px;
+  padding-right: 4px;
+}
+
+.memory-wrapper .d-flex.justify-content-between > div:last-child {
+  flex: 1;
+  padding-left: 4px;
+}
+
+
+  /* Begriffe (linke Spalte) */
+  .memory-wrapper .d-flex.justify-content-between > div:first-child .term-box {
+    font-size: 0.8rem !important;
+    padding: 0.4rem !important;
+    min-height: 60px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  /* Definitionen (rechte Spalte) */
+  .memory-wrapper .d-flex.justify-content-between > div:last-child .definition-box {
+    font-size: 0.7rem !important;
+    padding: 0.4rem !important;
+    min-height: 60px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.1;
+    word-break: break-word;
+  }
+
+  .memory-wrapper .definition-box span {
+    font-size: 0.65rem;
+    margin-right: rem;
+  }
+
+ .memory-wrapper .memory-badge {
+    font-size: 0.55rem !important;
+    padding: 0.3rem 0.3rem !important;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 35%;
+    text-align: center;
+    line-height: 1.1;
+    display: inline-block;
+    min-width: auto !important;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .memory-header,
+  .memory-subheader {
+    font-size: 1rem;
+    width: 800px;
+  }
+  .memoryr1-title {
+    font-size: 3rem;
+  }
+}
+
+/* Großer Desktop */
+@media (min-width: 1400px) {
+  .memory-header,
+  .memory-subheader {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    width: 1000px;
+  }
+  .memoryr1-title {
+    font-size: 3.4rem;
+  }
+}

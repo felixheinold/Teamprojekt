@@ -1,20 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
-
-const sampleQuestions = [
-  {
-    question: "Was ist die Hauptstadt von Frankreich?",
-    options: ["Paris", "Berlin", "Madrid", "Rom"],
-    answer: "Paris",
-  },
-  {
-    question: "Was ist 2 + 2?",
-    options: ["3", "4", "5", "6"],
-    answer: "4",
-  },
-];
+import "./QuizGame.css";
 
 const QuizGame = () => {
   const navigate = useNavigate();
@@ -23,9 +10,22 @@ const QuizGame = () => {
 
   const { module, chapter, questionCount, timeLimit } = location.state || {};
 
+  const sampleQuestions = [
+    {
+      question: "Was ist die Hauptstadt von Frankreich?",
+      options: ["Paris", "Berlin", "Madrid", "Rom"],
+      answer: "Paris",
+    },
+    {
+      question: "Was ist 2 + 2?",
+      options: ["3", "4", "5", "6"],
+      answer: "4",
+    },
+  ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(timeLimit || 20);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
   const [score, setScore] = useState(0);
 
@@ -49,7 +49,7 @@ const QuizGame = () => {
     return () => clearInterval(timer);
   }, [currentIndex, timeLimit, showFeedback]);
 
-  const handleAnswer = (selected: string | null) => {
+  const handleAnswer = (selected) => {
     if (showFeedback) return;
     setSelectedAnswer(selected);
     setShowFeedback(true);
@@ -74,20 +74,13 @@ const QuizGame = () => {
     }
   };
 
-  const isCorrect = (opt: string) => opt === currentQuestion.answer;
-  const isWrong = (opt: string) => opt === selectedAnswer && !isCorrect(opt);
+  const isCorrect = (opt) => opt === currentQuestion.answer;
+  const isWrong = (opt) => opt === selectedAnswer && !isCorrect(opt);
   const isLastQuestion = currentIndex + 1 === questionCount;
 
   return (
-    <div
-      className="container d-flex flex-column align-items-center pt-2"
-      style={{ minHeight: "100vh" }}
-    >
-      {/* Abbrechen mit Bestätigung */}
-      <div
-        className="position-absolute"
-        style={{ top: "80px", left: "30px", zIndex: 10 }}
-      >
+    <div className="quizgame-wrapper">
+      <div className="cancel-button">
         {!showCancelConfirm ? (
           <button
             className="btn btn-dark"
@@ -96,11 +89,11 @@ const QuizGame = () => {
             Abbrechen
           </button>
         ) : (
-          <div className="d-flex flex-column gap-2">
-            <div className="text-white bg-dark rounded px-3 py-2">
+          <div className="cancel-confirm-container">
+            <div className="cancel-confirm-text">
               Möchtest du wirklich abbrechen?
             </div>
-            <div className="d-flex gap-2">
+            <div className="cancel-confirm-buttons">
               <button
                 className="btn btn-secondary btn-sm"
                 onClick={() => setShowCancelConfirm(false)}
@@ -118,65 +111,25 @@ const QuizGame = () => {
         )}
       </div>
 
-      {/* Modul & Kapitel */}
-      <div
-        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-        style={{
-          backgroundColor: "#228b57",
-          maxWidth: "600px",
-          width: "100%",
-          marginTop: "-8px",
-        }}
-      >
-        {module}
-      </div>
+      <div className="quiz-header bg-module">{module}</div>
+      <div className="quiz-subheader bg-chapter">{chapter}</div>
 
-      <div
-        className="mb-5 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
-      >
-        {chapter}
-      </div>
-
-      {/* Fortschritt & Timer */}
-      <div
-        className="d-flex justify-content-between mb-3"
-        style={{ maxWidth: "600px", width: "100%" }}
-      >
-        <div className="fw-semibold">
+      <div className="quiz-status">
+        <span>
           Frage {currentIndex + 1} / {questionCount}
-        </div>
-        <div className="fw-semibold">⏳ {timeLeft}s</div>
+        </span>
+        <span>⏳ {timeLeft}s</span>
       </div>
 
-      {/* Frage */}
-      <div
-        className="mb-4 text-center fw-bold d-flex align-items-center justify-content-center"
-        style={{
-          backgroundColor: "#a7e6ff",
-          borderRadius: "12px",
-          width: "100%",
-          maxWidth: "600px",
-          minHeight: "100px",
-          fontSize: "1.25rem",
-          padding: "1rem",
-        }}
-      >
-        {currentQuestion.question}
-      </div>
+      <div className="quiz-question">{currentQuestion.question}</div>
 
-      {/* Optionen */}
-      <div
-        className="d-flex flex-wrap justify-content-between gap-3 mb-4"
-        style={{ maxWidth: "600px", width: "100%" }}
-      >
+      <div className="quiz-options">
         {currentQuestion.options.map((opt, i) => {
           let bg = "#e0e0e0";
           if (showFeedback) {
             if (isCorrect(opt)) bg = "#198754";
             else if (isWrong(opt)) bg = "#dc3545";
           }
-
           return (
             <motion.button
               key={i}
@@ -184,16 +137,8 @@ const QuizGame = () => {
               whileTap={{ scale: 0.97 }}
               disabled={showFeedback}
               onClick={() => handleAnswer(opt)}
-              className="fw-semibold"
-              style={{
-                flex: "0 0 48%",
-                minHeight: "60px",
-                fontSize: "1rem",
-                borderRadius: "10px",
-                border: "none",
-                backgroundColor: bg,
-                color: "#000",
-              }}
+              className="quiz-option"
+              style={{ backgroundColor: bg }}
             >
               {opt}
             </motion.button>
@@ -201,19 +146,10 @@ const QuizGame = () => {
         })}
       </div>
 
-      {/* Weiter-Button */}
       <motion.button
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
-        className="fw-bold text-white py-2"
-        style={{
-          width: "100%",
-          maxWidth: "600px",
-          backgroundColor: "#5ac0f0",
-          border: "none",
-          borderRadius: "12px",
-          fontSize: "1.3rem",
-        }}
+        className="quiz-next-button"
         onClick={handleNext}
         disabled={!showFeedback}
       >

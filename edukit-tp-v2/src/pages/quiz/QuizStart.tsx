@@ -49,16 +49,20 @@ const QuizStart = () => {
       {/* Überschrift mit Icon */}
       <div className="quiz-title-container">
         <h1 className="quiz-title">QUIZ</h1>
-        <img src="/images/quiz.png" alt="Quiz Icon" className="tutorial-icon" />
+        <img
+          src="/images/quiz.png"
+          alt="Quiz Icon"
+          className="quiztutorial-icon"
+        />
       </div>
 
       {/* Tutorial-Box */}
-      <div className="tutorial-box">
-        <div className="tutorial-text">🎥 Video Tutorial anschauen:</div>
+      <div className="quiztutorial-box">
+        <div className="quiztutorial-text">🎥 Video Tutorial anschauen:</div>
       </div>
 
       {/* Tutorial Video */}
-      <div className="tutorial-video">
+      <div className="quiztutorial-video">
         <iframe
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="YouTube Video Tutorial"
@@ -70,12 +74,12 @@ const QuizStart = () => {
       <motion.div
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
-        className="start-button-wrapper"
+        className="quizstart-button-wrapper"
       >
         <Link
           to="/quizgame"
           state={{ module, chapter, subject, questionCount, timeLimit }}
-          className="start-button"
+          className="quizstart-button"
         >
           Direkt zum Quiz starten
         </Link>

@@ -1,0 +1,247 @@
+.quizgame-wrapper { 
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.cancel-button {
+  position: static;
+  align-self: flex-start;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+}
+
+.cancel-button .btn {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cancel-confirm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -0.5rem;
+  max-width: max-content;
+}
+
+.cancel-confirm-text {
+  white-space: nowrap;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.cancel-confirm-buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.cancel-confirm-buttons .btn {
+  flex: 1;
+  font-size: inherit;
+  padding: 0.4rem 0.8rem;
+}
+
+.quiz-header {
+  background-color: #228b57;
+  color: white;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.quiz-subheader {
+  background-color: #78ba84;
+  color: black;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1.2rem;
+}
+
+.quiz-status {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.quiz-question {
+  background-color: #a7e6ff;
+  border-radius: 12px;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  min-height: 90px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-option {
+  flex: 0 0 48%;
+  min-height: 60px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  color: #000;
+}
+
+.quiz-next-button {
+  width: 100%;
+  max-width: 600px;
+  background-color: #5ac0f0;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+/* Mobil */
+@media (max-width: 576px) {
+  .cancel-button {
+    position: static;
+    align-self: flex-start;
+    margin-top: -2.2rem;
+  }
+.quiz-status, .quiz-subheader{
+    margin-bottom: 0.6rem;
+}
+.quiz-header{
+    margin-top: -0.3rem;
+}
+
+.quiz-question{
+margin-bottom: 0.6rem;
+padding: 0.8rem;
+}
+
+.quiz-option {
+    margin-bottom: -0.3rem;
+}
+
+  .quiz-option {
+    flex: 1 0 100%;
+  }
+
+  .quiz-next-button{
+    margin-top: -0.5rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .quiz-header, .quiz-subheader, .quiz-status {
+    font-size: 0.9rem;
+  }
+  .quiz-question {
+    font-size: 1.25rem;
+    min-height: 90px;
+  }
+  .quiz-option {
+    font-size: 1.1rem;
+    min-height: 50px;
+  }
+  .quiz-next-button {
+    font-size: 1.25rem;
+    max-width: 600px;
+  }
+  .quiz-header,
+  .quiz-subheader,
+  .quiz-status,
+  .quiz-question,
+  .quiz-options {
+    max-width: 600px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .quiz-header, .quiz-subheader, .quiz-status {
+    font-size: 1rem;
+  }
+  .quiz-question {
+    font-size: 1.4rem;
+    min-height: 100px;
+  }
+  .quiz-option {
+    font-size: 1.25rem;
+    min-height: 60px;
+  }
+  .quiz-next-button {
+    font-size: 1.4rem;
+    max-width: 800px;
+  }
+  .quiz-header,
+  .quiz-subheader,
+  .quiz-status,
+  .quiz-question,
+  .quiz-options {
+    max-width: 800px;
+  }
+}
+
+/* Großer Desktop */
+@media (min-width: 1400px) {
+  .quiz-header, .quiz-subheader, .quiz-status {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .quiz-question {
+    font-size: 1.5rem;
+    min-height: 110px;
+  }
+  .quiz-option {
+    font-size: 1.35rem;
+    min-height: 70px;
+  }
+  .quiz-next-button {
+    font-size: 1.5rem;
+    max-width: 1000px;
+  }
+  .quiz-header,
+  .quiz-subheader,
+  .quiz-status,
+  .quiz-question,
+  .quiz-options {
+    max-width: 1000px;
+  }
+}
