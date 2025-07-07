@@ -10,7 +10,7 @@ router = APIRouter(
 )
 
 #Datenmodell Game_Type
-class Game_Type():
+class Game_Type(BaseModel):
     total_games: int
     total_points: int
     best_Score: int
@@ -19,7 +19,7 @@ class Game_Type():
     repetition_content: List[str] #alle IDs von Fragen, Memory-Paaren //oder Satz mit Lücken, die User wiederholen will
 
 # Datenmodell User Game Information
-class User_Game_Information():
+class User_Game_Information(BaseModel):
     highscore: int #wir müssen alles einheitlich bepunkten!
     highscore_table_ranking: int #an welcher Stelle in Bestenliste
     total_points: int #alle punkte aus allen Spielen jemals
