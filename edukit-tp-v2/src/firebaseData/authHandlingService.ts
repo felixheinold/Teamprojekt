@@ -21,7 +21,7 @@ export class AuthHandlingService {
 //Registrierung mit Username, Mail-Adresse und Passwort
 /********************************************************* */
 
-  async newRegistration(username: string, email: string, password: string){
+  async newRegistration(username: string, email: string, password: string, picture: string){
 
       if(!email.endsWith("kit.edu")){
       throw new AuthPopupError("Nur Mail-Adressen der Form 'uxxxx@student.kit.edu' oder **name**@kit.edu sind zulässig! Only mail adresses like 'uxxxx@student.kit.edu' or  **name**@kit.edu are valid!");
@@ -32,13 +32,13 @@ export class AuthHandlingService {
           await sendEmailVerification(userCredential.user);
           
           //hier Methode von AuthAPICall, um neuen Nutzer anzulegen
-          this.authAPICallsService.newUserAPICall(username, email);
+          this.authAPICallsService.newUserAPICall(userCredential.user.uid, username, email, picture);
 
           return userCredential.user;
 
       } catch (error: any){
           if(error.code === "auth/email-already-in-use"){
-              throw new AuthPopupError("Mail-Adresse existiert bereits! Mail address already exists!");
+              throw new AuthPopupError("Mail-Adresse existiert bereits! \nMail address already exists!");
           }else {
             throw new AuthPopupError(error.code);
           }

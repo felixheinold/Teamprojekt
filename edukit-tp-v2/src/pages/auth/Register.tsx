@@ -3,10 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import AvatarPicker from "../../components/AvatarPicker";
+import { AuthHandlingService } from "../../firebaseData/authHandlingService";
 
 const Register = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
+  const authHandlingService = new AuthHandlingService();
 
   const [form, setForm] = useState({
     username: "",
@@ -20,7 +22,8 @@ const Register = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+
+    /** 
     const API = import.meta.env.VITE_API_BASE_URL;
 
     const userId = crypto.randomUUID();
@@ -63,8 +66,14 @@ const Register = () => {
           lastGameDate: null,
         },
       });
+*/
+    try {
 
-      navigate("/home");
+       const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);
+       if (await authHandlingService.checkEmailVerified(user)){
+        navigate("/home");
+       }
+
     } catch (err) {
       console.error("Registration error:", err);
       alert("Etwas ist schiefgelaufen.");
@@ -94,21 +103,22 @@ const Register = () => {
           name="email"
           type="email"
           className="form-control mb-2"
-          placeholder="u....@student.kit.edu"
+          placeholder="u....@student.kit.edu / ...@kit.edu"
           onChange={handleChange}
           required
-          pattern=".+@student.kit.edu"
-          title="Nur KIT-E-Mail-Adressen erlaubt"
+          pattern=".+@(student\.kit\.edu|kit\.edu)"
+          title="Nur KIT-E-Mail-Adressen erlaubt. Only KIT mail addresses valid."
+
         />
         <input
           name="password"
           type="password"
           className="form-control mb-3"
-          placeholder="Passwort"
+          placeholder="Passwort/password"
           onChange={handleChange}
           required
         />
-        <button type="submit" className="btn btn-dark w-100">Register</button>
+        <button type="submit" className="btn btn-dark w-100">Registrieren / Register</button>
       </form>
     </AuthLayout>
   );
