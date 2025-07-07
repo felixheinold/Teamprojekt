@@ -1,0 +1,260 @@
+/* Basis-Layout */
+.memoryr2-wrapper {
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Abbrechen-Button */
+.cancel-button {
+  position: static;
+  align-self: flex-start;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+}
+
+.cancel-button .btn {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.cancel-confirm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -0.5rem;
+  max-width: max-content;
+}
+
+.cancel-confirm-text {
+  white-space: nowrap;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.cancel-confirm-buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.cancel-confirm-buttons .btn {
+  flex: 1;
+  font-size: inherit;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Header & Subheader */
+.memory-header {
+  background-color: #228b57;
+  color: white;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.memory-subheader {
+  background-color: #78ba84;
+  color: black;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.memoryr2-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.statusbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.memory-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+/* Karten-Grundstil */
+.memory-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, opacity 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+.card-term {
+  font-size: 1.1rem;
+}
+
+.card-definition {
+  font-size: 0.95rem;
+}
+
+/* Mobil */
+@media (max-width: 576px) {
+  .cancel-button {
+    position: static;
+    align-self: flex-start;
+    margin-top: -2.2rem;
+  }
+  .memory-header {
+    margin-top: -0.3rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .memory-subheader {
+    margin-bottom: 0.6rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .memoryr2-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .statusbar {
+    font-size: 0.9rem;
+  }
+   .memory-grid {
+    max-width: 600px;
+    gap: 6px;
+  }
+  .memory-card, .card-definition, .card-term {
+    width: 32%;
+    min-width: 90px;
+    height: 100px;
+    padding: 0.4rem 0.4rem;
+  }
+    .card-term {
+    font-size: 0.8rem;
+  }
+
+  .card-definition {
+    font-size: 0.6rem;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .memory-header,
+  .memory-subheader {
+    font-size: 1rem;
+    width: 600px;
+  }
+  .memoryr2-title {
+    font-size: 2.8rem;
+  }
+  .statusbar {
+    font-size: 1rem;
+    width: 600px;
+  }
+   .memory-grid {
+    max-width: 800px;
+  }
+  .memory-card, .card-definition, .card-term {
+    width: calc((800px - 48px) / 5); /* 5 Karten, 4 Gaps à 12px */
+    height: 100px;
+    padding: 0.4rem 0.4rem;
+  }
+   .card-term {
+    font-size: 0.8rem;
+  }
+
+  .card-definition {
+    font-size: 0.6rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .memory-header,
+  .memory-subheader {
+    font-size: 1rem;
+    width: 800px;
+  }
+  .memoryr2-title {
+    font-size: 3rem;
+  }
+  .statusbar {
+    font-size: 1.1rem;
+    width: 800px;
+  }
+    .memory-grid {
+    max-width: 1000px;
+  }
+  .memory-card, .card-definition, .card-term {
+    width: calc((1000px - 48px) / 5);
+    height: 120px;
+    padding: 0.5rem 0.5rem;
+  }
+   .card-term {
+    font-size: 1rem;
+  }
+
+  .card-definition {
+    font-size: 0.8rem;
+  }
+}
+
+/* Großer Desktop */
+@media (min-width: 1400px) {
+  .memory-header,
+  .memory-subheader {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    width: 1000px;
+  }
+  .memoryr2-title {
+    font-size: 3.4rem;
+  }
+  .statusbar {
+    font-size: 1.2rem;
+    width: 1000px;
+  }
+  .memory-grid {
+    max-width: 1200px;
+  }
+  .memory-card, .card-definition, .card-term {
+    width: calc((1200px - 48px) / 5);
+    height: 140px;
+    padding: 0.6rem 0.6rem;
+  }
+   .card-term {
+    font-size: 1.2rem;
+  }
+
+  .card-definition {
+    font-size: 1rem;
+  }
+}

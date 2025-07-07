@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import "./MemoryRound2Result.css";
 
 const MemoryRound2Result = () => {
   const navigate = useNavigate();
@@ -48,46 +48,29 @@ const MemoryRound2Result = () => {
   }, [score, maxPoints]);
 
   return (
-    <div
-      className="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5"
-      style={{ gap: "2rem" }}
-    >
-      {/* Bild links */}
-      <div className="text-center">
-        <img
-          src="/images/DinoKIT2.png"
-          alt="Dino"
-          style={{
-            height: "360px",
-            maxWidth: "100%",
-            objectFit: "contain",
-          }}
-        />
+    <div className="memoryr2result-wrapper">
+      <div className="memoryr2result-image">
+        <img src="/images/DinoKIT2.png" alt="Dino" />
       </div>
 
       {/* Textbereich */}
-      <div style={{ maxWidth: "500px" }}>
-        <h1 className="fw-bold text-center text-md-start display-5 mb-4">
+      <div className="memoryr2result-text">
+        <h1 className="memoryr2result-title">
           🎉 Super, du hast es geschafft!
         </h1>
-        <p className="fs-4 text-center text-md-start mb-2">
+        <p className="memoryr2result-score">
           Du hast <strong>{pairs.length}</strong> Paare in{" "}
           <strong>{turns}</strong> Zügen richtig zugeordnet.
         </p>
-        <p className="fs-4 text-center text-md-start mb-4">
+        <p className="memoryr2result-score">
           Dafür erhältst du <strong>{score}</strong> Punkte.
         </p>
 
-        <div className="d-flex flex-column gap-3">
+        <div className="memoryr2result-buttons">
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="btn fw-bold text-white"
-            style={{
-              backgroundColor: "#9a7fc6",
-              fontSize: "1.2rem",
-              borderRadius: "12px",
-            }}
+            className="memoryr2result-btn"
             onClick={() =>
               navigate("/memoryround1", {
                 state: {
@@ -106,12 +89,7 @@ const MemoryRound2Result = () => {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="btn fw-bold text-white"
-            style={{
-              backgroundColor: "#9a7fc6",
-              fontSize: "1.2rem",
-              borderRadius: "12px",
-            }}
+            className="memoryr2result-btn"
             onClick={() =>
               navigate(
                 `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
@@ -126,12 +104,7 @@ const MemoryRound2Result = () => {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="btn fw-bold text-white"
-            style={{
-              backgroundColor: "#9a7fc6",
-              fontSize: "1.2rem",
-              borderRadius: "12px",
-            }}
+            className="memoryr2result-btn"
             onClick={() => navigate("/modules")}
           >
             📚 Zurück zur Modul-Auswahl

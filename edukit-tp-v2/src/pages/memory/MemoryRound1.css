@@ -128,7 +128,7 @@
 
   /* Begriffe (linke Spalte) */
   .memory-wrapper .d-flex.justify-content-between > div:first-child .term-box {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     padding: 0.4rem !important;
     min-height: 60px !important;
     display: flex;
