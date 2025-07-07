@@ -95,29 +95,57 @@
     "economics1": "Volkswirtschaftslehre 1",
     "economics2": "Volkswirtschaftslehre 2"
   },
-  "guidelines": {
-    "title": "Nutzungsleitfaden",
-    "subtitle": "So nutzt du die App am effektivsten:",
-    "tips": [
-      "✅ Wähle ein Modul, das du lernen möchtest.",
-      "✅ Starte ein Minigame (Quiz, Memory oder Lückentext), um dein Wissen spielerisch zu festigen.",
-      "⏳ Beachte das Zeitlimit in den Spielen, um deine Reaktionszeit zu trainieren.",
-      "💾 Dein Fortschritt wird gespeichert, wenn du angemeldet bist.",
-      "📈 Nutze die Statistikseite, um deine Lernfortschritte zu analysieren.",
-      "📤 Lade eigene PDFs hoch unter \"Module\", um individuelle Inhalte zu ergänzen.",
-      "⚠️ Inhalte können veraltet sein – nutze sie als Ergänzung, nicht als alleinige Lernquelle."
-    ]
-  },
+
   "userDropdown": {
-    "openMenu": "Benutzermenü öffnen",
-    "profile": "Profil",
-    "settings": "Einstellungen",
-    "stats": "Statistik",
-    "leaderboard": "Bestenliste",
-    "guidelines": "Nutzungshinweise",
-    "logout": "Abmelden",
-    "login": "Anmelden",
-    "register": "Registrieren",
-    "guest": "Gastmodus aktiv"
-  }
+  "openMenu": "Benutzermenü öffnen",
+  "profile": "Profil",
+  "settings": "Einstellungen",
+  "stats": "Statistik",
+  "leaderboard": "Bestenliste",
+  "help": "Hilfe & Info",
+  "logout": "Abmelden",
+  "login": "Anmelden",
+  "register": "Registrieren",
+  "guest": "Gastmodus aktiv"
+},
+"privacy": {
+  "title": "Datenschutz",
+  "paragraph1": "Wir nehmen den Schutz Ihrer Daten ernst. Personenbezogene Daten werden nur erhoben, wenn Sie uns diese im Rahmen Ihrer Nutzung mitteilen.",
+  "paragraph2": "Es erfolgt keine Weitergabe an Dritte ohne Ihre ausdrückliche Zustimmung."
+},
+"faq": {
+  "title": "FAQ",
+  "items": [
+    {
+      "question": "Welche Lerndokumente sollte ich hochladen?",
+      "answer": "Am besten thematisch sortierte PDFs mit Aufgaben, Lösungen oder Zusammenfassungen."
+    },
+    {
+      "question": "Welches Minispiel ist besonders geeignet?",
+      "answer": "Für Mathe eignet sich das Zahlenpaar-Spiel zur Förderung des Kopfrechnens."
+    }
+  ]
+},
+"guidelines": {
+  "title": "Richtlinien & Best Practices",
+  "tips": [
+    "Vermeide doppelte Inhalte – jedes Dokument sollte einzigartig sein.",
+    "Nutze sprechende Dateinamen wie <code>Bruchrechnung_Übungen.pdf</code>.",
+    "Teste jedes Minispiel, bevor du es in der Klasse einsetzt.",
+    "Lade lieber weniger, aber qualitativ gute Inhalte hoch."
+  ]
+}, 
+"help": {
+  "title": "Hilfe & Informationen",
+  "faq": "FAQ – Häufige Fragen",
+  "guidelines": "Richtlinien & Best Practices",
+  "datenschutz": "Datenschutz",
+  "impressum": "Impressum"
+},
+"impressum": {
+  "title": "Impressum",
+  "address": "<strong>Verantwortlich:</strong> Max Mustermann<br />Musterstraße 1<br />12345 Musterstadt",
+  "email": "E-Mail: kontakt@example.com",
+  "note": "Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV: Max Mustermann"
+}
 }

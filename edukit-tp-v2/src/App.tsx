@@ -11,11 +11,10 @@ import Home from "./pages/dashboard/Home";
 import Modules from "./pages/dashboard/Modules";
 import Chapters from "./pages/dashboard/Chapters";
 import Minigames from "./pages/dashboard/Minigames";
-import User from "./pages/dashboard/User";
-import Settings from "./pages/dashboard/Settings";
-import Stats from "./pages/dashboard/Stats";
-import Leaderboard from "./pages/dashboard/Leaderboard";
-import Guidelines from "./pages/dashboard/Guidelines";
+import User from "./pages/dashboard/UserDropdown/User";
+import Settings from "./pages/dashboard/UserDropdown/Settings";
+import Stats from "./pages/dashboard/UserDropdown/Stats";
+import Leaderboard from "./pages/dashboard/UserDropdown/Leaderboard";
 
 // Quiz
 import QuizStart from "./pages/quiz/QuizStart";
@@ -34,6 +33,13 @@ import GapFillGame from "./pages/gapfill/GapFillGame";
 import GapFillStart from "./pages/gapfill/GapFillStart";
 import GapFillResult from "./pages/gapfill/GapFillResult";
 
+// Hilfe-Bereich (HelpDesk)
+import Help from "./pages/dashboard/HelpDesk/help";
+import FAQ from "./pages/dashboard/HelpDesk/FAQ";
+import Guidelines from "./pages/dashboard/HelpDesk/Guidelines";
+import Datenschutz from "./pages/dashboard/HelpDesk/Datenschutz";
+import Impressum from "./pages/dashboard/HelpDesk/Impressum";
+
 // Weitere Seiten
 import NotFound from "./pages/common/NotFound";
 
@@ -47,6 +53,7 @@ function App() {
 
       {/* Seiten mit Layout */}
       <Route element={<Layout />}>
+        {/* Hauptseiten */}
         <Route path="/home" element={<Home />} />
         <Route path="/modules" element={<Modules />} />
         <Route path="/chapters/:moduleName" element={<Chapters />} />
@@ -55,7 +62,13 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="/guidelines" element={<Guidelines />} /> {/* ✅ NEU */}
+
+        {/* Hilfe & Info */}
+        <Route path="/help" element={<Help />} />
+        <Route path="/help/faq" element={<FAQ />} />
+        <Route path="/help/guidelines" element={<Guidelines />} />
+        <Route path="/help/datenschutz" element={<Datenschutz />} />
+        <Route path="/help/impressum" element={<Impressum />} />
 
         {/* Quiz */}
         <Route path="/quiz" element={<QuizStart />} />

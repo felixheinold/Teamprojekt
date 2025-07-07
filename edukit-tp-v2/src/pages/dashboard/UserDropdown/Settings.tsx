@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useUser } from "../../context/UserContext";
+import { useUser } from "../../../context/UserContext";
 import { useTranslation } from "react-i18next";
 
 const Settings = () => {
