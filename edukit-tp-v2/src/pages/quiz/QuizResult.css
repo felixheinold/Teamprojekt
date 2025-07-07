@@ -1,0 +1,137 @@
+/* Wrapper-Layout */
+.quizresult-wrapper {
+min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Bildbereich */
+.quizresult-image img {
+  height: 280px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+}
+
+/* Textbereich */
+.quizresult-text {
+  max-width: 100%;
+}
+
+.quizresult-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.quizresult-score {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.quizresult-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quizresult-btn {
+  background-color: #5ac0f0;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.2rem;
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .quizresult-wrapper {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quizresult-title {
+    font-size: 2.5rem;
+  }
+
+  .quizresult-score {
+    font-size: 1.4rem;
+  }
+
+  .quizresult-btn {
+    font-size: 1.2rem;
+    padding: 0.9rem 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .quizresult-image img {
+    height: 420px;
+    margin-left: 2rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1399px) {
+ .quizresult-wrapper {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quizresult-title {
+    font-size: 3rem;
+  }
+
+  .quizresult-score {
+    font-size: 1.6rem;
+  }
+
+  .quizresult-btn {
+    font-size: 1.4rem;
+    padding: 1rem 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .quizresult-image img {
+    height: 450px;
+    margin-left: 4rem;
+  }
+}
+
+/* Großer Desktop */
+@media (min-width: 1400px) {
+     .quizresult-wrapper {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .quizresult-title {
+    font-size: 3.4rem;
+  }
+
+  .quizresult-score {
+    font-size: 1.8rem;
+  }
+
+  .quizresult-btn {
+    font-size: 1.6rem;
+    padding: 1.1rem 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .quizresult-image img {
+    height: 520px;
+    margin-left: 4rem;
+  }
+}

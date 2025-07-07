@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import "./MemoryRound2.css";
 
 type Card = {
   id: number;
@@ -107,15 +107,9 @@ const MemoryRound2 = () => {
   const allMatched = matched.length === cards.length;
 
   return (
-    <div
-      className="container d-flex flex-column align-items-center pt-2"
-      style={{ minHeight: "100vh" }}
-    >
-      {/* Abbrechen mit Bestätigungsdialog */}
-      <div
-        className="position-absolute"
-        style={{ top: "80px", left: "30px", zIndex: 10 }}
-      >
+    <div className="memoryr2-wrapper">
+      {/* Abbrechen-Button */}
+      <div className="cancel-button">
         {!showCancelConfirm ? (
           <button
             className="btn btn-dark"
@@ -124,21 +118,18 @@ const MemoryRound2 = () => {
             Abbrechen
           </button>
         ) : (
-          <div className="d-flex flex-column gap-2">
-            <div className="text-white bg-dark rounded px-3 py-2">
+          <div className="cancel-confirm-container">
+            <div className="cancel-confirm-text">
               Möchtest du wirklich abbrechen?
             </div>
-            <div className="d-flex gap-2">
+            <div className="cancel-confirm-buttons">
               <button
-                className="btn btn-secondary btn-sm"
+                className="btn btn-secondary"
                 onClick={() => setShowCancelConfirm(false)}
               >
                 Nein
               </button>
-              <button
-                className="btn btn-danger btn-sm"
-                onClick={() => navigate(-4)}
-              >
+              <button className="btn btn-danger" onClick={() => navigate(-4)}>
                 Ja, zurück
               </button>
             </div>
@@ -147,45 +138,23 @@ const MemoryRound2 = () => {
       </div>
 
       {/* Modul & Kapitelanzeige */}
-      <div
-        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-        style={{
-          backgroundColor: "#228b57",
-          maxWidth: "600px",
-          width: "100%",
-          marginTop: "-8px",
-        }}
-      >
-        {module}
-      </div>
-
-      <div
-        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
-      >
-        {chapter}
-      </div>
+      <div className="memory-header">{module}</div>
+      <div className="memory-subheader">{chapter}</div>
 
       {/* Titel */}
-      <h1 className="fw-bold display-5 mb-3">🧠 Memory Runde 2</h1>
+      <h1 className="memoryr2-title">🧠 Memory Runde 2</h1>
 
       {/* Statusleiste */}
-      <div
-        className="d-flex justify-content-between mb-3"
-        style={{ maxWidth: "600px", width: "100%" }}
-      >
-        <div className="fw-semibold">
+      <div className="statusbar">
+        <div>
           {matched.length / 2} / {cards.length / 2} Paare
         </div>
-        <div className="fw-semibold">Züge: {turn - 1}</div>
-        <div className="fw-semibold">⏳ {timer}s</div>
+        <div>Züge: {turn - 1}</div>
+        <div>⏳ {timer}s</div>
       </div>
 
       {/* Spielfeld */}
-      <div
-        className="d-flex flex-wrap justify-content-center mb-4"
-        style={{ maxWidth: "1000px", gap: "12px" }}
-      >
+      <div className="memory-grid">
         {cards.map((card) => {
           const isFlipped = flipped.includes(card.id);
           const isMatched = matched.includes(card.id);
@@ -201,18 +170,14 @@ const MemoryRound2 = () => {
           return (
             <motion.div
               key={card.id}
-              className="text-center d-flex align-items-center justify-content-center shadow-sm"
+              className={`memory-card d-flex align-items-center justify-content-center text-center shadow-sm ${
+                card.type === "term" ? "card-term" : "card-definition"
+              }`}
               onClick={() => handleCardClick(card)}
               style={{
-                width: "180px",
-                height: "100px",
                 backgroundColor: showContent ? feedbackColor : baseColor,
-                borderRadius: "12px",
-                fontWeight: "bold",
-                fontSize: "0.95rem",
                 cursor: showContent || disabled ? "default" : "pointer",
                 opacity: isMatched ? 0 : 1,
-                transition: "background-color 0.3s ease, opacity 0.5s ease",
               }}
               whileHover={{ scale: !isFlipped && !isMatched ? 1.03 : 1 }}
               whileTap={{ scale: !isFlipped && !isMatched ? 0.97 : 1 }}
