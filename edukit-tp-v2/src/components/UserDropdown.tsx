@@ -75,11 +75,11 @@ const UserDropdown = () => {
                 {user.userMail}
               </div>
               <div className="dropdown-divider"></div>
-              <Link to="/user" className="dropdown-item text-dark">👤 {t("userDropdown.profile")}</Link>
-              <Link to="/settings" className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
-              <Link to="/stats" className="dropdown-item text-dark">📊 {t("userDropdown.stats")}</Link>
-              <Link to="/leaderboard" className="dropdown-item text-dark">🏆 {t("userDropdown.leaderboard")}</Link>
-              <Link to="/guidelines" className="dropdown-item text-dark">🧭 {t("userDropdown.guidelines")}</Link>
+              <Link to="/user" onClick={() => setOpen(false)} className="dropdown-item text-dark">👤 {t("userDropdown.profile")}</Link>
+              <Link to="/settings" onClick={() => setOpen(false)} className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
+              <Link to="/stats" onClick={() => setOpen(false)} className="dropdown-item text-dark">📊 {t("userDropdown.stats")}</Link>
+              <Link to="/leaderboard" onClick={() => setOpen(false)} className="dropdown-item text-dark">🏆 {t("userDropdown.leaderboard")}</Link>
+              <Link to="/help" onClick={() => setOpen(false)} className="dropdown-item text-dark">🧭 {t("userDropdown.help")}</Link>
               <div className="dropdown-divider"></div>
               <button onClick={handleLogout} className="dropdown-item text-danger">
                 🚪 {t("userDropdown.logout")}
@@ -91,10 +91,10 @@ const UserDropdown = () => {
                 {t("userDropdown.guest")}
               </div>
               <div className="dropdown-divider"></div>
-              <Link to="/settings" className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
-              <Link to="/guidelines" className="dropdown-item text-dark">🧭 {t("userDropdown.guidelines")}</Link>
-              <Link to="/login" className="dropdown-item text-primary">🔐 {t("userDropdown.login")}</Link>
-              <Link to="/register" className="dropdown-item text-primary">📝 {t("userDropdown.register")}</Link>
+              <Link to="/settings" onClick={() => setOpen(false)} className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
+              <Link to="/help" onClick={() => setOpen(false)} className="dropdown-item text-dark">🧭 {t("userDropdown.help")}</Link>
+              <Link to="/login" onClick={() => setOpen(false)} className="dropdown-item text-primary">🔐 {t("userDropdown.login")}</Link>
+              <Link to="/register" onClick={() => setOpen(false)} className="dropdown-item text-primary">📝 {t("userDropdown.register")}</Link>
             </>
           )}
         </div>

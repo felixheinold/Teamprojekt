@@ -1,120 +1,99 @@
 {
   "common": {
-    "back": "Back",
-    "cancel": "Cancel",
-    "chapters": "Chapters",
-    "edit": "Edit",
-    "guest": "Guest mode active",
-    "login": "Login",
-    "logout": "Logout",
-    "minigames": "Mini-Games",
-    "modules": "Modules",
-    "register": "Register",
     "save": "Save",
-    "settings": "Settings",
-    "start": "Start"
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "start": "Start",
+    "back": "Back"
   },
   "user": {
-    "email": "Email",
-    "loggedInAs": "Logged in as",
-    "noUser": "No user logged in.",
-    "resetPassword": "Reset password",
     "title": "My Account",
-    "totalPoints": "Total points collected",
-    "updated": "Profile updated (Demo)",
-    "username": "Username"
+    "loggedInAs": "Logged in as",
+    "username": "Username",
+    "email": "Email",
+    "resetPassword": "Reset Password",
+    "totalPoints": "Total Points Earned",
+    "updated": "Profile updated (demo)",
+    "noUser": "No user logged in."
   },
   "settings": {
-    "darkMode": "Enable Dark Mode",
-    "guestNotice": "You are not logged in. Some settings may not be saved permanently.",
-    "language": "Language",
-    "saved": "Settings saved!",
     "title": "Settings",
-    "volume": "Volume"
+    "volume": "Volume",
+    "darkMode": "Enable Dark Mode",
+    "language": "Language",
+    "saved": "Settings saved",
+    "guestNotice": "You are currently not logged in. Some settings may not be saved permanently."
   },
   "home": {
+    "welcome": "Welcome to",
+    "subtitle": "Learn through interactive modules and minigames!",
     "button": "Get started",
-    "imageAlt": "Homepage illustration",
-    "subtitle": "Learn through play with interactive modules and mini-games!",
-    "welcome": "Welcome to"
+    "imageAlt": "Homepage illustration"
   },
   "modules": {
-    "economics1": "Economics I",
-    "economics2": "Economics II",
+    "select": "Choose a module",
+    "production": "Production and Logistics",
     "finance": "Finance and Accounting",
     "management": "Management and Marketing",
     "planning": "Integrated Production Planning",
-    "production": "Production and Logistics",
-    "select": "Select a module",
+    "economics2": "Economics II",
+    "economics1": "Economics I",
     "uploadTitle": "📤 Upload PDF",
-    "disclaimer": "Note: The provided lecture contents may be outdated."
+    "disclaimer": "Note: Provided lecture content may be outdated."
   },
   "chapters": {
-    "allChapters": "All chapters",
+    "selectSubchapter": "Select a chapter",
     "chapter": "Chapter",
-    "learnAll": "Learn all chapters",
-    "selectSubchapter": "Choose a chapter",
-    "topic": "Topic"
+    "topic": "Topic",
+    "learnAll": "Practice all chapters",
+    "allChapters": "All chapters"
   },
   "minigames": {
-    "gapfill": "Gap Fill",
-    "memory": "Memory",
+    "select": "Choose a minigame",
     "quiz": "Quiz",
-    "select": "Choose a mini-game",
+    "memory": "Memory",
+    "gapfill": "Gap fill",
     "modal": {
-      "pairs": "Pairs:",
+      "title": "Start Minigame",
       "questions": "Questions:",
-      "seconds": "seconds",
+      "pairs": "Pairs:",
       "timePerQuestion": "Time per question:",
-      "title": "Start Mini-Game"
+      "seconds": "seconds"
     }
   },
-  "stats": {
-    "average": "Average",
-    "bestScore": "Best score",
-    "compare": "Points comparison",
-    "coverage": "Content coverage",
-    "gapfill": "Gap Fill",
-    "gamesPlayed": "Games played",
-    "lastPlayed": "Last played",
-    "memory": "Memory",
-    "progress": "Progress",
-    "quiz": "Quiz",
-    "title": "Your Statistics",
-    "totalPoints": "Total points"
-  },
   "leaderboard": {
-    "place": "Place",
-    "points": "Points",
-    "title": "Leaderboard"
+    "title": "Leaderboard",
+    "place": "Rank",
+    "points": "Points"
+  },
+  "stats": {
+    "title": "Your Statistics",
+    "lastPlayed": "Last Played",
+    "quiz": "Quiz",
+    "memory": "Memory",
+    "gapfill": "Gap fill",
+    "gamesPlayed": "Games Played",
+    "totalPoints": "Total Points",
+    "bestScore": "Best Score",
+    "average": "Average",
+    "progress": "Progress",
+    "coverage": "Content Coverage",
+    "compare": "Score Comparison"
   },
   "subjects": {
-    "accounting": "Accounting",
-    "balance": "Annual Financial Statements and Valuation",
-    "economics1": "Economics I",
-    "economics2": "Economics II",
-    "energy": "Energy Economics",
-    "entrepreneurship": "Entrepreneurship",
-    "finance": "Finance",
-    "hr": "HR Management",
-    "integratedPlanning": "Integrated Production Planning",
+    "production": "Production",
     "logistics": "Logistics",
+    "energy": "Energy Economics",
+    "finance": "Finance",
+    "accounting": "Accounting",
+    "balance": "Annual Accounts and Valuation",
     "management": "Corporate Management",
+    "entrepreneurship": "Entrepreneurship",
+    "hr": "HR Management",
     "marketing": "Marketing",
-    "production": "Production"
-  },
-  "guidelines": {
-    "title": "User Guide",
-    "subtitle": "How to get the most out of the app:",
-    "tips": [
-      "✅ Select a module you want to study.",
-      "✅ Start a mini-game (Quiz, Memory or Gap Fill) to reinforce your knowledge.",
-      "⏳ Pay attention to the time limit in the games to train your reaction speed.",
-      "💾 Your progress is saved when you are logged in.",
-      "📈 Use the statistics page to analyze your learning progress.",
-      "📤 Upload your own PDFs under 'Modules' to add custom content.",
-      "⚠️ Lecture content may be outdated – use it as a supplement, not your only source."
-    ]
+    "integratedPlanning": "Integrated Production Planning",
+    "economics1": "Economics I",
+    "economics2": "Economics II"
   },
   "userDropdown": {
     "openMenu": "Open user menu",
@@ -122,10 +101,50 @@
     "settings": "Settings",
     "stats": "Statistics",
     "leaderboard": "Leaderboard",
-    "guidelines": "User Guide",
+    "help": "Help & Info",
     "logout": "Logout",
     "login": "Login",
     "register": "Register",
     "guest": "Guest mode active"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "paragraph1": "We take your data protection seriously. Personal data is only collected if you provide it as part of your usage.",
+    "paragraph2": "We do not share your data with third parties without your explicit consent."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Which learning materials should I upload?",
+        "answer": "Ideally thematically organized PDFs with exercises, solutions, or summaries."
+      },
+      {
+        "question": "Which minigame is particularly useful?",
+        "answer": "For math, the number pair game is ideal to train mental arithmetic."
+      }
+    ]
+  },
+  "guidelines": {
+    "title": "Guidelines & Best Practices",
+    "tips": [
+      "Avoid duplicate content – each document should be unique.",
+      "Use descriptive file names like <code>Fractions_Exercises.pdf</code>.",
+      "Test each minigame before using it in class.",
+      "Upload fewer but higher quality documents."
+    ]
+  },
+  "help": {
+    "title": "Help & Information",
+    "faq": "FAQ – Frequently Asked Questions",
+    "guidelines": "Guidelines & Best Practices",
+    "datenschutz": "Privacy Policy",
+    "impressum": "Legal Notice"
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "address": "<strong>Responsible:</strong> Max Mustermann<br />Musterstraße 1<br />12345 Musterstadt",
+    "email": "Email: kontakt@example.com",
+    "note": "Content responsibility according to § 55 Abs. 2 RStV: Max Mustermann"
   }
 }
