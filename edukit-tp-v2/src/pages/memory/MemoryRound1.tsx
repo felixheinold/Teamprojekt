@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import "./MemoryRound1.css";
 
 const initialPairs = [
   {
@@ -182,15 +183,9 @@ const MemoryRound1 = () => {
   };
 
   return (
-    <div
-      className="container d-flex flex-column align-items-center pt-2"
-      style={{ minHeight: "100vh" }}
-    >
+    <div className="memory-wrapper">
       {/* Abbrechen mit Bestätigungsdialog */}
-      <div
-        className="position-absolute"
-        style={{ top: "80px", left: "30px", zIndex: 10 }}
-      >
+      <div className="cancel-button">
         {!showCancelConfirm ? (
           <button
             className="btn btn-dark"
@@ -199,11 +194,11 @@ const MemoryRound1 = () => {
             Abbrechen
           </button>
         ) : (
-          <div className="d-flex flex-column gap-2">
-            <div className="text-white bg-dark rounded px-3 py-2">
+          <div className="cancel-confirm-container">
+            <div className="cancel-confirm-text">
               Möchtest du wirklich abbrechen?
             </div>
-            <div className="d-flex gap-2">
+            <div className="cancel-confirm-buttons">
               <button
                 className="btn btn-secondary btn-sm"
                 onClick={() => setShowCancelConfirm(false)}
@@ -221,24 +216,9 @@ const MemoryRound1 = () => {
         )}
       </div>
 
-      <div
-        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-        style={{
-          backgroundColor: "#228b57",
-          maxWidth: "600px",
-          width: "100%",
-          marginTop: "-8px",
-        }}
-      >
-        {module}
-      </div>
-      <div
-        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
-      >
-        {chapter}
-      </div>
-      <h1 className="fw-bold display-5 mb-4">🧠 Memory Runde 1</h1>
+      <div className="memory-header">{module}</div>
+      <div className="memory-subheader">{chapter}</div>
+      <h1 className="memoryr1-title">🧠 Memory Runde 1</h1>
 
       <div
         className="d-flex justify-content-between"
@@ -262,7 +242,7 @@ const MemoryRound1 = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleTermClick(item.term, isUsed)}
                 onDragStart={() => setDraggedTerm(item.term)}
-                className="mb-3 text-center p-3 shadow-sm"
+                className="mb-3 text-center p-3 shadow-sm term-box"
                 style={{
                   backgroundColor: isUsed
                     ? "#b5a4d6"
@@ -310,7 +290,7 @@ const MemoryRound1 = () => {
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={() => handleDrop(item.definition)}
                 onTouchEnd={() => handleDrop(item.definition)}
-                className="mb-3 d-flex align-items-center justify-content-between p-3"
+                className="mb-3 d-flex align-items-center justify-content-between p-3 definition-box"
                 style={{
                   backgroundColor: bgColor,
                   borderRadius: "10px",
@@ -323,12 +303,7 @@ const MemoryRound1 = () => {
                 <span style={{ flex: 1 }}>{item.definition}</span>
                 {assignedTerm && (
                   <motion.span
-                    className="badge bg-secondary ms-3"
-                    style={{
-                      minWidth: "100px",
-                      fontSize: "1rem",
-                      cursor: "pointer",
-                    }}
+                    className="badge bg-secondary ms-3 memory-badge"
                     onClick={(e) => {
                       e.stopPropagation();
                       handleResetTerm(item.definition);

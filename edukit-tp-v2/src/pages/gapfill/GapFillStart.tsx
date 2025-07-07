@@ -47,22 +47,22 @@ const GapFillStart = () => {
       </div>
 
       {/* Überschrift mit Icon */}
-      <div className="quiz-title-container">
-        <h1 className="quiz-title">LÜCKENTEXT</h1>
+      <div className="gap-title-container">
+        <h1 className="gap-title">LÜCKENTEXT</h1>
         <img
           src="/images/fillgap.png"
           alt="Gapfill Icon"
-          className="tutorial-icon"
+          className="gaptutorial-icon"
         />
       </div>
 
       {/* Tutorial-Box */}
       <div className="gaptutorial-box">
-        <div className="tutorial-text">🎥 Video Tutorial anschauen:</div>
+        <div className="gaptutorial-text">🎥 Video Tutorial anschauen:</div>
       </div>
 
       {/* Tutorial Video */}
-      <div className="tutorial-video">
+      <div className="gaptutorial-video">
         <iframe
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="YouTube Video Tutorial"
@@ -74,7 +74,7 @@ const GapFillStart = () => {
       <motion.div
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
-        className="start-button-wrapper"
+        className="gapstart-button-wrapper"
       >
         <Link
           to="/gapfillgame"

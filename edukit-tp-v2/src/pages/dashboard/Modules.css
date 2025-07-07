@@ -2,6 +2,9 @@
 .container {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  width: 100%;
+  max-width: 100%;
+
 }
 
 /* Modul-Button-Stil */
@@ -27,6 +30,8 @@
     font-size: 1rem;
     padding: 0.4rem 1.2rem;
     margin-bottom: -0.2rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   .modules-wrapper h1 {

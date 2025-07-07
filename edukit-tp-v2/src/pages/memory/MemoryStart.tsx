@@ -44,22 +44,22 @@ const MemoryStart = () => {
       </div>
 
       {/* Titel */}
-      <div className="quiz-title-container">
-        <h1 className="quiz-title">MEMORY</h1>
+      <div className="memory-title-container">
+        <h1 className="memory-title">MEMORY</h1>
         <img
           src="/images/memory.png"
           alt="Memory Icon"
-          className="tutorial-icon"
+          className="memorytutorial-icon"
         />
       </div>
 
       {/* Tutorial-Box */}
       <div className="memorytutorial-box">
-        <div className="tutorial-text">🎥 Video Tutorial anschauen:</div>
+        <div className="memorytutorial-text">🎥 Video Tutorial anschauen:</div>
       </div>
 
       {/* Video */}
-      <div className="tutorial-video">
+      <div className="memorytutorial-video">
         <iframe
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="YouTube Video Tutorial"
@@ -71,7 +71,7 @@ const MemoryStart = () => {
       <motion.div
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
-        className="start-button-wrapper"
+        className="memorystart-button-wrapper"
       >
         <Link
           to="/memoryround1"

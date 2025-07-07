@@ -47,7 +47,7 @@ const Modules = () => {
 
   return (
     <div
-      className="modules-wrapper container py-4 d-flex flex-column align-items-center"
+      className="modules-wrapper container-fluid py-4 d-flex flex-column align-items-center"
       style={{ minHeight: "100vh" }}
     >
       <h1 className="text-center fw-bold display-5 mb-4">

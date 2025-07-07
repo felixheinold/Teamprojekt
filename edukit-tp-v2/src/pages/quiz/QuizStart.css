@@ -9,7 +9,9 @@
 }
 
 .cancel-button {
-  position: absolute;
+  position: static;
+  align-self: flex-start;
+  margin-top: -2.2rem;
   top: 0;
   left: 0;
   z-index: 1050;
@@ -18,16 +20,16 @@
 .cancel-button .btn {
   font-size: 1rem;
   padding: 0.4rem 0.8rem;
+  margin-top: -0.5rem;
+   margin-bottom: 0.5rem;
 }
 
 .cancel-confirm-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 0.25rem;
+  margin-top: -0.5rem;
   max-width: max-content;
-  background-color: white;
-    
 }
 
 .cancel-confirm-text {
@@ -37,7 +39,7 @@
   padding: 0.4rem 0.8rem;
   border: 2px solid black;
   border-radius: 5px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -60,6 +62,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-top: -0.7rem;
   margin-bottom: 1rem;
   width: 100%;
   max-width: 600px;
@@ -72,7 +75,7 @@
   text-align: center;
 }
 
-.tutorial-icon {
+.quiztutorial-icon {
   height: 50px;
   width: 50px;
   object-fit: contain;
@@ -81,7 +84,7 @@
 }
 
 /* Tutorial-Box */
-.tutorial-box {
+.quiztutorial-box {
   width: 100%;
   max-width: 800px;
   background-color: #a7e6ff;
@@ -92,14 +95,14 @@
   margin-bottom: 1rem;
 }
 
-.tutorial-text {
+.quiztutorial-text {
   font-size: 1.2rem;
   font-weight: bold;
   color: #000;
 }
 
 /* Video */
-.tutorial-video {
+.quiztutorial-video {
   width: 100%;
   max-width: 600px;
   height: 280px;
@@ -107,19 +110,19 @@
   margin-bottom: 1rem;
 }
 
-.tutorial-video iframe {
+.quiztutorial-video iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
 
 /* Startbutton */
-.start-button-wrapper {
+.quizstart-button-wrapper {
   width: 100%;
   max-width: 600px;
 }
 
-.start-button {
+.quizstart-button {
   display: block;
   width: 100%;
   background-color: #5ac0f0;
@@ -132,6 +135,16 @@
   font-size: 1.2rem;
 }
 
+/* Nur für Mobilgeräte */
+@media (max-width: 576px) {
+  .cancel-button {
+    position: static;
+    align-self: flex-start;
+    margin-top: -2.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Tablet */
 @media (min-width: 577px) and (max-width: 991px) {
   .cancel-button .btn, .cancel-confirm-text {
@@ -142,25 +155,25 @@
   .quiz-title {
     font-size: 2.5rem;
   }
-  .tutorial-box{
+  .quiztutorial-box{
     max-width: 600px;
     padding: 0.75rem 1.6rem;;
   }
-  .tutorial-icon {
+  .quiztutorial-icon {
     height: 60px;
     width: 60px;
   }
-  .tutorial-text {
+  .quiztutorial-text {
     font-size: 1.25rem;
   }
-  .tutorial-video {
+  .quiztutorial-video {
     max-width: 600px;
     height: 320px;
   }
-  .start-button-wrapper {
+  .quizstart-button-wrapper {
     max-width: 600px;
   }
-  .start-button {
+  .quizstart-button {
     font-size: 1.25rem;
     padding: 0.75rem 1.6rem;
   }
@@ -175,25 +188,25 @@
   .quiz-title {
     font-size: 3rem;
   }
-  .tutorial-icon {
+  .quiztutorial-icon {
     height: 70px;
     width: 70px;
   }
-  .tutorial-box{
+  .quiztutorial-box{
     max-width: 800px;
     padding: 0.9rem 2rem;
   }
-  .tutorial-text {
+  .quiztutorial-text {
     font-size: 1.4rem;
   }
-  .tutorial-video {
+  .quiztutorial-video {
     max-width: 800px;
     height: 360px;
   }
-  .start-button-wrapper {
+  .quizstart-button-wrapper {
     max-width: 800px;
   }
-  .start-button {
+  .quizstart-button {
     font-size: 1.4rem;
     padding: 0.9rem 2rem;
   }
@@ -208,25 +221,25 @@
   .quiz-title {
     font-size: 3.4rem;
   }
-  .tutorial-icon {
+  .quiztutorial-icon {
     height: 80px;
     width: 80px;
   }
-  .tutorial-box{
+  .quiztutorial-box{
     max-width: 1000px;
      padding: 1.1rem 2.2rem;
   }
-  .tutorial-text {
+  .quiztutorial-text {
     font-size: 1.5rem;
   }
-  .tutorial-video {
+  .quiztutorial-video {
     max-width: 1000px;
     height: 400px;
   }
-  .start-button-wrapper {
+  .quizstart-button-wrapper {
     max-width: 1000px;
   }
-  .start-button {
+  .quizstart-button {
     font-size: 1.5rem;
     padding: 1.1rem 2.2rem;
   }
