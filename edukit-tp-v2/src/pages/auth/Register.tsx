@@ -23,6 +23,7 @@ const Register = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
     /** 
     const API = import.meta.env.VITE_API_BASE_URL;
