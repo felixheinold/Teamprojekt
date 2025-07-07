@@ -1,0 +1,92 @@
+/* Wrapper Basis-Layout */
+.chapters-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Kapitel-Buttons */
+.chapter-button {
+  background-color: #78ba84;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.chapter-button:hover {
+  background-color: #78ba84;
+  color: #000;
+}
+
+.chapter-section, .module-label {
+  max-width: 600px;
+  width: 100%;
+}
+
+.subject-title {
+  font-size: 1.1rem;
+}
+
+/* Tablet (577–991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .chapter-button, .module-label {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.6rem;
+  }
+  .subject-title {
+    font-size: 1.25rem;
+  }
+  .chapters-wrapper h1 {
+    font-size: 2.5rem;
+  }
+  .module-label,
+  .chapter-section, .chapter-button {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Desktop (992–1399px) */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .chapter-button, .module-label {
+    font-size: 1.4rem;
+    padding: 0.9rem 2rem;
+  }
+  .subject-title {
+    font-size: 1.4rem;
+  }
+  .chapters-wrapper h1 {
+    font-size: 3rem;
+  }
+  .module-label,
+  .chapter-section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Große Desktops (≥1400px) */
+@media (min-width: 1400px) {
+  .chapter-button, .module-label {
+    font-size: 1.5rem;
+    padding: 1.1rem 2.2rem;
+  }
+  .subject-title {
+    font-size: 1.5rem;
+  }
+  .chapters-wrapper h1 {
+    font-size: 3.4rem;
+  }
+  .module-label,
+  .chapter-section, .chapter-button {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

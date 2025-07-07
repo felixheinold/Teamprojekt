@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const initialPairs = [
   {
@@ -76,6 +77,8 @@ const shuffleArray = (arr: any[]) => [...arr].sort(() => Math.random() - 0.5);
 const MemoryRound1 = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+
   const {
     module = "",
     chapter = "",
@@ -183,13 +186,40 @@ const MemoryRound1 = () => {
       className="container d-flex flex-column align-items-center pt-2"
       style={{ minHeight: "100vh" }}
     >
-      <button
-        className="btn btn-dark position-absolute"
+      {/* Abbrechen mit Bestätigungsdialog */}
+      <div
+        className="position-absolute"
         style={{ top: "80px", left: "30px", zIndex: 10 }}
-        onClick={() => navigate(-2)}
       >
-        Abbrechen
-      </button>
+        {!showCancelConfirm ? (
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
+            Abbrechen
+          </button>
+        ) : (
+          <div className="d-flex flex-column gap-2">
+            <div className="text-white bg-dark rounded px-3 py-2">
+              Möchtest du wirklich abbrechen?
+            </div>
+            <div className="d-flex gap-2">
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() => setShowCancelConfirm(false)}
+              >
+                Nein
+              </button>
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => navigate(-2)}
+              >
+                Ja, zurück
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
 
       <div
         className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
@@ -314,8 +344,8 @@ const MemoryRound1 = () => {
       </div>
 
       <motion.button
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         onClick={submitted ? handleFinish : handleSubmit}
         className="fw-bold text-white mt-4"
         style={{

@@ -1,10 +1,12 @@
 import { useUser } from "../context/UserContext";
 import { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const UserDropdown = () => {
   const { user, setUser } = useUser();
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -50,7 +52,7 @@ const UserDropdown = () => {
           fontWeight: "bold",
           color: "#333",
         }}
-        aria-label="Benutzermenü öffnen"
+        aria-label={t("userDropdown.openMenu")}
         tabIndex={0}
       >
         {user?.userProfilePicture ? (
@@ -73,24 +75,26 @@ const UserDropdown = () => {
                 {user.userMail}
               </div>
               <div className="dropdown-divider"></div>
-              <Link to="/user" className="dropdown-item text-dark">👤 Profil</Link>
-              <Link to="/settings" className="dropdown-item text-dark">⚙️ Einstellungen</Link>
-              <Link to="/stats" className="dropdown-item text-dark">📊 Statistik</Link>
-              <Link to="/leaderboard" className="dropdown-item text-dark">🏆 Leaderboard</Link>
+              <Link to="/user" className="dropdown-item text-dark">👤 {t("userDropdown.profile")}</Link>
+              <Link to="/settings" className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
+              <Link to="/stats" className="dropdown-item text-dark">📊 {t("userDropdown.stats")}</Link>
+              <Link to="/leaderboard" className="dropdown-item text-dark">🏆 {t("userDropdown.leaderboard")}</Link>
+              <Link to="/guidelines" className="dropdown-item text-dark">🧭 {t("userDropdown.guidelines")}</Link>
               <div className="dropdown-divider"></div>
               <button onClick={handleLogout} className="dropdown-item text-danger">
-                🚪 Abmelden
+                🚪 {t("userDropdown.logout")}
               </button>
             </>
           ) : (
             <>
               <div className="dropdown-item-text px-3 small text-muted">
-                Gastmodus aktiv
+                {t("userDropdown.guest")}
               </div>
               <div className="dropdown-divider"></div>
-              <Link to="/settings" className="dropdown-item text-dark">⚙️ Einstellungen</Link>
-              <Link to="/login" className="dropdown-item text-primary">🔐 Anmelden</Link>
-              <Link to="/register" className="dropdown-item text-primary">📝 Registrieren</Link>
+              <Link to="/settings" className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
+              <Link to="/guidelines" className="dropdown-item text-dark">🧭 {t("userDropdown.guidelines")}</Link>
+              <Link to="/login" className="dropdown-item text-primary">🔐 {t("userDropdown.login")}</Link>
+              <Link to="/register" className="dropdown-item text-primary">📝 {t("userDropdown.register")}</Link>
             </>
           )}
         </div>

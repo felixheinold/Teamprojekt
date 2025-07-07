@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type Card = {
   id: number;
@@ -15,6 +16,8 @@ const shuffleArray = <T,>(array: T[]): T[] =>
 const MemoryRound2 = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+
   const {
     module = "",
     chapter = "",
@@ -66,11 +69,13 @@ const MemoryRound2 = () => {
   const handleCardClick = (card: Card) => {
     if (disabled || flipped.includes(card.id) || matched.includes(card.id))
       return;
+
     if (flipped.length === 0) {
       setFlipped([card.id]);
     } else if (flipped.length === 1) {
       const firstCard = cards.find((c) => c.id === flipped[0]);
       if (!firstCard) return;
+
       const newFlipped = [flipped[0], card.id];
       setFlipped(newFlipped);
       setDisabled(true);
@@ -106,16 +111,42 @@ const MemoryRound2 = () => {
       className="container d-flex flex-column align-items-center pt-2"
       style={{ minHeight: "100vh" }}
     >
-      {/* Abbrechen-Button */}
-      <button
-        className="btn btn-dark position-absolute"
+      {/* Abbrechen mit Bestätigungsdialog */}
+      <div
+        className="position-absolute"
         style={{ top: "80px", left: "30px", zIndex: 10 }}
-        onClick={() => navigate(-4)}
       >
-        Abbrechen
-      </button>
+        {!showCancelConfirm ? (
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
+            Abbrechen
+          </button>
+        ) : (
+          <div className="d-flex flex-column gap-2">
+            <div className="text-white bg-dark rounded px-3 py-2">
+              Möchtest du wirklich abbrechen?
+            </div>
+            <div className="d-flex gap-2">
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() => setShowCancelConfirm(false)}
+              >
+                Nein
+              </button>
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => navigate(-4)}
+              >
+                Ja, zurück
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
 
-      {/* Modul-Anzeige */}
+      {/* Modul & Kapitelanzeige */}
       <div
         className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
         style={{
@@ -127,7 +158,7 @@ const MemoryRound2 = () => {
       >
         {module}
       </div>
-      {/* Kapitel-Anzeige */}
+
       <div
         className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
         style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
@@ -219,7 +250,7 @@ const MemoryRound2 = () => {
                 module,
                 chapter,
                 questionCount: pairs.length,
-                turns: turn - 1, // Anzahl Züge
+                turns: turn - 1,
                 pairs,
               },
             })

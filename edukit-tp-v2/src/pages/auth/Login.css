@@ -1,0 +1,117 @@
+/* Wrapper Standard */
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Content */
+.login-content {
+  width: 100%;
+  margin: auto;
+}
+.back-button {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .login-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .login-content p {
+    font-size: 1rem;
+  }
+
+  .back-button {
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+
+  .login-content input,
+  .login-content button {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Tablet (577–991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .login-content {
+    max-width: 400px;
+  }
+
+  .login-content h2 {
+    font-size: 2rem;
+  }
+
+  .login-content p {
+    font-size: 1.1rem;
+  }
+
+  .back-button {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .login-content input,
+  .login-content button {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.3rem;
+  }
+}
+
+/* Desktop (992–1399px) */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .login-content {
+    max-width: 600px;
+  }
+
+  .login-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .login-content p {
+    font-size: 1.2rem;
+  }
+
+  .back-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .login-content input,
+  .login-content button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+/* Große Desktops (≥1400px) */
+@media (min-width: 1400px) {
+  .login-content {
+    max-width: 800px;
+  }
+
+  .login-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .login-content p {
+    font-size: 1.3rem;
+  }
+
+  .back-button {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .login-content input,
+  .login-content button {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.8rem;
+  }
+}

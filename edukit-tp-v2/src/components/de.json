@@ -31,13 +31,15 @@
     "imageAlt": "Startseiten-Illustration"
   },
   "modules": {
-    "select": "Wähle ein Modul aus",
+    "select": "Wähle ein Modul",
     "production": "Produktion und Logistik",
     "finance": "Finanzierung und Rechnungswesen",
     "management": "Management und Marketing",
     "planning": "Integrierte Produktionsplanung",
     "economics2": "Volkswirtschaftslehre 2",
-    "economics1": "Volkswirtschaftslehre 1"
+    "economics1": "Volkswirtschaftslehre 1",
+    "uploadTitle": "📤 PDF hochladen",
+    "disclaimer": "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."
   },
   "chapters": {
     "selectSubchapter": "Wähle ein Kapitel",
@@ -47,7 +49,7 @@
     "allChapters": "Alle Kapitel"
   },
   "minigames": {
-    "select": "Wähle ein Mini-Game aus",
+    "select": "Wähle ein Mini-Game",
     "quiz": "Quiz",
     "memory": "Memory",
     "gapfill": "Lückentext",
@@ -92,5 +94,30 @@
     "integratedPlanning": "Integrierte Produktionsplanung",
     "economics1": "Volkswirtschaftslehre 1",
     "economics2": "Volkswirtschaftslehre 2"
+  },
+  "guidelines": {
+    "title": "Nutzungsleitfaden",
+    "subtitle": "So nutzt du die App am effektivsten:",
+    "tips": [
+      "✅ Wähle ein Modul, das du lernen möchtest.",
+      "✅ Starte ein Minigame (Quiz, Memory oder Lückentext), um dein Wissen spielerisch zu festigen.",
+      "⏳ Beachte das Zeitlimit in den Spielen, um deine Reaktionszeit zu trainieren.",
+      "💾 Dein Fortschritt wird gespeichert, wenn du angemeldet bist.",
+      "📈 Nutze die Statistikseite, um deine Lernfortschritte zu analysieren.",
+      "📤 Lade eigene PDFs hoch unter \"Module\", um individuelle Inhalte zu ergänzen.",
+      "⚠️ Inhalte können veraltet sein – nutze sie als Ergänzung, nicht als alleinige Lernquelle."
+    ]
+  },
+  "userDropdown": {
+    "openMenu": "Benutzermenü öffnen",
+    "profile": "Profil",
+    "settings": "Einstellungen",
+    "stats": "Statistik",
+    "leaderboard": "Bestenliste",
+    "guidelines": "Nutzungshinweise",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "guest": "Gastmodus aktiv"
   }
 }

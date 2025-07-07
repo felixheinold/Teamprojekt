@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
+import { useTranslation } from "react-i18next";
+import "./Login.css"; // NEU: CSS importieren
 
 const Login = () => {
   const navigate = useNavigate();
@@ -68,35 +70,45 @@ const Login = () => {
 
   return (
     <AuthLayout>
-      <h2 className="fw-bold">Log in</h2>
-      <p className="text-muted mb-4">
-        Willkommen zurück bei <strong>EduKIT</strong>.
-      </p>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          name="email"
-          type="email"
-          className="form-control mb-2"
-          placeholder="u....@student.kit.edu"
-          onChange={handleChange}
-          required
-          pattern=".+@student.kit.edu"
-          title="Nur KIT-E-Mail-Adressen erlaubt"
-        />
-        <input
-          name="password"
-          type="password"
-          className="form-control mb-3"
-          placeholder="Passwort"
-          onChange={handleChange}
-          required
-        />
-        <button type="submit" className="btn btn-dark w-100 mb-2">
-          Sign In
+      <div className="login-content">
+        <button
+          className="btn btn-dark back-button align-self-start"
+          onClick={() => navigate("/")}
+        >
+          ← Zurück
         </button>
-        <a href="#" className="text-muted small">Passwort vergessen?</a>
-      </form>
+        <h2 className="fw-bold">Log in</h2>
+        <p className="text-muted mb-4">
+          Willkommen zurück bei <strong>EduKIT</strong>.
+        </p>
+
+        <form onSubmit={handleSubmit}>
+          <input
+            name="email"
+            type="email"
+            className="form-control mb-2"
+            placeholder="u....@student.kit.edu"
+            onChange={handleChange}
+            required
+            pattern=".+@student.kit.edu"
+            title="Nur KIT-E-Mail-Adressen erlaubt"
+          />
+          <input
+            name="password"
+            type="password"
+            className="form-control mb-3"
+            placeholder="Passwort"
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" className="btn btn-dark w-100 mb-2">
+            Anmelden
+          </button>
+          <a href="#" className="text-muted small">
+            Passwort vergessen?
+          </a>
+        </form>
+      </div>
     </AuthLayout>
   );
 };

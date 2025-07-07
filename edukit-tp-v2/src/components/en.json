@@ -45,7 +45,9 @@
     "management": "Management and Marketing",
     "planning": "Integrated Production Planning",
     "production": "Production and Logistics",
-    "select": "Select a module"
+    "select": "Select a module",
+    "uploadTitle": "📤 Upload PDF",
+    "disclaimer": "Note: The provided lecture contents may be outdated."
   },
   "chapters": {
     "allChapters": "All chapters",
@@ -100,5 +102,30 @@
     "management": "Corporate Management",
     "marketing": "Marketing",
     "production": "Production"
+  },
+  "guidelines": {
+    "title": "User Guide",
+    "subtitle": "How to get the most out of the app:",
+    "tips": [
+      "✅ Select a module you want to study.",
+      "✅ Start a mini-game (Quiz, Memory or Gap Fill) to reinforce your knowledge.",
+      "⏳ Pay attention to the time limit in the games to train your reaction speed.",
+      "💾 Your progress is saved when you are logged in.",
+      "📈 Use the statistics page to analyze your learning progress.",
+      "📤 Upload your own PDFs under 'Modules' to add custom content.",
+      "⚠️ Lecture content may be outdated – use it as a supplement, not your only source."
+    ]
+  },
+  "userDropdown": {
+    "openMenu": "Open user menu",
+    "profile": "Profile",
+    "settings": "Settings",
+    "stats": "Statistics",
+    "leaderboard": "Leaderboard",
+    "guidelines": "User Guide",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "guest": "Guest mode active"
   }
 }

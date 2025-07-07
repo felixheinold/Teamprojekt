@@ -5,13 +5,8 @@ interface AvatarPickerProps {
   onChange: (avatar: string) => void;
 }
 
-const avatarOptions = [
-  "avatar1.png",
-  "avatar2.png",
-  "avatar3.png",
-  "avatar4.png",
-  "avatar5.png",
-];
+// Dynamisch alle 25 Avatare generieren
+const avatarOptions = Array.from({ length: 25 }, (_, i) => `avatar${i + 1}.png`);
 
 const AvatarPicker = ({ value, onChange }: AvatarPickerProps) => {
   const [open, setOpen] = useState(false);
@@ -33,12 +28,13 @@ const AvatarPicker = ({ value, onChange }: AvatarPickerProps) => {
       <button
         type="button"
         className="btn white rounded-circle p-0"
-        style={{ width: "60px", height: "60px" }}
+        style={{ width: "130px", height: "130px" }}
         onClick={() => setOpen((prev) => !prev)}
+        aria-label="Avatar auswählen"
       >
         <img
           src={`/avatars/${value}`}
-          alt="Avatar"
+          alt="Aktueller Avatar"
           style={{
             width: "100%",
             height: "100%",
@@ -49,7 +45,10 @@ const AvatarPicker = ({ value, onChange }: AvatarPickerProps) => {
       </button>
 
       {open && (
-        <div className="d-flex gap-2 mt-3 flex-wrap">
+        <div
+          className="d-flex gap-2 mt-3 flex-wrap"
+          style={{ maxWidth: "400px" }}
+        >
           {avatarOptions.map((avatar) => (
             <img
               key={avatar}
@@ -64,8 +63,7 @@ const AvatarPicker = ({ value, onChange }: AvatarPickerProps) => {
                 height: "50px",
                 borderRadius: "50%",
                 objectFit: "cover",
-                border:
-                  value === avatar ? "3px solid black" : "1px solid #ccc",
+                border: value === avatar ? "3px solid black" : "1px solid #ccc",
                 cursor: "pointer",
               }}
             />

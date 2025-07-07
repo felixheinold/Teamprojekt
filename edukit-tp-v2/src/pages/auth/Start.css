@@ -1,0 +1,131 @@
+/* Grundlayout */
+.start-wrapper {
+  min-height: 100vh;
+}
+
+/* Standardwerte für Desktop */
+.start-title {
+  font-size: 2.2rem;
+}
+
+.start-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.startscreen-button {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Mobile Ansicht (max 576px) */
+@media (max-width: 576px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    padding-top: 1.4rem !important;
+    padding-bottom: 1.8rem !important;
+  }
+
+  .start-title {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .start-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    margin-top: -0.4rem;
+    line-height: 1.4;
+  }
+
+  .startscreen-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  /* Abstand zwischen Buttons reduzieren */
+  .start-content .d-flex.flex-column {
+    row-gap: 0.6rem !important;
+  }
+
+  /* Bild kompakter und darunter */
+  .text-end {
+    text-align: center !important;
+    margin-top: -5.8rem;
+  }
+
+  .text-end img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+/* Tablet (ab 577px) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .start-title {
+    font-size: 2.5rem;
+  }
+
+  .start-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .startscreen-button {
+    font-size: 1.15rem;
+    padding: 0.9rem 1.3rem;
+  }
+  .text-end img {
+    width: 80%;
+    height: auto;
+  }
+ 
+}
+
+/* Desktop (ab 992px) */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .start-title {
+    font-size: 3rem;
+  }
+
+  .start-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .startscreen-button {
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+  }
+  .text-end img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* Große Desktop-Bildschirme (ab 1400px) */
+@media (min-width: 1400px) {
+  .start-title {
+    font-size: 3.4rem;
+  }
+
+  .start-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .startscreen-button {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.8rem;
+  }
+
+  .text-end img,
+  .start-image {
+    max-width: 100%;
+  }
+}
+
