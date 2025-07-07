@@ -1,0 +1,199 @@
+.memoryr1result-wrapper {
+min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.result-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.memoryr1result-title {
+justify-content: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  max-width: 90%;
+}
+
+.memoryr1result-subtitle {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.memory1-button {
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.memory2-button {
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+/* Abbrechen-Button und Bestätigungsdialog */
+.cancel-button {
+  position: static;
+  align-self: flex-start;
+  z-index: 1050;
+  margin-bottom: 0.5rem;
+}
+
+.cancel-button .btn {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.cancel-confirm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: max-content;
+}
+
+.cancel-confirm-text {
+  white-space: nowrap;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.cancel-confirm-buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.cancel-confirm-buttons .btn {
+  flex: 1;
+  font-size: inherit;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Mobil */
+@media (max-width: 576px) {
+  .memoryr1result-title {
+    font-size: 1.6rem;
+  }
+
+  .memoryr1result-subtitle {
+    font-size: 1rem;
+  }
+
+  .memory1-button {
+    font-size: 1.3rem;
+    padding: 1rem 1.2rem;
+    width: 90%;
+  }
+
+  .memory2-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    width: 90%;
+  }
+
+  .cancel-button {
+    margin-top: -2rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .memoryr1result-title {
+    font-size: 2.2rem;
+  }
+
+  .memoryr1result-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .memory1-button {
+    font-size: 1.6rem;
+    padding: 0.9rem 1.5rem;
+    width: 400px;
+  }
+
+  .memory2-button {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    width: 400px;
+  }
+
+  .cancel-button .btn {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .memoryr1result-title {
+    font-size: 2.6rem;
+  }
+
+  .memoryr1result-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .memory1-button {
+    font-size: 1.8rem;
+    padding: 1.2rem 1.8rem;
+    width: 500px;
+  }
+
+   .memory2-button {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.8rem;
+    width: 500px;
+  }
+
+  .cancel-button .btn {
+    font-size: 1.1rem;
+  }
+}
+
+/* Großer Desktop */
+@media (min-width: 1400px) {
+  .memoryr1result-title {
+    font-size: 3rem;
+  }
+
+  .memoryr1result-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .memory1-button {
+    font-size: 2.1rem;
+    padding: 1.5rem 2rem;
+    width: 550px;
+  }
+
+   .memory2-button {
+    font-size: 1.5rem;
+    padding: 0.9rem 2rem;
+    width: 550px;
+  }
+
+  .cancel-button .btn {
+    font-size: 1.2rem;
+  }
+}

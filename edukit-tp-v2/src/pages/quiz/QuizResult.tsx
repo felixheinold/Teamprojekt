@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import "./QuizResult.css";
 
 const QuizResult = () => {
   const navigate = useNavigate();
@@ -43,42 +43,22 @@ const QuizResult = () => {
   }, [score, questionCount]);
 
   return (
-    <div
-      className="container d-flex flex-column flex-md-row align-items-center justify-content-center py-5"
-      style={{ gap: "2rem" }}
-    >
-      {/* Bild links */}
-      <div className="text-center">
-        <img
-          src="/images/DinoKIT2.png"
-          alt="Dino"
-          style={{
-            height: "360px",
-            maxWidth: "100%",
-            objectFit: "contain",
-          }}
-        />
+    <div className="quizresult-wrapper">
+      <div className="quizresult-image">
+        <img src="/images/DinoKIT2.png" alt="Dino" />
       </div>
-
       {/* Textbereich */}
-      <div style={{ maxWidth: "500px" }}>
-        <h1 className="fw-bold text-center text-md-start display-5 mb-4">
-          🎉 Super, du hast es geschafft!
-        </h1>
-        <p className="fs-4 mb-4 text-center text-md-start">
+      <div className="quizresult-text">
+        <h1 className="quizresult-title">🎉 Super, du hast es geschafft!</h1>
+        <p className="quizresult-score">
           Du hast <strong>{score}</strong> Punkte gewonnen
         </p>
 
-        <div className="d-flex flex-column gap-3">
+        <div className="quizresult-buttons">
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="btn fw-bold text-white"
-            style={{
-              backgroundColor: "#5ac0f0",
-              fontSize: "1.2rem",
-              borderRadius: "12px",
-            }}
+            className="quizresult-btn"
             onClick={() =>
               navigate("/quiz", {
                 state: { module, subject, chapter, questionCount, timeLimit },
@@ -91,12 +71,7 @@ const QuizResult = () => {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="btn fw-bold text-white"
-            style={{
-              backgroundColor: "#5ac0f0",
-              fontSize: "1.2rem",
-              borderRadius: "12px",
-            }}
+            className="quizresult-btn"
             onClick={() =>
               navigate(
                 `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
@@ -111,12 +86,7 @@ const QuizResult = () => {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="btn fw-bold text-white"
-            style={{
-              backgroundColor: "#5ac0f0",
-              fontSize: "1.2rem",
-              borderRadius: "12px",
-            }}
+            className="quizresult-btn"
             onClick={() => navigate("/modules")}
           >
             📚 Zurück zur Modul-Auswahl

@@ -170,7 +170,7 @@ padding: 0.8rem;
 /* Tablet */
 @media (min-width: 577px) and (max-width: 991px) {
   .quiz-header, .quiz-subheader, .quiz-status {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .quiz-question {
     font-size: 1.25rem;
@@ -196,7 +196,7 @@ padding: 0.8rem;
 /* Desktop */
 @media (min-width: 992px) and (max-width: 1399px) {
   .quiz-header, .quiz-subheader, .quiz-status {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .quiz-question {
     font-size: 1.4rem;
@@ -222,7 +222,7 @@ padding: 0.8rem;
 /* Großer Desktop */
 @media (min-width: 1400px) {
   .quiz-header, .quiz-subheader, .quiz-status {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 0.6rem 1.2rem;
   }
   .quiz-question {
