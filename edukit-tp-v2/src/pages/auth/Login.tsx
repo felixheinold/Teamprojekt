@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import { useTranslation } from "react-i18next";
-import "./Login.css"; // NEU: CSS importieren
+import "./Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
+  const { t } = useTranslation();
 
   const [form, setForm] = useState({
     email: "",
@@ -37,7 +38,7 @@ const Login = () => {
       const result = await res.json();
 
       if (!res.ok) {
-        alert(result.error || "Login fehlgeschlagen.");
+        alert(result.error || t("login.error"));
         return;
       }
 
@@ -45,7 +46,7 @@ const Login = () => {
       const token = result.token;
 
       if (!user) {
-        alert("Benutzerdaten fehlen in der Antwort.");
+        alert(t("login.noUserData"));
         return;
       }
 
@@ -61,10 +62,11 @@ const Login = () => {
         localStorage.setItem("token", token);
       }
 
+      // KORREKT: Direkt zu /home → dort wird der Disclaimer ggf. modal angezeigt
       navigate("/home");
     } catch (err) {
       console.error("Login error:", err);
-      alert("Etwas ist schiefgelaufen.");
+      alert(t("login.unknownError"));
     }
   };
 
@@ -75,11 +77,12 @@ const Login = () => {
           className="btn btn-dark back-button align-self-start"
           onClick={() => navigate("/")}
         >
-          ← Zurück
+          ← {t("common.back")}
         </button>
-        <h2 className="fw-bold">Log in</h2>
+
+        <h2 className="fw-bold">{t("login.title")}</h2>
         <p className="text-muted mb-4">
-          Willkommen zurück bei <strong>EduKIT</strong>.
+          {t("login.subtitle", { app: "EduKIT" })}
         </p>
 
         <form onSubmit={handleSubmit}>
@@ -91,21 +94,21 @@ const Login = () => {
             onChange={handleChange}
             required
             pattern=".+@student.kit.edu"
-            title="Nur KIT-E-Mail-Adressen erlaubt"
+            title={t("login.kitOnly")}
           />
           <input
             name="password"
             type="password"
             className="form-control mb-3"
-            placeholder="Passwort"
+            placeholder={t("login.password")}
             onChange={handleChange}
             required
           />
           <button type="submit" className="btn btn-dark w-100 mb-2">
-            Anmelden
+            {t("login.button")}
           </button>
           <a href="#" className="text-muted small">
-            Passwort vergessen?
+            {t("login.forgotPassword")}
           </a>
         </form>
       </div>

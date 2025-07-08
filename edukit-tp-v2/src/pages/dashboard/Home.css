@@ -1,6 +1,6 @@
+/* Base Styles (Mobile First) */
 .home-wrapper {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-block: 2rem;
 }
 
 .home-title {
@@ -24,18 +24,19 @@
   margin-top: 1rem;
 }
 
-/* Tablet (≥ 768px) */
+/* ───────── Tablet (768px - 991px) ───────── */
 @media (min-width: 768px) and (max-width: 991px) {
   .home-title {
     font-size: 2.5rem;
   }
 
   .home-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
   }
 
   .home-button {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
   }
 
   .home-image {
@@ -43,11 +44,10 @@
   }
 }
 
-/* Desktop (≥ 992px) */
+/* ───────── Desktop (992px - 1399px) ───────── */
 @media (min-width: 992px) and (max-width: 1399px) {
   .home-wrapper {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-block: 4rem;
   }
 
   .home-title {
@@ -68,11 +68,10 @@
   }
 }
 
-/* Große Desktops (≥ 1400px) */
+/* ───────── Large Desktop (≥ 1400px) ───────── */
 @media (min-width: 1400px) {
   .home-wrapper {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-block: 6rem;
   }
 
   .home-title {

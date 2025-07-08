@@ -39,6 +39,12 @@
     "economics2": "Volkswirtschaftslehre 2",
     "economics1": "Volkswirtschaftslehre 1",
     "uploadTitle": "📤 PDF hochladen",
+    "selectModule": "Modulvorlesung wählen",
+    "selectChapter": "Kapitel wählen",
+    "selectFile": "PDF auswählen",
+    "uploadButton": "Hochladen",
+    "uploadMissing": "Bitte Modul, Kapitel und Datei auswählen.",
+    "uploadSuccess": "PDF erfolgreich hochgeladen!",
     "disclaimer": "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."
   },
   "chapters": {
@@ -46,7 +52,10 @@
     "chapter": "Kapitel",
     "topic": "Thema",
     "learnAll": "Alle Kapitel üben",
-    "allChapters": "Alle Kapitel"
+    "allChapters": "Alle Kapitel",
+    "chapter1": "Kapitel 1 – Einführung",
+    "chapter2": "Kapitel 2 – Grundlagen",
+    "chapter3": "Kapitel 3 – Vertiefung"
   },
   "minigames": {
     "select": "Wähle ein Mini-Game",
@@ -95,57 +104,128 @@
     "economics1": "Volkswirtschaftslehre 1",
     "economics2": "Volkswirtschaftslehre 2"
   },
-
   "userDropdown": {
-  "openMenu": "Benutzermenü öffnen",
-  "profile": "Profil",
-  "settings": "Einstellungen",
-  "stats": "Statistik",
-  "leaderboard": "Bestenliste",
-  "help": "Hilfe & Info",
-  "logout": "Abmelden",
-  "login": "Anmelden",
-  "register": "Registrieren",
-  "guest": "Gastmodus aktiv"
-},
-"privacy": {
-  "title": "Datenschutz",
-  "paragraph1": "Wir nehmen den Schutz Ihrer Daten ernst. Personenbezogene Daten werden nur erhoben, wenn Sie uns diese im Rahmen Ihrer Nutzung mitteilen.",
-  "paragraph2": "Es erfolgt keine Weitergabe an Dritte ohne Ihre ausdrückliche Zustimmung."
-},
-"faq": {
-  "title": "FAQ",
-  "items": [
-    {
-      "question": "Welche Lerndokumente sollte ich hochladen?",
-      "answer": "Am besten thematisch sortierte PDFs mit Aufgaben, Lösungen oder Zusammenfassungen."
+    "openMenu": "Benutzermenü öffnen",
+    "profile": "Profil",
+    "settings": "Einstellungen",
+    "stats": "Statistik",
+    "leaderboard": "Bestenliste",
+    "help": "Hilfe & Info",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "guest": "Gastmodus aktiv"
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "paragraph1": "Wir nehmen den Schutz Ihrer Daten ernst. Personenbezogene Daten werden nur erhoben, wenn Sie uns diese im Rahmen Ihrer Nutzung mitteilen.",
+    "paragraph2": "Es erfolgt keine Weitergabe an Dritte ohne Ihre ausdrückliche Zustimmung."
+  },
+  "faq": {
+    "title": "FAQ - Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Welche Lerndokumente sollte ich hochladen?",
+        "answer": "Am besten thematisch sortierte PDFs mit Aufgaben, Lösungen oder Zusammenfassungen."
+      },
+      {
+        "question": "Welches Minispiel ist besonders geeignet?",
+        "answer": "Für BWL eignet sich Memory besonders gut."
+      }
+    ]
+  },
+  "guidelines": {
+    "title": "Richtlinien & Best Practices",
+    "tips": [
+      "Vermeide doppelte Inhalte – jedes Dokument sollte einzigartig sein.",
+      "Nutze sprechende Dateinamen wie <code>Bruchrechnung_Übungen.pdf</code>.",
+      "Teste jedes Minispiel, bevor du es in der Klasse einsetzt.",
+      "Lade lieber weniger, aber qualitativ gute Inhalte hoch."
+    ]
+  },
+  "help": {
+    "title": "Hilfe & Informationen",
+    "faq": "FAQ",
+    "guidelines": "Richtlinien",
+    "datenschutz": "Datenschutz",
+    "impressum": "Impressum"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "address": "<strong>Verantwortlich:</strong> Max Mustermann<br />Musterstraße 1<br />12345 Musterstadt",
+    "emailLabel": "E-Mail",
+    "email": "kontakt@example.com",
+    "note": "Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV: Max Mustermann"
+  },
+  "login": {
+    "title": "Log in",
+    "subtitle": "Willkommen zurück bei {{app}}.",
+    "password": "Passwort",
+    "button": "Anmelden",
+    "forgotPassword": "Passwort vergessen?",
+    "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
+    "error": "Login fehlgeschlagen.",
+    "noUserData": "Benutzerdaten fehlen in der Antwort.",
+    "unknownError": "Etwas ist schiefgelaufen."
+  },
+  "register": {
+    "title": "Erstelle einen Account",
+    "chooseAvatar": "Wähle deinen Avatar:",
+    "username": "Benutzername",
+    "email": "KIT-Studenten-E-Mail",
+    "emailPlaceholder": "u....@student.kit.edu",
+    "password": "Passwort",
+    "button": "Registrieren",
+    "back": "← Zurück",
+    "error": "Registrierung fehlgeschlagen.",
+    "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
+    "unknownError": "Etwas ist schiefgelaufen."
+  },
+  "disclaimer": {
+    "howToUseTitle": "How to Use",
+    "howToUseList": [
+      "📄 Lade nur PDF Dokumente hoch",
+      "📁 Lade jedes Dokument einzeln hoch",
+      "✅ Lade das Dokument so hoch, dass inhaltlich immer ein komplettes Kapitel abgeschlossen ist",
+      "❌ Lade keine mathematischen Formeln/Dokumente hoch"
+    ],
+    "termsTitle": "Disclaimer / Nutzungsbedingungen",
+    "termsList": [
+      "<strong>Unverbindlichkeit & Korrektheit der Inhalte:</strong> Die Inhalte wurden KI-gestützt erstellt. Es wird keine Garantie für Richtigkeit, Vollständigkeit oder Aktualität übernommen.",
+      "<strong>Keine Ersatzfunktion für Lehrveranstaltungen:</strong> Inhalte dienen der Wiederholung und spielerischen Aufbereitung, nicht als Ersatz für offizielle Materialien.",
+      "<strong>Keine Haftung bei Fehlinformationen:</strong> Nutzung erfolgt auf eigene Verantwortung. Es wird keine Haftung übernommen.",
+      "<strong>Keine inhaltliche Eingrenzung:</strong> Die Inhalte decken nicht zwangsläufig den vollständigen Prüfungsstoff ab.",
+      "<strong>Vertraulichkeit & Weitergabe:</strong> KI-generierte Inhalte dürfen nicht ohne Genehmigung verbreitet oder veröffentlicht werden.",
+      "<strong>Datenschutz & Nutzungsverhalten:</strong> Nutzungsdaten können zur Verbesserung ausgewertet werden, unter Einhaltung der Datenschutzrichtlinien.",
+      "<strong>Änderungen und Updates:</strong> Inhalte und Nutzungsbedingungen können jederzeit geändert werden."
+    ],
+    "acceptLabel": "Ich habe die Nutzungsbedingungen gelesen und verstanden und verpflichte mich zum Einhalten.",
+    "continueButton": "Weiter zur App"
+  },
+  "start": {
+    "title": {
+      "part1": "Schlauer lernen mit",
+      "part2": "EduKIT!"
     },
-    {
-      "question": "Welches Minispiel ist besonders geeignet?",
-      "answer": "Für Mathe eignet sich das Zahlenpaar-Spiel zur Förderung des Kopfrechnens."
-    }
-  ]
-},
-"guidelines": {
-  "title": "Richtlinien & Best Practices",
-  "tips": [
-    "Vermeide doppelte Inhalte – jedes Dokument sollte einzigartig sein.",
-    "Nutze sprechende Dateinamen wie <code>Bruchrechnung_Übungen.pdf</code>.",
-    "Teste jedes Minispiel, bevor du es in der Klasse einsetzt.",
-    "Lade lieber weniger, aber qualitativ gute Inhalte hoch."
-  ]
-}, 
-"help": {
-  "title": "Hilfe & Informationen",
-  "faq": "FAQ – Häufige Fragen",
-  "guidelines": "Richtlinien & Best Practices",
-  "datenschutz": "Datenschutz",
-  "impressum": "Impressum"
-},
-"impressum": {
-  "title": "Impressum",
-  "address": "<strong>Verantwortlich:</strong> Max Mustermann<br />Musterstraße 1<br />12345 Musterstadt",
-  "email": "E-Mail: kontakt@example.com",
-  "note": "Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV: Max Mustermann"
-}
+    "subtitle": {
+      "line1": "Steht bei dir eine harte Klausur an?",
+      "line2": "Wir helfen dir – mit einfachen, interaktiven Lernspielen, die Spaß machen!"
+    },
+    "login": "Log In",
+    "register": "Registrieren",
+    "imageAlt": "Bücher-Illustration"
+  },
+  "upload": {
+    "title": "PDF-Upload",
+    "module": "Modul",
+    "subject": "Vorlesung",
+    "chapter": "Kapitel",
+    "file": "PDF-Datei",
+    "selectModule": "Modul wählen",
+    "selectSubject": "Vorlesung wählen",
+    "selectChapter": "Kapitel wählen",
+    "submit": "Datei hochladen",
+    "missing": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
+    "success": "PDF erfolgreich hochgeladen!"
+  }
 }

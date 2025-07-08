@@ -1,23 +1,42 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import "./Home.css"; // <— NEU: CSS für Responsive Layout
+import DisclaimerModal from "../auth/DisclaimerModal";
+import "./Home.css";
 
 const Home = () => {
   const { setSelectedModule, setSelectedChapter } = useAppFlow();
   const { t } = useTranslation();
 
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
+
   useEffect(() => {
     setSelectedModule("");
     setSelectedChapter("");
+
+    const disclaimerAccepted = localStorage.getItem("disclaimerAccepted");
+    if (disclaimerAccepted !== "true") {
+      setShowDisclaimer(true);
+    }
   }, []);
 
+  const handleAcceptDisclaimer = () => {
+    localStorage.setItem("disclaimerAccepted", "true");
+    setShowDisclaimer(false);
+  };
+
   return (
-    <div className="container py-5 home-wrapper ">
-      <div className="row align-items-center">
-        {/* Textbereich mit Animation */}
+    <div className="container py-5 home-wrapper position-relative">
+      {/* Modal nur anzeigen, wenn nötig */}
+      {showDisclaimer && (
+        <div className="modal-overlay">
+          <DisclaimerModal onAccept={handleAcceptDisclaimer} />
+        </div>
+      )}
+
+      <div className={`row align-items-center ${showDisclaimer ? 'blur-sm' : ''}`}>
         <motion.div
           className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 home-text"
           initial={{ opacity: 0, x: -50 }}
@@ -34,16 +53,12 @@ const Home = () => {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Link
-              to="/modules"
-              className="btn btn-success btn-lg shadow home-button"
-            >
+            <Link to="/modules" className="btn btn-success btn-lg shadow home-button">
               📚 {t("home.button")}
             </Link>
           </motion.div>
         </motion.div>
 
-        {/* Bildbereich */}
         <motion.div
           className="col-lg-6 text-center home-image-wrapper"
           initial={{ opacity: 0, y: 50 }}
