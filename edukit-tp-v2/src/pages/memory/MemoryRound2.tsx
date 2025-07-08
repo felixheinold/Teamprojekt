@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
 type Card = {
   id: number;
@@ -33,6 +32,9 @@ const MemoryRound2 = () => {
   const [turn, setTurn] = useState(1);
   const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
 
+  const correctSound = useRef<HTMLAudioElement | null>(null);
+  const wrongSound = useRef<HTMLAudioElement | null>(null);
+
   useEffect(() => {
     const allCards: Card[] = [];
     pairs.forEach((p: any, index: number) => {
@@ -53,6 +55,11 @@ const MemoryRound2 = () => {
   }, [pairs]);
 
   useEffect(() => {
+    correctSound.current = new Audio("/sounds/correct.mp3");
+    wrongSound.current = new Audio("/sounds/wrong.mp3");
+  }, []);
+
+  useEffect(() => {
     if (disabled || matched.length === cards.length) return;
     const t = setInterval(() => {
       setTimer((prev) => {
@@ -64,11 +71,10 @@ const MemoryRound2 = () => {
       });
     }, 1000);
     return () => clearInterval(t);
-  }, [disabled, flipped, timeLimit, cards.length, matched.length]);
+  }, [disabled, flipped, cards.length, matched.length, timeLimit]);
 
   const handleCardClick = (card: Card) => {
-    if (disabled || flipped.includes(card.id) || matched.includes(card.id))
-      return;
+    if (disabled || flipped.includes(card.id) || matched.includes(card.id)) return;
 
     if (flipped.length === 0) {
       setFlipped([card.id]);
@@ -80,7 +86,10 @@ const MemoryRound2 = () => {
       setFlipped(newFlipped);
       setDisabled(true);
 
-      if (firstCard.pairId === card.pairId && firstCard.type !== card.type) {
+      const isMatch = firstCard.pairId === card.pairId && firstCard.type !== card.type;
+
+      if (isMatch) {
+        correctSound.current?.play();
         setFeedback("correct");
         setTimeout(() => {
           setMatched((prev) => [...prev, ...newFlipped]);
@@ -88,6 +97,7 @@ const MemoryRound2 = () => {
           resetFlips();
         }, 1000);
       } else {
+        wrongSound.current?.play();
         setFeedback("wrong");
         setTimeout(() => {
           setFeedback(null);
@@ -111,16 +121,13 @@ const MemoryRound2 = () => {
       className="container d-flex flex-column align-items-center pt-2"
       style={{ minHeight: "100vh" }}
     >
-      {/* Abbrechen mit Bestätigungsdialog */}
+      {/* Abbrechen */}
       <div
         className="position-absolute"
         style={{ top: "80px", left: "30px", zIndex: 10 }}
       >
         {!showCancelConfirm ? (
-          <button
-            className="btn btn-dark"
-            onClick={() => setShowCancelConfirm(true)}
-          >
+          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
             Abbrechen
           </button>
         ) : (
@@ -129,16 +136,10 @@ const MemoryRound2 = () => {
               Möchtest du wirklich abbrechen?
             </div>
             <div className="d-flex gap-2">
-              <button
-                className="btn btn-secondary btn-sm"
-                onClick={() => setShowCancelConfirm(false)}
-              >
+              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
                 Nein
               </button>
-              <button
-                className="btn btn-danger btn-sm"
-                onClick={() => navigate(-4)}
-              >
+              <button className="btn btn-danger btn-sm" onClick={() => navigate(-4)}>
                 Ja, zurück
               </button>
             </div>
@@ -146,7 +147,7 @@ const MemoryRound2 = () => {
         )}
       </div>
 
-      {/* Modul & Kapitelanzeige */}
+      {/* Header */}
       <div
         className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
         style={{
@@ -158,7 +159,6 @@ const MemoryRound2 = () => {
       >
         {module}
       </div>
-
       <div
         className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
         style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
@@ -166,14 +166,10 @@ const MemoryRound2 = () => {
         {chapter}
       </div>
 
-      {/* Titel */}
       <h1 className="fw-bold display-5 mb-3">🧠 Memory Runde 2</h1>
 
-      {/* Statusleiste */}
-      <div
-        className="d-flex justify-content-between mb-3"
-        style={{ maxWidth: "600px", width: "100%" }}
-      >
+      {/* Status */}
+      <div className="d-flex justify-content-between mb-3" style={{ maxWidth: "600px", width: "100%" }}>
         <div className="fw-semibold">
           {matched.length / 2} / {cards.length / 2} Paare
         </div>
@@ -181,7 +177,7 @@ const MemoryRound2 = () => {
         <div className="fw-semibold">⏳ {timer}s</div>
       </div>
 
-      {/* Spielfeld */}
+      {/* Karten */}
       <div
         className="d-flex flex-wrap justify-content-center mb-4"
         style={{ maxWidth: "1000px", gap: "12px" }}
@@ -191,6 +187,7 @@ const MemoryRound2 = () => {
           const isMatched = matched.includes(card.id);
           const baseColor = card.type === "term" ? "#d3bfff" : "#fff59d";
           const showContent = isFlipped || isMatched;
+
           const feedbackColor =
             isFlipped && flipped.length === 2 && feedback === "correct"
               ? "#28a745"
@@ -225,21 +222,15 @@ const MemoryRound2 = () => {
 
       {/* Legende */}
       <div className="d-flex gap-3 mt-2">
-        <div
-          className="px-4 py-2 rounded-pill text-dark fw-semibold"
-          style={{ backgroundColor: "#d3bfff" }}
-        >
+        <div className="px-4 py-2 rounded-pill text-dark fw-semibold" style={{ backgroundColor: "#d3bfff" }}>
           = Begriff
         </div>
-        <div
-          className="px-4 py-2 rounded-pill text-dark fw-semibold"
-          style={{ backgroundColor: "#fff59d" }}
-        >
+        <div className="px-4 py-2 rounded-pill text-dark fw-semibold" style={{ backgroundColor: "#fff59d" }}>
           = Definition
         </div>
       </div>
 
-      {/* Spiel beenden */}
+      {/* Beenden */}
       {allMatched && (
         <motion.button
           whileHover={{ scale: 1.03 }}

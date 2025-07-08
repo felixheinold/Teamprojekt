@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -50,6 +50,15 @@ const GapFillGame = () => {
   );
   const [timer, setTimer] = useState(timeLimit);
 
+  // 🔊 Sound-Refs
+  const correctSound = useRef<HTMLAudioElement | null>(null);
+  const wrongSound = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    correctSound.current = new Audio("/sounds/correct.mp3");
+    wrongSound.current = new Audio("/sounds/wrong.mp3");
+  }, []);
+
   useEffect(() => {
     const repeated: Question[] = [];
     while (repeated.length < questionCount) {
@@ -81,17 +90,16 @@ const GapFillGame = () => {
     if (isCorrect) {
       setScore((prev) => prev + 1);
       setShowFeedback("correct");
+      correctSound.current?.play();
     } else {
       setShowFeedback("wrong");
+      wrongSound.current?.play();
     }
 
-    setTimeout(
-      () => {
-        setShowFeedback(null);
-        handleNext();
-      },
-      isCorrect ? 1500 : 3000
-    );
+    setTimeout(() => {
+      setShowFeedback(null);
+      handleNext();
+    }, isCorrect ? 1500 : 3000);
   };
 
   const handleNext = () => {
@@ -158,7 +166,7 @@ const GapFillGame = () => {
         )}
       </div>
 
-      {/* Anzeige: Modul */}
+      {/* Modul */}
       <div
         className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
         style={{
