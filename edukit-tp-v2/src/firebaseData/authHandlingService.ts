@@ -32,7 +32,7 @@ export class AuthHandlingService {
           await sendEmailVerification(userCredential.user);
           
           //hier Methode von AuthAPICall, um neuen Nutzer anzulegen
-          this.authAPICallsService.newUserAPICall(userCredential.user.uid, username, email, picture);
+          await this.authAPICallsService.newUserAPICall(userCredential.user.uid, username, email, picture);
 
           return userCredential.user;
 
@@ -80,7 +80,7 @@ export class AuthHandlingService {
 
     // hier noch API Call für veränderte Mail-Adresse
     if (user){
-      this.authAPICallsService.updatedMailAddressAPICall(user.displayName, user.email, user.uid)
+      await this.authAPICallsService.updatedMailAddressAPICall(user.displayName, user.email, user.uid)
     }
   }
 
@@ -117,7 +117,7 @@ async deleteAccount() {
       return userCredential.user; 
     }
    catch (error:any){
-      throw new AuthPopupError(error.code);
+      throw new AuthPopupError("Fehler beim Login: " + error.code);
     }
  
   }

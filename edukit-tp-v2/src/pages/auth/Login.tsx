@@ -75,7 +75,16 @@ const Login = () => {
     }
   };
 
-  const handleForgottenPassword = () => {};
+  const handleForgottenPassword = async () => {
+
+    try {
+      await authHandlingService.sendResetPasswordEmail(form.email);
+
+    } catch (err){
+      console.error("Reset password error: ", err);
+
+    }
+  };
 
   return (
     <AuthLayout>
