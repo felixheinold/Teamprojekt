@@ -8,6 +8,7 @@ const UserDropdown = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
+  const [helpOpen, setHelpOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleLogout = () => {
@@ -19,6 +20,7 @@ const UserDropdown = () => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setOpen(false);
+        setHelpOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -75,11 +77,44 @@ const UserDropdown = () => {
                 {user.userMail}
               </div>
               <div className="dropdown-divider"></div>
-              <Link to="/user" onClick={() => setOpen(false)} className="dropdown-item text-dark">👤 {t("userDropdown.profile")}</Link>
-              <Link to="/settings" onClick={() => setOpen(false)} className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
-              <Link to="/stats" onClick={() => setOpen(false)} className="dropdown-item text-dark">📊 {t("userDropdown.stats")}</Link>
-              <Link to="/leaderboard" onClick={() => setOpen(false)} className="dropdown-item text-dark">🏆 {t("userDropdown.leaderboard")}</Link>
-              <Link to="/help" onClick={() => setOpen(false)} className="dropdown-item text-dark">🧭 {t("userDropdown.help")}</Link>
+              <Link to="/user" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                👤 {t("userDropdown.profile")}
+              </Link>
+              <Link to="/settings" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                ⚙️ {t("userDropdown.settings")}
+              </Link>
+              <Link to="/stats" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                📊 {t("userDropdown.stats")}
+              </Link>
+              <Link to="/leaderboard" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                🏆 {t("userDropdown.leaderboard")}
+              </Link>
+
+              {/* Hilfe & Info Toggle */}
+              <div
+                className="dropdown-item text-dark d-flex justify-content-between align-items-center"
+                onClick={() => setHelpOpen(!helpOpen)}
+                style={{ cursor: "pointer" }}
+              >
+                🧭 {t("userDropdown.help")} <span>{helpOpen ? "▲" : "▼"}</span>
+              </div>
+              {helpOpen && (
+                <div className="submenu px-3">
+                  <Link to="/help/FAQ" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    ❓ {t("help.faq")}
+                  </Link>
+                  <Link to="/help/Guidelines" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    📘 {t("help.guidelines")}
+                  </Link>
+                  <Link to="/help/DataPrivacy" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    🔒 {t("help.datenschutz")}
+                  </Link>
+                  <Link to="/help/Imprint" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    📄 {t("help.impressum")}
+                  </Link>
+                </div>
+              )}
+
               <div className="dropdown-divider"></div>
               <button onClick={handleLogout} className="dropdown-item text-danger">
                 🚪 {t("userDropdown.logout")}
@@ -91,10 +126,41 @@ const UserDropdown = () => {
                 {t("userDropdown.guest")}
               </div>
               <div className="dropdown-divider"></div>
-              <Link to="/settings" onClick={() => setOpen(false)} className="dropdown-item text-dark">⚙️ {t("userDropdown.settings")}</Link>
-              <Link to="/help" onClick={() => setOpen(false)} className="dropdown-item text-dark">🧭 {t("userDropdown.help")}</Link>
-              <Link to="/login" onClick={() => setOpen(false)} className="dropdown-item text-primary">🔐 {t("userDropdown.login")}</Link>
-              <Link to="/register" onClick={() => setOpen(false)} className="dropdown-item text-primary">📝 {t("userDropdown.register")}</Link>
+              <Link to="/settings" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                ⚙️ {t("userDropdown.settings")}
+              </Link>
+
+              {/* Hilfe & Info Toggle */}
+              <div
+                className="dropdown-item text-dark d-flex justify-content-between align-items-center"
+                onClick={() => setHelpOpen(!helpOpen)}
+                style={{ cursor: "pointer" }}
+              >
+                🧭 {t("userDropdown.help")} <span>{helpOpen ? "▲" : "▼"}</span>
+              </div>
+              {helpOpen && (
+                <div className="submenu px-3">
+                  <Link to="/help/FAQ" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    ❓ {t("help.faq")}
+                  </Link>
+                  <Link to="/help/Guidelines" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    📘 {t("help.guidelines")}
+                  </Link>
+                  <Link to="/help/DataPrivacy" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    🔒 {t("help.datenschutz")}
+                  </Link>
+                  <Link to="/help/Imprint" onClick={() => setOpen(false)} className="dropdown-item text-dark">
+                    📄 {t("help.impressum")}
+                  </Link>
+                </div>
+              )}
+
+              <Link to="/login" onClick={() => setOpen(false)} className="dropdown-item text-primary">
+                🔐 {t("userDropdown.login")}
+              </Link>
+              <Link to="/register" onClick={() => setOpen(false)} className="dropdown-item text-primary">
+                📝 {t("userDropdown.register")}
+              </Link>
             </>
           )}
         </div>
@@ -105,13 +171,18 @@ const UserDropdown = () => {
           position: absolute;
           right: 0;
           top: 48px;
-          min-width: 180px;
+          min-width: 200px;
           border-radius: 8px;
           padding: 0.5rem 0;
           background-color: #f9f9f9;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
           animation: fadeIn 0.2s ease-in-out;
           z-index: 1000;
+        }
+
+        .submenu {
+          padding-left: 1rem;
+          animation: fadeIn 0.2s ease-in-out;
         }
 
         @keyframes fadeIn {

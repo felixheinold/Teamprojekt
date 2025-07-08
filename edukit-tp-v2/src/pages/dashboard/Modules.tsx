@@ -1,17 +1,16 @@
+// src/pages/dashboard/Modules.tsx
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import UploadForm from "../../components/UploadForm"; // ⬅️ NEU
 import "./Modules.css";
 
 const Modules = () => {
   const { setSelectedModule, setSelectedChapter } = useAppFlow();
   const { t } = useTranslation();
-
-  const [uploadModule, setUploadModule] = useState("");
-  const [uploadChapter, setUploadChapter] = useState("");
-  const [file, setFile] = useState<File | null>(null);
 
   useEffect(() => {
     setSelectedModule("");
@@ -27,25 +26,8 @@ const Modules = () => {
     { key: "economics1", icon: "📈" },
   ];
 
-  const chapters = ["chapter1", "chapter2", "chapter3"];
-
-  const handleUpload = () => {
-    if (!uploadModule || !uploadChapter || !file) {
-      alert("Bitte Modul, Kapitel und Datei angeben.");
-      return;
-    }
-    console.log("Uploading:", {
-      module: uploadModule,
-      chapter: uploadChapter,
-      file,
-    });
-    alert(`PDF erfolgreich hochgeladen für ${uploadModule} - ${uploadChapter}`);
-    setUploadModule("");
-    setUploadChapter("");
-    setFile(null);
-  };
-
   return (
+<<<<<<< HEAD
     <div
       className="modules-wrapper container-fluid py-4 d-flex flex-column align-items-center"
       style={{ minHeight: "100vh" }}
@@ -53,6 +35,10 @@ const Modules = () => {
       <h1 className="text-center fw-bold display-5 mb-4">
         📚 {t("modules.select")}
       </h1>
+=======
+    <div className="modules-wrapper container py-4 d-flex flex-column align-items-center" style={{ minHeight: "100vh" }}>
+      <h1 className="text-center fw-bold display-5 mb-4">📚 {t("modules.select")}</h1>
+>>>>>>> gui_felix
 
       <div className="d-flex flex-column align-items-center gap-3 w-100">
         {modules.map(({ key, icon }) => (
@@ -79,61 +65,12 @@ const Modules = () => {
 
         {/* Hinweis */}
         <div className="text-muted text-center mt-3 disclaimer">
-          ⚠️{" "}
-          {t("modules.disclaimer") ||
-            "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."}
+          ⚠️ {t("modules.disclaimer")}
         </div>
 
-        {/* Upload-Bereich */}
-        <div className="card mt-5 p-4 upload-card">
-          <h5 className="mb-3">
-            {t("modules.uploadTitle") || "📄 PDF hochladen"}
-          </h5>
-          <div className="mb-3">
-            <label className="form-label">Modul</label>
-            <select
-              className="form-select"
-              value={uploadModule}
-              onChange={(e) => setUploadModule(e.target.value)}
-            >
-              <option value="">Modul wählen</option>
-              {modules.map(({ key }) => (
-                <option key={key} value={key}>
-                  {t(`modules.${key}`)}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div className="mb-3">
-            <label className="form-label">Kapitel</label>
-            <select
-              className="form-select"
-              value={uploadChapter}
-              onChange={(e) => setUploadChapter(e.target.value)}
-            >
-              <option value="">Kapitel wählen</option>
-              {chapters.map((chapter) => (
-                <option key={chapter} value={chapter}>
-                  {t(`chapters.${chapter}`) || chapter}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div className="mb-3">
-            <label className="form-label">PDF auswählen</label>
-            <input
-              type="file"
-              className="form-control"
-              accept="application/pdf"
-              onChange={(e) => setFile(e.target.files?.[0] || null)}
-            />
-          </div>
-
-          <button className="btn btn-primary w-100" onClick={handleUpload}>
-            Hochladen
-          </button>
+        {/* ⬇️ UploadForm-Komponente eingebunden */}
+        <div className="mt-5 w-100">
+          <UploadForm />
         </div>
       </div>
     </div>

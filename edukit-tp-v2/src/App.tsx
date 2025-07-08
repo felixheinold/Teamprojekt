@@ -6,7 +6,7 @@ import Start from "./pages/auth/Start";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 
-// Dashboard
+// Dashboard + Disclaimer direkt in Home eingebaut
 import Home from "./pages/dashboard/Home";
 import Modules from "./pages/dashboard/Modules";
 import Chapters from "./pages/dashboard/Chapters";
@@ -29,16 +29,15 @@ import MemoryRound1Result from "./pages/memory/MemoryRound1Result";
 import MemoryRound2Result from "./pages/memory/MemoryRound2Result";
 
 // Lückentext
-import GapFillGame from "./pages/gapfill/GapFillGame";
 import GapFillStart from "./pages/gapfill/GapFillStart";
+import GapFillGame from "./pages/gapfill/GapFillGame";
 import GapFillResult from "./pages/gapfill/GapFillResult";
 
-// Hilfe-Bereich (HelpDesk)
-import Help from "./pages/dashboard/HelpDesk/help";
+// Hilfe & Info
 import FAQ from "./pages/dashboard/HelpDesk/FAQ";
 import Guidelines from "./pages/dashboard/HelpDesk/Guidelines";
-import Datenschutz from "./pages/dashboard/HelpDesk/Datenschutz";
-import Impressum from "./pages/dashboard/HelpDesk/Impressum";
+import DataPrivacy from "./pages/dashboard/HelpDesk/DataPrivacy";
+import Imprint from "./pages/dashboard/HelpDesk/Imprint";
 
 // Weitere Seiten
 import NotFound from "./pages/common/NotFound";
@@ -51,9 +50,9 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
-      {/* Seiten mit Layout */}
+      {/* Layout-geschützte Seiten */}
       <Route element={<Layout />}>
-        {/* Hauptseiten */}
+        {/* Dashboard */}
         <Route path="/home" element={<Home />} />
         <Route path="/modules" element={<Modules />} />
         <Route path="/chapters/:moduleName" element={<Chapters />} />
@@ -62,13 +61,6 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
-
-        {/* Hilfe & Info */}
-        <Route path="/help" element={<Help />} />
-        <Route path="/help/faq" element={<FAQ />} />
-        <Route path="/help/guidelines" element={<Guidelines />} />
-        <Route path="/help/datenschutz" element={<Datenschutz />} />
-        <Route path="/help/impressum" element={<Impressum />} />
 
         {/* Quiz */}
         <Route path="/quiz" element={<QuizStart />} />
@@ -86,9 +78,15 @@ function App() {
         <Route path="/gapfill" element={<GapFillStart />} />
         <Route path="/gapfillgame" element={<GapFillGame />} />
         <Route path="/gapfillresult" element={<GapFillResult />} />
+
+        {/* Hilfe & Info */}
+        <Route path="/help/faq" element={<FAQ />} />
+        <Route path="/help/guidelines" element={<Guidelines />} />
+        <Route path="/help/dataprivacy" element={<DataPrivacy />} />
+        <Route path="/help/imprint" element={<Imprint />} />
       </Route>
 
-      {/* 404 */}
+      {/* 404 Seite */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

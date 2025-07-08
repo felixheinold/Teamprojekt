@@ -12,8 +12,8 @@
     "username": "Username",
     "email": "Email",
     "resetPassword": "Reset Password",
-    "totalPoints": "Total Points Earned",
-    "updated": "Profile updated (demo)",
+    "totalPoints": "Total Points Collected",
+    "updated": "Profile updated (Demo)",
     "noUser": "No user logged in."
   },
   "settings": {
@@ -22,48 +22,48 @@
     "darkMode": "Enable Dark Mode",
     "language": "Language",
     "saved": "Settings saved",
-    "guestNotice": "You are currently not logged in. Some settings may not be saved permanently."
+    "guestNotice": "You are currently not logged in. Some settings will not be saved permanently."
   },
   "home": {
     "welcome": "Welcome to",
-    "subtitle": "Learn through interactive modules and minigames!",
-    "button": "Get started",
-    "imageAlt": "Homepage illustration"
+    "subtitle": "Learn playfully with interactive modules and minigames!",
+    "button": "Get Started Now",
+    "imageAlt": "Homepage Illustration"
   },
   "modules": {
-    "select": "Choose a module",
+    "select": "Select a Module",
     "production": "Production and Logistics",
     "finance": "Finance and Accounting",
     "management": "Management and Marketing",
     "planning": "Integrated Production Planning",
-    "economics2": "Economics II",
-    "economics1": "Economics I",
+    "economics2": "Economics 2",
+    "economics1": "Economics 1",
     "uploadTitle": "📤 Upload PDF",
-    "disclaimer": "Note: Provided lecture content may be outdated."
+    "disclaimer": "Note: The provided lecture materials may be outdated."
   },
   "chapters": {
-    "selectSubchapter": "Select a chapter",
+    "selectSubchapter": "Select a Chapter",
     "chapter": "Chapter",
     "topic": "Topic",
-    "learnAll": "Practice all chapters",
-    "allChapters": "All chapters"
+    "learnAll": "Practice All Chapters",
+    "allChapters": "All Chapters"
   },
   "minigames": {
-    "select": "Choose a minigame",
+    "select": "Choose a Minigame",
     "quiz": "Quiz",
     "memory": "Memory",
-    "gapfill": "Gap fill",
+    "gapfill": "Gap Fill",
     "modal": {
       "title": "Start Minigame",
       "questions": "Questions:",
       "pairs": "Pairs:",
-      "timePerQuestion": "Time per question:",
-      "seconds": "seconds"
+      "timePerQuestion": "Time Limit per Question:",
+      "seconds": "Seconds"
     }
   },
   "leaderboard": {
     "title": "Leaderboard",
-    "place": "Rank",
+    "place": "Place",
     "points": "Points"
   },
   "stats": {
@@ -71,14 +71,14 @@
     "lastPlayed": "Last Played",
     "quiz": "Quiz",
     "memory": "Memory",
-    "gapfill": "Gap fill",
+    "gapfill": "Gap Fill",
     "gamesPlayed": "Games Played",
     "totalPoints": "Total Points",
     "bestScore": "Best Score",
     "average": "Average",
     "progress": "Progress",
     "coverage": "Content Coverage",
-    "compare": "Score Comparison"
+    "compare": "Points Comparison"
   },
   "subjects": {
     "production": "Production",
@@ -86,17 +86,17 @@
     "energy": "Energy Economics",
     "finance": "Finance",
     "accounting": "Accounting",
-    "balance": "Annual Accounts and Valuation",
-    "management": "Corporate Management",
+    "balance": "Annual Accounts & Valuation",
+    "management": "Business Management",
     "entrepreneurship": "Entrepreneurship",
     "hr": "HR Management",
     "marketing": "Marketing",
     "integratedPlanning": "Integrated Production Planning",
-    "economics1": "Economics I",
-    "economics2": "Economics II"
+    "economics1": "Economics 1",
+    "economics2": "Economics 2"
   },
   "userDropdown": {
-    "openMenu": "Open user menu",
+    "openMenu": "Open User Menu",
     "profile": "Profile",
     "settings": "Settings",
     "stats": "Statistics",
@@ -105,46 +105,118 @@
     "logout": "Logout",
     "login": "Login",
     "register": "Register",
-    "guest": "Guest mode active"
+    "guest": "Guest Mode Active"
   },
   "privacy": {
     "title": "Privacy Policy",
-    "paragraph1": "We take your data protection seriously. Personal data is only collected if you provide it as part of your usage.",
-    "paragraph2": "We do not share your data with third parties without your explicit consent."
+    "paragraph1": "We take the protection of your data seriously. Personal data is only collected if you provide it to us during use.",
+    "paragraph2": "No data will be shared with third parties without your explicit consent."
   },
   "faq": {
-    "title": "FAQ",
+    "title": " FAQ - Frequently Asked Questions",
     "items": [
       {
-        "question": "Which learning materials should I upload?",
-        "answer": "Ideally thematically organized PDFs with exercises, solutions, or summaries."
+        "question": "Which learning documents should I upload?",
+        "answer": "Ideally, topic-sorted PDFs with exercises, solutions, or summaries."
       },
       {
-        "question": "Which minigame is particularly useful?",
-        "answer": "For math, the number pair game is ideal to train mental arithmetic."
+        "question": "Which minigame is especially useful?",
+        "answer": "Memory is particularly suitable for business studies."
       }
     ]
   },
   "guidelines": {
-    "title": "Guidelines & Best Practices",
+    "title": " Guidelines & Best Practices",
     "tips": [
       "Avoid duplicate content – each document should be unique.",
-      "Use descriptive file names like <code>Fractions_Exercises.pdf</code>.",
+      "Use meaningful file names like <code>Fractions_Exercises.pdf</code>.",
       "Test each minigame before using it in class.",
-      "Upload fewer but higher quality documents."
+      "Upload fewer but higher quality materials."
     ]
   },
   "help": {
-    "title": "Help & Information",
-    "faq": "FAQ – Frequently Asked Questions",
-    "guidelines": "Guidelines & Best Practices",
+    "title": " Help & Information",
+    "faq": "FAQ",
+    "guidelines": "Guidelines",
     "datenschutz": "Privacy Policy",
-    "impressum": "Legal Notice"
+    "impressum": "Imprint"
   },
   "impressum": {
-    "title": "Legal Notice",
+    "title": " Imprint",
     "address": "<strong>Responsible:</strong> Max Mustermann<br />Musterstraße 1<br />12345 Musterstadt",
-    "email": "Email: kontakt@example.com",
+    "emailLabel": "Email",
+    "email": "contact@example.com",
     "note": "Content responsibility according to § 55 Abs. 2 RStV: Max Mustermann"
+  },
+  "login": {
+    "title": "Log in",
+    "subtitle": "Welcome back to {{app}}.",
+    "password": "Password",
+    "button": "Log in",
+    "forgotPassword": "Forgot password?",
+    "kitOnly": "Only KIT email addresses allowed",
+    "error": "Login failed.",
+    "noUserData": "User data missing in the response.",
+    "unknownError": "Something went wrong."
+  },
+  "register": {
+    "title": "Create an Account",
+    "chooseAvatar": "Choose your avatar:",
+    "username": "Username",
+    "email": "KIT student email",
+    "emailPlaceholder": "u....@student.kit.edu",
+    "password": "Password",
+    "button": "Register",
+    "back": "← Back",
+    "error": "Registration failed.",
+    "kitOnly": "Only KIT student email addresses allowed",
+    "unknownError": "Something went wrong."
+  },
+  "disclaimer": {
+    "howToUseTitle": "How to Use",
+    "howToUseList": [
+      "📄 Only upload PDF documents",
+      "📁 Upload each document individually",
+      "✅ Make sure each document covers a complete topic or chapter",
+      "❌ Do not upload documents containing mathematical formulas"
+    ],
+    "termsTitle": "Disclaimer / Terms of Use",
+    "termsList": [
+      "<strong>No guarantee of accuracy:</strong> The content is AI-generated and based on user-uploaded lecture material. No guarantee is made regarding accuracy, completeness, or timeliness.",
+      "<strong>Not a replacement for lectures:</strong> The content is meant to support revision and offer gamified learning. It does not replace official lecture materials or exam guidance from instructors.",
+      "<strong>No liability for misinformation:</strong> Use the app at your own risk. The developers and university accept no responsibility for any consequences (e.g., exam performance).",
+      "<strong>No content limitations:</strong> The displayed content does not represent a complete or final list of all exam-relevant topics.",
+      "<strong>Confidentiality & redistribution:</strong> AI-generated content may not be shared or published without explicit permission. Use outside the intended university context is prohibited.",
+      "<strong>Data protection & usage behavior:</strong> Usage data may be analyzed to improve the app while following the university’s data protection policies.",
+      "<strong>Changes and updates:</strong> Content, features, and terms of use are subject to change without prior notice."
+    ],
+    "acceptLabel": "I have read, understood, and agree to comply with the terms of use.",
+    "continueButton": "Continue to the app"
+  },
+  "start": {
+    "title": {
+      "part1": "Study smarter with",
+      "part2": "EduKIT!"
+    },
+    "subtitle": {
+      "line1": "Got a tough exam coming up?",
+      "line2": "We’re here to help – with simple, interactive games that are fun!"
+    },
+    "login": "Log In",
+    "register": "Register",
+    "imageAlt": "Books illustration"
+  },
+  "upload": {
+    "title": "📤 Upload PDF",
+    "module": "Module",
+    "subject": "Lecture",
+    "chapter": "Chapter",
+    "file": "PDF File",
+    "selectModule": "Select module",
+    "selectSubject": "Select lecture",
+    "selectChapter": "Select chapter",
+    "submit": "Upload file",
+    "missing": "Please select module, lecture, chapter and a file.",
+    "success": "PDF uploaded successfully!"
   }
 }

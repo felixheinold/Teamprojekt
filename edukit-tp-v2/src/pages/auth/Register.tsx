@@ -9,6 +9,7 @@ import "./Register.css";
 const Register = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
+  const { t } = useTranslation();
 
   const [form, setForm] = useState({
     username: "",
@@ -24,7 +25,6 @@ const Register = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const API = import.meta.env.VITE_API_BASE_URL;
-
     const userId = crypto.randomUUID();
 
     const payload = {
@@ -48,13 +48,13 @@ const Register = () => {
         body: JSON.stringify(payload),
       });
 
+      const result = await res.json();
+
       if (!res.ok) {
-        const err = await res.json();
-        alert(err.error || "Registrierung fehlgeschlagen.");
+        alert(result.error || t("register.error"));
         return;
       }
 
-      const result = await res.json();
       setUser({
         userId,
         userName: form.username,
@@ -66,10 +66,11 @@ const Register = () => {
         },
       });
 
+      // Direkt zu /home → dort wird ggf. Disclaimer angezeigt
       navigate("/home");
     } catch (err) {
       console.error("Registration error:", err);
-      alert("Etwas ist schiefgelaufen.");
+      alert(t("register.unknownError"));
     }
   };
 
@@ -83,11 +84,12 @@ const Register = () => {
             className="btn btn-dark back-button align-self-start"
             onClick={() => navigate("/")}
           >
-            ← Zurück
+            ← {t("common.back")}
           </button>
-          <h2 className="fw-bold">Erstelle einen Account</h2>
+
+          <h2 className="fw-bold">{t("register.title")}</h2>
           <p className="mb-3">
-            <em>Wähle deinen Avatar:</em>
+            <em>{t("register.chooseAvatar")}</em>
           </p>
 
           <AvatarPicker
@@ -100,7 +102,7 @@ const Register = () => {
               name="username"
               type="text"
               className="form-control mb-2"
-              placeholder="Username"
+              placeholder={t("register.username")}
               onChange={handleChange}
               required
             />
@@ -112,18 +114,18 @@ const Register = () => {
               onChange={handleChange}
               required
               pattern=".+@student.kit.edu"
-              title="Nur KIT-E-Mail-Adressen erlaubt"
+              title={t("login.kitOnly")}
             />
             <input
               name="password"
               type="password"
               className="form-control mb-3"
-              placeholder="Passwort"
+              placeholder={t("register.password")}
               onChange={handleChange}
               required
             />
             <button type="submit" className="btn btn-dark w-100">
-              Registrieren
+              {t("register.button")}
             </button>
           </form>
         </div>
