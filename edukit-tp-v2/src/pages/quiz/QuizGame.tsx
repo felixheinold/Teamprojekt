@@ -141,7 +141,7 @@ const QuizGame = () => {
       <div className="d-flex justify-content-between mb-3" style={{ maxWidth: "600px", width: "100%" }}>
         <div className="fw-semibold">
           Frage {currentIndex + 1} / {questionCount}
-        </span>
+        </div>
         <span>⏳ {timeLeft}s</span>
       </div>
 
