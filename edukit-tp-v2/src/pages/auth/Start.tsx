@@ -1,22 +1,25 @@
+// src/pages/auth/Start.tsx
 import { useNavigate } from "react-router-dom";
-import "./Start.css"; // Importiere die neue CSS-Datei
 import { useTranslation } from "react-i18next";
+import "./Start.css";
 
 const Start = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-between min-vh-100 py-5 px-3 px-sm-4 px-md-5">
       {/* Textseite */}
       <div className="text-center text-lg-start mb-4 mb-lg-0 flex-grow-1 start-content">
         <h1 className="start-title fw-bold mb-4">
-          Schlauer lernen mit <span className="text-success">EduKIT!</span>
+          {t("start.title.part1")}{" "}
+          <span className="text-success">{t("start.title.part2")}</span>
         </h1>
+
         <p className="start-subtitle text-muted mb-4">
-          Steht bei dir eine harte Klausur an?
+          {t("start.subtitle.line1")}
           <br />
-          Wir helfen dir – mit einfachen, interaktiven Lernspielen, die Spaß
-          machen!
+          {t("start.subtitle.line2")}
         </p>
 
         <div
@@ -27,13 +30,13 @@ const Start = () => {
             className="btn btn-dark startscreen-button"
             onClick={() => navigate("/login")}
           >
-            Log In
+            {t("start.login")}
           </button>
           <button
             className="btn btn-dark startscreen-button"
             onClick={() => navigate("/register")}
           >
-            Registrieren
+            {t("start.register")}
           </button>
         </div>
       </div>
@@ -42,7 +45,7 @@ const Start = () => {
       <div className="text-end flex-grow-1">
         <img
           src="/images/books1.png"
-          alt="Books Illustration"
+          alt={t("start.imageAlt")}
           className="img-fluid mx-auto d-block"
         />
       </div>

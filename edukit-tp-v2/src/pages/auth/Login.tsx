@@ -3,12 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
-import "./Login.css"
+import { useTranslation } from "react-i18next";
+import "./Login.css"; // NEU: CSS importieren
 
 const Login = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
-  const authHandlingService = new AuthHandlingService();
+  const {t} = useTranslation();
+
+    const authHandlingService = new AuthHandlingService();
 
   const [form, setForm] = useState({
     email: "",
@@ -38,6 +41,7 @@ const Login = () => {
 
     //   const result = await res.json();
 
+  
     //   if (!res.ok) {
     //     alert(result.error || "Login fehlgeschlagen.");
     //     return;
@@ -71,9 +75,10 @@ const Login = () => {
 
     } catch (err) {
       console.error("Login error:", err);
-      alert("Etwas ist schiefgelaufen.");
+      alert(t("login.unknownError"));
     }
   };
+
 
   const handleForgottenPassword = async () => {
 
@@ -88,35 +93,46 @@ const Login = () => {
 
   return (
     <AuthLayout>
-      <h2 className="fw-bold">Login</h2>
-      <p className="text-muted mb-4">
-        Willkommen zurück bei <strong>EduKIT</strong>.
-      </p>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          name="email"
-          type="email"
-          className="form-control mb-2"
-          placeholder="u....@student.kit.edu / ...@kit.edu"
-          onChange={handleChange}
-          required
-          pattern=".+@(student\.kit\.edu|kit\.edu)"
-          title="Nur KIT-E-Mail-Adressen erlaubt. Only KIT mail addresses valid."
-        />
-        <input
-          name="password"
-          type="password"
-          className="form-control mb-3"
-          placeholder="Passwort/password"
-          onChange={handleChange}
-          required
-        />
-        <button type="submit" className="btn btn-dark w-100 mb-2">
-          Sign In
+      <div className="login-content">
+        <button
+          className="btn btn-dark back-button align-self-start"
+          onClick={() => navigate("/")}
+        >
+          ← {t("common.back")}
         </button>
-        <a href="#" className="text-muted small" onClick={handleForgottenPassword}>Passwort vergessen? Forgot password?</a>
-      </form>
+
+        <h2 className="fw-bold">{t("login.title")}</h2>
+        <p className="text-muted mb-4">
+          {t("login.subtitle", { app: "EduKIT" })}
+        </p>
+
+        <form onSubmit={handleSubmit}>
+          <input
+            name="email"
+            type="email"
+            className="form-control mb-2"
+            placeholder="u....@student.kit.edu"
+            onChange={handleChange}
+            required
+            pattern=".+@student.kit.edu"
+            title={t("login.kitOnly")}
+          />
+          <input
+            name="password"
+            type="password"
+            className="form-control mb-3"
+            placeholder={t("login.password")}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" className="btn btn-dark w-100 mb-2">
+            {t("login.button")}
+          </button>
+          <a href="#" className="text-muted small">
+            {t("login.forgotPassword")}
+          </a>
+        </form>
+      </div>
     </AuthLayout>
   );
 };

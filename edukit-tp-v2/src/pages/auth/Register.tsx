@@ -3,12 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import AvatarPicker from "../../components/AvatarPicker";
+import { useTranslation } from "react-i18next";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
-import "./Register.css"
+import "./Register.css";
 
 const Register = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
+  const { t } = useTranslation();
   const authHandlingService = new AuthHandlingService();
 
   const [form, setForm] = useState({
@@ -27,7 +29,6 @@ const Register = () => {
 
     /** 
     const API = import.meta.env.VITE_API_BASE_URL;
-
     const userId = crypto.randomUUID();
 
     const payload = {
@@ -51,13 +52,13 @@ const Register = () => {
         body: JSON.stringify(payload),
       });
 
+      const result = await res.json();
+
       if (!res.ok) {
-        const err = await res.json();
-        alert(err.error || "Registrierung fehlgeschlagen.");
+        alert(result.error || t("register.error"));
         return;
       }
 
-      const result = await res.json();
       setUser({
         userId,
         userName: form.username,
@@ -78,7 +79,7 @@ const Register = () => {
 
     } catch (err) {
       console.error("Registration error:", err);
-      alert("Etwas ist schiefgelaufen.");
+      alert(t("register.unknownError"));
     }
   };
 
@@ -92,11 +93,12 @@ const Register = () => {
             className="btn btn-dark back-button align-self-start"
             onClick={() => navigate("/")}
           >
-            ← Zurück
+            ← {t("common.back")}
           </button>
-          <h2 className="fw-bold">Erstelle einen Account</h2>
+
+          <h2 className="fw-bold">{t("register.title")}</h2>
           <p className="mb-3">
-            <em>Wähle deinen Avatar:</em>
+            <em>{t("register.chooseAvatar")}</em>
           </p>
 
           <AvatarPicker
@@ -104,37 +106,38 @@ const Register = () => {
             onChange={(avatar) => setForm({ ...form, avatar })}
           />
 
-      <form onSubmit={handleSubmit}>
-        <input
-          name="username"
-          type="text"
-          className="form-control mb-2"
-          placeholder="Username"
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="email"
-          type="email"
-          className="form-control mb-2"
-          placeholder="u....@student.kit.edu / ...@kit.edu"
-          onChange={handleChange}
-          required
-          pattern=".+@(student\.kit\.edu|kit\.edu)"
-          title="Nur KIT-E-Mail-Adressen erlaubt. Only KIT mail addresses valid."
-
-        />
-        <input
-          name="password"
-          type="password"
-          className="form-control mb-3"
-          placeholder="Passwort/password"
-          onChange={handleChange}
-          required
-        />
-        <button type="submit" className="btn btn-dark w-100">Registrieren / Register</button>
-      </form>
-      </div>
+          <form onSubmit={handleSubmit}>
+            <input
+              name="username"
+              type="text"
+              className="form-control mb-2"
+              placeholder={t("register.username")}
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              className="form-control mb-2"
+              placeholder="u....@student.kit.edu / ...kit.edu"
+              onChange={handleChange}
+              required
+              pattern=".+@(student\.kit\.edu|kit\.edu)"
+              title={t("login.kitOnly")}
+            />
+            <input
+              name="password"
+              type="password"
+              className="form-control mb-3"
+              placeholder={t("register.password")}
+              onChange={handleChange}
+              required
+            />
+            <button type="submit" className="btn btn-dark w-100">
+              {t("register.button")}
+            </button>
+          </form>
+        </div>
       </div>
     </AuthLayout>
   );

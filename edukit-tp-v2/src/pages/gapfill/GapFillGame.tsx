@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./GapFillGame.css";
@@ -49,7 +49,15 @@ const GapFillGame = () => {
     null
   );
   const [timer, setTimer] = useState(timeLimit);
-  const [timerExpired, setTimerExpired] = useState(false);
+
+  // 🔊 Sound-Refs
+  const correctSound = useRef<HTMLAudioElement | null>(null);
+  const wrongSound = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    correctSound.current = new Audio("/sounds/correct.mp3");
+    wrongSound.current = new Audio("/sounds/wrong.mp3");
+  }, []);
 
   useEffect(() => {
     const repeated: Question[] = [];
@@ -108,17 +116,16 @@ const GapFillGame = () => {
     if (isCorrect) {
       setScore((prev) => prev + 1);
       setShowFeedback("correct");
-      setTimeout(() => {
-        setShowFeedback(null);
-        handleNext();
-      }, 1500);
+      correctSound.current?.play();
     } else {
       setShowFeedback("wrong");
-      setTimeout(() => {
-        setShowFeedback(null);
-        handleNext();
-      }, 3000);
+      wrongSound.current?.play();
     }
+
+    setTimeout(() => {
+      setShowFeedback(null);
+      handleNext();
+    }, isCorrect ? 1500 : 3000);
   };
 
   const handleNext = () => {
@@ -179,8 +186,26 @@ const GapFillGame = () => {
         )}
       </div>
 
-      <div className="quiz-header">{module}</div>
-      <div className="quiz-subheader">{chapter}</div>
+      {/* Modul */}
+      <div
+        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
+        style={{
+          backgroundColor: "#228b57",
+          maxWidth: "600px",
+          width: "100%",
+          marginTop: "-8px",
+        }}
+      >
+        {module}
+      </div>
+
+      {/* Kapitel */}
+      <div
+        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
+        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
+      >
+        {chapter}
+      </div>
 
       <div className="quiz-status">
         <div>
