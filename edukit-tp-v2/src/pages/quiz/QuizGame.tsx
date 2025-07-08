@@ -28,9 +28,12 @@ const QuizGame = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
   const [score, setScore] = useState(0);
+  const [isPostponed, setIsPostponed] = useState(false);
 
   const currentQuestion =
     sampleQuestions[currentIndex % sampleQuestions.length];
+
+  const postponedKey = `postponed_${module}_${chapter}`;
 
   useEffect(() => {
     if (showFeedback) return;
@@ -48,6 +51,14 @@ const QuizGame = () => {
 
     return () => clearInterval(timer);
   }, [currentIndex, timeLimit, showFeedback]);
+
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(
+      (q) => q.question === currentQuestion.question
+    );
+    setIsPostponed(alreadySaved);
+  }, [currentIndex]);
 
   const handleAnswer = (selected) => {
     if (showFeedback) return;
@@ -74,39 +85,70 @@ const QuizGame = () => {
     }
   };
 
+  const togglePostpone = () => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(
+      (q) => q.question === currentQuestion.question
+    );
+
+    let updated;
+
+    if (alreadySaved) {
+      updated = stored.filter((q) => q.question !== currentQuestion.question);
+    } else {
+      updated = [...stored, currentQuestion];
+    }
+
+    localStorage.setItem(postponedKey, JSON.stringify(updated));
+    setIsPostponed(!alreadySaved);
+  };
+
   const isCorrect = (opt) => opt === currentQuestion.answer;
   const isWrong = (opt) => opt === selectedAnswer && !isCorrect(opt);
   const isLastQuestion = currentIndex + 1 === questionCount;
 
   return (
     <div className="quizgame-wrapper">
-      <div className="cancel-button">
-        {!showCancelConfirm ? (
-          <button
-            className="btn btn-dark"
-            onClick={() => setShowCancelConfirm(true)}
-          >
-            Abbrechen
-          </button>
-        ) : (
-          <div className="cancel-confirm-container">
-            <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+      <div className="top-button-row">
+        <div className="cancel-button">
+          {!showCancelConfirm ? (
+            <button
+              className="btn btn-dark"
+              onClick={() => setShowCancelConfirm(true)}
+            >
+              Abbrechen
+            </button>
+          ) : (
+            <div className="cancel-confirm-container">
+              <div className="cancel-confirm-text">
+                Möchtest du wirklich abbrechen?
+              </div>
+              <div className="cancel-confirm-buttons">
+                <button
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => setShowCancelConfirm(false)}
+                >
+                  Nein
+                </button>
+                <button
+                  className="btn btn-danger btn-sm"
+                  onClick={() => navigate(-2)}
+                >
+                  Ja, zurück
+                </button>
+              </div>
             </div>
-            <div className="cancel-confirm-buttons">
-              <button
-                className="btn btn-secondary btn-sm"
-                onClick={() => setShowCancelConfirm(false)}
-              >
-                Nein
-              </button>
-              <button
-                className="btn btn-danger btn-sm"
-                onClick={() => navigate(-2)}
-              >
-                Ja, zurück
-              </button>
-            </div>
+          )}
+        </div>
+
+        {!showCancelConfirm && (
+          <div className="postpone-button">
+            <button
+              className={`btn btn-dark ${isPostponed ? "active" : ""}`}
+              onClick={togglePostpone}
+            >
+              {isPostponed ? "Zurückstellung aufheben" : "Frage zurückstellen"}
+            </button>
           </div>
         )}
       </div>

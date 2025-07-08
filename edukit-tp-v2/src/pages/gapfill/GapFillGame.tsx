@@ -179,10 +179,10 @@ const GapFillGame = () => {
         )}
       </div>
 
-      <div className="quiz-header">{module}</div>
-      <div className="quiz-subheader">{chapter}</div>
+      <div className="gapfill-header">{module}</div>
+      <div className="gapfill-subheader">{chapter}</div>
 
-      <div className="quiz-status">
+      <div className="gapfill-status">
         <div>
           Frage {currentIndex + 1} / {questions.length}
         </div>

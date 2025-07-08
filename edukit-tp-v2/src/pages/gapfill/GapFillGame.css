@@ -54,7 +54,7 @@
   padding: 0.4rem 0.8rem;
 }
 
-.quiz-header {
+.gapfill-header {
   background-color: #228b57;
   color: white;
   border-radius: 999px;
@@ -67,7 +67,7 @@
   margin-top: 0.4rem;
 }
 
-.quiz-subheader {
+.gapfill-subheader {
   background-color: #78ba84;
   color: black;
   border-radius: 8px;
@@ -79,7 +79,7 @@
   margin-bottom: 1.2rem;
 }
 
-.quiz-status {
+.gapfill-status {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -155,12 +155,12 @@
     margin-top: -2.2rem;
   }
 
-  .quiz-status,
-  .quiz-subheader {
+  .gapfill-status,
+  .gapfill-subheader {
     margin-bottom: 0.8rem;
   }
 
-  .quiz-header {
+  .gapfill-header {
     margin-top: -0.3rem;
   }
 
@@ -176,9 +176,9 @@
 
 /* Tablet */
 @media (min-width: 577px) and (max-width: 991px) {
-  .quiz-header,
-  .quiz-subheader,
-  .quiz-status {
+  .gapfill-header,
+  .gapfill-subheader,
+  .gapfill-status {
     font-size: 1rem;
   }
 
@@ -192,9 +192,9 @@
     max-width: 600px;
   }
 
-  .quiz-header,
-  .quiz-subheader,
-  .quiz-status,
+  .gapfill-header,
+  .gapfill-subheader,
+  .gapfill-status,
   .gapfill-question {
     max-width: 600px;
   }
@@ -202,9 +202,9 @@
 
 /* Desktop */
 @media (min-width: 992px) and (max-width: 1399px) {
-  .quiz-header,
-  .quiz-subheader,
-  .quiz-status {
+  .gapfill-header,
+  .gapfill-subheader,
+  .gapfill-status {
     font-size: 1.1rem;
   }
 
@@ -218,9 +218,9 @@
     max-width: 800px;
   }
 
-  .quiz-header,
-  .quiz-subheader,
-  .quiz-status,
+  .gapfill-header,
+  .gapfill-subheader,
+  .gapfill-status,
   .gapfill-question {
     max-width: 800px;
   }
@@ -228,9 +228,9 @@
 
 /* Großer Desktop */
 @media (min-width: 1400px) {
-  .quiz-header,
-  .quiz-subheader,
-  .quiz-status {
+  .gapfill-header,
+  .gapfill-subheader,
+  .gapfill-status {
     font-size: 1.2rem;
     padding: 0.6rem 1.2rem;
   }
@@ -245,9 +245,9 @@
     max-width: 1000px;
   }
 
-  .quiz-header,
-  .quiz-subheader,
-  .quiz-status,
+  .gapfill-header,
+  .gapfill-subheader,
+  .gapfill-status,
   .gapfill-question {
     max-width: 1000px;
   }
