@@ -8,7 +8,13 @@ const QuizGame = () => {
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
-  const { module, chapter, questionCount, timeLimit } = location.state || {};
+  const {
+    module,
+    chapter,
+    questionCount,
+    timeLimit,
+    questions: incomingQuestions,
+  } = location.state || {};
 
   const sampleQuestions = [
     {
@@ -23,6 +29,9 @@ const QuizGame = () => {
     },
   ];
 
+  const [questions] = useState(
+    incomingQuestions?.length ? incomingQuestions : sampleQuestions
+  );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(timeLimit || 20);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -30,9 +39,7 @@ const QuizGame = () => {
   const [score, setScore] = useState(0);
   const [isPostponed, setIsPostponed] = useState(false);
 
-  const currentQuestion =
-    sampleQuestions[currentIndex % sampleQuestions.length];
-
+  const currentQuestion = questions[currentIndex];
   const postponedKey = `postponed_${module}_${chapter}`;
 
   useEffect(() => {
@@ -58,7 +65,7 @@ const QuizGame = () => {
       (q) => q.question === currentQuestion.question
     );
     setIsPostponed(alreadySaved);
-  }, [currentIndex]);
+  }, [currentIndex, currentQuestion, postponedKey]);
 
   const handleAnswer = (selected) => {
     if (showFeedback) return;

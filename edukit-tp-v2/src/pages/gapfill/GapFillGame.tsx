@@ -23,7 +23,7 @@ const exampleQuestions: Question[] = [
     answer: "Hypertext",
   },
   {
-    sentence: "Das Ohmsche Gesetz lautet U = R * ___.",
+    sentence: "Das Ohmsche Gesetz lautet U = R * ___ .",
     answer: "I",
   },
 ];
@@ -32,6 +32,7 @@ const GapFillGame = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+  const [isPostponed, setIsPostponed] = useState(false);
 
   const {
     module = "",
@@ -39,7 +40,10 @@ const GapFillGame = () => {
     subject = "",
     questionCount = 3,
     timeLimit = 30,
+    questions: incomingQuestions,
   } = location.state || {};
+
+  const postponedKey = `postponed_gapfill_${module}_${chapter}`;
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,15 +55,21 @@ const GapFillGame = () => {
   const [timer, setTimer] = useState(timeLimit);
   const [timerExpired, setTimerExpired] = useState(false);
 
+  // 1. Initiale Fragen laden
   useEffect(() => {
-    const repeated: Question[] = [];
-    while (repeated.length < questionCount) {
-      const shuffled = [...exampleQuestions].sort(() => Math.random() - 0.5);
-      repeated.push(...shuffled);
+    if (incomingQuestions?.length) {
+      setQuestions(incomingQuestions);
+    } else {
+      const repeated: Question[] = [];
+      while (repeated.length < questionCount) {
+        const shuffled = [...exampleQuestions].sort(() => Math.random() - 0.5);
+        repeated.push(...shuffled);
+      }
+      setQuestions(repeated.slice(0, questionCount));
     }
-    setQuestions(repeated.slice(0, questionCount));
-  }, [questionCount]);
+  }, [questionCount, incomingQuestions]);
 
+  // 2. Timer pro Frage starten
   useEffect(() => {
     if (currentIndex >= questions.length || showFeedback !== null) return;
 
@@ -77,32 +87,47 @@ const GapFillGame = () => {
     return () => clearInterval(interval);
   }, [currentIndex, timeLimit, questions.length, showFeedback]);
 
-  const checkOnTimeout = () => {
-    const correct = questions[currentIndex].answer.trim().toLowerCase();
-    const user = input.trim().toLowerCase();
-    const isCorrect = user === correct;
+  // 3. Postpone-Status laden
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(
+      (q: Question) => q.sentence === questions[currentIndex]?.sentence
+    );
+    setIsPostponed(alreadySaved);
+  }, [currentIndex, questions]);
 
-    if (isCorrect) {
-      setScore((prev) => prev + 1);
-      setShowFeedback("correct");
-      setTimeout(() => {
-        setShowFeedback(null);
-        handleNext();
-      }, 1500);
+  const togglePostpone = () => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(
+      (q: Question) => q.sentence === questions[currentIndex].sentence
+    );
+
+    let updated;
+
+    if (alreadySaved) {
+      updated = stored.filter(
+        (q: Question) => q.sentence !== questions[currentIndex].sentence
+      );
     } else {
-      setShowFeedback("wrong");
-      setTimeout(() => {
-        setShowFeedback(null);
-        handleNext();
-      }, 3000);
+      updated = [...stored, questions[currentIndex]];
     }
+
+    localStorage.setItem(postponedKey, JSON.stringify(updated));
+    setIsPostponed(!alreadySaved);
+  };
+
+  const checkOnTimeout = () => {
+    checkAnswer(input);
   };
 
   const handleCheck = () => {
     if (!input.trim()) return;
+    checkAnswer(input);
+  };
 
+  const checkAnswer = (userInput: string) => {
     const correct = questions[currentIndex].answer.trim().toLowerCase();
-    const user = input.trim().toLowerCase();
+    const user = userInput.trim().toLowerCase();
     const isCorrect = user === correct;
 
     if (isCorrect) {
@@ -147,34 +172,47 @@ const GapFillGame = () => {
 
   return (
     <div className="gapfill-wrapper">
-      {/* Abbrechen-Button */}
-      <div className="cancel-button">
-        {!showCancelConfirm ? (
-          <button
-            className="btn btn-dark"
-            onClick={() => setShowCancelConfirm(true)}
-          >
-            Abbrechen
-          </button>
-        ) : (
-          <div className="cancel-confirm-container">
-            <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+      <div className="top-button-row">
+        {/* Abbrechen-Button */}
+        <div className="cancel-button">
+          {!showCancelConfirm ? (
+            <button
+              className="btn btn-dark"
+              onClick={() => setShowCancelConfirm(true)}
+            >
+              Abbrechen
+            </button>
+          ) : (
+            <div className="cancel-confirm-container">
+              <div className="cancel-confirm-text">
+                Möchtest du wirklich abbrechen?
+              </div>
+              <div className="cancel-confirm-buttons">
+                <button
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => setShowCancelConfirm(false)}
+                >
+                  Nein
+                </button>
+                <button
+                  className="btn btn-danger btn-sm"
+                  onClick={() => navigate(-2)}
+                >
+                  Ja, zurück
+                </button>
+              </div>
             </div>
-            <div className="cancel-confirm-buttons">
-              <button
-                className="btn btn-secondary btn-sm"
-                onClick={() => setShowCancelConfirm(false)}
-              >
-                Nein
-              </button>
-              <button
-                className="btn btn-danger btn-sm"
-                onClick={() => navigate(-2)}
-              >
-                Ja, zurück
-              </button>
-            </div>
+          )}
+        </div>
+
+        {!showCancelConfirm && (
+          <div className="postpone-button">
+            <button
+              className={`btn btn-dark ${isPostponed ? "active" : ""}`}
+              onClick={togglePostpone}
+            >
+              {isPostponed ? "Zurückstellung aufheben" : "Frage zurückstellen"}
+            </button>
           </div>
         )}
       </div>

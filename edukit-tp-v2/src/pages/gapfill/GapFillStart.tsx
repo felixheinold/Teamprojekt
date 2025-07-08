@@ -9,7 +9,7 @@ const GapFillStart = () => {
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
-  const { module, chapter, subject, questionCount, timeLimit } =
+  const { module, chapter, subject, questionCount, timeLimit, questions } =
     location.state || {};
 
   return (
@@ -78,7 +78,14 @@ const GapFillStart = () => {
       >
         <Link
           to="/gapfillgame"
-          state={{ module, chapter, subject, questionCount, timeLimit }}
+          state={{
+            module,
+            chapter,
+            subject,
+            questionCount,
+            timeLimit,
+            ...(questions ? { questions } : {}),
+          }}
           className="gapstart-button"
         >
           Direkt zum Lückentext starten

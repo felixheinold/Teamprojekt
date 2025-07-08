@@ -52,9 +52,25 @@ const Minigames = () => {
     },
   ];
 
+  const shuffleArray = (arr: any[]) => {
+    const array = [...arr];
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
   const handleGameClick = (game: { name: string; route: string }) => {
+    let key = "";
+
     if (game.route === "/quiz") {
-      const key = `postponed_${selectedModule}_${selectedChapter}`;
+      key = `postponed_${selectedModule}_${selectedChapter}`;
+    } else if (game.route === "/gapfill") {
+      key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
+    }
+
+    if (key) {
       const stored = JSON.parse(localStorage.getItem(key) || "[]");
       const count = stored.length;
 
@@ -62,15 +78,13 @@ const Minigames = () => {
         setSelectedGame(game);
         setPostponedCount(count);
         setShowChoiceModal(true);
-      } else {
-        // keine zurückgestellten → direkt Standardmodal öffnen
-        setSelectedGame(game);
-        setShowModal(true);
+        return;
       }
-    } else {
-      setSelectedGame(game);
-      setShowModal(true);
     }
+
+    // keine zurückgestellten → direkt starten
+    setSelectedGame(game);
+    setShowModal(true);
   };
 
   const handleStart = () => {
@@ -94,13 +108,35 @@ const Minigames = () => {
 
     if (!questions.length) return;
 
+    const shuffled = shuffleArray(questions);
+
     navigate("/quiz", {
       state: {
         module: selectedModule,
         chapter: selectedChapter,
-        questions,
-        questionCount: questions.length,
+        questions: shuffled,
+        questionCount: shuffled.length,
         timeLimit: 20,
+        fromPostponed: true,
+      },
+    });
+  };
+
+  const handleGapFillPostponedStart = () => {
+    const key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
+    const questions = JSON.parse(localStorage.getItem(key) || "[]");
+
+    if (!questions.length) return;
+
+    const shuffled = shuffleArray(questions);
+
+    navigate("/gapfill", {
+      state: {
+        module: selectedModule,
+        chapter: selectedChapter,
+        questions: shuffled,
+        questionCount: shuffled.length,
+        timeLimit: 30,
         fromPostponed: true,
       },
     });
@@ -154,7 +190,11 @@ const Minigames = () => {
               <div className="choice-buttons">
                 <button
                   className="btn btn-success"
-                  onClick={handlePostponedStart}
+                  onClick={() =>
+                    selectedGame.route === "/gapfill"
+                      ? handleGapFillPostponedStart()
+                      : handlePostponedStart()
+                  }
                 >
                   {t("minigames.quizChoice.savedPlay")}
                 </button>
