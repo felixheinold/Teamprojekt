@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import "./QuizGame.css";
 
 const QuizGame = () => {
+  type QuizQuestion = {
+    id: string;
+    question: string;
+    options: string[];
+    answer: string;
+  };
+
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
@@ -16,22 +23,92 @@ const QuizGame = () => {
     questions: incomingQuestions,
   } = location.state || {};
 
-  const sampleQuestions = [
+  const sampleQuestions: QuizQuestion[] = [
     {
+      id: "pb-k1-de-qz1",
       question: "Was ist die Hauptstadt von Frankreich?",
       options: ["Paris", "Berlin", "Madrid", "Rom"],
       answer: "Paris",
     },
     {
+      id: "pb-k1-de-qz2",
       question: "Was ist 2 + 2?",
       options: ["3", "4", "5", "6"],
       answer: "4",
     },
+    {
+      id: "pb-k1-de-qz3",
+      question: "Welcher Planet ist der größte im Sonnensystem?",
+      options: ["Mars", "Jupiter", "Saturn", "Erde"],
+      answer: "Jupiter",
+    },
+    {
+      id: "pb-k1-de-qz4",
+      question: "Welches Element hat das chemische Symbol 'Fe'?",
+      options: ["Fluor", "Eisen", "Zinn", "Blei"],
+      answer: "Eisen",
+    },
+    {
+      id: "pb-k1-de-qz5",
+      question: "Wie viele Bundesländer hat Deutschland?",
+      options: ["14", "15", "16", "17"],
+      answer: "16",
+    },
+    {
+      id: "pb-k1-de-qz6",
+      question: "Wie viele Minuten hat eine Stunde?",
+      options: ["30", "45", "60", "90"],
+      answer: "60",
+    },
+    {
+      id: "pb-k1-de-qz7",
+      question:
+        "Welche Programmiersprache wird im Web am häufigsten verwendet?",
+      options: ["Python", "JavaScript", "C#", "Java"],
+      answer: "JavaScript",
+    },
+    {
+      id: "pb-k1-de-qz8",
+      question: "Wie heißt der höchste Berg der Erde?",
+      options: ["Mount Everest", "K2", "Kilimandscharo", "Mont Blanc"],
+      answer: "Mount Everest",
+    },
+    {
+      id: "pb-k1-de-qz9",
+      question: "Welche Farbe ergibt sich aus Blau und Gelb?",
+      options: ["Orange", "Grün", "Violett", "Braun"],
+      answer: "Grün",
+    },
+    {
+      id: "pb-k1-de-qz10",
+      question: "Wie viele Kontinente gibt es?",
+      options: ["5", "6", "7", "8"],
+      answer: "7",
+    },
+    {
+      id: "pb-k1-de-qz11",
+      question: "Was ist das Ergebnis von 5 × 6?",
+      options: ["30", "11", "56", "25"],
+      answer: "30",
+    },
+    {
+      id: "pb-k1-de-qz12",
+      question: "Wie nennt man ein Vieleck mit acht Ecken?",
+      options: ["Hexagon", "Heptagon", "Oktagon", "Dezagon"],
+      answer: "Oktagon",
+    },
   ];
 
-  const [questions] = useState(
-    incomingQuestions?.length ? incomingQuestions : sampleQuestions
-  );
+  const shuffle = <T,>(array: T[]): T[] =>
+    [...array].sort(() => Math.random() - 0.5);
+
+  const [questions] = useState<QuizQuestion[]>(() => {
+    const baseQuestions: QuizQuestion[] = incomingQuestions?.length
+      ? (incomingQuestions as QuizQuestion[])
+      : sampleQuestions;
+    return shuffle(baseQuestions).slice(0, questionCount);
+  });
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(timeLimit || 20);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -74,6 +151,23 @@ const QuizGame = () => {
 
     if (selected && selected === currentQuestion.answer) {
       setScore((prev) => prev + 1);
+
+      const statsKey = "userStats";
+      const gameKey = "quiz";
+      const stored = localStorage.getItem(statsKey);
+      const allStats = stored ? JSON.parse(stored) : {};
+
+      if (!allStats[gameKey]) allStats[gameKey] = {};
+      if (!allStats[gameKey][module]) allStats[gameKey][module] = {};
+      if (!allStats[gameKey][module][chapter])
+        allStats[gameKey][module][chapter] = { correct: [] };
+
+      const correctList = allStats[gameKey][module][chapter].correct;
+
+      if (!correctList.includes(currentQuestion.id)) {
+        correctList.push(currentQuestion.id);
+        localStorage.setItem(statsKey, JSON.stringify(allStats));
+      }
     }
   };
 

@@ -26,6 +26,42 @@ const exampleQuestions: Question[] = [
     sentence: "Das Ohmsche Gesetz lautet U = R * ___ .",
     answer: "I",
   },
+  {
+    sentence: "Die Erde dreht sich in 24 Stunden um ihre eigene ___.",
+    answer: "Achse",
+  },
+  {
+    sentence: "Die Hauptstadt von Italien ist ___.",
+    answer: "Rom",
+  },
+  {
+    sentence: "Ein Dreieck hat insgesamt ___ Innenwinkel.",
+    answer: "drei",
+  },
+  {
+    sentence: "Ein Jahr hat ___ Monate.",
+    answer: "12",
+  },
+  {
+    sentence: "Die größte Wüste der Erde ist die ___ Wüste.",
+    answer: "Antarktische",
+  },
+  {
+    sentence: "Ein Viereck mit vier rechten Winkeln ist ein ___.",
+    answer: "Rechteck",
+  },
+  {
+    sentence: "Wasser hat die chemische Formel ___.",
+    answer: "H2O",
+  },
+  {
+    sentence: "Die Hauptstadt von Frankreich ist ___.",
+    answer: "Paris",
+  },
+  {
+    sentence: "Die kleinste Primzahl ist ___.",
+    answer: "2",
+  },
 ];
 
 const GapFillGame = () => {

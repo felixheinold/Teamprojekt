@@ -6,74 +6,89 @@ import "./MemoryRound1.css";
 
 const initialPairs = [
   {
+    id: "pb-k1-en-q1",
     term: "Liquidität",
     definition: "Fähigkeit, Zahlungsverpflichtungen fristgerecht nachzukommen.",
   },
   {
+    id: "pb-k1-en-q2",
     term: "Investition",
     definition:
       "Verwendung finanzieller Mittel zur Beschaffung von Vermögensgegenständen.",
   },
   {
+    id: "pb-k1-en-q3",
     term: "Abschreibung",
     definition: "Wertminderung von Anlagegütern durch Nutzung oder Zeitablauf.",
   },
   {
+    id: "pb-k1-en-q4",
     term: "Bilanz",
     definition: "Gegenüberstellung von Aktiva und Passiva zu einem Stichtag.",
   },
   {
+    id: "pb-k1-en-q5",
     term: "Eigenkapital",
     definition:
       "Finanzmittel, die dem Unternehmen von den Eigentümern zur Verfügung gestellt werden.",
   },
   {
+    id: "pb-k1-en-q6",
     term: "Fremdkapital",
     definition:
       "Kapital, das von Dritten (z. B. Banken) zur Verfügung gestellt wird.",
   },
   {
+    id: "pb-k1-en-q7",
     term: "Rendite",
     definition:
       "Ertrag einer Kapitalanlage im Verhältnis zum eingesetzten Kapital.",
   },
   {
+    id: "pb-k1-en-q8",
     term: "Liquiditätsgrad",
     definition: "Kennzahl zur Beurteilung der kurzfristigen Zahlungsfähigkeit.",
   },
   {
+    id: "pb-k1-en-q9",
     term: "Break-even-Point",
     definition: "Punkt, an dem Erlöse und Kosten gleich hoch sind.",
   },
   {
+    id: "pb-k1-en-q10",
     term: "Kalkulation",
     definition:
       "Ermittlung der Kosten und Preise von Produkten oder Leistungen.",
   },
   {
+    id: "pb-k1-en-q11",
     term: "Skonto",
     definition: "Preisnachlass bei Zahlung innerhalb einer bestimmten Frist.",
   },
   {
+    id: "pb-k1-en-q12",
     term: "Deckungsbeitrag",
     definition: "Differenz zwischen Erlös und variablen Kosten.",
   },
   {
+    id: "pb-k1-en-q13",
     term: "Fixkosten",
     definition: "Kosten, die unabhängig von der Produktionsmenge anfallen.",
   },
   {
+    id: "pb-k1-en-q14",
     term: "Variable Kosten",
     definition: "Kosten, die sich mit der Produktionsmenge ändern.",
   },
   {
+    id: "pb-k1-en-q15",
     term: "GuV",
     definition:
       "Gegenüberstellung von Aufwendungen und Erträgen in einer Abrechnungsperiode.",
   },
 ];
 
-const shuffleArray = (arr: any[]) => [...arr].sort(() => Math.random() - 0.5);
+const shuffleArray = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
 const MemoryRound1 = () => {
   const navigate = useNavigate();
@@ -88,48 +103,69 @@ const MemoryRound1 = () => {
     pairs = null,
   } = location.state || {};
 
+  // Initialisiere pairs
   const [selectedPairs] = useState(() =>
     pairs && Array.isArray(pairs)
       ? pairs
       : shuffleArray(initialPairs).slice(0, questionCount)
   );
 
-  const [terms] = useState(() => shuffleArray(selectedPairs));
-  const [definitions] = useState(() => shuffleArray(selectedPairs));
-  const [assignments, setAssignments] = useState<{
-    [key: string]: string | null;
-  }>({});
-  const [usedTerms, setUsedTerms] = useState<Set<string>>(new Set());
-  const [draggedTerm, setDraggedTerm] = useState<string | null>(null);
-  const [selectedTerm, setSelectedTerm] = useState<string | null>(null);
+  // Speichere alle IDs dieses Kapitels im localStorage (für Fortschrittsanzeige)
+  useEffect(() => {
+    const key = "progress";
+    const stored = localStorage.getItem(key);
+    const progress = stored ? JSON.parse(stored) : {};
+
+    if (!progress.memoryTotal) progress.memoryTotal = {};
+    if (!progress.memoryTotal[module]) progress.memoryTotal[module] = {};
+
+    const allIds = initialPairs.map((pair) => pair.id);
+    progress.memoryTotal[module][chapter] = allIds;
+
+    localStorage.setItem(key, JSON.stringify(progress));
+  }, [module, chapter]);
+
+  const [terms] = useState(() =>
+    shuffleArray(
+      selectedPairs.map((pair) => ({ id: pair.id, text: pair.term }))
+    )
+  );
+  const [definitions] = useState(() =>
+    shuffleArray(
+      selectedPairs.map((pair) => ({ id: pair.id, text: pair.definition }))
+    )
+  );
+  const [assignments, setAssignments] = useState({});
+  const [usedTerms, setUsedTerms] = useState(new Set());
+  const [draggedTerm, setDraggedTerm] = useState(null);
+  const [selectedTerm, setSelectedTerm] = useState(null);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    const startAssignments: { [key: string]: string | null } = {};
-    selectedPairs.forEach((pair) => {
-      startAssignments[pair.definition] = null;
+    const startAssignments = {};
+    definitions.forEach((def) => {
+      startAssignments[def.id] = null;
     });
     setAssignments(startAssignments);
-  }, [selectedPairs]);
+  }, [definitions]);
 
   const isTouchDevice = () => {
     return "ontouchstart" in window || navigator.maxTouchPoints > 0;
   };
 
-  const handleTermClick = (term: string, isUsed: boolean) => {
+  const handleTermClick = (id, isUsed) => {
     if (isUsed || submitted || !isTouchDevice()) return;
-    setSelectedTerm(term === selectedTerm ? null : term);
+    setSelectedTerm(id === selectedTerm ? null : id);
   };
 
-  const handleDrop = (def: string) => {
+  const handleDrop = (defId) => {
     if ((!draggedTerm && !selectedTerm) || submitted) return;
-
     const termToAssign = isTouchDevice() ? selectedTerm : draggedTerm;
     if (!termToAssign || usedTerms.has(termToAssign)) return;
 
     setAssignments((prev) => {
-      const prevTerm = prev[def];
-      const updatedAssignments = { ...prev, [def]: termToAssign };
+      const prevTerm = prev[defId];
+      const updatedAssignments = { ...prev, [defId]: termToAssign };
 
       setUsedTerms((prevUsed) => {
         const updated = new Set(prevUsed);
@@ -145,16 +181,13 @@ const MemoryRound1 = () => {
     else setDraggedTerm(null);
   };
 
-  const checkCorrect = (def: string, term: string | null) => {
-    const pair = selectedPairs.find((p) => p.definition === def);
-    return pair && pair.term === term;
-  };
+  const checkCorrect = (defId, termId) => defId === termId;
 
-  const handleResetTerm = (def: string) => {
+  const handleResetTerm = (defId) => {
     if (submitted) return;
-    const prevTerm = assignments[def];
+    const prevTerm = assignments[defId];
     if (prevTerm) {
-      setAssignments((prev) => ({ ...prev, [def]: null }));
+      setAssignments((prev) => ({ ...prev, [defId]: null }));
       setUsedTerms((prev) => {
         const copy = new Set(prev);
         copy.delete(prevTerm);
@@ -166,14 +199,14 @@ const MemoryRound1 = () => {
   const handleSubmit = () => setSubmitted(true);
 
   const handleFinish = () => {
-    const correctCount = Object.entries(assignments).filter(([def, term]) =>
-      checkCorrect(def, term)
+    const correctCount = Object.entries(assignments).filter(([defId, termId]) =>
+      checkCorrect(defId, termId)
     ).length;
 
     navigate("/memoryround1result", {
       state: {
         correctCount,
-        total: Object.keys(assignments).length,
+        total: definitions.length,
         module,
         chapter,
         timeLimit,
@@ -184,7 +217,7 @@ const MemoryRound1 = () => {
 
   return (
     <div className="memory-wrapper">
-      {/* Abbrechen mit Bestätigungsdialog */}
+      {/* Cancel Button */}
       <div className="cancel-button">
         {!showCancelConfirm ? (
           <button
@@ -232,16 +265,16 @@ const MemoryRound1 = () => {
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Begriffe</h5>
           {terms.map((item, i) => {
-            const isUsed = usedTerms.has(item.term);
-            const isSelected = item.term === selectedTerm;
+            const isUsed = usedTerms.has(item.id);
+            const isSelected = item.id === selectedTerm;
             return (
               <motion.div
                 key={i}
                 draggable={!isUsed && !submitted && !isTouchDevice()}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => handleTermClick(item.term, isUsed)}
-                onDragStart={() => setDraggedTerm(item.term)}
+                onClick={() => handleTermClick(item.id, isUsed)}
+                onDragStart={() => setDraggedTerm(item.id)}
                 className="mb-3 text-center p-3 shadow-sm term-box"
                 style={{
                   backgroundColor: isUsed
@@ -265,7 +298,7 @@ const MemoryRound1 = () => {
                   border: isSelected ? "2px solid #7f56d9" : "none",
                 }}
               >
-                {item.term}
+                {item.text}
               </motion.div>
             );
           })}
@@ -274,9 +307,8 @@ const MemoryRound1 = () => {
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Definitionen</h5>
           {definitions.map((item, i) => {
-            const assignedTerm = assignments[item.definition];
-            const isCorrect =
-              submitted && checkCorrect(item.definition, assignedTerm);
+            const assignedTerm = assignments[item.id];
+            const isCorrect = submitted && checkCorrect(item.id, assignedTerm);
             const isIncorrect = submitted && assignedTerm && !isCorrect;
             const bgColor = isCorrect
               ? "#198754"
@@ -288,8 +320,8 @@ const MemoryRound1 = () => {
               <div
                 key={i}
                 onDragOver={(e) => e.preventDefault()}
-                onDrop={() => handleDrop(item.definition)}
-                onTouchEnd={() => handleDrop(item.definition)}
+                onDrop={() => handleDrop(item.id)}
+                onTouchEnd={() => handleDrop(item.id)}
                 className="mb-3 d-flex align-items-center justify-content-between p-3 definition-box"
                 style={{
                   backgroundColor: bgColor,
@@ -300,16 +332,16 @@ const MemoryRound1 = () => {
                   cursor: "pointer",
                 }}
               >
-                <span style={{ flex: 1 }}>{item.definition}</span>
+                <span style={{ flex: 1 }}>{item.text}</span>
                 {assignedTerm && (
                   <motion.span
                     className="badge bg-secondary ms-3 memory-badge"
                     onClick={(e) => {
                       e.stopPropagation();
-                      handleResetTerm(item.definition);
+                      handleResetTerm(item.id);
                     }}
                   >
-                    {assignedTerm}
+                    {terms.find((t) => t.id === assignedTerm)?.text || ""}
                   </motion.span>
                 )}
               </div>
