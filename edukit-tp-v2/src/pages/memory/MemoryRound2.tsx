@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
 import "./MemoryRound2.css";
-=======
->>>>>>> gui_felix
 
 const shuffleArray = <T,>(array: T[]): T[] =>
   [...array].sort(() => Math.random() - 0.5);
@@ -137,24 +134,15 @@ const MemoryRound2 = () => {
 
   const allMatched = matched.length === cards.length;
 
-  return (
-<<<<<<< HEAD
+return (
     <div className="memoryr2-wrapper">
       {/* Abbrechen-Button */}
       <div className="cancel-button">
-=======
-    <div
-      className="container d-flex flex-column align-items-center pt-2"
-      style={{ minHeight: "100vh" }}
-    >
-      {/* Abbrechen */}
-      <div
-        className="position-absolute"
-        style={{ top: "80px", left: "30px", zIndex: 10 }}
-      >
->>>>>>> gui_felix
         {!showCancelConfirm ? (
-          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
             Abbrechen
           </button>
         ) : (
@@ -162,7 +150,6 @@ const MemoryRound2 = () => {
             <div className="cancel-confirm-text">
               Möchtest du wirklich abbrechen?
             </div>
-<<<<<<< HEAD
             <div className="cancel-confirm-buttons">
               <button
                 className="btn btn-secondary"
@@ -171,86 +158,43 @@ const MemoryRound2 = () => {
                 Nein
               </button>
               <button className="btn btn-danger" onClick={() => navigate(-4)}>
-=======
-            <div className="d-flex gap-2">
-              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
-                Nein
-              </button>
-              <button className="btn btn-danger btn-sm" onClick={() => navigate(-4)}>
->>>>>>> gui_felix
                 Ja, zurück
               </button>
             </div>
           </div>
         )}
       </div>
-
-<<<<<<< HEAD
+ 
       {/* Modul & Kapitelanzeige */}
       <div className="memory-header">{module}</div>
       <div className="memory-subheader">{chapter}</div>
-
+ 
       {/* Titel */}
       <h1 className="memoryr2-title">🧠 Memory Runde 2</h1>
-
+ 
       {/* Statusleiste */}
       <div className="statusbar">
         <div>
-=======
-      {/* Header */}
-      <div
-        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-        style={{
-          backgroundColor: "#228b57",
-          maxWidth: "600px",
-          width: "100%",
-          marginTop: "-8px",
-        }}
-      >
-        {module}
-      </div>
-      <div
-        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
-      >
-        {chapter}
-      </div>
-
-      <h1 className="fw-bold display-5 mb-3">🧠 Memory Runde 2</h1>
-
-      {/* Status */}
-      <div className="d-flex justify-content-between mb-3" style={{ maxWidth: "600px", width: "100%" }}>
-        <div className="fw-semibold">
->>>>>>> gui_felix
           {matched.length / 2} / {cards.length / 2} Paare
         </div>
         <div>Züge: {turn - 1}</div>
         <div>⏳ {timer}s</div>
       </div>
-
-<<<<<<< HEAD
+ 
       {/* Spielfeld */}
       <div className="memory-grid">
-=======
-      {/* Karten */}
-      <div
-        className="d-flex flex-wrap justify-content-center mb-4"
-        style={{ maxWidth: "1000px", gap: "12px" }}
-      >
->>>>>>> gui_felix
         {cards.map((card) => {
           const isFlipped = flipped.includes(card.id);
           const isMatched = matched.includes(card.id);
           const baseColor = card.type === "term" ? "#d3bfff" : "#fff59d";
           const showContent = isFlipped || isMatched;
-
           const feedbackColor =
             isFlipped && flipped.length === 2 && feedback === "correct"
               ? "#28a745"
               : isFlipped && flipped.length === 2 && feedback === "wrong"
               ? "#dc3545"
               : baseColor;
-
+ 
           return (
             <motion.div
               key={card.id}
@@ -271,18 +215,24 @@ const MemoryRound2 = () => {
           );
         })}
       </div>
-
+ 
       {/* Legende */}
       <div className="d-flex gap-3 mt-2">
-        <div className="px-4 py-2 rounded-pill text-dark fw-semibold" style={{ backgroundColor: "#d3bfff" }}>
+        <div
+          className="px-4 py-2 rounded-pill text-dark fw-semibold"
+          style={{ backgroundColor: "#d3bfff" }}
+        >
           = Begriff
         </div>
-        <div className="px-4 py-2 rounded-pill text-dark fw-semibold" style={{ backgroundColor: "#fff59d" }}>
+        <div
+          className="px-4 py-2 rounded-pill text-dark fw-semibold"
+          style={{ backgroundColor: "#fff59d" }}
+        >
           = Definition
         </div>
       </div>
-
-      {/* Beenden */}
+ 
+      {/* Spiel beenden */}
       {allMatched && (
         <motion.button
           whileHover={{ scale: 1.03 }}
@@ -313,5 +263,6 @@ const MemoryRound2 = () => {
     </div>
   );
 };
-
+ 
 export default MemoryRound2;
+ 
