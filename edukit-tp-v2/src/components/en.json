@@ -57,9 +57,16 @@
       "title": "Start Minigame",
       "questions": "Questions:",
       "pairs": "Pairs:",
-      "timePerQuestion": "Time Limit per Question:",
-      "seconds": "Seconds"
-    }
+      "timePerQuestion": "Time per question:",
+      "seconds": "seconds"
+    },
+    "quizChoice": {
+    "title": "What would you like to play?",
+    "saved": "postponed questions available",
+    "savedPlay": "Play postponed questions",
+    "random": "Play random questions"
+  }
+
   },
   "leaderboard": {
     "title": "Leaderboard",

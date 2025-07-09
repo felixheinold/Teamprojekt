@@ -14,8 +14,7 @@ const exampleQuestions: Question[] = [
     answer: "Chloroplasten",
   },
   {
-    sentence:
-      "Der pH-Wert einer Lösung wird durch die Konzentration von ___ bestimmt.",
+    sentence: "Der pH-Wert einer Lösung wird durch die Konzentration von ___ bestimmt.",
     answer: "Wasserstoffionen",
   },
   {
@@ -32,6 +31,7 @@ const GapFillGame = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+  const [isPostponed, setIsPostponed] = useState(false);
 
   const {
     module = "",
@@ -39,35 +39,42 @@ const GapFillGame = () => {
     subject = "",
     questionCount = 3,
     timeLimit = 30,
+    questions: incomingQuestions,
   } = location.state || {};
+
+  const postponedKey = `postponed_gapfill_${module}_${chapter}`;
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState("");
   const [score, setScore] = useState(0);
-  const [showFeedback, setShowFeedback] = useState<"correct" | "wrong" | null>(
-    null
-  );
+  const [showFeedback, setShowFeedback] = useState<"correct" | "wrong" | null>(null);
   const [timer, setTimer] = useState(timeLimit);
 
-  // 🔊 Sound-Refs
   const correctSound = useRef<HTMLAudioElement | null>(null);
   const wrongSound = useRef<HTMLAudioElement | null>(null);
 
+  // Lade Sounds
   useEffect(() => {
     correctSound.current = new Audio("/sounds/correct.mp3");
     wrongSound.current = new Audio("/sounds/wrong.mp3");
   }, []);
 
+  // Lade Fragen (entweder aus location oder zufällig)
   useEffect(() => {
-    const repeated: Question[] = [];
-    while (repeated.length < questionCount) {
-      const shuffled = [...exampleQuestions].sort(() => Math.random() - 0.5);
-      repeated.push(...shuffled);
+    if (incomingQuestions?.length) {
+      setQuestions(incomingQuestions);
+    } else {
+      const repeated: Question[] = [];
+      while (repeated.length < questionCount) {
+        const shuffled = [...exampleQuestions].sort(() => Math.random() - 0.5);
+        repeated.push(...shuffled);
+      }
+      setQuestions(repeated.slice(0, questionCount));
     }
-    setQuestions(repeated.slice(0, questionCount));
-  }, [questionCount]);
+  }, [questionCount, incomingQuestions]);
 
+  // Timer für aktuelle Frage
   useEffect(() => {
     if (currentIndex >= questions.length || showFeedback !== null) return;
 
@@ -85,41 +92,56 @@ const GapFillGame = () => {
     return () => clearInterval(interval);
   }, [currentIndex, timeLimit, questions.length, showFeedback]);
 
-  const checkOnTimeout = () => {
-    const correct = questions[currentIndex].answer.trim().toLowerCase();
-    const user = input.trim().toLowerCase();
-    const isCorrect = user === correct;
+  // Lade Postpone-Status
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(
+      (q: Question) => q.sentence === questions[currentIndex]?.sentence
+    );
+    setIsPostponed(alreadySaved);
+  }, [currentIndex, questions]);
 
-    if (isCorrect) {
-      setScore((prev) => prev + 1);
-      setShowFeedback("correct");
-      setTimeout(() => {
-        setShowFeedback(null);
-        handleNext();
-      }, 1500);
+  const togglePostpone = () => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(
+      (q: Question) => q.sentence === questions[currentIndex].sentence
+    );
+
+    let updated;
+
+    if (alreadySaved) {
+      updated = stored.filter(
+        (q: Question) => q.sentence !== questions[currentIndex].sentence
+      );
     } else {
-      setShowFeedback("wrong");
-      setTimeout(() => {
-        setShowFeedback(null);
-        handleNext();
-      }, 3000);
+      updated = [...stored, questions[currentIndex]];
     }
+
+    localStorage.setItem(postponedKey, JSON.stringify(updated));
+    setIsPostponed(!alreadySaved);
+  };
+
+  const checkOnTimeout = () => {
+    checkAnswer(input);
   };
 
   const handleCheck = () => {
     if (!input.trim()) return;
+    checkAnswer(input);
+  };
 
+  const checkAnswer = (userInput: string) => {
     const correct = questions[currentIndex].answer.trim().toLowerCase();
-    const user = input.trim().toLowerCase();
+    const user = userInput.trim().toLowerCase();
     const isCorrect = user === correct;
 
     if (isCorrect) {
+      correctSound.current?.play();
       setScore((prev) => prev + 1);
       setShowFeedback("correct");
-      correctSound.current?.play();
     } else {
-      setShowFeedback("wrong");
       wrongSound.current?.play();
+      setShowFeedback("wrong");
     }
 
     setTimeout(() => {
@@ -154,63 +176,53 @@ const GapFillGame = () => {
 
   return (
     <div className="gapfill-wrapper">
-      {/* Abbrechen-Button */}
-      <div className="cancel-button">
-        {!showCancelConfirm ? (
-          <button
-            className="btn btn-dark"
-            onClick={() => setShowCancelConfirm(true)}
-          >
-            Abbrechen
-          </button>
-        ) : (
-          <div className="cancel-confirm-container">
-            <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+      <div className="top-button-row">
+        <div className="cancel-button">
+          {!showCancelConfirm ? (
+            <button
+              className="btn btn-dark"
+              onClick={() => setShowCancelConfirm(true)}
+            >
+              Abbrechen
+            </button>
+          ) : (
+            <div className="cancel-confirm-container">
+              <div className="cancel-confirm-text">Möchtest du wirklich abbrechen?</div>
+              <div className="cancel-confirm-buttons">
+                <button
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => setShowCancelConfirm(false)}
+                >
+                  Nein
+                </button>
+                <button
+                  className="btn btn-danger btn-sm"
+                  onClick={() => navigate(-2)}
+                >
+                  Ja, zurück
+                </button>
+              </div>
             </div>
-            <div className="cancel-confirm-buttons">
-              <button
-                className="btn btn-secondary btn-sm"
-                onClick={() => setShowCancelConfirm(false)}
-              >
-                Nein
-              </button>
-              <button
-                className="btn btn-danger btn-sm"
-                onClick={() => navigate(-2)}
-              >
-                Ja, zurück
-              </button>
-            </div>
+          )}
+        </div>
+
+        {!showCancelConfirm && (
+          <div className="postpone-button">
+            <button
+              className={`btn btn-dark ${isPostponed ? "active" : ""}`}
+              onClick={togglePostpone}
+            >
+              {isPostponed ? "Zurückstellung aufheben" : "Frage zurückstellen"}
+            </button>
           </div>
         )}
       </div>
 
-      {/* Modul */}
-      <div
-        className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-        style={{
-          backgroundColor: "#228b57",
-          maxWidth: "600px",
-          width: "100%",
-          marginTop: "-8px",
-        }}
-      >
-        {module}
-      </div>
+      <div className="gapfill-header">{module}</div>
+      <div className="gapfill-subheader">{chapter}</div>
 
-      {/* Kapitel */}
-      <div
-        className="mb-4 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
-      >
-        {chapter}
-      </div>
-
-      <div className="quiz-status">
-        <div>
-          Frage {currentIndex + 1} / {questions.length}
-        </div>
+      <div className="gapfill-status">
+        <div>Frage {currentIndex + 1} / {questions.length}</div>
         <div>⏳ {timer}s</div>
       </div>
 
@@ -229,9 +241,7 @@ const GapFillGame = () => {
         placeholder="Begriff eingeben..."
         disabled={showFeedback !== null}
       />
-      {isCorrect && (
-        <div className="text-success fw-bold mb-2">✅ Richtig!</div>
-      )}
+      {isCorrect && <div className="text-success fw-bold mb-2">✅ Richtig!</div>}
       {isWrong && (
         <div className="text-danger fw-bold mb-2">
           ❌ Falsch! Richtige Antwort: <u>{current.answer}</u>

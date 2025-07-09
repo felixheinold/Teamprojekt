@@ -9,7 +9,7 @@ const QuizStart = () => {
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
-  const { module, chapter, subject, questionCount, timeLimit } =
+  const { module, chapter, subject, questionCount, timeLimit, questions } =
     location.state || {};
 
   return (
@@ -78,7 +78,14 @@ const QuizStart = () => {
       >
         <Link
           to="/quizgame"
-          state={{ module, chapter, subject, questionCount, timeLimit }}
+          state={{
+            module,
+            chapter,
+            subject,
+            questionCount,
+            timeLimit,
+            ...(questions ? { questions } : {}),
+          }}
           className="quizstart-button"
         >
           Direkt zum Quiz starten

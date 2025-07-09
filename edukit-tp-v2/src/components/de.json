@@ -68,7 +68,14 @@
       "pairs": "Paare:",
       "timePerQuestion": "Zeitlimit pro Frage:",
       "seconds": "Sekunden"
-    }
+    },
+     "quizChoice": {
+    "title": "Was möchtest du spielen?",
+    "saved": "zurückgestellte Fragen verfügbar",
+    "savedPlay": "Zurückgestellte Fragen spielen",
+    "random": "Zufällige Fragen spielen"
+  }
+
   },
   "leaderboard": {
     "title": "Bestenliste",

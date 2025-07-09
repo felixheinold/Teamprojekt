@@ -11,6 +11,9 @@ const Minigames = () => {
   const { t } = useTranslation();
 
   const [showModal, setShowModal] = useState(false);
+  const [showChoiceModal, setShowChoiceModal] = useState(false);
+  const [postponedCount, setPostponedCount] = useState(0);
+
   const [selectedGame, setSelectedGame] = useState<null | {
     name: string;
     route: string;
@@ -49,7 +52,37 @@ const Minigames = () => {
     },
   ];
 
+  const shuffleArray = (arr: any[]) => {
+    const array = [...arr];
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
+
   const handleGameClick = (game: { name: string; route: string }) => {
+    let key = "";
+
+    if (game.route === "/quiz") {
+      key = `postponed_${selectedModule}_${selectedChapter}`;
+    } else if (game.route === "/gapfill") {
+      key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
+    }
+
+    if (key) {
+      const stored = JSON.parse(localStorage.getItem(key) || "[]");
+      const count = stored.length;
+
+      if (count > 0) {
+        setSelectedGame(game);
+        setPostponedCount(count);
+        setShowChoiceModal(true);
+        return;
+      }
+    }
+
+    // keine zurückgestellten → direkt starten
     setSelectedGame(game);
     setShowModal(true);
   };
@@ -65,6 +98,46 @@ const Minigames = () => {
         chapter: fullInfo,
         questionCount,
         timeLimit,
+      },
+    });
+  };
+
+  const handlePostponedStart = () => {
+    const key = `postponed_${selectedModule}_${selectedChapter}`;
+    const questions = JSON.parse(localStorage.getItem(key) || "[]");
+
+    if (!questions.length) return;
+
+    const shuffled = shuffleArray(questions);
+
+    navigate("/quiz", {
+      state: {
+        module: selectedModule,
+        chapter: selectedChapter,
+        questions: shuffled,
+        questionCount: shuffled.length,
+        timeLimit: 20,
+        fromPostponed: true,
+      },
+    });
+  };
+
+  const handleGapFillPostponedStart = () => {
+    const key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
+    const questions = JSON.parse(localStorage.getItem(key) || "[]");
+
+    if (!questions.length) return;
+
+    const shuffled = shuffleArray(questions);
+
+    navigate("/gapfill", {
+      state: {
+        module: selectedModule,
+        chapter: selectedChapter,
+        questions: shuffled,
+        questionCount: shuffled.length,
+        timeLimit: 30,
+        fromPostponed: true,
       },
     });
   };
@@ -101,6 +174,51 @@ const Minigames = () => {
           </motion.div>
         ))}
       </div>
+
+      {showChoiceModal && selectedGame && (
+        <div className="modal-overlay">
+          <div className="modal-content choice-modal">
+            <div className="modal-gradient"></div>
+            <div className="modal-body">
+              <div className="choice-modal-title">
+                {t("minigames.quizChoice.title")}
+              </div>
+              <div className="choice-modal-text">
+                {postponedCount} {t("minigames.quizChoice.saved")}
+              </div>
+
+              <div className="choice-buttons">
+                <button
+                  className="btn btn-success"
+                  onClick={() =>
+                    selectedGame.route === "/gapfill"
+                      ? handleGapFillPostponedStart()
+                      : handlePostponedStart()
+                  }
+                >
+                  {t("minigames.quizChoice.savedPlay")}
+                </button>
+                <button
+                  className="btn btn-success"
+                  onClick={() => {
+                    setShowChoiceModal(false);
+                    setShowModal(true);
+                  }}
+                >
+                  {t("minigames.quizChoice.random")}
+                </button>
+              </div>
+
+              <button
+                className="choice-back-button"
+                onClick={() => setShowChoiceModal(false)}
+              >
+                {t("common.back")}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {showModal && selectedGame && (
         <div className="modal-overlay">
