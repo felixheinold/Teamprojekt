@@ -1,9 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
 import "./QuizGame.css";
-=======
 
 const sampleQuestions = [
   {
@@ -17,48 +15,39 @@ const sampleQuestions = [
     answer: "4",
   },
 ];
->>>>>>> gui_felix
 
 const QuizGame = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
-  const { module, chapter, questionCount = 2, timeLimit = 20 } = location.state || {};
+  const {
+    module,
+    chapter,
+    questionCount = 2,
+    timeLimit = 20,
+    questions: incomingQuestions,
+  } = location.state || {};
 
-  const sampleQuestions = [
-    {
-      question: "Was ist die Hauptstadt von Frankreich?",
-      options: ["Paris", "Berlin", "Madrid", "Rom"],
-      answer: "Paris",
-    },
-    {
-      question: "Was ist 2 + 2?",
-      options: ["3", "4", "5", "6"],
-      answer: "4",
-    },
-  ];
-
+  const questions = incomingQuestions?.length ? incomingQuestions : sampleQuestions;
   const [currentIndex, setCurrentIndex] = useState(0);
-<<<<<<< HEAD
-  const [timeLeft, setTimeLeft] = useState(timeLimit || 20);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-=======
   const [timeLeft, setTimeLeft] = useState(timeLimit);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
->>>>>>> gui_felix
   const [showFeedback, setShowFeedback] = useState(false);
   const [score, setScore] = useState(0);
+  const [isPostponed, setIsPostponed] = useState(false);
 
   const correctSound = useRef<HTMLAudioElement | null>(null);
   const wrongSound = useRef<HTMLAudioElement | null>(null);
+
+  const currentQuestion = questions[currentIndex];
+  const isLastQuestion = currentIndex + 1 === questionCount;
+  const postponedKey = `postponed_${module}_${chapter}`;
 
   useEffect(() => {
     correctSound.current = new Audio("/sounds/correct.mp3");
     wrongSound.current = new Audio("/sounds/wrong.mp3");
   }, []);
-
-  const currentQuestion = sampleQuestions[currentIndex % sampleQuestions.length];
 
   useEffect(() => {
     if (showFeedback) return;
@@ -77,13 +66,19 @@ const QuizGame = () => {
     return () => clearInterval(timer);
   }, [currentIndex, timeLimit, showFeedback]);
 
-  const handleAnswer = (selected) => {
+  useEffect(() => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(q => q.question === currentQuestion.question);
+    setIsPostponed(alreadySaved);
+  }, [currentIndex, currentQuestion, postponedKey]);
+
+  const handleAnswer = (selected: string | null) => {
     if (showFeedback) return;
     setSelectedAnswer(selected);
     setShowFeedback(true);
 
-    const isCorrect = selected && selected === currentQuestion.answer;
-    if (isCorrect) {
+    const correct = selected && selected === currentQuestion.answer;
+    if (correct) {
       setScore((prev) => prev + 1);
       correctSound.current?.play();
     } else {
@@ -92,8 +87,6 @@ const QuizGame = () => {
   };
 
   const handleNext = () => {
-    const isLastQuestion = currentIndex + 1 === questionCount;
-
     if (isLastQuestion) {
       navigate("/quizresult", {
         state: { module, chapter, questionCount, timeLimit, score },
@@ -106,97 +99,77 @@ const QuizGame = () => {
     }
   };
 
-  const isCorrect = (opt) => opt === currentQuestion.answer;
-  const isWrong = (opt) => opt === selectedAnswer && !isCorrect(opt);
-  const isLastQuestion = currentIndex + 1 === questionCount;
+  const togglePostpone = () => {
+    const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
+    const alreadySaved = stored.some(q => q.question === currentQuestion.question);
+    const updated = alreadySaved
+      ? stored.filter(q => q.question !== currentQuestion.question)
+      : [...stored, currentQuestion];
+    localStorage.setItem(postponedKey, JSON.stringify(updated));
+    setIsPostponed(!alreadySaved);
+  };
+
+  const isCorrect = (opt: string) => opt === currentQuestion.answer;
+  const isWrong = (opt: string) => opt === selectedAnswer && !isCorrect(opt);
 
   return (
-<<<<<<< HEAD
     <div className="quizgame-wrapper">
-      <div className="cancel-button">
-=======
-    <div
-      className="container d-flex flex-column align-items-center pt-2"
-      style={{ minHeight: "100vh" }}
-    >
-      {/* Abbrechen */}
-      <div
-        className="position-absolute"
-        style={{ top: "80px", left: "30px", zIndex: 10 }}
-      >
->>>>>>> gui_felix
-        {!showCancelConfirm ? (
-          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
-            Abbrechen
-          </button>
-        ) : (
-          <div className="cancel-confirm-container">
-            <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+      {/* Abbrechen & Zurückstellen */}
+      <div className="top-button-row">
+        <div className="cancel-button">
+          {!showCancelConfirm ? (
+            <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+              Abbrechen
+            </button>
+          ) : (
+            <div className="cancel-confirm-container">
+              <div className="cancel-confirm-text">Möchtest du wirklich abbrechen?</div>
+              <div className="cancel-confirm-buttons">
+                <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+                  Nein
+                </button>
+                <button className="btn btn-danger btn-sm" onClick={() => navigate(-2)}>
+                  Ja, zurück
+                </button>
+              </div>
             </div>
-<<<<<<< HEAD
-            <div className="cancel-confirm-buttons">
-              <button
-                className="btn btn-secondary btn-sm"
-                onClick={() => setShowCancelConfirm(false)}
-              >
-=======
-            <div className="d-flex gap-2">
-              <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
->>>>>>> gui_felix
-                Nein
-              </button>
-              <button className="btn btn-danger btn-sm" onClick={() => navigate(-2)}>
-                Ja, zurück
-              </button>
-            </div>
+          )}
+        </div>
+
+        {!showCancelConfirm && (
+          <div className="postpone-button">
+            <button
+              className={`btn btn-dark ${isPostponed ? "active" : ""}`}
+              onClick={togglePostpone}
+            >
+              {isPostponed ? "Zurückstellung aufheben" : "Frage zurückstellen"}
+            </button>
           </div>
         )}
       </div>
 
-<<<<<<< HEAD
+      {/* Header */}
       <div className="quiz-header bg-module">{module}</div>
       <div className="quiz-subheader bg-chapter">{chapter}</div>
 
+      {/* Status */}
       <div className="quiz-status">
-        <span>
-=======
-      {/* Header */}
-      <div className="mb-2 px-4 py-2 rounded-pill text-white fw-bold text-center"
-        style={{
-          backgroundColor: "#228b57",
-          maxWidth: "600px",
-          width: "100%",
-          marginTop: "-8px",
-        }}
-      >
-        {module}
-      </div>
-
-      <div className="mb-5 px-4 py-2 rounded text-dark fw-semibold text-center"
-        style={{ backgroundColor: "#78ba84", maxWidth: "600px", width: "100%" }}
-      >
-        {chapter}
-      </div>
-
-      {/* Fortschritt & Timer */}
-      <div className="d-flex justify-content-between mb-3" style={{ maxWidth: "600px", width: "100%" }}>
-        <div className="fw-semibold">
->>>>>>> gui_felix
-          Frage {currentIndex + 1} / {questionCount}
-        </span>
+        <span>Frage {currentIndex + 1} / {questionCount}</span>
         <span>⏳ {timeLeft}s</span>
       </div>
 
+      {/* Frage */}
       <div className="quiz-question">{currentQuestion.question}</div>
 
+      {/* Antwortoptionen */}
       <div className="quiz-options">
         {currentQuestion.options.map((opt, i) => {
           let bg = "#e0e0e0";
           if (showFeedback) {
-            if (isCorrect(opt)) bg = "#198754";
-            else if (isWrong(opt)) bg = "#dc3545";
+            if (isCorrect(opt)) bg = "#198754"; // grün
+            else if (isWrong(opt)) bg = "#dc3545"; // rot
           }
+
           return (
             <motion.button
               key={i}
@@ -213,6 +186,7 @@ const QuizGame = () => {
         })}
       </div>
 
+      {/* Weiter-Button */}
       <motion.button
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}

@@ -53,6 +53,32 @@
   padding: 0.4rem 0.8rem;
 }
 
+.top-button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.postpone-button {
+  align-self: flex-start;
+}
+
+.postpone-button .btn {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.postpone-button .btn.active {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
 .quiz-header {
   background-color: #228b57;
   color: white;
@@ -137,7 +163,7 @@
 
 /* Mobil */
 @media (max-width: 576px) {
-  .cancel-button {
+  .cancel-button, .postpone-button {
     position: static;
     align-self: flex-start;
     margin-top: -2.2rem;
@@ -169,6 +195,11 @@ padding: 0.8rem;
 
 /* Tablet */
 @media (min-width: 577px) and (max-width: 991px) {
+  .cancel-button, .postpone-button {
+    position: static;
+    align-self: flex-start;
+    margin-top: -2.2rem;
+  }
   .quiz-header, .quiz-subheader, .quiz-status {
     font-size: 1rem;
   }
@@ -195,6 +226,11 @@ padding: 0.8rem;
 
 /* Desktop */
 @media (min-width: 992px) and (max-width: 1399px) {
+  .cancel-button, .postpone-button {
+    position: static;
+    align-self: flex-start;
+    margin-top: -2.2rem;
+  }
   .quiz-header, .quiz-subheader, .quiz-status {
     font-size: 1.1rem;
   }
@@ -221,6 +257,11 @@ padding: 0.8rem;
 
 /* Großer Desktop */
 @media (min-width: 1400px) {
+  .cancel-button, .postpone-button {
+    position: static;
+    align-self: flex-start;
+    margin-top: -2.2rem;
+  }
   .quiz-header, .quiz-subheader, .quiz-status {
     font-size: 1.2rem;
     padding: 0.6rem 1.2rem;
