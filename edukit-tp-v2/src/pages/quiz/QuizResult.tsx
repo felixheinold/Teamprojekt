@@ -14,6 +14,8 @@ const QuizResult = () => {
     questionCount,
     timeLimit,
     score = 0,
+    questions = [],
+    correctIds = [],
   } = location.state || {};
 
   useEffect(() => {
@@ -40,14 +42,42 @@ const QuizResult = () => {
     allStats[gameKey] = updated;
     localStorage.setItem(statsKey, JSON.stringify(allStats));
     localStorage.setItem("lastPlayed", gameKey);
-  }, [score, questionCount]);
+
+    // 🧠 Fortschritt speichern
+    const progressKey = "progress";
+    const storedProgress = localStorage.getItem(progressKey);
+    const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
+
+    if (!allProgress.quizCorrect) allProgress.quizCorrect = {};
+    if (!allProgress.quizTotal) allProgress.quizTotal = {};
+    if (!allProgress.quizCorrect[module]) allProgress.quizCorrect[module] = {};
+    if (!allProgress.quizTotal[module]) allProgress.quizTotal[module] = {};
+    if (!allProgress.quizCorrect[module][chapter])
+      allProgress.quizCorrect[module][chapter] = [];
+    if (!allProgress.quizTotal[module][chapter])
+      allProgress.quizTotal[module][chapter] = [];
+
+    const prevCorrect = allProgress.quizCorrect[module][chapter];
+    const prevTotal = allProgress.quizTotal[module][chapter];
+
+    const newCorrect = Array.from(new Set([...prevCorrect, ...correctIds]));
+
+    const totalIds = questions.filter((q) => q.id).map((q) => q.id);
+
+    const newTotal = Array.from(new Set([...prevTotal, ...totalIds]));
+
+    allProgress.quizCorrect[module][chapter] = newCorrect;
+    allProgress.quizTotal[module][chapter] = newTotal;
+
+    localStorage.setItem(progressKey, JSON.stringify(allProgress));
+  }, [score, questionCount, module, chapter, correctIds, questions]);
 
   return (
     <div className="quizresult-wrapper">
       <div className="quizresult-image">
         <img src="/images/DinoKIT2.png" alt="Dino" />
       </div>
-      {/* Textbereich */}
+
       <div className="quizresult-text">
         <h1 className="quizresult-title">🎉 Super, du hast es geschafft!</h1>
         <p className="quizresult-score">
