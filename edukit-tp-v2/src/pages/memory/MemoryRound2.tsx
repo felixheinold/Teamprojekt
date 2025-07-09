@@ -2,15 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
+const shuffleArray = <T,>(array: T[]): T[] =>
+  [...array].sort(() => Math.random() - 0.5);
+
 type Card = {
   id: number;
   type: "term" | "definition";
   content: string;
-  pairId: number;
+  pairId: string;
 };
-
-const shuffleArray = <T,>(array: T[]): T[] =>
-  [...array].sort(() => Math.random() - 0.5);
 
 const MemoryRound2 = () => {
   const navigate = useNavigate();
@@ -42,13 +42,13 @@ const MemoryRound2 = () => {
         id: index * 2,
         type: "term",
         content: p.term,
-        pairId: index,
+        pairId: p.id,
       });
       allCards.push({
         id: index * 2 + 1,
         type: "definition",
         content: p.definition,
-        pairId: index,
+        pairId: p.id,
       });
     });
     setCards(shuffleArray(allCards));
@@ -91,6 +91,23 @@ const MemoryRound2 = () => {
       if (isMatch) {
         correctSound.current?.play();
         setFeedback("correct");
+
+        // Speichern der korrekt beantworteten ID
+        const statsKey = "userStats";
+        const gameKey = "memory";
+        const stored = localStorage.getItem(statsKey);
+        const allStats = stored ? JSON.parse(stored) : {};
+
+        if (!allStats[gameKey]) allStats[gameKey] = {};
+        if (!allStats[gameKey][module]) allStats[gameKey][module] = {};
+        if (!allStats[gameKey][module][chapter])
+          allStats[gameKey][module][chapter] = { correct: [] };
+
+        if (!allStats[gameKey][module][chapter].correct.includes(card.pairId)) {
+          allStats[gameKey][module][chapter].correct.push(card.pairId);
+          localStorage.setItem(statsKey, JSON.stringify(allStats));
+        }
+
         setTimeout(() => {
           setMatched((prev) => [...prev, ...newFlipped]);
           setFeedback(null);

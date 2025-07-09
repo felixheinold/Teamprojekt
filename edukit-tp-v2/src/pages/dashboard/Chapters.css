@@ -6,6 +6,7 @@
 
 /* Kapitel-Buttons */
 .chapter-button {
+  position: relative;
   background-color: #78ba84;
   border: none;
   color: #000;
@@ -15,7 +16,22 @@
   padding: 0.7rem 1.2rem;
   border-radius: 0.75rem;
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.chapter-button .chapter-title {
+  flex: 1;
+}
+
+.chapter-button .chapter-percentage {
+  position: absolute;
+  right: 1.5rem;
+  font-weight: 600;
+}
+
 
 .chapter-button:hover {
   background-color: #78ba84;

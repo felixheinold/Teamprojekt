@@ -22,6 +22,7 @@ const MemoryRound2Result = () => {
   const score = Math.max(basePoints, maxPoints - extraTurns * 2);
 
   useEffect(() => {
+    // Bestehende Statistik-Speicherung
     const statsKey = "userStats";
     const gameKey = "memory";
 
@@ -45,7 +46,25 @@ const MemoryRound2Result = () => {
     allStats[gameKey] = updated;
     localStorage.setItem(statsKey, JSON.stringify(allStats));
     localStorage.setItem("lastPlayed", gameKey);
-  }, [score, maxPoints]);
+
+    // 🧠 Neue Fortschritts-Speicherung
+    const progressKey = "progress";
+    const storedProgress = localStorage.getItem(progressKey);
+    const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
+
+    if (!allProgress.memory) allProgress.memory = {};
+    if (!allProgress.memory[module]) allProgress.memory[module] = {};
+    if (!allProgress.memory[module][chapter])
+      allProgress.memory[module][chapter] = [];
+
+    const prevIds: string[] = allProgress.memory[module][chapter];
+    const newIds: string[] = pairs.map((p: any) => p.id); // IDs aus Runde 2
+
+    const combined = Array.from(new Set([...prevIds, ...newIds]));
+    allProgress.memory[module][chapter] = combined;
+
+    localStorage.setItem(progressKey, JSON.stringify(allProgress));
+  }, [score, maxPoints, pairs, module, chapter]);
 
   return (
     <div className="memoryr2result-wrapper">

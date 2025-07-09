@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./Chapters.css";
 
@@ -15,11 +15,69 @@ const Chapters = () => {
   const { moduleName } = useParams();
   const navigate = useNavigate();
   const { setSelectedChapter, setSelectedModule } = useAppFlow();
+  const [chapterProgress, setChapterProgress] = useState<
+    Record<string, number>
+  >({});
 
   useEffect(() => {
+    if (!moduleName) return;
+
     setSelectedChapter("");
-    if (moduleName) setSelectedModule(moduleName);
+    setSelectedModule(moduleName);
+
+    const progress = JSON.parse(localStorage.getItem("progress") || "{}");
+    const progressMap: Record<string, number[]> = {};
+    const categories = ["quiz", "gapfill", "memory"];
+
+    categories.forEach((category) => {
+      if (category === "memory") {
+        const memoryData = progress.memory?.[moduleName] || {};
+        Object.entries(memoryData).forEach(([chapterKey, ids]) => {
+          const correct = Array.isArray(ids) ? ids.length : 0;
+          const total =
+            progress.memoryTotal?.[moduleName]?.[chapterKey]?.length || 0;
+          const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+          if (!progressMap[chapterKey]) progressMap[chapterKey] = [];
+          progressMap[chapterKey].push(percent);
+        });
+      } else {
+        const correctData =
+          progress?.[`${category}Correct`]?.[moduleName] || {};
+        const totalData = progress?.[`${category}Total`]?.[moduleName] || {};
+
+        const allChapters = new Set([
+          ...Object.keys(correctData),
+          ...Object.keys(totalData),
+        ]);
+
+        allChapters.forEach((chapterKey) => {
+          const correct = Array.isArray(correctData[chapterKey])
+            ? correctData[chapterKey].length
+            : 0;
+          const total = Array.isArray(totalData[chapterKey])
+            ? totalData[chapterKey].length
+            : 0;
+          const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+          if (!progressMap[chapterKey]) progressMap[chapterKey] = [];
+          progressMap[chapterKey].push(percent);
+        });
+      }
+    });
+
+    const averageProgress: Record<string, number> = {};
+    Object.entries(progressMap).forEach(([chapter, percents]) => {
+      const filled = [...percents];
+      while (filled.length < 3) filled.push(0);
+      const sum = filled.reduce((a, b) => a + b, 0);
+      averageProgress[`${moduleName}_${chapter}`] = Math.round(sum / 3);
+    });
+
+    setChapterProgress(averageProgress);
   }, [moduleName, setSelectedChapter, setSelectedModule]);
+
+  if (!moduleName) return null;
 
   const moduleIcons: Record<string, string> = {
     production: "📦",
@@ -67,7 +125,7 @@ const Chapters = () => {
     ],
   };
 
-  const entries = moduleData[moduleName || ""] || [];
+  const entries = moduleData[moduleName] || [];
 
   return (
     <div className="chapters-wrapper container py-4 d-flex flex-column align-items-center">
@@ -75,7 +133,7 @@ const Chapters = () => {
         📖 {t("chapters.selectSubchapter")}
       </h1>
       <div className="module-label btn btn-success btn-lg rounded-pill text-center d-flex justify-content-center align-items-center gap-2">
-        <span>{moduleIcons[moduleName || ""]}</span>
+        <span>{moduleIcons[moduleName]}</span>
         <span>{t(`modules.${moduleName}`)}</span>
       </div>
 
@@ -88,28 +146,34 @@ const Chapters = () => {
               </h5>
             )}
 
-            {entry.chapters.map((ch, j) => (
-              <motion.div
-                key={j}
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
-              >
-                <button
-                  onClick={() => {
-                    setSelectedChapter(`${entry.subject} ${ch.title}`);
-                    navigate(
-                      `/minigames/${moduleName}/${encodeURIComponent(
-                        `${entry.subject} ${ch.title}`
-                      )}`
-                    );
-                  }}
-                  className="btn btn-lg shadow w-100 chapter-button"
+            {entry.chapters.map((ch, j) => {
+              const fullKey = `${entry.subject} ${ch.title}`;
+              const percent = chapterProgress[`${moduleName}_${fullKey}`] || 0;
+
+              return (
+                <motion.div
+                  key={j}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
                 >
-                  {ch.title}
-                </button>
-              </motion.div>
-            ))}
+                  <button
+                    onClick={() => {
+                      setSelectedChapter(fullKey);
+                      navigate(
+                        `/minigames/${moduleName}/${encodeURIComponent(
+                          fullKey
+                        )}`
+                      );
+                    }}
+                    className="btn btn-lg shadow w-100 chapter-button"
+                  >
+                    <span className="chapter-title">{ch.title}</span>
+                    <span className="chapter-percentage">{percent}%</span>
+                  </button>
+                </motion.div>
+              );
+            })}
 
             <motion.div
               whileHover={{ scale: 1.03 }}
