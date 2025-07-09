@@ -93,8 +93,8 @@ async def create_user(create_user: CreateUser):
         create_user.id,
         create_user.email,
         create_user.name,
-        profile_creation_date=str(datetime.utcnow()),
-        last_login_date=str(datetime.utcnow()),
+        profile_creation_date=str(datetime.utcnow().isoformat()),
+        last_login_date=str(datetime.utcnow().isoformat()),
         login_count=1,
         total_login_time="1",
         preferred_language="de",
@@ -115,27 +115,38 @@ async def create_user(create_user: CreateUser):
 
 
 #User-Informationen (allgemein) updaten
-@router.post("/{user_id}/update-general-info")
-def update_user(user: User, user_updating: GeneralUserUpdating):
-    user_ref = db.collection("users").document(user.user_id)
-    user_ref.set(user_updating.user_updates, merge=True)  # 🔁 nur die angegebenen Felder werden aktualisiert
-    return {"status": f"Update für {user.user_id}", "updated": user_updating.user_updates}
+@router.put("/{user_id}/update-general-info")
+def update_user(user_id: str, user_updating: GeneralUserUpdating):
+    user_ref = db.collection("users").document(user_id)
+    user_ref.set(user_updating.user_updates, merge=True)  
+    return {"status": f"Update für {user_id}", "updated": user_updating.user_updates}
 
 
 #User-Spielinformationen updaten
-@router.post ("/{user_id}/update-general-game-info")
+@router.put ("/{user_id}/update-general-game-info")
 def update_gen_game_info(user_id: str, updating: GeneralGameUserUpdating):
     user_ref = db.collection("users").document(user_id)
-
     update_data = {
         f"user_game_information.{key}": value
-        for key, value in updating.model_dump(exclude_none=True).items()
+        for key, value in updating.user_updates.items()
     }
     user_ref.update(update_data, merge = True)
-    return {"status": "user game info updated"}
+    return {"status": f"Update für {user_id}", "updated": updating.user_updates}
+
+
 
 #User-Spielinformationen eines spezifischen Spieltyps updaten
-#@router.post ("/{user_id}/update-general-game-info")
+@router.put ("/{user_id}/update-specific-game-info/{game_type}/")
+def update_spec_game_info(user_id: str, game_type: str, updating: SpecificGameUserUpdating):
+    user_ref = db.collection("users").document(user_id)
+    update_data = {
+        f"user_game_information.{game_type}.{key}": value
+        for key, value in updating.user_updates.items()
+    }
+    user_ref.update(update_data, merge = True)
+    return {"status": f"Update für {user_id}", "updated": updating.user_updates}
+
+
 
 #User löschen
 @router.delete("/{user_id}")
