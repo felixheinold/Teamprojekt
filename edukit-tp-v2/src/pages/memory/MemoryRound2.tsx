@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import "./MemoryRound2.css";
 
 const shuffleArray = <T,>(array: T[]): T[] =>
   [...array].sort(() => Math.random() - 0.5);
