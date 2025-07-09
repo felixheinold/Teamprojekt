@@ -16,6 +16,7 @@ const QuizResult = () => {
     score = 0,
     questions = [],
     correctIds = [],
+    allIds = [],
   } = location.state || {};
 
   useEffect(() => {
@@ -61,16 +62,13 @@ const QuizResult = () => {
     const prevTotal = allProgress.quizTotal[module][chapter];
 
     const newCorrect = Array.from(new Set([...prevCorrect, ...correctIds]));
-
-    const totalIds = questions.filter((q) => q.id).map((q) => q.id);
-
-    const newTotal = Array.from(new Set([...prevTotal, ...totalIds]));
+    const newTotal = Array.from(new Set([...prevTotal, ...allIds])); // ✅ ersetzt questions.map()
 
     allProgress.quizCorrect[module][chapter] = newCorrect;
     allProgress.quizTotal[module][chapter] = newTotal;
 
     localStorage.setItem(progressKey, JSON.stringify(allProgress));
-  }, [score, questionCount, module, chapter, correctIds, questions]);
+  }, [score, questionCount, module, chapter, correctIds, allIds]);
 
   return (
     <div className="quizresult-wrapper">

@@ -1,5 +1,3 @@
-// src/pages/dashboard/Modules.tsx
-
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
@@ -27,7 +25,6 @@ const Modules = () => {
   ];
 
   return (
-<<<<<<< HEAD
     <div
       className="modules-wrapper container-fluid py-4 d-flex flex-column align-items-center"
       style={{ minHeight: "100vh" }}
@@ -35,10 +32,6 @@ const Modules = () => {
       <h1 className="text-center fw-bold display-5 mb-4">
         📚 {t("modules.select")}
       </h1>
-=======
-    <div className="modules-wrapper container py-4 d-flex flex-column align-items-center" style={{ minHeight: "100vh" }}>
-      <h1 className="text-center fw-bold display-5 mb-4">📚 {t("modules.select")}</h1>
->>>>>>> gui_felix
 
       <div className="d-flex flex-column align-items-center gap-3 w-100">
         {modules.map(({ key, icon }) => (

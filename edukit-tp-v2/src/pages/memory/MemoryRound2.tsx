@@ -72,10 +72,11 @@ const MemoryRound2 = () => {
       });
     }, 1000);
     return () => clearInterval(t);
-  }, [disabled, flipped, cards.length, matched.length, timeLimit]);
+  }, [disabled, flipped, timeLimit, cards.length, matched.length]);
 
   const handleCardClick = (card: Card) => {
-    if (disabled || flipped.includes(card.id) || matched.includes(card.id)) return;
+    if (disabled || flipped.includes(card.id) || matched.includes(card.id))
+      return;
 
     if (flipped.length === 0) {
       setFlipped([card.id]);
@@ -87,10 +88,7 @@ const MemoryRound2 = () => {
       setFlipped(newFlipped);
       setDisabled(true);
 
-      const isMatch = firstCard.pairId === card.pairId && firstCard.type !== card.type;
-
-      if (isMatch) {
-        correctSound.current?.play();
+      if (firstCard.pairId === card.pairId && firstCard.type !== card.type) {
         setFeedback("correct");
 
         // Speichern der korrekt beantworteten ID
@@ -134,7 +132,7 @@ const MemoryRound2 = () => {
 
   const allMatched = matched.length === cards.length;
 
-return (
+  return (
     <div className="memoryr2-wrapper">
       {/* Abbrechen-Button */}
       <div className="cancel-button">
@@ -164,14 +162,14 @@ return (
           </div>
         )}
       </div>
- 
+
       {/* Modul & Kapitelanzeige */}
       <div className="memory-header">{module}</div>
       <div className="memory-subheader">{chapter}</div>
- 
+
       {/* Titel */}
       <h1 className="memoryr2-title">🧠 Memory Runde 2</h1>
- 
+
       {/* Statusleiste */}
       <div className="statusbar">
         <div>
@@ -180,7 +178,7 @@ return (
         <div>Züge: {turn - 1}</div>
         <div>⏳ {timer}s</div>
       </div>
- 
+
       {/* Spielfeld */}
       <div className="memory-grid">
         {cards.map((card) => {
@@ -194,7 +192,7 @@ return (
               : isFlipped && flipped.length === 2 && feedback === "wrong"
               ? "#dc3545"
               : baseColor;
- 
+
           return (
             <motion.div
               key={card.id}
@@ -215,7 +213,7 @@ return (
           );
         })}
       </div>
- 
+
       {/* Legende */}
       <div className="d-flex gap-3 mt-2">
         <div
@@ -231,7 +229,7 @@ return (
           = Definition
         </div>
       </div>
- 
+
       {/* Spiel beenden */}
       {allMatched && (
         <motion.button
@@ -263,6 +261,5 @@ return (
     </div>
   );
 };
- 
+
 export default MemoryRound2;
- 

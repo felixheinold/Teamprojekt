@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import "./QuizGame.css";
 
-
 const QuizGame = () => {
   type QuizQuestion = {
     id: string;
@@ -24,7 +23,6 @@ const QuizGame = () => {
     questions: incomingQuestions,
   } = location.state || {};
 
-  
   const sampleQuestions: QuizQuestion[] = [
     {
       id: "pb-k1-de-qz1",
@@ -101,10 +99,12 @@ const QuizGame = () => {
     },
   ];
 
-  //const questions = incomingQuestions?.length ? incomingQuestions : sampleQuestions;
-  
   const shuffle = <T,>(array: T[]): T[] =>
     [...array].sort(() => Math.random() - 0.5);
+
+  const allChapterQuestions: QuizQuestion[] = incomingQuestions?.length
+    ? (incomingQuestions as QuizQuestion[])
+    : sampleQuestions;
 
   const [questions] = useState<QuizQuestion[]>(() => {
     const baseQuestions: QuizQuestion[] = incomingQuestions?.length
@@ -151,7 +151,9 @@ const QuizGame = () => {
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
-    const alreadySaved = stored.some(q => q.question === currentQuestion.question);
+    const alreadySaved = stored.some(
+      (q) => q.question === currentQuestion.question
+    );
     setIsPostponed(alreadySaved);
   }, [currentIndex, currentQuestion, postponedKey]);
 
@@ -189,7 +191,19 @@ const QuizGame = () => {
   const handleNext = () => {
     if (isLastQuestion) {
       navigate("/quizresult", {
-        state: { module, chapter, questionCount, timeLimit, score },
+        state: {
+          module,
+          chapter,
+          questionCount,
+          timeLimit,
+          score,
+          questions,
+          correctIds: questions
+            .slice(0, currentIndex + 1)
+            .filter((q, i) => q.answer === questions[i].answer && i < score)
+            .map((q) => q.id),
+          allIds: allChapterQuestions.map((q) => q.id),
+        },
       });
     } else {
       setCurrentIndex((prev) => prev + 1);
@@ -201,9 +215,11 @@ const QuizGame = () => {
 
   const togglePostpone = () => {
     const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
-    const alreadySaved = stored.some(q => q.question === currentQuestion.question);
+    const alreadySaved = stored.some(
+      (q) => q.question === currentQuestion.question
+    );
     const updated = alreadySaved
-      ? stored.filter(q => q.question !== currentQuestion.question)
+      ? stored.filter((q) => q.question !== currentQuestion.question)
       : [...stored, currentQuestion];
     localStorage.setItem(postponedKey, JSON.stringify(updated));
     setIsPostponed(!alreadySaved);
@@ -218,17 +234,28 @@ const QuizGame = () => {
       <div className="top-button-row">
         <div className="cancel-button">
           {!showCancelConfirm ? (
-            <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+            <button
+              className="btn btn-dark"
+              onClick={() => setShowCancelConfirm(true)}
+            >
               Abbrechen
             </button>
           ) : (
             <div className="cancel-confirm-container">
-              <div className="cancel-confirm-text">Möchtest du wirklich abbrechen?</div>
+              <div className="cancel-confirm-text">
+                Möchtest du wirklich abbrechen?
+              </div>
               <div className="cancel-confirm-buttons">
-                <button className="btn btn-secondary btn-sm" onClick={() => setShowCancelConfirm(false)}>
+                <button
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => setShowCancelConfirm(false)}
+                >
                   Nein
                 </button>
-                <button className="btn btn-danger btn-sm" onClick={() => navigate(-2)}>
+                <button
+                  className="btn btn-danger btn-sm"
+                  onClick={() => navigate(-2)}
+                >
                   Ja, zurück
                 </button>
               </div>
@@ -254,7 +281,9 @@ const QuizGame = () => {
 
       {/* Status */}
       <div className="quiz-status">
-        <span>Frage {currentIndex + 1} / {questionCount}</span>
+        <span>
+          Frage {currentIndex + 1} / {questionCount}
+        </span>
         <span>⏳ {timeLeft}s</span>
       </div>
 

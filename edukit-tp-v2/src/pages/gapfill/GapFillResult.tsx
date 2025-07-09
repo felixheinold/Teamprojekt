@@ -14,6 +14,9 @@ const GapFillResult = () => {
     questionCount,
     timeLimit,
     score = 0,
+    correctIds = [],
+    questions = [],
+    allIds = [],
   } = location.state || {};
 
   useEffect(() => {
@@ -40,7 +43,34 @@ const GapFillResult = () => {
     allStats[gameKey] = updated;
     localStorage.setItem(statsKey, JSON.stringify(allStats));
     localStorage.setItem("lastPlayed", gameKey);
-  }, [score, questionCount]);
+
+    // 🧠 Fortschritt speichern
+    const progressKey = "progress";
+    const storedProgress = localStorage.getItem(progressKey);
+    const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
+
+    if (!allProgress.gapfillCorrect) allProgress.gapfillCorrect = {};
+    if (!allProgress.gapfillTotal) allProgress.gapfillTotal = {};
+    if (!allProgress.gapfillCorrect[module])
+      allProgress.gapfillCorrect[module] = {};
+    if (!allProgress.gapfillTotal[module])
+      allProgress.gapfillTotal[module] = {};
+    if (!allProgress.gapfillCorrect[module][chapter])
+      allProgress.gapfillCorrect[module][chapter] = [];
+    if (!allProgress.gapfillTotal[module][chapter])
+      allProgress.gapfillTotal[module][chapter] = [];
+
+    const prevCorrect = allProgress.gapfillCorrect[module][chapter];
+    const prevTotal = allProgress.gapfillTotal[module][chapter];
+
+    const newCorrect = Array.from(new Set([...prevCorrect, ...correctIds]));
+    const newTotal = Array.from(new Set([...prevTotal, ...allIds]));
+
+    allProgress.gapfillCorrect[module][chapter] = newCorrect;
+    allProgress.gapfillTotal[module][chapter] = newTotal;
+
+    localStorage.setItem(progressKey, JSON.stringify(allProgress));
+  }, [score, questionCount, module, chapter, correctIds, allIds]);
 
   return (
     <div className="gapresult-wrapper">
@@ -48,7 +78,6 @@ const GapFillResult = () => {
         <img src="/images/DinoKIT2.png" alt="Dino" />
       </div>
 
-      {/* Textbereich */}
       <div className="gapresult-text">
         <h1 className="gapresult-title">🎉 Super, du hast es geschafft!</h1>
         <p className="gapresult-score">

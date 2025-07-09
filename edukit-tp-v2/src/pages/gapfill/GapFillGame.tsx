@@ -4,60 +4,71 @@ import { motion } from "framer-motion";
 import "./GapFillGame.css";
 
 type Question = {
+  id: string;
   sentence: string;
   answer: string;
 };
 
 const exampleQuestions: Question[] = [
   {
+    id: "gf-k1-de-q1",
     sentence: "Die Photosynthese findet in den ___ statt.",
     answer: "Chloroplasten",
   },
   {
-    sentence: "Der pH-Wert einer Lösung wird durch die Konzentration von ___ bestimmt.",
+    id: "gf-k1-de-q2",
+    sentence:
+      "Der pH-Wert einer Lösung wird durch die Konzentration von ___ bestimmt.",
     answer: "Wasserstoffionen",
   },
   {
+    id: "gf-k1-de-q3",
     sentence: "In der Informatik steht HTML für ___ Markup Language.",
     answer: "Hypertext",
   },
   {
+    id: "gf-k1-de-q4",
     sentence: "Das Ohmsche Gesetz lautet U = R * ___.",
     answer: "I",
   },
   {
+    id: "gf-k1-de-q5",
     sentence: "Die Erde dreht sich in 24 Stunden um ihre eigene ___.",
     answer: "Achse",
   },
   {
+    id: "gf-k1-de-q6",
     sentence: "Die Hauptstadt von Italien ist ___.",
     answer: "Rom",
   },
   {
+    id: "gf-k1-de-q7",
     sentence: "Ein Dreieck hat insgesamt ___ Innenwinkel.",
     answer: "drei",
   },
+  { id: "gf-k1-de-q8", sentence: "Ein Jahr hat ___ Monate.", answer: "12" },
   {
-    sentence: "Ein Jahr hat ___ Monate.",
-    answer: "12",
-  },
-  {
+    id: "gf-k1-de-q9",
     sentence: "Die größte Wüste der Erde ist die ___ Wüste.",
     answer: "Antarktische",
   },
   {
+    id: "gf-k1-de-q10",
     sentence: "Ein Viereck mit vier rechten Winkeln ist ein ___.",
     answer: "Rechteck",
   },
   {
+    id: "gf-k1-de-q11",
     sentence: "Wasser hat die chemische Formel ___.",
     answer: "H2O",
   },
   {
+    id: "gf-k1-de-q12",
     sentence: "Die Hauptstadt von Frankreich ist ___.",
     answer: "Paris",
   },
   {
+    id: "gf-k1-de-q13",
     sentence: "Die kleinste Primzahl ist ___.",
     answer: "2",
   },
@@ -68,6 +79,7 @@ const GapFillGame = () => {
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const [isPostponed, setIsPostponed] = useState(false);
+  const [correctIds, setCorrectIds] = useState<string[]>([]);
 
   const {
     module = "",
@@ -78,25 +90,29 @@ const GapFillGame = () => {
     questions: incomingQuestions,
   } = location.state || {};
 
+  const allIds = incomingQuestions?.length
+    ? incomingQuestions.map((q: Question) => q.id)
+    : exampleQuestions.map((q: Question) => q.id);
+
   const postponedKey = `postponed_gapfill_${module}_${chapter}`;
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState("");
   const [score, setScore] = useState(0);
-  const [showFeedback, setShowFeedback] = useState<"correct" | "wrong" | null>(null);
+  const [showFeedback, setShowFeedback] = useState<"correct" | "wrong" | null>(
+    null
+  );
   const [timer, setTimer] = useState(timeLimit);
 
   const correctSound = useRef<HTMLAudioElement | null>(null);
   const wrongSound = useRef<HTMLAudioElement | null>(null);
 
-  // Lade Sounds
   useEffect(() => {
     correctSound.current = new Audio("/sounds/correct.mp3");
     wrongSound.current = new Audio("/sounds/wrong.mp3");
   }, []);
 
-  // Lade Fragen (entweder aus location oder zufällig)
   useEffect(() => {
     if (incomingQuestions?.length) {
       setQuestions(incomingQuestions);
@@ -110,7 +126,6 @@ const GapFillGame = () => {
     }
   }, [questionCount, incomingQuestions]);
 
-  // Timer für aktuelle Frage
   useEffect(() => {
     if (currentIndex >= questions.length || showFeedback !== null) return;
 
@@ -128,7 +143,6 @@ const GapFillGame = () => {
     return () => clearInterval(interval);
   }, [currentIndex, timeLimit, questions.length, showFeedback]);
 
-  // Lade Postpone-Status
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
     const alreadySaved = stored.some(
@@ -144,7 +158,6 @@ const GapFillGame = () => {
     );
 
     let updated;
-
     if (alreadySaved) {
       updated = stored.filter(
         (q: Question) => q.sentence !== questions[currentIndex].sentence
@@ -174,16 +187,20 @@ const GapFillGame = () => {
     if (isCorrect) {
       correctSound.current?.play();
       setScore((prev) => prev + 1);
+      setCorrectIds((prev) => [...prev, questions[currentIndex].id]);
       setShowFeedback("correct");
     } else {
       wrongSound.current?.play();
       setShowFeedback("wrong");
     }
 
-    setTimeout(() => {
-      setShowFeedback(null);
-      handleNext();
-    }, isCorrect ? 1500 : 3000);
+    setTimeout(
+      () => {
+        setShowFeedback(null);
+        handleNext();
+      },
+      isCorrect ? 1500 : 3000
+    );
   };
 
   const handleNext = () => {
@@ -202,8 +219,19 @@ const GapFillGame = () => {
 
   if (currentIndex >= questions.length) {
     navigate("/gapfillresult", {
-      state: { module, chapter, subject, questionCount, timeLimit, score },
+      state: {
+        module,
+        chapter,
+        subject,
+        questionCount,
+        timeLimit,
+        score,
+        correctIds,
+        questions,
+        allIds,
+      },
     });
+
     return null;
   }
 
@@ -223,7 +251,9 @@ const GapFillGame = () => {
             </button>
           ) : (
             <div className="cancel-confirm-container">
-              <div className="cancel-confirm-text">Möchtest du wirklich abbrechen?</div>
+              <div className="cancel-confirm-text">
+                Möchtest du wirklich abbrechen?
+              </div>
               <div className="cancel-confirm-buttons">
                 <button
                   className="btn btn-secondary btn-sm"
@@ -258,7 +288,9 @@ const GapFillGame = () => {
       <div className="gapfill-subheader">{chapter}</div>
 
       <div className="gapfill-status">
-        <div>Frage {currentIndex + 1} / {questions.length}</div>
+        <div>
+          Frage {currentIndex + 1} / {questions.length}
+        </div>
         <div>⏳ {timer}s</div>
       </div>
 
@@ -277,7 +309,10 @@ const GapFillGame = () => {
         placeholder="Begriff eingeben..."
         disabled={showFeedback !== null}
       />
-      {isCorrect && <div className="text-success fw-bold mb-2">✅ Richtig!</div>}
+
+      {isCorrect && (
+        <div className="text-success fw-bold mb-2">✅ Richtig!</div>
+      )}
       {isWrong && (
         <div className="text-danger fw-bold mb-2">
           ❌ Falsch! Richtige Antwort: <u>{current.answer}</u>
