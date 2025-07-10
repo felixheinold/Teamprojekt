@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import { useUser } from "../../../context/UserContext";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
+import "./Settings.css";
 
 const Settings = () => {
   const { user } = useUser();
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Vorherige Route aus dem State oder Standardwert
+  const from = (location.state as { from?: string })?.from || "/home";
 
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("darkMode") === "true";
@@ -35,63 +42,54 @@ const Settings = () => {
 
   const handleSave = () => {
     alert(t("settings.saved") + "!");
+    navigate(-1); // zurück zur vorherigen Seite
   };
 
   return (
-    <div className="container mt-5">
-      <div className="card mx-auto shadow-sm" style={{ maxWidth: "500px" }}>
-        <div className="card-body">
-          <h5 className="card-title text-center">⚙️ {t("settings.title")}</h5>
+    <div className="settings-wrapper">
+      <div className="settings-card">
+        <h2 className="settings-title">⚙️ {t("settings.title")}</h2>
 
-          {!user && (
-            <p className="text-muted small text-center">
-              {t("settings.guestNotice")}
-            </p>
-          )}
+        {!user && <p className="settings-guest">{t("settings.guestNotice")}</p>}
 
-          <div className="form-group mb-3">
-            <label htmlFor="volume" className="form-label">🔊 {t("settings.volume")}</label>
-            <input
-              type="range"
-              className="form-range"
-              id="volume"
-              min="0"
-              max="100"
-              value={volume}
-              onChange={(e) => setVolume(Number(e.target.value))}
-            />
-            <div className="text-end small text-muted">{volume}%</div>
-          </div>
-
-          <div className="form-check form-switch mb-3">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              id="darkmode"
-              checked={darkMode}
-              onChange={() => setDarkMode(!darkMode)}
-            />
-            <label className="form-check-label" htmlFor="darkmode">
-              🌙 {t("settings.darkMode")}
-            </label>
-          </div>
-
-          <div className="mb-3">
-            <label className="form-label">🌐 {t("settings.language")}</label>
-            <select
-              className="form-select"
-              value={language}
-              onChange={handleLanguageChange}
-            >
-              <option value="de">Deutsch</option>
-              <option value="en">English</option>
-            </select>
-          </div>
-
-          <button className="btn btn-primary w-100" onClick={handleSave}>
-            {t("common.save")}
-          </button>
+        <div className="settings-group">
+          <label htmlFor="volume">🔊 {t("settings.volume")}</label>
+          <input
+            type="range"
+            id="volume"
+            min="0"
+            max="100"
+            value={volume}
+            onChange={(e) => setVolume(Number(e.target.value))}
+          />
+          <div className="settings-range-value">{volume}%</div>
         </div>
+
+        <div className="settings-group switch">
+          <input
+            type="checkbox"
+            id="darkmode"
+            checked={darkMode}
+            onChange={() => setDarkMode(!darkMode)}
+          />
+          <label htmlFor="darkmode">🌙 {t("settings.darkMode")}</label>
+        </div>
+
+        <div className="settings-group">
+          <label htmlFor="language">🌐 {t("settings.language")}</label>
+          <select
+            id="language"
+            value={language}
+            onChange={handleLanguageChange}
+          >
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+
+        <button className="settings-button" onClick={handleSave}>
+          {t("common.save")}
+        </button>
       </div>
     </div>
   );
