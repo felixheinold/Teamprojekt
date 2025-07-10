@@ -192,7 +192,12 @@
     "back": "← Zurück",
     "error": "Registrierung fehlgeschlagen.",
     "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
-    "unknownError": "Etwas ist schiefgelaufen."
+    "unknownError": "Etwas ist schiefgelaufen.",
+  "infoHeadline": "Registrierung erfolgreich!",
+  "infoText1": "In den nächsten Minuten erhältst du eine E-Mail an deine KIT-Mailadresse.",
+  "infoText2": "Bitte bestätige deine E-Mail-Adresse über den Link in der Nachricht.",
+  "infoText3": "Falls du keine Mail bekommst, prüfe deinen Spam-Ordner. Eine erneute Mail kann angefordert werden.",
+  "continueAfterInfo": "Weiter zur Startseite"
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",

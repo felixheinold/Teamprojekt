@@ -19,6 +19,30 @@
   border-radius: 0.5rem;
 }
 
+.language-switcher {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: flex;
+  z-index: 1000;
+}
+
+.language-switcher img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.language-switcher img:last-child {
+  margin-right: 0;
+}
+
+.language-switcher img.selected {
+  border: 2px solid #228b57;
+}
+
 /* Mobile Ansicht (max 576px) */
 @media (max-width: 576px) {
   html,
@@ -36,6 +60,7 @@
   .start-title {
     font-size: 2rem;
     margin-bottom: 0.6rem;
+    margin-top: 1.5rem;
   }
 
   .start-subtitle {
@@ -48,6 +73,16 @@
   .startscreen-button {
     font-size: 1.1rem;
     padding: 0.8rem 1rem;
+  }
+    .language-switcher {
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+
+  .language-switcher img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.4rem;
   }
 
   /* Abstand zwischen Buttons reduzieren */
@@ -62,7 +97,7 @@
   }
 
   .text-end img {
-    max-width: 80%;
+    max-width: 78%;
     height: auto;
   }
 }

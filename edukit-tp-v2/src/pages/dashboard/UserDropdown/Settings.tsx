@@ -49,7 +49,7 @@ const Settings = () => {
 
   const handleSave = () => {
     alert(t("settings.saved") + "!");
-    navigate(from);
+    navigate(-1);
   };
 
   return (

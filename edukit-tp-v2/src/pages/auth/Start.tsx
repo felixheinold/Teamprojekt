@@ -12,34 +12,19 @@ const Start = () => {
   };
 
   return (
-    <div
-      className="container d-flex flex-column flex-lg-row align-items-center justify-content-between min-vh-100 py-5 px-3 px-sm-4 px-md-5 position-relative"
-    >
+    <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-between min-vh-100 py-5 px-3 px-sm-4 px-md-5 position-relative">
       {/* Sprachumschalter oben rechts */}
-      <div style={{ position: "absolute", top: 20, right: 20, zIndex: 1000 }}>
+      <div className="language-switcher">
         <img
           src="/images/de.png"
           alt="Deutsch"
-          style={{
-            width: 40,
-            height: 40,
-            marginRight: 10,
-            cursor: "pointer",
-            borderRadius: 3,
-            border: i18n.language === "de" ? "2px solid #198754" : "none",
-          }}
+          className={i18n.language === "de" ? "selected" : ""}
           onClick={() => changeLanguage("de")}
         />
         <img
           src="/images/uk.png"
           alt="English"
-          style={{
-            width: 40,
-            height: 40,
-            cursor: "pointer",
-            borderRadius: 3,
-            border: i18n.language === "en" ? "2px solid #198754" : "none",
-          }}
+          className={i18n.language === "en" ? "selected" : ""}
           onClick={() => changeLanguage("en")}
         />
       </div>
