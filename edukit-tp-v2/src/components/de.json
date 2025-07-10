@@ -64,6 +64,7 @@
     "gapfill": "Lückentext",
     "modal": {
       "title": "Mini-Game starten",
+      "titlePostponed": "Zurückgestellte Fragen spielen",
       "questions": "Fragen:",
       "pairs": "Paare:",
       "timePerQuestion": "Zeitlimit pro Frage:",

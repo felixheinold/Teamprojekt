@@ -14,6 +14,9 @@ const Minigames = () => {
   const [showChoiceModal, setShowChoiceModal] = useState(false);
   const [postponedCount, setPostponedCount] = useState(0);
 
+  const [isPostponedMode, setIsPostponedMode] = useState(false);
+  const [postponedQuestions, setPostponedQuestions] = useState<any[]>([]);
+
   const [selectedGame, setSelectedGame] = useState<null | {
     name: string;
     route: string;
@@ -21,20 +24,22 @@ const Minigames = () => {
   const [questionCount, setQuestionCount] = useState(10);
   const [timeLimit, setTimeLimit] = useState(15);
   const [progressMap, setProgressMap] = useState<Record<string, number>>({});
+  const [totalCounts, setTotalCounts] = useState<Record<string, number>>({});
 
   useEffect(() => {
     const progress = JSON.parse(localStorage.getItem("progress") || "{}");
     const progressMap: Record<string, number> = {};
+    const totalCounts: Record<string, number> = {};
 
     const categories = ["quiz", "gapfill", "memory"];
 
     categories.forEach((category) => {
-      let correctData =
+      const correctData =
         category === "memory"
           ? progress?.memory?.[selectedModule] || {}
           : progress?.[`${category}Correct`]?.[selectedModule] || {};
 
-      let totalData =
+      const totalData =
         category === "memory"
           ? progress?.memoryTotal?.[selectedModule] || {}
           : progress?.[`${category}Total`]?.[selectedModule] || {};
@@ -48,10 +53,12 @@ const Minigames = () => {
           : 0;
         const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
         progressMap[`${category}_${chapterKey}`] = percent;
+        totalCounts[`${category}_${chapterKey}`] = total;
       });
     });
 
     setProgressMap(progressMap);
+    setTotalCounts(totalCounts);
   }, [selectedModule]);
 
   const fullInfo = selectedChapter?.trim() || "";
@@ -98,9 +105,9 @@ const Minigames = () => {
     let key = "";
 
     if (game.route === "/quiz") {
-      key = `postponed_${selectedModule}_${selectedChapter}`;
+      key = `postponed_${selectedModule}_${fullInfo}`;
     } else if (game.route === "/gapfill") {
-      key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
+      key = `postponed_gapfill_${selectedModule}_${fullInfo}`;
     }
 
     if (key) {
@@ -121,60 +128,87 @@ const Minigames = () => {
 
   const handleStart = () => {
     if (!selectedGame) return;
-    navigate(selectedGame.route, {
-      state: {
-        module: selectedModule,
-        subject: hasMultiSubjects
-          ? fullInfo.split(" Kapitel")[0]
-          : selectedModule,
-        chapter: fullInfo,
-        questionCount,
-        timeLimit,
-      },
-    });
+
+    if (isPostponedMode && postponedQuestions.length > 0) {
+      navigate(selectedGame.route, {
+        state: {
+          module: selectedModule,
+          chapter: selectedChapter,
+          questions: postponedQuestions.slice(0, questionCount),
+          questionCount,
+          timeLimit,
+          fromPostponed: true,
+        },
+      });
+    } else {
+      navigate(selectedGame.route, {
+        state: {
+          module: selectedModule,
+          subject: hasMultiSubjects
+            ? fullInfo.split(" Kapitel")[0]
+            : selectedModule,
+          chapter: fullInfo,
+          questionCount,
+          timeLimit,
+        },
+      });
+    }
   };
 
   const handlePostponedStart = () => {
     const key = `postponed_${selectedModule}_${selectedChapter}`;
     const questions = JSON.parse(localStorage.getItem(key) || "[]");
-
     if (!questions.length) return;
 
-    const shuffled = shuffleArray(questions);
-
-    navigate("/quiz", {
-      state: {
-        module: selectedModule,
-        chapter: selectedChapter,
-        questions: shuffled,
-        questionCount: shuffled.length,
-        timeLimit: 20,
-        fromPostponed: true,
-      },
-    });
+    setSelectedGame({ name: "Quiz", route: "/quiz" });
+    setPostponedQuestions(shuffleArray(questions));
+    setIsPostponedMode(true);
+    setShowChoiceModal(false);
+    setShowModal(true);
   };
 
   const handleGapFillPostponedStart = () => {
     const key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
     const questions = JSON.parse(localStorage.getItem(key) || "[]");
-
     if (!questions.length) return;
 
-    const shuffled = shuffleArray(questions);
-
-    navigate("/gapfill", {
-      state: {
-        module: selectedModule,
-        chapter: selectedChapter,
-        questions: shuffled,
-        questionCount: shuffled.length,
-        timeLimit: 30,
-        fromPostponed: true,
-      },
-    });
+    setSelectedGame({ name: "GapFill", route: "/gapfill" });
+    setPostponedQuestions(shuffleArray(questions));
+    setIsPostponedMode(true);
+    setShowChoiceModal(false);
+    setShowModal(true);
   };
 
   const isMemory = selectedGame?.route === "/memory";
+  const category = isMemory
+    ? "memory"
+    : selectedGame?.route === "/gapfill"
+    ? "gapfill"
+    : "quiz";
+  const totalAvailable = totalCounts[`${category}_${selectedChapter}`] || 0;
+
+  const questionOptions = (() => {
+    if (isPostponedMode && postponedQuestions.length > 0) {
+      return Array.from({ length: postponedQuestions.length }, (_, i) => i + 1);
+    }
+
+    if (totalAvailable === 0) {
+      // Fallback: Standardauswahl bei unbekannter Totalanzahl
+      return isMemory
+        ? Array.from({ length: 11 }, (_, i) => i + 5) // 5–15
+        : Array.from({ length: 10 }, (_, i) => (i + 1) * 2); // 2–20
+    }
+
+    return isMemory
+      ? Array.from(
+          { length: Math.max(0, Math.min(15, totalAvailable) - 4) },
+          (_, i) => i + 5
+        )
+      : Array.from(
+          { length: Math.floor(Math.min(30, totalAvailable) / 2) },
+          (_, i) => (i + 1) * 2
+        );
+  })();
 
   return (
     <div className="minigames-wrapper container py-4 d-flex flex-column align-items-center">
@@ -192,7 +226,6 @@ const Minigames = () => {
 
       <div className="d-flex flex-wrap justify-content-center gap-4">
         {games.map((game, i) => {
-          const chapterKey = `${selectedModule}_${selectedChapter}`;
           const progressKey = `${game.id}_${selectedChapter}`;
           const percent = progressMap[progressKey] || 0;
 
@@ -241,6 +274,7 @@ const Minigames = () => {
                   className="btn btn-success"
                   onClick={() => {
                     setShowChoiceModal(false);
+                    setIsPostponedMode(false);
                     setShowModal(true);
                   }}
                 >
@@ -265,7 +299,9 @@ const Minigames = () => {
             <div className="modal-gradient"></div>
             <div className="p-4 flex-grow-1">
               <h5 className="fw-bold text-success mb-3 text-center">
-                {t("minigames.modal.title")}
+                {isPostponedMode
+                  ? t("minigames.modal.titlePostponed")
+                  : t("minigames.modal.title")}
               </h5>
 
               <div className="position-relative mb-3">
@@ -279,10 +315,7 @@ const Minigames = () => {
                   onChange={(e) => setQuestionCount(parseInt(e.target.value))}
                   className="form-select"
                 >
-                  {(isMemory
-                    ? Array.from({ length: 11 }, (_, i) => i + 5)
-                    : Array.from({ length: 10 }, (_, i) => (i + 1) * 2)
-                  ).map((val) => (
+                  {questionOptions.map((val) => (
                     <option key={val} value={val}>
                       {val}
                     </option>

@@ -55,6 +55,7 @@
     "gapfill": "Gap Fill",
     "modal": {
       "title": "Start Minigame",
+      "titlePostponed": "Play Postponed Questions",
       "questions": "Questions:",
       "pairs": "Pairs:",
       "timePerQuestion": "Time per question:",
