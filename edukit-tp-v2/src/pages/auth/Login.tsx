@@ -81,13 +81,20 @@ const Login = () => {
 
 
   const handleForgottenPassword = async () => {
-
     try {
       await authHandlingService.sendResetPasswordEmail(form.email);
-
+      alert("Bitte checke deinen Mail-Eingang. Please check your mail inbox.");
+      navigate("/reset-password");
     } catch (err){
       console.error("Reset password error: ", err);
+    }
+  };
 
+  const anotherVerificationMail = async() =>{
+    try{
+      await authHandlingService.sendVerificationMailAgain();
+    }catch (err){
+      console.error("Verification mail error.")
     }
   };
 
@@ -128,8 +135,12 @@ const Login = () => {
           <button type="submit" className="btn btn-dark w-100 mb-2">
             {t("login.button")}
           </button>
-          <a href="#" className="text-muted small">
+          <a href="#" className="text-muted small" onClick = {handleForgottenPassword}>
             {t("login.forgotPassword")}
+          </a>
+          <p></p>
+           <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+            <span>{t("login.anotherMail")}</span>
           </a>
         </form>
       </div>

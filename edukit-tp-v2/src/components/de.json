@@ -173,7 +173,8 @@
     "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
     "error": "Login fehlgeschlagen.",
     "noUserData": "Benutzerdaten fehlen in der Antwort.",
-    "unknownError": "Etwas ist schiefgelaufen."
+    "unknownError": "Etwas ist schiefgelaufen.", 
+    "anotherMail": "Eine erneute Verifikations-Email senden."
   },
   "register": {
     "title": "Erstelle einen Account",

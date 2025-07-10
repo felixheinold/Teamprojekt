@@ -164,7 +164,8 @@
     "kitOnly": "Only KIT email addresses allowed",
     "error": "Login failed.",
     "noUserData": "User data missing in the response.",
-    "unknownError": "Something went wrong."
+    "unknownError": "Something went wrong.",
+    "anotherMail": "Send another verification mail."
   },
   "register": {
     "title": "Create an Account",

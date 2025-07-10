@@ -73,6 +73,7 @@ const Register = () => {
     try {
 
        const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);
+       alert("Bitte checke deinen Mail-Eingang. Please check your mail inbox.");
        if (await authHandlingService.checkEmailVerified(user)){
         navigate("/home");
        }
@@ -80,6 +81,15 @@ const Register = () => {
     } catch (err) {
       console.error("Registration error:", err);
       alert(t("register.unknownError"));
+    }
+  };
+
+
+  const anotherVerificationMail = async() =>{
+    try{
+      await authHandlingService.sendVerificationMailAgain();
+    }catch (err){
+      console.error("Verification mail error.");
     }
   };
 
@@ -136,6 +146,9 @@ const Register = () => {
             <button type="submit" className="btn btn-dark w-100">
               {t("register.button")}
             </button>
+            <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+            <span>{t("login.anotherMail")}</span>
+            </a>
           </form>
         </div>
       </div>

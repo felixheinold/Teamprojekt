@@ -7,6 +7,7 @@ import {
   updateEmail,
   sendPasswordResetEmail,
   User,
+  confirmPasswordReset,
 } from "firebase/auth";
 import { AuthPopupError } from "./firebaseDataModels";
 import { AuthAPICallsService } from "./authAPICallsService";
@@ -33,7 +34,7 @@ export class AuthHandlingService {
           
           //hier Methode von AuthAPICall, um neuen Nutzer anzulegen
           await this.authAPICallsService.newUserAPICall(userCredential.user.uid, username, email, picture);
-
+      
           return userCredential.user;
 
       } catch (error: any){
@@ -112,11 +113,14 @@ async deleteAccount() {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       await userCredential.user.reload(); // User-Status aktualisieren
       if (!userCredential.user.emailVerified) {
+        alert("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
         throw new AuthPopupError("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
+
       }
       return userCredential.user; 
     }
    catch (error:any){
+      alert("Fehler beim Login. Error while trying to sign in.")
       throw new AuthPopupError("Fehler beim Login: " + error.code);
     }
  
@@ -131,5 +135,41 @@ async deleteAccount() {
     return auth.signOut();
   }
 
-}
 
+
+/************************************************
+ User Password Reset
+ *************************************************/
+
+  async confirmPasswordAfterReset(oobCode: string, newPassword: string){
+    try {
+    await confirmPasswordReset(auth, oobCode, newPassword);
+    alert("Passwort erfolgreich zurückgesetzt. Bitte erneut anmelden.");
+    } catch (error) {
+    alert("Fehler beim Zurücksetzen des Passworts.");
+    }
+  };
+
+  
+
+  /*************************************** 
+   Send Verification Mail again
+   **********************************/
+
+   async sendVerificationMailAgain(){
+
+      try{
+        if (auth.currentUser) {
+          await sendEmailVerification(auth.currentUser);
+        }else{
+          throw new Error();
+        }
+
+      }catch (error){
+        alert("Fehler beim erneuten Versenden der Verifikationsmail.");
+      }
+
+      alert("Another verification mail has been sent. Please check your inbox.");
+   }
+
+  }

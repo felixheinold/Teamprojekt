@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from routers import users, ai_model, statistics
 
 api = FastAPI(
@@ -10,6 +11,21 @@ api = FastAPI(
 api.include_router(users.router)
 api.include_router(ai_model.router)
 api.include_router(statistics.router)
+
+allowed_origins_for_api_requests = [
+"https://www.edukit-tp.me",
+"https://edukit-tp.me",
+"https://edukit-tp.web.app"
+"https://edukit-tp.firebaseapp.com"
+]
+
+api.add_middleware(
+    CORSMiddleware,
+    allow_origins = allowed_origins_for_api_requests,
+    allow_credentials = True,
+    allow_methods = ["*"],
+    allow_header = ["*"],
+)
 
 @api.get("/")
 async def root():
