@@ -15,8 +15,13 @@ const Register = () => {
     username: "",
     email: "",
     password: "",
+    confirmPassword: "",
     avatar: "avatar1.png",
   });
+
+  // Separate Sichtbarkeits-States für beide Felder
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -24,6 +29,12 @@ const Register = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (form.password !== form.confirmPassword) {
+      alert(t("register.passwordMismatch") || "Passwörter stimmen nicht überein.");
+      return;
+    }
+
     const API = import.meta.env.VITE_API_BASE_URL;
     const userId = crypto.randomUUID();
 
@@ -42,9 +53,7 @@ const Register = () => {
     try {
       const res = await fetch(`${API}/users/new-user`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
@@ -66,7 +75,6 @@ const Register = () => {
         },
       });
 
-      // Direkt zu /home → dort wird ggf. Disclaimer angezeigt
       navigate("/home");
     } catch (err) {
       console.error("Registration error:", err);
@@ -116,14 +124,59 @@ const Register = () => {
               pattern=".+@student.kit.edu"
               title={t("login.kitOnly")}
             />
-            <input
-              name="password"
-              type="password"
-              className="form-control mb-3"
-              placeholder={t("register.password")}
-              onChange={handleChange}
-              required
-            />
+
+            {/* Passwort-Feld mit Icon */}
+            <div className="position-relative mb-2">
+              <input
+                name="password"
+                type={showPassword ? "text" : "password"}
+                className="form-control"
+                placeholder={t("register.password")}
+                onChange={handleChange}
+                required
+              />
+              <span
+                onClick={() => setShowPassword(!showPassword)}
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: "10px",
+                  transform: "translateY(-50%)",
+                  cursor: "pointer",
+                  fontSize: "1.2rem",
+                }}
+                aria-label="Passwort anzeigen/verbergen"
+              >
+                {showPassword ? "↺" : "👁️‍🗨️"}
+              </span>
+            </div>
+
+            {/* Passwort bestätigen mit eigenem Icon */}
+            <div className="position-relative mb-3">
+              <input
+                name="confirmPassword"
+                type={showConfirmPassword ? "text" : "password"}
+                className="form-control"
+                placeholder={t("register.confirmPassword") || "Passwort wiederholen"}
+                onChange={handleChange}
+                required
+              />
+              <span
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: "10px",
+                  transform: "translateY(-50%)",
+                  cursor: "pointer",
+                  fontSize: "1.2rem",
+                }}
+                aria-label="Passwort wiederholen anzeigen/verbergen"
+              >
+                {showConfirmPassword ? "↺" : "👁️‍🗨️"}
+              </span>
+            </div>
+
             <button type="submit" className="btn btn-dark w-100">
               {t("register.button")}
             </button>

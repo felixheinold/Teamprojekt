@@ -174,10 +174,14 @@
     "email": "KIT student email",
     "emailPlaceholder": "u....@student.kit.edu",
     "password": "Password",
+    "confirmPassword": "Confirm password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "passwordMismatch": "Passwords do not match.",
     "button": "Register",
     "back": "← Back",
     "error": "Registration failed.",
-    "kitOnly": "Only KIT student email addresses allowed",
+    "kitOnly": "Only KIT email addresses allowed",
     "unknownError": "Something went wrong."
   },
   "disclaimer": {
