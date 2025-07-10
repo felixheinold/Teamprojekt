@@ -182,6 +182,9 @@
   .game-card-title {
   font-size: 1rem;
 }
+.game-card-percentage {
+    font-size: 0.8rem;
+  }
 
   .game-card img {
     width: 90px;
@@ -216,13 +219,16 @@
   }
 
   .game-card {
-    width: 210px;
-    height: 180px;
+    width: 220px;
+    height: 190px;
   }
 
   .game-card-title {
   font-size: 1.25rem;
 }
+  .game-card-percentage {
+    font-size: 1.1rem;
+  }
 
   .game-card img {
     width: 120px;
@@ -243,7 +249,7 @@
 
   .game-card {
     width: 280px;
-    height: 230px;
+    height: 240px;
     font-size: 1.4rem;
   }
   .game-card img {
@@ -254,6 +260,9 @@
 .game-card-title {
   font-size: 1.5rem;
 }
+  .game-card-percentage {
+    font-size: 1.3rem;
+  }
 
   .minigames-wrapper h1 {
     font-size: 3rem;
@@ -275,6 +284,9 @@
 .game-card-title {
   font-size: 1.8rem;
 }
+  .game-card-percentage {
+    font-size: 1.5rem;
+  }
 
   .game-card img {
     width: 180px;

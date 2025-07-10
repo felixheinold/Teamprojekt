@@ -1,7 +1,7 @@
 import { useAppFlow } from "../../context/AppFlowContext";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Minigames.css";
 
@@ -20,6 +20,39 @@ const Minigames = () => {
   }>(null);
   const [questionCount, setQuestionCount] = useState(10);
   const [timeLimit, setTimeLimit] = useState(15);
+  const [progressMap, setProgressMap] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    const progress = JSON.parse(localStorage.getItem("progress") || "{}");
+    const progressMap: Record<string, number> = {};
+
+    const categories = ["quiz", "gapfill", "memory"];
+
+    categories.forEach((category) => {
+      let correctData =
+        category === "memory"
+          ? progress?.memory?.[selectedModule] || {}
+          : progress?.[`${category}Correct`]?.[selectedModule] || {};
+
+      let totalData =
+        category === "memory"
+          ? progress?.memoryTotal?.[selectedModule] || {}
+          : progress?.[`${category}Total`]?.[selectedModule] || {};
+
+      Object.keys({ ...correctData, ...totalData }).forEach((chapterKey) => {
+        const correct = Array.isArray(correctData[chapterKey])
+          ? correctData[chapterKey].length
+          : 0;
+        const total = Array.isArray(totalData[chapterKey])
+          ? totalData[chapterKey].length
+          : 0;
+        const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+        progressMap[`${category}_${chapterKey}`] = percent;
+      });
+    });
+
+    setProgressMap(progressMap);
+  }, [selectedModule]);
 
   const fullInfo = selectedChapter?.trim() || "";
   const hasMultiSubjects =
@@ -82,7 +115,6 @@ const Minigames = () => {
       }
     }
 
-    // keine zurückgestellten → direkt starten
     setSelectedGame(game);
     setShowModal(true);
   };
@@ -159,20 +191,27 @@ const Minigames = () => {
       </h1>
 
       <div className="d-flex flex-wrap justify-content-center gap-4">
-        {games.map((game, i) => (
-          <motion.div
-            key={i}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
-            onClick={() => handleGameClick(game)}
-            className="game-card text-center rounded shadow"
-            style={{ backgroundColor: game.color }}
-          >
-            <img src={game.icon} alt={game.name} className="game-icon" />
-            <div className="fw-semibold game-card-title">{game.name}</div>
-          </motion.div>
-        ))}
+        {games.map((game, i) => {
+          const chapterKey = `${selectedModule}_${selectedChapter}`;
+          const progressKey = `${game.id}_${selectedChapter}`;
+          const percent = progressMap[progressKey] || 0;
+
+          return (
+            <motion.div
+              key={i}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
+              onClick={() => handleGameClick(game)}
+              className="game-card text-center rounded shadow"
+              style={{ backgroundColor: game.color }}
+            >
+              <img src={game.icon} alt={game.name} className="game-icon" />
+              <div className="fw-semibold game-card-title">{game.name}</div>
+              <div className="fw-normal game-card-percentage">{percent}%</div>
+            </motion.div>
+          );
+        })}
       </div>
 
       {showChoiceModal && selectedGame && (
@@ -229,7 +268,6 @@ const Minigames = () => {
                 {t("minigames.modal.title")}
               </h5>
 
-              {/* Question Count */}
               <div className="position-relative mb-3">
                 <label className="form-label mb-1">
                   {isMemory
@@ -252,7 +290,6 @@ const Minigames = () => {
                 </select>
               </div>
 
-              {/* Time Limit */}
               <label className="form-label mb-1">
                 {t("minigames.modal.timePerQuestion")}
               </label>
@@ -273,7 +310,6 @@ const Minigames = () => {
                 </select>
               </div>
 
-              {/* Buttons */}
               <div className="d-flex justify-content-between mt-3">
                 <button
                   onClick={() => setShowModal(false)}
