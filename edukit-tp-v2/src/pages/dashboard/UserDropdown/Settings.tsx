@@ -10,7 +10,6 @@ const Settings = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Vorherige Route aus dem State oder Standardwert
   const from = (location.state as { from?: string })?.from || "/home";
 
   const [darkMode, setDarkMode] = useState(() => {
@@ -20,6 +19,10 @@ const Settings = () => {
   const [volume, setVolume] = useState(() => {
     const saved = localStorage.getItem("volume");
     return saved ? Number(saved) : 50;
+  });
+
+  const [soundEnabled, setSoundEnabled] = useState(() => {
+    return localStorage.getItem("soundEnabled") !== "false"; // default true
   });
 
   const [language, setLanguage] = useState(() => i18n.language || "de");
@@ -34,6 +37,10 @@ const Settings = () => {
     localStorage.setItem("volume", String(volume));
   }, [volume]);
 
+  useEffect(() => {
+    localStorage.setItem("soundEnabled", String(soundEnabled));
+  }, [soundEnabled]);
+
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLang = e.target.value;
     setLanguage(selectedLang);
@@ -42,7 +49,7 @@ const Settings = () => {
 
   const handleSave = () => {
     alert(t("settings.saved") + "!");
-    navigate(-1); // zurück zur vorherigen Seite
+    navigate(from);
   };
 
   return (
@@ -52,6 +59,7 @@ const Settings = () => {
 
         {!user && <p className="settings-guest">{t("settings.guestNotice")}</p>}
 
+        {/* Lautstärke */}
         <div className="settings-group">
           <label htmlFor="volume">🔊 {t("settings.volume")}</label>
           <input
@@ -65,6 +73,18 @@ const Settings = () => {
           <div className="settings-range-value">{volume}%</div>
         </div>
 
+        {/* Soundeffekte deaktivieren */}
+        <div className="settings-group switch">
+          <input
+            type="checkbox"
+            id="sound"
+            checked={!soundEnabled}
+            onChange={() => setSoundEnabled(!soundEnabled)}
+          />
+          <label htmlFor="sound">🔈 {t("settings.disableSound")}</label>
+        </div>
+
+        {/* Dark Mode */}
         <div className="settings-group switch">
           <input
             type="checkbox"
@@ -75,6 +95,7 @@ const Settings = () => {
           <label htmlFor="darkmode">🌙 {t("settings.darkMode")}</label>
         </div>
 
+        {/* Sprache */}
         <div className="settings-group">
           <label htmlFor="language">🌐 {t("settings.language")}</label>
           <select

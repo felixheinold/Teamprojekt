@@ -80,6 +80,8 @@ const GapFillGame = () => {
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const [isPostponed, setIsPostponed] = useState(false);
   const [correctIds, setCorrectIds] = useState<string[]>([]);
+  const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
+  const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
   const {
     module = "",
@@ -109,9 +111,12 @@ const GapFillGame = () => {
   const wrongSound = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    correctSound.current = new Audio("/sounds/correct.mp3");
-    wrongSound.current = new Audio("/sounds/wrong.mp3");
-  }, []);
+  correctSound.current = new Audio("/sounds/correct.mp3");
+  wrongSound.current = new Audio("/sounds/wrong.mp3");
+
+  if (correctSound.current) correctSound.current.volume = volume;
+  if (wrongSound.current) wrongSound.current.volume = volume;
+}, [volume]);
 
   useEffect(() => {
     if (incomingQuestions?.length) {
@@ -185,12 +190,12 @@ const GapFillGame = () => {
     const isCorrect = user === correct;
 
     if (isCorrect) {
-      correctSound.current?.play();
+      if (soundEnabled) correctSound.current?.play();
       setScore((prev) => prev + 1);
       setCorrectIds((prev) => [...prev, questions[currentIndex].id]);
       setShowFeedback("correct");
     } else {
-      wrongSound.current?.play();
+      if (soundEnabled) wrongSound.current?.play();
       setShowFeedback("wrong");
     }
 

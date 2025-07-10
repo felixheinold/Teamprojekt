@@ -95,6 +95,8 @@ const MemoryRound1 = () => {
   const location = useLocation();
 
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+  const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
+  const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
   const {
     module = "",
@@ -151,7 +153,13 @@ const MemoryRound1 = () => {
     checkSound.current = new Audio("/sounds/check.mp3");
     correctSound.current = new Audio("/sounds/correct.mp3");
     wrongSound.current = new Audio("/sounds/wrong.mp3");
-  }, []);
+
+    [checkSound.current, correctSound.current, wrongSound.current].forEach(
+      (audio) => {
+        if (audio) audio.volume = volume;
+      }
+    );
+  }, [volume]);
 
   useEffect(() => {
     const startAssignments = {};
@@ -209,7 +217,7 @@ const MemoryRound1 = () => {
 
   const handleSubmit = () => {
     setSubmitted(true);
-    checkSound.current?.play();
+    if (soundEnabled) checkSound.current?.play();
 
     const hasError = Object.entries(assignments).some(
       ([def, term]) => !checkCorrect(def, term)
@@ -217,9 +225,9 @@ const MemoryRound1 = () => {
 
     setTimeout(() => {
       if (hasError) {
-        wrongSound.current?.play();
+        if (soundEnabled) wrongSound.current?.play();
       } else {
-        correctSound.current?.play();
+        if (soundEnabled) correctSound.current?.play();
       }
     }, 500);
   };

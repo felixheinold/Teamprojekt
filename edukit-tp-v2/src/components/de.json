@@ -22,7 +22,8 @@
     "darkMode": "Dark Mode aktivieren",
     "language": "Sprache",
     "saved": "Einstellungen gespeichert",
-    "guestNotice": "Du bist aktuell nicht angemeldet. Einige Einstellungen werden nicht dauerhaft gespeichert."
+    "guestNotice": "Du bist aktuell nicht angemeldet. Einige Einstellungen werden nicht dauerhaft gespeichert.",
+    "disableSound": "Soundeffekte deaktivieren"
   },
   "home": {
     "welcome": "Willkommen bei",

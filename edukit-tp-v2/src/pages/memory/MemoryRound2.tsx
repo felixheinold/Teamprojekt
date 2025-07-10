@@ -17,6 +17,8 @@ const MemoryRound2 = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+  const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
+  const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
   const {
     module = "",
@@ -56,9 +58,13 @@ const MemoryRound2 = () => {
   }, [pairs]);
 
   useEffect(() => {
-    correctSound.current = new Audio("/sounds/correct.mp3");
-    wrongSound.current = new Audio("/sounds/wrong.mp3");
-  }, []);
+  correctSound.current = new Audio("/sounds/correct.mp3");
+  wrongSound.current = new Audio("/sounds/wrong.mp3");
+
+  [correctSound.current, wrongSound.current].forEach((audio) => {
+    if (audio) audio.volume = volume;
+  });
+}, [volume]);
 
   useEffect(() => {
     if (disabled || matched.length === cards.length) return;
@@ -113,7 +119,7 @@ const MemoryRound2 = () => {
           resetFlips();
         }, 1000);
       } else {
-        wrongSound.current?.play();
+        if (soundEnabled) wrongSound.current?.play();
         setFeedback("wrong");
         setTimeout(() => {
           setFeedback(null);

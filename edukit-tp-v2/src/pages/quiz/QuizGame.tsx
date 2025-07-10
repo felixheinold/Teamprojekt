@@ -14,6 +14,8 @@ const QuizGame = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+  const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
+const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
   const {
     module,
@@ -128,9 +130,12 @@ const QuizGame = () => {
   const postponedKey = `postponed_${module}_${chapter}`;
 
   useEffect(() => {
-    correctSound.current = new Audio("/sounds/correct.mp3");
-    wrongSound.current = new Audio("/sounds/wrong.mp3");
-  }, []);
+  correctSound.current = new Audio("/sounds/correct.mp3");
+  wrongSound.current = new Audio("/sounds/wrong.mp3");
+
+  if (correctSound.current) correctSound.current.volume = volume;
+  if (wrongSound.current) wrongSound.current.volume = volume;
+}, [volume]);
 
   useEffect(() => {
     if (showFeedback) return;
@@ -165,9 +170,9 @@ const QuizGame = () => {
     const correct = selected && selected === currentQuestion.answer;
     if (correct) {
       setScore((prev) => prev + 1);
-      correctSound.current?.play();
+      if (soundEnabled) correctSound.current?.play();
     } else {
-      wrongSound.current?.play();
+      if (soundEnabled) wrongSound.current?.play();
 
       const statsKey = "userStats";
       const gameKey = "quiz";

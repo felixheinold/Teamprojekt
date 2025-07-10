@@ -22,7 +22,8 @@
     "darkMode": "Enable Dark Mode",
     "language": "Language",
     "saved": "Settings saved",
-    "guestNotice": "You are currently not logged in. Some settings will not be saved permanently."
+    "guestNotice": "You are currently not logged in. Some settings will not be saved permanently.",
+    "disableSound": "Disable sound effects"
   },
   "home": {
     "welcome": "Welcome to",
