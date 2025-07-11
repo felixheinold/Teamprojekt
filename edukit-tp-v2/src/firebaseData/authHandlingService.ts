@@ -115,12 +115,11 @@ async deleteAccount() {
     try{
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       await userCredential.user.reload(); // User-Status aktualisieren
-      setFirebaseUser(userCredential.user)
       if (!userCredential.user.emailVerified) {
         alert("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
         throw new AuthPopupError("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
-
       }
+      setFirebaseUser(userCredential.user);
       return userCredential.user; 
     }
    catch (error:any){

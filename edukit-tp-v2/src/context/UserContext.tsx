@@ -50,7 +50,7 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     setUser(profile);
   };
 
-  const [firebaseUser, setFirebaseUser] = useState<User | null>(auth.currentUser);
+  const [firebaseUser, setFirebaseUser] = useState<User | null>(null);
   // Optional: sync mit localStorage, falls mehrere Tabs/Fenster
   useEffect(() => {
     const sync = () => {
