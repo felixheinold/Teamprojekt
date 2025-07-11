@@ -8,9 +8,11 @@ import {
   sendPasswordResetEmail,
   User,
   confirmPasswordReset,
+  
 } from "firebase/auth";
 import { AuthPopupError } from "./firebaseDataModels";
 import { AuthAPICallsService } from "./authAPICallsService";
+import { useUser } from "../context/UserContext";
 
 export class AuthHandlingService {
 
@@ -95,7 +97,7 @@ async deleteAccount() {
   const user = auth.currentUser;
   if (user) {
     
-    //hier noch API Call um User zu löschen aus Firestore
+    //hier noch API Call um User zu löschen aus Firestore !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!           !!!!!!!!!!!!!            !!!!!!!!!!!!!!!!!
 
     // Firebase Auth User löschen
     await user.delete();
@@ -109,9 +111,11 @@ async deleteAccount() {
   ********************************************** */
 
   async  login(email: string, password: string) {
+    const {setFirebaseUser} = useUser();
     try{
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       await userCredential.user.reload(); // User-Status aktualisieren
+      setFirebaseUser(userCredential.user)
       if (!userCredential.user.emailVerified) {
         alert("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
         throw new AuthPopupError("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");

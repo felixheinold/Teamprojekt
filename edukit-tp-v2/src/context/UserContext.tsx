@@ -18,6 +18,7 @@ type UserContextType = {
   user: UserProfile | null;
   setUser: (user: UserProfile | null) => void;
   firebaseUser: User | null;
+  setFirebaseUser: (user:User | null) => void;
 };
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
@@ -75,7 +76,7 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
 
 
   return (
-    <UserContext.Provider value={{ user, setUser: handleSetUser, firebaseUser }}>
+    <UserContext.Provider value={{ user, setUser: handleSetUser, firebaseUser, setFirebaseUser }}>
       {children}
     </UserContext.Provider>
   );

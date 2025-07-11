@@ -70,7 +70,7 @@ const Login = () => {
     //   }
 
     try {
-      const user = await authHandlingService.login(form.email, form.password)
+      const user = await authHandlingService.login(form.email, form.password);
       if (await authHandlingService.checkEmailVerified(user)){
         navigate("/home");
       }
