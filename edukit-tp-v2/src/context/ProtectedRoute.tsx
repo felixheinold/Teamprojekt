@@ -1,10 +1,11 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useUser } from "./UserContext";
 
-const ProtectedRoute = () => {
-  const { user } = useUser();
 
-  if (!user) {
+const ProtectedRoute = () => {
+  const { user, firebaseUser } = useUser();
+
+  if (!firebaseUser?.emailVerified) {
     return <Navigate to="/login" replace />;
   }
 

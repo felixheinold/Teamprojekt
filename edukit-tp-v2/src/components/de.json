@@ -198,7 +198,8 @@
   "infoText1": "In den nächsten Minuten erhältst du eine E-Mail an deine KIT-Mailadresse.",
   "infoText2": "Bitte bestätige deine E-Mail-Adresse über den Link in der Nachricht.",
   "infoText3": "Falls du keine Mail bekommst, prüfe deinen Spam-Ordner. Eine erneute Mail kann angefordert werden.",
-  "continueAfterInfo": "Weiter zur Startseite"
+  "continueAfterInfo": "Weiter zur Startseite",
+  "checkInbox": "Bitte überprüfe deinen Posteingang."
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",

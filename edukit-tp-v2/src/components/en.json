@@ -189,7 +189,8 @@
     "infoText1": "You will receive an email at your KIT email address within the next few minutes.",
     "infoText2": "Please confirm your email address via the link in the message.",
     "infoText3": "If you do not receive an email, check your spam folder. A new email can be requested.",
-    "continueAfterInfo": "Continue to the homepage"
+    "continueAfterInfo": "Continue to the homepage",
+    "checkInbox": "Please check your inbox."
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",

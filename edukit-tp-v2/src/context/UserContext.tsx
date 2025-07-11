@@ -1,5 +1,7 @@
 // src/context/UserContext.tsx
 import React, { createContext, useState, useContext, useEffect } from "react";
+import {User, onAuthStateChanged} from "firebase/auth";
+import { auth } from "../firebaseData/firebaseConfig";
 
 export type UserProfile = {
   userId: string;
@@ -15,6 +17,7 @@ export type UserProfile = {
 type UserContextType = {
   user: UserProfile | null;
   setUser: (user: UserProfile | null) => void;
+  firebaseUser: User | null;
 };
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
@@ -46,6 +49,7 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     setUser(profile);
   };
 
+  const [firebaseUser, setFirebaseUser] = useState<User | null>(auth.currentUser);
   // Optional: sync mit localStorage, falls mehrere Tabs/Fenster
   useEffect(() => {
     const sync = () => {
@@ -56,8 +60,22 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     return () => window.removeEventListener("storage", sync);
   }, []);
 
+  useEffect(() => {
+  const unsubscribe = onAuthStateChanged(auth, async (user) => {
+    if (user) {
+      await user.reload(); // frische Daten (z. B. emailVerified)
+      setFirebaseUser(user);
+    } else {
+      setFirebaseUser(null);
+    }
+  });
+
+  return () => unsubscribe();
+}, []);
+
+
   return (
-    <UserContext.Provider value={{ user, setUser: handleSetUser }}>
+    <UserContext.Provider value={{ user, setUser: handleSetUser, firebaseUser }}>
       {children}
     </UserContext.Provider>
   );
