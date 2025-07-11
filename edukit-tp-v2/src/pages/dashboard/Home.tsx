@@ -40,7 +40,11 @@ const Home: React.FC = () => {
       )}
 
       {/* Inhalt */}
-      <div className={`container py-5 position-relative content-layer ${showDisclaimer ? "blur-sm" : ""}`}>
+      <div
+        className={`container py-5 position-relative content-layer ${
+          showDisclaimer ? "blur-sm" : ""
+        }`}
+      >
         <div className="row align-items-center">
           <motion.div
             className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 home-text"
@@ -49,7 +53,8 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="fw-bold home-title">
-              👋 {t("home.welcome")} <span className="text-success">EduKIT</span>
+              👋 {t("home.welcome")}{" "}
+              <span className="text-success">EduKIT</span>
             </h1>
             <p className="text-muted home-subtitle">{t("home.subtitle")}</p>
 
@@ -58,7 +63,10 @@ const Home: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Link to="/modules" className="btn btn-success btn-lg shadow home-button">
+              <Link
+                to="/modules"
+                className="btn btn-success btn-lg shadow home-button"
+              >
                 📚 {t("home.button")}
               </Link>
             </motion.div>

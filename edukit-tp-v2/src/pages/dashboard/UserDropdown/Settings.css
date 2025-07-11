@@ -1,0 +1,128 @@
+/* Wrapper mit gleichmäßigem vertikalen Padding und automatischer Höhe */
+.settings-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-block: 3rem;
+  padding-inline: 1rem;
+}
+
+/* Karte passt sich der Inhaltshöhe an */
+.settings-card {
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+/* Dynamische Schriftgrößen */
+.settings-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 2rem
+}
+
+.settings-guest {
+  text-align: center;
+  color: gray;
+  margin-bottom: 1rem;
+  font-size: 1rem
+}
+
+.settings-group {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.settings-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.settings-group input[type="range"] {
+  width: 100%;
+}
+
+.settings-range-value {
+  text-align: right;
+  color: gray;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.settings-group.switch {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.settings-group select {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+}
+
+.settings-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: bold;
+  background-color: #228b57;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.settings-button:hover {
+  background-color: #228b57;
+}
+
+/* Breitenanpassung nach Bildschirmgröße */
+@media (max-width: 576px) {
+  .settings-card {
+    max-width: 600px;
+    padding: 1.5rem;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .settings-card {
+    max-width: 600px;
+  }
+  .settings-title {
+    font-size: 2.5rem;
+  }
+  .settings-group, .settings-button, .settings-guest{
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .settings-card {
+    max-width: 800px;
+  }
+    .settings-title {
+        font-size: 3rem;
+    }
+    .settings-group, .settings-button, .settings-guest{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+  .settings-card {
+    max-width: 1000px;
+  }
+    .settings-title {
+        font-size: 3.4rem;
+    }
+    .settings-group, .settings-button, .settings-guest{
+        font-size: 1.4rem;
+    }
+}

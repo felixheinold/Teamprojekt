@@ -18,10 +18,32 @@
   margin-bottom: 2rem;
 }
 
+.register-info {
+  background-color: #e9f7ef; /* sanft grünlich */
+  border: 1px solid #c1e2d0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #1a3d2f;
+}
 
+.register-info h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.register-info p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
 
 /* Mobile (≤576px) */
 @media (max-width: 576px) {
+.register-wrapper{
+  margin-top: -4rem;
+}
 
   .register-content h2 {
     font-size: 1.8rem;
@@ -30,7 +52,7 @@
   .register-content p {
     font-size: 1rem;
   }
-
+  
    .back-button {
    
     font-size: 1rem;
@@ -67,6 +89,14 @@
     font-size: 1.1rem;
     padding: 0.5rem 1.3rem;
   }
+  .register-info {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+
+  .register-info h5 {
+    font-size: 1.1rem;
+  }
 }
 
 /* Desktop (992–1399px) */
@@ -94,6 +124,14 @@
     font-size: 1.2rem;
     padding: 0.5rem 1.5rem;
   }
+    .register-info {
+    font-size: 1.15rem;
+    padding: 2rem;
+  }
+
+  .register-info h5 {
+    font-size: 1.3rem;
+  }
 }
 
 /* Große Desktops (≥1400px) */
@@ -119,5 +157,13 @@
   .register-content button {
     font-size: 1.3rem;
     padding: 0.8rem 1.8rem;
+  }
+    .register-info {
+    font-size: 1.3rem;
+    padding: 2rem;
+  }
+
+  .register-info h5 {
+    font-size: 1.5rem;
   }
 }

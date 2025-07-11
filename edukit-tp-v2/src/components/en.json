@@ -22,7 +22,8 @@
     "darkMode": "Enable Dark Mode",
     "language": "Language",
     "saved": "Settings saved",
-    "guestNotice": "You are currently not logged in. Some settings will not be saved permanently."
+    "guestNotice": "You are currently not logged in. Some settings will not be saved permanently.",
+    "disableSound": "Disable sound effects"
   },
   "home": {
     "welcome": "Welcome to",
@@ -55,6 +56,7 @@
     "gapfill": "Gap Fill",
     "modal": {
       "title": "Start Minigame",
+      "titlePostponed": "Play Postponed Questions",
       "questions": "Questions:",
       "pairs": "Pairs:",
       "timePerQuestion": "Time per question:",
@@ -174,11 +176,20 @@
     "email": "KIT student email",
     "emailPlaceholder": "u....@student.kit.edu",
     "password": "Password",
+    "confirmPassword": "Confirm password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "passwordMismatch": "Passwords do not match.",
     "button": "Register",
     "back": "← Back",
     "error": "Registration failed.",
-    "kitOnly": "Only KIT student email addresses allowed",
-    "unknownError": "Something went wrong."
+    "kitOnly": "Only KIT email addresses allowed",
+    "unknownError": "Something went wrong.",
+    "infoHeadline": "Registration successful!",
+    "infoText1": "You will receive an email at your KIT email address within the next few minutes.",
+    "infoText2": "Please confirm your email address via the link in the message.",
+    "infoText3": "If you do not receive an email, check your spam folder. A new email can be requested.",
+    "continueAfterInfo": "Continue to the homepage"
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",

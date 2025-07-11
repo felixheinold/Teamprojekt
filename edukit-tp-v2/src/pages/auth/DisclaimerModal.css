@@ -1,0 +1,125 @@
+/* Wrapper mit Grundlayout */
+.disclaimer-wrapper {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Titel */
+.disclaimer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Liste und Text */
+.disclaimer-content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.disclaimer-content p {
+  margin-bottom: 0.75rem;
+}
+
+/* Checkbox & Button */
+.disclaimer-checkbox {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.disclaimer-button {
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: white;
+  background-color: #228b57;
+  transition: background-color 0.2s;
+}
+
+.disclaimer-button:disabled {
+  background-color: #969696;
+  cursor: not-allowed;
+}
+
+/* ---------- Responsive Anpassungen ---------- */
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+    .disclaimer-wrapper{
+        padding-bottom: 8rem;
+    }
+  .disclaimer-title {
+    font-size: 1.5rem;
+  }
+
+  .disclaimer-content {
+    font-size: 0.95rem;
+  }
+
+  .disclaimer-button {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+
+  }
+}
+
+/* Tablet (577px–991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+    .disclaimer-wrapper{
+        max-width: 700px;
+    }
+  .disclaimer-title {
+    font-size: 1.9rem;
+  }
+
+  .disclaimer-content {
+    font-size: 1.05rem;
+  }
+
+  .disclaimer-button {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop (992px–1399px) */
+@media (min-width: 992px) and (max-width: 1399px) {
+    .disclaimer-wrapper{
+        max-width: 800px;
+    }
+  .disclaimer-title {
+    font-size: 2.1rem;
+  }
+
+  .disclaimer-content {
+    font-size: 1.15rem;
+  }
+
+  .disclaimer-button {
+    font-size: 1.2rem;
+  }
+}
+
+/* Große Desktops (ab 1400px) */
+@media (min-width: 1400px) {
+  .disclaimer-title {
+    font-size: 2.4rem;
+  }
+
+  .disclaimer-content {
+    font-size: 1.25rem;
+  }
+
+  .disclaimer-button {
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+  }
+}

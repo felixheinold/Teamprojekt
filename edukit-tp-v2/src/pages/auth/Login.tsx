@@ -18,6 +18,8 @@ const Login = () => {
     password: "",
   });
 
+  const [showPassword, setShowPassword] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -124,14 +126,33 @@ const Login = () => {
             pattern=".+@student.kit.edu"
             title={t("login.kitOnly")}
           />
-          <input
-            name="password"
-            type="password"
-            className="form-control mb-3"
-            placeholder={t("login.password")}
-            onChange={handleChange}
-            required
-          />
+
+          {/* Passwortfeld mit Sichtbarkeitstoggle */}
+          <div className="position-relative mb-3">
+            <input
+              name="password"
+              type={showPassword ? "text" : "password"}
+              className="form-control"
+              placeholder={t("login.password")}
+              onChange={handleChange}
+              required
+            />
+            <span
+              onClick={() => setShowPassword(!showPassword)}
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "10px",
+                transform: "translateY(-50%)",
+                cursor: "pointer",
+                fontSize: "1.2rem",
+              }}
+              aria-label="Passwort anzeigen/verbergen"
+            >
+              {showPassword ? "↺" : "👁️‍🗨️"}
+            </span>
+          </div>
+
           <button type="submit" className="btn btn-dark w-100 mb-2">
             {t("login.button")}
           </button>

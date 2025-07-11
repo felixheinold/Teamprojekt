@@ -95,6 +95,8 @@ const MemoryRound1 = () => {
   const location = useLocation();
 
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+  const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
+  const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
   const {
     module = "",
@@ -151,7 +153,13 @@ const MemoryRound1 = () => {
     checkSound.current = new Audio("/sounds/check.mp3");
     correctSound.current = new Audio("/sounds/correct.mp3");
     wrongSound.current = new Audio("/sounds/wrong.mp3");
-  }, []);
+
+    [checkSound.current, correctSound.current, wrongSound.current].forEach(
+      (audio) => {
+        if (audio) audio.volume = volume;
+      }
+    );
+  }, [volume]);
 
   useEffect(() => {
     const startAssignments = {};
@@ -161,7 +169,8 @@ const MemoryRound1 = () => {
     setAssignments(startAssignments);
   }, [definitions]);
 
-  const isTouchDevice = () => "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  const isTouchDevice = () =>
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
   const handleTermClick = (id, isUsed) => {
     if (isUsed || submitted || !isTouchDevice()) return;
@@ -207,21 +216,20 @@ const MemoryRound1 = () => {
   };
 
   const handleSubmit = () => {
-  setSubmitted(true);
-  checkSound.current?.play();
+    setSubmitted(true);
+    if (soundEnabled) checkSound.current?.play();
 
-  const hasError = Object.entries(assignments).some(
-    ([def, term]) => !checkCorrect(def, term)
-  );
+    const hasError = Object.entries(assignments).some(
+      ([def, term]) => !checkCorrect(def, term)
+    );
 
-  setTimeout(() => {
-    if (hasError) {
-      wrongSound.current?.play();
-    } else {
-      correctSound.current?.play();
-    }
-  }, 500);
-
+    setTimeout(() => {
+      if (hasError) {
+        if (soundEnabled) wrongSound.current?.play();
+      } else {
+        if (soundEnabled) correctSound.current?.play();
+      }
+    }, 500);
   };
 
   const handleFinish = () => {
@@ -246,7 +254,10 @@ const MemoryRound1 = () => {
       {/* Cancel Button */}
       <div className="cancel-button">
         {!showCancelConfirm ? (
-          <button className="btn btn-dark" onClick={() => setShowCancelConfirm(true)}>
+          <button
+            className="btn btn-dark"
+            onClick={() => setShowCancelConfirm(true)}
+          >
             Abbrechen
           </button>
         ) : (
@@ -277,7 +288,10 @@ const MemoryRound1 = () => {
       <h1 className="memoryr1-title">🧠 Memory Runde 1</h1>
 
       {/* Paare */}
-      <div className="d-flex justify-content-between" style={{ width: "100%", maxWidth: "1000px", gap: "20px" }}>
+      <div
+        className="d-flex justify-content-between"
+        style={{ width: "100%", maxWidth: "1000px", gap: "20px" }}
+      >
         <div className="flex-grow-1 px-2">
           <h5 className="text-center fw-bold mb-3">Begriffe</h5>
           {terms.map((item, i) => {
@@ -293,9 +307,18 @@ const MemoryRound1 = () => {
                 onDragStart={() => setDraggedTerm(item.id)}
                 className="mb-3 text-center p-3 shadow-sm term-box"
                 style={{
-                  backgroundColor: isUsed ? "#d9d4e7" : isSelected ? "#e6dcf9" : "#ede7f6",
+                  backgroundColor: isUsed
+                    ? "#d9d4e7"
+                    : isSelected
+                    ? "#e6dcf9"
+                    : "#d3bfff",
                   borderRadius: "10px",
-                  cursor: isUsed || submitted ? "not-allowed" : isTouchDevice() ? "pointer" : "grab",
+                  cursor:
+                    isUsed || submitted
+                      ? "not-allowed"
+                      : isTouchDevice()
+                      ? "pointer"
+                      : "grab",
                   opacity: isUsed ? 0.5 : 1,
                   height: "60px",
                   fontWeight: "bold",

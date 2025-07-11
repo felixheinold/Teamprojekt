@@ -1,7 +1,7 @@
 import { useAppFlow } from "../../context/AppFlowContext";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Minigames.css";
 
@@ -14,12 +14,52 @@ const Minigames = () => {
   const [showChoiceModal, setShowChoiceModal] = useState(false);
   const [postponedCount, setPostponedCount] = useState(0);
 
+  const [isPostponedMode, setIsPostponedMode] = useState(false);
+  const [postponedQuestions, setPostponedQuestions] = useState<any[]>([]);
+
   const [selectedGame, setSelectedGame] = useState<null | {
     name: string;
     route: string;
   }>(null);
   const [questionCount, setQuestionCount] = useState(10);
   const [timeLimit, setTimeLimit] = useState(15);
+  const [progressMap, setProgressMap] = useState<Record<string, number>>({});
+  const [totalCounts, setTotalCounts] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    const progress = JSON.parse(localStorage.getItem("progress") || "{}");
+    const progressMap: Record<string, number> = {};
+    const totalCounts: Record<string, number> = {};
+
+    const categories = ["quiz", "gapfill", "memory"];
+
+    categories.forEach((category) => {
+      const correctData =
+        category === "memory"
+          ? progress?.memory?.[selectedModule] || {}
+          : progress?.[`${category}Correct`]?.[selectedModule] || {};
+
+      const totalData =
+        category === "memory"
+          ? progress?.memoryTotal?.[selectedModule] || {}
+          : progress?.[`${category}Total`]?.[selectedModule] || {};
+
+      Object.keys({ ...correctData, ...totalData }).forEach((chapterKey) => {
+        const correct = Array.isArray(correctData[chapterKey])
+          ? correctData[chapterKey].length
+          : 0;
+        const total = Array.isArray(totalData[chapterKey])
+          ? totalData[chapterKey].length
+          : 0;
+        const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+        progressMap[`${category}_${chapterKey}`] = percent;
+        totalCounts[`${category}_${chapterKey}`] = total;
+      });
+    });
+
+    setProgressMap(progressMap);
+    setTotalCounts(totalCounts);
+  }, [selectedModule]);
 
   const fullInfo = selectedChapter?.trim() || "";
   const hasMultiSubjects =
@@ -65,9 +105,9 @@ const Minigames = () => {
     let key = "";
 
     if (game.route === "/quiz") {
-      key = `postponed_${selectedModule}_${selectedChapter}`;
+      key = `postponed_${selectedModule}_${fullInfo}`;
     } else if (game.route === "/gapfill") {
-      key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
+      key = `postponed_gapfill_${selectedModule}_${fullInfo}`;
     }
 
     if (key) {
@@ -82,67 +122,93 @@ const Minigames = () => {
       }
     }
 
-    // keine zurückgestellten → direkt starten
     setSelectedGame(game);
     setShowModal(true);
   };
 
   const handleStart = () => {
     if (!selectedGame) return;
-    navigate(selectedGame.route, {
-      state: {
-        module: selectedModule,
-        subject: hasMultiSubjects
-          ? fullInfo.split(" Kapitel")[0]
-          : selectedModule,
-        chapter: fullInfo,
-        questionCount,
-        timeLimit,
-      },
-    });
+
+    if (isPostponedMode && postponedQuestions.length > 0) {
+      navigate(selectedGame.route, {
+        state: {
+          module: selectedModule,
+          chapter: selectedChapter,
+          questions: postponedQuestions.slice(0, questionCount),
+          questionCount,
+          timeLimit,
+          fromPostponed: true,
+        },
+      });
+    } else {
+      navigate(selectedGame.route, {
+        state: {
+          module: selectedModule,
+          subject: hasMultiSubjects
+            ? fullInfo.split(" Kapitel")[0]
+            : selectedModule,
+          chapter: fullInfo,
+          questionCount,
+          timeLimit,
+        },
+      });
+    }
   };
 
   const handlePostponedStart = () => {
     const key = `postponed_${selectedModule}_${selectedChapter}`;
     const questions = JSON.parse(localStorage.getItem(key) || "[]");
-
     if (!questions.length) return;
 
-    const shuffled = shuffleArray(questions);
-
-    navigate("/quiz", {
-      state: {
-        module: selectedModule,
-        chapter: selectedChapter,
-        questions: shuffled,
-        questionCount: shuffled.length,
-        timeLimit: 20,
-        fromPostponed: true,
-      },
-    });
+    setSelectedGame({ name: "Quiz", route: "/quiz" });
+    setPostponedQuestions(shuffleArray(questions));
+    setIsPostponedMode(true);
+    setShowChoiceModal(false);
+    setShowModal(true);
   };
 
   const handleGapFillPostponedStart = () => {
     const key = `postponed_gapfill_${selectedModule}_${selectedChapter}`;
     const questions = JSON.parse(localStorage.getItem(key) || "[]");
-
     if (!questions.length) return;
 
-    const shuffled = shuffleArray(questions);
-
-    navigate("/gapfill", {
-      state: {
-        module: selectedModule,
-        chapter: selectedChapter,
-        questions: shuffled,
-        questionCount: shuffled.length,
-        timeLimit: 30,
-        fromPostponed: true,
-      },
-    });
+    setSelectedGame({ name: "GapFill", route: "/gapfill" });
+    setPostponedQuestions(shuffleArray(questions));
+    setIsPostponedMode(true);
+    setShowChoiceModal(false);
+    setShowModal(true);
   };
 
   const isMemory = selectedGame?.route === "/memory";
+  const category = isMemory
+    ? "memory"
+    : selectedGame?.route === "/gapfill"
+    ? "gapfill"
+    : "quiz";
+  const totalAvailable = totalCounts[`${category}_${selectedChapter}`] || 0;
+
+  const questionOptions = (() => {
+    if (isPostponedMode && postponedQuestions.length > 0) {
+      return Array.from({ length: postponedQuestions.length }, (_, i) => i + 1);
+    }
+
+    if (totalAvailable === 0) {
+      // Fallback: Standardauswahl bei unbekannter Totalanzahl
+      return isMemory
+        ? Array.from({ length: 11 }, (_, i) => i + 5) // 5–15
+        : Array.from({ length: 10 }, (_, i) => (i + 1) * 2); // 2–20
+    }
+
+    return isMemory
+      ? Array.from(
+          { length: Math.max(0, Math.min(15, totalAvailable) - 4) },
+          (_, i) => i + 5
+        )
+      : Array.from(
+          { length: Math.floor(Math.min(30, totalAvailable) / 2) },
+          (_, i) => (i + 1) * 2
+        );
+  })();
 
   return (
     <div className="minigames-wrapper container py-4 d-flex flex-column align-items-center">
@@ -159,20 +225,26 @@ const Minigames = () => {
       </h1>
 
       <div className="d-flex flex-wrap justify-content-center gap-4">
-        {games.map((game, i) => (
-          <motion.div
-            key={i}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
-            onClick={() => handleGameClick(game)}
-            className="game-card text-center rounded shadow"
-            style={{ backgroundColor: game.color }}
-          >
-            <img src={game.icon} alt={game.name} className="game-icon" />
-            <div className="fw-semibold game-card-title">{game.name}</div>
-          </motion.div>
-        ))}
+        {games.map((game, i) => {
+          const progressKey = `${game.id}_${selectedChapter}`;
+          const percent = progressMap[progressKey] || 0;
+
+          return (
+            <motion.div
+              key={i}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
+              onClick={() => handleGameClick(game)}
+              className="game-card text-center rounded shadow"
+              style={{ backgroundColor: game.color }}
+            >
+              <img src={game.icon} alt={game.name} className="game-icon" />
+              <div className="fw-semibold game-card-title">{game.name}</div>
+              <div className="fw-normal game-card-percentage">{percent}%</div>
+            </motion.div>
+          );
+        })}
       </div>
 
       {showChoiceModal && selectedGame && (
@@ -202,6 +274,7 @@ const Minigames = () => {
                   className="btn btn-success"
                   onClick={() => {
                     setShowChoiceModal(false);
+                    setIsPostponedMode(false);
                     setShowModal(true);
                   }}
                 >
@@ -226,10 +299,11 @@ const Minigames = () => {
             <div className="modal-gradient"></div>
             <div className="p-4 flex-grow-1">
               <h5 className="fw-bold text-success mb-3 text-center">
-                {t("minigames.modal.title")}
+                {isPostponedMode
+                  ? t("minigames.modal.titlePostponed")
+                  : t("minigames.modal.title")}
               </h5>
 
-              {/* Question Count */}
               <div className="position-relative mb-3">
                 <label className="form-label mb-1">
                   {isMemory
@@ -241,10 +315,7 @@ const Minigames = () => {
                   onChange={(e) => setQuestionCount(parseInt(e.target.value))}
                   className="form-select"
                 >
-                  {(isMemory
-                    ? Array.from({ length: 11 }, (_, i) => i + 5)
-                    : Array.from({ length: 10 }, (_, i) => (i + 1) * 2)
-                  ).map((val) => (
+                  {questionOptions.map((val) => (
                     <option key={val} value={val}>
                       {val}
                     </option>
@@ -252,7 +323,6 @@ const Minigames = () => {
                 </select>
               </div>
 
-              {/* Time Limit */}
               <label className="form-label mb-1">
                 {t("minigames.modal.timePerQuestion")}
               </label>
@@ -273,7 +343,6 @@ const Minigames = () => {
                 </select>
               </div>
 
-              {/* Buttons */}
               <div className="d-flex justify-content-between mt-3">
                 <button
                   onClick={() => setShowModal(false)}

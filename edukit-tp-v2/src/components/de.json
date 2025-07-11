@@ -22,7 +22,8 @@
     "darkMode": "Dark Mode aktivieren",
     "language": "Sprache",
     "saved": "Einstellungen gespeichert",
-    "guestNotice": "Du bist aktuell nicht angemeldet. Einige Einstellungen werden nicht dauerhaft gespeichert."
+    "guestNotice": "Du bist aktuell nicht angemeldet. Einige Einstellungen werden nicht dauerhaft gespeichert.",
+    "disableSound": "Soundeffekte deaktivieren"
   },
   "home": {
     "welcome": "Willkommen bei",
@@ -64,6 +65,7 @@
     "gapfill": "Lückentext",
     "modal": {
       "title": "Mini-Game starten",
+      "titlePostponed": "Zurückgestellte Fragen spielen",
       "questions": "Fragen:",
       "pairs": "Paare:",
       "timePerQuestion": "Zeitlimit pro Frage:",
@@ -183,11 +185,20 @@
     "email": "KIT-Studenten-E-Mail",
     "emailPlaceholder": "u....@student.kit.edu",
     "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen",
+    "passwordMismatch": "Passwörter stimmen nicht überein.",
     "button": "Registrieren",
     "back": "← Zurück",
     "error": "Registrierung fehlgeschlagen.",
     "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
-    "unknownError": "Etwas ist schiefgelaufen."
+    "unknownError": "Etwas ist schiefgelaufen.",
+  "infoHeadline": "Registrierung erfolgreich!",
+  "infoText1": "In den nächsten Minuten erhältst du eine E-Mail an deine KIT-Mailadresse.",
+  "infoText2": "Bitte bestätige deine E-Mail-Adresse über den Link in der Nachricht.",
+  "infoText3": "Falls du keine Mail bekommst, prüfe deinen Spam-Ordner. Eine erneute Mail kann angefordert werden.",
+  "continueAfterInfo": "Weiter zur Startseite"
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",
