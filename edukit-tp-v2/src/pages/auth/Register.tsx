@@ -4,12 +4,14 @@ import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import AvatarPicker from "../../components/AvatarPicker";
 import { useTranslation } from "react-i18next";
+import { AuthHandlingService } from "../../firebaseData/authHandlingService";
 import "./Register.css";
 
 const Register = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
   const { t } = useTranslation();
+  const authHandlingService = new AuthHandlingService();
 
   const [form, setForm] = useState({
     username: "",
@@ -37,49 +39,27 @@ const Register = () => {
       return;
     }
 
-    const API = import.meta.env.VITE_API_BASE_URL;
-    const userId = crypto.randomUUID();
-
-    const payload = {
-      userId,
-      userName: form.username,
-      userMail: form.email,
-      userPassword: form.password,
-      userProfilePicture: form.avatar,
-      userGameInfo: {
-        highscore: 0,
-        lastGameDate: null,
-      },
-    };
-
     try {
-      const res = await fetch(`${API}/users/new-user`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const result = await res.json();
 
-      if (!res.ok) {
-        alert(result.error || t("register.error"));
-        return;
-      }
-
-      setUser({
-        userId,
-        userName: form.username,
-        userMail: form.email,
-        userProfilePicture: form.avatar,
-        userGameInfo: {
-          highscore: 0,
-          lastGameDate: null,
-        },
-      });
+       const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);
+       alert("Bitte checke deinen Mail-Eingang. Please check your mail inbox.");
+       if (await authHandlingService.checkEmailVerified(user)){
+        navigate("/home");
+       }
 
       setRegistrationInfoVisible(true); // Info anzeigen statt direkt navigieren
     } catch (err) {
       console.error("Registration error:", err);
       alert(t("register.unknownError"));
+    }
+  };
+
+
+  const anotherVerificationMail = async() =>{
+    try{
+      await authHandlingService.sendVerificationMailAgain();
+    }catch (err){
+      console.error("Verification mail error.");
     }
   };
 
@@ -121,10 +101,10 @@ const Register = () => {
                   name="email"
                   type="email"
                   className="form-control mb-2"
-                  placeholder="u....@student.kit.edu"
+                  placeholder="u....@student.kit.edu / ...kit.edu"
                   onChange={handleChange}
                   required
-                  pattern=".+@student.kit.edu"
+                  pattern=".+@(student\.kit\.edu|kit\.edu)"
                   title={t("login.kitOnly")}
                 />
 
@@ -183,6 +163,9 @@ const Register = () => {
                 <button type="submit" className="btn btn-dark w-100">
                   {t("register.button")}
                 </button>
+                 <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+                  <span>{t("login.anotherMail")}</span>
+                </a>
               </form>
             </>
           ) : (
@@ -207,3 +190,4 @@ const Register = () => {
 };
 
 export default Register;
+

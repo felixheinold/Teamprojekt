@@ -168,14 +168,13 @@ const MemoryRound2 = () => {
           </div>
         )}
       </div>
-
       {/* Modul & Kapitelanzeige */}
       <div className="memory-header">{module}</div>
       <div className="memory-subheader">{chapter}</div>
-
+ 
       {/* Titel */}
       <h1 className="memoryr2-title">🧠 Memory Runde 2</h1>
-
+ 
       {/* Statusleiste */}
       <div className="statusbar">
         <div>
@@ -184,7 +183,6 @@ const MemoryRound2 = () => {
         <div>Züge: {turn - 1}</div>
         <div>⏳ {timer}s</div>
       </div>
-
       {/* Spielfeld */}
       <div className="memory-grid">
         {cards.map((card) => {
@@ -198,7 +196,7 @@ const MemoryRound2 = () => {
               : isFlipped && flipped.length === 2 && feedback === "wrong"
               ? "#dc3545"
               : baseColor;
-
+ 
           return (
             <motion.div
               key={card.id}
@@ -219,7 +217,7 @@ const MemoryRound2 = () => {
           );
         })}
       </div>
-
+ 
       {/* Legende */}
       <div className="d-flex gap-3 mt-2">
         <div
@@ -235,7 +233,6 @@ const MemoryRound2 = () => {
           = Definition
         </div>
       </div>
-
       {/* Spiel beenden */}
       {allMatched && (
         <motion.button
@@ -267,5 +264,6 @@ const MemoryRound2 = () => {
     </div>
   );
 };
-
+ 
 export default MemoryRound2;
+ 

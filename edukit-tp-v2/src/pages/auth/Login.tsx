@@ -2,13 +2,16 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
+import { AuthHandlingService } from "../../firebaseData/authHandlingService";
 import { useTranslation } from "react-i18next";
-import "./Login.css";
+import "./Login.css"; // NEU: CSS importieren
 
 const Login = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
-  const { t } = useTranslation();
+  const {t} = useTranslation();
+
+    const authHandlingService = new AuthHandlingService();
 
   const [form, setForm] = useState({
     email: "",
@@ -23,49 +26,35 @@ const Login = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const API = import.meta.env.VITE_API_BASE_URL;
 
     try {
-      const res = await fetch(`${API}/auth/login`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: form.email,
-          password: form.password,
-        }),
-      });
-
-      const result = await res.json();
-
-      if (!res.ok) {
-        alert(result.error || t("login.error"));
-        return;
+      const user = await authHandlingService.login(form.email, form.password)
+      if (await authHandlingService.checkEmailVerified(user)){
+        navigate("/home");
       }
 
-      const user = result.user;
-      const token = result.token;
-
-      if (!user) {
-        alert(t("login.noUserData"));
-        return;
-      }
-
-      setUser({
-        userId: user.userId,
-        userName: user.userName,
-        userMail: user.userMail,
-        userProfilePicture: user.userProfilePicture,
-        userGameInfo: user.userGameInfo || { highscore: 0, lastGameDate: null },
-      });
-
-      if (token) {
-        localStorage.setItem("token", token);
-      }
-
-      navigate("/home");
     } catch (err) {
       console.error("Login error:", err);
       alert(t("login.unknownError"));
+    }
+  };
+
+
+  const handleForgottenPassword = async () => {
+    try {
+      await authHandlingService.sendResetPasswordEmail(form.email);
+      alert("Bitte checke deinen Mail-Eingang. Please check your mail inbox.");
+      navigate("/reset-password");
+    } catch (err){
+      console.error("Reset password error: ", err);
+    }
+  };
+
+  const anotherVerificationMail = async() =>{
+    try{
+      await authHandlingService.sendVerificationMailAgain();
+    }catch (err){
+      console.error("Verification mail error.")
     }
   };
 
@@ -125,9 +114,12 @@ const Login = () => {
           <button type="submit" className="btn btn-dark w-100 mb-2">
             {t("login.button")}
           </button>
-
-          <a href="#" className="text-muted small">
+          <a href="#" className="text-muted small" onClick = {handleForgottenPassword}>
             {t("login.forgotPassword")}
+          </a>
+          <p></p>
+           <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+            <span>{t("login.anotherMail")}</span>
           </a>
         </form>
       </div>
