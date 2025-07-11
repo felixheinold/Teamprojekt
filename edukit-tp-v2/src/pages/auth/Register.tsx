@@ -87,9 +87,13 @@ const Register = () => {
        }
 
       setRegistrationInfoVisible(true); // Info anzeigen statt direkt navigieren
-    } catch (err) {
-      console.error("Registration error:", err);
+    } catch (err: any) {
+      if (err.code === "wrong mail address format"){
+        alert(t("register.invalidEmailFormat"));
+      }else {
+         console.error("Registration error:", err);
       alert(t("register.unknownError"));
+      }
     }
   };
 
@@ -202,6 +206,9 @@ const Register = () => {
                 <button type="submit" className="btn btn-dark w-100">
                   {t("register.button")}
                 </button>
+                <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+                  <span>{t("login.anotherMail")}</span>
+                </a>  
               </form>
             </>
           ) : (
@@ -217,9 +224,6 @@ const Register = () => {
               >
                 {t("register.continueAfterInfo")}
               </button>
-              <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
-                <span>{t("login.anotherMail")}</span>
-              </a>  
             </div>
           )}
         </div>

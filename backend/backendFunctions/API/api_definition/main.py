@@ -15,8 +15,8 @@ api.include_router(statistics.router)
 allowed_origins_for_api_requests = [
 "https://www.edukit-tp.me",
 "https://edukit-tp.me",
-"https://edukit-tp.web.app"
-"https://edukit-tp.firebaseapp.com"
+"https://edukit-tp.web.app",
+"https://edukit-tp.firebaseapp.com",
 ]
 
 api.add_middleware(

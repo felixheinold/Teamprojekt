@@ -183,6 +183,7 @@
     "chooseAvatar": "Wähle deinen Avatar:",
     "username": "Benutzername",
     "email": "KIT-Studenten-E-Mail",
+    "invalidEmailFormat": "Nur Mail-Adressen der Form 'uxxxx@student.kit.edu' oder '**name**@kit.edu' sind zulässig!",
     "emailPlaceholder": "u....@student.kit.edu",
     "password": "Passwort",
     "confirmPassword": "Passwort bestätigen",
@@ -199,7 +200,7 @@
   "infoText2": "Bitte bestätige deine E-Mail-Adresse über den Link in der Nachricht.",
   "infoText3": "Falls du keine Mail bekommst, prüfe deinen Spam-Ordner. Eine erneute Mail kann angefordert werden.",
   "continueAfterInfo": "Weiter zur Startseite",
-  "checkInbox": "Bitte überprüfe deinen Posteingang."
+  "checkInbox": "Bitte überprüfe deinen Posteingang. Es könnte einige Minuten dauern."
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",

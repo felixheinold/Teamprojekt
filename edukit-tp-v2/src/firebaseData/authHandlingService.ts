@@ -13,13 +13,16 @@ import {
 import { AuthPopupError } from "./firebaseDataModels";
 import { AuthAPICallsService } from "./authAPICallsService";
 import { useUser } from "../context/UserContext";
+import { useTranslation } from "react-i18next";
 
 export class AuthHandlingService {
 
  authAPICallsService: AuthAPICallsService 
+   t = useTranslation();
   constructor(){
     this.authAPICallsService = new AuthAPICallsService();
   }
+  
 /********************************************************* */
 //Registrierung mit Username, Mail-Adresse und Passwort
 /********************************************************* */
@@ -27,7 +30,7 @@ export class AuthHandlingService {
   async newRegistration(username: string, email: string, password: string, picture: string){
 
       if(!email.endsWith("kit.edu")){
-      throw new AuthPopupError("Nur Mail-Adressen der Form 'uxxxx@student.kit.edu' oder **name**@kit.edu sind zulässig! Only mail adresses like 'uxxxx@student.kit.edu' or  **name**@kit.edu are valid!");
+      throw new AuthPopupError("wrong mail address format");
       }
   // 1. Registierung und E-Mail-Versand
       try{
@@ -119,6 +122,8 @@ async deleteAccount() {
         alert("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
         throw new AuthPopupError("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
       }
+      console.log("Im authHandling Service login Funktion");
+      console.log(userCredential.user.emailVerified);
       setFirebaseUser(userCredential.user);
       return userCredential.user; 
     }
