@@ -73,7 +73,7 @@ const MemoryRound2 = () => {
     const t = setInterval(() => {
       setTimer((prev) => {
         if (prev <= 1) {
-          resetFlips();
+          resetFlipsFromTimeout();
           return timeLimit;
         }
         return prev - 1;
@@ -99,7 +99,6 @@ const MemoryRound2 = () => {
       if (firstCard.pairId === card.pairId && firstCard.type !== card.type) {
         setFeedback("correct");
 
-        // Speichern der korrekt beantworteten ID
         const statsKey = "userStats";
         const gameKey = "memory";
         const stored = localStorage.getItem(statsKey);
@@ -118,20 +117,27 @@ const MemoryRound2 = () => {
         setTimeout(() => {
           setMatched((prev) => [...prev, ...newFlipped]);
           setFeedback(null);
-          resetFlips();
+          resetFlipsFromUser();
         }, 1000);
       } else {
         if (soundEnabled) wrongSound.current?.play();
         setFeedback("wrong");
         setTimeout(() => {
           setFeedback(null);
-          resetFlips();
+          resetFlipsFromUser();
         }, 3000);
       }
     }
   };
 
-  const resetFlips = () => {
+  const resetFlipsFromTimeout = () => {
+    setFlipped([]);
+    setTimer(timeLimit);
+    setDisabled(false);
+    setTurn((prev) => prev + 0.5);
+  };
+
+  const resetFlipsFromUser = () => {
     setFlipped([]);
     setTimer(timeLimit);
     setDisabled(false);
@@ -172,7 +178,7 @@ const MemoryRound2 = () => {
       </div>
 
       {/* Modul & Kapitelanzeige */}
-      <div className="memory-header">{module}</div>
+      <div className="memory-header">{t(`modules.${module}`)}</div>
       <div className="memory-subheader">{chapter}</div>
 
       {/* Titel */}

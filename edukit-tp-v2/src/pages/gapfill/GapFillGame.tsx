@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./GapFillGame.css";
 import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 type Question = {
   id: string;
@@ -75,13 +76,23 @@ const exampleQuestions: Question[] = [
   },
 ];
 
+const shuffle = <T,>(array: T[]): T[] =>
+  [...array].sort(() => Math.random() - 0.5);
+
 const GapFillGame = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const [isPostponed, setIsPostponed] = useState(false);
   const [correctIds, setCorrectIds] = useState<string[]>([]);
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [allChapterQuestions, setAllChapterQuestions] = useState<Question[]>(
+    []
+  );
+  const [loading, setLoading] = useState(true);
+
   const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
   const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
@@ -94,13 +105,7 @@ const GapFillGame = () => {
     questions: incomingQuestions,
   } = location.state || {};
 
-  const allIds = incomingQuestions?.length
-    ? incomingQuestions.map((q: Question) => q.id)
-    : exampleQuestions.map((q: Question) => q.id);
-
   const postponedKey = `postponed_gapfill_${module}_${chapter}`;
-
-  const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState("");
   const [score, setScore] = useState(0);
@@ -120,21 +125,53 @@ const GapFillGame = () => {
     if (wrongSound.current) wrongSound.current.volume = volume;
   }, [volume]);
 
-  useEffect(() => {
-    if (incomingQuestions?.length) {
-      setQuestions(incomingQuestions);
-    } else {
-      const repeated: Question[] = [];
-      while (repeated.length < questionCount) {
-        const shuffled = [...exampleQuestions].sort(() => Math.random() - 0.5);
-        repeated.push(...shuffled);
-      }
-      setQuestions(repeated.slice(0, questionCount));
+  const loadGapfillQuestions = async (): Promise<Question[]> => {
+    const moduleKey = module?.toLowerCase();
+    const match = chapter?.match(/Kapitel (\d+)/i);
+    const chapterKey = match ? `k${match[1]}` : null;
+    const langKey = i18n.language.startsWith("de") ? "de" : "en";
+
+    if (!moduleKey || !chapterKey) {
+      console.warn(
+        "Fehlerhafte Modul- oder Kapitelzuordnung:",
+        moduleKey,
+        chapterKey
+      );
+      return exampleQuestions;
     }
-  }, [questionCount, incomingQuestions]);
+
+    const path = `/questions/gapfill/${moduleKey}_${chapterKey}_${langKey}.json`;
+    console.log("Lade Pfad:", path);
+
+    try {
+      const res = await fetch(path);
+      if (!res.ok) throw new Error("Datei nicht gefunden");
+      return await res.json();
+    } catch (error) {
+      console.warn("Fragen nicht gefunden, fallback zu exampleQuestions");
+      return exampleQuestions;
+    }
+  };
 
   useEffect(() => {
-    if (currentIndex >= questions.length || showFeedback !== null) return;
+    if (!incomingQuestions?.length) {
+      loadGapfillQuestions().then((data) => {
+        setAllChapterQuestions(data);
+        setQuestions(shuffle(data).slice(0, questionCount));
+        setLoading(false);
+      });
+    } else {
+      setAllChapterQuestions(incomingQuestions);
+      setQuestions(
+        shuffle(incomingQuestions as Question[]).slice(0, questionCount)
+      );
+      setLoading(false);
+    }
+  }, [module, chapter, questionCount]);
+
+  useEffect(() => {
+    if (currentIndex >= questions.length || showFeedback !== null || loading)
+      return;
 
     const interval = setInterval(() => {
       setTimer((prev) => {
@@ -148,7 +185,7 @@ const GapFillGame = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, timeLimit, questions.length, showFeedback]);
+  }, [currentIndex, timeLimit, showFeedback, loading]);
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
@@ -164,14 +201,11 @@ const GapFillGame = () => {
       (q: Question) => q.sentence === questions[currentIndex].sentence
     );
 
-    let updated;
-    if (alreadySaved) {
-      updated = stored.filter(
-        (q: Question) => q.sentence !== questions[currentIndex].sentence
-      );
-    } else {
-      updated = [...stored, questions[currentIndex]];
-    }
+    const updated = alreadySaved
+      ? stored.filter(
+          (q: Question) => q.sentence !== questions[currentIndex].sentence
+        )
+      : [...stored, questions[currentIndex]];
 
     localStorage.setItem(postponedKey, JSON.stringify(updated));
     setIsPostponed(!alreadySaved);
@@ -223,6 +257,17 @@ const GapFillGame = () => {
   };
 
   const current = questions[currentIndex];
+  const allIds = allChapterQuestions.map((q) => q.id);
+  const isCorrect = showFeedback === "correct";
+  const isWrong = showFeedback === "wrong";
+
+  if (loading || !current) {
+    return (
+      <div className="gapfill-wrapper">
+        <div className="gapfill-status">{t("gapfillgame.loading")}</div>
+      </div>
+    );
+  }
 
   if (currentIndex >= questions.length) {
     navigate("/gapfillresult", {
@@ -238,12 +283,8 @@ const GapFillGame = () => {
         allIds,
       },
     });
-
     return null;
   }
-
-  const isCorrect = showFeedback === "correct";
-  const isWrong = showFeedback === "wrong";
 
   return (
     <div className="gapfill-wrapper">
@@ -291,7 +332,7 @@ const GapFillGame = () => {
         )}
       </div>
 
-      <div className="gapfill-header">{module}</div>
+      <div className="gapfill-header">{t(`modules.${module}`)}</div>
       <div className="gapfill-subheader">{chapter}</div>
 
       <div className="gapfill-status">
@@ -320,8 +361,7 @@ const GapFillGame = () => {
 
       {isCorrect && (
         <div className="text-success fw-bold mb-2">
-          {" "}
-          {t("gapfillgame.correct")}{" "}
+          {t("gapfillgame.correct")}
         </div>
       )}
       {isWrong && (

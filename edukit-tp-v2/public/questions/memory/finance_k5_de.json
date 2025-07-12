@@ -1,0 +1,127 @@
+[
+  {
+    "id": "finance-k5-de-m1",
+    "term": "Eigenkapital",
+    "definition": "Finanzmittel, die dem Unternehmen unbefristet von Eigentümern zur Verfügung gestellt werden."
+  },
+  {
+    "id": "finance-k5-de-m2",
+    "term": "Fremdkapital",
+    "definition": "Finanzmittel mit Rückzahlungsverpflichtung, meist verzinst und befristet."
+  },
+  {
+    "id": "finance-k5-de-m3",
+    "term": "Stammaktie",
+    "definition": "Aktie mit Stimmrecht und Recht auf Gewinnanteil."
+  },
+  {
+    "id": "finance-k5-de-m4",
+    "term": "Vorzugsaktie",
+    "definition": "Aktie mit Vorrechten, z. B. höhere Dividende, meist ohne Stimmrecht."
+  },
+  {
+    "id": "finance-k5-de-m5",
+    "term": "Dividende",
+    "definition": "Gewinnanteil, der an Aktionäre ausgeschüttet wird."
+  },
+  {
+    "id": "finance-k5-de-m6",
+    "term": "Hauptversammlung",
+    "definition": "Versammlung der Aktionäre mit Entscheidungs- und Stimmrechten."
+  },
+  {
+    "id": "finance-k5-de-m7",
+    "term": "Börsengang (IPO)",
+    "definition": "Erstmaliger Verkauf von Aktien eines Unternehmens an der Börse."
+  },
+  {
+    "id": "finance-k5-de-m8",
+    "term": "Underpricing",
+    "definition": "Phänomen, dass der Ausgabepreis einer Aktie unter dem ersten Börsenkurs liegt."
+  },
+  {
+    "id": "finance-k5-de-m9",
+    "term": "Kapitalerhöhung",
+    "definition": "Ausgabe neuer Aktien zur Beschaffung von Eigenkapital."
+  },
+  {
+    "id": "finance-k5-de-m10",
+    "term": "Bezugsrecht",
+    "definition": "Recht der Altaktionäre, junge Aktien bevorzugt zu kaufen."
+  },
+  {
+    "id": "finance-k5-de-m11",
+    "term": "Genehmigtes Kapital",
+    "definition": "Vorrat an Kapital, den der Vorstand mit Zustimmung des Aufsichtsrats ausgeben darf."
+  },
+  {
+    "id": "finance-k5-de-m12",
+    "term": "Lockup-Periode",
+    "definition": "Zeitraum nach IPO, in dem Altaktionäre keine Aktien verkaufen dürfen."
+  },
+  {
+    "id": "finance-k5-de-m13",
+    "term": "Bookbuilding",
+    "definition": "Verfahren zur Preisfindung bei der Aktienemission durch Nachfrageermittlung."
+  },
+  {
+    "id": "finance-k5-de-m14",
+    "term": "Equity Story",
+    "definition": "Darstellung der Stärken und Wachstumsstrategie eines Unternehmens vor einem IPO."
+  },
+  {
+    "id": "finance-k5-de-m15",
+    "term": "Ex-Dividende",
+    "definition": "Handel von Aktien ohne Anspruch auf die nächste Dividendenzahlung."
+  },
+  {
+    "id": "finance-k5-de-m16",
+    "term": "Cum-Dividende",
+    "definition": "Handel von Aktien mit Anspruch auf die nächste Dividendenzahlung."
+  },
+  {
+    "id": "finance-k5-de-m17",
+    "term": "Dividendenrendite",
+    "definition": "Verhältnis von Dividende zum Aktienkurs."
+  },
+  {
+    "id": "finance-k5-de-m18",
+    "term": "Dividendensignaling",
+    "definition": "Ankündigung von Dividendenänderungen als Signal für zukünftige Geschäftserwartungen."
+  },
+  {
+    "id": "finance-k5-de-m19",
+    "term": "Dividend Smoothing",
+    "definition": "Strategie zur Stabilisierung der Dividendenzahlungen über die Zeit."
+  },
+  {
+    "id": "finance-k5-de-m20",
+    "term": "Kapitalrücklage",
+    "definition": "Eigenkapitalposition, die aus Aufgeldern bei Aktienausgabe entsteht."
+  },
+  {
+    "id": "finance-k5-de-m21",
+    "term": "Nominalkapital",
+    "definition": "Im Handelsregister eingetragenes Grundkapital einer AG."
+  },
+  {
+    "id": "finance-k5-de-m22",
+    "term": "Klienteleffekt",
+    "definition": "Anpassung der Ausschüttungspolitik an die Steuerpräferenzen der Aktionäre."
+  },
+  {
+    "id": "finance-k5-de-m23",
+    "term": "Steuerarbitrage",
+    "definition": "Strategie, bei der niedrig besteuerte Investoren gezielt um den Dividendenstichtag handeln."
+  },
+  {
+    "id": "finance-k5-de-m24",
+    "term": "Langfristperformance",
+    "definition": "Aktienentwicklung in den Jahren nach einem Börsengang."
+  },
+  {
+    "id": "finance-k5-de-m25",
+    "term": "Emissionsbank",
+    "definition": "Bank, die ein Unternehmen beim Börsengang begleitet und Aktien platziert."
+  }
+]

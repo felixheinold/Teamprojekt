@@ -1,0 +1,277 @@
+[
+  {
+    "id": "production-k1-de-q1",
+    "question": "Was ist Produktion?",
+    "options": [
+      "Verkauf",
+      "Kombination von Gütern",
+      "Transport",
+      "Lagerung"
+    ],
+    "answer": "Kombination von Gütern"
+  },
+  {
+    "id": "production-k1-de-q2",
+    "question": "Was beschreibt die Wertschöpfung?",
+    "options": [
+      "Produktpreis",
+      "Verkaufskosten",
+      "Differenz zwischen Output- und Inputwert",
+      "Bruttogewinn"
+    ],
+    "answer": "Differenz zwischen Output- und Inputwert"
+  },
+  {
+    "id": "production-k1-de-q3",
+    "question": "Was gehört zu den Inputs der Produktion?",
+    "options": [
+      "Produkte",
+      "Gewinne",
+      "Materialien",
+      "Kunden"
+    ],
+    "answer": "Materialien"
+  },
+  {
+    "id": "production-k1-de-q4",
+    "question": "Was bedeutet Nachhaltigkeit?",
+    "options": [
+      "Maximaler Gewinn",
+      "Kurzfristiger Erfolg",
+      "Zukunftsfähige Entwicklung",
+      "Billige Produktion"
+    ],
+    "answer": "Zukunftsfähige Entwicklung"
+  },
+  {
+    "id": "production-k1-de-q5",
+    "question": "Was beschreibt die Logistik laut 'vier R'?",
+    "options": [
+      "Rohstoffe, Ressourcen, Regeln, Recycling",
+      "Richtiger Artikel, Ort, Zeit, Menge",
+      "Reduktion, Reaktion, Rückgabe, Rückkauf",
+      "Routen, Regeln, Ressourcen, Rotation"
+    ],
+    "answer": "Richtiger Artikel, Ort, Zeit, Menge"
+  },
+  {
+    "id": "production-k1-de-q6",
+    "question": "Was ist ein Beispiel für ein etabliertes Produktionssystem?",
+    "options": [
+      "Recyclinganlage",
+      "Traktorenfertigung",
+      "Kunststoffsortierung",
+      "Abwasserreinigung"
+    ],
+    "answer": "Traktorenfertigung"
+  },
+  {
+    "id": "production-k1-de-q7",
+    "question": "Was sind die drei Ebenen des Produktionsmanagements?",
+    "options": [
+      "Strategisch, taktisch, operativ",
+      "Lokal, regional, global",
+      "Finanziell, technisch, personell",
+      "Planung, Einkauf, Verkauf"
+    ],
+    "answer": "Strategisch, taktisch, operativ"
+  },
+  {
+    "id": "production-k1-de-q8",
+    "question": "Was ist ein Ziel der Kreislaufwirtschaft?",
+    "options": [
+      "Mehr Müll produzieren",
+      "Rohstoffe verbrennen",
+      "Wiederverwendung von Materialien",
+      "Billige Einwegprodukte"
+    ],
+    "answer": "Wiederverwendung von Materialien"
+  },
+  {
+    "id": "production-k1-de-q9",
+    "question": "Was ist ein Beispiel für ein innovatives Produktionssystem?",
+    "options": [
+      "Traktorenfertigung",
+      "Lignocellulose-Bioraffinerie",
+      "Eisenwerk",
+      "Wasserkraftanlage"
+    ],
+    "answer": "Lignocellulose-Bioraffinerie"
+  },
+  {
+    "id": "production-k1-de-q10",
+    "question": "Was bedeutet 'Throughput' in der Produktion?",
+    "options": [
+      "Lagerbestand",
+      "Produktionszeit",
+      "Durchlaufender Produktionsprozess",
+      "Versandvolumen"
+    ],
+    "answer": "Durchlaufender Produktionsprozess"
+  },
+  {
+    "id": "production-k1-de-q11",
+    "question": "Was gehört zur nachhaltigen Wertschöpfung?",
+    "options": [
+      "Einwegverpackung",
+      "Rohstoffgewinnung, Nutzung, End-of-Life",
+      "Minimalpreisproduktion",
+      "Geplante Obsoleszenz"
+    ],
+    "answer": "Rohstoffgewinnung, Nutzung, End-of-Life"
+  },
+  {
+    "id": "production-k1-de-q12",
+    "question": "Welcher Bereich gehört zum produzierenden Gewerbe?",
+    "options": [
+      "Marketing",
+      "Energieversorgung",
+      "Beratung",
+      "Bankwesen"
+    ],
+    "answer": "Energieversorgung"
+  },
+  {
+    "id": "production-k1-de-q13",
+    "question": "Was beschreibt das Triple-Bottom-Line-Konzept?",
+    "options": [
+      "Umsatz, Gewinn, Steuern",
+      "Ökonomie, Ökologie, Soziales",
+      "Produktion, Logistik, Verkauf",
+      "Input, Output, Feedback"
+    ],
+    "answer": "Ökonomie, Ökologie, Soziales"
+  },
+  {
+    "id": "production-k1-de-q14",
+    "question": "Was ist ein Beispiel für Kuppelproduktion?",
+    "options": [
+      "Gemüseanbau",
+      "Stahlerzeugung",
+      "Autoimport",
+      "Energiehandel"
+    ],
+    "answer": "Stahlerzeugung"
+  },
+  {
+    "id": "production-k1-de-q15",
+    "question": "Was ist der Zweck von Produktionsplanung?",
+    "options": [
+      "Erhöhung des Absatzes",
+      "Optimale Ressourcennutzung",
+      "Kundenbindung",
+      "Designentwicklung"
+    ],
+    "answer": "Optimale Ressourcennutzung"
+  },
+  {
+    "id": "production-k1-de-q16",
+    "question": "Wofür steht BTL im bioliq-Prozess?",
+    "options": [
+      "Back to Logistics",
+      "Biomass to Liquid",
+      "Batch Time Logistics",
+      "Basic Transport Line"
+    ],
+    "answer": "Biomass to Liquid"
+  },
+  {
+    "id": "production-k1-de-q17",
+    "question": "Was bedeutet Remanufacturing?",
+    "options": [
+      "Verkauf gebrauchter Produkte",
+      "Wiederaufbereitung von Altteilen",
+      "Reklamationsbearbeitung",
+      "Neuproduktion"
+    ],
+    "answer": "Wiederaufbereitung von Altteilen"
+  },
+  {
+    "id": "production-k1-de-q18",
+    "question": "Was beschreibt ein Reverse-Logistik-System?",
+    "options": [
+      "Materialfluss zum Kunden",
+      "Rückfluss von Produkten und Materialien",
+      "Just-in-Time-Produktion",
+      "Lieferplanung"
+    ],
+    "answer": "Rückfluss von Produkten und Materialien"
+  },
+  {
+    "id": "production-k1-de-q19",
+    "question": "Was zeigt die Supply Chain Planning-Matrix?",
+    "options": [
+      "Zahlungsströme",
+      "Produktlebenszyklen",
+      "Planungsebenen über Funktionsbereiche hinweg",
+      "Nachfrageprognosen"
+    ],
+    "answer": "Planungsebenen über Funktionsbereiche hinweg"
+  },
+  {
+    "id": "production-k1-de-q20",
+    "question": "Was ist ein Ziel von Eco-Industrial Parks?",
+    "options": [
+      "Geringe Mitarbeitermotivation",
+      "Isolation von Prozessen",
+      "Reduktion von Emissionen",
+      "Verschärfte Regeln"
+    ],
+    "answer": "Reduktion von Emissionen"
+  },
+  {
+    "id": "production-k1-de-q21",
+    "question": "Was gehört zum operativen Produktionsmanagement?",
+    "options": [
+      "Produktstrategie",
+      "Losgrößenplanung",
+      "Standortwahl",
+      "Technologiebewertung"
+    ],
+    "answer": "Losgrößenplanung"
+  },
+  {
+    "id": "production-k1-de-q22",
+    "question": "Was bedeutet 'Prosperity' in der Nachhaltigkeit?",
+    "options": [
+      "Gewinn",
+      "Umweltschutz",
+      "Menschenrechte",
+      "Soziale Gerechtigkeit"
+    ],
+    "answer": "Gewinn"
+  },
+  {
+    "id": "production-k1-de-q23",
+    "question": "Was ist eine Herausforderung in der Produktion?",
+    "options": [
+      "Weniger Kunden",
+      "Digitalisierung",
+      "Stromüberschuss",
+      "Kostenlose Rohstoffe"
+    ],
+    "answer": "Digitalisierung"
+  },
+  {
+    "id": "production-k1-de-q24",
+    "question": "Was ist ein Ziel des European Green Deal?",
+    "options": [
+      "Mehr Kohleförderung",
+      "Treibhausgasneutralität",
+      "Weniger Recycling",
+      "Wachstumsstopp"
+    ],
+    "answer": "Treibhausgasneutralität"
+  },
+  {
+    "id": "production-k1-de-q25",
+    "question": "Was ist ein Beispiel für nachhaltige Nutzung?",
+    "options": [
+      "Verkleben von Elektronik",
+      "Sharing von Mobilitätsdiensten",
+      "Wechselstromerzeugung",
+      "Kohleverstromung"
+    ],
+    "answer": "Sharing von Mobilitätsdiensten"
+  }
+]

@@ -213,7 +213,7 @@ const Minigames = () => {
   return (
     <div className="minigames-wrapper container py-4 d-flex flex-column align-items-center">
       <div className="modules-label btn btn-success btn-lg rounded-pill text-center d-flex justify-content-center align-items-center gap-2">
-        {selectedModule}
+        {t(`modules.${selectedModule}`)}
       </div>
 
       <div className="chapter-label btn btn-lg text-center mt-3">

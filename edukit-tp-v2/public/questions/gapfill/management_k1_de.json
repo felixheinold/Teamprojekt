@@ -1,0 +1,127 @@
+[
+  {
+    "id": "management-k1-de-g1",
+    "sentence": "Zu den sachbezogenen Managementfunktionen zählen Planung, Organisation und ___.",
+    "answer": "Kontrolle"
+  },
+  {
+    "id": "management-k1-de-g2",
+    "sentence": "Die ___ ist eine personenbezogene Managementfunktion.",
+    "answer": "Personalführung"
+  },
+  {
+    "id": "management-k1-de-g3",
+    "sentence": "Das ökonomische Prinzip fordert die Optimierung des Verhältnisses von Output zu ___.",
+    "answer": "Input"
+  },
+  {
+    "id": "management-k1-de-g4",
+    "sentence": "Führungsentscheidungen sind nicht ___, sie müssen von der Unternehmensleitung selbst getroffen werden.",
+    "answer": "delegierbar"
+  },
+  {
+    "id": "management-k1-de-g5",
+    "sentence": "Das Handlungsstrukturmodell unterscheidet zwischen Zielen, Maßnahmen und ___.",
+    "answer": "Wirkungen"
+  },
+  {
+    "id": "management-k1-de-g6",
+    "sentence": "Der Shareholder-Ansatz zielt auf die Maximierung des ___ für Eigentümer ab.",
+    "answer": "Unternehmenswerts"
+  },
+  {
+    "id": "management-k1-de-g7",
+    "sentence": "Im Stakeholder-Ansatz sollen alle ___ berücksichtigt werden.",
+    "answer": "Anspruchsgruppen"
+  },
+  {
+    "id": "management-k1-de-g8",
+    "sentence": "Zu den Stakeholdern gehören Mitarbeiter, Kunden und ___.",
+    "answer": "Lieferanten"
+  },
+  {
+    "id": "management-k1-de-g9",
+    "sentence": "Ein Beispiel für eine Erfolgskennzahl im Shareholder Value ist die ___.",
+    "answer": "Gesamtkapitalrendite"
+  },
+  {
+    "id": "management-k1-de-g10",
+    "sentence": "Bei Entscheidung unter Risiko kennt der Entscheider die ___.",
+    "answer": "Wahrscheinlichkeiten"
+  },
+  {
+    "id": "management-k1-de-g11",
+    "sentence": "Bei Entscheidung unter Ungewissheit kennt der Entscheider keine ___.",
+    "answer": "Wahrscheinlichkeiten"
+  },
+  {
+    "id": "management-k1-de-g12",
+    "sentence": "Die ___-Regel berücksichtigt sowohl Erwartungswert als auch Risiko.",
+    "answer": "(μ,σ)"
+  },
+  {
+    "id": "management-k1-de-g13",
+    "sentence": "Das additive Modell wird auch als ___-Modell bezeichnet.",
+    "answer": "Nutzwertanalyse"
+  },
+  {
+    "id": "management-k1-de-g14",
+    "sentence": "Für das additive Modell müssen die Ziele vollständig, redundanzfrei und ___ sein.",
+    "answer": "präferenzunabhängig"
+  },
+  {
+    "id": "management-k1-de-g15",
+    "sentence": "Das ___-Prinzip berücksichtigt einen Optimismusparameter α.",
+    "answer": "Hurwicz"
+  },
+  {
+    "id": "management-k1-de-g16",
+    "sentence": "Das ___-Spiel ist ein klassisches Beispiel zur Verdeutlichung des Erwartungswertproblems.",
+    "answer": "Petersburg"
+  },
+  {
+    "id": "management-k1-de-g17",
+    "sentence": "Bei der Maximin-Regel wird der ___ mögliche Wert einer Alternative betrachtet.",
+    "answer": "schlechteste"
+  },
+  {
+    "id": "management-k1-de-g18",
+    "sentence": "Das Ziel des Shareholder Value ist die Maximierung des ___.",
+    "answer": "Vermögens"
+  },
+  {
+    "id": "management-k1-de-g19",
+    "sentence": "Die Laplace-Regel geht von ___ Wahrscheinlichkeiten für Umweltzustände aus.",
+    "answer": "gleichen"
+  },
+  {
+    "id": "management-k1-de-g20",
+    "sentence": "Das additive Modell berechnet den Gesamtnutzen als gewichtete Summe der ___.",
+    "answer": "Zielerreichungen"
+  },
+  {
+    "id": "management-k1-de-g21",
+    "sentence": "Ein Problem des additiven Modells ist der sogenannte ___-Effekt.",
+    "answer": "Bandbreiten"
+  },
+  {
+    "id": "management-k1-de-g22",
+    "sentence": "Eine typische Entscheidungsregel bei Risiko ist die ___-Regel.",
+    "answer": "μ"
+  },
+  {
+    "id": "management-k1-de-g23",
+    "sentence": "Im Shareholder-Ansatz ist der ___ ein Indikator für den Unternehmenswert.",
+    "answer": "Aktienkurs"
+  },
+  {
+    "id": "management-k1-de-g24",
+    "sentence": "Entscheidungen mit mehreren Zielen erfordern oft ein ___ Vorgehen.",
+    "answer": "multikriterielles"
+  },
+  {
+    "id": "management-k1-de-g25",
+    "sentence": "Fayol und ___ gelten als Begründer klassischer Managementfunktionen.",
+    "answer": "Gutenberg"
+  }
+]
