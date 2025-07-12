@@ -71,11 +71,13 @@ justify-content: center;
 .cancel-confirm-text {
   white-space: nowrap;
   color: white;
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 0.4rem 0.8rem;
-  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+body.bg-dark .cancel-confirm-text {
+  background-color: inherit;
 }
 
 .cancel-confirm-buttons {
@@ -139,8 +141,9 @@ justify-content: center;
     width: 400px;
   }
 
-  .cancel-button .btn {
+ .cancel-button .btn, .cancel-confirm-text {
     font-size: 1rem;
+    padding: 0.4rem 0.9rem;
   }
 }
 
@@ -166,13 +169,18 @@ justify-content: center;
     width: 500px;
   }
 
-  .cancel-button .btn {
+  .cancel-button .btn, .cancel-confirm-text {
     font-size: 1.1rem;
+    padding: 0.45rem 1rem;
   }
 }
 
 /* Großer Desktop */
 @media (min-width: 1400px) {
+  .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+  }
   .memoryr1result-title {
     font-size: 3rem;
   }

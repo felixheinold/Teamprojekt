@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import "./MemoryRound2.css";
 
 const shuffleArray = <T,>(array: T[]): T[] =>
@@ -14,6 +15,7 @@ type Card = {
 };
 
 const MemoryRound2 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
@@ -58,13 +60,13 @@ const MemoryRound2 = () => {
   }, [pairs]);
 
   useEffect(() => {
-  correctSound.current = new Audio("/sounds/correct.mp3");
-  wrongSound.current = new Audio("/sounds/wrong.mp3");
+    correctSound.current = new Audio("/sounds/correct.mp3");
+    wrongSound.current = new Audio("/sounds/wrong.mp3");
 
-  [correctSound.current, wrongSound.current].forEach((audio) => {
-    if (audio) audio.volume = volume;
-  });
-}, [volume]);
+    [correctSound.current, wrongSound.current].forEach((audio) => {
+      if (audio) audio.volume = volume;
+    });
+  }, [volume]);
 
   useEffect(() => {
     if (disabled || matched.length === cards.length) return;
@@ -147,22 +149,22 @@ const MemoryRound2 = () => {
             className="btn btn-dark"
             onClick={() => setShowCancelConfirm(true)}
           >
-            Abbrechen
+            {t("common.cancel")}
           </button>
         ) : (
           <div className="cancel-confirm-container">
             <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+              {t("common.confirmCancel")}
             </div>
             <div className="cancel-confirm-buttons">
               <button
                 className="btn btn-secondary"
                 onClick={() => setShowCancelConfirm(false)}
               >
-                Nein
+                {t("common.no")}
               </button>
               <button className="btn btn-danger" onClick={() => navigate(-4)}>
-                Ja, zurück
+                {t("common.yesBack")}
               </button>
             </div>
           </div>
@@ -174,14 +176,17 @@ const MemoryRound2 = () => {
       <div className="memory-subheader">{chapter}</div>
 
       {/* Titel */}
-      <h1 className="memoryr2-title">🧠 Memory Runde 2</h1>
+      <h1 className="memoryr2-title"> {t("memoryround2.title")} </h1>
 
       {/* Statusleiste */}
       <div className="statusbar">
         <div>
-          {matched.length / 2} / {cards.length / 2} Paare
+          {matched.length / 2} / {cards.length / 2} {t("memoryround2.pairs")}
         </div>
-        <div>Züge: {turn - 1}</div>
+        <div>
+          {" "}
+          {t("memoryround2.plays")} {turn - 1}
+        </div>
         <div>⏳ {timer}s</div>
       </div>
 
@@ -226,13 +231,13 @@ const MemoryRound2 = () => {
           className="px-4 py-2 rounded-pill text-dark fw-semibold"
           style={{ backgroundColor: "#d3bfff" }}
         >
-          = Begriff
+          {t("memoryround2.term")}
         </div>
         <div
           className="px-4 py-2 rounded-pill text-dark fw-semibold"
           style={{ backgroundColor: "#fff59d" }}
         >
-          = Definition
+          {t("memoryround2.definition")}
         </div>
       </div>
 
@@ -261,7 +266,7 @@ const MemoryRound2 = () => {
             fontSize: "1.2rem",
           }}
         >
-          Minispiel beenden
+          {t("memoryround2.next")}
         </motion.button>
       )}
     </div>

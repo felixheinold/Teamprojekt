@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./GapFillGame.css";
+import { useTranslation } from "react-i18next";
 
 type Question = {
   id: string;
@@ -75,6 +76,7 @@ const exampleQuestions: Question[] = [
 ];
 
 const GapFillGame = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
@@ -111,12 +113,12 @@ const GapFillGame = () => {
   const wrongSound = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-  correctSound.current = new Audio("/sounds/correct.mp3");
-  wrongSound.current = new Audio("/sounds/wrong.mp3");
+    correctSound.current = new Audio("/sounds/correct.mp3");
+    wrongSound.current = new Audio("/sounds/wrong.mp3");
 
-  if (correctSound.current) correctSound.current.volume = volume;
-  if (wrongSound.current) wrongSound.current.volume = volume;
-}, [volume]);
+    if (correctSound.current) correctSound.current.volume = volume;
+    if (wrongSound.current) wrongSound.current.volume = volume;
+  }, [volume]);
 
   useEffect(() => {
     if (incomingQuestions?.length) {
@@ -252,25 +254,25 @@ const GapFillGame = () => {
               className="btn btn-dark"
               onClick={() => setShowCancelConfirm(true)}
             >
-              Abbrechen
+              {t("common.cancel")}
             </button>
           ) : (
             <div className="cancel-confirm-container">
               <div className="cancel-confirm-text">
-                Möchtest du wirklich abbrechen?
+                {t("common.confirmCancel")}
               </div>
               <div className="cancel-confirm-buttons">
                 <button
                   className="btn btn-secondary btn-sm"
                   onClick={() => setShowCancelConfirm(false)}
                 >
-                  Nein
+                  {t("common.no")}
                 </button>
                 <button
                   className="btn btn-danger btn-sm"
                   onClick={() => navigate(-2)}
                 >
-                  Ja, zurück
+                  {t("common.yesBack")}
                 </button>
               </div>
             </div>
@@ -283,7 +285,7 @@ const GapFillGame = () => {
               className={`btn btn-dark ${isPostponed ? "active" : ""}`}
               onClick={togglePostpone}
             >
-              {isPostponed ? "Zurückstellung aufheben" : "Frage zurückstellen"}
+              {isPostponed ? t("common.postponeRemove") : t("common.postpone")}
             </button>
           </div>
         )}
@@ -294,7 +296,8 @@ const GapFillGame = () => {
 
       <div className="gapfill-status">
         <div>
-          Frage {currentIndex + 1} / {questions.length}
+          {t("gapfillgame.questionCount")} {currentIndex + 1} /{" "}
+          {questions.length}
         </div>
         <div>⏳ {timer}s</div>
       </div>
@@ -311,16 +314,19 @@ const GapFillGame = () => {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder="Begriff eingeben..."
+        placeholder={t("gapfillgame.placeholder")}
         disabled={showFeedback !== null}
       />
 
       {isCorrect && (
-        <div className="text-success fw-bold mb-2">✅ Richtig!</div>
+        <div className="text-success fw-bold mb-2">
+          {" "}
+          {t("gapfillgame.correct")}{" "}
+        </div>
       )}
       {isWrong && (
         <div className="text-danger fw-bold mb-2">
-          ❌ Falsch! Richtige Antwort: <u>{current.answer}</u>
+          {t("gapfillgame.wrong")} <u>{current.answer}</u>
         </div>
       )}
 
@@ -331,7 +337,7 @@ const GapFillGame = () => {
         onClick={handleCheck}
         disabled={!input || showFeedback !== null}
       >
-        ✅ Antwort überprüfen
+        {t("gapfillgame.check")}
       </motion.button>
     </div>
   );

@@ -34,11 +34,13 @@
 .cancel-confirm-text {
   white-space: nowrap;
   color: white;
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 0.4rem 0.8rem;
-  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+body.bg-dark .cancel-confirm-text {
+  background-color: inherit;
 }
 
 .cancel-confirm-buttons {
@@ -127,6 +129,9 @@
   justify-content: center;
   align-items: center;
 }
+body.bg-dark .gapfill-question {
+  color: black !important;
+}
 
 .gapfill-input {
   font-size: 1.2rem;
@@ -138,6 +143,7 @@
   margin-bottom: 1.2rem;
   transition: background-color 0.3s ease;
 }
+
 
 .gapfill-input.correct {
   background-color: #198754 !important; 
@@ -205,6 +211,10 @@
     align-self: flex-start;
     margin-top: -2.2rem;
   }
+    .cancel-button .btn, .cancel-confirm-text, .postpone-button .btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+  }
   .gapfill-header,
   .gapfill-subheader,
   .gapfill-status {
@@ -235,6 +245,10 @@
     position: static;
     align-self: flex-start;
     margin-top: -2.2rem;
+  }
+     .cancel-button .btn, .cancel-confirm-text, .postpone-button .btn {
+    font-size: 1.1rem;
+    padding: 0.45rem 1rem;
   }
   .gapfill-header,
   .gapfill-subheader,
@@ -289,5 +303,9 @@
   .gapfill-status,
   .gapfill-question {
     max-width: 1000px;
+  }
+      .cancel-button .btn, .cancel-confirm-text, .postpone-button .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
   }
 }

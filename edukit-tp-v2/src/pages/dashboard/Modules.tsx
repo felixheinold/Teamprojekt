@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import UploadForm from "../../components/UploadForm"; // ⬅️ NEU
+import UploadForm from "../../components/UploadForm";
 import "./Modules.css";
 
 const Modules = () => {
@@ -57,7 +57,7 @@ const Modules = () => {
         ))}
 
         {/* Hinweis */}
-        <div className="text-muted text-center mt-3 disclaimer">
+        <div className="disclaimer text-center mt-3">
           ⚠️ {t("modules.disclaimer")}
         </div>
 

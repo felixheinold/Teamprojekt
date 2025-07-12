@@ -34,11 +34,13 @@
 .cancel-confirm-text {
   white-space: nowrap;
   color: white;
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 0.4rem 0.8rem;
-  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+body.bg-dark .cancel-confirm-text {
+  background-color: inherit;
 }
 
 .cancel-confirm-buttons {
@@ -87,6 +89,13 @@
   min-width: 100px;
   cursor: pointer;
 }
+/* Dark Mode: Begriff- und Definition-Karten mit schwarzer Schrift */
+body.bg-dark .memory-wrapper .term-box,
+body.bg-dark .memory-wrapper .definition-box,
+body.bg-dark .memory-wrapper .memory-badge {
+  color: black !important;
+}
+
 
 /* Mobil */
 @media (max-width: 576px) {
@@ -179,6 +188,10 @@
   .memoryr1-title {
     font-size: 3rem;
   }
+   .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1.1rem;
+    padding: 0.45rem 1rem;
+  }
 }
 
 /* Großer Desktop */
@@ -191,5 +204,9 @@
   }
   .memoryr1-title {
     font-size: 3.4rem;
+  }
+     .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
   }
 }

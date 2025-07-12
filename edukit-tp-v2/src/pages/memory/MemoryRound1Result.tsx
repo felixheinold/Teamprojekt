@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import "./MemoryRound1Result.css";
 
 const MemoryRound1Result = () => {
@@ -32,40 +32,44 @@ const MemoryRound1Result = () => {
             className="btn btn-dark"
             onClick={() => setShowCancelConfirm(true)}
           >
-            Abbrechen
+            {t("common.cancel")}
           </button>
         ) : (
           <div className="cancel-confirm-container">
             <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+              {t("common.confirmCancel")}
             </div>
             <div className="cancel-confirm-buttons">
               <button
                 className="btn btn-secondary btn-sm"
                 onClick={() => setShowCancelConfirm(false)}
               >
-                Nein
+                {t("common.no")}
               </button>
               <button
                 className="btn btn-danger btn-sm"
                 onClick={() => navigate(-3)}
               >
-                Ja, zurück
+                {t("common.yesBack")}
               </button>
             </div>
           </div>
         )}
       </div>
+
       <div className="result-content">
         <h1 className="memoryr1result-title">
           {passed
-            ? "🎉 Gut gemacht! Du bist für die nächste Runde vorbereitet"
-            : "🔁 Das solltest du besser nochmal üben..."}
+            ? t("memoryround1result.passed")
+            : t("memoryround1result.failed")}
         </h1>
 
         <p className="memoryr1result-subtitle">
-          Du hast <strong>{percentage}%</strong> ({correctCount} von {total})
-          richtig zugeordnet.
+          <Trans
+            i18nKey="memoryround1result.resultText"
+            values={{ percentage, correct: correctCount, total }}
+            components={{ strong: <strong /> }}
+          />
         </p>
 
         {passed ? (
@@ -81,7 +85,7 @@ const MemoryRound1Result = () => {
                 })
               }
             >
-              ➡️ Weiter zu Runde 2
+              {t("memoryround1result.next1")}
             </motion.button>
 
             <motion.button
@@ -101,7 +105,7 @@ const MemoryRound1Result = () => {
                 })
               }
             >
-              🔁 Runde 1 erneut spielen
+              {t("memoryround1result.retry1")}
             </motion.button>
           </>
         ) : (
@@ -123,7 +127,7 @@ const MemoryRound1Result = () => {
                 })
               }
             >
-              🔁 Versuche es nochmal
+              {t("memoryround1result.retry2")}
             </motion.button>
 
             <motion.button
@@ -137,7 +141,7 @@ const MemoryRound1Result = () => {
                 })
               }
             >
-              ➡️ Trotzdem weiter zu Runde 2
+              {t("memoryround1result.next2")}
             </motion.button>
           </>
         )}

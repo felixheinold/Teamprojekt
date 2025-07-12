@@ -58,6 +58,12 @@
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  color: #6c757d;
+}
+
+/* Dark Mode */
+body.bg-dark .home-subtitle {
+  color: white;
 }
 
 .home-button {

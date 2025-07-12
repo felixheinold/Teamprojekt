@@ -1,13 +1,15 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { useAppFlow } from "./context/AppFlowContext";
+import { useTranslation } from "react-i18next";
 import UserDropdown from "./components/UserDropdown";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-import "./Layout.css"; // Layout.css wird verwendet für Schriftgrößen & Abstände
+import "./Layout.css";
 
 const Layout = () => {
   const { selectedModule, selectedChapter } = useAppFlow();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -33,7 +35,7 @@ const Layout = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
               <li className="nav-item">
                 <Link to="/modules" className="nav-link">
-                  Module
+                  {t("layout.modules")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -48,7 +50,7 @@ const Layout = () => {
                     !selectedModule ? "text-muted disabled" : ""
                   }`}
                 >
-                  Kapitel
+                  {t("layout.chapters")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -65,7 +67,7 @@ const Layout = () => {
                     !selectedChapter ? "text-muted disabled" : ""
                   }`}
                 >
-                  Minigames
+                  {t("layout.minigames")}
                 </Link>
               </li>
             </ul>

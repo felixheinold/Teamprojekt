@@ -56,7 +56,7 @@ const Home: React.FC = () => {
               👋 {t("home.welcome")}{" "}
               <span className="text-success">EduKIT</span>
             </h1>
-            <p className="text-muted home-subtitle">{t("home.subtitle")}</p>
+            <p className="home-subtitle">{t("home.subtitle")}</p>
 
             <motion.div
               whileHover={{ scale: 1.05 }}

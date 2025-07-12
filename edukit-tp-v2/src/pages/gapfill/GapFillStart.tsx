@@ -2,11 +2,13 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./GapFillStart.css";
 
 const GapFillStart = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useTranslation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
   const { module, chapter, subject, questionCount, timeLimit, questions } =
@@ -21,25 +23,25 @@ const GapFillStart = () => {
             className="btn btn-dark"
             onClick={() => setShowCancelConfirm(true)}
           >
-            Abbrechen
+            {t("common.cancel")}
           </button>
         ) : (
           <div className="cancel-confirm-container">
             <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+              {t("common.confirmCancel")}
             </div>
             <div className="cancel-confirm-buttons">
               <button
                 className="btn btn-secondary btn-sm"
                 onClick={() => setShowCancelConfirm(false)}
               >
-                Nein
+                {t("common.no")}
               </button>
               <button
                 className="btn btn-danger btn-sm"
                 onClick={() => navigate(-1)}
               >
-                Ja, zurück
+                {t("common.yesBack")}
               </button>
             </div>
           </div>
@@ -48,7 +50,7 @@ const GapFillStart = () => {
 
       {/* Überschrift mit Icon */}
       <div className="gap-title-container">
-        <h1 className="gap-title">LÜCKENTEXT</h1>
+        <h1 className="gap-title">{t("gapfillstart.title")}</h1>
         <img
           src="/images/fillgap.png"
           alt="Gapfill Icon"
@@ -58,7 +60,7 @@ const GapFillStart = () => {
 
       {/* Tutorial-Box */}
       <div className="gaptutorial-box">
-        <div className="gaptutorial-text">🎥 Video Tutorial anschauen:</div>
+        <div className="gaptutorial-text">🎥 {t("gapfillstart.tutorial")}</div>
       </div>
 
       {/* Tutorial Video */}
@@ -88,7 +90,7 @@ const GapFillStart = () => {
           }}
           className="gapstart-button"
         >
-          Direkt zum Lückentext starten
+          {t("gapfillstart.start")}
         </Link>
       </motion.div>
     </div>

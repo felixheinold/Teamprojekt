@@ -3,8 +3,17 @@
     "save": "Speichern",
     "edit": "Bearbeiten",
     "cancel": "Abbrechen",
+    "no": "Nein",
+    "yesBack": "Ja, zurück",
+    "confirmCancel": "Möchtest du wirklich abbrechen?",
     "start": "Start",
-    "back": "Zurück"
+    "back": "Zurück",
+    "postpone": "Frage zurückstellen",
+    "postponeRemove": "Zurückstellung aufheben",
+     "congrats": "🎉 Super, du hast es geschafft!",
+  "playAgain": "Kapitel erneut spielen",
+  "backToMinigames": "Zurück zur Minigame Auswahl",
+  "backToModules": "Zurück zur Modul-Auswahl"
   },
   "user": {
     "title": "Mein Account",
@@ -39,14 +48,7 @@
     "planning": "Integrierte Produktionsplanung",
     "economics2": "Volkswirtschaftslehre 2",
     "economics1": "Volkswirtschaftslehre 1",
-    "uploadTitle": "📤 PDF hochladen",
-    "selectModule": "Modulvorlesung wählen",
-    "selectChapter": "Kapitel wählen",
-    "selectFile": "PDF auswählen",
-    "uploadButton": "Hochladen",
-    "uploadMissing": "Bitte Modul, Kapitel und Datei auswählen.",
-    "uploadSuccess": "PDF erfolgreich hochgeladen!",
-    "disclaimer": "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."
+    "disclaimer": "Hinweis: Die bereitgestellten Vorlesungsunterlagen können veraltet sein."
   },
   "chapters": {
     "selectSubchapter": "Wähle ein Kapitel",
@@ -243,7 +245,78 @@
     "selectSubject": "Vorlesung wählen",
     "selectChapter": "Kapitel wählen",
     "submit": "Datei hochladen",
-    "missing": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
-    "success": "PDF erfolgreich hochgeladen!"
-  }
+    "missingFields": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
+    "success": "PDF erfolgreich hochgeladen!",
+    "selectFile": "Datei auswählen",
+    "noFileSelected": "Keine Datei ausgewählt",
+    "removeFile": "Datei entfernen"
+    
+  },
+  "layout": {
+  "modules": "Module",
+  "chapters": "Kapitel",
+  "minigames": "Minigames"
+},
+"quizstart": {
+    "title": "QUIZ",
+    "tutorial": "Video Tutorial anschauen:",
+    "start": "Direkt zum Quiz starten"
+  },
+"quizgame": {
+  "questionCount": "Frage ",
+  "next": "Nächste Frage",
+  "finish": "Minispiel beenden"
+  },
+  "quizresult": {
+  "scoreText": "Du hast <strong>{{score}}</strong> Punkte gewonnen"
+},
+  "memorystart": {
+    "title": "MEMORY",
+    "tutorial": "Video Tutorial anschauen:",
+    "start": "Direkt zum Memory starten"
+  },
+  "memoryround1": {
+   "title": "🧠 Memory Runde 1",
+   "terms": "Begriffe",
+   "definitions": "Definitionen",
+   "check": "Überprüfe Antworten",
+    "next": "Runde 1 beenden"
+  },
+  "memoryround1result": {
+    "passed": "🎉 Gut gemacht! Du bist für die nächste Runde vorbereitet",
+    "failed": "🔁 Das solltest du besser nochmal üben...",
+    "resultText": "Du hast <strong>{{percentage}}%</strong> ({{correct}} von {{total}}) richtig zugeordnet.",
+    "next1": "➡️ Weiter zu Runde 2",
+    "next2": "➡️ Trotzdem weiter zu Runde 2",
+    "retry1": "🔁 Runde 1 erneut spielen",
+    "retry2": "🔁 Versuche es nochmal"
+  },
+  "memoryround2": {
+    "title": "🧠 Memory Runde 2",
+    "pairs": "Paare",
+    "plays": "Züge: ",
+    "term": "= Begriff",
+    "definition": "= Definition",
+    "next": "Minispiel beenden"
+  },
+"memoryround2result": {
+  "pairsScored": "Du hast <strong>{{count}}</strong> Paare in <strong>{{turns}}</strong> Zügen richtig zugeordnet.",
+  "scoreText": "Dafür erhältst du <strong>{{score}}</strong> Punkte."
+},
+  "gapfillstart": {
+    "title": "LÜCKENTEXT",
+    "tutorial": "Video Tutorial anschauen:",
+    "start": "Direkt zum Lückentext starten"
+  },
+  "gapfillgame": {
+    "questionCount": "Frage ",
+    "placeholder": "Begriff eingeben...",
+    "correct": "✅ Richtig!",
+    "wrong": "❌ Falsch! Richtige Antwort: ",
+    "check": "✅ Antwort überprüfen"
+  },
+  "gapfillresult": {
+  "scoreText": "Du hast <strong>{{score}}</strong> Punkte gewonnen"
+}
+
 }

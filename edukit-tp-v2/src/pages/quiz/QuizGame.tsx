@@ -1,9 +1,11 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import "./QuizGame.css";
 
 const QuizGame = () => {
+  const { t } = useTranslation();
   type QuizQuestion = {
     id: string;
     question: string;
@@ -15,7 +17,7 @@ const QuizGame = () => {
   const location = useLocation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
-const volume = Number(localStorage.getItem("volume") || "50") / 100;
+  const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
   const {
     module,
@@ -130,12 +132,12 @@ const volume = Number(localStorage.getItem("volume") || "50") / 100;
   const postponedKey = `postponed_${module}_${chapter}`;
 
   useEffect(() => {
-  correctSound.current = new Audio("/sounds/correct.mp3");
-  wrongSound.current = new Audio("/sounds/wrong.mp3");
+    correctSound.current = new Audio("/sounds/correct.mp3");
+    wrongSound.current = new Audio("/sounds/wrong.mp3");
 
-  if (correctSound.current) correctSound.current.volume = volume;
-  if (wrongSound.current) wrongSound.current.volume = volume;
-}, [volume]);
+    if (correctSound.current) correctSound.current.volume = volume;
+    if (wrongSound.current) wrongSound.current.volume = volume;
+  }, [volume]);
 
   useEffect(() => {
     if (showFeedback) return;
@@ -243,25 +245,25 @@ const volume = Number(localStorage.getItem("volume") || "50") / 100;
               className="btn btn-dark"
               onClick={() => setShowCancelConfirm(true)}
             >
-              Abbrechen
+              {t("common.cancel")}
             </button>
           ) : (
             <div className="cancel-confirm-container">
               <div className="cancel-confirm-text">
-                Möchtest du wirklich abbrechen?
+                {t("common.confirmCancel")}
               </div>
               <div className="cancel-confirm-buttons">
                 <button
                   className="btn btn-secondary btn-sm"
                   onClick={() => setShowCancelConfirm(false)}
                 >
-                  Nein
+                  {t("common.no")}
                 </button>
                 <button
                   className="btn btn-danger btn-sm"
                   onClick={() => navigate(-2)}
                 >
-                  Ja, zurück
+                  {t("common.yesBack")}
                 </button>
               </div>
             </div>
@@ -274,7 +276,7 @@ const volume = Number(localStorage.getItem("volume") || "50") / 100;
               className={`btn btn-dark ${isPostponed ? "active" : ""}`}
               onClick={togglePostpone}
             >
-              {isPostponed ? "Zurückstellung aufheben" : "Frage zurückstellen"}
+              {isPostponed ? t("common.postponeRemove") : t("common.postpone")}
             </button>
           </div>
         )}
@@ -287,7 +289,7 @@ const volume = Number(localStorage.getItem("volume") || "50") / 100;
       {/* Status */}
       <div className="quiz-status">
         <span>
-          Frage {currentIndex + 1} / {questionCount}
+          {t("quizgame.questionCount")} {currentIndex + 1} / {questionCount}
         </span>
         <span>⏳ {timeLeft}s</span>
       </div>
@@ -328,7 +330,7 @@ const volume = Number(localStorage.getItem("volume") || "50") / 100;
         onClick={handleNext}
         disabled={!showFeedback}
       >
-        {isLastQuestion ? "Minispiel beenden" : "Nächste Frage"}
+        {isLastQuestion ? t("quizgame.finish") : t("quizgame.next")}
       </motion.button>
     </div>
   );
