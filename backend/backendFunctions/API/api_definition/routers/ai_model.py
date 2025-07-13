@@ -3,7 +3,6 @@ from pydantic import BaseModel
 from firebase import db
 from typing import Optional, Dict, List
 from google.cloud import firestore
-from google.cloud.firestore_v1 import ArrayUnion
 from enum import Enum
 import json
 
