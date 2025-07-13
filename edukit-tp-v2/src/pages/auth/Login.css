@@ -16,17 +16,22 @@
   margin-bottom: 2rem;
 }
 
- body.bg-dark .loginback-button, .body.bg-dark.login-button {
+ body.bg-dark .loginback-button, body.bg-dark .login-button {
   background-color: #2c2c2c; 
   color: #ffffff; 
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
+
 .password-forgot{
    color: #6c757d;
 }
-.body.bg-dark .password-forgot {
+body.bg-dark .password-forgot {
   color: #ffffff;
 }
+body.bg-dark .password-forgot {
+  color: #ffffff;
+}
+
 
 
 /* Mobile (≤576px) */
