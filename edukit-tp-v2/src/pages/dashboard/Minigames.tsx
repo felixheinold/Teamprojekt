@@ -1,6 +1,6 @@
 import { useAppFlow } from "../../context/AppFlowContext";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Minigames.css";
@@ -9,6 +9,8 @@ const Minigames = () => {
   const { selectedModule, selectedChapter } = useAppFlow();
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const location = useLocation();
+  const subjectKey = location.state?.subjectKey || "";
 
   const [showModal, setShowModal] = useState(false);
   const [showChoiceModal, setShowChoiceModal] = useState(false);
@@ -133,6 +135,7 @@ const Minigames = () => {
       navigate(selectedGame.route, {
         state: {
           module: selectedModule,
+          subject: subjectKey,
           chapter: selectedChapter,
           questions: postponedQuestions.slice(0, questionCount),
           questionCount,
@@ -144,9 +147,7 @@ const Minigames = () => {
       navigate(selectedGame.route, {
         state: {
           module: selectedModule,
-          subject: hasMultiSubjects
-            ? fullInfo.split(" Kapitel")[0]
-            : selectedModule,
+          subject: subjectKey,
           chapter: fullInfo,
           questionCount,
           timeLimit,

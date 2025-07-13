@@ -110,6 +110,7 @@ const MemoryRound1 = () => {
   const {
     module = "",
     chapter = "",
+    subject = "",
     questionCount = 6,
     timeLimit = 20,
   } = location.state || {};
@@ -118,17 +119,17 @@ const MemoryRound1 = () => {
 
   useEffect(() => {
     const fetchPairs = async () => {
-      const moduleKey = module?.toLowerCase();
+      const subjectKey = subject?.toLowerCase();
       const match = chapter?.match(/Kapitel (\d+)/i);
       const chapterKey = match ? `k${match[1]}` : null;
       const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-      if (!moduleKey || !chapterKey) {
+      if (!subjectKey || !chapterKey) {
         setSelectedPairs(shuffleArray(initialPairs).slice(0, questionCount));
         return;
       }
 
-      const path = `/questions/memory/${moduleKey}_${chapterKey}_${langKey}.json`;
+      const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
       try {
         const res = await fetch(path);
         if (!res.ok) throw new Error("Datei nicht gefunden");

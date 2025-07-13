@@ -157,6 +157,7 @@ const Chapters = () => {
 
   const moduleData = (moduleStructure[moduleName] || []).map((entry) => ({
     subject: entry.subject,
+    subjectKey: entry.subjectKey,
     chapters: generateLocalizedChapters(
       moduleName,
       entry.subjectKey,
@@ -203,7 +204,8 @@ const Chapters = () => {
                       navigate(
                         `/minigames/${moduleName}/${encodeURIComponent(
                           fullKey
-                        )}`
+                        )}`,
+                        { state: { subjectKey: entry.subjectKey } }
                       );
                     }}
                     className="btn btn-lg shadow w-100 chapter-button"

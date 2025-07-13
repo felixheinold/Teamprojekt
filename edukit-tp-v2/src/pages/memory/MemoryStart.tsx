@@ -65,7 +65,7 @@ const MemoryStart = () => {
       {/* Video */}
       <div className="memorytutorial-video">
         <iframe
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          src="https://www.youtube.com/embed/qB-byrsIKdo"
           title="YouTube Video Tutorial"
           allowFullScreen
         ></iframe>

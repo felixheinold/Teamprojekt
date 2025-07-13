@@ -127,14 +127,14 @@ const GapFillGame = () => {
   }, [volume]);
 
   const loadGapfillQuestions = async (): Promise<Question[]> => {
-    const moduleKey = module?.toLowerCase();
+    const subjectKey = subject?.toLowerCase();
     const match = chapter?.match(/Kapitel (\d+)/i);
     const chapterKey = match ? `k${match[1]}` : null;
     const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-    if (!moduleKey || !chapterKey) return exampleQuestions;
+    if (!subjectKey || !chapterKey) return exampleQuestions;
 
-    const path = `/questions/gapfill/${moduleKey}_${chapterKey}_${langKey}.json`;
+    const path = `/questions/gapfill/${subjectKey}_${chapterKey}_${langKey}.json`;
 
     try {
       const res = await fetch(path);

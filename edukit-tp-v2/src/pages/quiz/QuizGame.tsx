@@ -22,6 +22,7 @@ const QuizGame = () => {
 
   const {
     module,
+    subject,
     chapter,
     questionCount = 2,
     timeLimit = 20,
@@ -114,21 +115,21 @@ const QuizGame = () => {
     [...array].sort(() => Math.random() - 0.5);
 
   const loadQuizQuestions = async (): Promise<QuizQuestion[]> => {
-    const moduleKey = module?.toLowerCase();
+    const subjectKey = subject?.toLowerCase();
     const match = chapter?.match(/Kapitel (\d+)/i);
     const chapterKey = match ? `k${match[1]}` : null;
     const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-    if (!moduleKey || !chapterKey) {
+    if (!subjectKey || !chapterKey) {
       console.warn(
-        "Fehlerhafte Modul- oder Kapitelzuordnung:",
-        moduleKey,
+        "Fehlerhafte Fach- oder Kapitelzuordnung:",
+        subjectKey,
         chapterKey
       );
       return sampleQuestions;
     }
 
-    const path = `/questions/quiz/${moduleKey}_${chapterKey}_${langKey}.json`;
+    const path = `/questions/quiz/${subjectKey}_${chapterKey}_${langKey}.json`;
     console.log("Lade Pfad:", path);
 
     try {
