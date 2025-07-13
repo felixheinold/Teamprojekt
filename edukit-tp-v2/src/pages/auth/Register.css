@@ -43,6 +43,12 @@ body.bg-dark .registerback-button, body.bg-dark .register-button {
   margin-bottom: 0.75rem;
   line-height: 1.5;
 }
+.next-mail{
+  color: #6c757d;
+}
+body.bg-dark .next-mail{
+  color: #ffffff;
+}
 
 /* Mobile (≤576px) */
 @media (max-width: 576px) {

@@ -5,9 +5,14 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./Chapters.css";
 
-const generateChapters = (count: number, t: any) =>
-  Array.from({ length: count }, (_, i) => ({
-    title: `${t("chapters.chapter")} ${i + 1} – ${t("chapters.topic")}`,
+const generateLocalizedChapters = (
+  module: string,
+  subjectKey: string,
+  chapterCount: number,
+  t: any
+) =>
+  Array.from({ length: chapterCount }, (_, i) => ({
+    title: t(`chapters.${module}.${subjectKey}.k${i + 1}`),
   }));
 
 const Chapters = () => {
@@ -84,48 +89,83 @@ const Chapters = () => {
     finance: "💰",
     management: "📊",
     planning: "🏭",
-    economics2: "📉",
-    economics1: "📈",
+    brand: "🏷️",
   };
 
-  const moduleData: Record<
+  const moduleStructure: Record<
     string,
-    { subject: string; chapters: { title: string }[] }[]
+    { subjectKey: string; subject: string; chapterCount: number }[]
   > = {
     production: [
-      { subject: t("subjects.production"), chapters: generateChapters(5, t) },
-      { subject: t("subjects.logistics"), chapters: generateChapters(5, t) },
-      { subject: t("subjects.energy"), chapters: generateChapters(5, t) },
+      {
+        subjectKey: "production",
+        subject: t("subjects.production"),
+        chapterCount: 3,
+      },
+      {
+        subjectKey: "logistics",
+        subject: t("subjects.logistics"),
+        chapterCount: 3,
+      },
+      { subjectKey: "energy", subject: t("subjects.energy"), chapterCount: 3 },
+      {
+        subjectKey: "informatics",
+        subject: t("subjects.informatics"),
+        chapterCount: 9,
+      },
     ],
     finance: [
-      { subject: t("subjects.finance"), chapters: generateChapters(5, t) },
-      { subject: t("subjects.accounting"), chapters: generateChapters(5, t) },
-      { subject: t("subjects.balance"), chapters: generateChapters(5, t) },
+      {
+        subjectKey: "finance",
+        subject: t("subjects.finance"),
+        chapterCount: 5,
+      },
+      {
+        subjectKey: "accounting",
+        subject: t("subjects.accounting"),
+        chapterCount: 6,
+      },
+      {
+        subjectKey: "balance",
+        subject: t("subjects.balance"),
+        chapterCount: 6,
+      },
     ],
     management: [
-      { subject: t("subjects.management"), chapters: generateChapters(5, t) },
       {
-        subject: t("subjects.entrepreneurship"),
-        chapters: generateChapters(5, t),
+        subjectKey: "management",
+        subject: t("subjects.management"),
+        chapterCount: 4,
       },
-      { subject: t("subjects.hr"), chapters: generateChapters(5, t) },
-      { subject: t("subjects.marketing"), chapters: generateChapters(5, t) },
+      {
+        subjectKey: "marketing",
+        subject: t("subjects.marketing"),
+        chapterCount: 8,
+      },
     ],
     planning: [
       {
+        subjectKey: "planning",
         subject: t("subjects.planning"),
-        chapters: generateChapters(5, t),
+        chapterCount: 12,
       },
     ],
-    economics2: [
-      { subject: t("subjects.economics2"), chapters: generateChapters(5, t) },
-    ],
-    economics1: [
-      { subject: t("subjects.economics1"), chapters: generateChapters(5, t) },
+    brand: [
+      { subjectKey: "brand", subject: t("subjects.brand"), chapterCount: 5 },
     ],
   };
 
-  const entries = moduleData[moduleName] || [];
+  const moduleData = (moduleStructure[moduleName] || []).map((entry) => ({
+    subject: entry.subject,
+    chapters: generateLocalizedChapters(
+      moduleName,
+      entry.subjectKey,
+      entry.chapterCount,
+      t
+    ),
+  }));
+
+  const entries = moduleData;
 
   return (
     <div className="chapters-wrapper container py-4 d-flex flex-column align-items-center">

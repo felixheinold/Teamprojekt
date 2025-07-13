@@ -42,23 +42,14 @@
   },
   "modules": {
     "select": "Wähle ein Modul",
-    "production": "Produktion und Logistik",
+    "production": "Produktion, Logistik und Wirtschaftsinformatik",
     "finance": "Finanzierung und Rechnungswesen",
     "management": "Management und Marketing",
     "planning": "Integrierte Produktionsplanung",
+    "brand": "Brand Management",
     "economics2": "Volkswirtschaftslehre 2",
     "economics1": "Volkswirtschaftslehre 1",
     "disclaimer": "Hinweis: Die bereitgestellten Vorlesungsunterlagen können veraltet sein."
-  },
-  "chapters": {
-    "selectSubchapter": "Wähle ein Kapitel",
-    "chapter": "Kapitel",
-    "topic": "Thema",
-    "learnAll": "Alle Kapitel üben",
-    "allChapters": "Alle Kapitel",
-    "chapter1": "Kapitel 1 – Einführung",
-    "chapter2": "Kapitel 2 – Grundlagen",
-    "chapter3": "Kapitel 3 – Vertiefung"
   },
   "minigames": {
     "select": "Wähle ein Mini-Game",
@@ -104,6 +95,7 @@
     "production": "Produktion",
     "logistics": "Logistik",
     "energy": "Energiewirtschaft",
+    "informatics": "Wirtschaftsinformatik",
     "finance": "Finanzierung",
     "accounting": "Rechnungswesen",
     "balance": "Jahresabschluss und Bewertung",
@@ -112,6 +104,7 @@
     "hr": "HR-Management",
     "marketing": "Marketing",
     "planning": "Integrierte Produktionsplanung",
+    "brand": "Brand Management",
     "economics1": "Volkswirtschaftslehre 1",
     "economics2": "Volkswirtschaftslehre 2"
   },
@@ -177,8 +170,9 @@
     "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
     "error": "Login fehlgeschlagen.",
     "noUserData": "Benutzerdaten fehlen in der Antwort.",
-    "unknownError": "Etwas ist schiefgelaufen.", 
-    "anotherMail": "Eine erneute Verifikations-Email senden."
+    "unknownError": "Etwas ist schiefgelaufen.",
+    "anotherMail": "Eine erneute Verifikations-Mail senden"
+
   },
   "register": {
     "title": "Erstelle einen Account",
@@ -318,6 +312,113 @@
   },
   "gapfillresult": {
   "scoreText": "Du hast <strong>{{score}}</strong> Punkte gewonnen"
-}
+},
+ "chapters": {
+    "selectSubchapter": "Wähle ein Kapitel",
+    "chapter": "Kapitel",
+    "topic": "Thema",
+    "learnAll": "Alle Kapitel üben",
+    "allChapters": "Alle Kapitel",
+    
+  "planning": {
+    "planning": {
+      "k1": "Kapitel 1 – Grundlagen, Geschichte, zeitliche Entwicklung",
+      "k2": "Kapitel 2 – Integrierte Produktionsplanung und durchgängiges digitales Engineering",
+      "k3": "Kapitel 3 – Prinzipien Ganzheitlicher Produktionssysteme und Weiterentwicklung mit I4.0",
+      "k4": "Kapitel 4 – Systematik der Fabrikplanung",
+      "k5": "Kapitel 5 – Zielfestlegung",
+      "k6": "Kapitel 6 – Datenerhebenung und -analyse",
+      "k7": "Kapitel 7 – Konzeptplanung: Strukturentwicklung, -dimensionierung und Groblayout",
+      "k8": "Kapitel 8 – Detailplanung",
+      "k9": "Kapitel 9 – Teilfertigung: Konzept- und Detailplanung",
+      "k10": "Kapitel 10 – Montage: Konzept- und Detailplanung",
+      "k11": "Kapitel 11 – Realisierungsvorbereitung und Überwachung",
+      "k12": "Kapitel 12 – Hochlauf und Serienbetreuung"
+      
+    }
+  },
+  "production": {
+    "production":{
+      "k1": "Kapitel 1 – Einführung Produktionswirtschaft und Nachhaltigkeit",
+      "k2": "Kapitel 2 – Bestandsmanagement",
+      "k3": "Kapitel 3 – Lagerhaltungsstrategien und Lieferantenauswahl"
+    },
+    "logistics": {
+      "k1": "Kapitel 1 – Einführung in die Logistik und SCM",
+      "k2": "Kapitel 2 – Logistikketten",
+      "k3": "Kapitel 3 – Scheduling"
+    },
+    "energy": {
+      "k1": "Kapitel 1 – Einführung in die Energiewirtschaft",
+      "k2": "Kapitel 2 – Transformationspfade in der Energiewirtschaft",
+      "k3": "Kapitel 3 – Energie als Produktionsfaktor"
+    },
+    "informatics":{
+      "k1": "Kapitel 1 – Einführung",
+      "k2": "Kapitel 2 – Grundbegriffe",
+      "k3": "Kapitel 3 – Gegenstandsbereich und Typiserung",
+      "k4": "Kapitel 4 – Digitalisierung und digitale Transformation",
+      "k5": "Kapitel 5 – Digitale Organisation: Integrierte IS I",
+      "k6": "Kapitel 6 – Digitale Organisation: Integrierte IS II",
+      "k7": "Kapitel 7 – KI-basierte Systeme",
+      "k8": "Kapitel 8 – Digitale Plattformen",
+      "k9": "Kapitel 9 – Interaktive Systeme"
+  }
 
+  },
+  "finance":{
+    "finance": {
+      "k1": "Kapitel 1 – Einführung in die Finanzwirtschaft",
+      "k2": "Kapitel 2 – Bewertung von Zahlungsströmen, Anleihen",
+      "k3": "Kapitel 3 – Methoden der Investitionsentscheidung",
+      "k4": "Kapitel 4 – Eigenkapitalfinanzierung, Aktien",
+      "k5": "Kapitel 5 – Portfoliotheorie"
+  },
+  "accounting": {
+      "k1": "Kapitel 1 – Grundlagen externes Rechnungswesen",
+      "k2": "Kapitel 2 – Bilanz und GuV",
+      "k3": "Kapitel 3 – Mehrdeutigkeit im externen Rechnungswesen",
+      "k4": "Kapitel 4 – Grundlagen internes Rechnungswesen",
+      "k5": "Kapitel 5 – Kostenstellenrechnung",
+      "k6": "Kapitel 6 – Kostenträgerrechnung"
+  },
+   "balance": {
+      "k1": "Kapitel 1 – Einführung und institutionelle Grundlagen",
+      "k2": "Kapitel 2 – Rechtliche Grundlagen der Bilanzierung",
+      "k3": "Kapitel 3 – Bilanzierungsgrundsätze und -vorschriften",
+      "k4": "Kapitel 4 – Bewertungsgrundsätze und -vorschriften",
+      "k5": "Kapitel 5 – Gewinn- und Verlustrechnung",
+      "k6": "Kapitel 6 – Ergänzende Instrumente"
+  }
+},
+    "management": {
+      "management":{
+      "k1": "Kapitel 1 – Führungsentscheidungen im Unternehmen",
+      "k2": "Kapitel 2 – Organisation des Unternehmens",
+      "k3": "Kapitel 3 – Grundelemente des Strategischen Managements",
+      "k4": "Kapitel 4 – Grundlagen der Corporate Governance"
+  },
+  "marketing":{
+      "k1": "Kapitel 1 – Allgemeine Grundlagen",
+      "k2": "Kapitel 2 – Marketingstrategie",
+      "k3": "Kapitel 3 – Konsumierendenverhalten",
+      "k4": "Kapitel 4 – Produktpolitik",
+      "k5": "Kapitel 5 – Preispolitik",
+      "k6": "Kapitel 6 – Kommunikationspolitik",
+      "k7": "Kapitel 7 – Vertriebspolitik",
+      "k8": "Kapitel 8 – Marketing Metrics"
+  }
+},
+"brand":{
+  "brand":{
+      "k1": "Kapitel 1 – Die Bedeutung von Marken für Konsumenten",
+      "k2": "Kapitel 2 – Entwicklung einer Markenstrategien",
+      "k3": "Kapitel 3 – Gestaltung eines Markenmarketing-Programms",
+      "k4": "Kapitel 4 – Aufbau und langfristige Erhaltung von Markenwert",
+      "k5": "Kapitel 5 – Messung der Marken-Performance"
+  }
 }
+}
+ 
+}
+  

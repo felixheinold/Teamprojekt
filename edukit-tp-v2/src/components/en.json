@@ -42,20 +42,14 @@
   },
   "modules": {
     "select": "Select a Module",
-    "production": "Production and Logistics",
+    "production": "Production, Logistics and Business Information Technology",
     "finance": "Finance and Accounting",
     "management": "Management and Marketing",
     "planning": "Integrated Production Planning",
+    "brand": "Brand Management",
     "economics2": "Economics 2",
     "economics1": "Economics 1",
     "disclaimer": "Note: The provided lecture materials may be outdated."
-  },
-  "chapters": {
-    "selectSubchapter": "Select a Chapter",
-    "chapter": "Chapter",
-    "topic": "Topic",
-    "learnAll": "Practice All Chapters",
-    "allChapters": "All Chapters"
   },
   "minigames": {
     "select": "Choose a Minigame",
@@ -101,6 +95,7 @@
     "production": "Production",
     "logistics": "Logistics",
     "energy": "Energy Economics",
+    "informatics": "Business Information Technology",
     "finance": "Finance",
     "accounting": "Accounting",
     "balance": "Annual Accounts & Valuation",
@@ -109,6 +104,7 @@
     "hr": "HR Management",
     "marketing": "Marketing",
     "planning": "Integrated Production Planning",
+    "brand": "Brand Management",
     "economics1": "Economics 1",
     "economics2": "Economics 2"
   },
@@ -175,7 +171,7 @@
     "error": "Login failed.",
     "noUserData": "User data missing in the response.",
     "unknownError": "Something went wrong.",
-    "anotherMail": "Send another verification mail."
+    "anotherMail": "Send another verification mail"
   },
   "register": {
     "title": "Create an Account",
@@ -314,6 +310,110 @@
   },
   "gapfillresult": {
   "scoreText": "You scored <strong>{{score}}</strong> points"
+},
+
+   "chapters": {
+    "selectSubchapter": "Select a Chapter",
+    "chapter": "Chapter",
+    "topic": "Topic",
+    "learnAll": "Practice All Chapters",
+    "allChapters": "All Chapters",
+    "planning": {
+      "planning": {
+        "k1": "Chapter 1 – Fundamentals, History, and Temporal Development",
+        "k2": "Chapter 2 – Integrated Production Planning and End-to-End Digital Engineering",
+        "k3": "Chapter 3 – Principles of Holistic Production Systems and Evolution with Industry 4.0",
+        "k4": "Chapter 4 – Systematics of Factory Planning",
+        "k5": "Chapter 5 – Goal Setting",
+        "k6": "Chapter 6 – Data Collection and Analysis",
+        "k7": "Chapter 7 – Concept Planning: Structure Development, Sizing, and Preliminary Layout",
+        "k8": "Chapter 8 – Detailed Planning",
+        "k9": "Chapter 9 – Component Manufacturing: Concept and Detailed Planning",
+        "k10": "Chapter 10 – Assembly: Concept and Detailed Planning",
+        "k11": "Chapter 11 – Implementation Preparation and Monitoring",
+        "k12": "Chapter 12 – Ramp-up and Series Support"
+      }
+    },
+    "production": {
+      "production": {
+        "k1": "Chapter 1 – Introduction to Production Management and Sustainability",
+        "k2": "Chapter 2 – Inventory Management",
+        "k3": "Chapter 3 – Storage Strategies and Supplier Selection"
+      },
+      "logistics": {
+        "k1": "Chapter 1 – Introduction to Logistics and SCM",
+        "k2": "Chapter 2 – Logistics Chains",
+        "k3": "Chapter 3 – Scheduling"
+      },
+      "energy": {
+        "k1": "Chapter 1 – Introduction to the Energy Industry",
+        "k2": "Chapter 2 – Transformation Pathways in the Energy Sector",
+        "k3": "Chapter 3 – Energy as a Production Factor"
+      },
+      "informatics": {
+        "k1": "Chapter 1 – Introduction",
+        "k2": "Chapter 2 – Basic Concepts",
+        "k3": "Chapter 3 – Scope and Classification",
+        "k4": "Chapter 4 – Digitalization and Digital Transformation",
+        "k5": "Chapter 5 – Digital Organization: Integrated IS I",
+        "k6": "Chapter 6 – Digital Organization: Integrated IS II",
+        "k7": "Chapter 7 – AI-based Systems",
+        "k8": "Chapter 8 – Digital Platforms",
+        "k9": "Chapter 9 – Interactive Systems"
+      }
+    },
+    "finance": {
+      "finance": {
+        "k1": "Chapter 1 – Introduction to Financial Management",
+        "k2": "Chapter 2 – Valuation of Cash Flows, Bonds",
+        "k3": "Chapter 3 – Investment Decision Methods",
+        "k4": "Chapter 4 – Equity Financing, Shares",
+        "k5": "Chapter 5 – Portfolio Theory"
+      },
+      "accounting": {
+        "k1": "Chapter 1 – Basics of External Accounting",
+        "k2": "Chapter 2 – Balance Sheet and Income Statement",
+        "k3": "Chapter 3 – Ambiguity in External Accounting",
+        "k4": "Chapter 4 – Basics of Internal Accounting",
+        "k5": "Chapter 5 – Cost Center Accounting",
+        "k6": "Chapter 6 – Cost Unit Accounting"
+      },
+      "balance": {
+        "k1": "Chapter 1 – Introduction and Institutional Foundations",
+        "k2": "Chapter 2 – Legal Foundations of Accounting",
+        "k3": "Chapter 3 – Accounting Principles and Regulations",
+        "k4": "Chapter 4 – Valuation Principles and Regulations",
+        "k5": "Chapter 5 – Profit and Loss Statement",
+        "k6": "Chapter 6 – Supplementary Instruments"
+      }
+    },
+    "management": {
+      "management": {
+        "k1": "Chapter 1 – Leadership Decisions in Companies",
+        "k2": "Chapter 2 – Corporate Organization",
+        "k3": "Chapter 3 – Core Elements of Strategic Management",
+        "k4": "Chapter 4 – Basics of Corporate Governance"
+      },
+      "marketing": {
+        "k1": "Chapter 1 – General Fundamentals",
+        "k2": "Chapter 2 – Marketing Strategy",
+        "k3": "Chapter 3 – Consumer Behavior",
+        "k4": "Chapter 4 – Product Policy",
+        "k5": "Chapter 5 – Pricing Policy",
+        "k6": "Chapter 6 – Communication Policy",
+        "k7": "Chapter 7 – Distribution Policy",
+        "k8": "Chapter 8 – Marketing Metrics"
+      }
+    },
+    "brand": {
+      "brand": {
+        "k1": "Chapter 1 – The Importance of Brands for Consumers",
+        "k2": "Chapter 2 – Developing Brand Strategies",
+        "k3": "Chapter 3 – Designing a Brand Marketing Program",
+        "k4": "Chapter 4 – Growing and Sustaining Brand Equity",
+        "k5": "Chapter 5 – Measuring Brand Performance"
+      }
+    }
+  }
 }
 
-}

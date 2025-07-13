@@ -20,8 +20,7 @@ const Modules = () => {
     { key: "finance", icon: "💰" },
     { key: "management", icon: "📈" },
     { key: "planning", icon: "🏭" },
-    { key: "economics2", icon: "📉" },
-    { key: "economics1", icon: "📈" },
+    { key: "brand", icon: "🏷️" },
   ];
 
   return (

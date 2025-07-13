@@ -40,12 +40,16 @@ const Register = () => {
     }
 
     try {
-
-       const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);
-       alert("Bitte checke deinen Mail-Eingang. Please check your mail inbox.");
-       if (await authHandlingService.checkEmailVerified(user)){
+      const user = await authHandlingService.newRegistration(
+        form.username,
+        form.email,
+        form.password,
+        form.avatar
+      );
+      alert("Bitte checke deinen Mail-Eingang. Please check your mail inbox.");
+      if (await authHandlingService.checkEmailVerified(user)) {
         navigate("/home");
-       }
+      }
 
       setRegistrationInfoVisible(true); // Info anzeigen statt direkt navigieren
     } catch (err) {
@@ -54,11 +58,10 @@ const Register = () => {
     }
   };
 
-
-  const anotherVerificationMail = async() =>{
-    try{
+  const anotherVerificationMail = async () => {
+    try {
       await authHandlingService.sendVerificationMailAgain();
-    }catch (err){
+    } catch (err) {
       console.error("Verification mail error.");
     }
   };
@@ -166,7 +169,11 @@ const Register = () => {
                 >
                   {t("register.button")}
                 </button>
-                 <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+                <a
+                  href="#"
+                  className="next-mail small"
+                  onClick={anotherVerificationMail}
+                >
                   <span>{t("login.anotherMail")}</span>
                 </a>
               </form>
@@ -193,4 +200,3 @@ const Register = () => {
 };
 
 export default Register;
-

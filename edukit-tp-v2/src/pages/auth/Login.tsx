@@ -9,9 +9,9 @@ import "./Login.css"; // NEU: CSS importieren
 const Login = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
-    const authHandlingService = new AuthHandlingService();
+  const authHandlingService = new AuthHandlingService();
 
   const [form, setForm] = useState({
     email: "",
@@ -28,33 +28,31 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const user = await authHandlingService.login(form.email, form.password)
-      if (await authHandlingService.checkEmailVerified(user)){
+      const user = await authHandlingService.login(form.email, form.password);
+      if (await authHandlingService.checkEmailVerified(user)) {
         navigate("/home");
       }
-
     } catch (err) {
       console.error("Login error:", err);
       alert(t("login.unknownError"));
     }
   };
 
-
   const handleForgottenPassword = async () => {
     try {
       await authHandlingService.sendResetPasswordEmail(form.email);
       alert("Bitte checke deinen Mail-Eingang. Please check your mail inbox.");
       navigate("/reset-password");
-    } catch (err){
+    } catch (err) {
       console.error("Reset password error: ", err);
     }
   };
 
-  const anotherVerificationMail = async() =>{
-    try{
+  const anotherVerificationMail = async () => {
+    try {
       await authHandlingService.sendVerificationMailAgain();
-    }catch (err){
-      console.error("Verification mail error.")
+    } catch (err) {
+      console.error("Verification mail error.");
     }
   };
 
@@ -117,11 +115,19 @@ const Login = () => {
           >
             {t("login.button")}
           </button>
-          <a href="#" className="text-muted small" onClick = {handleForgottenPassword}>
+          <a
+            href="#"
+            className="password-forgot small"
+            onClick={handleForgottenPassword}
+          >
             {t("login.forgotPassword")}
           </a>
           <p></p>
-           <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+          <a
+            href="#"
+            className="next-mail small"
+            onClick={anotherVerificationMail}
+          >
             <span>{t("login.anotherMail")}</span>
           </a>
         </form>
