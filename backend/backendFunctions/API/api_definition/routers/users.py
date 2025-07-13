@@ -6,7 +6,7 @@ import datetime
 
 router = APIRouter(
     prefix ="/users",
-    tags = ["Users"],
+    tags = ["users"],
 )
 
 #Datenmodell Game_Type

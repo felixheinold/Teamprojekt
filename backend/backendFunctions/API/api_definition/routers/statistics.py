@@ -3,6 +3,6 @@ from firebase import db
 
 
 router = APIRouter(
-    prefix ="/users",
-    tags = ["Users"],
+    prefix ="/statistics",
+    tags = ["statistics"],
 )
