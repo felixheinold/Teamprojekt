@@ -60,4 +60,18 @@ export class AuthAPICallsService{
 
   }
 
+////////////////////////////////////////////////////////////////////////////////////////////
+//////////////                Further API Calls in same file
+///////////////////////////////////////////////////////////////////////////////
+
+  async uploadPDFAPICall(formData: FormData){
+    const url = this.baseURL + "/ai-model/upload-pdf";
+    const res = await fetch(url, {
+        method: "POST",
+        body: formData
+      });
+      const data = await res.json();
+
+      return data;
+  }
 }

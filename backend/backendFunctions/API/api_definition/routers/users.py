@@ -48,6 +48,7 @@ class CreateUser(BaseModel):
     id: str
     email: str
     name: str
+    picture: str
 
 # Datenmodell für generisches User-Update
 class GeneralUserUpdating(BaseModel):
@@ -90,13 +91,14 @@ def get_field(user_id: str, field: str):
 @router.post("/new-user")
 async def create_user(create_user: CreateUser):
     user =  User(
-        create_user.id,
-        create_user.email,
-        create_user.name,
+        user_id=create_user.id,
+        user_mail=create_user.email,
+        user_name=create_user.name,
+        user_profile_picture=create_user.picture,
         profile_creation_date=str(datetime.utcnow().isoformat()),
         last_login_date=str(datetime.utcnow().isoformat()),
-        login_count=1,
-        total_login_time="1",
+        login_count=0,
+        total_login_time="0",
         preferred_language="de",
         preferred_theme="light",
         user_game_information=User_Game_Information(
@@ -110,7 +112,7 @@ async def create_user(create_user: CreateUser):
         )
     )
     doc_ref = db.collection("users").document(user.user_id)
-    doc_ref.set(user.model_dump_json())
+    doc_ref.set(user.model_dump())
     return {"status": "User gespeichert"}
 
 
@@ -136,7 +138,7 @@ def update_gen_game_info(user_id: str, updating: GeneralGameUserUpdating):
 
 
 #User-Spielinformationen eines spezifischen Spieltyps updaten
-@router.put ("/{user_id}/update-specific-game-info/{game_type}/")
+@router.put ("/{user_id}/update-specific-game-info/{game_type}")
 def update_spec_game_info(user_id: str, game_type: str, updating: SpecificGameUserUpdating):
     user_ref = db.collection("users").document(user_id)
     update_data = {

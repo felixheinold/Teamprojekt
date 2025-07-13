@@ -238,6 +238,7 @@
     "selectChapter": "Select chapter",
     "submit": "Upload file",
     "missing": "Please select module, lecture, chapter and a file.",
-    "success": "PDF uploaded successfully!"
+    "success": "PDF uploaded successfully!",
+    "failed": "Upload failed."
   }
 }

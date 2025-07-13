@@ -1,6 +1,7 @@
 // src/pages/dashboard/UploadForm.tsx
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { AuthAPICallsService } from "../firebaseData/authAPICallsService";
 
 const moduleData: Record<
   string,
@@ -22,17 +23,22 @@ const moduleData: Record<
 
 const UploadForm = () => {
   const { t } = useTranslation();
+  const authAPICallsService = new AuthAPICallsService()
 
   const [selectedModule, setSelectedModule] = useState("");
   const [selectedSubject, setSelectedSubject] = useState("");
   const [selectedChapter, setSelectedChapter] = useState("");
   const [file, setFile] = useState<File | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!file || !selectedModule || !selectedSubject || !selectedChapter) {
       alert(t("upload.missingFields"));
+      return;
+    }
+     if (file.type !== "application/pdf") {
+      alert("Nur PDF-Dateien erlaubt");
       return;
     }
 
@@ -49,8 +55,21 @@ const UploadForm = () => {
       file,
     });
 
-    alert(t("upload.success"));
+    try {
+      const data = await authAPICallsService.uploadPDFAPICall(formData);
+      if (data.url) {
+        alert(t("upload.success"));
+      } else {
+        alert(t("upload.failed"));
+      }
+    }catch(err){
+      console.log(err);
+      alert(t("upload.failed"));
+    }
+      
   };
+
+
 
   const subjects = moduleData[selectedModule] || [];
   const chapters = subjects.find((s) => s.subject === selectedSubject)?.chapters || [];
