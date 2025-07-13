@@ -90,7 +90,7 @@ const Register = () => {
 
         <div className="register-content">
           <button
-            className="btn btn-dark back-button align-self-start"
+            className="btn btn-dark registerback-button align-self-start"
             onClick={() => navigate("/")}
           >
             ← {t("common.back")}
@@ -180,7 +180,10 @@ const Register = () => {
                   </span>
                 </div>
 
-                <button type="submit" className="btn btn-dark w-100">
+                <button
+                  type="submit"
+                  className="btn btn-dark register-button w-100"
+                >
                   {t("register.button")}
                 </button>
               </form>

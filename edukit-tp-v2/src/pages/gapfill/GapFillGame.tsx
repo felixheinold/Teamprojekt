@@ -83,6 +83,7 @@ const GapFillGame = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  const timeoutHandledRef = useRef(false);
 
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const [isPostponed, setIsPostponed] = useState(false);
@@ -131,24 +132,15 @@ const GapFillGame = () => {
     const chapterKey = match ? `k${match[1]}` : null;
     const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-    if (!moduleKey || !chapterKey) {
-      console.warn(
-        "Fehlerhafte Modul- oder Kapitelzuordnung:",
-        moduleKey,
-        chapterKey
-      );
-      return exampleQuestions;
-    }
+    if (!moduleKey || !chapterKey) return exampleQuestions;
 
     const path = `/questions/gapfill/${moduleKey}_${chapterKey}_${langKey}.json`;
-    console.log("Lade Pfad:", path);
 
     try {
       const res = await fetch(path);
       if (!res.ok) throw new Error("Datei nicht gefunden");
       return await res.json();
-    } catch (error) {
-      console.warn("Fragen nicht gefunden, fallback zu exampleQuestions");
+    } catch {
       return exampleQuestions;
     }
   };
@@ -212,7 +204,29 @@ const GapFillGame = () => {
   };
 
   const checkOnTimeout = () => {
-    checkAnswer(input);
+    if (timeoutHandledRef.current) return;
+    timeoutHandledRef.current = true;
+    const correct = questions[currentIndex].answer.trim().toLowerCase();
+    const user = input.trim().toLowerCase();
+    const isCorrect = user === correct;
+
+    if (isCorrect) {
+      if (soundEnabled) correctSound.current?.play();
+      setScore((prev) => prev + 1);
+      setCorrectIds((prev) => [...prev, questions[currentIndex].id]);
+      setShowFeedback("correct");
+    } else {
+      if (soundEnabled) wrongSound.current?.play();
+      setShowFeedback("wrong");
+    }
+
+    setTimeout(
+      () => {
+        setShowFeedback(null);
+        handleNext();
+      },
+      isCorrect ? 1500 : 3000
+    );
   };
 
   const handleCheck = () => {
@@ -245,6 +259,7 @@ const GapFillGame = () => {
   };
 
   const handleNext = () => {
+    timeoutHandledRef.current = false;
     setInput("");
     setTimer(timeLimit);
     setCurrentIndex((prev) => prev + 1);
@@ -261,29 +276,30 @@ const GapFillGame = () => {
   const isCorrect = showFeedback === "correct";
   const isWrong = showFeedback === "wrong";
 
+  useEffect(() => {
+    if (currentIndex >= questions.length && !loading) {
+      navigate("/gapfillresult", {
+        state: {
+          module,
+          chapter,
+          subject,
+          questionCount,
+          timeLimit,
+          score,
+          correctIds,
+          questions,
+          allIds,
+        },
+      });
+    }
+  }, [currentIndex, questions.length, loading]);
+
   if (loading || !current) {
     return (
       <div className="gapfill-wrapper">
         <div className="gapfill-status">{t("gapfillgame.loading")}</div>
       </div>
     );
-  }
-
-  if (currentIndex >= questions.length) {
-    navigate("/gapfillresult", {
-      state: {
-        module,
-        chapter,
-        subject,
-        questionCount,
-        timeLimit,
-        score,
-        correctIds,
-        questions,
-        allIds,
-      },
-    });
-    return null;
   }
 
   return (
