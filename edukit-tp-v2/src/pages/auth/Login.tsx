@@ -5,6 +5,7 @@ import AuthLayout from "./AuthLayout";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
 import { useTranslation } from "react-i18next";
 import "./Login.css"; // NEU: CSS importieren
+import { AuthPopupError } from "../../firebaseData/firebaseDataModels";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -74,10 +75,14 @@ const Login = () => {
       if (await authHandlingService.checkEmailVerified(user)){
         navigate("/home");
       }
-
     } catch (err) {
-      console.error("Login error:", err);
+
+      if (err instanceof AuthPopupError){
+        alert(t("register.infoText2"));
+      }
+      else {console.error("Login error:", err);
       alert(t("login.unknownError"));
+      }
     }
   };
 

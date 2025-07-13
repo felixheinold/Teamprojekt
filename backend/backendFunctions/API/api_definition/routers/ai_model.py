@@ -42,6 +42,8 @@ class Question(BaseModel):
     type: Optional[str] = None
     language: Language
 
+#Memory Gapfill Erweiterung !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 async def firestore_refs_for_new_question (question: Question) -> any:
     ai_model_doc_ref = db.collection("ai-model")
     modul_doc_ref = ai_model_doc_ref.collection("Module").document(question.module)
@@ -120,3 +122,5 @@ async def get_question(module: Module, lecture: Lecture):
         return chapters
     else:
         return {"error: Keine Vorlesungen gefunden"}
+    
+

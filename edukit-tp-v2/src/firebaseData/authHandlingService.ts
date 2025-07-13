@@ -44,7 +44,7 @@ export class AuthHandlingService {
 
       } catch (error: any){
           if(error.code === "auth/email-already-in-use"){
-              throw new AuthPopupError("Mail-Adresse existiert bereits! \nMail address already exists!");
+              throw new AuthPopupError("Mail-Adresse existiert bereits! Mail address already exists!");
           }else {
             throw new AuthPopupError(error.code);
           }
@@ -119,7 +119,6 @@ async deleteAccount() {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       await userCredential.user.reload(); // User-Status aktualisieren
       if (!userCredential.user.emailVerified) {
-        alert("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
         throw new AuthPopupError("Bitte bestätige zuerst deine E-Mail-Adresse. Please confirm your mail address first!");
       }
       console.log("Im authHandling Service login Funktion");
@@ -128,7 +127,6 @@ async deleteAccount() {
       return userCredential.user; 
     }
    catch (error:any){
-      alert("Fehler beim Login. Error while trying to sign in.")
       throw new AuthPopupError("Fehler beim Login: " + error.code);
     }
  
