@@ -11,7 +11,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => (
       }}
     />
 
-    <div className="flex-fill bg-white p-5 d-flex flex-column justify-content-center">
+    <div className="flex-fill p-5 d-flex flex-column justify-content-center">
       <div style={{ width: "100%" }}>{children}</div>
     </div>
   </div>

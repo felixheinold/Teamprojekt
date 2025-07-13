@@ -35,13 +35,14 @@
 .cancel-confirm-text {
   white-space: nowrap;
   color: white;
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 0.4rem 0.8rem;
-  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
-
+body.bg-dark .cancel-confirm-text {
+  background-color: inherit;
+}
 
 .cancel-confirm-buttons {
   display: flex;

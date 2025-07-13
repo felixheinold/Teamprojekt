@@ -113,7 +113,7 @@ const Chapters = () => {
     ],
     planning: [
       {
-        subject: t("subjects.integratedPlanning"),
+        subject: t("subjects.planning"),
         chapters: generateChapters(5, t),
       },
     ],

@@ -34,11 +34,13 @@
 .cancel-confirm-text {
   white-space: nowrap;
   color: white;
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 0.4rem 0.8rem;
-  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+body.bg-dark .cancel-confirm-text {
+  background-color: inherit;
 }
 
 .cancel-confirm-buttons {
@@ -128,7 +130,9 @@
   justify-content: center;
   align-items: center;
 }
-
+body.bg-dark .quiz-question {
+  color: black !important
+}
 .quiz-options {
   display: flex;
   flex-wrap: wrap;
@@ -200,6 +204,10 @@ padding: 0.8rem;
     align-self: flex-start;
     margin-top: -2.2rem;
   }
+   .cancel-button .btn, .cancel-confirm-text, .postpone-button .btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+   }
   .quiz-header, .quiz-subheader, .quiz-status {
     font-size: 1rem;
   }
@@ -231,6 +239,10 @@ padding: 0.8rem;
     align-self: flex-start;
     margin-top: -2.2rem;
   }
+  .cancel-button .btn, .cancel-confirm-text, .postpone-button .btn {
+    font-size: 1.1rem;
+    padding: 0.45rem 1rem;
+  }
   .quiz-header, .quiz-subheader, .quiz-status {
     font-size: 1.1rem;
   }
@@ -261,6 +273,10 @@ padding: 0.8rem;
     position: static;
     align-self: flex-start;
     margin-top: -2.2rem;
+  }
+   .cancel-button .btn, .cancel-confirm-text, .postpone-button .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
   }
   .quiz-header, .quiz-subheader, .quiz-status {
     font-size: 1.2rem;

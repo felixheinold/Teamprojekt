@@ -1,11 +1,13 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Trans, useTranslation } from "react-i18next";
 import "./GapFillResult.css";
 
 const GapFillResult = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useTranslation();
 
   const {
     module,
@@ -44,7 +46,6 @@ const GapFillResult = () => {
     localStorage.setItem(statsKey, JSON.stringify(allStats));
     localStorage.setItem("lastPlayed", gameKey);
 
-    // 🧠 Fortschritt speichern
     const progressKey = "progress";
     const storedProgress = localStorage.getItem(progressKey);
     const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
@@ -79,9 +80,13 @@ const GapFillResult = () => {
       </div>
 
       <div className="gapresult-text">
-        <h1 className="gapresult-title">🎉 Super, du hast es geschafft!</h1>
+        <h1 className="gapresult-title">{t("common.congrats")}</h1>
         <p className="gapresult-score">
-          Du hast <strong>{score}</strong> Punkte gewonnen
+          <Trans
+            i18nKey="gapfillresult.scoreText"
+            values={{ score }}
+            components={{ strong: <strong /> }}
+          />
         </p>
 
         <div className="gapresult-buttons">
@@ -95,7 +100,7 @@ const GapFillResult = () => {
               })
             }
           >
-            🔁 Erneut spielen
+            🔁 {t("common.playAgain")}
           </motion.button>
 
           <motion.button
@@ -110,7 +115,7 @@ const GapFillResult = () => {
               )
             }
           >
-            🎮 Zurück zur Minigame Auswahl
+            🎮 {t("common.backToMinigames")}
           </motion.button>
 
           <motion.button
@@ -119,7 +124,7 @@ const GapFillResult = () => {
             className="gapresult-btn"
             onClick={() => navigate("/modules")}
           >
-            📚 Zurück zur Modul-Auswahl
+            📚 {t("common.backToModules")}
           </motion.button>
         </div>
       </div>

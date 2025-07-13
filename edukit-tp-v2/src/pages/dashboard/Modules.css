@@ -15,9 +15,17 @@
 }
 
 /* Hinweistext */
-.modules-wrapper .text-muted {
+.modules-wrapper .disclaimer {
   font-size: 0.9rem;
 }
+.disclaimer {
+  color: #6c757d;
+}
+
+body.bg-dark .disclaimer {
+  color: #ffffff;
+}
+
 
 /* Upload Card */
 .upload-card {

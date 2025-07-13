@@ -34,11 +34,13 @@
 .cancel-confirm-text {
   white-space: nowrap;
   color: white;
-  background-color: black;
+  background-color: #1e1e1e;
   padding: 0.4rem 0.8rem;
-  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+body.bg-dark .cancel-confirm-text {
+  background-color: inherit;
 }
 
 .cancel-confirm-buttons {
@@ -120,6 +122,12 @@
 .card-definition {
   font-size: 0.95rem;
 }
+body.bg-dark .memory-card,
+body.bg-dark .card-term,
+body.bg-dark .card-definition {
+  color: black !important;
+}
+
 
 /* Mobil */
 @media (max-width: 576px) {
@@ -162,11 +170,14 @@
   .card-definition {
     font-size: 0.6rem;
   }
-
 }
 
 /* Tablet */
 @media (min-width: 577px) and (max-width: 991px) {
+  .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+  }
   .memory-header,
   .memory-subheader {
     font-size: 1rem;
@@ -198,6 +209,10 @@
 
 /* Desktop */
 @media (min-width: 992px) and (max-width: 1399px) {
+   .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1.1rem;
+    padding: 0.45rem 1rem;
+  }
   .memory-header,
   .memory-subheader {
     font-size: 1rem;
@@ -229,6 +244,10 @@
 
 /* Großer Desktop */
 @media (min-width: 1400px) {
+  .cancel-button .btn, .cancel-confirm-text {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.1rem;
+  }
   .memory-header,
   .memory-subheader {
     font-size: 1.1rem;

@@ -10,11 +10,30 @@
   width: 100%;
   margin: auto;
 }
-.back-button {
+.loginback-button {
   border-radius: 0.5rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
+
+ body.bg-dark .loginback-button, body.bg-dark .login-button {
+  background-color: #2c2c2c; 
+  color: #ffffff; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.password-forgot{
+   color: #6c757d;
+}
+body.bg-dark .password-forgot {
+  color: #ffffff;
+}
+body.bg-dark .password-forgot {
+  color: #ffffff;
+}
+
+
+
 /* Mobile (≤576px) */
 @media (max-width: 576px) {
   .login-content h2 {
@@ -25,7 +44,7 @@
     font-size: 1rem;
   }
 
-  .back-button {
+  .loginback-button {
     font-size: 1rem;
     padding: 0.2rem 0.6rem;
   }
@@ -52,11 +71,11 @@
     font-size: 1.1rem;
   }
 
-  .back-button {
+  .loginback-button {
     font-size: 1.1rem;
     padding: 0.3rem 0.7rem;
   }
-
+ 
   .login-content input,
   .login-content button {
     font-size: 1.1rem;
@@ -78,7 +97,7 @@
     font-size: 1.2rem;
   }
 
-  .back-button {
+  .loginback-button {
     font-size: 1.2rem;
     padding: 0.5rem 0.9rem;
   }
@@ -104,7 +123,7 @@
     font-size: 1.3rem;
   }
 
-  .back-button {
+  .loginback-button {
     font-size: 1.3rem;
     padding: 0.5rem 1rem;
   }

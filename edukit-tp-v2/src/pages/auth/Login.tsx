@@ -62,14 +62,14 @@ const Login = () => {
     <AuthLayout>
       <div className="login-content">
         <button
-          className="btn btn-dark back-button align-self-start"
+          className="btn btn-dark loginback-button align-self-start"
           onClick={() => navigate("/")}
         >
           ← {t("common.back")}
         </button>
 
-        <h2 className="fw-bold">{t("login.title")}</h2>
-        <p className="text-muted mb-4">
+        <h2 className="login-title fw-bold">{t("login.title")}</h2>
+        <p className="login-subtitle mb-4">
           {t("login.subtitle", { app: "EduKIT" })}
         </p>
 
@@ -111,7 +111,10 @@ const Login = () => {
             </span>
           </div>
 
-          <button type="submit" className="btn btn-dark w-100 mb-2">
+          <button
+            type="submit"
+            className="btn btn-dark login-button w-100 mb-2"
+          >
             {t("login.button")}
           </button>
           <a href="#" className="text-muted small" onClick = {handleForgottenPassword}>
