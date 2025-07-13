@@ -1,26 +1,26 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useUser } from "./UserContext";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { auth } from "../firebaseData/firebaseConfig";
 
 const ProtectedRoute = () => {
-  const [verified, setVerified] = useState<boolean| null> (null);
+  const [verified, setVerified] = useState<boolean | null>(null);
 
-  useEffect(() =>{
+  useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
-    if (user){
-      await user.reload();
-      setVerified(user.emailVerified)
-    }else{
-      setVerified(false);
-    }
+      if (user) {
+        await user.reload();
+        setVerified(user.emailVerified);
+      } else {
+        setVerified(false);
+      }
     });
     return () => unsubscribe();
   }, []);
 
   if (verified === null) {
-    return <div>Loading...</div>
-  }else if(!verified){
+    return <div>Loading...</div>;
+  } else if (!verified) {
     return <Navigate to="/login" replace />;
   }
 
