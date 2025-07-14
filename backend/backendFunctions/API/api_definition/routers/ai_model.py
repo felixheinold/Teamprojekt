@@ -29,6 +29,8 @@ class GameUnit(BaseModel):
 class GameUnitUpdates(BaseModel):
     updates: Dict[str, str | None]
 
+
+
 #einen neuen Spielinhalt anlegen
 @router.post("/add-new-game-unit")
 async def new_game_unit (unit: GameUnit):
@@ -49,7 +51,7 @@ async def delete_game_unit (unit_id: str):
     return {"status: game unit deleted."}
 
 #einen Spielinhalt verändern
-@router.update("/update-game-unit/{unit_id}")
+@router.post("/update-game-unit/{unit_id}")
 async def update_game_unit(unit_id: str, guup: GameUnitUpdates):
     query = db.collection("ai-model").where("id", "==", unit_id).stream()
     docs = list(query)
