@@ -17,8 +17,7 @@ import { useTranslation } from "react-i18next";
 
 export class AuthHandlingService {
 
- authAPICallsService: AuthAPICallsService 
-   t = useTranslation();
+ authAPICallsService: AuthAPICallsService;
   constructor(){
     this.authAPICallsService = new AuthAPICallsService();
   }
@@ -114,7 +113,6 @@ async deleteAccount() {
   ********************************************** */
 
   async  login(email: string, password: string) {
-    const {setFirebaseUser} = useUser();
     try{
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       await userCredential.user.reload(); // User-Status aktualisieren
@@ -123,7 +121,6 @@ async deleteAccount() {
       }
       console.log("Im authHandling Service login Funktion");
       console.log(userCredential.user.emailVerified);
-      setFirebaseUser(userCredential.user);
       return userCredential.user; 
     }
    catch (error:any){
