@@ -14,12 +14,12 @@ if (dark) {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <UserProvider>
+    <UserProvider>
+      <BrowserRouter>
         <AppFlowProvider>
           <App />
         </AppFlowProvider>
-      </UserProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </UserProvider>
   </React.StrictMode>
 );

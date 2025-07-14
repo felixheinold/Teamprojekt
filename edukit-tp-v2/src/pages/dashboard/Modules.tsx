@@ -20,7 +20,8 @@ const Modules = () => {
     { key: "finance", icon: "💰" },
     { key: "management", icon: "📈" },
     { key: "planning", icon: "🏭" },
-    { key: "brand", icon: "🏷️" },
+    { key: "economics2", icon: "📉" },
+    { key: "economics1", icon: "📈" },
   ];
 
   return (
@@ -28,10 +29,22 @@ const Modules = () => {
       className="modules-wrapper container-fluid py-4 d-flex flex-column align-items-center"
       style={{ minHeight: "100vh" }}
     >
-      <h1 className="text-center fw-bold display-5 mb-4">
+      {/* Hauptüberschrift */}
+      <h1 className="text-center fw-bold display-5 mb-3">
         📚 {t("modules.select")}
       </h1>
 
+      {/* Scroll-Hinweis */}
+      <div className="upload-scroll-hint text-center fw-semibold text-secondary mb-2">
+        ℹ️ Scrolle nach unten, um ein PDF hochzuladen
+      </div>
+
+      {/* Veraltet-Hinweis direkt danach */}
+      <div className="text-muted text-center mb-4 disclaimer">
+        ⚠️ {t("modules.disclaimer")}
+      </div>
+
+      {/* Modulbuttons */}
       <div className="d-flex flex-column align-items-center gap-3 w-100">
         {modules.map(({ key, icon }) => (
           <motion.div
@@ -55,14 +68,25 @@ const Modules = () => {
           </motion.div>
         ))}
 
-        {/* Hinweis */}
-        <div className="disclaimer text-center mt-3">
-          ⚠️ {t("modules.disclaimer")}
-        </div>
+        {/* Upload-Hinweise + Formular im synchronisierten Layout */}
+        <div className="mt-5 w-100 d-flex flex-column align-items-center">
+          {/* Hinweis-Box mit angepasster Breite */}
+          <div className="upload-note-wrapper mb-4">
+            <div className="upload-note p-3 rounded">
+              <strong className="d-block mb-2">📌 Hinweise zum Upload:</strong>
+              <ul className="mb-0 ps-3">
+                <li>Lade nur <strong>PDF-Dokumente</strong> hoch.</li>
+                <li>Lade <strong>jedes Dokument einzeln</strong> hoch.</li>
+                <li>Stelle sicher, dass das Dokument <strong>ein komplettes Kapitel</strong> abdeckt.</li>
+                <li><strong>Keine mathematischen Formeln</strong> oder Formelsammlungen hochladen.</li>
+              </ul>
+            </div>
+          </div>
 
-        {/* ⬇️ UploadForm-Komponente eingebunden */}
-        <div className="mt-5 w-100">
-          <UploadForm />
+          {/* Upload-Formular */}
+          <div className="upload-card">
+            <UploadForm />
+          </div>
         </div>
       </div>
     </div>

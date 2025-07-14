@@ -51,18 +51,16 @@ function App() {
       <Route path="/" element={<Start />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
 
-      {/* Layout-geschützte Seiten */}
+      {/* Geschützte Seiten */}
       <Route element={<ProtectedRoute />}>
         <Route element={<Layout />}>
           {/* Dashboard */}
           <Route path="/home" element={<Home />} />
           <Route path="/modules" element={<Modules />} />
           <Route path="/chapters/:moduleName" element={<Chapters />} />
-          <Route
-            path="/minigames/:moduleId/:chapterId"
-            element={<Minigames />}
-          />
+          <Route path="/minigames/:moduleId/:chapterId" element={<Minigames />} />
           <Route path="/user" element={<User />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/stats" element={<Stats />} />
@@ -95,9 +93,6 @@ function App() {
 
       {/* 404 Seite */}
       <Route path="*" element={<NotFound />} />
-
-      {/*Passwort zurücksetzen-Seite */}
-      <Route path="/reset-password" element={<ResetPassword />} />
     </Routes>
   );
 }
