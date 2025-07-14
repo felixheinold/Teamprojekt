@@ -23,7 +23,7 @@ class GameUnit(BaseModel):
     lecture: str
     module: str
     difficulty: Optional[str] = None
-    language = Literal ["de", "en"]
+    language: Literal ["de", "en"]
     type: Literal ["memory", "gapfill", "quiz"]
 
 class GameUnitUpdates(BaseModel):
