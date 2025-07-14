@@ -24,7 +24,7 @@ api.add_middleware(
     allow_origins = allowed_origins_for_api_requests,
     allow_credentials = True,
     allow_methods = ["*"],
-    allow_header = ["*"],
+    allow_headers = ["*"],
 )
 
 @api.get("/")
