@@ -176,7 +176,8 @@
     "error": "Login fehlgeschlagen.",
     "noUserData": "Benutzerdaten fehlen in der Antwort.",
     "unknownError": "Etwas ist schiefgelaufen.", 
-    "anotherMail": "Eine erneute Verifikations-Email senden."
+    "anotherMail": "Eine erneute Verifikations-Email senden.",
+    "wrongCredentials": "Die eingegebene Mail-Adresse und/oder das Passwort ist falsch. Eventuell musst du deine Mail-Adresse zuerst verifizieren."
   },
   "register": {
     "title": "Erstelle einen Account",

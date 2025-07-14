@@ -78,7 +78,7 @@ const Login = () => {
     } catch (err) {
 
       if (err instanceof AuthPopupError){
-        alert(t("register.infoText2"));
+        alert(t("login.wrongCredentials"));
       }
       else {console.error("Login error:", err);
       alert(t("login.unknownError"));
@@ -125,10 +125,10 @@ const Login = () => {
             name="email"
             type="email"
             className="form-control mb-2"
-            placeholder="u....@student.kit.edu"
+            placeholder="u....@student.kit.edu / name@kit.edu"
             onChange={handleChange}
             required
-            pattern=".+@student.kit.edu"
+            pattern=".+@(student\.kit\.edu|kit\.edu)"
             title={t("login.kitOnly")}
           />
 

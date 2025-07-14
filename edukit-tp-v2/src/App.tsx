@@ -43,14 +43,17 @@ import Imprint from "./pages/dashboard/HelpDesk/Imprint";
 import NotFound from "./pages/common/NotFound";
 import ResetPassword from "./pages/auth/ResetPassword";
 import ProtectedRoute from "./context/ProtectedRoute";
+import ReverseProtectedRoute from "./context/ReverseProtectedRoute";
 
 function App() {
   return (
     <Routes>
       {/* Öffentliche Seiten */}
-      <Route path="/" element={<Start />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+      <Route element={<ReverseProtectedRoute />} >
+        <Route path="/" element={<Start />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Route>
 
       {/* Layout-geschützte Seiten */}
       <Route element={<ProtectedRoute />} >

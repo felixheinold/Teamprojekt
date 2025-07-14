@@ -144,10 +144,10 @@ const Register = () => {
                   name="email"
                   type="email"
                   className="form-control mb-2"
-                  placeholder="u....@student.kit.edu"
+                  placeholder="u....@student.kit.edu / name@kit.edu"
                   onChange={handleChange}
                   required
-                  pattern=".+@student.kit.edu"
+                  pattern=".+@(student\.kit\.edu|kit\.edu)"
                   title={t("login.kitOnly")}
                 />
 

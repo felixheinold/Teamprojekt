@@ -167,7 +167,8 @@
     "error": "Login failed.",
     "noUserData": "User data missing in the response.",
     "unknownError": "Something went wrong.",
-    "anotherMail": "Send another verification mail."
+    "anotherMail": "Send another verification mail.",
+    "wrongCredentials": "Entered mail address and/or password is incorrect. You may need to verify your mail address first."
   },
   "register": {
     "title": "Create an Account",
