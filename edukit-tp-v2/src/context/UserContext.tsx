@@ -17,8 +17,8 @@ export type UserProfile = {
 type UserContextType = {
   user: UserProfile | null;
   setUser: (user: UserProfile | null) => void;
-  firebaseUser: User | null;
-  setFirebaseUser: (user:User | null) => void;
+  //firebaseUser: User | null;
+  //setFirebaseUser: (user:User | null) => void;
 };
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
@@ -50,7 +50,7 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     setUser(profile);
   };
 
-  const [firebaseUser, setFirebaseUser] = useState<User | null>(null);
+  //const [firebaseUser, setFirebaseUser] = useState<User | null>(null);
   // Optional: sync mit localStorage, falls mehrere Tabs/Fenster
   useEffect(() => {
     const sync = () => {
@@ -61,22 +61,22 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     return () => window.removeEventListener("storage", sync);
   }, []);
 
-  useEffect(() => {
-  const unsubscribe = onAuthStateChanged(auth, async (user) => {
-    if (user) {
-      await user.reload(); // frische Daten (z. B. emailVerified)
-      setFirebaseUser(user);
-    } else {
-      setFirebaseUser(null);
-    }
-  });
+  // useEffect(() => {
+  // const unsubscribe = onAuthStateChanged(auth, async (user) => {
+  //   if (user) {
+  //     await user.reload(); // frische Daten (z. B. emailVerified)
+  //     setFirebaseUser(user);
+  //   } else {
+  //     setFirebaseUser(null);
+  //   }
+  // });
 
-  return () => unsubscribe();
-}, []);
+  //return () => unsubscribe();
+//}, []);
 
 
   return (
-    <UserContext.Provider value={{ user, setUser: handleSetUser, firebaseUser, setFirebaseUser }}>
+    <UserContext.Provider value={{ user, setUser: handleSetUser,/* firebaseUser, setFirebaseUser */}}>
       {children}
     </UserContext.Provider>
   );
