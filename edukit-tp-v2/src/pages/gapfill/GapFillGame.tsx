@@ -104,6 +104,8 @@ const GapFillGame = () => {
     questionCount = 3,
     timeLimit = 30,
     questions: incomingQuestions,
+    isAllChapters = false,
+    chapterCount = 1,
   } = location.state || {};
 
   const postponedKey = `postponed_gapfill_${module}_${chapter}`;
@@ -128,11 +130,28 @@ const GapFillGame = () => {
 
   const loadGapfillQuestions = async (): Promise<Question[]> => {
     const subjectKey = subject?.toLowerCase();
-    const match = chapter?.match(/Kapitel (\d+)/i);
-    const chapterKey = match ? `k${match[1]}` : null;
     const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-    if (!subjectKey || !chapterKey) return exampleQuestions;
+    if (!subjectKey) return exampleQuestions;
+
+    if (isAllChapters) {
+      const promises = Array.from({ length: chapterCount }, (_, i) => {
+        const chapterKey = `k${i + 1}`;
+        const path = `/questions/gapfill/${subjectKey}_${chapterKey}_${langKey}.json`;
+        return fetch(path)
+          .then((res) => (res.ok ? res.json() : []))
+          .catch(() => []);
+      });
+
+      const allResults = await Promise.all(promises);
+      const combined = allResults.flat();
+      return combined.length > 0 ? combined : exampleQuestions;
+    }
+
+    // Standardfall: einzelnes Kapitel
+    const match = chapter?.match(/Kapitel (\d+)/i);
+    const chapterKey = match ? `k${match[1]}` : null;
+    if (!chapterKey) return exampleQuestions;
 
     const path = `/questions/gapfill/${subjectKey}_${chapterKey}_${langKey}.json`;
 
@@ -289,6 +308,8 @@ const GapFillGame = () => {
           correctIds,
           questions,
           allIds,
+          isAllChapters,
+          chapterCount,
         },
       });
     }

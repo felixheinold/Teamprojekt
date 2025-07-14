@@ -113,6 +113,8 @@ const MemoryRound1 = () => {
     subject = "",
     questionCount = 6,
     timeLimit = 20,
+    isAllChapters = false,
+    chapterCount = 1,
   } = location.state || {};
 
   const [selectedPairs, setSelectedPairs] = useState<MemoryPair[]>([]);
@@ -120,11 +122,34 @@ const MemoryRound1 = () => {
   useEffect(() => {
     const fetchPairs = async () => {
       const subjectKey = subject?.toLowerCase();
-      const match = chapter?.match(/Kapitel (\d+)/i);
-      const chapterKey = match ? `k${match[1]}` : null;
       const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-      if (!subjectKey || !chapterKey) {
+      if (!subjectKey) {
+        setSelectedPairs(shuffleArray(initialPairs).slice(0, questionCount));
+        return;
+      }
+
+      if (isAllChapters) {
+        const promises = Array.from({ length: chapterCount }, (_, i) => {
+          const chapterKey = `k${i + 1}`;
+          const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
+          return fetch(path)
+            .then((res) => (res.ok ? res.json() : []))
+            .catch(() => []);
+        });
+
+        const allResults = await Promise.all(promises);
+        const combined = allResults.flat();
+        const data = combined.length > 0 ? combined : initialPairs;
+        setSelectedPairs(shuffleArray(data).slice(0, questionCount));
+        return;
+      }
+
+      // Standardfall: einzelnes Kapitel
+      const match = chapter?.match(/Kapitel (\d+)/i);
+      const chapterKey = match ? `k${match[1]}` : null;
+
+      if (!chapterKey) {
         setSelectedPairs(shuffleArray(initialPairs).slice(0, questionCount));
         return;
       }
@@ -145,18 +170,55 @@ const MemoryRound1 = () => {
   }, [module, chapter, questionCount]);
 
   useEffect(() => {
-    const key = "progress";
-    const stored = localStorage.getItem(key);
-    const progress = stored ? JSON.parse(stored) : {};
+    const updateProgressMemoryTotal = async () => {
+      const subjectKey = subject?.toLowerCase();
+      const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-    if (!progress.memoryTotal) progress.memoryTotal = {};
-    if (!progress.memoryTotal[module]) progress.memoryTotal[module] = {};
+      if (!subjectKey) return;
 
-    const allIds = selectedPairs.map((pair) => pair.id);
-    progress.memoryTotal[module][chapter] = allIds;
+      let allPairs: MemoryPair[] = [];
 
-    localStorage.setItem(key, JSON.stringify(progress));
-  }, [module, chapter, selectedPairs]);
+      if (isAllChapters) {
+        const promises = Array.from({ length: chapterCount }, (_, i) => {
+          const chapterKey = `k${i + 1}`;
+          const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
+          return fetch(path)
+            .then((res) => (res.ok ? res.json() : []))
+            .catch(() => []);
+        });
+
+        const results = await Promise.all(promises);
+        allPairs = results.flat();
+      } else {
+        const match = chapter?.match(/Kapitel (\d+)/i);
+        const chapterKey = match ? `k${match[1]}` : null;
+        if (!chapterKey) return;
+
+        const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
+        try {
+          const res = await fetch(path);
+          if (!res.ok) throw new Error("not found");
+          allPairs = await res.json();
+        } catch {
+          allPairs = initialPairs;
+        }
+      }
+
+      const allIds = allPairs.map((pair) => pair.id);
+      const key = "progress";
+      const stored = localStorage.getItem(key);
+      const progress = stored ? JSON.parse(stored) : {};
+
+      if (!progress.memoryTotal) progress.memoryTotal = {};
+      if (!progress.memoryTotal[module]) progress.memoryTotal[module] = {};
+
+      progress.memoryTotal[module][chapter] = allIds;
+
+      localStorage.setItem(key, JSON.stringify(progress));
+    };
+
+    updateProgressMemoryTotal();
+  }, [module, chapter, subject, isAllChapters, chapterCount]);
 
   const terms = useMemo(
     () =>
@@ -278,8 +340,11 @@ const MemoryRound1 = () => {
         total: definitions.length,
         module,
         chapter,
+        subject,
         timeLimit,
         pairs: selectedPairs,
+        isAllChapters,
+        chapterCount,
       },
     });
   };

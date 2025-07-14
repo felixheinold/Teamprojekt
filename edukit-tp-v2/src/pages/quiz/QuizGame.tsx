@@ -27,6 +27,8 @@ const QuizGame = () => {
     questionCount = 2,
     timeLimit = 20,
     questions: incomingQuestions,
+    isAllChapters = false,
+    chapterCount = 1,
   } = location.state || {};
 
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -116,28 +118,34 @@ const QuizGame = () => {
 
   const loadQuizQuestions = async (): Promise<QuizQuestion[]> => {
     const subjectKey = subject?.toLowerCase();
-    const match = chapter?.match(/Kapitel (\d+)/i);
-    const chapterKey = match ? `k${match[1]}` : null;
     const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-    if (!subjectKey || !chapterKey) {
-      console.warn(
-        "Fehlerhafte Fach- oder Kapitelzuordnung:",
-        subjectKey,
-        chapterKey
-      );
-      return sampleQuestions;
+    if (!subjectKey) return sampleQuestions;
+
+    if (isAllChapters) {
+      const promises = Array.from({ length: chapterCount }, (_, i) => {
+        const chapterKey = `k${i + 1}`;
+        const path = `/questions/quiz/${subjectKey}_${chapterKey}_${langKey}.json`;
+        return fetch(path)
+          .then((res) => (res.ok ? res.json() : []))
+          .catch(() => []);
+      });
+      const allResults = await Promise.all(promises);
+      const combined = allResults.flat();
+      return combined.length > 0 ? combined : sampleQuestions;
     }
 
+    const match = chapter?.match(/Kapitel (\d+)/i);
+    const chapterKey = match ? `k${match[1]}` : null;
+    if (!chapterKey) return sampleQuestions;
+
     const path = `/questions/quiz/${subjectKey}_${chapterKey}_${langKey}.json`;
-    console.log("Lade Pfad:", path);
 
     try {
       const res = await fetch(path);
       if (!res.ok) throw new Error("Datei nicht gefunden");
       return await res.json();
-    } catch (error) {
-      console.warn("Fragen nicht gefunden, fallback zu sampleQuestions");
+    } catch {
       return sampleQuestions;
     }
   };
@@ -239,6 +247,7 @@ const QuizGame = () => {
         state: {
           module,
           chapter,
+          subject,
           questionCount,
           timeLimit,
           score,
@@ -248,6 +257,8 @@ const QuizGame = () => {
             .filter((q, i) => q.answer === questions[i].answer && i < score)
             .map((q) => q.id),
           allIds: allChapterQuestions.map((q) => q.id),
+          isAllChapters,
+          chapterCount,
         },
       });
     } else {

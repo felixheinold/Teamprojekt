@@ -11,8 +11,16 @@ const QuizStart = () => {
   const { t } = useTranslation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
-  const { module, chapter, subject, questionCount, timeLimit, questions } =
-    location.state || {};
+  const {
+    module,
+    chapter,
+    subject,
+    questionCount,
+    timeLimit,
+    questions,
+    isAllChapters = false,
+    chapterCount = 1,
+  } = location.state || {};
 
   return (
     <div className="quizstart-wrapper">
@@ -87,6 +95,8 @@ const QuizStart = () => {
             questionCount,
             timeLimit,
             ...(questions ? { questions } : {}),
+            isAllChapters,
+            chapterCount,
           }}
           className="quizstart-button"
         >

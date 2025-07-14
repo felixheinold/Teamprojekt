@@ -11,8 +11,15 @@ const MemoryStart = () => {
   const { t } = useTranslation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
-  const { module, chapter, subject, questionCount, timeLimit } =
-    location.state || {};
+  const {
+    module,
+    chapter,
+    subject,
+    questionCount,
+    timeLimit,
+    isAllChapters = false,
+    chapterCount = 1,
+  } = location.state || {};
 
   return (
     <div className="memorystart-wrapper">
@@ -79,7 +86,15 @@ const MemoryStart = () => {
       >
         <Link
           to="/memoryround1"
-          state={{ module, chapter, subject, questionCount, timeLimit }}
+          state={{
+            module,
+            chapter,
+            subject,
+            questionCount,
+            timeLimit,
+            isAllChapters,
+            chapterCount,
+          }}
           className="memorystart-button"
         >
           {t("memorystart.start")}

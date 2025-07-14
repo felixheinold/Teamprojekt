@@ -19,6 +19,8 @@ const QuizResult = () => {
     questions = [],
     correctIds = [],
     allIds = [],
+    isAllChapters,
+    chapterCount,
   } = location.state || {};
 
   useEffect(() => {
@@ -94,7 +96,15 @@ const QuizResult = () => {
             className="quizresult-btn"
             onClick={() =>
               navigate("/quiz", {
-                state: { module, subject, chapter, questionCount, timeLimit },
+                state: {
+                  module,
+                  subject,
+                  chapter,
+                  questionCount,
+                  timeLimit,
+                  isAllChapters,
+                  chapterCount,
+                },
               })
             }
           >
@@ -109,7 +119,14 @@ const QuizResult = () => {
               navigate(
                 `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
                   chapter
-                )}`
+                )}`,
+                {
+                  state: {
+                    subjectKey: subject,
+                    isAllChapters,
+                    chapterCount,
+                  },
+                }
               )
             }
           >

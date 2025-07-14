@@ -228,7 +228,14 @@ const Chapters = () => {
                   navigate(
                     `/minigames/${moduleName}/${encodeURIComponent(
                       t("chapters.allChapters")
-                    )}`
+                    )}`,
+                    {
+                      state: {
+                        subjectKey: entry.subjectKey,
+                        chapterCount: entry.chapters.length,
+                        isAllChapters: true,
+                      },
+                    }
                   );
                 }}
                 className="btn btn-lg shadow w-100 chapter-button"

@@ -11,8 +11,16 @@ const GapFillStart = () => {
   const { t } = useTranslation();
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
 
-  const { module, chapter, subject, questionCount, timeLimit, questions } =
-    location.state || {};
+  const {
+    module,
+    chapter,
+    subject,
+    questionCount,
+    timeLimit,
+    questions,
+    isAllChapters = false,
+    chapterCount = 1,
+  } = location.state || {};
 
   return (
     <div className="gapfillstart-wrapper">
@@ -87,6 +95,8 @@ const GapFillStart = () => {
             questionCount,
             timeLimit,
             ...(questions ? { questions } : {}),
+            isAllChapters,
+            chapterCount,
           }}
           className="gapstart-button"
         >

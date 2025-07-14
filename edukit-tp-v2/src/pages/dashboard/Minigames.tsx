@@ -11,6 +11,8 @@ const Minigames = () => {
   const { t } = useTranslation();
   const location = useLocation();
   const subjectKey = location.state?.subjectKey || "";
+  const isAllChapters = location.state?.isAllChapters || false;
+  const chapterCount = location.state?.chapterCount || 1;
 
   const [showModal, setShowModal] = useState(false);
   const [showChoiceModal, setShowChoiceModal] = useState(false);
@@ -151,6 +153,8 @@ const Minigames = () => {
           chapter: fullInfo,
           questionCount,
           timeLimit,
+          isAllChapters,
+          chapterCount,
         },
       });
     }

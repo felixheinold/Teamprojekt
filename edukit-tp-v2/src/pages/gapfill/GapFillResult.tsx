@@ -19,6 +19,8 @@ const GapFillResult = () => {
     correctIds = [],
     questions = [],
     allIds = [],
+    isAllChapters,
+    chapterCount,
   } = location.state || {};
 
   useEffect(() => {
@@ -96,7 +98,15 @@ const GapFillResult = () => {
             className="gapresult-btn"
             onClick={() =>
               navigate("/gapfill", {
-                state: { module, subject, chapter, questionCount, timeLimit },
+                state: {
+                  module,
+                  subject,
+                  chapter,
+                  questionCount,
+                  timeLimit,
+                  isAllChapters,
+                  chapterCount,
+                },
               })
             }
           >
@@ -111,7 +121,14 @@ const GapFillResult = () => {
               navigate(
                 `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
                   chapter
-                )}`
+                )}`,
+                {
+                  state: {
+                    subjectKey: subject,
+                    isAllChapters,
+                    chapterCount,
+                  },
+                }
               )
             }
           >

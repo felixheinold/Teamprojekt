@@ -16,8 +16,11 @@ const MemoryRound1Result = () => {
     total = 1,
     module,
     chapter,
+    subject,
     timeLimit = 20,
     pairs = [],
+    isAllChapters,
+    chapterCount,
   } = location.state || {};
 
   const percentage = Math.round((correctCount / total) * 100);
@@ -81,7 +84,15 @@ const MemoryRound1Result = () => {
               style={{ backgroundColor: "#9a7fc6" }}
               onClick={() =>
                 navigate("/memoryround2", {
-                  state: { module, chapter, pairs, timeLimit },
+                  state: {
+                    module,
+                    chapter,
+                    subject,
+                    pairs,
+                    timeLimit,
+                    isAllChapters,
+                    chapterCount,
+                  },
                 })
               }
             >
@@ -98,9 +109,12 @@ const MemoryRound1Result = () => {
                   state: {
                     module,
                     chapter,
+                    subject,
                     questionCount: pairs.length,
                     timeLimit,
                     pairs,
+                    isAllChapters,
+                    chapterCount,
                   },
                 })
               }
@@ -120,9 +134,12 @@ const MemoryRound1Result = () => {
                   state: {
                     module,
                     chapter,
+                    subject,
                     questionCount: pairs.length,
                     pairs,
                     timeLimit,
+                    isAllChapters,
+                    chapterCount,
                   },
                 })
               }
@@ -137,7 +154,15 @@ const MemoryRound1Result = () => {
               style={{ backgroundColor: "#d3bfff" }}
               onClick={() =>
                 navigate("/memoryround2", {
-                  state: { module, chapter, pairs, timeLimit },
+                  state: {
+                    module,
+                    chapter,
+                    subject,
+                    pairs,
+                    timeLimit,
+                    isAllChapters,
+                    chapterCount,
+                  },
                 })
               }
             >

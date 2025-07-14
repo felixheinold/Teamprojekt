@@ -25,8 +25,11 @@ const MemoryRound2 = () => {
   const {
     module = "",
     chapter = "",
+    subject,
     pairs = [],
     timeLimit = 20,
+    isAllChapters,
+    chapterCount,
   } = location.state || {};
 
   const [cards, setCards] = useState<Card[]>([]);
@@ -179,7 +182,7 @@ const MemoryRound2 = () => {
       {/* Modul & Kapitelanzeige */}
       <div className="memory-header">{t(`modules.${module}`)}</div>
       <div className="memory-subheader">{chapter}</div>
- 
+
       {/* Titel */}
       <h1 className="memoryr2-title"> {t("memoryround2.title")} </h1>
 
@@ -207,7 +210,7 @@ const MemoryRound2 = () => {
               : isFlipped && flipped.length === 2 && feedback === "wrong"
               ? "#dc3545"
               : baseColor;
- 
+
           return (
             <motion.div
               key={card.id}
@@ -228,7 +231,7 @@ const MemoryRound2 = () => {
           );
         })}
       </div>
- 
+
       {/* Legende */}
       <div className="d-flex gap-3 mt-2">
         <div
@@ -254,9 +257,12 @@ const MemoryRound2 = () => {
               state: {
                 module,
                 chapter,
+                subject,
                 questionCount: pairs.length,
                 turns: turn - 1,
                 pairs,
+                isAllChapters,
+                chapterCount,
               },
             })
           }
@@ -275,6 +281,5 @@ const MemoryRound2 = () => {
     </div>
   );
 };
- 
+
 export default MemoryRound2;
- 

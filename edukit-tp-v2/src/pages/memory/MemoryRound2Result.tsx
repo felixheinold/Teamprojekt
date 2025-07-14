@@ -12,10 +12,13 @@ const MemoryRound2Result = () => {
   const {
     module = "",
     chapter = "",
+    subject,
     questionCount = 0,
     timeLimit = 20,
     turns = 0,
     pairs = [],
+    isAllChapters,
+    chapterCount,
   } = location.state || {};
 
   const basePoints = pairs.length;
@@ -100,9 +103,12 @@ const MemoryRound2Result = () => {
                 state: {
                   module,
                   chapter,
+                  subject,
                   questionCount: pairs.length,
                   timeLimit,
                   pairs,
+                  isAllChapters,
+                  chapterCount,
                 },
               })
             }
@@ -118,7 +124,14 @@ const MemoryRound2Result = () => {
               navigate(
                 `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
                   chapter
-                )}`
+                )}`,
+                {
+                  state: {
+                    subjectKey: subject,
+                    isAllChapters,
+                    chapterCount,
+                  },
+                }
               )
             }
           >
