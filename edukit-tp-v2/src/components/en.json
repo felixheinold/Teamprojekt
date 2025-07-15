@@ -49,7 +49,12 @@
     "brand": "Brand Management",
     "economics2": "Economics 2",
     "economics1": "Economics 1",
-    "disclaimer": "Note: The provided lecture materials may be outdated."
+    "disclaimer": "Note: The provided lecture materials may be outdated.",
+    "info-header": "Upload Instructions",
+    "info1": "Only upload <strong>PDF documents</strong>.",
+"info2": "Upload <strong>each document individually</strong>.",
+"info3": "Make sure the document covers <strong>an entire chapter</strong>.",
+"info4": "Do <strong>not upload mathematical formulas</strong> or formula collections."
   },
   "minigames": {
     "select": "Choose a Minigame",

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAppFlow } from "../../context/AppFlowContext";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import UploadForm from "../../components/UploadForm";
 import "./Modules.css";
 
@@ -20,8 +20,7 @@ const Modules = () => {
     { key: "finance", icon: "💰" },
     { key: "management", icon: "📈" },
     { key: "planning", icon: "🏭" },
-    { key: "economics2", icon: "📉" },
-    { key: "economics1", icon: "📈" },
+    { key: "brand", icon: "🏷️" },
   ];
 
   return (
@@ -40,7 +39,7 @@ const Modules = () => {
       </div>
 
       {/* Veraltet-Hinweis direkt danach */}
-      <div className="text-muted text-center mb-4 disclaimer">
+      <div className="disclaimer text-center mb-4 ">
         ⚠️ {t("modules.disclaimer")}
       </div>
 
@@ -73,18 +72,28 @@ const Modules = () => {
           {/* Hinweis-Box mit angepasster Breite */}
           <div className="upload-note-wrapper mb-4">
             <div className="upload-note p-3 rounded">
-              <strong className="d-block mb-2">📌 Hinweise zum Upload:</strong>
+              <strong className="d-block mb-2">
+                📌 <Trans i18nKey="modules.info-header"></Trans>
+              </strong>
               <ul className="mb-0 ps-3">
-                <li>Lade nur <strong>PDF-Dokumente</strong> hoch.</li>
-                <li>Lade <strong>jedes Dokument einzeln</strong> hoch.</li>
-                <li>Stelle sicher, dass das Dokument <strong>ein komplettes Kapitel</strong> abdeckt.</li>
-                <li><strong>Keine mathematischen Formeln</strong> oder Formelsammlungen hochladen.</li>
+                <li>
+                  <Trans i18nKey="modules.info1" />
+                </li>
+                <li>
+                  <Trans i18nKey="modules.info2" />
+                </li>
+                <li>
+                  <Trans i18nKey="modules.info3" />
+                </li>
+                <li>
+                  <Trans i18nKey="modules.info4" />
+                </li>
               </ul>
             </div>
           </div>
 
           {/* Upload-Formular */}
-          <div className="upload-card">
+          <div className="mt5 w-100">
             <UploadForm />
           </div>
         </div>
