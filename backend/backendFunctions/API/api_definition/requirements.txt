@@ -1,6 +1,0 @@
-fastapi
-uvicorn
-pydantic
-firebase-admin
-google-cloud-firestore
-python-multipart
