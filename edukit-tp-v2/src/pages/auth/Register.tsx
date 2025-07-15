@@ -30,12 +30,12 @@ const Register = () => {
 
   useEffect(() => {
     auth.signOut().then(() => {
-      localStorage.clear();  // falls du was speicherst
+      localStorage.clear(); // falls du was speicherst
       sessionStorage.clear();
       setSignoutDone(true);
     });
   }, []);
-  if(!signoutDone) return <div>Wird geladen...</div>
+  if (!signoutDone) return <div>Wird geladen...</div>;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -52,20 +52,24 @@ const Register = () => {
     }
 
     try {
-
-       const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);
-       alert(t("register.checkInbox"));
-       if (await authHandlingService.checkEmailVerified(user)){
+      const user = await authHandlingService.newRegistration(
+        form.username,
+        form.email,
+        form.password,
+        form.avatar
+      );
+      alert(t("register.checkInbox"));
+      if (await authHandlingService.checkEmailVerified(user)) {
         navigate("/home");
-       }
+      }
 
       setRegistrationInfoVisible(true); // Info anzeigen statt direkt navigieren
     } catch (err: any) {
-      if (err.code === "wrong mail address format"){
+      if (err.code === "wrong mail address format") {
         alert(t("register.invalidEmailFormat"));
-      }else {
-         console.error("Registration error:", err);
-      alert(t("register.unknownError"));
+      } else {
+        console.error("Registration error:", err);
+        alert(t("register.unknownError"));
       }
     }
   };
@@ -92,7 +96,7 @@ const Register = () => {
           </button>
 
           <h2 className="fw-bold">{t("register.title")}</h2>
-          <p className="mb-3">
+          <p className="mb-2">
             <em>{t("register.chooseAvatar")}</em>
           </p>
 
@@ -205,6 +209,16 @@ const Register = () => {
               </button>
             </div>
           )}
+          <div className="mail-note mt-3">
+            {t("register.mail-info")}{" "}
+            <a
+              href="https://my.scc.kit.edu/shib/e-mail-weiterleitung.php"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              my.scc.kit.edu
+            </a>
+          </div>
         </div>
       </div>
     </AuthLayout>

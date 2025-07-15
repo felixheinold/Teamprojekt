@@ -24,13 +24,13 @@ body.bg-dark .registerback-button, body.bg-dark .register-button {
 }
 
 .register-info {
-  background-color: #e9f7ef; /* sanft grünlich */
-  border: 1px solid #c1e2d0;
+  background-color: #e8faff; /* sanft grünlich */
+  border: 1px solid #b8e6f2;
   border-radius: 0.75rem;
   padding: 1.5rem;
   margin-top: 2rem;
   font-size: 1rem;
-  color: #1a3d2f;
+  color: #003a40;
 }
 
 .register-info h5 {
@@ -50,6 +50,24 @@ body.bg-dark .next-mail{
   color: #ffffff;
 }
 
+.mail-note {
+  background-color: #e8faff;
+  border: 1px solid #b8e6f2;
+  font-size: 0.95rem;
+  color: #003a40;
+  line-height: 1.5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+body.bg-dark .mail-note{
+background-color: #2c2c2c; 
+border: 1px solid #2c2c2c;
+  color: #ffffff; 
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+
 /* Mobile (≤576px) */
 @media (max-width: 576px) {
 .register-wrapper{
@@ -68,6 +86,7 @@ body.bg-dark .next-mail{
    
     font-size: 1rem;
     padding: 0.4rem 0.6rem;
+    margin-bottom: 1rem;
   }
 
   .register-content input,

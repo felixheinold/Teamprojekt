@@ -149,11 +149,7 @@ const MemoryRound2 = () => {
 
   const allMatched = matched.length === cards.length;
 
-<<<<<<< HEAD
-return (
-=======
   return (
->>>>>>> gui
     <div className="memoryr2-wrapper">
       {/* Abbrechen-Button */}
       <div className="cancel-button">
@@ -183,10 +179,7 @@ return (
           </div>
         )}
       </div>
-<<<<<<< HEAD
- 
-=======
->>>>>>> gui
+
       {/* Modul & Kapitelanzeige */}
       <div className="memory-header">{t(`modules.${module}`)}</div>
       <div className="memory-subheader">{chapter}</div>
@@ -205,10 +198,7 @@ return (
         </div>
         <div>⏳ {timer}s</div>
       </div>
-<<<<<<< HEAD
- 
-=======
->>>>>>> gui
+
       {/* Spielfeld */}
       <div className="memory-grid">
         {cards.map((card) => {
@@ -259,10 +249,7 @@ return (
           {t("memoryround2.definition")}
         </div>
       </div>
-<<<<<<< HEAD
- 
-=======
->>>>>>> gui
+
       {/* Spiel beenden */}
       {allMatched && (
         <motion.button

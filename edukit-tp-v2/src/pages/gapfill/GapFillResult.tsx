@@ -38,9 +38,9 @@ const GapFillResult = () => {
     };
 
     const updated = {
-      totalGames: prev.totalGames + 1,
-      totalPoints: prev.totalPoints + score,
-      maxPoints: prev.maxPoints + questionCount,
+      totalGames: prev.totalGames + 0.5,
+      totalPoints: prev.totalPoints + 0.5 * score,
+      maxPoints: prev.maxPoints + 0.5 * questionCount,
       bestScore: Math.max(prev.bestScore, score),
     };
 
