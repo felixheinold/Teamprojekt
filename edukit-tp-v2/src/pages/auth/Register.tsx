@@ -6,6 +6,8 @@ import AvatarPicker from "../../components/AvatarPicker";
 import { useTranslation } from "react-i18next";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
 import "./Register.css";
+import { useEffect } from "react";
+import { auth } from "../../firebaseData/firebaseConfig";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -21,9 +23,19 @@ const Register = () => {
     avatar: "avatar1.png",
   });
 
+  const [signoutDone, setSignoutDone] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [registrationInfoVisible, setRegistrationInfoVisible] = useState(false);
+
+  useEffect(() => {
+    auth.signOut().then(() => {
+      localStorage.clear();  // falls du was speicherst
+      sessionStorage.clear();
+      setSignoutDone(true);
+    });
+  }, []);
+  if(!signoutDone) return <div>Wird geladen...</div>
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -38,46 +50,7 @@ const Register = () => {
       );
       return;
     }
-/*
-    const API = import.meta.env.VITE_API_BASE_URL;
-    const userId = crypto.randomUUID();
 
-    const payload = {
-      userId,
-      userName: form.username,
-      userMail: form.email,
-      userPassword: form.password,
-      userProfilePicture: form.avatar,
-      userGameInfo: {
-        highscore: 0,
-        lastGameDate: null,
-      },
-    };
-
-    try {
-      const res = await fetch(`${API}/users/new-user`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const result = await res.json();
-
-      if (!res.ok) {
-        alert(result.error || t("register.error"));
-        return;
-      }
-
-      setUser({
-        userId,
-        userName: form.username,
-        userMail: form.email,
-        userProfilePicture: form.avatar,
-        userGameInfo: {
-          highscore: 0,
-          lastGameDate: null,
-        },
-      });
-*/
     try {
 
        const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);

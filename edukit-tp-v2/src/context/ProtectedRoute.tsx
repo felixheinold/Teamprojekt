@@ -1,5 +1,4 @@
 import { Navigate, Outlet } from "react-router-dom";
-import { useUser } from "./UserContext";
 import {useEffect, useState} from "react";
 import { auth } from "../firebaseData/firebaseConfig";
 

@@ -49,11 +49,10 @@ function App() {
   return (
     <Routes>
       {/* Öffentliche Seiten */}
-      <Route element={<ReverseProtectedRoute />} >
-        <Route path="/" element={<Start />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-      </Route>
+      <Route path="/" element={<Start />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      
 
       {/* Layout-geschützte Seiten */}
       <Route element={<ProtectedRoute />} >

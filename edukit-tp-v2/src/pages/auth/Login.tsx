@@ -6,6 +6,9 @@ import { AuthHandlingService } from "../../firebaseData/authHandlingService";
 import { useTranslation } from "react-i18next";
 import "./Login.css"; // NEU: CSS importieren
 import { AuthPopupError } from "../../firebaseData/firebaseDataModels";
+import { useEffect } from "react";
+import { auth } from "../../firebaseData/firebaseConfig";
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -19,7 +22,18 @@ const Login = () => {
     password: "",
   });
 
+  const [signoutDone, setSignoutDone] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+
+  useEffect(() => {
+    auth.signOut().then(() => {
+      localStorage.clear();  // falls du was speicherst
+      sessionStorage.clear();
+      setSignoutDone(true);
+    });
+  }, []);
+  
+  if(!signoutDone) return <div>Wird geladen...</div>
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
