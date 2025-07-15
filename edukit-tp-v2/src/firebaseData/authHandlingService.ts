@@ -37,8 +37,9 @@ export class AuthHandlingService {
           await sendEmailVerification(userCredential.user);
           
           //hier Methode von AuthAPICall, um neuen Nutzer anzulegen
+          console.log("authHandling service:" + userCredential.user.uid + username);
           await this.authAPICallsService.newUserAPICall(userCredential.user.uid, username, email, picture);
-      
+          
           return userCredential.user;
 
       } catch (error: any){

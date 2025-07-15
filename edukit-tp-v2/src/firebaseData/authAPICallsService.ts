@@ -9,18 +9,19 @@ export class AuthAPICallsService{
 
     async newUserAPICall(id: string, name: string, email:string, picture: string): Promise<any>{
         const url = this.baseURL + "/users/new-user";
+        const body = {
+          "id": id,
+          "mail": email,
+          "name": name,
+          "profile_picture": picture
+        }
         try{
             const response = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-      body: JSON.stringify({
-        user_id: id,
-        user_mail: email,
-        user_name: name,
-        user_profile_picture: picture
-      }),
+        body: JSON.stringify(body),
         });
 
         if (!response.ok) {

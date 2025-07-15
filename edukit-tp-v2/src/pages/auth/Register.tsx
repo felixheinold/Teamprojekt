@@ -54,6 +54,7 @@ const Register = () => {
     try {
 
        const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);
+       console.log("In register " + form.username, form.avatar);
        alert(t("register.checkInbox"));
        if (await authHandlingService.checkEmailVerified(user)){
         navigate("/home");
