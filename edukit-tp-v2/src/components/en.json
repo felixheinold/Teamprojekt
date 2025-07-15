@@ -321,7 +321,7 @@
   "gapfillresult": {
   "scoreText": "You scored <strong>{{score}}</strong> points"
 },
-
+  
    "chapters": {
     "selectSubchapter": "Select a Chapter",
     "chapter": "Chapter",

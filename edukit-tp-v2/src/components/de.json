@@ -10,10 +10,10 @@
     "back": "Zurück",
     "postpone": "Frage zurückstellen",
     "postponeRemove": "Zurückstellung aufheben",
-     "congrats": "🎉 Super, du hast es geschafft!",
-  "playAgain": "Kapitel erneut spielen",
-  "backToMinigames": "Zurück zur Minigame Auswahl",
-  "backToModules": "Zurück zur Modul-Auswahl"
+    "congrats": "🎉 Super, du hast es geschafft!",
+    "playAgain": "Kapitel erneut spielen",
+    "backToMinigames": "Zurück zur Minigame Auswahl",
+    "backToModules": "Zurück zur Modul-Auswahl"
   },
   "user": {
     "title": "Mein Account",
@@ -55,7 +55,6 @@
     "info2": "Lade <strong>jedes Dokument einzeln</strong> hoch.",
     "info3": "Stelle sicher, dass das Dokument <strong>ein komplettes Kapitel</strong> abdeckt.",
     "info4": "<strong>Keine mathematischen Formeln</strong> oder Formelsammlungen hochladen."
-
   },
   "minigames": {
     "select": "Wähle ein Mini-Game",
@@ -70,13 +69,12 @@
       "timePerQuestion": "Zeitlimit pro Frage:",
       "seconds": "Sekunden"
     },
-     "quizChoice": {
-    "title": "Was möchtest du spielen?",
-    "saved": "zurückgestellte Fragen verfügbar",
-    "savedPlay": "Zurückgestellte Fragen spielen",
-    "random": "Zufällige Fragen spielen"
-  }
-
+    "quizChoice": {
+      "title": "Was möchtest du spielen?",
+      "saved": "zurückgestellte Fragen verfügbar",
+      "savedPlay": "Zurückgestellte Fragen spielen",
+      "random": "Zufällige Fragen spielen"
+    }
   },
   "leaderboard": {
     "title": "Bestenliste",
@@ -173,19 +171,19 @@
     "password": "Passwort",
     "button": "Anmelden",
     "forgotPassword": "Passwort vergessen?",
-    "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
+    "kitOnly": "Nur KIT-E‑Mail‑Adressen erlaubt",
     "error": "Login fehlgeschlagen.",
     "noUserData": "Benutzerdaten fehlen in der Antwort.",
-    "unknownError": "Etwas ist schiefgelaufen.", 
-    "anotherMail": "Eine erneute Verifikations-Email senden.",
-    "wrongCredentials": "Die eingegebene Mail-Adresse und/oder das Passwort ist falsch. Eventuell musst du deine Mail-Adresse zuerst verifizieren."
+    "unknownError": "Etwas ist schiefgelaufen.",
+    "anotherMail": "Eine erneute Verifikations-Mail senden",
+    "wrongCredentials": "Die eingegebene Mail‑Adresse und/oder das Passwort ist falsch. Eventuell musst du deine Mail‑Adresse zuerst verifizieren."
   },
   "register": {
     "title": "Erstelle einen Account",
     "chooseAvatar": "Wähle deinen Avatar:",
     "username": "Benutzername",
-    "email": "KIT-Studenten-E-Mail",
-    "invalidEmailFormat": "Nur Mail-Adressen der Form 'uxxxx@student.kit.edu' oder '**name**@kit.edu' sind zulässig!",
+    "email": "KIT-Studenten-E‑Mail",
+    "invalidEmailFormat": "Nur Mail‑Adressen der Form 'uxxxx@student.kit.edu' oder '**name**@kit.edu' sind zulässig!",
     "emailPlaceholder": "u....@student.kit.edu",
     "password": "Passwort",
     "confirmPassword": "Passwort bestätigen",
@@ -195,14 +193,14 @@
     "button": "Registrieren",
     "back": "← Zurück",
     "error": "Registrierung fehlgeschlagen.",
-    "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
+    "kitOnly": "Nur KIT‑E‑Mail‑Adressen erlaubt",
     "unknownError": "Etwas ist schiefgelaufen.",
-  "infoHeadline": "Registrierung erfolgreich!",
-  "infoText1": "In den nächsten Minuten erhältst du eine E-Mail an deine KIT-Mailadresse.",
-  "infoText2": "Bitte bestätige deine E-Mail-Adresse über den Link in der Nachricht.",
-  "infoText3": "Falls du keine Mail bekommst, prüfe deinen Spam-Ordner. Eine erneute Mail kann angefordert werden.",
-  "continueAfterInfo": "Weiter zur Startseite",
-  "checkInbox": "Bitte überprüfe deinen Posteingang. Es könnte einige Minuten dauern."
+    "infoHeadline": "Registrierung erfolgreich!",
+    "infoText1": "In den nächsten Minuten erhältst du eine E‑Mail an deine KIT‑Mailadresse.",
+    "infoText2": "Bitte bestätige deine E‑Mail‑Adresse über den Link in der Nachricht.",
+    "infoText3": "Falls du keine Mail bekommst, prüfe deinen Spam‑Ordner. Eine erneute Mail kann angefordert werden.",
+    "continueAfterInfo": "Weiter zur Startseite",
+    "checkInbox": "Bitte überprüfe deinen Posteingang. Es könnte einige Minuten dauern."
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",
@@ -248,8 +246,181 @@
     "selectSubject": "Vorlesung wählen",
     "selectChapter": "Kapitel wählen",
     "submit": "Datei hochladen",
-    "missing": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
+    "missingFields": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
     "success": "PDF erfolgreich hochgeladen!",
-    "failed": "Upload fehlgeschlagen."
+    "failed": "Upload fehlgeschlagen.",
+    "selectFile": "Datei auswählen",
+    "noFileSelected": "Keine Datei ausgewählt",
+    "removeFile": "Datei entfernen"
+  },
+  "layout": {
+    "modules": "Module",
+    "chapters": "Kapitel",
+    "minigames": "Minigames"
+  },
+  "quizstart": {
+    "title": "QUIZ",
+    "tutorial": "Video Tutorial anschauen:",
+    "start": "Direkt zum Quiz starten"
+  },
+  "quizgame": {
+    "questionCount": "Frage ",
+    "next": "Nächste Frage",
+    "finish": "Minispiel beenden"
+  },
+  "quizresult": {
+    "scoreText": "Du hast <strong>{{score}}</strong> Punkte gewonnen"
+  },
+  "memorystart": {
+    "title": "MEMORY",
+    "tutorial": "Video Tutorial anschauen:",
+    "start": "Direkt zum Memory starten"
+  },
+  "memoryround1": {
+    "title": "🧠 Memory Runde 1",
+    "terms": "Begriffe",
+    "definitions": "Definitionen",
+    "check": "Überprüfe Antworten",
+    "next": "Runde 1 beenden"
+  },
+  "memoryround1result": {
+    "passed": "🎉 Gut gemacht! Du bist für die nächste Runde vorbereitet",
+    "failed": "🔁 Das solltest du besser nochmal üben...",
+    "resultText": "Du hast <strong>{{percentage}}%</strong> ({{correct}} von {{total}}) richtig zugeordnet.",
+    "next1": "➡️ Weiter zu Runde 2",
+    "next2": "➡️ Trotzdem weiter zu Runde 2",
+    "retry1": "🔁 Runde 1 erneut spielen",
+    "retry2": "🔁 Versuche es nochmal"
+  },
+  "memoryround2": {
+    "title": "🧠 Memory Runde 2",
+    "pairs": "Paare",
+    "plays": "Züge: ",
+    "term": "= Begriff",
+    "definition": "= Definition",
+    "next": "Minispiel beenden"
+  },
+  "memoryround2result": {
+    "pairsScored": "Du hast <strong>{{count}}</strong> Paare in <strong>{{turns}}</strong> Zügen richtig zugeordnet.",
+    "scoreText": "Dafür erhältst du <strong>{{score}}</strong> Punkte."
+  },
+  "gapfillstart": {
+    "title": "LÜCKENTEXT",
+    "tutorial": "Video Tutorial anschauen:",
+    "start": "Direkt zum Lückentext starten"
+  },
+  "gapfillgame": {
+    "questionCount": "Frage ",
+    "placeholder": "Begriff eingeben...",
+    "correct": "✅ Richtig!",
+    "wrong": "❌ Falsch! Richtige Antwort: ",
+    "check": "✅ Antwort überprüfen"
+  },
+  "gapfillresult": {
+    "scoreText": "Du hast <strong>{{score}}</strong> Punkte gewonnen"
+  },
+  "chapters": {
+    "selectSubchapter": "Wähle ein Kapitel",
+    "chapter": "Kapitel",
+    "topic": "Thema",
+    "learnAll": "Alle Kapitel üben",
+    "allChapters": "Alle Kapitel",
+    "planning": {
+      "planning": {
+      "k1": "Kapitel 1 – Grundlagen, Geschichte, zeitliche Entwicklung",
+      "k2": "Kapitel 2 – Integrierte Produktionsplanung und durchgängiges digitales Engineering",
+      "k3": "Kapitel 3 – Prinzipien Ganzheitlicher Produktionssysteme und Weiterentwicklung mit I4.0",
+      "k4": "Kapitel 4 – Systematik der Fabrikplanung",
+      "k5": "Kapitel 5 – Zielfestlegung",
+      "k6": "Kapitel 6 – Datenerhebenung und -analyse",
+      "k7": "Kapitel 7 – Konzeptplanung: Strukturentwicklung, -dimensionierung und Groblayout",
+      "k8": "Kapitel 8 – Detailplanung",
+      "k9": "Kapitel 9 – Teilfertigung: Konzept- und Detailplanung",
+      "k10": "Kapitel 10 – Montage: Konzept- und Detailplanung",
+      "k11": "Kapitel 11 – Realisierungsvorbereitung und Überwachung",
+      "k12": "Kapitel 12 – Hochlauf und Serienbetreuung"
+      }
+    },
+    "production": {
+      "production": {
+      "k1": "Kapitel 1 – Einführung Produktionswirtschaft und Nachhaltigkeit",
+      "k2": "Kapitel 2 – Bestandsmanagement",
+      "k3": "Kapitel 3 – Lagerhaltungsstrategien und Lieferantenauswahl"
+      },
+    "logistics": {
+      "k1": "Kapitel 1 – Einführung in die Logistik und SCM",
+      "k2": "Kapitel 2 – Logistikketten",
+      "k3": "Kapitel 3 – Scheduling"
+    },
+    "energy": {
+      "k1": "Kapitel 1 – Einführung in die Energiewirtschaft",
+      "k2": "Kapitel 2 – Transformationspfade in der Energiewirtschaft",
+      "k3": "Kapitel 3 – Energie als Produktionsfaktor"
+    },
+    "informatics": {
+      "k1": "Kapitel 1 – Einführung",
+      "k2": "Kapitel 2 – Grundbegriffe",
+      "k3": "Kapitel 3 – Gegenstandsbereich und Typiserung",
+      "k4": "Kapitel 4 – Digitalisierung und digitale Transformation",
+      "k5": "Kapitel 5 – Digitale Organisation: Integrierte IS I",
+      "k6": "Kapitel 6 – Digitale Organisation: Integrierte IS II",
+      "k7": "Kapitel 7 – KI-basierte Systeme",
+      "k8": "Kapitel 8 – Digitale Plattformen",
+      "k9": "Kapitel 9 – Interaktive Systeme"
+    }
+    },
+    "finance":{
+    "finance": {
+      "k1": "Kapitel 1 – Einführung in die Finanzwirtschaft",
+      "k2": "Kapitel 2 – Bewertung von Zahlungsströmen, Anleihen",
+      "k3": "Kapitel 3 – Methoden der Investitionsentscheidung",
+      "k4": "Kapitel 4 – Eigenkapitalfinanzierung, Aktien",
+      "k5": "Kapitel 5 – Portfoliotheorie"
+    },
+    "accounting": {
+      "k1": "Kapitel 1 – Grundlagen externes Rechnungswesen",
+      "k2": "Kapitel 2 – Bilanz und GuV",
+      "k3": "Kapitel 3 – Mehrdeutigkeit im externen Rechnungswesen",
+      "k4": "Kapitel 4 – Grundlagen internes Rechnungswesen",
+      "k5": "Kapitel 5 – Kostenstellenrechnung",
+      "k6": "Kapitel 6 – Kostenträgerrechnung"
+    },
+    "balance": {
+      "k1": "Kapitel 1 – Einführung und institutionelle Grundlagen",
+      "k2": "Kapitel 2 – Rechtliche Grundlagen der Bilanzierung",
+      "k3": "Kapitel 3 – Bilanzierungsgrundsätze und -vorschriften",
+      "k4": "Kapitel 4 – Bewertungsgrundsätze und -vorschriften",
+      "k5": "Kapitel 5 – Gewinn- und Verlustrechnung",
+      "k6": "Kapitel 6 – Ergänzende Instrumente"
+  },
+  "management": {
+      "management":{
+      "k1": "Kapitel 1 – Führungsentscheidungen im Unternehmen",
+      "k2": "Kapitel 2 – Organisation des Unternehmens",
+      "k3": "Kapitel 3 – Grundelemente des Strategischen Managements",
+      "k4": "Kapitel 4 – Grundlagen der Corporate Governance"
+      },
+      "marketing":{
+      "k1": "Kapitel 1 – Allgemeine Grundlagen",
+      "k2": "Kapitel 2 – Marketingstrategie",
+      "k3": "Kapitel 3 – Konsumierendenverhalten",
+      "k4": "Kapitel 4 – Produktpolitik",
+      "k5": "Kapitel 5 – Preispolitik",
+      "k6": "Kapitel 6 – Kommunikationspolitik",
+      "k7": "Kapitel 7 – Vertriebspolitik",
+      "k8": "Kapitel 8 – Marketing Metrics"
+  }
+},
+"brand":{
+  "brand":{
+      "k1": "Kapitel 1 – Die Bedeutung von Marken für Konsumenten",
+      "k2": "Kapitel 2 – Entwicklung einer Markenstrategien",
+      "k3": "Kapitel 3 – Gestaltung eines Markenmarketing-Programms",
+      "k4": "Kapitel 4 – Aufbau und langfristige Erhaltung von Markenwert",
+      "k5": "Kapitel 5 – Messung der Marken-Performance"
+  }
+}
+
+    }
   }
 }
