@@ -11,7 +11,7 @@ export class AuthAPICallsService{
         const url = this.baseURL + "/users/new-user";
         const body = {
           "id": id,
-          "mail": email,
+          "email": email,
           "name": name,
           "picture": picture
         }
