@@ -13,9 +13,9 @@ import { auth } from "../../firebaseData/firebaseConfig";
 const Login = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
-    const authHandlingService = new AuthHandlingService();
+  const authHandlingService = new AuthHandlingService();
 
   const [form, setForm] = useState({
     email: "",
@@ -41,48 +41,6 @@ const Login = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // const API = import.meta.env.VITE_API_BASE_URL;
-
-    // try {
-    //   const res = await fetch(`${API}/auth/login`, {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       email: form.email,
-    //       password: form.password,
-    //     }),
-    //   });
-
-    //   const result = await res.json();
-
-  
-    //   if (!res.ok) {
-    //     alert(result.error || "Login fehlgeschlagen.");
-    //     return;
-    //   }
-
-    //   const user = result.user;
-    //   const token = result.token;
-
-    //   if (!user) {
-    //     alert("Benutzerdaten fehlen in der Antwort.");
-    //     return;
-    //   }
-
-    //   setUser({
-    //     userId: user.userId,
-    //     userName: user.userName,
-    //     userMail: user.userMail,
-    //     userProfilePicture: user.userProfilePicture,
-    //     userGameInfo: user.userGameInfo || { highscore: 0, lastGameDate: null },
-    //   });
-
-    //   if (token) {
-    //     localStorage.setItem("token", token);
-    //   }
 
     try {
       const user = await authHandlingService.login(form.email, form.password);
@@ -100,22 +58,21 @@ const Login = () => {
     }
   };
 
-
   const handleForgottenPassword = async () => {
     try {
       await authHandlingService.sendResetPasswordEmail(form.email);
       alert(t("register.checkInbox"));
       navigate("/reset-password");
-    } catch (err){
+    } catch (err) {
       console.error("Reset password error: ", err);
     }
   };
 
-  const anotherVerificationMail = async() =>{
-    try{
+  const anotherVerificationMail = async () => {
+    try {
       await authHandlingService.sendVerificationMailAgain();
-    }catch (err){
-      console.error("Verification mail error.")
+    } catch (err) {
+      console.error("Verification mail error.");
     }
   };
 
@@ -123,14 +80,14 @@ const Login = () => {
     <AuthLayout>
       <div className="login-content">
         <button
-          className="btn btn-dark back-button align-self-start"
+          className="btn btn-dark loginback-button align-self-start"
           onClick={() => navigate("/")}
         >
           ← {t("common.back")}
         </button>
 
-        <h2 className="fw-bold">{t("login.title")}</h2>
-        <p className="text-muted mb-4">
+        <h2 className="login-title fw-bold">{t("login.title")}</h2>
+        <p className="login-subtitle mb-4">
           {t("login.subtitle", { app: "EduKIT" })}
         </p>
 
@@ -172,14 +129,25 @@ const Login = () => {
             </span>
           </div>
 
-          <button type="submit" className="btn btn-dark w-100 mb-2">
+          <button
+            type="submit"
+            className="btn btn-dark login-button w-100 mb-2"
+          >
             {t("login.button")}
           </button>
-          <a href="#" className="text-muted small" onClick = {handleForgottenPassword}>
+          <a
+            href="#"
+            className="password-forgot small"
+            onClick={handleForgottenPassword}
+          >
             {t("login.forgotPassword")}
           </a>
           <p></p>
-           <a href="#" className="text-muted small" onClick = {anotherVerificationMail}>
+          <a
+            href="#"
+            className="next-mail small"
+            onClick={anotherVerificationMail}
+          >
             <span>{t("login.anotherMail")}</span>
           </a>
         </form>

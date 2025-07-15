@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AuthAPICallsService } from "../firebaseData/authAPICallsService";
+import "./UploadForm.css";
 
 const moduleData: Record<
   string,
@@ -72,93 +73,136 @@ const UploadForm = () => {
 
 
   const subjects = moduleData[selectedModule] || [];
-  const chapters = subjects.find((s) => s.subject === selectedSubject)?.chapters || [];
+  const chapters =
+    subjects.find((s) => s.subject === selectedSubject)?.chapters || [];
 
   return (
-    <div className="container -mt" style={{ maxWidth: "1000px" }}>
-      <h3 className="fw-bold mb-4 text-center">📤 {t("upload.title")}</h3>
+    <div className="upload-wrapper">
+      <div className="upload-card">
+        <h3 className="upload-title">📤 {t("upload.title")}</h3>
 
-      <form onSubmit={handleSubmit} className="p-4 bg-white rounded shadow">
-        {/* Modul */}
-        <div className="mb-3">
-          <label className="form-label">{t("upload.module")}</label>
-          <select
-            className="form-select"
-            value={selectedModule}
-            onChange={(e) => {
-              setSelectedModule(e.target.value);
-              setSelectedSubject("");
-              setSelectedChapter("");
-            }}
-          >
-            <option value="">{t("upload.selectModule")}</option>
-            {Object.keys(moduleData).map((mod) => (
-              <option key={mod} value={mod}>
-                {t(`modules.${mod}`)}
-              </option>
-            ))}
-          </select>
-        </div>
+        <form onSubmit={handleSubmit}>
+          {/* Modul */}
+          <div className="mb-3">
+            <label className="form-label">{t("upload.module")}</label>
+            <select
+              className="form-select"
+              value={selectedModule}
+              onChange={(e) => {
+                setSelectedModule(e.target.value);
+                setSelectedSubject("");
+                setSelectedChapter("");
+              }}
+            >
+              <option value="">{t("upload.selectModule")}</option>
+              {Object.keys(moduleData).map((mod) => (
+                <option key={mod} value={mod}>
+                  {t(`modules.${mod}`)}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {/* Vorlesung */}
-        <div className="mb-3">
-          <label className="form-label">{t("upload.subject")}</label>
-          <select
-            className="form-select"
-            value={selectedSubject}
-            onChange={(e) => {
-              setSelectedSubject(e.target.value);
-              setSelectedChapter("");
-            }}
-            disabled={!selectedModule}
-          >
-            <option value="">{t("upload.selectSubject")}</option>
-            {subjects.map((s, i) => (
-              <option key={i} value={s.subject}>
-                {t(`subjects.${s.subject}`)}
-              </option>
-            ))}
-          </select>
-        </div>
+          {/* Vorlesung */}
+          <div className="mb-3">
+            <label className="form-label">{t("upload.subject")}</label>
+            <select
+              className="form-select"
+              value={selectedSubject}
+              onChange={(e) => {
+                setSelectedSubject(e.target.value);
+                setSelectedChapter("");
+              }}
+              disabled={!selectedModule}
+            >
+              <option value="">{t("upload.selectSubject")}</option>
+              {subjects.map((s, i) => (
+                <option key={i} value={s.subject}>
+                  {t(`subjects.${s.subject}`)}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {/* Kapitel */}
-        <div className="mb-3">
-          <label className="form-label">{t("upload.chapter")}</label>
-          <select
-            className="form-select"
-            value={selectedChapter}
-            onChange={(e) => setSelectedChapter(e.target.value)}
-            disabled={!selectedSubject}
-          >
-            <option value="">{t("upload.selectChapter")}</option>
-            {chapters.map((ch, i) => (
-              <option key={i} value={ch.title}>
-                {ch.title}
-              </option>
-            ))}
-          </select>
-        </div>
+          {/* Kapitel */}
+          <div className="mb-3">
+            <label className="form-label">{t("upload.chapter")}</label>
+            <select
+              className="form-select"
+              value={selectedChapter}
+              onChange={(e) => setSelectedChapter(e.target.value)}
+              disabled={!selectedSubject}
+            >
+              <option value="">{t("upload.selectChapter")}</option>
+              {chapters.map((ch, i) => (
+                <option key={i} value={ch.title}>
+                  {ch.title}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {/* Datei */}
-        <div className="mb-3">
-          <label className="form-label">{t("upload.file")}</label>
-          <input
-            type="file"
-            accept="application/pdf"
-            className="form-control"
-            onChange={(e) => setFile(e.target.files?.[0] || null)}
-          />
-        </div>
+          {/* Datei */}
+          <div className="mb-3">
+            <label className="form-label">{t("upload.file")}</label>
+            <div
+              className="form-select d-flex justify-content-between align-items-center"
+              style={{ position: "relative", paddingRight: "2rem" }}
+            >
+              <label
+                htmlFor="fileInput"
+                style={{
+                  width: "100%",
+                  margin: 0,
+                  cursor: "pointer",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                  zIndex: 1,
+                }}
+              >
+                {file ? file.name : t("upload.noFileSelected")}
+              </label>
 
-        {/* Button (dünner gestaltet) */}
-        <button
-          type="submit"
-          className="btn btn-primary w-100"
-          style={{ paddingTop: "0.45rem", paddingBottom: "0.45rem", fontSize: "1rem" }}
-        >
-          {t("upload.submit")}
-        </button>
-      </form>
+              {file && (
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setFile(null);
+                  }}
+                  aria-label={t("upload.removeFile")}
+                  title={t("upload.removeFile")}
+                >
+                  &times;
+                </button>
+              )}
+
+              <input
+                id="fileInput"
+                type="file"
+                accept="application/pdf"
+                onChange={(e) => setFile(e.target.files?.[0] || null)}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: file ? "calc(100% - 3rem)" : "100%",
+                  height: "100%",
+                  opacity: 0,
+                  cursor: "pointer",
+                  zIndex: 0,
+                }}
+              />
+            </div>
+          </div>
+
+          {/* Button */}
+          <button type="submit" className="btn btn-primary w-100">
+            {t("upload.submit")}
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

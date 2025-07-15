@@ -1,11 +1,13 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Trans, useTranslation } from "react-i18next";
 import "./QuizResult.css";
 
 const QuizResult = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useTranslation();
 
   const {
     module,
@@ -17,6 +19,8 @@ const QuizResult = () => {
     questions = [],
     correctIds = [],
     allIds = [],
+    isAllChapters,
+    chapterCount,
   } = location.state || {};
 
   useEffect(() => {
@@ -44,7 +48,6 @@ const QuizResult = () => {
     localStorage.setItem(statsKey, JSON.stringify(allStats));
     localStorage.setItem("lastPlayed", gameKey);
 
-    // 🧠 Fortschritt speichern
     const progressKey = "progress";
     const storedProgress = localStorage.getItem(progressKey);
     const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
@@ -62,7 +65,7 @@ const QuizResult = () => {
     const prevTotal = allProgress.quizTotal[module][chapter];
 
     const newCorrect = Array.from(new Set([...prevCorrect, ...correctIds]));
-    const newTotal = Array.from(new Set([...prevTotal, ...allIds])); // ✅ ersetzt questions.map()
+    const newTotal = Array.from(new Set([...prevTotal, ...allIds]));
 
     allProgress.quizCorrect[module][chapter] = newCorrect;
     allProgress.quizTotal[module][chapter] = newTotal;
@@ -77,9 +80,13 @@ const QuizResult = () => {
       </div>
 
       <div className="quizresult-text">
-        <h1 className="quizresult-title">🎉 Super, du hast es geschafft!</h1>
+        <h1 className="quizresult-title">{t("common.congrats")}</h1>
         <p className="quizresult-score">
-          Du hast <strong>{score}</strong> Punkte gewonnen
+          <Trans
+            i18nKey="quizresult.scoreText"
+            values={{ score }}
+            components={{ strong: <strong /> }}
+          />
         </p>
 
         <div className="quizresult-buttons">
@@ -89,11 +96,19 @@ const QuizResult = () => {
             className="quizresult-btn"
             onClick={() =>
               navigate("/quiz", {
-                state: { module, subject, chapter, questionCount, timeLimit },
+                state: {
+                  module,
+                  subject,
+                  chapter,
+                  questionCount,
+                  timeLimit,
+                  isAllChapters,
+                  chapterCount,
+                },
               })
             }
           >
-            🔁 Erneut spielen
+            🔁 {t("common.playAgain")}
           </motion.button>
 
           <motion.button
@@ -104,11 +119,18 @@ const QuizResult = () => {
               navigate(
                 `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
                   chapter
-                )}`
+                )}`,
+                {
+                  state: {
+                    subjectKey: subject,
+                    isAllChapters,
+                    chapterCount,
+                  },
+                }
               )
             }
           >
-            🎮 Zurück zur Minigame Auswahl
+            🎮 {t("common.backToMinigames")}
           </motion.button>
 
           <motion.button
@@ -117,7 +139,7 @@ const QuizResult = () => {
             className="quizresult-btn"
             onClick={() => navigate("/modules")}
           >
-            📚 Zurück zur Modul-Auswahl
+            📚 {t("common.backToModules")}
           </motion.button>
         </div>
       </div>

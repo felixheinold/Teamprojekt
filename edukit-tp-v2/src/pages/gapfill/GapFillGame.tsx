@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./GapFillGame.css";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 type Question = {
   id: string;
@@ -74,12 +76,24 @@ const exampleQuestions: Question[] = [
   },
 ];
 
+const shuffle = <T,>(array: T[]): T[] =>
+  [...array].sort(() => Math.random() - 0.5);
+
 const GapFillGame = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  const timeoutHandledRef = useRef(false);
+
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const [isPostponed, setIsPostponed] = useState(false);
   const [correctIds, setCorrectIds] = useState<string[]>([]);
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [allChapterQuestions, setAllChapterQuestions] = useState<Question[]>(
+    []
+  );
+  const [loading, setLoading] = useState(true);
+
   const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
   const volume = Number(localStorage.getItem("volume") || "50") / 100;
 
@@ -90,15 +104,11 @@ const GapFillGame = () => {
     questionCount = 3,
     timeLimit = 30,
     questions: incomingQuestions,
+    isAllChapters = false,
+    chapterCount = 1,
   } = location.state || {};
 
-  const allIds = incomingQuestions?.length
-    ? incomingQuestions.map((q: Question) => q.id)
-    : exampleQuestions.map((q: Question) => q.id);
-
   const postponedKey = `postponed_gapfill_${module}_${chapter}`;
-
-  const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState("");
   const [score, setScore] = useState(0);
@@ -111,28 +121,68 @@ const GapFillGame = () => {
   const wrongSound = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-  correctSound.current = new Audio("/sounds/correct.mp3");
-  wrongSound.current = new Audio("/sounds/wrong.mp3");
+    correctSound.current = new Audio("/sounds/correct.mp3");
+    wrongSound.current = new Audio("/sounds/wrong.mp3");
 
-  if (correctSound.current) correctSound.current.volume = volume;
-  if (wrongSound.current) wrongSound.current.volume = volume;
-}, [volume]);
+    if (correctSound.current) correctSound.current.volume = volume;
+    if (wrongSound.current) wrongSound.current.volume = volume;
+  }, [volume]);
 
-  useEffect(() => {
-    if (incomingQuestions?.length) {
-      setQuestions(incomingQuestions);
-    } else {
-      const repeated: Question[] = [];
-      while (repeated.length < questionCount) {
-        const shuffled = [...exampleQuestions].sort(() => Math.random() - 0.5);
-        repeated.push(...shuffled);
-      }
-      setQuestions(repeated.slice(0, questionCount));
+  const loadGapfillQuestions = async (): Promise<Question[]> => {
+    const subjectKey = subject?.toLowerCase();
+    const langKey = i18n.language.startsWith("de") ? "de" : "en";
+
+    if (!subjectKey) return exampleQuestions;
+
+    if (isAllChapters) {
+      const promises = Array.from({ length: chapterCount }, (_, i) => {
+        const chapterKey = `k${i + 1}`;
+        const path = `/questions/gapfill/${subjectKey}_${chapterKey}_${langKey}.json`;
+        return fetch(path)
+          .then((res) => (res.ok ? res.json() : []))
+          .catch(() => []);
+      });
+
+      const allResults = await Promise.all(promises);
+      const combined = allResults.flat();
+      return combined.length > 0 ? combined : exampleQuestions;
     }
-  }, [questionCount, incomingQuestions]);
+
+    // Standardfall: einzelnes Kapitel
+    const match = chapter?.match(/Kapitel (\d+)/i);
+    const chapterKey = match ? `k${match[1]}` : null;
+    if (!chapterKey) return exampleQuestions;
+
+    const path = `/questions/gapfill/${subjectKey}_${chapterKey}_${langKey}.json`;
+
+    try {
+      const res = await fetch(path);
+      if (!res.ok) throw new Error("Datei nicht gefunden");
+      return await res.json();
+    } catch {
+      return exampleQuestions;
+    }
+  };
 
   useEffect(() => {
-    if (currentIndex >= questions.length || showFeedback !== null) return;
+    if (!incomingQuestions?.length) {
+      loadGapfillQuestions().then((data) => {
+        setAllChapterQuestions(data);
+        setQuestions(shuffle(data).slice(0, questionCount));
+        setLoading(false);
+      });
+    } else {
+      setAllChapterQuestions(incomingQuestions);
+      setQuestions(
+        shuffle(incomingQuestions as Question[]).slice(0, questionCount)
+      );
+      setLoading(false);
+    }
+  }, [module, chapter, questionCount]);
+
+  useEffect(() => {
+    if (currentIndex >= questions.length || showFeedback !== null || loading)
+      return;
 
     const interval = setInterval(() => {
       setTimer((prev) => {
@@ -146,7 +196,7 @@ const GapFillGame = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, timeLimit, questions.length, showFeedback]);
+  }, [currentIndex, timeLimit, showFeedback, loading]);
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem(postponedKey) || "[]");
@@ -162,21 +212,40 @@ const GapFillGame = () => {
       (q: Question) => q.sentence === questions[currentIndex].sentence
     );
 
-    let updated;
-    if (alreadySaved) {
-      updated = stored.filter(
-        (q: Question) => q.sentence !== questions[currentIndex].sentence
-      );
-    } else {
-      updated = [...stored, questions[currentIndex]];
-    }
+    const updated = alreadySaved
+      ? stored.filter(
+          (q: Question) => q.sentence !== questions[currentIndex].sentence
+        )
+      : [...stored, questions[currentIndex]];
 
     localStorage.setItem(postponedKey, JSON.stringify(updated));
     setIsPostponed(!alreadySaved);
   };
 
   const checkOnTimeout = () => {
-    checkAnswer(input);
+    if (timeoutHandledRef.current) return;
+    timeoutHandledRef.current = true;
+    const correct = questions[currentIndex].answer.trim().toLowerCase();
+    const user = input.trim().toLowerCase();
+    const isCorrect = user === correct;
+
+    if (isCorrect) {
+      if (soundEnabled) correctSound.current?.play();
+      setScore((prev) => prev + 1);
+      setCorrectIds((prev) => [...prev, questions[currentIndex].id]);
+      setShowFeedback("correct");
+    } else {
+      if (soundEnabled) wrongSound.current?.play();
+      setShowFeedback("wrong");
+    }
+
+    setTimeout(
+      () => {
+        setShowFeedback(null);
+        handleNext();
+      },
+      isCorrect ? 1500 : 3000
+    );
   };
 
   const handleCheck = () => {
@@ -209,6 +278,7 @@ const GapFillGame = () => {
   };
 
   const handleNext = () => {
+    timeoutHandledRef.current = false;
     setInput("");
     setTimer(timeLimit);
     setCurrentIndex((prev) => prev + 1);
@@ -221,27 +291,37 @@ const GapFillGame = () => {
   };
 
   const current = questions[currentIndex];
-
-  if (currentIndex >= questions.length) {
-    navigate("/gapfillresult", {
-      state: {
-        module,
-        chapter,
-        subject,
-        questionCount,
-        timeLimit,
-        score,
-        correctIds,
-        questions,
-        allIds,
-      },
-    });
-
-    return null;
-  }
-
+  const allIds = allChapterQuestions.map((q) => q.id);
   const isCorrect = showFeedback === "correct";
   const isWrong = showFeedback === "wrong";
+
+  useEffect(() => {
+    if (currentIndex >= questions.length && !loading) {
+      navigate("/gapfillresult", {
+        state: {
+          module,
+          chapter,
+          subject,
+          questionCount,
+          timeLimit,
+          score,
+          correctIds,
+          questions,
+          allIds,
+          isAllChapters,
+          chapterCount,
+        },
+      });
+    }
+  }, [currentIndex, questions.length, loading]);
+
+  if (loading || !current) {
+    return (
+      <div className="gapfill-wrapper">
+        <div className="gapfill-status">{t("gapfillgame.loading")}</div>
+      </div>
+    );
+  }
 
   return (
     <div className="gapfill-wrapper">
@@ -252,25 +332,25 @@ const GapFillGame = () => {
               className="btn btn-dark"
               onClick={() => setShowCancelConfirm(true)}
             >
-              Abbrechen
+              {t("common.cancel")}
             </button>
           ) : (
             <div className="cancel-confirm-container">
               <div className="cancel-confirm-text">
-                Möchtest du wirklich abbrechen?
+                {t("common.confirmCancel")}
               </div>
               <div className="cancel-confirm-buttons">
                 <button
                   className="btn btn-secondary btn-sm"
                   onClick={() => setShowCancelConfirm(false)}
                 >
-                  Nein
+                  {t("common.no")}
                 </button>
                 <button
                   className="btn btn-danger btn-sm"
                   onClick={() => navigate(-2)}
                 >
-                  Ja, zurück
+                  {t("common.yesBack")}
                 </button>
               </div>
             </div>
@@ -283,18 +363,19 @@ const GapFillGame = () => {
               className={`btn btn-dark ${isPostponed ? "active" : ""}`}
               onClick={togglePostpone}
             >
-              {isPostponed ? "Zurückstellung aufheben" : "Frage zurückstellen"}
+              {isPostponed ? t("common.postponeRemove") : t("common.postpone")}
             </button>
           </div>
         )}
       </div>
 
-      <div className="gapfill-header">{module}</div>
+      <div className="gapfill-header">{t(`modules.${module}`)}</div>
       <div className="gapfill-subheader">{chapter}</div>
 
       <div className="gapfill-status">
         <div>
-          Frage {currentIndex + 1} / {questions.length}
+          {t("gapfillgame.questionCount")} {currentIndex + 1} /{" "}
+          {questions.length}
         </div>
         <div>⏳ {timer}s</div>
       </div>
@@ -311,16 +392,18 @@ const GapFillGame = () => {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder="Begriff eingeben..."
+        placeholder={t("gapfillgame.placeholder")}
         disabled={showFeedback !== null}
       />
 
       {isCorrect && (
-        <div className="text-success fw-bold mb-2">✅ Richtig!</div>
+        <div className="text-success fw-bold mb-2">
+          {t("gapfillgame.correct")}
+        </div>
       )}
       {isWrong && (
         <div className="text-danger fw-bold mb-2">
-          ❌ Falsch! Richtige Antwort: <u>{current.answer}</u>
+          {t("gapfillgame.wrong")} <u>{current.answer}</u>
         </div>
       )}
 
@@ -331,7 +414,7 @@ const GapFillGame = () => {
         onClick={handleCheck}
         disabled={!input || showFeedback !== null}
       >
-        ✅ Antwort überprüfen
+        {t("gapfillgame.check")}
       </motion.button>
     </div>
   );

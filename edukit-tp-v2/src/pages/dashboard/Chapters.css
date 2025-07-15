@@ -12,7 +12,7 @@
   color: #000;
   cursor: pointer;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   padding: 0.7rem 1.2rem;
   border-radius: 0.75rem;
   margin-bottom: 0.5rem;
@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-right: 3.5rem; /* mehr Platz rechts */
 }
 
 .chapter-button .chapter-title {
@@ -28,9 +29,10 @@
 
 .chapter-button .chapter-percentage {
   position: absolute;
-  right: 1.5rem;
+  right: 1rem;
   font-weight: 600;
 }
+
 
 
 .chapter-button:hover {
@@ -49,9 +51,17 @@
 
 /* Tablet (577–991px) */
 @media (min-width: 577px) and (max-width: 991px) {
-  .chapter-button, .module-label {
+  .module-label {
     font-size: 1.25rem;
     padding: 0.75rem 1.6rem;
+  }
+  .chapter-button{
+     font-size: 1.1rem;
+    padding: 0.75rem 1.6rem;
+    padding-right: 3.2rem;
+  }
+  .chapter-button .chapter-percentage {
+  right: 1rem;
   }
   .subject-title {
     font-size: 1.25rem;
@@ -69,9 +79,17 @@
 
 /* Desktop (992–1399px) */
 @media (min-width: 992px) and (max-width: 1399px) {
-  .chapter-button, .module-label {
+.module-label {
     font-size: 1.4rem;
     padding: 0.9rem 2rem;
+  }
+  .chapter-button{
+    font-size: 1.25rem;
+    padding: 0.9rem 2rem;
+    padding-right: 3.5rem;
+  }
+    .chapter-button .chapter-percentage {
+  right: 1.5rem;
   }
   .subject-title {
     font-size: 1.4rem;
@@ -89,9 +107,17 @@
 
 /* Große Desktops (≥1400px) */
 @media (min-width: 1400px) {
-  .chapter-button, .module-label {
+  .module-label {
     font-size: 1.5rem;
     padding: 1.1rem 2.2rem;
+  }
+    .chapter-button{
+     font-size: 1.35rem;
+    padding: 1.1rem 2.2rem;
+    padding-right: 3.2rem;
+  }
+  .chapter-button .chapter-percentage {
+  right: 1.5rem;
   }
   .subject-title {
     font-size: 1.5rem;

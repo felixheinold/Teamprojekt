@@ -1,10 +1,18 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 import "./MemoryRound1.css";
 
-const initialPairs = [
+// Typdefinition für Begriffspaare
+type MemoryPair = {
+  id: string;
+  term: string;
+  definition: string;
+};
+
+const initialPairs: MemoryPair[] = [
   {
     id: "pb-k1-en-q1",
     term: "Liquidität",
@@ -88,59 +96,148 @@ const initialPairs = [
   },
 ];
 
-const shuffleArray = (arr) => [...arr].sort(() => Math.random() - 0.5);
+const shuffleArray = <T,>(arr: T[]): T[] =>
+  [...arr].sort(() => Math.random() - 0.5);
 
 const MemoryRound1 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
 
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
   const volume = Number(localStorage.getItem("volume") || "50") / 100;
-
   const {
     module = "",
     chapter = "",
+    subject = "",
     questionCount = 6,
     timeLimit = 20,
-    pairs = null,
+    isAllChapters = false,
+    chapterCount = 1,
   } = location.state || {};
 
-  // Initialisiere pairs
-  const [selectedPairs] = useState(() =>
-    pairs && Array.isArray(pairs)
-      ? pairs
-      : shuffleArray(initialPairs).slice(0, questionCount)
-  );
+  const [selectedPairs, setSelectedPairs] = useState<MemoryPair[]>([]);
 
-  // Speichere alle IDs dieses Kapitels im localStorage (für Fortschrittsanzeige)
   useEffect(() => {
-    const key = "progress";
-    const stored = localStorage.getItem(key);
-    const progress = stored ? JSON.parse(stored) : {};
+    const fetchPairs = async () => {
+      const subjectKey = subject?.toLowerCase();
+      const langKey = i18n.language.startsWith("de") ? "de" : "en";
 
-    if (!progress.memoryTotal) progress.memoryTotal = {};
-    if (!progress.memoryTotal[module]) progress.memoryTotal[module] = {};
+      if (!subjectKey) {
+        setSelectedPairs(shuffleArray(initialPairs).slice(0, questionCount));
+        return;
+      }
 
-    const allIds = initialPairs.map((pair) => pair.id);
-    progress.memoryTotal[module][chapter] = allIds;
+      if (isAllChapters) {
+        const promises = Array.from({ length: chapterCount }, (_, i) => {
+          const chapterKey = `k${i + 1}`;
+          const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
+          return fetch(path)
+            .then((res) => (res.ok ? res.json() : []))
+            .catch(() => []);
+        });
 
-    localStorage.setItem(key, JSON.stringify(progress));
-  }, [module, chapter]);
+        const allResults = await Promise.all(promises);
+        const combined = allResults.flat();
+        const data = combined.length > 0 ? combined : initialPairs;
+        setSelectedPairs(shuffleArray(data).slice(0, questionCount));
+        return;
+      }
 
-  const [terms] = useState(() =>
-    shuffleArray(
-      selectedPairs.map((pair) => ({ id: pair.id, text: pair.term }))
-    )
+      // Standardfall: einzelnes Kapitel
+      const match = chapter?.match(/Kapitel (\d+)/i);
+      const chapterKey = match ? `k${match[1]}` : null;
+
+      if (!chapterKey) {
+        setSelectedPairs(shuffleArray(initialPairs).slice(0, questionCount));
+        return;
+      }
+
+      const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
+      try {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error("Datei nicht gefunden");
+        const data = (await res.json()) as MemoryPair[];
+        setSelectedPairs(shuffleArray(data).slice(0, questionCount));
+      } catch (err) {
+        console.warn("Fehler beim Laden – fallback zu initialPairs", err);
+        setSelectedPairs(shuffleArray(initialPairs).slice(0, questionCount));
+      }
+    };
+
+    fetchPairs();
+  }, [module, chapter, questionCount]);
+
+  useEffect(() => {
+    const updateProgressMemoryTotal = async () => {
+      const subjectKey = subject?.toLowerCase();
+      const langKey = i18n.language.startsWith("de") ? "de" : "en";
+
+      if (!subjectKey) return;
+
+      let allPairs: MemoryPair[] = [];
+
+      if (isAllChapters) {
+        const promises = Array.from({ length: chapterCount }, (_, i) => {
+          const chapterKey = `k${i + 1}`;
+          const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
+          return fetch(path)
+            .then((res) => (res.ok ? res.json() : []))
+            .catch(() => []);
+        });
+
+        const results = await Promise.all(promises);
+        allPairs = results.flat();
+      } else {
+        const match = chapter?.match(/Kapitel (\d+)/i);
+        const chapterKey = match ? `k${match[1]}` : null;
+        if (!chapterKey) return;
+
+        const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
+        try {
+          const res = await fetch(path);
+          if (!res.ok) throw new Error("not found");
+          allPairs = await res.json();
+        } catch {
+          allPairs = initialPairs;
+        }
+      }
+
+      const allIds = allPairs.map((pair) => pair.id);
+      const key = "progress";
+      const stored = localStorage.getItem(key);
+      const progress = stored ? JSON.parse(stored) : {};
+
+      if (!progress.memoryTotal) progress.memoryTotal = {};
+      if (!progress.memoryTotal[module]) progress.memoryTotal[module] = {};
+
+      progress.memoryTotal[module][chapter] = allIds;
+
+      localStorage.setItem(key, JSON.stringify(progress));
+    };
+
+    updateProgressMemoryTotal();
+  }, [module, chapter, subject, isAllChapters, chapterCount]);
+
+  const terms = useMemo(
+    () =>
+      shuffleArray(
+        selectedPairs.map((pair) => ({ id: pair.id, text: pair.term }))
+      ),
+    [selectedPairs]
   );
-  const [definitions] = useState(() =>
-    shuffleArray(
-      selectedPairs.map((pair) => ({ id: pair.id, text: pair.definition }))
-    )
+
+  const definitions = useMemo(
+    () =>
+      shuffleArray(
+        selectedPairs.map((pair) => ({ id: pair.id, text: pair.definition }))
+      ),
+    [selectedPairs]
   );
   const [assignments, setAssignments] = useState({});
   const [usedTerms, setUsedTerms] = useState(new Set());
-  const [draggedTerm, setDraggedTerm] = useState(null);
+  const [draggedTerm, setDraggedTerm] = useState<string | null>(null);
   const [selectedTerm, setSelectedTerm] = useState(null);
   const [submitted, setSubmitted] = useState(false);
 
@@ -243,8 +340,11 @@ const MemoryRound1 = () => {
         total: definitions.length,
         module,
         chapter,
+        subject,
         timeLimit,
         pairs: selectedPairs,
+        isAllChapters,
+        chapterCount,
       },
     });
   };
@@ -258,34 +358,34 @@ const MemoryRound1 = () => {
             className="btn btn-dark"
             onClick={() => setShowCancelConfirm(true)}
           >
-            Abbrechen
+            {t("common.cancel")}
           </button>
         ) : (
           <div className="cancel-confirm-container">
             <div className="cancel-confirm-text">
-              Möchtest du wirklich abbrechen?
+              {t("common.confirmCancel")}
             </div>
             <div className="cancel-confirm-buttons">
               <button
                 className="btn btn-secondary btn-sm"
                 onClick={() => setShowCancelConfirm(false)}
               >
-                Nein
+                {t("common.no")}
               </button>
               <button
                 className="btn btn-danger btn-sm"
                 onClick={() => navigate(-2)}
               >
-                Ja, zurück
+                {t("common.yesBack")}
               </button>
             </div>
           </div>
         )}
       </div>
 
-      <div className="memory-header">{module}</div>
+      <div className="memory-header">{t(`modules.${module}`)}</div>
       <div className="memory-subheader">{chapter}</div>
-      <h1 className="memoryr1-title">🧠 Memory Runde 1</h1>
+      <h1 className="memoryr1-title"> {t("memoryround1.title")} </h1>
 
       {/* Paare */}
       <div
@@ -293,7 +393,9 @@ const MemoryRound1 = () => {
         style={{ width: "100%", maxWidth: "1000px", gap: "20px" }}
       >
         <div className="flex-grow-1 px-2">
-          <h5 className="text-center fw-bold mb-3">Begriffe</h5>
+          <h5 className="text-center fw-bold mb-3">
+            {t("memoryround1.terms")}
+          </h5>
           {terms.map((item, i) => {
             const isUsed = usedTerms.has(item.id);
             const isSelected = item.id === selectedTerm;
@@ -335,7 +437,9 @@ const MemoryRound1 = () => {
         </div>
 
         <div className="flex-grow-1 px-2">
-          <h5 className="text-center fw-bold mb-3">Definitionen</h5>
+          <h5 className="text-center fw-bold mb-3">
+            {t("memoryround1.definitions")}
+          </h5>
           {definitions.map((item, i) => {
             const assignedTerm = assignments[item.id];
             const isCorrect = submitted && checkCorrect(item.id, assignedTerm);
@@ -394,7 +498,7 @@ const MemoryRound1 = () => {
           fontSize: "1.2rem",
         }}
       >
-        {submitted ? "Runde 1 beenden" : "Überprüfe Antworten"}
+        {submitted ? t("memoryround1.next") : t("memoryround1.check")}
       </motion.button>
     </div>
   );

@@ -5,13 +5,16 @@
   padding-bottom: 2rem;
 }
 
-.modules-label{
+.modules-label {
   width: 100%;
   font-weight: 500;
   border: none;
   text-align: center;
   padding: 0.6rem 1.2rem;
   margin-top: 1rem;
+  background-color: #228b57;
+  color: #fff;
+  border-radius: 999px;
 }
 
 .chapter-label {
@@ -20,6 +23,10 @@
   border: none;
   text-align: center;
   padding: 0.6rem 1.2rem;
+  background-color: #78ba84;
+  color: #000;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
 }
 
 .chapter-label:hover {
@@ -27,19 +34,7 @@
   color: #000;
 }
 
-.modules-label {
-  background-color: #228b57;
-  color: #fff;
-  border-radius: 999px;
-}
-
-.chapter-label {
-  background-color: #78ba84;
-  color: #000;
-  margin-bottom: 2rem;
-  border-radius: 0.75rem;
-}
-
+/* Game Cards */
 .game-card {
   padding: 1rem;
   display: flex;
@@ -52,6 +47,8 @@
   text-align: center;
   transition: transform 0.2s ease;
   font-size: 1rem;
+  background-color: #fff;
+  color: #000;
 }
 
 .game-card img {
@@ -59,7 +56,48 @@
   height: 100px;
 }
 
-/* Modal */
+/* Dark Mode: Modal, Dropdowns, etc. */
+body.bg-dark .modal-content,
+body.bg-dark .modal-content.choice-modal {
+  background-color: #2c2c2c;
+  color: white;
+}
+/* Dark Mode: Allgemeine Select-Styling-Überschreibung */
+body.bg-dark select,
+body.bg-dark .form-select {
+  background-color: #3a3a3a !important;
+  color: white !important;
+  border: 1px solid #555 !important;
+}
+
+/* Optional: auch für disabled selects */
+body.bg-dark select:disabled,
+body.bg-dark .form-select:disabled {
+  background-color: #2c2c2c !important;
+  color: #999 !important;
+  opacity: 1 !important;
+}
+
+body.bg-dark .modal-body select {
+  background-color: #3a3a3a;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.bg-dark .choice-modal-title,
+body.bg-dark .modal-content h5 {
+  color: #fff;
+}
+
+body.bg-dark .choice-modal-text {
+  color: #ccc;
+}
+
+body.bg-dark .choice-back-button {
+  color: #78ba84;
+}
+
+/* Modal Base */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -98,6 +136,7 @@
   font-size: 2rem;
   text-align: center;
 }
+
 .modal-content.flex-column {
   max-width: 450px;
   padding: 2rem;
@@ -109,7 +148,7 @@
 
 .modal-content p {
   margin-bottom: 1rem;
-} 
+}
 
 .modal-content.choice-modal {
   display: flex;
@@ -148,7 +187,6 @@
   border-radius: 0.5rem;
 }
 
-
 .choice-modal-title {
   font-size: 1.4rem;
   font-weight: bold;
@@ -172,7 +210,7 @@
   text-decoration: underline;
 }
 
-
+/* Responsive */
 @media (max-width: 576px) {
   .game-card {
     width: 150px;
@@ -180,25 +218,29 @@
   }
 
   .game-card-title {
-  font-size: 1rem;
-}
-.game-card-percentage {
+    font-size: 1rem;
+  }
+
+  .game-card-percentage {
     font-size: 0.8rem;
   }
 
   .game-card img {
     width: 90px;
     height: 90px;
-      margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
   }
+
   .minigames-wrapper h1 {
     font-size: 1.8rem;
   }
+
   .modules-label,
   .chapter-label {
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
+
   .choice-buttons {
     flex-direction: column;
   }
@@ -224,8 +266,9 @@
   }
 
   .game-card-title {
-  font-size: 1.25rem;
-}
+    font-size: 1.25rem;
+  }
+
   .game-card-percentage {
     font-size: 1.1rem;
   }
@@ -234,6 +277,7 @@
     width: 120px;
     height: 120px;
   }
+
   .minigames-wrapper h1 {
     font-size: 2.5rem;
   }
@@ -252,14 +296,16 @@
     height: 240px;
     font-size: 1.4rem;
   }
+
   .game-card img {
     width: 150px;
     height: 150px;
   }
 
-.game-card-title {
-  font-size: 1.5rem;
-}
+  .game-card-title {
+    font-size: 1.5rem;
+  }
+
   .game-card-percentage {
     font-size: 1.3rem;
   }
@@ -276,14 +322,16 @@
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
+
   .game-card {
     width: 350px;
     height: 280px;
   }
 
-.game-card-title {
-  font-size: 1.8rem;
-}
+  .game-card-title {
+    font-size: 1.8rem;
+  }
+
   .game-card-percentage {
     font-size: 1.5rem;
   }
@@ -292,6 +340,7 @@
     width: 180px;
     height: 180px;
   }
+
   .minigames-wrapper h1 {
     font-size: 3.4rem;
   }

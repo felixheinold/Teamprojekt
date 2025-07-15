@@ -27,5 +27,3 @@ const ProtectedRoute = () => {
 };
 
 export default ProtectedRoute;
-
-/*({ children }: { children: JSX.Element })*/

@@ -1,0 +1,140 @@
+/* Wrapper */
+.upload-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+}
+
+/* Upload-Formular-Karte */
+.upload-card {
+  background-color: white;
+  color: black;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+body.bg-dark .upload-card {
+  background-color: #2c2c2c;
+  color: white;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+body.bg-dark .upload-card select,
+body.bg-dark .upload-card input {
+  background-color: #3a3a3a;
+  color: white;
+  border-color: #555;
+}
+
+/* Dark Mode: Upload-Feld */
+body.bg-dark .upload-card .form-select {
+  background-color: #3a3a3a;
+  color: white;
+    border-color: #555;
+}
+
+/* Dark Mode: Deaktivierte Selects */
+body.bg-dark .upload-card select:disabled {
+  background-color: #3a3a3a;
+  color: #bbb;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Titel */
+.upload-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+
+/* Formularfelder */
+.upload-card .form-label {
+  font-weight: 500;
+}
+
+.upload-card .form-select,
+.upload-card input[type="text"],
+.upload-card input[type="email"],
+.upload-card input[type="file"] {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Entfernen-Button */
+.upload-card button[type="button"] {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  color: #dc3545;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Senden-Button */
+.upload-card button[type="submit"] {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+/* Responsives Layout */
+@media (max-width: 576px) {
+  .upload-wrapper {
+    margin-top: -2.5rem;
+  }
+  .upload-card {
+    max-width: 600px;
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .upload-card {
+    max-width: 600px;
+  }
+
+  .upload-title {
+    font-size: 1.8rem;
+  }
+
+  .upload-card button[type="submit"] {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .upload-card {
+    max-width: 800px;
+  }
+
+  .upload-title {
+    font-size: 2.2rem;
+  }
+
+  .upload-card button[type="submit"] {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .upload-card {
+    max-width: 1000px;
+  }
+
+  .upload-title {
+    font-size: 2.5rem;
+  }
+
+  .upload-card button[type="submit"] {
+    font-size: 1.2rem;
+  }
+}

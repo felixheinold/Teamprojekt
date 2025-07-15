@@ -1,0 +1,127 @@
+[
+  {
+    "id": "finance-k5-en-m1",
+    "term": "Equity capital",
+    "definition": "Funds provided indefinitely by the owners of a company."
+  },
+  {
+    "id": "finance-k5-en-m2",
+    "term": "Debt capital",
+    "definition": "Funds with repayment obligation, usually interest-bearing and time-limited."
+  },
+  {
+    "id": "finance-k5-en-m3",
+    "term": "Common share",
+    "definition": "Share with voting rights and entitlement to dividends."
+  },
+  {
+    "id": "finance-k5-en-m4",
+    "term": "Preferred share",
+    "definition": "Share with preferential rights, e.g. higher dividends, typically without voting rights."
+  },
+  {
+    "id": "finance-k5-en-m5",
+    "term": "Dividend",
+    "definition": "Portion of profit distributed to shareholders."
+  },
+  {
+    "id": "finance-k5-en-m6",
+    "term": "Annual general meeting",
+    "definition": "Meeting of shareholders with voting and decision rights."
+  },
+  {
+    "id": "finance-k5-en-m7",
+    "term": "Initial public offering (IPO)",
+    "definition": "First-time sale of a company's shares on the stock exchange."
+  },
+  {
+    "id": "finance-k5-en-m8",
+    "term": "Underpricing",
+    "definition": "When the offering price of a share is lower than its first market price."
+  },
+  {
+    "id": "finance-k5-en-m9",
+    "term": "Capital increase",
+    "definition": "Issuance of new shares to raise equity capital."
+  },
+  {
+    "id": "finance-k5-en-m10",
+    "term": "Subscription right",
+    "definition": "Right of existing shareholders to purchase new shares first."
+  },
+  {
+    "id": "finance-k5-en-m11",
+    "term": "Authorized capital",
+    "definition": "Capital approved for issuance by the board with supervisory board consent."
+  },
+  {
+    "id": "finance-k5-en-m12",
+    "term": "Lock-up period",
+    "definition": "Period after an IPO during which insiders cannot sell shares."
+  },
+  {
+    "id": "finance-k5-en-m13",
+    "term": "Bookbuilding",
+    "definition": "Method of determining the issue price of shares based on demand."
+  },
+  {
+    "id": "finance-k5-en-m14",
+    "term": "Equity story",
+    "definition": "Presentation of a company's strengths and growth strategy before an IPO."
+  },
+  {
+    "id": "finance-k5-en-m15",
+    "term": "Ex-dividend",
+    "definition": "Trading of shares without entitlement to the next dividend."
+  },
+  {
+    "id": "finance-k5-en-m16",
+    "term": "Cum-dividend",
+    "definition": "Trading of shares with entitlement to the next dividend."
+  },
+  {
+    "id": "finance-k5-en-m17",
+    "term": "Dividend yield",
+    "definition": "Ratio of dividend to share price."
+  },
+  {
+    "id": "finance-k5-en-m18",
+    "term": "Dividend signaling",
+    "definition": "Change in dividends as a signal of future business expectations."
+  },
+  {
+    "id": "finance-k5-en-m19",
+    "term": "Dividend smoothing",
+    "definition": "Strategy to stabilize dividend payments over time."
+  },
+  {
+    "id": "finance-k5-en-m20",
+    "term": "Capital reserve",
+    "definition": "Equity component arising from share premium on issuance."
+  },
+  {
+    "id": "finance-k5-en-m21",
+    "term": "Nominal capital",
+    "definition": "Registered share capital of a public company."
+  },
+  {
+    "id": "finance-k5-en-m22",
+    "term": "Clientele effect",
+    "definition": "Adapting payout policy to shareholders’ tax preferences."
+  },
+  {
+    "id": "finance-k5-en-m23",
+    "term": "Tax arbitrage",
+    "definition": "Trading strategy around dividend dates to exploit tax differences."
+  },
+  {
+    "id": "finance-k5-en-m24",
+    "term": "Long-run performance",
+    "definition": "Stock performance in the years following an IPO."
+  },
+  {
+    "id": "finance-k5-en-m25",
+    "term": "Investment bank",
+    "definition": "Bank supporting a company during an IPO and placing shares."
+  }
+]

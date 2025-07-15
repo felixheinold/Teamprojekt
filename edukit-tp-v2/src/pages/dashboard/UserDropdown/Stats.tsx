@@ -9,23 +9,27 @@ import {
   LabelList,
 } from "recharts";
 import { useTranslation } from "react-i18next";
+import "./Stats.css";
 
-// Typen
 type GameKey = "quiz" | "gapfill" | "memory";
+
 type GameStats = {
   totalGames: number;
   totalPoints: number;
   maxPoints: number;
   bestScore: number;
 };
+
 type LastPlayed = {
   game: GameKey;
   timestamp: string;
 };
+
 type ModuleChapterStats = {
   totalPoints: number;
   maxPoints: number;
 };
+
 type ExtendedStats = Record<GameKey, GameStats> & {
   byModuleAndChapter?: Record<string, ModuleChapterStats>;
 };
@@ -46,18 +50,12 @@ const Stats = () => {
   const { t } = useTranslation();
   const [stats, setStats] = useState<ExtendedStats>(defaultStats);
   const [lastPlayed, setLastPlayed] = useState<LastPlayed | null>(null);
-  const [moduleChapterStats, setModuleChapterStats] = useState<
-    Record<string, ModuleChapterStats>
-  >({});
 
   useEffect(() => {
     try {
       const stored = localStorage.getItem("userStats");
       const parsed = stored ? JSON.parse(stored) : {};
       setStats({ ...defaultStats, ...parsed });
-      if (parsed.byModuleAndChapter) {
-        setModuleChapterStats(parsed.byModuleAndChapter);
-      }
     } catch (error) {
       console.error("Fehler beim Parsen von userStats:", error);
       localStorage.removeItem("userStats");
@@ -74,7 +72,7 @@ const Stats = () => {
   }, []);
 
   const renderProgressBar = (percent: string) => (
-    <div className="progress" style={{ height: "10px" }}>
+    <div className="progress">
       <div
         className="progress-bar bg-success"
         role="progressbar"
@@ -101,8 +99,9 @@ const Stats = () => {
         : "0.0";
 
     return (
-      <div key={gameKey} className="border p-3 rounded mb-4 bg-light shadow-sm">
-        <h5>{t(`stats.${gameKey}`)}</h5>
+      <div key={gameKey} className="stats-card">
+        <h4 className="stats-subtitle">{t(`stats.${gameKey}`)}</h4>
+
         <p>
           {t("stats.gamesPlayed")}: <strong>{data.totalGames}</strong>
         </p>
@@ -135,35 +134,37 @@ const Stats = () => {
   );
 
   return (
-    <div className="container py-5">
-      <h1 className="mb-4">📊 {t("stats.title")}</h1>
+    <div className="stats-wrapper">
+      <div className="stats-inner">
+        <h1 className="stats-title">📊 {t("stats.title")}</h1>
 
-      {lastPlayed && (
-        <div className="mb-4">
-          <h5>🕹️ {t("stats.lastPlayed")}</h5>
-          <p>
-            {new Date(lastPlayed.timestamp).toLocaleString()} –{" "}
-            <strong>{t(`stats.${lastPlayed.game}`)}</strong>
-          </p>
+        {lastPlayed && (
+          <div className="stats-card">
+            <h5>🕹️ {t("stats.lastPlayed")}</h5>
+            <p>
+              {new Date(lastPlayed.timestamp).toLocaleString()} –{" "}
+              <strong>{t(`stats.${lastPlayed.game}`)}</strong>
+            </p>
+          </div>
+        )}
+
+        {["quiz", "memory", "gapfill"].map((game) =>
+          renderGameStats(game as GameKey, stats[game as GameKey])
+        )}
+
+        <div className="stats-card">
+          <h4 className="stats-subtitle">📈 {t("stats.compare")}</h4>
+          <ResponsiveContainer width="100%" height={250}>
+            <BarChart data={chartData}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="Punkte" fill="#228b57">
+                <LabelList dataKey="Punkte" position="top" />
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
-      )}
-
-      {["quiz", "memory", "gapfill"].map((game) =>
-        renderGameStats(game as GameKey, stats[game as GameKey])
-      )}
-
-      <div className="mt-5">
-        <h4 className="mb-3">📈 {t("stats.compare")}</h4>
-        <ResponsiveContainer width="100%" height={250}>
-          <BarChart data={chartData}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Bar dataKey="Punkte" fill="#5cb85c">
-              <LabelList dataKey="Punkte" position="top" />
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
       </div>
     </div>
   );

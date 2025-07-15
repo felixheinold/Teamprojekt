@@ -1,0 +1,127 @@
+[
+  {
+    "id": "management-k1-en-g1",
+    "sentence": "The objective management functions include planning, organizing, and ___.",
+    "answer": "controlling"
+  },
+  {
+    "id": "management-k1-en-g2",
+    "sentence": "___ is a personal management function.",
+    "answer": "Leadership"
+  },
+  {
+    "id": "management-k1-en-g3",
+    "sentence": "The economic principle requires optimizing the ratio between output and ___.",
+    "answer": "input"
+  },
+  {
+    "id": "management-k1-en-g4",
+    "sentence": "Managerial decisions cannot be ___; they must be made by the top management.",
+    "answer": "delegated"
+  },
+  {
+    "id": "management-k1-en-g5",
+    "sentence": "The action structure model distinguishes between goals, measures, and ___.",
+    "answer": "impacts"
+  },
+  {
+    "id": "management-k1-en-g6",
+    "sentence": "The shareholder approach aims to maximize the ___ of the firm.",
+    "answer": "value"
+  },
+  {
+    "id": "management-k1-en-g7",
+    "sentence": "The stakeholder approach aims to include all ___ in decision making.",
+    "answer": "stakeholders"
+  },
+  {
+    "id": "management-k1-en-g8",
+    "sentence": "Stakeholders include employees, customers, and ___.",
+    "answer": "suppliers"
+  },
+  {
+    "id": "management-k1-en-g9",
+    "sentence": "A common success metric in shareholder value is the ___.",
+    "answer": "return on capital"
+  },
+  {
+    "id": "management-k1-en-g10",
+    "sentence": "In decisions under risk, the decision-maker knows the ___.",
+    "answer": "probabilities"
+  },
+  {
+    "id": "management-k1-en-g11",
+    "sentence": "In uncertain decisions, the decision-maker does not know the ___.",
+    "answer": "probabilities"
+  },
+  {
+    "id": "management-k1-en-g12",
+    "sentence": "The ___ principle accounts for both expected value and risk.",
+    "answer": "(μ,σ)"
+  },
+  {
+    "id": "management-k1-en-g13",
+    "sentence": "The additive model is also known as the ___ analysis.",
+    "answer": "utility value"
+  },
+  {
+    "id": "management-k1-en-g14",
+    "sentence": "The additive model requires that goals are complete, non-redundant, and ___.",
+    "answer": "preference-independent"
+  },
+  {
+    "id": "management-k1-en-g15",
+    "sentence": "The ___ principle introduces an optimism index α.",
+    "answer": "Hurwicz"
+  },
+  {
+    "id": "management-k1-en-g16",
+    "sentence": "The ___ game illustrates problems with expected value decisions.",
+    "answer": "St. Petersburg"
+  },
+  {
+    "id": "management-k1-en-g17",
+    "sentence": "The Maximin rule selects the option with the best ___ outcome.",
+    "answer": "worst-case"
+  },
+  {
+    "id": "management-k1-en-g18",
+    "sentence": "The goal of the shareholder value is the maximization of ___.",
+    "answer": "wealth"
+  },
+  {
+    "id": "management-k1-en-g19",
+    "sentence": "The Laplace rule assumes ___ probabilities for all states.",
+    "answer": "equal"
+  },
+  {
+    "id": "management-k1-en-g20",
+    "sentence": "The additive model computes total utility as a weighted sum of ___.",
+    "answer": "goal achievements"
+  },
+  {
+    "id": "management-k1-en-g21",
+    "sentence": "A known issue with the additive model is the ___ effect.",
+    "answer": "range"
+  },
+  {
+    "id": "management-k1-en-g22",
+    "sentence": "A typical decision rule under risk is the ___ rule.",
+    "answer": "μ"
+  },
+  {
+    "id": "management-k1-en-g23",
+    "sentence": "In the shareholder approach, the ___ is a proxy for firm value.",
+    "answer": "stock price"
+  },
+  {
+    "id": "management-k1-en-g24",
+    "sentence": "Multi-goal decisions often require a ___ approach.",
+    "answer": "multi-criteria"
+  },
+  {
+    "id": "management-k1-en-g25",
+    "sentence": "Fayol and ___ are considered pioneers of classical management functions.",
+    "answer": "Gutenberg"
+  }
+]

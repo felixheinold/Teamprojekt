@@ -1,0 +1,150 @@
+/* Leaderboard.css */
+
+/* Wrapper für zentriertes Layout */
+.leaderboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+/* Titel */
+.leaderboard-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Top 3 Spieler im Podium-Stil */
+.leaderboard-top3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.leaderboard-top-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+}
+
+.avatar-wrapper {
+  margin-bottom: 1rem;
+}
+
+/* Podestfarben */
+.leaderboard-podium {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: 0.3rem;
+}
+.podium-1 {
+  height: 80px;
+  background-color: #ffd700; /* Gold */
+}
+.podium-2 {
+  height: 60px;
+  background-color: #c0c0c0; /* Silber */
+}
+.podium-3 {
+  height: 40px;
+  background-color: #cd7f32; /* Bronze */
+}
+
+/* Namens- & Punktanzeige */
+.player-name {
+  font-size: 0.95rem;
+  color: #333;
+}
+.player-score {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+/* Liste ab Platz 4 */
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.leaderboard-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.entry-user {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.entry-score {
+  color: #444;
+}
+
+.highlight {
+  background-color: #ffeeba;
+  border-color: #ffc107;
+}
+
+/* Dark Mode */
+body.bg-dark .leaderboard-wrapper {
+  color: #ffffff;
+}
+
+body.bg-dark .leaderboard-entry {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+body.bg-dark .player-score,
+body.bg-dark .entry-score {
+  color: #ccc;
+}
+
+body.bg-dark .player-name {
+  color: #eee;
+}
+
+/* Responsive Regeln */
+@media (max-width: 576px) {
+  .leaderboard-title {
+    font-size: 1.8rem;
+  }
+  .leaderboard-top-player{
+  max-width: 90px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .leaderboard-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .leaderboard-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .leaderboard-title {
+    font-size: 3.2rem;
+  }
+}

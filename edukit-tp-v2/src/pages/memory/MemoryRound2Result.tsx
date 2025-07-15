@@ -1,19 +1,24 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Trans, useTranslation } from "react-i18next";
 import "./MemoryRound2Result.css";
 
 const MemoryRound2Result = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useTranslation();
 
   const {
     module = "",
     chapter = "",
+    subject,
     questionCount = 0,
     timeLimit = 20,
     turns = 0,
     pairs = [],
+    isAllChapters,
+    chapterCount,
   } = location.state || {};
 
   const basePoints = pairs.length;
@@ -22,7 +27,6 @@ const MemoryRound2Result = () => {
   const score = Math.max(basePoints, maxPoints - extraTurns * 2);
 
   useEffect(() => {
-    // Bestehende Statistik-Speicherung
     const statsKey = "userStats";
     const gameKey = "memory";
 
@@ -47,7 +51,6 @@ const MemoryRound2Result = () => {
     localStorage.setItem(statsKey, JSON.stringify(allStats));
     localStorage.setItem("lastPlayed", gameKey);
 
-    // 🧠 Neue Fortschritts-Speicherung
     const progressKey = "progress";
     const storedProgress = localStorage.getItem(progressKey);
     const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
@@ -58,8 +61,7 @@ const MemoryRound2Result = () => {
       allProgress.memory[module][chapter] = [];
 
     const prevIds: string[] = allProgress.memory[module][chapter];
-    const newIds: string[] = pairs.map((p: any) => p.id); // IDs aus Runde 2
-
+    const newIds: string[] = pairs.map((p: any) => p.id);
     const combined = Array.from(new Set([...prevIds, ...newIds]));
     allProgress.memory[module][chapter] = combined;
 
@@ -72,17 +74,23 @@ const MemoryRound2Result = () => {
         <img src="/images/DinoKIT2.png" alt="Dino" />
       </div>
 
-      {/* Textbereich */}
       <div className="memoryr2result-text">
-        <h1 className="memoryr2result-title">
-          🎉 Super, du hast es geschafft!
-        </h1>
+        <h1 className="memoryr2result-title">{t("common.congrats")}</h1>
+
         <p className="memoryr2result-score">
-          Du hast <strong>{pairs.length}</strong> Paare in{" "}
-          <strong>{turns}</strong> Zügen richtig zugeordnet.
+          <Trans
+            i18nKey="memoryround2result.pairsScored"
+            values={{ count: pairs.length, turns }}
+            components={{ strong: <strong /> }}
+          />
         </p>
+
         <p className="memoryr2result-score">
-          Dafür erhältst du <strong>{score}</strong> Punkte.
+          <Trans
+            i18nKey="memoryround2result.scoreText"
+            values={{ score }}
+            components={{ strong: <strong /> }}
+          />
         </p>
 
         <div className="memoryr2result-buttons">
@@ -95,14 +103,17 @@ const MemoryRound2Result = () => {
                 state: {
                   module,
                   chapter,
+                  subject,
                   questionCount: pairs.length,
                   timeLimit,
                   pairs,
+                  isAllChapters,
+                  chapterCount,
                 },
               })
             }
           >
-            🔁 Kapitel erneut spielen
+            🔁 {t("common.playAgain")}
           </motion.button>
 
           <motion.button
@@ -113,11 +124,18 @@ const MemoryRound2Result = () => {
               navigate(
                 `/minigames/${encodeURIComponent(module)}/${encodeURIComponent(
                   chapter
-                )}`
+                )}`,
+                {
+                  state: {
+                    subjectKey: subject,
+                    isAllChapters,
+                    chapterCount,
+                  },
+                }
               )
             }
           >
-            🎮 Zurück zur Minigame Auswahl
+            🎮 {t("common.backToMinigames")}
           </motion.button>
 
           <motion.button
@@ -126,7 +144,7 @@ const MemoryRound2Result = () => {
             className="memoryr2result-btn"
             onClick={() => navigate("/modules")}
           >
-            📚 Zurück zur Modul-Auswahl
+            📚 {t("common.backToModules")}
           </motion.button>
         </div>
       </div>

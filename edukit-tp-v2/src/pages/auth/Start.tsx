@@ -36,7 +36,7 @@ const Start = () => {
           <span className="text-success">{t("start.title.part2")}</span>
         </h1>
 
-        <p className="start-subtitle text-muted mb-4">
+        <p className="start-subtitle mb-4">
           {t("start.subtitle.line1")}
           <br />
           {t("start.subtitle.line2")}

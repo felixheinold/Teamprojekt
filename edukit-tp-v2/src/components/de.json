@@ -3,8 +3,17 @@
     "save": "Speichern",
     "edit": "Bearbeiten",
     "cancel": "Abbrechen",
+    "no": "Nein",
+    "yesBack": "Ja, zurück",
+    "confirmCancel": "Möchtest du wirklich abbrechen?",
     "start": "Start",
-    "back": "Zurück"
+    "back": "Zurück",
+    "postpone": "Frage zurückstellen",
+    "postponeRemove": "Zurückstellung aufheben",
+     "congrats": "🎉 Super, du hast es geschafft!",
+  "playAgain": "Kapitel erneut spielen",
+  "backToMinigames": "Zurück zur Minigame Auswahl",
+  "backToModules": "Zurück zur Modul-Auswahl"
   },
   "user": {
     "title": "Mein Account",
@@ -33,30 +42,20 @@
   },
   "modules": {
     "select": "Wähle ein Modul",
-    "production": "Produktion und Logistik",
+    "production": "Produktion, Logistik und Wirtschaftsinformatik",
     "finance": "Finanzierung und Rechnungswesen",
     "management": "Management und Marketing",
     "planning": "Integrierte Produktionsplanung",
+    "brand": "Brand Management",
     "economics2": "Volkswirtschaftslehre 2",
     "economics1": "Volkswirtschaftslehre 1",
-    "uploadTitle": "📤 PDF hochladen",
-    "selectModule": "Modulvorlesung wählen",
-    "selectChapter": "Kapitel wählen",
-    "selectFile": "PDF auswählen",
-    "uploadButton": "Hochladen",
-    "uploadMissing": "Bitte Modul, Kapitel und Datei auswählen.",
-    "uploadSuccess": "PDF erfolgreich hochgeladen!",
-    "disclaimer": "Hinweis: Die bereitgestellten Vorlesungsinhalte können veraltet sein."
-  },
-  "chapters": {
-    "selectSubchapter": "Wähle ein Kapitel",
-    "chapter": "Kapitel",
-    "topic": "Thema",
-    "learnAll": "Alle Kapitel üben",
-    "allChapters": "Alle Kapitel",
-    "chapter1": "Kapitel 1 – Einführung",
-    "chapter2": "Kapitel 2 – Grundlagen",
-    "chapter3": "Kapitel 3 – Vertiefung"
+    "disclaimer": "Hinweis: Die bereitgestellten Vorlesungsunterlagen können veraltet sein.",
+    "info-header": "Hinweise zum Upload",
+    "info1": "Lade nur <strong>PDF-Dokumente</strong> hoch.",
+    "info2": "Lade <strong>jedes Dokument einzeln</strong> hoch.",
+    "info3": "Stelle sicher, dass das Dokument <strong>ein komplettes Kapitel</strong> abdeckt.",
+    "info4": "<strong>Keine mathematischen Formeln</strong> oder Formelsammlungen hochladen."
+
   },
   "minigames": {
     "select": "Wähle ein Mini-Game",
@@ -102,6 +101,7 @@
     "production": "Produktion",
     "logistics": "Logistik",
     "energy": "Energiewirtschaft",
+    "informatics": "Wirtschaftsinformatik",
     "finance": "Finanzierung",
     "accounting": "Rechnungswesen",
     "balance": "Jahresabschluss und Bewertung",
@@ -109,7 +109,8 @@
     "entrepreneurship": "Entrepreneurship",
     "hr": "HR-Management",
     "marketing": "Marketing",
-    "integratedPlanning": "Integrierte Produktionsplanung",
+    "planning": "Integrierte Produktionsplanung",
+    "brand": "Brand Management",
     "economics1": "Volkswirtschaftslehre 1",
     "economics2": "Volkswirtschaftslehre 2"
   },

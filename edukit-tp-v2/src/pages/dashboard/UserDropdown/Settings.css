@@ -16,6 +16,13 @@
   height: auto;
 }
 
+/* Dark Mode */
+body.bg-dark .settings-card {
+  background-color: #2c2c2c; /* dunkles Grau statt Schwarz */
+  color: #ffffff; /* Weiß für Text */
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
 /* Dynamische Schriftgrößen */
 .settings-title {
   font-weight: bold;

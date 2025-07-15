@@ -1,6 +1,8 @@
+// User.tsx
 import { useUser } from "../../../context/UserContext";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import "./User.css";
 
 const User = () => {
   const { user, setUser } = useUser();
@@ -36,51 +38,44 @@ const User = () => {
     };
     setUser(updatedUser);
     setEditMode(false);
-    alert(t("user.updated")); // ✅ i18n
+    alert(t("user.updated"));
   };
 
   if (!user) {
-    return (
-      <p className="text-center mt-5">⚠️ {t("user.noUser")}</p>
-    );
+    return <p className="user-message">⚠️ {t("user.noUser")}</p>;
   }
 
   return (
-    <div className="container mt-4">
-      <div
-        className="bg-dark text-white rounded p-4 shadow-lg"
-        style={{ maxWidth: "600px", margin: "0 auto" }}
-      >
-        <h3 className="fw-bold mb-4">👤 {t("user.title")}</h3>
+    <div className="user-wrapper">
+      <div className="user-card">
+        <h2 className="user-title">👤 {t("user.title")}</h2>
 
-        <div className="d-flex align-items-center mb-4">
+        <div className="user-avatar-section">
           <img
             src={user.userProfilePicture || "/avatars/default.png"}
             alt="Avatar"
-            className="rounded-circle me-3"
-            style={{ width: "70px", height: "70px", objectFit: "cover" }}
+            className="user-avatar"
           />
           <div>
-            <h5 className="mb-0">{user.userName}</h5>
-            <small className="text-muted">
+            <h5 className="user-name">{user.userName}</h5>
+            <small className="user-email">
               {t("user.loggedInAs")} {user.userMail}
             </small>
           </div>
         </div>
 
-        <div className="mb-3">
-          <label className="form-label">{t("user.username")}</label>
-          <div className="d-flex gap-2">
+        <div className="user-group">
+          <label>{t("user.username")}</label>
+          <div className="user-input-row">
             <input
               type="text"
-              className="form-control"
               name="userName"
               value={form.userName}
               disabled={!editMode}
               onChange={handleChange}
             />
             <button
-              className="btn btn-secondary"
+              className="user-edit-btn"
               onClick={() => setEditMode(!editMode)}
             >
               {editMode ? t("common.cancel") : t("common.edit")}
@@ -88,19 +83,18 @@ const User = () => {
           </div>
         </div>
 
-        <div className="mb-3">
-          <label className="form-label">{t("user.email")}</label>
-          <div className="d-flex gap-2">
+        <div className="user-group">
+          <label>{t("user.email")}</label>
+          <div className="user-input-row">
             <input
               type="email"
-              className="form-control"
               name="userMail"
               value={form.userMail}
               disabled={!editMode}
               onChange={handleChange}
             />
             <button
-              className="btn btn-secondary"
+              className="user-edit-btn"
               onClick={() => setEditMode(!editMode)}
             >
               {editMode ? t("common.cancel") : t("common.edit")}
@@ -109,24 +103,23 @@ const User = () => {
         </div>
 
         {editMode && (
-          <div className="text-end">
-            <button className="btn btn-success" onClick={handleSave}>
+          <div className="user-actions">
+            <button className="user-save" onClick={handleSave}>
               {t("common.save")}
             </button>
           </div>
         )}
 
-        <div className="mt-4 text-center">
-          <button className="btn btn-outline-danger">
+        <div className="user-reset">
+          <button className="user-reset-btn">
             🔑 {t("user.resetPassword")}
           </button>
         </div>
 
-        <hr className="my-4" />
-        <div className="text-center">
-          <p className="fs-5">
-            📊 <strong>{totalPoints}</strong> {t("user.totalPoints")}
-          </p>
+        <hr className="user-divider" />
+
+        <div className="user-points">
+          📊 <strong>{totalPoints}</strong> {t("user.totalPoints")}
         </div>
       </div>
     </div>
