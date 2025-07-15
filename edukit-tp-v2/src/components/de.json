@@ -246,7 +246,7 @@
     "selectSubject": "Vorlesung wählen",
     "selectChapter": "Kapitel wählen",
     "submit": "Datei hochladen",
-    "missingFields": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
+    "missing": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
     "success": "PDF erfolgreich hochgeladen!",
     "failed": "Upload fehlgeschlagen.",
     "selectFile": "Datei auswählen",
