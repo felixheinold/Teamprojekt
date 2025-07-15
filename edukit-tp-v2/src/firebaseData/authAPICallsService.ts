@@ -13,7 +13,7 @@ export class AuthAPICallsService{
           "id": id,
           "mail": email,
           "name": name,
-          "profile_picture": picture
+          "picture": picture
         }
         try{
             const response = await fetch(url, {
