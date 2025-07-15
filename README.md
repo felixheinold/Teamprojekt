@@ -100,4 +100,5 @@ ai-learning-game/
 ├── docs/                 # Design documents, notes
 ├── tests/                # Test scripts
 └── README.md             # Project overview
+
 ```
