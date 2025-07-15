@@ -201,7 +201,9 @@
     "infoText2": "Please confirm your email address via the link in the message.",
     "infoText3": "If you do not receive an email, check your spam folder. A new email can be requested.",
     "continueAfterInfo": "Continue to the homepage",
-    "checkInbox": "Please check your inbox. It may take a few minutes."
+    "checkInbox": "Please check your inbox. It may take a few minutes.",
+    "mail-info": "If you have set up a mail forwarding from your KIT email address to a private email account (e.g. iCloud or Gmail), please remove it before registering at: "
+
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",
@@ -321,7 +323,7 @@
   "gapfillresult": {
   "scoreText": "You scored <strong>{{score}}</strong> points"
 },
-
+  
    "chapters": {
     "selectSubchapter": "Select a Chapter",
     "chapter": "Chapter",
@@ -426,4 +428,3 @@
     }
   }
 }
-
