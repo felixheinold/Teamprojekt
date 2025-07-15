@@ -176,15 +176,16 @@
     "kitOnly": "Nur KIT-E-Mail-Adressen erlaubt",
     "error": "Login fehlgeschlagen.",
     "noUserData": "Benutzerdaten fehlen in der Antwort.",
-    "unknownError": "Etwas ist schiefgelaufen.",
-    "anotherMail": "Eine erneute Verifikations-Mail senden"
-
+    "unknownError": "Etwas ist schiefgelaufen.", 
+    "anotherMail": "Eine erneute Verifikations-Email senden.",
+    "wrongCredentials": "Die eingegebene Mail-Adresse und/oder das Passwort ist falsch. Eventuell musst du deine Mail-Adresse zuerst verifizieren."
   },
   "register": {
     "title": "Erstelle einen Account",
     "chooseAvatar": "Wähle deinen Avatar:",
     "username": "Benutzername",
     "email": "KIT-Studenten-E-Mail",
+    "invalidEmailFormat": "Nur Mail-Adressen der Form 'uxxxx@student.kit.edu' oder '**name**@kit.edu' sind zulässig!",
     "emailPlaceholder": "u....@student.kit.edu",
     "password": "Passwort",
     "confirmPassword": "Passwort bestätigen",
@@ -200,7 +201,8 @@
   "infoText1": "In den nächsten Minuten erhältst du eine E-Mail an deine KIT-Mailadresse.",
   "infoText2": "Bitte bestätige deine E-Mail-Adresse über den Link in der Nachricht.",
   "infoText3": "Falls du keine Mail bekommst, prüfe deinen Spam-Ordner. Eine erneute Mail kann angefordert werden.",
-  "continueAfterInfo": "Weiter zur Startseite"
+  "continueAfterInfo": "Weiter zur Startseite",
+  "checkInbox": "Bitte überprüfe deinen Posteingang. Es könnte einige Minuten dauern."
   },
   "disclaimer": {
     "howToUseTitle": "How to Use",
@@ -246,12 +248,9 @@
     "selectSubject": "Vorlesung wählen",
     "selectChapter": "Kapitel wählen",
     "submit": "Datei hochladen",
-    "missingFields": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
+    "missing": "Bitte Modul, Vorlesung, Kapitel und Datei auswählen.",
     "success": "PDF erfolgreich hochgeladen!",
-    "selectFile": "Datei auswählen",
-    "noFileSelected": "Keine Datei ausgewählt",
-    "removeFile": "Datei entfernen"
-    
+    "failed": "Upload fehlgeschlagen."
   },
   "layout": {
   "modules": "Module",
