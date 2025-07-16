@@ -196,18 +196,17 @@ const Minigames = () => {
     if (isPostponedMode && postponedQuestions.length > 0) {
       return Array.from({ length: postponedQuestions.length }, (_, i) => i + 1);
     }
-
     if (totalAvailable === 0) {
       // Fallback: Standardauswahl bei unbekannter Totalanzahl
       return isMemory
-        ? Array.from({ length: 11 }, (_, i) => i + 5) // 5–15
+        ? Array.from({ length: 13 }, (_, i) => i + 3) // 3–15
         : Array.from({ length: 10 }, (_, i) => (i + 1) * 2); // 2–20
     }
 
     return isMemory
       ? Array.from(
-          { length: Math.max(0, Math.min(15, totalAvailable) - 4) },
-          (_, i) => i + 5
+          { length: Math.max(0, Math.min(15, totalAvailable) - 2) },
+          (_, i) => i + 3
         )
       : Array.from(
           { length: Math.floor(Math.min(30, totalAvailable) / 2) },
