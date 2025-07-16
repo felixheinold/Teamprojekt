@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
   BarChart,
   Bar,
@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import { useTranslation } from "react-i18next";
 import "./Stats.css";
+import { useBackendUserContext } from "../../../context/BackendUserContext";
 
 type GameKey = "quiz" | "gapfill" | "memory";
 
@@ -49,9 +50,10 @@ const totalQuestions: Record<GameKey, number> = {
 const Stats = () => {
   const { t } = useTranslation();
   const [stats, setStats] = useState<ExtendedStats>(defaultStats);
-  const [lastPlayed, setLastPlayed] = useState<LastPlayed | null>(null);
+  //const [lastPlayed, setLastPlayed] = useState<LastPlayed | null>(null);
+  const { user } = useBackendUserContext();
 
-  useEffect(() => {
+  /*useEffect(() => {
     try {
       const stored = localStorage.getItem("userStats");
       const parsed = stored ? JSON.parse(stored) : {};
@@ -69,7 +71,54 @@ const Stats = () => {
     } catch (error) {
       console.error("Fehler beim Parsen von lastPlayed:", error);
     }
-  }, []);
+  }, []);*/
+
+  if (!user) return <div>Loading...</div>;
+
+   const statsBackend = useMemo<Record<GameKey, GameStats>>(() => {
+    const gi = user.user_game_information;
+    return {
+      quiz: {
+        totalGames: gi.quiz.total_games,
+        totalPoints: gi.quiz.total_points,
+        maxPoints: gi.quiz.best_Score,
+        bestScore: gi.quiz.best_Score,
+      },
+      memory: {
+        totalGames: gi.memory.total_games,
+        totalPoints: gi.memory.total_points,
+        maxPoints: gi.memory.best_Score,
+        bestScore: gi.memory.best_Score,
+      },
+      gapfill: {
+        totalGames: gi.gapfill.total_games,
+        totalPoints: gi.gapfill.total_points,
+        maxPoints: gi.gapfill.best_Score,
+        bestScore: gi.gapfill.best_Score,
+      },
+    };
+  }, [user]);
+
+    // letzer Spielestart
+  const lastPlayedGame = user.user_game_information;
+  const lastPlayed = useMemo(() => ({
+    game: (["quiz","memory","gapfill"] as GameKey[]).find(
+      g => user.user_game_information[g].last_played !== ""
+    ),
+    timestamp: lastPlayedGame[
+      (["quiz","memory","gapfill"] as GameKey[]).reduce((a, g) =>
+        user.user_game_information[g].last_played > user.user_game_information[a].last_played
+          ? g : a, "quiz" as GameKey)
+    ].last_played
+  }), [user]);
+
+  // Daten fürs Chart
+  const chartData = (["quiz", "memory", "gapfill"] as GameKey[]).map(game => ({
+    name: t(`stats.${game}`),
+    Punkte: stats[game].totalPoints,
+  }));
+
+
 
   const renderProgressBar = (percent: string) => (
     <div className="progress">
@@ -126,12 +175,12 @@ const Stats = () => {
     );
   };
 
-  const chartData = (["quiz", "memory", "gapfill"] as GameKey[]).map(
+  /*const chartData = (["quiz", "memory", "gapfill"] as GameKey[]).map(
     (game) => ({
       name: t(`stats.${game}`),
       Punkte: stats[game].totalPoints,
     })
-  );
+  );*/
 
   return (
     <div className="stats-wrapper">

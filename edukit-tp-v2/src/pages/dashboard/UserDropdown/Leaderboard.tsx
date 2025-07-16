@@ -46,8 +46,8 @@ export default function Leaderboard() {
 
     const currentPlayer: Player | null = user
       ? {
-          username: user.userName,
-          avatar: user.userProfilePicture,
+          username: user.user_name,
+          avatar: user.user_profile_picture,
           score,
         }
       : null;

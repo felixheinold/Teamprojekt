@@ -1,6 +1,6 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from typing import Dict, List
+from typing import Dict, List, Optional
 from firebase import db
 from fastapi.responses import JSONResponse
 from datetime import datetime
@@ -65,29 +65,24 @@ class GeneralGameUserUpdating(BaseModel):
 class SpecificGameUserUpdating(BaseModel):
     user_updates: Dict[str, str | int | float | bool | dict]
 
+
+
 #Handling von user-Daten
 
-#einen User anfragen
-@router.get("/{user_id}")
-async def get_user(user_id: str):
-    doc_ref = db.collection("users").document(user_id)
-    doc = doc_ref.get()
-    if doc.exists:
-        return doc.to_dict()
-    else:
-        return {"error": "User nicht gefunden"}
-    
 
-#User-Informationen anfragen   
-@router.get("/{user_id}/{field}")
-def get_field(user_id: str, field: str):
+#User-Informationen anfragen (beachte: als Query-Param optional ein Feld aus dem User-Objekt anfragen)   
+@router.get("/{user_id}")
+def get_user(user_id: str, field: Optional[str] = None):
     user_doc = db.collection("users").document(user_id).get()
-    if user_doc.exists:
-        data = user_doc.to_dict()
+    if not user_doc.exists:
+        raise HTTPException(status_code=404, detail="User nicht gefunden")
+    data = user_doc.to_dict()
+    if field:
         if field in data:
             return {field: data[field]}
-        return {"error": f"Feld '{field}' nicht gefunden"}
-    return {"error": "User nicht gefunden"}
+        else:
+            raise HTTPException(status_code=404, detail =f"Feld '{field}' nicht gefunden")
+    return data
 
 
 #neuen User erzeugen
@@ -118,9 +113,18 @@ async def create_user(create_user: CreateUser):
     doc_ref.set(user.model_dump())
     return {"status": "User gespeichert"}
 
+#NEUE Funktion: Einen User insgesamt updaten in allen Kategorien
+@router.put("/update-whole-user/{user_id}")
+def update_whole_user(user_id: str, user_updating: GeneralUserUpdating):
+    user_ref = db.collection("users").document(user_id)
+    user_ref.set(user_updating.user_updates, merge=True)  
+    return {"status": f"Update für {user_id}", "updated": user_updating.user_updates}
+
+
+
 
 #User-Informationen (allgemein) updaten
-@router.put("/{user_id}/update-general-info")
+@router.put("/update-general-info/{user_id}")
 def update_user(user_id: str, user_updating: GeneralUserUpdating):
     user_ref = db.collection("users").document(user_id)
     user_ref.set(user_updating.user_updates, merge=True)  
@@ -128,7 +132,7 @@ def update_user(user_id: str, user_updating: GeneralUserUpdating):
 
 
 #User-Spielinformationen updaten
-@router.put ("/{user_id}/update-general-game-info")
+@router.put ("/update-general-game-info/{user_id}")
 def update_gen_game_info(user_id: str, updating: GeneralGameUserUpdating):
     user_ref = db.collection("users").document(user_id)
     update_data = {
@@ -141,7 +145,7 @@ def update_gen_game_info(user_id: str, updating: GeneralGameUserUpdating):
 
 
 #User-Spielinformationen eines spezifischen Spieltyps updaten
-@router.put ("/{user_id}/update-specific-game-info/{game_type}")
+@router.put ("/update-specific-game-info/{user_id}/{game_type}")
 def update_spec_game_info(user_id: str, game_type: str, updating: SpecificGameUserUpdating):
     user_ref = db.collection("users").document(user_id)
     update_data = {
@@ -162,3 +166,15 @@ def delete_user(user_id:str):
         return {"status" : f"User {user_id} gelöscht"}
     return {"error": "User nicht gefunden"}
 
+
+
+
+# #einen User anfragen
+# @router.get("/{user_id}")
+# async def get_user(user_id: str):
+#     doc_ref = db.collection("users").document(user_id)
+#     doc = doc_ref.get()
+#     if doc.exists:
+#         return doc.to_dict()
+#     else:
+#         return {"error": "User nicht gefunden"}
