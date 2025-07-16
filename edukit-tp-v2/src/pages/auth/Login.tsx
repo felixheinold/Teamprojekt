@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
+import { AuthAPICallsService } from "../../firebaseData/authAPICallsService";
 import { useTranslation } from "react-i18next";
 import "./Login.css"; // NEU: CSS importieren
 import { AuthPopupError } from "../../firebaseData/firebaseDataModels";
 import { useEffect } from "react";
 import { auth } from "../../firebaseData/firebaseConfig";
-
 
 const Login = () => {
   const navigate = useNavigate();
@@ -16,6 +16,7 @@ const Login = () => {
   const { t } = useTranslation();
 
   const authHandlingService = new AuthHandlingService();
+  const authAPICallsService = new AuthAPICallsService();
 
   const [form, setForm] = useState({
     email: "",
@@ -27,13 +28,13 @@ const Login = () => {
 
   useEffect(() => {
     auth.signOut().then(() => {
-      localStorage.clear();  // falls du was speicherst
+      localStorage.clear(); // falls du was speicherst
       sessionStorage.clear();
       setSignoutDone(true);
     });
   }, []);
-  
-  if(!signoutDone) return <div>Wird geladen...</div>
+
+  if (!signoutDone) return <div>Wird geladen...</div>;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -44,16 +45,15 @@ const Login = () => {
 
     try {
       const user = await authHandlingService.login(form.email, form.password);
-      if (await authHandlingService.checkEmailVerified(user)){
+      if (await authHandlingService.checkEmailVerified(user)) {
         navigate("/home");
       }
     } catch (err) {
-
-      if (err instanceof AuthPopupError){
+      if (err instanceof AuthPopupError) {
         alert(t("login.wrongCredentials"));
-      }
-      else {console.error("Login error:", err);
-      alert(t("login.unknownError"));
+      } else {
+        console.error("Login error:", err);
+        alert(t("login.unknownError"));
       }
     }
   };
