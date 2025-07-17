@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers import users, ai_model, statistics
 
+
 api = FastAPI(
     title="API für das Teamprojekt EDUKIT",
     description="Diese API dient der Kommunikation von Frontend und Backend im Teamprojekt EDUKIT. Sie "
