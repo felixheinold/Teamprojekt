@@ -1,10 +1,12 @@
 import { useUser } from "../context/UserContext";
+import { useBackendUserContext } from "../context/BackendUserContext";
 import { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const UserDropdown = () => {
-  const { user, setUser } = useUser();
+  const { user, setUser } = useBackendUserContext();
+  console.log("🔍 UserDropdown – aktueller User:", user);
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -46,8 +48,9 @@ const UserDropdown = () => {
   }, []);
 
   const getInitials = () => {
-    if (!user?.userName) return "?";
-    return user.userName
+    if (!user?.user_name) return "?";
+    return user.user_name
+
       .split(" ")
       .map((name) => name[0]?.toUpperCase())
       .join("")
@@ -75,9 +78,9 @@ const UserDropdown = () => {
         aria-label={t("userDropdown.openMenu")}
         tabIndex={0}
       >
-        {user.userProfilePicture?.trim() ? (
+        {user.user_profile_picture?.trim() ? (
           <img
-            src={user.userProfilePicture}
+            src={"/avatars/${user.user_profile_picture}"}
             alt="Avatar"
             className="w-100 h-100"
             style={{ objectFit: "cover" }}
@@ -90,8 +93,9 @@ const UserDropdown = () => {
       {open && (
         <div className="dropdown-menu show custom-dropdown">
           <div className="dropdown-item-text px-3 small text-muted">
-            {user.userMail}
+            {user.user_mail}
           </div>
+
           <div className="dropdown-divider"></div>
 
           <Link
@@ -165,10 +169,7 @@ const UserDropdown = () => {
           )}
 
           <div className="dropdown-divider"></div>
-          <button
-            onClick={handleLogout}
-            className="dropdown-item text-danger"
-          >
+          <button onClick={handleLogout} className="dropdown-item text-danger">
             🚪 {t("userDropdown.logout")}
           </button>
         </div>

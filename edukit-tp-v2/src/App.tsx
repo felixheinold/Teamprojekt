@@ -43,62 +43,76 @@ import Imprint from "./pages/dashboard/HelpDesk/Imprint";
 import NotFound from "./pages/common/NotFound";
 import ResetPassword from "./pages/auth/ResetPassword";
 import ProtectedRoute from "./context/ProtectedRoute";
-//import ReverseProtectedRoute from "./context/ReverseProtectedRoute";
-//<Route element={<ReverseProtectedRoute />} >
+
+// ⬇️ Neu hinzugefügt:
+import { BackendUserSyncHandler } from "./context/BackendUserSyncHandler";
 
 function App() {
   return (
-    <Routes>
-      {/* Öffentliche Seiten */}
-      <Route path="/" element={<Start />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      
-      {/* Layout-geschützte Seiten */}
-      <Route element={<ProtectedRoute />} >
-        <Route element={<Layout />}>
-          {/* Dashboard */}
-          <Route path="/home" element={<Home />} />
-          <Route path="/modules" element={<Modules />} />
-          <Route path="/chapters/:moduleName" element={<Chapters />} />
-          <Route path="/minigames/:moduleId/:chapterId" element={<Minigames />} />
-          <Route path="/user" element={<User />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/stats" element={<Stats />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
+    <>
+      {/* SyncHandler: wichtig für automatische Nutzer-Synchronisierung */}
+      <BackendUserSyncHandler />
 
-          {/* Quiz */}
-          <Route path="/quiz" element={<QuizStart />} />
-          <Route path="/quizgame" element={<QuizGame />} />
-          <Route path="/quizresult" element={<QuizResult />} />
+      <Routes>
+        {/* Öffentliche Seiten */}
+        <Route path="/" element={<Start />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
-          {/* Memory */}
-          <Route path="/memory" element={<MemoryStart />} />
-          <Route path="/memoryround1" element={<MemoryRound1 />} />
-          <Route path="/memoryround2" element={<MemoryRound2 />} />
-          <Route path="/memoryround1result" element={<MemoryRound1Result />} />
-          <Route path="/memoryround2result" element={<MemoryRound2Result />} />
+        {/* Layout-geschützte Seiten */}
+        <Route element={<ProtectedRoute />}>
+          <Route element={<Layout />}>
+            {/* Dashboard */}
+            <Route path="/home" element={<Home />} />
+            <Route path="/modules" element={<Modules />} />
+            <Route path="/chapters/:moduleName" element={<Chapters />} />
+            <Route
+              path="/minigames/:moduleId/:chapterId"
+              element={<Minigames />}
+            />
+            <Route path="/user" element={<User />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/stats" element={<Stats />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
 
-          {/* Lückentext */}
-          <Route path="/gapfill" element={<GapFillStart />} />
-          <Route path="/gapfillgame" element={<GapFillGame />} />
-          <Route path="/gapfillresult" element={<GapFillResult />} />
+            {/* Quiz */}
+            <Route path="/quiz" element={<QuizStart />} />
+            <Route path="/quizgame" element={<QuizGame />} />
+            <Route path="/quizresult" element={<QuizResult />} />
 
-          {/* Hilfe & Info */}
-          <Route path="/help/faq" element={<FAQ />} />
-          <Route path="/help/guidelines" element={<Guidelines />} />
-          <Route path="/help/dataprivacy" element={<DataPrivacy />} />
-          <Route path="/help/imprint" element={<Imprint />} />
+            {/* Memory */}
+            <Route path="/memory" element={<MemoryStart />} />
+            <Route path="/memoryround1" element={<MemoryRound1 />} />
+            <Route path="/memoryround2" element={<MemoryRound2 />} />
+            <Route
+              path="/memoryround1result"
+              element={<MemoryRound1Result />}
+            />
+            <Route
+              path="/memoryround2result"
+              element={<MemoryRound2Result />}
+            />
+
+            {/* Lückentext */}
+            <Route path="/gapfill" element={<GapFillStart />} />
+            <Route path="/gapfillgame" element={<GapFillGame />} />
+            <Route path="/gapfillresult" element={<GapFillResult />} />
+
+            {/* Hilfe & Info */}
+            <Route path="/help/faq" element={<FAQ />} />
+            <Route path="/help/guidelines" element={<Guidelines />} />
+            <Route path="/help/dataprivacy" element={<DataPrivacy />} />
+            <Route path="/help/imprint" element={<Imprint />} />
+          </Route>
         </Route>
-      </Route>
-      
 
-      {/* 404 Seite */}
-      <Route path="*" element={<NotFound />} />
+        {/* 404 Seite */}
+        <Route path="*" element={<NotFound />} />
 
-      {/*Passwort zurücksetzen-Seite */}
-      <Route path= "/reset-password" element={<ResetPassword />} /> 
-    </Routes>
+        {/* Passwort zurücksetzen-Seite */}
+        <Route path="/reset-password" element={<ResetPassword />} />
+      </Routes>
+    </>
   );
 }
 

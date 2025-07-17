@@ -4,6 +4,8 @@ import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
 import { AuthAPICallsService } from "../../firebaseData/authAPICallsService";
+import { useBackendUserContext } from "../../context/BackendUserContext";
+import { GeneralAPICallsService } from "../../firebaseData/generalAPICallsService";
 import { useTranslation } from "react-i18next";
 import "./Login.css"; // NEU: CSS importieren
 import { AuthPopupError } from "../../firebaseData/firebaseDataModels";
@@ -12,12 +14,12 @@ import { auth } from "../../firebaseData/firebaseConfig";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { setUser } = useUser();
   const { t } = useTranslation();
 
   const authHandlingService = new AuthHandlingService();
   const authAPICallsService = new AuthAPICallsService();
-
+  const { setUser } = useBackendUserContext();
+  const generalAPICallsService = new GeneralAPICallsService();
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -44,9 +46,29 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const user = await authHandlingService.login(form.email, form.password);
-      if (await authHandlingService.checkEmailVerified(user)) {
-        navigate("/home");
+      const userCredential = await authHandlingService.login(
+        form.email,
+        form.password
+      );
+
+      if (await authHandlingService.checkEmailVerified(userCredential)) {
+        const firebaseUser = auth.currentUser;
+
+        if (firebaseUser) {
+          // Backend-Daten abrufen
+          const userData =
+            await generalAPICallsService.getUserDataFromFirestore(
+              firebaseUser.uid
+            );
+
+          // In globalen Kontext setzen
+          setUser(userData);
+
+          navigate("/home");
+          console.log("USERDATA VOM BACKEND:", userData);
+        } else {
+          throw new Error("Firebase user is null after login");
+        }
       }
     } catch (err) {
       if (err instanceof AuthPopupError) {

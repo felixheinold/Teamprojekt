@@ -30,25 +30,36 @@ async updateUserDataInFirestore (user: UserProfile){
         },
         body: userBody
     })
-    const data = res.json();
+    const data = await res.json();
     return data;
 }
 
 
 // API Call for current values of an user object --> current state in firestore
 
-async getUserDataFromFirestore(queryParam?: string){
-    if (!auth.currentUser){
-        throw new Error ("User not authenticated, Error in generalAPICallsService");
-    }
-    const qp = queryParam ? "/" + queryParam : "";
-    const url = this.baseURL + "/users/" + auth.currentUser?.uid + qp;
-    const res = await fetch(url, {
-        method: "GET",
-    })
-    const data = await res.json();
-    return data;
+async getUserDataFromFirestore(userId?: string, field?: string) {
+  const uid = userId || auth.currentUser?.uid;
+  if (!uid) {
+    throw new Error("User not authenticated or UID not provided");
+  }
+
+  const url = new URL(this.baseURL + "/users/" + uid);
+  if (field) {
+    url.searchParams.set("field", field);
+  }
+
+  const res = await fetch(url.toString(), {
+    method: "GET",
+  });
+
+  if (!res.ok) {
+    throw new Error("Fehler beim Abrufen der Nutzerdaten");
+  }
+
+  const data = await res.json();
+  return data;
 }
+
 
 
 

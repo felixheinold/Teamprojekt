@@ -1,17 +1,17 @@
 // User.tsx
-import { useUser } from "../../../context/UserContext";
+import { useBackendUserContext } from "../../../context/BackendUserContext";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./User.css";
 
 const User = () => {
-  const { user, setUser } = useUser();
+  const { user, setUser } = useBackendUserContext();
   const { t } = useTranslation();
   const [editMode, setEditMode] = useState(false);
 
   const [form, setForm] = useState({
-    userName: user?.userName || "",
-    userMail: user?.userMail || "",
+    user_name: user?.user_name || "",
+    user_mail: user?.user_mail || "",
   });
 
   const [totalPoints, setTotalPoints] = useState(0);
@@ -33,8 +33,8 @@ const User = () => {
     if (!user) return;
     const updatedUser = {
       ...user,
-      userName: form.userName,
-      userMail: form.userMail,
+      user_name: form.user_name,
+      user_mail: form.user_mail,
     };
     setUser(updatedUser);
     setEditMode(false);
@@ -52,14 +52,14 @@ const User = () => {
 
         <div className="user-avatar-section">
           <img
-            src={user.userProfilePicture || "/avatars/default.png"}
+            src={user.user_profile_picture || "/avatars/default.png"}
             alt="Avatar"
             className="user-avatar"
           />
           <div>
-            <h5 className="user-name">{user.userName}</h5>
+            <h5 className="user-name">{user.user_name}</h5>
             <small className="user-email">
-              {t("user.loggedInAs")} {user.userMail}
+              {t("user.loggedInAs")} {user.user_mail}
             </small>
           </div>
         </div>
@@ -69,8 +69,8 @@ const User = () => {
           <div className="user-input-row">
             <input
               type="text"
-              name="userName"
-              value={form.userName}
+              name="user_name"
+              value={form.user_name}
               disabled={!editMode}
               onChange={handleChange}
             />
@@ -88,8 +88,8 @@ const User = () => {
           <div className="user-input-row">
             <input
               type="email"
-              name="userMail"
-              value={form.userMail}
+              name="user_mail"
+              value={form.user_mail}
               disabled={!editMode}
               onChange={handleChange}
             />
