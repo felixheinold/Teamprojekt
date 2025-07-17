@@ -1,5 +1,5 @@
 // Leaderboard.tsx
-import { useUser } from "../../../context/UserContext";
+import { useBackendUserContext } from "../../../context/BackendUserContext";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./Leaderboard.css";
@@ -29,7 +29,7 @@ const dummyPlayers: Player[] = [
 ];
 
 export default function Leaderboard() {
-  const { user } = useUser();
+  const { user } = useBackendUserContext();
   const { t } = useTranslation();
   const [players, setPlayers] = useState<Player[]>([]);
   const [rank, setRank] = useState<number | null>(null);
@@ -97,7 +97,7 @@ export default function Leaderboard() {
           <div
             key={i}
             className={`leaderboard-entry ${
-              user?.userName === p.username ? "highlight" : ""
+              user?.user_name === p.username ? "highlight" : ""
             }`}
           >
             <span className="entry-rank fw-bold">{i + 4}.</span>

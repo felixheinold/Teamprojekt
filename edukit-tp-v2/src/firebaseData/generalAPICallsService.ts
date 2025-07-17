@@ -41,16 +41,16 @@ async getUserDataFromFirestore(queryParam?: string){
     if (!auth.currentUser){
         throw new Error ("User not authenticated, Error in generalAPICallsService");
     }
-    const qp = queryParam ? "/" + queryParam : "";
+    
+    const qp = queryParam ? "?field=" + queryParam : "";
     const url = this.baseURL + "/users/" + auth.currentUser?.uid + qp;
+    
     const res = await fetch(url, {
         method: "GET",
     })
     const data = await res.json();
     return data;
 }
-
-
 
 }
 

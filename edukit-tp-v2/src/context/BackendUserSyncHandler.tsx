@@ -11,7 +11,7 @@ import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser && firebaseUser.emailVerified) {
-        const userData = await generalAPICallsService.getUserDataFromFirestore(firebaseUser.uid);
+        const userData = await generalAPICallsService.getUserDataFromFirestore();
         setUser(userData);
       }
       else{

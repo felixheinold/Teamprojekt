@@ -16,10 +16,12 @@ router = APIRouter(
 class Game_Type(BaseModel):
     total_games: int
     total_points: int
+    max_points: int
     best_Score: int
     accuracy: float #Prozentzahl: Berechnung überlegen
     last_played: str
     repetition_content: List[str] #alle IDs von Fragen, Memory-Paaren //oder Satz mit Lücken, die User wiederholen will
+    answered_correctly_content: List[str] #alle IDs von Fragen, Memory-Paaren, Lücken, die korrekt beantwortet wurden
 
 # Datenmodell User Game Information
 class User_Game_Information(BaseModel):
@@ -77,6 +79,7 @@ def get_user(user_id: str, field: Optional[str] = None):
     if not user_doc.exists:
         raise HTTPException(status_code=404, detail="User nicht gefunden")
     data = user_doc.to_dict()
+    print(data)
     if field:
         if field in data:
             return {field: data[field]}
@@ -104,9 +107,9 @@ async def create_user(create_user: CreateUser):
             highscore_table_ranking=0,
             total_points=0,
             daily_points_goal=10,
-            quiz=Game_Type(total_games = 0, total_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),  
-            memory=Game_Type(total_games = 0, total_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),
-            gapfill=Game_Type(total_games = 0, total_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [])
+            quiz=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),  
+            memory=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),
+            gapfill=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [])
         )
     )
     doc_ref = db.collection("users").document(user.user_id)
