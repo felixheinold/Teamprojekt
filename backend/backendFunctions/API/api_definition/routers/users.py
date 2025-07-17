@@ -36,7 +36,7 @@ class User_Game_Information(BaseModel):
 #Datenmodell User
 class User(BaseModel):
     user_id: str
-    user_mail: str
+    user_mail: str 
     user_name: str
     user_profile_picture: str
     profile_creation_date: str
@@ -107,9 +107,9 @@ async def create_user(create_user: CreateUser):
             highscore_table_ranking=0,
             total_points=0,
             daily_points_goal=10,
-            quiz=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),  
-            memory=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),
-            gapfill=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [])
+            quiz=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [], answered_correctly_content=[]),  
+            memory=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [], answered_correctly_content=[]),
+            gapfill=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [], answered_correctly_content=[])
         )
     )
     doc_ref = db.collection("users").document(user.user_id)
