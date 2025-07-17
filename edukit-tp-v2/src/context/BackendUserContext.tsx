@@ -1,5 +1,4 @@
 import { useState, useEffect, createContext, useContext } from "react";
-import { useUser } from "./UserContext";
 import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
 import { UserProfile } from "./UserProfileModel";
 
@@ -11,58 +10,74 @@ type BackendUserContextType = {
   hasUntrackedChanges: boolean;
 };
 
-const BackendUserContext = createContext<BackendUserContextType | undefined>(
-  undefined
-);
+const BackendUserContext = createContext<BackendUserContextType | undefined>(undefined);
 
 export const useBackendUserContext = (): BackendUserContextType => {
   const context = useContext(BackendUserContext);
   if (!context) {
-    throw new Error(
-      "useBackendUserContext has to be with a BackendUserProvider. Error in BackendUserContext.tsx"
-    );
+    throw new Error("useBackendUserContext must be used within BackendUserProvider.");
   }
   return context;
 };
 
-export const BackendUserProvider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+export const BackendUserProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<UserProfile | null>(null);
   const [hasUntrackedChanges, setHasUntrackedChanges] = useState(false);
   const generalAPICallsService = new GeneralAPICallsService();
 
   const untrackedChanges = () => setHasUntrackedChanges(true);
 
+  // Sperrvariable für flush
+  let isFlushing = false;
+
   const flushUser = async () => {
-    if (user && hasUntrackedChanges) {
+    if (user && hasUntrackedChanges && !isFlushing) {
+      isFlushing = true;
       try {
         await generalAPICallsService.updateUserDataInFirestore(user);
         setHasUntrackedChanges(false);
+        console.log("✅ Änderungen gespeichert (flushUser)");
       } catch (err) {
-        console.error(
-          "Error while saving user in Firestore. Error message from BackendUserContext.tsx"
-        );
+        console.error("❌ Fehler beim Speichern des Nutzers (flushUser):", err);
+      } finally {
+        isFlushing = false;
       }
     }
   };
 
+  // 🚀 Nutzer beim Start laden
   useEffect(() => {
-    const handleUnload = (e: BeforeUnloadEvent) => {
-      const innerFlush = async () => {
-        if (hasUntrackedChanges) {
-          await flushUser();
-          //navigator.sendBeacon("/api/user/save", JSON.stringify(user)); // oder flushUser()
+    let isMounted = true;
+    const loadUser = async () => {
+      try {
+        const userData = await generalAPICallsService.getUserDataFromFirestore();
+        if (isMounted) {
+          setUser(userData);
+          console.log("✅ Nutzer geladen (useEffect)");
         }
-      };
-      innerFlush();
+      } catch (err) {
+        console.error("❌ Fehler beim Laden des Nutzers:", err);
+      }
     };
-    window.addEventListener("beforeunload", handleUnload);
-    return () => window.removeEventListener("beforeunload", handleUnload);
-  }, [user, hasUntrackedChanges]);
 
+    loadUser();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  // 🧹 Änderungen speichern bei Seite verlassen
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (hasUntrackedChanges) {
+        flushUser();
+      }
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [hasUntrackedChanges, user]);
+
+  // 🧹 Änderungen speichern bei Tab-Wechsel
   useEffect(() => {
     const handleVisChange = () => {
       if (document.visibilityState === "hidden") {
@@ -70,9 +85,8 @@ export const BackendUserProvider = ({
       }
     };
     document.addEventListener("visibilitychange", handleVisChange);
-    return () =>
-      document.removeEventListener("visibilitychange", handleVisChange);
-  }, [flushUser]);
+    return () => document.removeEventListener("visibilitychange", handleVisChange);
+  }, [hasUntrackedChanges, user]);
 
   return (
     <BackendUserContext.Provider

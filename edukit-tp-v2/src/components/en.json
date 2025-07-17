@@ -16,17 +16,21 @@
     "backToModules": "Back to module selection"
   },
   "user": {
-    "title": "My Account",
+    "title": "User Profile",
+    "totalPoints": "Total Points",
     "loggedInAs": "Logged in as",
     "username": "Username",
     "email": "Email",
+    "updated": "User data has been updated.",
+    "confirmResetPassword": "Do you really want to reset your password?",
     "resetPassword": "Reset Password",
-    "deleteAccount": "Delete Account",
+    "resetPasswordFailed": "Failed to send password reset email.",
     "confirmDelete": "Do you really want to delete your account? This action is irreversible!",
+    "deleteAccount": "Delete Account",
     "deleted": "Your account has been deleted.",
+    "deleteFailed": "Account could not be deleted.",
     "noUser": "No user logged in.",
-    "updated": "Your changes have been saved.",
-    "totalPoints": "total points collected"
+    "updateFailed": "Failed to update profile."
   },
   "settings": {
     "title": "Settings",

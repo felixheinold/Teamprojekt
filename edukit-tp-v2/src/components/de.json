@@ -16,17 +16,21 @@
     "backToModules": "Zurück zur Modul-Auswahl"
   },
   "user": {
-    "title": "Mein Account",
-    "loggedInAs": "Angemeldet als",
+    "title": "Benutzerprofil",
+    "totalPoints": "Gesamtpunkte",
+    "loggedInAs": "Eingeloggt als",
     "username": "Benutzername",
     "email": "E-Mail",
+    "updated": "Benutzerdaten wurden aktualisiert.",
+    "confirmResetPassword": "Möchtest du dein Passwort wirklich zurücksetzen?",
     "resetPassword": "Passwort zurücksetzen",
-    "deleteAccount": "Account löschen",
+    "resetPasswordFailed": "Fehler beim Zurücksetzen des Passworts.",
     "confirmDelete": "Möchtest du deinen Account wirklich löschen? Diese Aktion ist endgültig!",
+    "deleteAccount": "Account löschen",
     "deleted": "Dein Account wurde gelöscht.",
-    "noUser": "Kein Benutzer angemeldet.",
-    "updated": "Deine Änderungen wurden gespeichert.",
-    "totalPoints": "Gesamtpunkte gesammelt"
+    "deleteFailed": "Account konnte nicht gelöscht werden.",
+    "noUser": "Kein Benutzer eingeloggt.",
+    "updateFailed": "Fehler beim Aktualisieren des Profils."
   },
   "settings": {
     "title": "Einstellungen",

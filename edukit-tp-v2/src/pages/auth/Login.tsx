@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
@@ -7,9 +7,8 @@ import { AuthAPICallsService } from "../../firebaseData/authAPICallsService";
 import { useBackendUserContext } from "../../context/BackendUserContext";
 import { GeneralAPICallsService } from "../../firebaseData/generalAPICallsService";
 import { useTranslation } from "react-i18next";
-import "./Login.css"; // NEU: CSS importieren
+import "./Login.css";
 import { AuthPopupError } from "../../firebaseData/firebaseDataModels";
-import { useEffect } from "react";
 import { auth } from "../../firebaseData/firebaseConfig";
 
 const Login = () => {
@@ -18,8 +17,9 @@ const Login = () => {
 
   const authHandlingService = new AuthHandlingService();
   const authAPICallsService = new AuthAPICallsService();
-  const { setUser } = useBackendUserContext();
   const generalAPICallsService = new GeneralAPICallsService();
+  const { setUser } = useBackendUserContext();
+
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -30,7 +30,7 @@ const Login = () => {
 
   useEffect(() => {
     auth.signOut().then(() => {
-      localStorage.clear(); // falls du was speicherst
+      localStorage.clear();
       sessionStorage.clear();
       setSignoutDone(true);
     });
@@ -51,31 +51,35 @@ const Login = () => {
         form.password
       );
 
-      if (await authHandlingService.checkEmailVerified(userCredential)) {
-        const firebaseUser = auth.currentUser;
+      const user = auth.currentUser;
 
-        if (firebaseUser) {
-          // Backend-Daten abrufen
-          const userData =
-            await generalAPICallsService.getUserDataFromFirestore(
-              firebaseUser.uid
-            );
+      if (user && (await authHandlingService.checkEmailVerified(user))) {
+        try {
+          const userData = await generalAPICallsService.getUserDataFromFirestore(
+            user.uid
+          );
 
-          // In globalen Kontext setzen
           setUser(userData);
-
           navigate("/home");
-          console.log("USERDATA VOM BACKEND:", userData);
-        } else {
-          throw new Error("Firebase user is null after login");
+          console.log("✅ Backend-Daten geladen:", userData);
+        } catch (backendErr: any) {
+          console.error("❌ Fehler beim Abrufen der Nutzerdaten:", backendErr);
+          alert(
+            t("login.backendUserMissing") ||
+              "Benutzerdaten konnten nicht geladen werden. Kontaktiere den Support."
+          );
         }
-      }
-    } catch (err) {
-      if (err instanceof AuthPopupError) {
-        alert(t("login.wrongCredentials"));
       } else {
-        console.error("Login error:", err);
-        alert(t("login.unknownError"));
+        alert(t("login.verifyEmailFirst") || "Bitte bestätige zuerst deine E-Mail-Adresse.");
+      }
+    } catch (err: any) {
+      if (err instanceof AuthPopupError || err.code === "auth/wrong-password") {
+        alert(t("login.wrongCredentials") || "Falsche E-Mail oder Passwort.");
+      } else if (err.code === "auth/user-not-found") {
+        alert("Benutzer nicht gefunden.");
+      } else {
+        console.error("❌ Login error:", err);
+        alert(t("login.unknownError") || "Unbekannter Fehler beim Login.");
       }
     }
   };
@@ -86,15 +90,17 @@ const Login = () => {
       alert(t("register.checkInbox"));
       navigate("/reset-password");
     } catch (err) {
-      console.error("Reset password error: ", err);
+      console.error("❌ Fehler beim Zurücksetzen des Passworts:", err);
+      alert("Fehler beim Senden der E-Mail zum Zurücksetzen des Passworts.");
     }
   };
 
   const anotherVerificationMail = async () => {
     try {
       await authHandlingService.sendVerificationMailAgain();
+      alert(t("register.checkInbox"));
     } catch (err) {
-      console.error("Verification mail error.");
+      console.error("❌ Fehler beim erneuten Versenden der Verifizierungs-E-Mail:", err);
     }
   };
 
@@ -125,7 +131,6 @@ const Login = () => {
             title={t("login.kitOnly")}
           />
 
-          {/* Passwortfeld mit Sichtbarkeitstoggle */}
           <div className="position-relative mb-3">
             <input
               name="password"
@@ -151,25 +156,15 @@ const Login = () => {
             </span>
           </div>
 
-          <button
-            type="submit"
-            className="btn btn-dark login-button w-100 mb-2"
-          >
+          <button type="submit" className="btn btn-dark login-button w-100 mb-2">
             {t("login.button")}
           </button>
-          <a
-            href="#"
-            className="password-forgot small"
-            onClick={handleForgottenPassword}
-          >
+
+          <a href="#" className="password-forgot small" onClick={handleForgottenPassword}>
             {t("login.forgotPassword")}
           </a>
           <p></p>
-          <a
-            href="#"
-            className="next-mail small"
-            onClick={anotherVerificationMail}
-          >
+          <a href="#" className="next-mail small" onClick={anotherVerificationMail}>
             <span>{t("login.anotherMail")}</span>
           </a>
         </form>
