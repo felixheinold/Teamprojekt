@@ -1,6 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom";
 import {useEffect, useState} from "react";
 import { auth } from "../firebaseData/firebaseConfig";
+import { BackendUserSyncHandler } from "./BackendUserSyncHandler";
 
 const ProtectedRoute = () => {
   const [verified, setVerified] = useState<boolean| null> (null);
@@ -23,7 +24,10 @@ const ProtectedRoute = () => {
     return <Navigate to="/login" replace />;
   }
 
-  return <Outlet />;
+  return <>
+  <BackendUserSyncHandler />
+    <Outlet />
+  </>;
 };
 
 export default ProtectedRoute;

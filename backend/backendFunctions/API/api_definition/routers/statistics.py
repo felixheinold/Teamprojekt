@@ -18,7 +18,7 @@ async def get_current_leaderboard():
     if latest_doc:
         return latest_doc[0].to_dict()
     else: 
-        return None
+        return {"error: Kein Leaderboard verfügbar"}
 
 #async def get_current_leaderboard (limit: Optional[int] = Query(default = 10, ge=1)):
 #     leaderboard_ref = db.collection("statistics").document(datetime.utcnow().isoformat())

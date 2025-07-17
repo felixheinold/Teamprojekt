@@ -1,16 +1,7 @@
 // src/context/UserContext.tsx
 import React, { createContext, useState, useContext, useEffect, ReactNode } from "react";
+import { UserProfile } from "./UserProfileModel";
 
-export type UserProfile = {
-  userId: string;
-  userName: string;
-  userMail: string;
-  userProfilePicture: string;
-  userGameInfo: {
-    highscore: number;
-    lastGameDate: string | null;
-  };
-};
 
 type UserContextType = {
   user: UserProfile | null;

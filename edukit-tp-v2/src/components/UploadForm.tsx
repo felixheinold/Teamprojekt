@@ -1,7 +1,7 @@
 // src/pages/dashboard/UploadForm.tsx
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { AuthAPICallsService } from "../firebaseData/authAPICallsService";
+import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
 import "./UploadForm.css";
 
 const moduleData: Record<
@@ -24,7 +24,7 @@ const moduleData: Record<
 
 const UploadForm = () => {
   const { t } = useTranslation();
-  const authAPICallsService = new AuthAPICallsService()
+  const generalAPICallsService = new GeneralAPICallsService()
 
   const [selectedModule, setSelectedModule] = useState("");
   const [selectedSubject, setSelectedSubject] = useState("");
@@ -57,7 +57,7 @@ const UploadForm = () => {
     });
 
     try {
-      const data = await authAPICallsService.uploadPDFAPICall(formData);
+      const data = await generalAPICallsService.uploadPDFAPICall(formData);
       if (data.url) {
         alert(t("upload.success"));
       } else {

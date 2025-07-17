@@ -34,7 +34,8 @@ exports.updateLeaderboard = functions.region("europe-west1").pubsub.schedule('ev
     leaderboard.push({
       user_rank: rank++,
       user_name: data.user_name || "unknown",
-      user_highscore: data.user_game_information?.highscore || 0
+      user_highscore: data.user_game_information?.highscore || 0,
+      user_profile_picture: data.user_profile_picture
     });
   });
 

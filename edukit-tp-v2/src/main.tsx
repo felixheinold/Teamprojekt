@@ -6,6 +6,7 @@ import { UserProvider } from "./context/UserContext";
 import { AppFlowProvider } from "./context/AppFlowContext";
 import "./index.css";
 import "./i18n";
+import { BackendUserProvider } from "./context/BackendUserContext";
 
 const dark = localStorage.getItem("darkMode") === "true";
 if (dark) {
@@ -15,11 +16,13 @@ if (dark) {
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <UserProvider>
-      <BrowserRouter>
-        <AppFlowProvider>
-          <App />
-        </AppFlowProvider>
-      </BrowserRouter>
+      <BackendUserProvider>
+        <BrowserRouter>
+          <AppFlowProvider>
+            <App />
+          </AppFlowProvider>
+        </BrowserRouter>
+      </BackendUserProvider>
     </UserProvider>
   </React.StrictMode>
 );
