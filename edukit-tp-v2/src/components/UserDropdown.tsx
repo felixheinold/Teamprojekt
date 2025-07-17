@@ -63,10 +63,11 @@ const UserDropdown = () => {
         onClick={() => setOpen(!open)}
         className="border-0 bg-transparent p-0"
         style={{
-          width: "50px",
-          height: "50px",
+          width: "70px",
+          height: "70px",
           cursor: "pointer",
           backgroundColor: "#e2e6ea",
+          border: "2px solid #ffffffff",
           borderRadius: "50%",
           overflow: "hidden",
           display: "flex",
@@ -74,6 +75,7 @@ const UserDropdown = () => {
           justifyContent: "center",
           fontWeight: "bold",
           color: "#333",
+          boxShadow: "0 0 0px 5px rgba(255, 255, 255, 1)",
         }}
         aria-label={t("userDropdown.openMenu")}
         tabIndex={0}

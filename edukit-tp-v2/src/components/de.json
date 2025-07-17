@@ -21,9 +21,12 @@
     "username": "Benutzername",
     "email": "E-Mail",
     "resetPassword": "Passwort zurücksetzen",
-    "totalPoints": "Gesamtpunkte gesammelt",
-    "updated": "Profil aktualisiert (Demo)",
-    "noUser": "Kein Benutzer angemeldet."
+    "deleteAccount": "Account löschen",
+    "confirmDelete": "Möchtest du deinen Account wirklich löschen? Diese Aktion ist endgültig!",
+    "deleted": "Dein Account wurde gelöscht.",
+    "noUser": "Kein Benutzer angemeldet.",
+    "updated": "Deine Änderungen wurden gespeichert.",
+    "totalPoints": "Gesamtpunkte gesammelt"
   },
   "settings": {
     "title": "Einstellungen",

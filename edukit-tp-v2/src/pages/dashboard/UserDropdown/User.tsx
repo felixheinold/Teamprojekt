@@ -1,6 +1,5 @@
-// User.tsx
 import { useBackendUserContext } from "../../../context/BackendUserContext";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./User.css";
 
@@ -32,6 +31,18 @@ const User = () => {
     alert(t("user.updated"));
   };
 
+  const handleDelete = () => {
+    const confirmDelete = window.confirm(
+      t("user.confirmDelete") ||
+        "Möchtest du deinen Account wirklich löschen? Diese Aktion ist endgültig!"
+    );
+    if (confirmDelete) {
+      console.log("Account wird gelöscht...");
+      setUser(null);
+      alert(t("user.deleted") || "Dein Account wurde gelöscht.");
+    }
+  };
+
   if (!user) {
     return <p className="user-message">⚠️ {t("user.noUser")}</p>;
   }
@@ -40,6 +51,10 @@ const User = () => {
     <div className="user-wrapper">
       <div className="user-card">
         <h2 className="user-title">👤 {t("user.title")}</h2>
+
+        <div className="user-points user-points-top">
+          📊 <strong>{totalPoints}</strong> {t("user.totalPoints")}
+        </div>
 
         <div className="user-avatar-section">
           <img
@@ -51,7 +66,6 @@ const User = () => {
             alt="Avatar"
             className="user-avatar"
           />
-
           <div>
             <h5 className="user-name">{user.user_name}</h5>
             <small className="user-email">
@@ -70,12 +84,20 @@ const User = () => {
               disabled={!editMode}
               onChange={handleChange}
             />
-            <button
-              className="user-edit-btn"
-              onClick={() => setEditMode(!editMode)}
-            >
-              {editMode ? t("common.cancel") : t("common.edit")}
-            </button>
+            <div className="user-edit-actions">
+              <button
+                className="user-edit-btn"
+                onClick={() => setEditMode(!editMode)}
+              >
+                {editMode ? t("common.cancel") : t("common.edit")}
+              </button>
+
+              {editMode && (
+                <button className="user-save" onClick={handleSave}>
+                  {t("common.save")}
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
@@ -86,36 +108,24 @@ const User = () => {
               type="email"
               name="user_mail"
               value={form.user_mail}
-              disabled={!editMode}
-              onChange={handleChange}
+              disabled
+              readOnly
             />
-            <button
-              className="user-edit-btn"
-              onClick={() => setEditMode(!editMode)}
-            >
-              {editMode ? t("common.cancel") : t("common.edit")}
-            </button>
           </div>
         </div>
 
-        {editMode && (
-          <div className="user-actions">
-            <button className="user-save" onClick={handleSave}>
-              {t("common.save")}
-            </button>
-          </div>
-        )}
-
         <div className="user-reset">
-          <button className="user-reset-btn">
+          <button className="user-reset-btn user-wide-btn">
             🔑 {t("user.resetPassword")}
           </button>
         </div>
 
         <hr className="user-divider" />
 
-        <div className="user-points">
-          📊 <strong>{totalPoints}</strong> {t("user.totalPoints")}
+        <div className="user-delete">
+          <button className="user-delete-btn user-wide-btn" onClick={handleDelete}>
+            🗑️ {t("user.deleteAccount") || "Account löschen"}
+          </button>
         </div>
       </div>
     </div>

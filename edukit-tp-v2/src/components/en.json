@@ -21,9 +21,12 @@
     "username": "Username",
     "email": "Email",
     "resetPassword": "Reset Password",
-    "totalPoints": "Total Points Collected",
-    "updated": "Profile updated (Demo)",
-    "noUser": "No user logged in."
+    "deleteAccount": "Delete Account",
+    "confirmDelete": "Do you really want to delete your account? This action is irreversible!",
+    "deleted": "Your account has been deleted.",
+    "noUser": "No user logged in.",
+    "updated": "Your changes have been saved.",
+    "totalPoints": "total points collected"
   },
   "settings": {
     "title": "Settings",
