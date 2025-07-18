@@ -4,6 +4,8 @@ from typing import Dict, List, Optional
 from firebase import db
 from fastapi.responses import JSONResponse
 from datetime import datetime
+from fastapi import HTTPException
+from pydantic import ValidationError
 
 
 
@@ -118,12 +120,16 @@ async def create_user(create_user: CreateUser):
 
 #NEUE Funktion: Einen User insgesamt updaten in allen Kategorien
 @router.put("/update-whole-user/{user_id}")
-def update_whole_user(user_id: str, user_updating: GeneralUserUpdating):
-    user_ref = db.collection("users").document(user_id)
-    user_ref.set(user_updating.user_updates, merge=True)  
-    return {"status": f"Update für {user_id}", "updated": user_updating.user_updates}
+def update_whole_user(user_id: str, user_updating: User):
+    try:
+        # Falls das Objekt bereits User ist, kann man skippen – ansonsten validieren:
+        parsed = User(**user_updating.dict())
+    except ValidationError as e:
+        print("❌ VALIDIERUNGSFEHLER:", e)
+        raise HTTPException(status_code=422, detail=e.errors())
 
-
+    db.collection("users").document(user_id).set(parsed.dict(), merge=True)
+    return {"status": "User gespeichert", "updated": parsed.dict()}
 
 
 #User-Informationen (allgemein) updaten
