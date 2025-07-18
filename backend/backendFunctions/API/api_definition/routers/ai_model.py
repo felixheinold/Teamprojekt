@@ -10,7 +10,7 @@ import tempfile
 import logging
 from google.cloud import pubsub_v1
 
-#os.environ ["GOOGLE_APPLICATION_CREDENTIALS"] = "./edukit-tp-pub-sub-key.json"
+
 
 
 logger = logging.getLogger("uvicorn")
