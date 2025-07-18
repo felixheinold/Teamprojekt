@@ -1,0 +1,142 @@
+[
+  {
+    "id": "brand-k1-de-q1",
+    "content": "1. Welche Funktion haben Marken laut der Vorlesung für Konsument:innen?",
+    "answers": [
+      {
+        "text": "a) Sie erhöhen ausschließlich den Preis.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie dienen der Markenpflege.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie reduzieren Suchkosten und Konsumrisiken.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie verlängern die Produktlebensdauer.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k1-de-q2",
+    "content": "2. Was bedeutet 'Brand Love'?",
+    "answers": [
+      {
+        "text": "a) Eine rationale Entscheidung für den günstigsten Preis.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine emotionale Bindung und leidenschaftliches Verhalten gegenüber einer Marke.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine kurzfristige Werbekampagne.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Strategie zur Preisoptimierung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k1-de-q3",
+    "content": "3. Was beschreibt 'Self-Congruence' im Kontext von Marken?",
+    "answers": [
+      {
+        "text": "a) Übereinstimmung zwischen Markenimage und Selbstbild der Konsument:innen.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Gleichklang von Preisen im Sortiment.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Vergleichbarkeit von Werbekampagnen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Wiedererkennung der Markenverpackung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k1-de-q4",
+    "content": "4. Welche Dimension gehört NICHT zu Aaker’s Brand Personality?",
+    "answers": [
+      {
+        "text": "a) Sincerity",
+        "is_correct": false
+      },
+      {
+        "text": "b) Competence",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sophistication",
+        "is_correct": false
+      },
+      {
+        "text": "d) Simplicity",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k1-de-q5",
+    "content": "5. Was ist ein Risiko von Brand Activism laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Geringere Markenbekanntheit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Asymmetrische Reaktionen mit potenziell negativem Nettoeffekt",
+        "is_correct": true
+      },
+      {
+        "text": "c) Geringere Werbewirkung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Schnellere Marktakzeptanz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

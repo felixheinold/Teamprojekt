@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k3-de-q1",
+    "content": "1. Was ist das Hauptziel von Brand Elements?",
+    "answers": [
+      {
+        "text": "a) Steigerung des Lagerbestands",
+        "is_correct": false
+      },
+      {
+        "text": "b) Differenzierung und Wiedererkennbarkeit der Marke",
+        "is_correct": true
+      },
+      {
+        "text": "c) Steigerung der Produktionskosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Erhöhung des Personalaufwands",
+        "is_correct": false
+      }
+    ],
+    "chapter": "brand",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k3-de-q2",
+    "content": "2. Welche Eigenschaft trägt NICHT zur Wahl guter Brand Elements bei?",
+    "answers": [
+      {
+        "text": "a) Memorierbarkeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Übertragbarkeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Unverwechselbarkeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Komplexität",
+        "is_correct": true
+      }
+    ],
+    "chapter": "brand",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k3-de-q3",
+    "content": "3. Was ist ein Vorteil alpha-numerischer Markennamen?",
+    "answers": [
+      {
+        "text": "a) Sie sind weniger verständlich",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie erschweren Entscheidungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie fördern heuristisches Entscheiden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie erhöhen die Produktionskosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "brand",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

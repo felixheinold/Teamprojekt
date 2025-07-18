@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k4-en-q1",
+    "content": "1. What does product-feature similarity refer to in brand extensions?",
+    "answers": [
+      {
+        "text": "a) Using the same advertising slogan",
+        "is_correct": false
+      },
+      {
+        "text": "b) Shared product features and functions",
+        "is_correct": true
+      },
+      {
+        "text": "c) Geographic proximity of production sites",
+        "is_correct": false
+      },
+      {
+        "text": "d) Same pricing structure",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k4-en-q2",
+    "content": "2. Which effect describes the influence of a brand extension on the parent brand?",
+    "answers": [
+      {
+        "text": "a) Fit effect",
+        "is_correct": false
+      },
+      {
+        "text": "b) Reciprocal spillover effect",
+        "is_correct": true
+      },
+      {
+        "text": "c) Licensing effect",
+        "is_correct": false
+      },
+      {
+        "text": "d) Image distortion",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k4-en-q3",
+    "content": "3. What is an advantage of ingredient branding?",
+    "answers": [
+      {
+        "text": "a) Low brand awareness",
+        "is_correct": false
+      },
+      {
+        "text": "b) Quality signaling",
+        "is_correct": true
+      },
+      {
+        "text": "c) No control over the product",
+        "is_correct": false
+      },
+      {
+        "text": "d) Increased cannibalization risk",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  }
+]

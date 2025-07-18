@@ -1,0 +1,282 @@
+[
+  {
+    "id": "balance-k1-en-q1",
+    "content": "1. [ENÜ] Welche Bestandteile umfasst der Jahresabschluss laut HGB?",
+    "answers": [
+      {
+        "text": "a) Nur eine Bilanz",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bilanz und Gewinn- und Verlustrechnung, ggf. Anhang und Lagebericht",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur eine GuV",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bilanz, GuV und Steuererklärung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q2",
+    "content": "2. [ENÜ] Was ist der wesentliche Unterschied zwischen Einzel- und Konzernabschluss?",
+    "answers": [
+      {
+        "text": "a) Einzelabschluss ist nur für AGs, Konzernabschluss für OHGs",
+        "is_correct": false
+      },
+      {
+        "text": "b) Konzernabschluss umfasst rechtlich verbundene Unternehmen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Einzelabschluss bezieht sich auf mehrere Unternehmen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Konzernabschluss ist steuerlich verpflichtend",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q3",
+    "content": "3. [ENÜ] Wie entsteht laut Vorlesung der Jahresabschluss?",
+    "answers": [
+      {
+        "text": "a) Durch Steuerbescheide",
+        "is_correct": false
+      },
+      {
+        "text": "b) Durch Buchführung und Inventar",
+        "is_correct": true
+      },
+      {
+        "text": "c) Durch Verkaufszahlen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Durch Unternehmensplanung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q4",
+    "content": "4. [ENÜ] Was ist das Ziel der externen Rechnungslegung?",
+    "answers": [
+      {
+        "text": "a) Steueroptimierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Interne Planung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Information und Zahlungsbemessung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Marketingstrategie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q5",
+    "content": "5. [ENÜ] Welches Grundproblem der externen Rechnungslegung wird im Kapitel beschrieben?",
+    "answers": [
+      {
+        "text": "a) Zu hohe Kosten der Erstellung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zu viele internationale Standards",
+        "is_correct": false
+      },
+      {
+        "text": "c) Trennung von Ersteller und Nutzer der Informationen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Fehlende Softwareunterstützung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q6",
+    "content": "6. [ENÜ] Was versteht man unter Corporate Governance im Kontext der Rechnungslegung?",
+    "answers": [
+      {
+        "text": "a) Strategien zur Umsatzsteigerung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Aufsichtsmechanismus zur Sicherstellung guter Unternehmensführung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Softwarelösung für Bilanzierung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eigenkapitalrichtlinie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q7",
+    "content": "7. [ENÜ] Wer prüft den Jahresabschluss extern?",
+    "answers": [
+      {
+        "text": "a) Vorstand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Interne Revision",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wirtschaftsprüfer",
+        "is_correct": true
+      },
+      {
+        "text": "d) Steuerberater des Unternehmens",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q8",
+    "content": "8. [ENÜ] Welches Ziel verfolgt die gesetzliche Regulierung der Rechnungslegung?",
+    "answers": [
+      {
+        "text": "a) Vereinfachung der Steuerlast",
+        "is_correct": false
+      },
+      {
+        "text": "b) Schutz der Umwelt",
+        "is_correct": false
+      },
+      {
+        "text": "c) Schutz schwacher Adressaten und Effizienzsteigerung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Flexibilität für Managerentscheidungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q9",
+    "content": "9. [ENÜ] Welche Quelle zählt laut Kapitel NICHT zur Regulierung der Rechnungslegung?",
+    "answers": [
+      {
+        "text": "a) Gerichtsurteile",
+        "is_correct": false
+      },
+      {
+        "text": "b) Empfehlungen von Experten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Steuerformulare",
+        "is_correct": true
+      },
+      {
+        "text": "d) Gesetze und Verordnungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k1-en-q10",
+    "content": "10. [ENÜ] Was ist ein historischer Auslöser für verstärkte Regulierung der Rechnungslegung?",
+    "answers": [
+      {
+        "text": "a) Neue Bilanzierungssoftware",
+        "is_correct": false
+      },
+      {
+        "text": "b) Internationale Konkurrenz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Unternehmenszusammenbrüche und Bilanzdelikte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Digitalisierung der Buchführung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

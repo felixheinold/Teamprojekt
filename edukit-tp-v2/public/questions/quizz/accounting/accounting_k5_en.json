@@ -1,0 +1,282 @@
+[
+  {
+    "id": "accounting-k5-en-q1",
+    "content": "1. [ENÜ] Was ist das Hauptziel der Kostenstellenrechnung?",
+    "answers": [
+      {
+        "text": "a) Ermittlung der Steuerschuld",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ermittlung des Eigenkapitals",
+        "is_correct": false
+      },
+      {
+        "text": "c) Erfassung, wo Kosten im Unternehmen entstehen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Berechnung des Gewinns",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q2",
+    "content": "2. [ENÜ] Was beschreibt eine Kostenstelle im Rechnungswesen?",
+    "answers": [
+      {
+        "text": "a) Eine externe Organisation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Bereich, für den Kosten selbständig geplant, erfasst und kontrolliert werden",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein externer Auftraggeber",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein Konto der Finanzbuchhaltung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q3",
+    "content": "3. [ENÜ] Was sind Kostenstelle-Einzelkosten?",
+    "answers": [
+      {
+        "text": "a) Kosten, die nicht zugeordnet werden können",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kosten, die direkt einem Produkt zugewiesen werden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kosten, die eindeutig einer Kostenstelle zugeordnet werden können",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur Abschreibungen auf Gebäude",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q4",
+    "content": "4. [ENÜ] Was passiert bei der Primärkostenverrechnung?",
+    "answers": [
+      {
+        "text": "a) Endkostenstellen werden berechnet",
+        "is_correct": false
+      },
+      {
+        "text": "b) Produkte werden bewertet",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kosten werden den Kostenstellen zugewiesen, wo sie entstehen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zinsen werden berechnet",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q5",
+    "content": "5. [ENÜ] Welche Aussage trifft auf Vorkostenstellen zu?",
+    "answers": [
+      {
+        "text": "a) Sie sind immer kostenfrei",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie erbringen Leistungen für andere Kostenstellen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie verkaufen Produkte",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie sind Teil der Bilanz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q6",
+    "content": "6. [ENÜ] Welche Methode verteilt Vorkostenstellenkosten nur auf Endkostenstellen?",
+    "answers": [
+      {
+        "text": "a) Gleichungsverfahren",
+        "is_correct": false
+      },
+      {
+        "text": "b) Stufenleiterverfahren",
+        "is_correct": false
+      },
+      {
+        "text": "c) Anbauverfahren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Restwertverfahren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q7",
+    "content": "7. [ENÜ] Was ist eine Endkostenstelle?",
+    "answers": [
+      {
+        "text": "a) Eine Stelle, die keine Kosten empfängt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Stelle, die an Produkten oder Aufträgen arbeitet",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Stelle mit nur fixen Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Stelle für Verwaltungsaufgaben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q8",
+    "content": "8. [ENÜ] Wie funktioniert das Gleichungsverfahren?",
+    "answers": [
+      {
+        "text": "a) Es ignoriert innerbetriebliche Leistungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es verrechnet Vorkostenstellen nur in eine Richtung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es erlaubt wechselseitige Verrechnung von Vorkostenstellen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es basiert ausschließlich auf Schätzungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q9",
+    "content": "9. [ENÜ] Was zeigt der Betriebsabrechnungsbogen (BAB)?",
+    "answers": [
+      {
+        "text": "a) Zahlungsflüsse eines Unternehmens",
+        "is_correct": false
+      },
+      {
+        "text": "b) Alle Abschreibungen eines Jahres",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verteilung der Gemeinkosten auf Kostenstellen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Berechnung der Steuerrückstellungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k5-en-q10",
+    "content": "10. [ENÜ] Welche Kostenverrechnungsmethode berücksichtigt Leistungen zwischen Vorkostenstellen nur in eine Richtung?",
+    "answers": [
+      {
+        "text": "a) Gleichungsverfahren",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anbauverfahren",
+        "is_correct": false
+      },
+      {
+        "text": "c) Stufenleiterverfahren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lineare Verrechnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "accounting",
+    "module": "accounting",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

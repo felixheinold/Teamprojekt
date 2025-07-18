@@ -1,0 +1,282 @@
+[
+  {
+    "id": "accounting-k4-de-q1",
+    "content": "1. Was ist das Hauptziel des internen Rechnungswesens?",
+    "answers": [
+      {
+        "text": "a) Steuerberechnung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Darstellung der Bilanz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zuweisung aller Kosten auf Produkte, Aufträge, Kunden usw.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Veröffentlichung von Geschäftsberichten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q2",
+    "content": "2. Welche Aussage zu kalkulatorischen Kosten ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie basieren auf gesetzlichen Vorschriften",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie werden immer auch im externen Rechnungswesen erfasst",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie berücksichtigen Opportunitätskosten wie kalk. Zinsen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie werden nur bei Rückstellungen verwendet",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q3",
+    "content": "3. Was versteht man unter Break-even-Punkt?",
+    "answers": [
+      {
+        "text": "a) Der Punkt, an dem Umsatz = Fixkosten ist",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der Punkt, an dem operatives Ergebnis = 0 ist",
+        "is_correct": true
+      },
+      {
+        "text": "c) Der Punkt, an dem alle Produkte verkauft sind",
+        "is_correct": false
+      },
+      {
+        "text": "d) Der Punkt, an dem alle Steuern gezahlt wurden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q4",
+    "content": "4. Welche Kosten sind in Bezug auf ein Produkt objektiv zuordenbar?",
+    "answers": [
+      {
+        "text": "a) Gemeinkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fixkosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Einzelkosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Opportunitätskosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q5",
+    "content": "5. Was ist ein Beispiel für eine fixe, aber unecht zugeordnete Gemeinkostenart?",
+    "answers": [
+      {
+        "text": "a) Materialkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Stromverbrauch je Maschine",
+        "is_correct": false
+      },
+      {
+        "text": "c) Gebäudemiete",
+        "is_correct": true
+      },
+      {
+        "text": "d) Löhne je Produkt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q6",
+    "content": "6. Wodurch wird entschieden, ob eine Kostenart fix oder variabel ist?",
+    "answers": [
+      {
+        "text": "a) Gesetzliche Vorschrift",
+        "is_correct": false
+      },
+      {
+        "text": "b) Abhängig vom Bezugszeitraum",
+        "is_correct": false
+      },
+      {
+        "text": "c) Abhängig vom Kostentreiber",
+        "is_correct": true
+      },
+      {
+        "text": "d) Entscheidung des Steuerberaters",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q7",
+    "content": "7. Welche Aussage zur Break-even-Analyse trifft zu?",
+    "answers": [
+      {
+        "text": "a) Fixkosten spielen keine Rolle",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Umsatz wird betrachtet",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie basiert auf Deckungsbeitrag und Fixkosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Gemeinkosten werden ignoriert",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q8",
+    "content": "8. Was beschreibt der Begriff 'Kostenstelle'?",
+    "answers": [
+      {
+        "text": "a) Ort, an dem Einnahmen generiert werden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Abteilung oder Bereich, in dem Kosten erfasst werden",
+        "is_correct": true
+      },
+      {
+        "text": "c) Externer Bereich für Kostenermittlung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Finanzbuchhaltungsabteilung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q9",
+    "content": "9. Was ist ein Kostentreiber?",
+    "answers": [
+      {
+        "text": "a) Ein Kostenobjekt, dem Kosten zugewiesen werden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Variable, die Kostenverhalten erklärt",
+        "is_correct": true
+      },
+      {
+        "text": "c) Der Jahresabschlussprüfer",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein gesetzlich definierter Posten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k4-de-q10",
+    "content": "10. Was ist ein Kostenträger?",
+    "answers": [
+      {
+        "text": "a) Ein Steuerzahler",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Aufwandsart",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein Produkt, Auftrag oder Kunde, dem Kosten zugewiesen werden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine Kostenstelle",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

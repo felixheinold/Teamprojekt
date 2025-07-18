@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k3-en-q1",
+    "content": "1. What is the main goal of brand elements?",
+    "answers": [
+      {
+        "text": "a) Increase inventory levels",
+        "is_correct": false
+      },
+      {
+        "text": "b) Differentiate and make the brand recognizable",
+        "is_correct": true
+      },
+      {
+        "text": "c) Raise production costs",
+        "is_correct": false
+      },
+      {
+        "text": "d) Increase personnel expenses",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k3-en-q2",
+    "content": "2. Which attribute does NOT contribute to good brand elements?",
+    "answers": [
+      {
+        "text": "a) Memorability",
+        "is_correct": false
+      },
+      {
+        "text": "b) Transferability",
+        "is_correct": false
+      },
+      {
+        "text": "c) Uniqueness",
+        "is_correct": false
+      },
+      {
+        "text": "d) Complexity",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k3-en-q3",
+    "content": "3. What is an advantage of alphanumeric brand names?",
+    "answers": [
+      {
+        "text": "a) They are less understandable",
+        "is_correct": false
+      },
+      {
+        "text": "b) They complicate decision-making",
+        "is_correct": false
+      },
+      {
+        "text": "c) They support heuristic decision-making",
+        "is_correct": true
+      },
+      {
+        "text": "d) They increase production costs",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  }
+]

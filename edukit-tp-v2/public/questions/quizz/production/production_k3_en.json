@@ -1,6 +1,6 @@
 [
   {
-    "id": "ip-log-k4-en-q1",
+    "id": "prduction-k3-en-q1",
     "content": "1. [ENÜ] Was beschreibt der Nettobestand im Lager?",
     "answers": [
       {
@@ -20,15 +20,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q2",
+    "id": "prduction-k3-en-q2",
     "content": "2. [ENÜ] Was zählt zum disponiblen Bestand?",
     "answers": [
       {
@@ -48,15 +48,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q3",
+    "id": "prduction-k3-en-q3",
     "content": "3. [ENÜ] Was ist typisch für eine q-Politik?",
     "answers": [
       {
@@ -76,15 +76,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q4",
+    "id": "prduction-k3-en-q4",
     "content": "4. [ENÜ] Welche Bedingung löst bei der s-Politik eine Bestellung aus?",
     "answers": [
       {
@@ -104,15 +104,15 @@
         "is_correct": true
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q5",
+    "id": "prduction-k3-en-q5",
     "content": "5. [ENÜ] Was ist der Unterschied zwischen (s,q)- und (r,S)-Politik?",
     "answers": [
       {
@@ -132,15 +132,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q6",
+    "id": "prduction-k3-en-q6",
     "content": "6. [ENÜ] Welcher Vorteil ergibt sich bei der (r,S)-Politik?",
     "answers": [
       {
@@ -160,15 +160,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q7",
+    "id": "prduction-k3-en-q7",
     "content": "7. [ENÜ] Was ist ein Nachteil der (r,S)-Politik?",
     "answers": [
       {
@@ -188,15 +188,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q8",
+    "id": "prduction-k3-en-q8",
     "content": "8. [ENÜ] Was beschreibt der Sicherheitsbestand?",
     "answers": [
       {
@@ -216,15 +216,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q9",
+    "id": "prduction-k3-en-q9",
     "content": "9. [ENÜ] Was bestimmt den Bestellzeitpunkt bei der (s,q)-Politik?",
     "answers": [
       {
@@ -244,15 +244,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-log-k4-en-q10",
+    "id": "prduction-k3-en-q10",
     "content": "10. [ENÜ] Was beschreibt der α-Servicegrad?",
     "answers": [
       {
@@ -272,9 +272,9 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Inventory and Ordering Policies",
+    "chapter": "k4",
+    "lecture": "prduction",
+    "module": "prduction",
     "difficulty": null,
     "type": null,
     "language": "englisch"

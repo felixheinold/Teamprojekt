@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k5-de-q1",
+    "content": "1. Was beschreibt der Preis-Premium-Ansatz zur Messung von Markenwert?",
+    "answers": [
+      {
+        "text": "a) Die Häufigkeit von Preisaktionen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Den Aufpreis, den Konsumenten für eine Marke zahlen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Den Vergleich von Lagerbeständen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Den Marktanteil der Konkurrenz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k5-de-q2",
+    "content": "2. Welcher Vorteil wird Marken im Kontext der Risikominimierung zugeschrieben?",
+    "answers": [
+      {
+        "text": "a) Sie erhöhen die Preissensitivität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie fördern unregelmäßige Umsätze",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie stabilisieren Cashflows durch Markenloyalität",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie machen Investoren vorsichtiger",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k5-de-q3",
+    "content": "3. Was wird durch den Sales-Premium-Ansatz gemessen?",
+    "answers": [
+      {
+        "text": "a) Die Preiselastizität der Nachfrage",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Absatzzahl im Vergleich zu unmarkierten Produkten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Der Produktionsaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Anzahl der Markenlizenzierungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

@@ -1,6 +1,6 @@
 [
   {
-    "id": "ip-pw-k1-en-q1",
+    "id": "production-k2-en-q1",
     "content": "1. [ENÜ] Was ist das Ziel der Produktionsprogrammplanung?",
     "answers": [
       {
@@ -20,15 +20,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q2",
+    "id": "production-k2-en-q2",
     "content": "2. [ENÜ] Welche Größe wird im operativen Produktionsprogramm als variabel betrachtet?",
     "answers": [
       {
@@ -48,15 +48,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q3",
+    "id": "production-k2-en-q3",
     "content": "3. [ENÜ] Was beschreibt der Deckungsbeitrag?",
     "answers": [
       {
@@ -76,15 +76,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q4",
+    "id": "production-k2-en-q4",
     "content": "4. [ENÜ] Wann wird die Gewinnschwelle erreicht?",
     "answers": [
       {
@@ -104,15 +104,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q5",
+    "id": "production-k2-en-q5",
     "content": "5. [ENÜ] Was ist bei der Beurteilung von Produktionsvorschlägen zu beachten?",
     "answers": [
       {
@@ -132,15 +132,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q6",
+    "id": "production-k2-en-q6",
     "content": "6. [ENÜ] Welche Methode dient zur Optimierung des Produktionsprogramms bei mehreren Restriktionen?",
     "answers": [
       {
@@ -160,15 +160,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q7",
+    "id": "production-k2-en-q7",
     "content": "7. [ENÜ] Was ist das Ziel der linearen Programmierung im Kontext der Produktionsplanung?",
     "answers": [
       {
@@ -188,15 +188,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q8",
+    "id": "production-k2-en-q8",
     "content": "8. [ENÜ] Welche Bedingung muss im LP-Modell zusätzlich zu den Kapazitätsrestriktionen erfüllt sein?",
     "answers": [
       {
@@ -216,15 +216,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q9",
+    "id": "production-k2-en-q9",
     "content": "9. [ENÜ] Welches Verfahren ist bei zwei Produkten für eine grafische Lösung geeignet?",
     "answers": [
       {
@@ -244,15 +244,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "ip-pw-k1-en-q10",
+    "id": "production-k2-en-q10",
     "content": "10. [ENÜ] Was ist die Grundlage des Simplex-Verfahrens?",
     "answers": [
       {
@@ -272,9 +272,9 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Production Management",
-    "module": "Production Program Planning",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
     "language": "englisch"

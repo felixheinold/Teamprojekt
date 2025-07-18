@@ -1,26 +1,26 @@
 [
   {
-    "id": "finance-k4-de-q1",
-    "content": "1. Was ist das Ziel der Kapitalwertmethode?",
+    "id": "finance-k5-de-q1",
+    "content": "1. Welche Eigenschaft trifft auf Eigenkapital, aber nicht auf Fremdkapital zu?",
     "answers": [
       {
-        "text": "a) Minimierung der Amortisationsdauer",
+        "text": "a) Recht auf Zinszahlung",
         "is_correct": false
       },
       {
-        "text": "b) Maximierung der internen Zinssätze",
+        "text": "b) Steuerliche Abzugsfähigkeit",
         "is_correct": false
       },
       {
-        "text": "c) Bewertung der Vorteilhaftigkeit eines Investitionsprojekts durch Vergleich mit den Kapitalkosten",
+        "text": "c) Beteiligung am Unternehmensgewinn",
         "is_correct": true
       },
       {
-        "text": "d) Maximierung des Eigenkapitals",
+        "text": "d) Vorrangiger Anspruch bei Insolvenz",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -28,27 +28,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q2",
-    "content": "2. Wann ist ein Projekt laut Kapitalwertmethode durchzuführen?",
+    "id": "finance-k5-de-q2",
+    "content": "2. Was ist ein zentrales Merkmal von Stammaktien?",
     "answers": [
       {
-        "text": "a) Wenn der interne Zinssatz maximal ist",
+        "text": "a) Höhere Dividenden ohne Stimmrecht",
         "is_correct": false
       },
       {
-        "text": "b) Wenn der Kapitalwert gleich 0 ist",
+        "text": "b) Fester Rückzahlungsbetrag am Laufzeitende",
         "is_correct": false
       },
       {
-        "text": "c) Wenn der Kapitalwert positiv ist",
+        "text": "c) Teilnahme- und Stimmrecht auf der Hauptversammlung",
         "is_correct": true
       },
       {
-        "text": "d) Wenn die Laufzeit unter 5 Jahren liegt",
+        "text": "d) Steuerfreier Gewinnanteil",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -56,27 +56,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q3",
-    "content": "3. Was ist eine Schwäche der Kapitalwertmethode bei Kapitalknappheit?",
+    "id": "finance-k5-de-q3",
+    "content": "3. Was unterscheidet Vorzugsaktien typischerweise von Stammaktien?",
     "answers": [
       {
-        "text": "a) Sie ist rechnerisch zu aufwendig",
+        "text": "a) Vorzugsaktien haben ein höheres Stimmrecht",
         "is_correct": false
       },
       {
-        "text": "b) Sie berücksichtigt keine Opportunitätskosten",
+        "text": "b) Vorzugsaktien beinhalten ein Bezugsrecht",
         "is_correct": false
       },
       {
-        "text": "c) Sie liefert keine Auswahl unter konkurrierenden Projekten",
+        "text": "c) Vorzugsaktien haben oft keinen Stimmrecht, aber höheren Dividendenanspruch",
         "is_correct": true
       },
       {
-        "text": "d) Sie überschätzt laufende Ausgaben",
+        "text": "d) Vorzugsaktien sind nicht handelbar",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -84,27 +84,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q4",
-    "content": "4. Was wird bei der Amortisationsrechnung gemessen?",
+    "id": "finance-k5-de-q4",
+    "content": "4. Was versteht man unter 'Underpricing' bei einem Börsengang?",
     "answers": [
       {
-        "text": "a) Die Rendite des Kapitals",
+        "text": "a) Zu hoher Ausgabepreis",
         "is_correct": false
       },
       {
-        "text": "b) Der interne Zinssatz",
+        "text": "b) Börsenpreis liegt unter dem Emissionsvolumen",
         "is_correct": false
       },
       {
-        "text": "c) Die Zeit bis zur Rückzahlung der Anfangsauszahlung",
+        "text": "c) Erster Börsenkurs liegt über dem Ausgabepreis",
         "is_correct": true
       },
       {
-        "text": "d) Der Kapitalwert des Projekts",
+        "text": "d) Kapitalerhöhung durch neue Aktien",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -112,27 +112,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q5",
-    "content": "5. Wann gilt ein Projekt als lohnend nach der Amortisationsrechnung?",
+    "id": "finance-k5-de-q5",
+    "content": "5. Was ist ein IPO?",
     "answers": [
       {
-        "text": "a) Wenn es keinen Kapitalwert erzeugt",
+        "text": "a) Eine neue Steuerform für Unternehmen",
         "is_correct": false
       },
       {
-        "text": "b) Wenn die Amortisationsdauer unterhalb einer festgelegten Schwelle liegt",
+        "text": "b) Erstmaliger Börsengang eines Unternehmens",
         "is_correct": true
       },
       {
-        "text": "c) Wenn der Barwert positiv ist",
+        "text": "c) Ein Rückkaufprogramm von Aktien",
         "is_correct": false
       },
       {
-        "text": "d) Wenn die Renten konstant sind",
+        "text": "d) Ein Investment Portfolio Option",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -140,27 +140,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q6",
-    "content": "6. Was ist der interne Zinssatz (IZS)?",
+    "id": "finance-k5-de-q6",
+    "content": "6. Welche Kapitalerhöhungsform erlaubt dem Vorstand die Ausgabe neuer Aktien innerhalb eines Zeitraums?",
     "answers": [
       {
-        "text": "a) Zinssatz mit maximaler Rückzahlung",
+        "text": "a) Ordentliche Kapitalerhöhung",
         "is_correct": false
       },
       {
-        "text": "b) Zinssatz, bei dem der Kapitalwert gleich null ist",
+        "text": "b) Genehmigtes Kapital",
         "is_correct": true
       },
       {
-        "text": "c) Durchschnittszins aller Investitionen",
+        "text": "c) Bedingte Kapitalerhöhung",
         "is_correct": false
       },
       {
-        "text": "d) Mindestverzinsung der Investoren",
+        "text": "d) Kapitalherabsetzung",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -168,27 +168,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q7",
-    "content": "7. Was ist ein Nachteil der internen Zinssatzmethode (IZSM)?",
+    "id": "finance-k5-de-q7",
+    "content": "7. Was ist ein typisches Phänomen nach IPOs laut empirischen Beobachtungen?",
     "answers": [
       {
-        "text": "a) Sie ist theoretisch nicht fundiert",
+        "text": "a) Höhere Langfrist-Performance als der Gesamtmarkt",
         "is_correct": false
       },
       {
-        "text": "b) Sie berücksichtigt keine Kapitalwertberechnung",
+        "text": "b) Kursverlust am ersten Handelstag",
         "is_correct": false
       },
       {
-        "text": "c) Sie liefert bei mehreren Vorzeichenwechseln mehrere Ergebnisse",
+        "text": "c) Tendenziell unterdurchschnittliche Performance in den Folgejahren",
         "is_correct": true
       },
       {
-        "text": "d) Sie führt immer zur gleichen Entscheidung wie die Amortisationsrechnung",
+        "text": "d) Kurssteigerung wegen Buybacks",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -196,27 +196,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q8",
-    "content": "8. Was ist bei sich gegenseitig ausschließenden Projekten ein Nachteil der IZSM?",
+    "id": "finance-k5-de-q8",
+    "content": "8. Was besagt das 'Dividend Puzzle'?",
     "answers": [
       {
-        "text": "a) Keine Berücksichtigung des Zeitwerts",
+        "text": "a) Aktien ohne Dividende sind steuerlich begünstigt",
         "is_correct": false
       },
       {
-        "text": "b) Berücksichtigung zu vieler Perioden",
+        "text": "b) Dividendenzahlungen steigen bei sinkenden Kursen",
         "is_correct": false
       },
       {
-        "text": "c) Entscheidung kann je nach gefordertem Zinssatz variieren",
+        "text": "c) Trotz steuerlicher Nachteile sind Dividenden weit verbreitet",
         "is_correct": true
       },
       {
-        "text": "d) Sie berücksichtigt nur die Anfangsauszahlung",
+        "text": "d) Unternehmen verzichten generell auf Ausschüttungen",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -224,27 +224,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q9",
-    "content": "9. Welche Methode wurde laut CFO-Umfrage theoretisch als überlegen eingestuft?",
+    "id": "finance-k5-de-q9",
+    "content": "9. Welche Wirkung hat eine Dividendenerhöhung typischerweise?",
     "answers": [
       {
-        "text": "a) IZSM",
+        "text": "a) Keine Auswirkung auf den Aktienkurs",
         "is_correct": false
       },
       {
-        "text": "b) Payback-Methode",
+        "text": "b) Signal für geringere Gewinne",
         "is_correct": false
       },
       {
-        "text": "c) Kapitalwertmethode",
+        "text": "c) Positives Signal über künftige Gewinne und Kurssteigerung",
         "is_correct": true
       },
       {
-        "text": "d) Realoptionen",
+        "text": "d) Automatischer Rückgang des Kurswerts",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,
@@ -252,27 +252,27 @@
     "language": "deutsch"
   },
   {
-    "id": "finance-k4-de-q10",
-    "content": "10. Was sind Externalitäten bei Investitionen?",
+    "id": "finance-k5-de-q10",
+    "content": "10. Was beschreibt Steuerarbitrage im Zusammenhang mit Dividenden?",
     "answers": [
       {
-        "text": "a) Kosten der Finanzierung",
+        "text": "a) Verkauf von Aktien vor Dividendenausschüttung",
         "is_correct": false
       },
       {
-        "text": "b) Interne Kostensenkungen",
-        "is_correct": false
-      },
-      {
-        "text": "c) Auswirkungen auf Dritte, die nicht über Marktpreise erfasst sind",
+        "text": "b) Erwerb von Aktien durch niedrig besteuerte Investoren vor dem Ex-Dividenden-Termin",
         "is_correct": true
       },
       {
-        "text": "d) Währungsrisiken",
+        "text": "c) Umgehung von Kapitalertragssteuer durch Fonds",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ausschüttung steuerfreier Gewinne",
         "is_correct": false
       }
     ],
-    "chapter": "VL4",
+    "chapter": "VL5",
     "lecture": "finance",
     "module": "finance",
     "difficulty": null,

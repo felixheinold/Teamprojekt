@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k2-de-q1",
+    "content": "1. Was beschreibt 'Brand Knowledge'?",
+    "answers": [
+      {
+        "text": "a) Die Anzahl der Verkäufe einer Marke",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die rechtliche Stellung einer Marke",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die in Gedächtnis gespeicherten markenbezogenen Informationen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die globale Verfügbarkeit einer Marke",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k2-de-q2",
+    "content": "2. Welche zwei Hauptkomponenten umfasst die 'Brand Knowledge'?",
+    "answers": [
+      {
+        "text": "a) Preis und Qualität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marktanteil und Werbung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Markenbekanntheit und Markenimage",
+        "is_correct": true
+      },
+      {
+        "text": "d) Logo und Design",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k2-de-q3",
+    "content": "3. Was versteht man unter 'Brand Recall'?",
+    "answers": [
+      {
+        "text": "a) Wiedererkennen der Marke bei Sichtkontakt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Abruf der Marke aus dem Gedächtnis ohne Hinweisreiz",
+        "is_correct": true
+      },
+      {
+        "text": "c) Entfernung eines Produkts vom Markt",
+        "is_correct": false
+      },
+      {
+        "text": "d) Erhöhung des Marktanteils",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

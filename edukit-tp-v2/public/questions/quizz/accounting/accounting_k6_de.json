@@ -1,0 +1,282 @@
+[
+  {
+    "id": "accounting-k6-de-q1",
+    "content": "1. Was ist das Ziel der Kostenträgerrechnung?",
+    "answers": [
+      {
+        "text": "a) Berechnung des Zinssatzes",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bewertung von Lagerbeständen und Messung der Profitabilität",
+        "is_correct": true
+      },
+      {
+        "text": "c) Abschreibung von Maschinenkosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Festlegung von Verkaufspreisen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q2",
+    "content": "2. Welche Kalkulationsmethode eignet sich für homogene Massenprodukte ohne Lagerhaltung?",
+    "answers": [
+      {
+        "text": "a) Zuschlagskalkulation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Maschinenstundensatzkalkulation",
+        "is_correct": false
+      },
+      {
+        "text": "c) Divisionskalkulation",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lohnstundensatzkalkulation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q3",
+    "content": "3. Was ist eine Voraussetzung für die Anwendung der einstufigen Divisionskalkulation?",
+    "answers": [
+      {
+        "text": "a) Mehrere Produktarten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lagerhaltung unfertiger Erzeugnisse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktionsmenge = Absatzmenge",
+        "is_correct": true
+      },
+      {
+        "text": "d) Flexible Maschinenkapazität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q4",
+    "content": "4. Welche Aussage trifft auf die Äquivalenzziffernkalkulation zu?",
+    "answers": [
+      {
+        "text": "a) Sie berücksichtigt keine Produktionsmenge",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie berechnet Gemeinkostenzuschläge",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie rechnet verwandte Produkte in ein Einheitsprodukt um",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie wird nur in Dienstleistungsbetrieben verwendet",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q5",
+    "content": "5. Was wird bei der Zuschlagskalkulation verwendet, um Gemeinkosten auf Produkte zu verteilen?",
+    "answers": [
+      {
+        "text": "a) Deckungsbeiträge",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einzelkosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Kostenstellenzahlen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Maschinenlaufzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q6",
+    "content": "6. Wann ist die Maschinenstundensatzkalkulation besonders sinnvoll?",
+    "answers": [
+      {
+        "text": "a) Bei hohem Anteil an Personalaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bei Einzelfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bei hohem Maschineneinsatz",
+        "is_correct": true
+      },
+      {
+        "text": "d) In Handelsunternehmen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q7",
+    "content": "7. Was wird in der Teilkostenrechnung explizit nicht verteilt?",
+    "answers": [
+      {
+        "text": "a) Variable Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einzelkosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Fixkosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Gemeinkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q8",
+    "content": "8. Was zeigt der Deckungsbeitrag?",
+    "answers": [
+      {
+        "text": "a) Umsatz abzüglich aller Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Differenz zwischen variablen Kosten und Verkaufspreis",
+        "is_correct": true
+      },
+      {
+        "text": "c) Gesamtkosten pro Stück",
+        "is_correct": false
+      },
+      {
+        "text": "d) Gesamter Gewinn pro Produktgruppe",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q9",
+    "content": "9. Welche Kalkulationsmethode eignet sich bei starkem Personaleinsatz?",
+    "answers": [
+      {
+        "text": "a) Maschinenstundensatzkalkulation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Divisionskalkulation",
+        "is_correct": false
+      },
+      {
+        "text": "c) Lohnstundensatzkalkulation",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zuschlagskalkulation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k6-de-q10",
+    "content": "10. Was gilt für Umstellungskosten laut Beispiel Amsterdam Auto’s?",
+    "answers": [
+      {
+        "text": "a) Sie sind immer fixe Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie variieren mit der Stückzahl",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie hängen von der Anzahl der Serien ab",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie betreffen nur Rohmaterial",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

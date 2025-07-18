@@ -1,0 +1,282 @@
+[
+  {
+    "id": "balance-k3-en-q1",
+    "content": "1. [ENÜ] Wann ist ein Sachverhalt abstrakt bilanzierungsfähig?",
+    "answers": [
+      {
+        "text": "a) Wenn er steuerlich relevant ist",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn er als Vermögensgegenstand, Schuld oder RAP einzuordnen ist",
+        "is_correct": true
+      },
+      {
+        "text": "c) Wenn er durch ein Gutachten bestätigt wurde",
+        "is_correct": false
+      },
+      {
+        "text": "d) Wenn er vom Finanzamt genehmigt ist",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q2",
+    "content": "2. [ENÜ] Was ist KEIN Kriterium für einen Vermögensgegenstand?",
+    "answers": [
+      {
+        "text": "a) Selbständige Verkehrsfähigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wirtschaftlicher Wert",
+        "is_correct": false
+      },
+      {
+        "text": "c) Selbständige Bewertbarkeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Gesetzlich vorgeschriebene Mindestgröße",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q3",
+    "content": "3. [ENÜ] Wann ist ein Sachverhalt konkret bilanzierungsfähig?",
+    "answers": [
+      {
+        "text": "a) Wenn er steuerlich verrechnet wird",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn er wirtschaftlich dem Unternehmen zugeordnet werden kann und kein Bilanzierungsverbot besteht",
+        "is_correct": true
+      },
+      {
+        "text": "c) Wenn eine Rechnung vorliegt",
+        "is_correct": false
+      },
+      {
+        "text": "d) Wenn die Bank ihn bestätigt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q4",
+    "content": "4. [ENÜ] Was gilt laut §246 HGB für die Bilanzierung?",
+    "answers": [
+      {
+        "text": "a) Nur materielle Vermögenswerte sind aufzunehmen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es besteht ein Aktivierungsverbot für immaterielle Werte",
+        "is_correct": false
+      },
+      {
+        "text": "c) Alle Vermögenswerte und Schulden sind vollständig anzusetzen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eigenkapital ist nicht zu berücksichtigen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q5",
+    "content": "5. [ENÜ] Was ist ein Disagio?",
+    "answers": [
+      {
+        "text": "a) Ein Rechnungsabgrenzungsposten für Mieteinnahmen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Unterschiedsbetrag zwischen Auszahlungs- und Rückzahlungsbetrag eines Kredits",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein Rabatt auf Warenlieferungen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein steuerlicher Verlustvortrag",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q6",
+    "content": "6. [ENÜ] Welcher der folgenden Punkte ist aktivierungsfähig?",
+    "answers": [
+      {
+        "text": "a) Forschungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Aufwendungen für Versicherungsverträge",
+        "is_correct": false
+      },
+      {
+        "text": "c) Entwicklungskosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eigenkapitalbeschaffungskosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q7",
+    "content": "7. [ENÜ] Was ist eine passive latente Steuer laut §274 HGB?",
+    "answers": [
+      {
+        "text": "a) Ein Aufwand in der Steuerbilanz",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Ausgleichsposten für zukünftige Steuerbelastungen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein Sonderposten der GuV",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein Forderungsabzug",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q8",
+    "content": "8. [ENÜ] Was gilt laut §267 HGB für Größenklassen von Kapitalgesellschaften?",
+    "answers": [
+      {
+        "text": "a) Kriterien sind Bilanzsumme, Umsatz und Mitarbeiterzahl",
+        "is_correct": true
+      },
+      {
+        "text": "b) Nur der Umsatz ist entscheidend",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Klassifikation erfolgt jährlich neu",
+        "is_correct": false
+      },
+      {
+        "text": "d) Es gibt keine gesetzliche Einteilung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q9",
+    "content": "9. [ENÜ] Welche Rückstellungen dürfen gebildet werden?",
+    "answers": [
+      {
+        "text": "a) Rückstellungen für drohende Verluste aus schwebenden Geschäften",
+        "is_correct": true
+      },
+      {
+        "text": "b) Rückstellungen für freiwillige Weihnachtsgeschenke",
+        "is_correct": false
+      },
+      {
+        "text": "c) Rückstellungen für geplante Investitionen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Rückstellungen für Marketingmaßnahmen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k3-en-q10",
+    "content": "10. [ENÜ] Was muss laut §251 HGB unter der Bilanz angegeben werden?",
+    "answers": [
+      {
+        "text": "a) Höhe der liquiden Mittel",
+        "is_correct": false
+      },
+      {
+        "text": "b) Unversteuerte Rücklagen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eventualverbindlichkeiten aus Bürgschaften und Garantien",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kreditrahmenvereinbarungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]
