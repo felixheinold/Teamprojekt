@@ -1,6 +1,6 @@
 [
   {
-    "id": "ple-vl2-de-q1",
+    "id": "logistics-k2-de-q1",
     "content": "1. Was ist das Ziel der Layoutplanung?",
     "answers": [
       {
@@ -20,15 +20,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q2",
+    "id": "logistics-k2-de-q2",
     "content": "2. Welche Layoutform ist durch geringe Transportkosten und Arbeitssicherheit gekennzeichnet?",
     "answers": [
       {
@@ -48,15 +48,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q3",
+    "id": "logistics-k2-de-q3",
     "content": "3. Was kennzeichnet ein prozessorientiertes Layout?",
     "answers": [
       {
@@ -76,15 +76,15 @@
         "is_correct": true
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q4",
+    "id": "logistics-k2-de-q4",
     "content": "4. Welches Layout wird typischerweise in Werften oder Flugzeugfabriken verwendet?",
     "answers": [
       {
@@ -104,15 +104,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q5",
+    "id": "logistics-k2-de-q5",
     "content": "5. Was ist die Zielgröße des quadratischen Zuordnungsproblems (QZP)?",
     "answers": [
       {
@@ -132,15 +132,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q6",
+    "id": "logistics-k2-de-q6",
     "content": "6. Welche beiden Matrizen sind Grundlage des QZP?",
     "answers": [
       {
@@ -160,15 +160,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q7",
+    "id": "logistics-k2-de-q7",
     "content": "7. Was ist die Herausforderung beim klassischen QZP?",
     "answers": [
       {
@@ -188,15 +188,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q8",
+    "id": "logistics-k2-de-q8",
     "content": "8. Was passiert im Zweiertauschverfahren?",
     "answers": [
       {
@@ -216,15 +216,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q9",
+    "id": "logistics-k2-de-q9",
     "content": "9. Welcher Nachteil besteht bei Fließfertigungssystemen?",
     "answers": [
       {
@@ -244,15 +244,15 @@
         "is_correct": true
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl2-de-q10",
+    "id": "logistics-k2-de-q10",
     "content": "10. Welche Layoutform basiert auf Gruppen ähnlicher Produkte in Subsystemen?",
     "answers": [
       {
@@ -272,9 +272,9 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 2",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Layoutplanung",
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"

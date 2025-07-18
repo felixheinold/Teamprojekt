@@ -1,6 +1,6 @@
 [
   {
-    "id": "energy-vl2-de-q1",
+    "id": "energy-k2-de-q1",
     "content": "1. Was sind zentrale energiepolitische Ziele laut §1 EnWG?",
     "answers": [
       {
@@ -21,14 +21,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q2",
+    "id": "energy-k2-de-q2",
     "content": "2. Welcher Brennstoff hatte 2023 den höchsten globalen Primärenergieverbrauch?",
     "answers": [
       {
@@ -49,14 +49,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q3",
+    "id": "energy-k2-de-q3",
     "content": "3. Wie hoch war der CO2-Emissionsfaktor für den deutschen Strommix im Jahr 2023?",
     "answers": [
       {
@@ -77,14 +77,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q4",
+    "id": "energy-k2-de-q4",
     "content": "4. Welcher Energieträger trägt laut Vorlesung maßgeblich zur CO2-Reduktion im Strommix bei?",
     "answers": [
       {
@@ -105,14 +105,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q5",
+    "id": "energy-k2-de-q5",
     "content": "5. Welches Ziel hat Deutschland beim Anteil erneuerbarer Energien am Bruttostromverbrauch bis 2030?",
     "answers": [
       {
@@ -133,14 +133,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q6",
+    "id": "energy-k2-de-q6",
     "content": "6. Welches Jahr wird als Ziel für die Treibhausgasneutralität in Deutschland genannt?",
     "answers": [
       {
@@ -161,14 +161,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q7",
+    "id": "energy-k2-de-q7",
     "content": "7. Was beschreibt der 'Merit-Order-Effekt'?",
     "answers": [
       {
@@ -189,14 +189,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q8",
+    "id": "energy-k2-de-q8",
     "content": "8. Was sind laut Szenarien T45 zentrale Herausforderungen für das Stromsystem?",
     "answers": [
       {
@@ -217,14 +217,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q9",
+    "id": "energy-k2-de-q9",
     "content": "9. Welche politische Maßnahme definiert Ausbauziele für erneuerbare Energien?",
     "answers": [
       {
@@ -245,14 +245,14 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl2-de-q10",
+    "id": "energy-k2-de-q10",
     "content": "10. Was bewirkt zunehmende Einspeisung erneuerbarer Energien am Strommarkt?",
     "answers": [
       {
@@ -273,8 +273,8 @@
       }
     ],
     "chapter": "VL2",
-    "lecture": "Energiewirtschaft",
-    "module": "Transformationspfade",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"

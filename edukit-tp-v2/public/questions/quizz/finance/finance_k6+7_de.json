@@ -1,6 +1,6 @@
 [
   {
-    "id": "fr-vl6-7-de-q1",
+    "id": "finance-k6+7-de-q1",
     "content": "1. Was ist das Hauptziel der modernen Portfoliotheorie?",
     "answers": [
       {
@@ -21,14 +21,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q2",
+    "id": "finance-k6+7-de-q2",
     "content": "2. Welche Kenngröße dient als Maß für das Risiko eines Wertpapiers?",
     "answers": [
       {
@@ -49,14 +49,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q3",
+    "id": "finance-k6+7-de-q3",
     "content": "3. Was ist ein Minimum Varianz Portfolio (MVP)?",
     "answers": [
       {
@@ -77,14 +77,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q4",
+    "id": "finance-k6+7-de-q4",
     "content": "4. Welche Portfolios gelten laut Portfoliotheorie als effizient?",
     "answers": [
       {
@@ -105,14 +105,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q5",
+    "id": "finance-k6+7-de-q5",
     "content": "5. Welche Rolle spielt die Kovarianz bei der Portfoliobildung?",
     "answers": [
       {
@@ -133,14 +133,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q6",
+    "id": "finance-k6+7-de-q6",
     "content": "6. Was ist der Beta-Faktor eines Wertpapiers?",
     "answers": [
       {
@@ -161,14 +161,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q7",
+    "id": "finance-k6+7-de-q7",
     "content": "7. Was beschreibt die Wertpapiermarktlinie (Security Market Line, SML)?",
     "answers": [
       {
@@ -189,14 +189,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q8",
+    "id": "finance-k6+7-de-q8",
     "content": "8. Welche Aussage ist eine Annahme des Capital Asset Pricing Model (CAPM)?",
     "answers": [
       {
@@ -217,14 +217,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q9",
+    "id": "finance-k6+7-de-q9",
     "content": "9. Welche Aussage beschreibt die Kapitalmarktlinie (Capital Market Line)?",
     "answers": [
       {
@@ -245,14 +245,14 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "fr-vl6-7-de-q10",
+    "id": "finance-k6+7-de-q10",
     "content": "10. Was beschreibt die Marktrisikoprämie im CAPM?",
     "answers": [
       {
@@ -273,8 +273,8 @@
       }
     ],
     "chapter": "VL6+7",
-    "lecture": "Finanzierung",
-    "module": "Portfoliotheorie & CAPM",
+    "lecture": "finance",
+    "module": "finance",
     "difficulty": null,
     "type": null,
     "language": "deutsch"

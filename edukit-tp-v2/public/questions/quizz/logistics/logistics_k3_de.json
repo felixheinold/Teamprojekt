@@ -1,6 +1,6 @@
 [
   {
-    "id": "ple-vl3-de-q1",
+    "id": "logistics-k3-de-q1",
     "content": "1. Was ist Scheduling in der Produktionsplanung?",
     "answers": [
       {
@@ -20,15 +20,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q2",
+    "id": "logistics-k3-de-q2",
     "content": "2. Welche Zielgröße steht typischerweise im Fokus beim Scheduling?",
     "answers": [
       {
@@ -48,15 +48,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q3",
+    "id": "logistics-k3-de-q3",
     "content": "3. Welche Maschinenumgebung beschreibt den Flow-Shop?",
     "answers": [
       {
@@ -76,15 +76,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q4",
+    "id": "logistics-k3-de-q4",
     "content": "4. Was bedeutet die Notation α|β|γ im Scheduling?",
     "answers": [
       {
@@ -104,15 +104,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q5",
+    "id": "logistics-k3-de-q5",
     "content": "5. Welche Regel minimiert die Summe der Fertigstellungszeiten in einer Ein-Maschinen-Umgebung?",
     "answers": [
       {
@@ -132,15 +132,15 @@
         "is_correct": true
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q6",
+    "id": "logistics-k3-de-q6",
     "content": "6. Was gibt der Wert Tj an?",
     "answers": [
       {
@@ -160,15 +160,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q7",
+    "id": "logistics-k3-de-q7",
     "content": "7. Welche Aussage beschreibt den Unterschied zwischen SPT und WSPT?",
     "answers": [
       {
@@ -188,15 +188,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q8",
+    "id": "logistics-k3-de-q8",
     "content": "8. Welche Regel wird bei der Minimierung von maximaler Lateness angewendet?",
     "answers": [
       {
@@ -216,15 +216,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q9",
+    "id": "logistics-k3-de-q9",
     "content": "9. Welche Zielgröße wird mit Moore's Algorithmus minimiert?",
     "answers": [
       {
@@ -244,15 +244,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ple-vl3-de-q10",
+    "id": "logistics-k3-de-q10",
     "content": "10. Welche Aussage über Johnson’s Algorithmus ist korrekt?",
     "answers": [
       {
@@ -272,9 +272,9 @@
         "is_correct": false
       }
     ],
-    "chapter": "Vorlesung 3",
-    "lecture": "Produktion, Logistik und Entscheidungen",
-    "module": "Scheduling",
+    "chapter": "Kapitel 3",
+    "lecture": "production",
+    "module": "logistics",
     "difficulty": null,
     "type": null,
     "language": "deutsch"

@@ -1,6 +1,6 @@
 [
   {
-    "id": "energy-vl3-de-q1",
+    "id": "energy-k3-de-q1",
     "content": "1. Was beschreibt ein SLP-Kunde im Stromsystem?",
     "answers": [
       {
@@ -21,14 +21,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q2",
+    "id": "energy-k3-de-q2",
     "content": "2. Welche Hauptenergieträger nutzt die Industrie laut Vorlesung?",
     "answers": [
       {
@@ -49,14 +49,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q3",
+    "id": "energy-k3-de-q3",
     "content": "3. Was versteht man unter Netzparität?",
     "answers": [
       {
@@ -77,14 +77,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q4",
+    "id": "energy-k3-de-q4",
     "content": "4. Was ist ein Prosumer?",
     "answers": [
       {
@@ -105,14 +105,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q5",
+    "id": "energy-k3-de-q5",
     "content": "5. Was sind Eigenverbrauchsquote und Autarkiegrad?",
     "answers": [
       {
@@ -133,14 +133,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q6",
+    "id": "energy-k3-de-q6",
     "content": "6. Welches Ziel verfolgt das Smart-Meter-Rollout?",
     "answers": [
       {
@@ -161,14 +161,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q7",
+    "id": "energy-k3-de-q7",
     "content": "7. Was beschreibt der Begriff Lastganglinie?",
     "answers": [
       {
@@ -189,14 +189,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q8",
+    "id": "energy-k3-de-q8",
     "content": "8. Welche Branche weist die höchsten Energiekosten relativ zum Produktionswert auf?",
     "answers": [
       {
@@ -217,14 +217,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q9",
+    "id": "energy-k3-de-q9",
     "content": "9. Was ist das Ziel der Energiewertstromanalyse?",
     "answers": [
       {
@@ -245,14 +245,14 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl3-de-q10",
+    "id": "energy-k3-de-q10",
     "content": "10. Welches Kriterium gehört zu den 8 Gestaltungsrichtlinien des Soll-Zustands?",
     "answers": [
       {
@@ -273,8 +273,8 @@
       }
     ],
     "chapter": "VL3",
-    "lecture": "Energiewirtschaft",
-    "module": "Energie als Produktionsfaktor",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"

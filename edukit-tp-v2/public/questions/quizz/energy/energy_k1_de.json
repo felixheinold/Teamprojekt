@@ -1,6 +1,6 @@
 [
   {
-    "id": "energy-vl1-de-q1",
+    "id": "energy-k1-de-q1",
     "content": "1. Was umfasst die Energiewirtschaft laut Vorlesung?",
     "answers": [
       {
@@ -21,14 +21,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q2",
+    "id": "energy-k1-de-q2",
     "content": "2. Was ist die SI-Einheit der Energie?",
     "answers": [
       {
@@ -49,14 +49,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q3",
+    "id": "energy-k1-de-q3",
     "content": "3. Wieviel kWh entsprechen 1 kg Steinkohleeinheit (SKE)?",
     "answers": [
       {
@@ -77,14 +77,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q4",
+    "id": "energy-k1-de-q4",
     "content": "4. Was ist Primärenergie?",
     "answers": [
       {
@@ -105,14 +105,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q5",
+    "id": "energy-k1-de-q5",
     "content": "5. Welche Energieform liegt dem Endverbraucher vor?",
     "answers": [
       {
@@ -133,14 +133,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q6",
+    "id": "energy-k1-de-q6",
     "content": "6. Was ist das Ziel bei energetischen Umwandlungsprozessen?",
     "answers": [
       {
@@ -161,14 +161,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q7",
+    "id": "energy-k1-de-q7",
     "content": "7. Welche Energieeinheit ist in der Elektrizitätswirtschaft besonders relevant?",
     "answers": [
       {
@@ -189,14 +189,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q8",
+    "id": "energy-k1-de-q8",
     "content": "8. Was sind typische Beispiele für Sekundärenergie?",
     "answers": [
       {
@@ -217,14 +217,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q9",
+    "id": "energy-k1-de-q9",
     "content": "9. Welcher Sektor verbraucht in Deutschland den meisten Strom?",
     "answers": [
       {
@@ -245,14 +245,14 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "energy-vl1-de-q10",
+    "id": "energy-k1-de-q10",
     "content": "10. Welche Methode kommt im Operations Research der Energiewirtschaft zur Kraftwerkseinsatzplanung zum Einsatz?",
     "answers": [
       {
@@ -273,8 +273,8 @@
       }
     ],
     "chapter": "VL1",
-    "lecture": "Energiewirtschaft",
-    "module": "Einführung",
+    "lecture": "production",
+    "module": "energy",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
