@@ -1,0 +1,282 @@
+[
+  {
+    "id": "logistics-k2-de-q1",
+    "content": "1. Was ist das Ziel der Layoutplanung?",
+    "answers": [
+      {
+        "text": "a) Steigerung der Mitarbeiterzahl",
+        "is_correct": false
+      },
+      {
+        "text": "b) Optimierung einer gegebenen Zielgröße bei Anordnung von Anordnungsobjekten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Erhöhung der Immobilienwerte",
+        "is_correct": false
+      },
+      {
+        "text": "d) Reduktion der Softwarekosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q2",
+    "content": "2. Welche Layoutform ist durch geringe Transportkosten und Arbeitssicherheit gekennzeichnet?",
+    "answers": [
+      {
+        "text": "a) Fixierte Position",
+        "is_correct": false
+      },
+      {
+        "text": "b) Service-System-Layout",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktions-Layout",
+        "is_correct": true
+      },
+      {
+        "text": "d) Tastaturlayout",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q3",
+    "content": "3. Was kennzeichnet ein prozessorientiertes Layout?",
+    "answers": [
+      {
+        "text": "a) AO in Zellstrukturen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Produkte folgen identischer Abarbeitungsreihenfolge",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produkt fest, Ressourcen bewegen sich",
+        "is_correct": false
+      },
+      {
+        "text": "d) Individuelle Transportwege zwischen einzeln platzierten AOs",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q4",
+    "content": "4. Welches Layout wird typischerweise in Werften oder Flugzeugfabriken verwendet?",
+    "answers": [
+      {
+        "text": "a) Fixierte Position Layout",
+        "is_correct": true
+      },
+      {
+        "text": "b) Prozessorientiertes Layout",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zellulares Layout",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktorientiertes Layout",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q5",
+    "content": "5. Was ist die Zielgröße des quadratischen Zuordnungsproblems (QZP)?",
+    "answers": [
+      {
+        "text": "a) Minimierung der Lagerhaltungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Maximierung des Umsatzes",
+        "is_correct": false
+      },
+      {
+        "text": "c) Minimierung der Gesamttransportkosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reduktion der Maschinenzahl",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q6",
+    "content": "6. Welche beiden Matrizen sind Grundlage des QZP?",
+    "answers": [
+      {
+        "text": "a) Produktions- und Absatzmatrix",
+        "is_correct": false
+      },
+      {
+        "text": "b) Mengen- und Stückkostenmatrix",
+        "is_correct": false
+      },
+      {
+        "text": "c) Distanz- und Häufigkeitsmatrix",
+        "is_correct": true
+      },
+      {
+        "text": "d) Transport- und Liefermatrix",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q7",
+    "content": "7. Was ist die Herausforderung beim klassischen QZP?",
+    "answers": [
+      {
+        "text": "a) Geringe Anzahl an Variablen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Linearität der Zielgröße",
+        "is_correct": false
+      },
+      {
+        "text": "c) Abhängigkeit der Kosten von der Positionierung der Objekte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Fixe Ausrichtung der AOs",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q8",
+    "content": "8. Was passiert im Zweiertauschverfahren?",
+    "answers": [
+      {
+        "text": "a) Maschinen werden entfernt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es wird immer das teuerste AO getauscht",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es werden Paare von AOs getauscht, wenn eine Verbesserung erzielt wird",
+        "is_correct": true
+      },
+      {
+        "text": "d) Neue Objekte werden hinzugefügt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q9",
+    "content": "9. Welcher Nachteil besteht bei Fließfertigungssystemen?",
+    "answers": [
+      {
+        "text": "a) Hohe Flexibilität bei neuen Produkten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringe Kapitalkosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Hohe Flexibilität und niedrige Produktivität",
+        "is_correct": false
+      },
+      {
+        "text": "d) Geringe Flexibilität bei neuer Produktvielfalt",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k2-de-q10",
+    "content": "10. Welche Layoutform basiert auf Gruppen ähnlicher Produkte in Subsystemen?",
+    "answers": [
+      {
+        "text": "a) Prozessorientiertes Layout",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fixierte Position Layout",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zellulares Layout",
+        "is_correct": true
+      },
+      {
+        "text": "d) Produktorientiertes Layout",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 2",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

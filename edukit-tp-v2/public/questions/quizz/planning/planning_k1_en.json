@@ -1,0 +1,422 @@
+[
+  {
+    "id": "planning-k1-en-q1",
+    "content": "1. What type of production system is highlighted in the description?",
+    "answers": [
+      {
+        "text": "a) autonomous systems",
+        "is_correct": true
+      },
+      {
+        "text": "b) Artificial intelligence",
+        "is_correct": false
+      },
+      {
+        "text": "c) distributed systems",
+        "is_correct": false
+      },
+      {
+        "text": "d) Complex systems",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q2",
+    "content": "2. Which of the following statements best describes the main function of the \"magical triangles\" concept?",
+    "answers": [
+      {
+        "text": "a) the optimization of production processes.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The reduction of costs and the increase in product quality.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the integration of different production methods.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the improvement in customer satisfaction.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q3",
+    "content": "3. Which of the following is a property of the \"networked\" world?",
+    "answers": [
+      {
+        "text": "a) The reduction of resource consumption.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the promotion of innovations.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the improvement of communication and cooperation.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the minimization of environmental risks.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q4",
+    "content": "4. What is the main purpose of the \"digital transformation\" in the context of product development?",
+    "answers": [
+      {
+        "text": "a) the reduction in production costs.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the improvement of customer experience.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The integration of digital technologies into all production processes.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the optimization of the supply chain.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q5",
+    "content": "5. Which of the following statements best describes the role of the \"changed working conditions\"?",
+    "answers": [
+      {
+        "text": "a) the reduction of the workload.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the promotion of innovations.",
+        "is_correct": false
+      },
+      {
+        "text": "c) adaptation to new technologies and processes.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the improvement of employee satisfaction.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q6",
+    "content": "6. Which of the following information is highlighted in the text?",
+    "answers": [
+      {
+        "text": "a) the meaning of sustainability.",
+        "is_correct": true
+      },
+      {
+        "text": "b) the advantages of automation.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the role of customer feedback.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the advantages of global networking.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q7",
+    "content": "7. Which of the following is a result of the \"changed working conditions\"?",
+    "answers": [
+      {
+        "text": "a) the reduction of the workload.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the promotion of innovations.",
+        "is_correct": false
+      },
+      {
+        "text": "c) adaptation to new technologies.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the improvement of employee satisfaction.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q8",
+    "content": "8. Which of the following is an example of a \"scenic learning question\"?",
+    "answers": [
+      {
+        "text": "a) \"Which production methods are most efficient?\"",
+        "is_correct": true
+      },
+      {
+        "text": "b) \"How can we improve our customer satisfaction?\"",
+        "is_correct": false
+      },
+      {
+        "text": "c) \"How can we optimize our supply chain?\"",
+        "is_correct": false
+      },
+      {
+        "text": "d) \"Which new materials are suitable for production?\"",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q9",
+    "content": "9. Which of the following statements best describes the goal of the \"digital economy\"?",
+    "answers": [
+      {
+        "text": "a) reducing labor costs.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the promotion of innovations.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the improvement of efficiency and productivity.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the minimization of the environmental impact.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q10",
+    "content": "10. Which aspect of the \"digital transformation\" is particularly emphasized in the text?",
+    "answers": [
+      {
+        "text": "a) Reducing raw material consumption.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the integration of different production methods.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the improvement in customer loyalty.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the optimization of logistics.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q11",
+    "content": "11. Which of the following statements is best suited to describe the text?",
+    "answers": [
+      {
+        "text": "a) The text is an academic work.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The text is a guide for the implementation of production processes.",
+        "is_correct": true
+      },
+      {
+        "text": "c) The text describes the development of a new production philosophy.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The text is a report on the effects of sustainability on the economy.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q12",
+    "content": "12. What advantage is highlighted in the text?",
+    "answers": [
+      {
+        "text": "a) the reduction in production costs.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the promotion of innovations.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the improvement in customer experience.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the optimization of the supply chain.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q13",
+    "content": "13. Which of the following statements best reflects the meaning of the \"networked\" world?",
+    "answers": [
+      {
+        "text": "a) the reduction in transport costs.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the promotion of competition.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the improvement of communication and cooperation.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the minimization of the environmental impact.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q14",
+    "content": "14. What is the central focus of the text?",
+    "answers": [
+      {
+        "text": "a) The history of product development.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the meaning of the supply chain.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The effects of digitization on production.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the optimization of the resources.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k1-en-q15",
+    "content": "15. Which of the following statements is best describes the role of the \"product variants\" in production planning?",
+    "answers": [
+      {
+        "text": "a) You are just one way to improve product quality.",
+        "is_correct": false
+      },
+      {
+        "text": "b) They enable adaptation to different customer needs.",
+        "is_correct": true
+      },
+      {
+        "text": "c) They are only suitable for small companies.",
+        "is_correct": false
+      },
+      {
+        "text": "d) They can only be used in production.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "management-k2-de-q1",
+    "content": "1.  Welche der folgenden ist die beste Beschreibung des Management-Konzepts?",
+    "answers": [
+      {
+        "text": "a) Eine einfache Organisation, die Aufgaben erledigt.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die systematische Planung und Steuerung von Unternehmen, um ihre Ziele zu erreichen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Verwaltung von Ressourcen durch eine einzelne Person.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Methode, um Mitarbeiter zu motivieren.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q2",
+    "content": "2.  Welche der folgenden Aussagen trifft am besten auf die Bedeutung von \"Effizienz\" im Management zurück?",
+    "answers": [
+      {
+        "text": "a) Effizienz ist nur wichtig, wenn es die Profitabilität erhöht.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Effizienz ist ein zentrales Ziel, das die Produktivität und die Ressourcennutzung maximiert.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Effizienz ist nur relevant für kleine Unternehmen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Effizienz ist eine Frage der persönlichen Vorlieben.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q3",
+    "content": "3.  Welche der folgenden Aussagen beschreibt am besten die Rolle der \"Organisation\" im Management?",
+    "answers": [
+      {
+        "text": "a) Die Organisation ist nur ein Tool zur Erreichung von Zielen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Organisation ist ein System, das Aufgaben und Verantwortlichkeiten festlegt und die Zusammenarbeit zwischen verschiedenen Abteilungen fördert.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Organisation ist nur ein Organisationsstruktur.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Organisation ist eine einzelne Person.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q4",
+    "content": "4.  Wie beeinflusst die \"unternehmenszentrale\" Strategie die Entscheidungsfindung im Management?",
+    "answers": [
+      {
+        "text": "a) Sie führt zu unkritischer Entscheidungsfindung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie ist ein zentraler Bestandteil der strategischen Planung und der Entscheidungsfindung.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie basiert nur auf der Meinung der Mitarbeiter.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie ist irrelevant für die Unternehmensführung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q5",
+    "content": "5.  Welche der folgenden Aussagen stellt das Hauptziel des Management in einem Unternehmen dar?",
+    "answers": [
+      {
+        "text": "a) Die Erzielung von Profiten für die Aktionäre.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Erfüllung der Bedürfnisse der Kunden.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Optimierung der Ressourcennutzung.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Schaffung einer großen und komplexen Organisation.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q6",
+    "content": "6.  Welche der folgenden Aussagen ist am relevantesten für die Mitarbeitermotivation?",
+    "answers": [
+      {
+        "text": "a) Mitarbeiter werden nur motiviert, wenn sie hohe Gehälter erhalten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Mitarbeiter werden motiviert, wenn sie eine hohe Arbeitsbelastung haben.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Mitarbeiter werden motiviert, wenn sie an die Unternehmensziele und Ziele teilhaben können.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Mitarbeiter werden nur motiviert, wenn sie an die eigenen Aufgaben interessiert sind.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q7",
+    "content": "7.  Was ist ein wichtiger Aspekt der \"internen und externen Netzwerke\" in der Unternehmensführung?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der internen Kommunikation.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Stärkung der Beziehungen zu externen Partnern und Kunden.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Isolation von der Außenwelt.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Ignorierung der Bedürfnisse der Kunden.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q8",
+    "content": "8.  Welche der folgenden Aussagen beschreibt die grundlegende Bedeutung der \"informellen Koordination\"?",
+    "answers": [
+      {
+        "text": "a) Informelle Koordination ist nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Informelle Koordination ist wichtig, um die Zusammenarbeit zu verbessern und die Effizienz zu steigern.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Informelle Koordination ist irrelevant für die Unternehmensführung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Informelle Koordination ist nur für die Führungskraft.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q9",
+    "content": "9.  Welche der folgenden Aussagen stellt den größten Unterschied zwischen \"informal\" und \"formal\" Koordination dar?",
+    "answers": [
+      {
+        "text": "a) Informal Koordination ist immer formeller.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Informal Koordination ist unkompliziert, während formal Koordination komplex ist.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Formal Koordination ist immer unkompliziert, während informal Koordination komplex ist.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Informal Koordination ist immer komplex, während formal Koordination einfach ist.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q10",
+    "content": "10.  Welche der folgenden Aussagen ist am relevantesten für die strategische Planung in einem Unternehmen?",
+    "answers": [
+      {
+        "text": "a) Das Unternehmen konzentriert sich nur auf die kurzfristige Profitabilität.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Das Unternehmen betrachtet die langfristigen Ziele und die strategische Ausrichtung.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Das Unternehmen ignoriert die Bedürfnisse der Kunden.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Das Unternehmen ist nur auf die interne Organisation fokussiert.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q11",
+    "content": "11.  Was ist der Hauptzweck der \"prozeduren\" im Management?",
+    "answers": [
+      {
+        "text": "a) Die Erzielung von neuen Produkten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Verbesserung der Arbeitsabläufe und die Standardisierung von Prozessen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Vermeidung von Fehlern.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Erhöhung der Kosten.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q12",
+    "content": "12. Welche der folgenden Aussagen beschreibt am besten die Rolle der \"organisationsstruktur\"?",
+    "answers": [
+      {
+        "text": "a) Die Organisationsstruktur ist nur ein Dokument.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Organisationsstruktur ist ein System, das die Aufgaben und Verantwortlichkeiten festlegt und die Zusammenarbeit zwischen verschiedenen Abteilungen fördert.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Organisationsstruktur ist ein persönliches Vorhaben.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Organisationsstruktur ist unabhängig von der Unternehmensstrategie.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q13",
+    "content": "13. Welche der folgenden Aussagen stellt das Hauptziel der \"gewährleisteten Kontroll\" dar?",
+    "answers": [
+      {
+        "text": "a) Die Erzielung von Gewinn.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Sicherstellung, dass die Prozesse und Aktivitäten des Unternehmens ordnungsgemäß funktionieren.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Reduzierung der Kosten.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Vermeidung von Risiken.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q14",
+    "content": "14. Welche der folgenden Aussagen beschreibt am besten die Bedeutung der \"mechanistischen\" Koordination?",
+    "answers": [
+      {
+        "text": "a) Mechanistische Koordination ist nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Mechanistische Koordination ist wichtig, um die Effizienz und die Leistung zu verbessern.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Mechanistische Koordination ist irrelevant für die Unternehmensführung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Mechanistische Koordination ist nur für die Führungskraft.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k2-de-q15",
+    "content": "15. Was ist das Hauptziel der \"individuellen Auswahlen\"?",
+    "answers": [
+      {
+        "text": "a) Die Erzielung von Profiten für die Aktionäre.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Erzielung von Möglichkeiten für die Mitarbeiter.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Verbesserung der Arbeitsbedingungen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Reduzierung der Kosten.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

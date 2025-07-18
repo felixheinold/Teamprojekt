@@ -2,10 +2,13 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useBackendUserContext } from "../../context/BackendUserContext";
 import i18n from "i18next";
 import "./QuizGame.css";
 
 const QuizGame = () => {
+  const { user, setUser, untrackedChanges, flushUser } =
+    useBackendUserContext();
   const { t } = useTranslation();
   type QuizQuestion = {
     id: string;
@@ -116,6 +119,16 @@ const QuizGame = () => {
   const shuffle = <T,>(array: T[]): T[] =>
     [...array].sort(() => Math.random() - 0.5);
 
+  const mapBackendToQuiz = (backendQuestion: any): QuizQuestion => {
+    return {
+      id: backendQuestion.id,
+      question: backendQuestion.content,
+      options: backendQuestion.answers.map((a: any) => a.text),
+      answer:
+        backendQuestion.answers.find((a: any) => a.is_correct)?.text || "",
+    };
+  };
+
   const loadQuizQuestions = async (): Promise<QuizQuestion[]> => {
     const subjectKey = subject?.toLowerCase();
     const langKey = i18n.language.startsWith("de") ? "de" : "en";
@@ -125,26 +138,29 @@ const QuizGame = () => {
     if (isAllChapters) {
       const promises = Array.from({ length: chapterCount }, (_, i) => {
         const chapterKey = `k${i + 1}`;
-        const path = `/questions/quiz/${subjectKey}_${chapterKey}_${langKey}.json`;
+        const path = `/questions/quizz/${subjectKey}/${subjectKey}_${chapterKey}_${langKey}.json`;
         return fetch(path)
           .then((res) => (res.ok ? res.json() : []))
           .catch(() => []);
       });
       const allResults = await Promise.all(promises);
       const combined = allResults.flat();
-      return combined.length > 0 ? combined : sampleQuestions;
+      return combined.length > 0
+        ? combined.map(mapBackendToQuiz)
+        : sampleQuestions;
     }
 
     const match = chapter?.match(/Kapitel (\d+)/i);
     const chapterKey = match ? `k${match[1]}` : null;
     if (!chapterKey) return sampleQuestions;
 
-    const path = `/questions/quiz/${subjectKey}_${chapterKey}_${langKey}.json`;
+    const path = `/questions/quizz/${subjectKey}/${subjectKey}_${chapterKey}_${langKey}.json`;
 
     try {
       const res = await fetch(path);
       if (!res.ok) throw new Error("Datei nicht gefunden");
-      return await res.json();
+      const data = await res.json();
+      return data.map(mapBackendToQuiz);
     } catch {
       return sampleQuestions;
     }
@@ -241,8 +257,65 @@ const QuizGame = () => {
     }
   };
 
-  const handleNext = () => {
-    if (isLastQuestion) {
+  const handleNext = async () => {
+    if (showFeedback === false) return; // Schütze vor Doppelklicks
+
+    if (isLastQuestion && user) {
+      const correctIds = questions
+        .slice(0, currentIndex + 1)
+        .filter(
+          (q, i) => q.answer === q.options.find((opt) => opt === selectedAnswer)
+        )
+        .map((q) => q.id);
+
+      try {
+        const current = user.user_game_information.quiz;
+
+        const updatedUser = {
+          ...user,
+          user_game_information: {
+            ...user.user_game_information,
+            quiz: {
+              ...current,
+              total_games: current.total_games + 1,
+              total_points: current.total_points + score,
+              max_points: current.max_points + questionCount,
+              best_Score: Math.max(current.best_Score, score),
+              accuracy:
+                (current.total_points + score) /
+                (current.max_points + questionCount),
+              last_played: new Date().toISOString(),
+            },
+          },
+        };
+
+        setUser(updatedUser); // ⬅️ sehr wichtig!
+        console.log("📊 Neuer Stand:", updatedUser.user_game_information.quiz);
+        untrackedChanges(); // markiert den Context als „dirty“
+        await flushUser(); // schreibt den aktuellen Context ins Backend
+        console.log(user.user_game_information);
+        await flushUser(updatedUser)
+          .then(() => console.log("✅ flushUser erfolgreich"))
+          .catch(async (err) => {
+            console.error("❌ flushUser failed", err);
+            const res = await fetch(
+              "https://api.edukit-tp.me/users/update-whole-user/" +
+                user.user_id,
+              {
+                method: "PUT",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(updatedUser),
+              }
+            );
+            const text = await res.text();
+            console.warn("🔍 Backend Antwort:", text);
+          });
+      } catch (err) {
+        console.error("❌ Fehler beim Aktualisieren des Fortschritts:", err);
+      }
+
       navigate("/quizresult", {
         state: {
           module,
@@ -252,13 +325,11 @@ const QuizGame = () => {
           timeLimit,
           score,
           questions,
-          correctIds: questions
-            .slice(0, currentIndex + 1)
-            .filter((q, i) => q.answer === questions[i].answer && i < score)
-            .map((q) => q.id),
+          correctIds,
           allIds: allChapterQuestions.map((q) => q.id),
           isAllChapters,
           chapterCount,
+          finished: true,
         },
       });
     } else {

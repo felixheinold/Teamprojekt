@@ -1,0 +1,446 @@
+[
+  {
+    "id": "management-k1-de-q1",
+    "content": "1.  Welche der folgenden Strategien ist am wahrscheinlichsten, um die Produktivität zu steigern?",
+    "answers": [
+      {
+        "text": "a) Verzicht auf Investitionen in die Weiterbildung der Mitarbeiter.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Implementierung eines neuen CRM-Systems.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Förderung der Teamarbeit und des Wissensaustauschs.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Einrichtung von Projektmanagement-Tools.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q2",
+    "content": "2.  Welchen Einfluss hatte die Unternehmensleitung auf die Mitarbeiter?",
+    "answers": [
+      {
+        "text": "a) Sie hatte eine sehr direkte Kontrolle über die Arbeitsabläufe.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie hat die Mitarbeiter in die Entscheidungsfindung einbezogen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie hat die Mitarbeiter motiviert und an die Unternehmensziele gebunden.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie hat die Mitarbeiter in die Entwicklung neuer Produkte investiert.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q3",
+    "content": "3.  Welche der folgenden Aussagen beschreibt am besten die Rolle des Management in der Unternehmensführung?",
+    "answers": [
+      {
+        "text": "a) Das Management ist ausschließlich verantwortlich für die Finanzplanung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Das Management ist verantwortlich für die strategische Planung und die Umsetzung von Maßnahmen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Das Management ist hauptsächlich zuständig für die operative Umsetzung der Geschäftsprozesse.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Das Management ist ausschließlich für die Personalentwicklung verantwortlich.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q4",
+    "content": "4.  Wie beeinflusst die Unternehmensstruktur die Entscheidungsfindung?",
+    "answers": [
+      {
+        "text": "a) Die Unternehmensstruktur führt zur Reduzierung der Entscheidungsfindung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Unternehmensstruktur beeinflusst die Entscheidungsfindung durch die Hierarchie und die Verantwortlichkeiten.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Unternehmensstruktur ist irrelevant für die Entscheidungsfindung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Unternehmensstruktur ist nur für die strategische Planung wichtig.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q5",
+    "content": "5.  Welche der folgenden Aussagen beschreibt am besten die Bedeutung von Unternehmenseffizienz?",
+    "answers": [
+      {
+        "text": "a) Effizienz ist nur relevant für die Finanzplanung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Effizienz ist ein wesentlicher Faktor für die Wettbewerbsfähigkeit und die langfristige Nachhaltigkeit eines Unternehmens.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Effizienz ist keine wichtige Kennzahl für die Unternehmensführung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Effizienz ist nur relevant für kleine Unternehmen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q6",
+    "content": "6.  Welche Art von Informationen sind für eine fundierte Entscheidungsfindung wichtig?",
+    "answers": [
+      {
+        "text": "a) Nur Zahlen und Statistiken.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sowohl quantitative als auch qualitative Informationen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur Informationen, die den eigenen Interessen entsprechen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nur Informationen, die bereits bekannt sind.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q7",
+    "content": "7.  Welche der folgenden Aussagen ist am besten zu einer erfolgreichen Unternehmung?",
+    "answers": [
+      {
+        "text": "a) Nur ein großer Investor.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein starkes Team und eine klare Strategie.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein hoher Personalaufwand.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein geringes Risiko.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q8",
+    "content": "8.  Was ist der Unterschied zwischen einer Unternehmenskultur und einer Unternehmenseffizienz?",
+    "answers": [
+      {
+        "text": "a) Eine Unternehmenskultur ist wichtig für die Unternehmenseffizienz.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Unternehmenseffizienz ist wichtig für die Unternehmenskultur.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Unternehmenseffizienz ist irrelevant für die Unternehmenskultur.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Unternehmenskultur ist nur für kleine Unternehmen wichtig.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q9",
+    "content": "9.  Welche der folgenden Aussagen ist am relevantesten für die Unternehmensführung?",
+    "answers": [
+      {
+        "text": "a) Die Einhaltung von Gesetzen und Vorschriften.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Entwicklung einer klaren und effektiven Strategie.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Optimierung der Produktionsprozesse.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Berücksichtigung der Bedürfnisse der Kunden.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q10",
+    "content": "10. Welchen Einfluss hat die Unternehmenseffizienz auf die Unternehmensleistung?",
+    "answers": [
+      {
+        "text": "a) Sie hat nur einen geringen Einfluss auf die Unternehmensleistung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie hat einen signifikanten Einfluss auf die Unternehmensleistung, indem sie die Rentabilität, die Wettbewerbsfähigkeit und die langfristige Nachhaltigkeit verbessert.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie hat keinen Einfluss auf die Unternehmensleistung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie hat keinen Einfluss auf die Unternehmensleistung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q11",
+    "content": "11. Wie wichtig ist die Unternehmenseffizienz im Vergleich zu anderen Faktoren wie Innovation und Kundenbeziehungen?",
+    "answers": [
+      {
+        "text": "a) Innovation und Kundenbeziehungen sind wichtiger als Unternehmenseffizienz.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Innovation und Kundenbeziehungen sind gleich wichtig.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Innovation und Kundenbeziehungen sind in unterschiedlichem Maße wichtig.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Innovation und Kundenbeziehungen sind irrelevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q12",
+    "content": "12. Welche der folgenden Aussagen beschreibt am besten die Rolle der Personalentwicklung?",
+    "answers": [
+      {
+        "text": "a) Personalentwicklung ist nur für große Unternehmen wichtig.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Personalentwicklung ist ein wichtiger Bestandteil der Unternehmenseffizienz und der Unternehmenseffizienz.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Personalentwicklung ist nur für die Mitarbeiterzufriedenheit wichtig.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Personalentwicklung ist irrelevant für die Unternehmensführung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q13",
+    "content": "13. Was ist ein wichtiger Faktor für eine erfolgreiche Unternehmung?",
+    "answers": [
+      {
+        "text": "a) Nur die Finanzierung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein starkes Team und eine klare Strategie.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein geringer Personalaufwand.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nur die Rechtsberatung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q14",
+    "content": "14. Welche der folgenden Aussagen ist am relevantesten für die Unternehmensführung?",
+    "answers": [
+      {
+        "text": "a) Das Management muss immer alle Entscheidungen treffen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Das Management muss die Entscheidungen des Managements treffen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Das Management muss die Entscheidungen des Managements umsetzen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Das Management muss die Entscheidungen des Managements ignorieren.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q15",
+    "content": "15. Welchen Vorteil bietet eine gute Unternehmenseffizienz für die Mitarbeiter?",
+    "answers": [
+      {
+        "text": "a) Es führt zu unnötiger Arbeitsbelastung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es erhöht die Arbeitsbelastung und kann zu Stress und Burnout führen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es verbessert die Arbeitsbedingungen und fördert die Motivation.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es führt zu einem Verlust an Arbeitsplatzen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-kX-de-q16",
+    "content": "16. Wie beeinflusst ein starkes Team die Unternehmenseffizienz?",
+    "answers": [
+      {
+        "text": "a) Ein starkes Team ist irrelevant für die Unternehmenseffizienz.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein starkes Team ist ein wesentlicher Faktor für die Unternehmenseffizienz, indem es die Effizienz steigert, die Produktivität erhöht und die Innovationskraft fördert.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein starkes Team ist nur für kleine Unternehmen wichtig.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

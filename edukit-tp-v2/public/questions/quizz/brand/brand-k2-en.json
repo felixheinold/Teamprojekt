@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k2-en-q1",
+    "content": "1. What beschreibt 'Brand Knowledge'?",
+    "answers": [
+      {
+        "text": "a) Die Anzahl der Verkäufe einer brand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die rechtliche Stellung einer brand",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die in memory gespeicherten markenbezogenen informationen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die globale availability einer brand",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k2-en-q2",
+    "content": "2. Which zwei Hauptkomponenten umfasst die 'Brand Knowledge'?",
+    "answers": [
+      {
+        "text": "a) price und Qualität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marktanteil und Werbung",
+        "is_correct": false
+      },
+      {
+        "text": "c) brand awareness und brand image",
+        "is_correct": true
+      },
+      {
+        "text": "d) Logo und Design",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k2-en-q3",
+    "content": "3. What versteht man unter 'Brand Recall'?",
+    "answers": [
+      {
+        "text": "a) recognition der brand bei Sichtkontakt",
+        "is_correct": false
+      },
+      {
+        "text": "b) retrieval der brand aus dem memory ohne cue",
+        "is_correct": true
+      },
+      {
+        "text": "c) Entfernung eines products vom Markt",
+        "is_correct": false
+      },
+      {
+        "text": "d) Erhöhung des Marktanteils",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  }
+]

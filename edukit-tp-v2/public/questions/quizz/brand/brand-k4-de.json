@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k4-de-q1",
+    "content": "1. Was beschreibt die Produkt-Merkmalsähnlichkeit bei Markenerweiterungen?",
+    "answers": [
+      {
+        "text": "a) Die Verwendung desselben Werbeslogans",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gemeinsame Produktmerkmale und -funktionen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die geografische Nähe der Produktionsstätten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Gleiche Preisstruktur",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k4-de-q2",
+    "content": "2. Welcher Effekt beschreibt die Rückwirkung einer Markenerweiterung auf die Hauptmarke?",
+    "answers": [
+      {
+        "text": "a) Fit-Effekt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Rückkopplungseffekt",
+        "is_correct": true
+      },
+      {
+        "text": "c) Licensing-Effekt",
+        "is_correct": false
+      },
+      {
+        "text": "d) Imageverzerrung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "brand-k4-de-q3",
+    "content": "3. Was ist ein Vorteil von Ingredient Branding?",
+    "answers": [
+      {
+        "text": "a) Geringe Markenbekanntheit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Signalwirkung über Qualität",
+        "is_correct": true
+      },
+      {
+        "text": "c) Keine Kontrolle über das Produkt",
+        "is_correct": false
+      },
+      {
+        "text": "d) Erhöhtes Kannibalisierungsrisiko",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

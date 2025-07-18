@@ -1,0 +1,282 @@
+[
+  {
+    "id": "balance-k6-en-q1",
+    "content": "1. [ENÜ] Welche Bestandteile zählen laut HGB zu den ergänzenden Instrumenten der Rechnungslegung?",
+    "answers": [
+      {
+        "text": "a) GuV und Kapitalflussrechnung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anhang und Lagebericht",
+        "is_correct": true
+      },
+      {
+        "text": "c) Steuererklärung und Geschäftsbericht",
+        "is_correct": false
+      },
+      {
+        "text": "d) Inventar und Rückstellungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q2",
+    "content": "2. [ENÜ] Welche Funktion hat der Anhang laut §284 HGB NICHT?",
+    "answers": [
+      {
+        "text": "a) Erläuterungsfunktion",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ergänzungsfunktion",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verkaufsfunktion",
+        "is_correct": true
+      },
+      {
+        "text": "d) Entlastungsfunktion",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q3",
+    "content": "3. [ENÜ] Welche Angabe gehört zu den Pflichtangaben im Anhang gemäß §284 HGB?",
+    "answers": [
+      {
+        "text": "a) Werbungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bewertungsmethoden und deren Änderungen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Firmenwerte aus Vorperioden",
+        "is_correct": false
+      },
+      {
+        "text": "d) Angaben zu Vorstandsvergütungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q4",
+    "content": "4. [ENÜ] Was ist der Anlagespiegel?",
+    "answers": [
+      {
+        "text": "a) Eine Übersicht über Vertriebskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine detaillierte Darstellung der Entwicklung des Anlagevermögens",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Übersicht über alle Finanzanlagen des Konzerns",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein Teil des Lageberichts",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q5",
+    "content": "5. [ENÜ] Welche Pflichtangabe zum Anlagevermögen betrifft F&E-Kosten?",
+    "answers": [
+      {
+        "text": "a) Nur aktivierte Entwicklungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gesamte F&E-Kosten des Jahres, sofern das Wahlrecht ausgeübt wurde",
+        "is_correct": true
+      },
+      {
+        "text": "c) Forschungskosten ohne Bezug zu Produkten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Keine Angabe notwendig",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q6",
+    "content": "6. [ENÜ] Welche Angabe ist im Anhang zur GuV NICHT verpflichtend?",
+    "answers": [
+      {
+        "text": "a) Vorschlag zur Ergebnisverwendung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gliederung nach Materialaufwand im UKV",
+        "is_correct": false
+      },
+      {
+        "text": "c) Rückstellungen für Marketingmaßnahmen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Erträge außergewöhnlicher Größenordnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q7",
+    "content": "7. [ENÜ] Welche Unternehmen müssen einen Lagebericht erstellen?",
+    "answers": [
+      {
+        "text": "a) Alle Kapitalgesellschaften",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur börsennotierte Unternehmen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Große und mittelgroße Kapitalgesellschaften",
+        "is_correct": true
+      },
+      {
+        "text": "d) Einzelunternehmen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q8",
+    "content": "8. [ENÜ] Was ist KEIN Bestandteil des Lageberichts laut HGB?",
+    "answers": [
+      {
+        "text": "a) Darstellung der zukünftigen Entwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Frauenquote in Vorständen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zusammensetzung der Bilanzposten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Analyse der finanziellen Leistungsindikatoren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q9",
+    "content": "9. [ENÜ] Welche Unternehmen müssen eine nichtfinanzielle Erklärung abgeben?",
+    "answers": [
+      {
+        "text": "a) Alle GmbHs",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kapitalmarktorientierte große KapG mit >500 AN",
+        "is_correct": true
+      },
+      {
+        "text": "c) Mittelgroße OHGs",
+        "is_correct": false
+      },
+      {
+        "text": "d) Alle Startups im Handelsregister",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k6-en-q10",
+    "content": "10. [ENÜ] Was ist KEIN zulässiger Ort für die Veröffentlichung der nichtfinanziellen Erklärung?",
+    "answers": [
+      {
+        "text": "a) Bundesanzeiger",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anhang zur GuV",
+        "is_correct": true
+      },
+      {
+        "text": "c) Webseite des Unternehmens",
+        "is_correct": false
+      },
+      {
+        "text": "d) Als besonderer Abschnitt im Lagebericht",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 6",
+    "lecture": "Financial Statements",
+    "module": "Supplementary Instruments",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

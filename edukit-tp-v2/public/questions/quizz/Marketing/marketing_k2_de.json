@@ -1,0 +1,498 @@
+[
+  {
+    "id": "marketing-k2-de-q1",
+    "content": "Welche Art von Segmentierung ist typischerweise die stärkste?",
+    "answers": [
+      {
+        "text": "a) Segmentierung basierend auf demografischen Merkmalen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Segmentierung basierend auf psychografischen Merkmalen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Segmentierung basierend auf demografischen Merkmalen und psychografischen Merkmalen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Segmentierung basierend auf demografischen Merkmalen nur",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q2",
+    "content": "Was ist der Zweck der \"Information Tide Initiative\"?",
+    "answers": [
+      {
+        "text": "a) Die Verbesserung der Kundenbeziehungen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Erhöhung der Markenbekanntheit.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Förderung des Umsatzwachstums.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Steigerung der Kundenzufriedenheit.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q3",
+    "content": "Welche Art von Daten wird für die Segmentierung verwendet?",
+    "answers": [
+      {
+        "text": "a) Nur statistische Daten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur qualitative Daten.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Kombination aus quantitativen und qualitativen Daten.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur historische Daten.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q4",
+    "content": "Wie kann die Auswahl von Zielsegmenten verbessert werden?",
+    "answers": [
+      {
+        "text": "a) Durch die Erstellung von breiten Segmenten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Durch die Analyse von Daten und die Identifizierung von spezifischen Bedürfnissen und Wünschen der Kunden.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Durch die Verwendung von etablierten Segmentierungskriterien.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Durch die Berücksichtigung von Marketingkampagnen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q5",
+    "content": "Was ist der Unterschied zwischen \"individueller wahrscheinlichkeiten segmentzugehörigkeit\" und \"segmentgröße\"?",
+    "answers": [
+      {
+        "text": "a) Individuelle wahrscheinlichkeiten segmentzugehörigkeit sind immer größer als Segmentgröße.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Segmentgröße ist immer größer als individuelle wahrscheinlichkeiten segmentzugehörigkeit.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Individuelle wahrscheinlichkeiten segmentzugehörigkeit und Segmentgröße sind gleich.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Individuelle wahrscheinlichkeiten segmentzugehörigkeit sind nur für kleine Segmente relevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q6",
+    "content": "Welche der folgenden Aussagen über die Informations-Positionierung ist am besten geeignet?",
+    "answers": [
+      {
+        "text": "a) Die Informationspositionierung konzentriert sich nur auf die Erstellung von Werbebotschaften.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Informationspositionierung konzentriert sich auf die Erstellung von Produkten.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Informationspositionierung ist ein strategischer Prozess, der verschiedene Aspekte berücksichtigt.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Informationspositionierung ist nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q7",
+    "content": "Was ist ein Beispiel für eine \"visualisierung alterzahlungsbereitschaft\"?",
+    "answers": [
+      {
+        "text": "a) Eine Darstellung des Umsatzwachstums.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Grafik, die die Altersgruppen der Kunden zeigt.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Tabelle, die die Altersgruppen der Kunden auflistet.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Statistik, die den durchschnittlichen Umsatz pro Kunde zeigt.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q8",
+    "content": "Welche der folgenden Punkte ist besonders wichtig für die erfolgreiche Implementierung von Informationspositionierung?",
+    "answers": [
+      {
+        "text": "a) Die Erstellung von übermäßig detaillierten Segmenten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Berücksichtigung der Bedürfnisse und Wünsche der Kunden.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Verwendung von etablierten Segmentierungskriterien.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Fokussierung auf die Erstellung von Werbebotschaften.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q9",
+    "content": "Was ist ein Beispiel für eine \"Organisationist hilfreich\"?",
+    "answers": [
+      {
+        "text": "a) Ein Experte, der sich auf eine bestimmte Branche spezialisiert hat.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Mitarbeiter, der sich auf die Erstellung von Segmenten spezialisiert hat.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein Mitarbeiter, der die strategische Ausrichtung der Marketingkampagnen unterstützt.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein Mitarbeiter, der sich auf die Erstellung von Marketingmaterialien spezialisiert hat.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q10",
+    "content": "Welche Art von Daten ist für die Segmentierung am wichtigsten?",
+    "answers": [
+      {
+        "text": "a) Quantitative Daten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Qualitative Daten.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Kombination aus quantitativen und qualitativen Daten.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur historische Daten.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q11",
+    "content": "Welche der folgenden Aussagen ist am wenigsten relevant für die Informationspositionierung?",
+    "answers": [
+      {
+        "text": "a) Die Analyse von Kundenverhalten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Identifizierung von Zielgruppen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Erstellung von Werbebotschaften.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Bewertung der Wettbewerbslage.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q12",
+    "content": "Warum ist die Informationspositionierung ein strategischer Prozess?",
+    "answers": [
+      {
+        "text": "a) Sie ist nur für Marketingexperten relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie ist ein strategischer Prozess, der verschiedene Aspekte berücksichtigt.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie ist nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie ist nur für die Erstellung von Werbebotschaften.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q13",
+    "content": "Welche der folgenden Aussagen beschreibt am besten die Rolle der Informationspositionierung?",
+    "answers": [
+      {
+        "text": "a) Sie dient nur der Erstellung von Werbebotschaften.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie ist ein strategischer Prozess, der verschiedene Aspekte berücksichtigt.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie ist eine Methode zur Verbesserung der Kundenbeziehungen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie ist nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q14",
+    "content": "Was bedeutet \"Verhaltensrelevanzmessbarkeit\"?",
+    "answers": [
+      {
+        "text": "a) Die Messung der Kundenpräferenzen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Messung der Kundenverhalten.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Messung der finanziellen Leistung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Messung der Produktionskosten.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q15",
+    "content": "Welche Art von Informationen ist für die Segmentierung am wichtigsten?",
+    "answers": [
+      {
+        "text": "a) Informationen über die Produkte.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Informationen über die Kunden.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Informationen über die Wettbewerber.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Informationen über die Marketingkampagnen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q16",
+    "content": "Was ist ein Beispiel für einen \"Clusteranalyseschritt\"?",
+    "answers": [
+      {
+        "text": "a) Die Analyse der Kundenwünsche.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Analyse der Kundenverhalten.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Analyse der Wettbewerbslage.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Analyse der Marketingkampagnen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q17",
+    "content": "Was ist der Vorteil einer \"individuellen wahrscheinlichkeiten segmentzugehörigkeit\"?",
+    "answers": [
+      {
+        "text": "a) Die Erstellung von übermäßig detaillierten Segmenten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Erstellung von segmentgrößen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Erstellung von segmenten mit individuellen wahrscheinlichkeiten.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Erstellung von segmenten mit segmentgröße.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k2-de-q18",
+    "content": "Welche der folgenden Aussagen ist am besten beschreibt die Rolle von \"Informations-Positionierung\"?",
+    "answers": [
+      {
+        "text": "a) Es ist nur ein Marketing-Tool.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es ist ein strategischer Prozess, der verschiedene Aspekte berücksichtigt.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "Marketing",
+   "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

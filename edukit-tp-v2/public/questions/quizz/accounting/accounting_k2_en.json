@@ -1,0 +1,282 @@
+[
+  {
+    "id": "accounting-k2-en-q1",
+    "content": "1. [ENÜ] Was stellt die Bilanz eines Unternehmens dar?",
+    "answers": [
+      {
+        "text": "a) Eine Aufstellung aller geplanten Umsätze",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Momentaufnahme der wirtschaftlichen Lage zu einem Zeitpunkt",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Übersicht über alle Steuerzahlungen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Einen Bericht über zukünftige Investitionen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q2",
+    "content": "2. [ENÜ] Welche zwei Bedingungen müssen Vermögensgegenstände erfüllen?",
+    "answers": [
+      {
+        "text": "a) Sie müssen verkauft werden und einen Gewinn erzielen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie müssen Eigentum des Staates sein",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie müssen zukünftige ökonomische Vorteile bringen und verlässlich bewertbar sein",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie müssen innerhalb von 30 Tagen abgeschrieben werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q3",
+    "content": "3. [ENÜ] Was ist kein Bestandteil des Eigenkapitals?",
+    "answers": [
+      {
+        "text": "a) Gezeichnetes Kapital",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gewinnrücklagen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kapitalrücklage",
+        "is_correct": false
+      },
+      {
+        "text": "d) Rückstellungen für Pensionen",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q4",
+    "content": "4. [ENÜ] Was wird in der Gewinn- und Verlustrechnung (GuV) gemessen?",
+    "answers": [
+      {
+        "text": "a) Bilanzsumme des Unternehmens",
+        "is_correct": false
+      },
+      {
+        "text": "b) Operativer Cashflow",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wirtschaftlicher Erfolg über eine Periode",
+        "is_correct": true
+      },
+      {
+        "text": "d) Wert der liquiden Mittel",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q5",
+    "content": "5. [ENÜ] Welche Aussage über Herstellungskosten ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie werden immer im Jahr der Produktion als Aufwand gebucht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie erscheinen nur in der Bilanz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie werden erst bei Verkauf als Aufwand in der GuV verbucht",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie gelten steuerlich nicht als Kosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q6",
+    "content": "6. [ENÜ] Was bedeutet transitorische Rechnungsabgrenzung?",
+    "answers": [
+      {
+        "text": "a) Aufwendungen/Umsätze der Vergangenheit werden erfasst",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zahlung erfolgt in der laufenden Periode, Aufwand/Ertrag aber später",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur zukünftige Zahlungen sind betroffen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Der Jahresabschluss wird um ein Jahr verschoben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q7",
+    "content": "7. [ENÜ] Was zeigt der Worksheet Approach?",
+    "answers": [
+      {
+        "text": "a) Nur Eigenkapitalveränderungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur liquide Mittelveränderungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Integration von Bilanz und GuV bei Geschäftsvorfällen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Alle Einnahmen eines Unternehmens",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q8",
+    "content": "8. [ENÜ] Was ist der Vorteil des Worksheet Approach laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Er benötigt keine Regeln",
+        "is_correct": false
+      },
+      {
+        "text": "b) Alle Buchungen erfolgen automatisch",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Bilanz ist nach jedem Geschäftsvorfall ausgeglichen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es entstehen keine Aufwendungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q9",
+    "content": "9. [ENÜ] Welche Aussage trifft auf T-Konten zu?",
+    "answers": [
+      {
+        "text": "a) Sie verwenden die Begriffe Aktiv und Passiv",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie sind besonders transparent",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie mischen Bilanz- und GuV-Konten bei Buchungssätzen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie zeigen immer automatisch den Gewinn",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "accounting-k2-en-q10",
+    "content": "10. [ENÜ] Was ist ein passiver Rechnungsabgrenzungsposten?",
+    "answers": [
+      {
+        "text": "a) Aktiviertes Eigenkapital",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ertrag, der im nächsten Jahr realisiert wird, aber bereits bezahlt wurde",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nicht verteilte Dividende",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bilanzierte Rückstellung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

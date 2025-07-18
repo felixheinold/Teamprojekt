@@ -13,6 +13,7 @@ export type UserGameInformation = {
   highscore: number;
   highscore_table_ranking: number;
   total_points: number;
+  max_points: number;
   daily_points_goal: number;
   last_played_all_game_types: string[]; //first position type, second position timestamp
   quiz: GameType;

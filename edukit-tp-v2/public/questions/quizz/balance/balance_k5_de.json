@@ -1,0 +1,282 @@
+[
+  {
+    "id": "balance-k5-de-q1",
+    "content": "1. Was ist das Ziel der GuV?",
+    "answers": [
+      {
+        "text": "a) Darstellung der Zahlungsmittelveränderung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Darstellung des Periodenerfolgs durch Erträge und Aufwendungen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Darstellung der Bilanzentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Darstellung der steuerlichen Situation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q2",
+    "content": "2. Welche Aussage zur Ergebnisspaltung ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie wird nur im UKV vorgenommen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie trennt das Ergebnis in Bestandteile wie Betriebsergebnis und Finanzergebnis",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie ist gesetzlich verboten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie betrifft nur Kapitalgesellschaften",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q3",
+    "content": "3. Welche Form ist für Kapitalgesellschaften bei der GuV zulässig?",
+    "answers": [
+      {
+        "text": "a) Nur Kontoform",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur tabellarische Form",
+        "is_correct": false
+      },
+      {
+        "text": "c) Staffelform nach GKV oder UKV",
+        "is_correct": true
+      },
+      {
+        "text": "d) Freie Form ohne Vorgaben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q4",
+    "content": "4. Was unterscheidet GKV und UKV grundlegend?",
+    "answers": [
+      {
+        "text": "a) Nur GKV ist erlaubt",
+        "is_correct": false
+      },
+      {
+        "text": "b) UKV berücksichtigt keine Verwaltungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) GKV gliedert nach Aufwandsarten, UKV nach Funktionsbereichen",
+        "is_correct": true
+      },
+      {
+        "text": "d) UKV ist für Kleinstunternehmen vorgeschrieben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q5",
+    "content": "5. Was zählt nicht zu den Mindestgliederungsvorschriften der GuV nach HGB?",
+    "answers": [
+      {
+        "text": "a) Umsatzerlöse",
+        "is_correct": false
+      },
+      {
+        "text": "b) Rückstellungen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Materialaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "d) Finanzergebnis",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q6",
+    "content": "6. Welche Aussage zur GuV kleiner Kapitalgesellschaften trifft zu?",
+    "answers": [
+      {
+        "text": "a) Sie dürfen keine GuV erstellen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie müssen alle Positionen detailliert ausweisen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie dürfen Positionen zusammenfassen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie verwenden nur das UKV",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q7",
+    "content": "7. Was beschreibt das Bruttoergebnis vom Umsatz im UKV?",
+    "answers": [
+      {
+        "text": "a) Umsatzerlöse minus Vertriebskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Umsatzerlöse minus Herstellungskosten der Absatzleistung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Umsatzerlöse minus Steuern",
+        "is_correct": false
+      },
+      {
+        "text": "d) Umsatzerlöse minus Verwaltungskosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q8",
+    "content": "8. Was zeigt die Ergebnisverwendungsrechnung?",
+    "answers": [
+      {
+        "text": "a) Die Höhe der gezahlten Steuern",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Entwicklung des Umlaufvermögens",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Verwendung des Jahresüberschusses",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Differenz zwischen Eigen- und Fremdkapital",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q9",
+    "content": "9. Welche Position gehört NICHT zum Finanzergebnis?",
+    "answers": [
+      {
+        "text": "a) Erträge aus Beteiligungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zinsen aus Ausleihungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Materialaufwand",
+        "is_correct": true
+      },
+      {
+        "text": "d) Abschreibungen auf Finanzanlagen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k5-de-q10",
+    "content": "10. Wie unterscheiden sich Bilanz und GuV?",
+    "answers": [
+      {
+        "text": "a) GuV zeigt nur Vermögen, Bilanz nur Aufwand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bilanz ist periodenbezogen, GuV stichtagsbezogen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bilanz ist stichtagsbezogen, GuV periodenbezogen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Beide sind identisch aufgebaut",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "production-k3-de-q1",
+    "content": "1. Was beschreibt der Nettobestand im Lager?",
+    "answers": [
+      {
+        "text": "a) Bestellte Ware auf dem Transportweg",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fehlmengen im System",
+        "is_correct": false
+      },
+      {
+        "text": "c) Physisch vorhandene Ware im Lager",
+        "is_correct": true
+      },
+      {
+        "text": "d) Geplante Liefermenge",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q2",
+    "content": "2. Was zählt zum disponiblen Bestand?",
+    "answers": [
+      {
+        "text": "a) Nur der Nettobestand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur der Bestellbestand",
+        "is_correct": false
+      },
+      {
+        "text": "c) Nettobestand + Bestellbestand - Fehlbestand",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lagerabgang minus Sicherheitsbestand",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q3",
+    "content": "3. Was ist typisch für eine q-Politik?",
+    "answers": [
+      {
+        "text": "a) Bestellung bei Erreichen eines Zeitpunkts",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bestellung bei konstantem Abstand r",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bestellung einer festen Menge q",
+        "is_correct": true
+      },
+      {
+        "text": "d) Bestellung einer variablen Menge",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q4",
+    "content": "4. Welche Bedingung löst bei der s-Politik eine Bestellung aus?",
+    "answers": [
+      {
+        "text": "a) Feste Zeitintervalle",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sicherheitsbestand unterschritten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verfügbarkeit einer Transportmöglichkeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Disponibler Bestand unterschreitet Bestellpunkt s",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q5",
+    "content": "5. Was ist der Unterschied zwischen (s,q)- und (r,S)-Politik?",
+    "answers": [
+      {
+        "text": "a) Bestellzeitpunkt vs. Bestellmenge",
+        "is_correct": false
+      },
+      {
+        "text": "b) Meldebestand vs. Sicherheitsbestand",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ereignisgesteuerte vs. Zeitgesteuerte Bestellung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lager vs. Transportkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q6",
+    "content": "6. Welcher Vorteil ergibt sich bei der (r,S)-Politik?",
+    "answers": [
+      {
+        "text": "a) Kontinuierliche Überwachung entfällt",
+        "is_correct": true
+      },
+      {
+        "text": "b) Keine Sicherheitsbestände notwendig",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kleinere Losgrößen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kürzere Lieferzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q7",
+    "content": "7. Was ist ein Nachteil der (r,S)-Politik?",
+    "answers": [
+      {
+        "text": "a) Hoher Überwachungsaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Risikozeitraum ist länger (r+L)",
+        "is_correct": true
+      },
+      {
+        "text": "c) Teure Bestellkosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kein Pufferbestand möglich",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q8",
+    "content": "8. Was beschreibt der Sicherheitsbestand?",
+    "answers": [
+      {
+        "text": "a) Durchschnittsbestand des Lagers",
+        "is_correct": false
+      },
+      {
+        "text": "b) Reservemenge zur Deckung von Unsicherheiten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bedarf pro Periode",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bestandsmenge am Monatsanfang",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q9",
+    "content": "9. Was bestimmt den Bestellzeitpunkt bei der (s,q)-Politik?",
+    "answers": [
+      {
+        "text": "a) Ein fester Zeitplan",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarfsvorhersage",
+        "is_correct": false
+      },
+      {
+        "text": "c) Unterschreitung des Bestellpunkts s",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zykluszeit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q10",
+    "content": "10. Was beschreibt der α-Servicegrad?",
+    "answers": [
+      {
+        "text": "a) Erfüllbare Nachfrage je Bestellung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anteil der Aufträge ohne Lieferverzug",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wahrscheinlichkeit, dass der Bestand während der Wiederbeschaffungszeit ausreicht",
+        "is_correct": true
+      },
+      {
+        "text": "d) Verhältnis von Nachfrage zu Lagerumschlag",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+    {
+    "id": "production-k3-de-q11",
+    "content": "1. Was beschreibt der Bullwhip-Effekt?",
+    "answers": [
+      {
+        "text": "a) Reduktion von Nachfrageschwankungen entlang der Lieferkette",
+        "is_correct": false
+      },
+      {
+        "text": "b) Stärkung der Lagerbestände beim Endkunden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verstärkung von Nachfrageschwankungen über mehrere Stufen der Lieferkette",
+        "is_correct": true
+      },
+      {
+        "text": "d) Optimierung der Transportlogistik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q12",
+    "content": "2. Was ist eine dokumentierte Ursache des Bullwhip-Effekts?",
+    "answers": [
+      {
+        "text": "a) Lagerausfälle durch Streiks",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kampagnen von Procter & Gamble für Pampers",
+        "is_correct": true
+      },
+      {
+        "text": "c) Störungen durch Naturkatastrophen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktionsfehler in der Endmontage",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q13",
+    "content": "3. Welche Auswirkung hat der Bullwhip-Effekt NICHT?",
+    "answers": [
+      {
+        "text": "a) Hohe Lagerbestände",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringere Kundenzufriedenheit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Geringe Schwankungen in der Produktion",
+        "is_correct": true
+      },
+      {
+        "text": "d) Unausgelastete Kapazitäten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q14",
+    "content": "4. Welche Maßnahme wirkt dem Bullwhip-Effekt entgegen?",
+    "answers": [
+      {
+        "text": "a) Verlängerung der Wiederbeschaffungszeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erhöhung der Mindestbestellmengen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verbesserung des Informationsflusses über die Supply Chain",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reduktion der Lagerhaltungskosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q15",
+    "content": "5. Was versteht man unter dem Ripple-Effekt?",
+    "answers": [
+      {
+        "text": "a) Schwankungen der Endverbraucherpreise",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verstärkung operativer Nachfrageeffekte",
+        "is_correct": false
+      },
+      {
+        "text": "c) Strukturelle Störung durch externe Ereignisse entlang der Supply Chain",
+        "is_correct": true
+      },
+      {
+        "text": "d) Verteilung logistischer Aufgaben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q16",
+    "content": "6. Welche Ereignisse können Ripple-Effekte auslösen?",
+    "answers": [
+      {
+        "text": "a) Marketingkampagnen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Preisnachlässe",
+        "is_correct": false
+      },
+      {
+        "text": "c) Naturkatastrophen oder Kriege",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kundenumfragen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q17",
+    "content": "7. Welche Maßnahme hilft NICHT gegen den Ripple-Effekt?",
+    "answers": [
+      {
+        "text": "a) Lieferantensegmentierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geografische Diversifikation",
+        "is_correct": false
+      },
+      {
+        "text": "c) Informationsblockade",
+        "is_correct": true
+      },
+      {
+        "text": "d) Postponement-Strategien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q18",
+    "content": "8. Was ist eine mögliche Auswirkung von Lean-Praktiken im Falle einer Störung?",
+    "answers": [
+      {
+        "text": "a) Schnellere Wiederherstellung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringe Auswirkungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verstärkte Auswirkungen auf die gesamte SC",
+        "is_correct": true
+      },
+      {
+        "text": "d) Vermeidung von Koordination",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q19",
+    "content": "9. Welche Strategie kann zur Minderung von Risiken bei Ripple-Effekten beitragen?",
+    "answers": [
+      {
+        "text": "a) Einzelbeschaffung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zentralisierung aller Standorte",
+        "is_correct": false
+      },
+      {
+        "text": "c) Mehrfachbeschaffung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reduzierung der Lagerbestände",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q20",
+    "content": "10. Was ist ein Unterschied zwischen Bullwhip- und Ripple-Effekt?",
+    "answers": [
+      {
+        "text": "a) Bullwhip betrifft nur die IT, Ripple nur die Logistik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bullwhip ist operativ, Ripple basiert auf außergewöhnlichen Risiken",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ripple tritt nur bei Absatzkrisen auf",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bullwhip entsteht nur in der Finanzabteilung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+    {
+    "id": "production-k3-de-q20",
+    "content": "1. Was ist das Gesamtziel des Lieferantenmanagements?",
+    "answers": [
+      {
+        "text": "a) Erhöhung der Einkaufspreise",
+        "is_correct": false
+      },
+      {
+        "text": "b) Minimierung der Lagerkosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Stärkung der Wettbewerbsposition durch optimale Zusammenarbeit mit Lieferanten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reduktion der Kundenbindung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q21",
+    "content": "2. Welche Phase gehört NICHT zum Lieferantenmanagementprozess?",
+    "answers": [
+      {
+        "text": "a) Lieferantenbewertung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lieferantenintegration",
+        "is_correct": false
+      },
+      {
+        "text": "c) Lieferantendiskussion",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lieferantenstrategie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q23",
+    "content": "3. Was zählt zu den Zielen der Lieferantenstrategie?",
+    "answers": [
+      {
+        "text": "a) Optimierung der Lagerlogistik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sicherstellung von Nachhaltigkeit und rechtlicher Konformität",
+        "is_correct": true
+      },
+      {
+        "text": "c) Einführung neuer Lohnsysteme",
+        "is_correct": false
+      },
+      {
+        "text": "d) Reduzierung der Marktvielfalt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q24",
+    "content": "4. Welche Antwort beschreibt den 'Vorselektionsprozess' korrekt?",
+    "answers": [
+      {
+        "text": "a) Auswahl nach Zufall",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erste Einschätzung potentieller Lieferanten z. B. über Selbstauskunft",
+        "is_correct": true
+      },
+      {
+        "text": "c) Entscheidung auf Basis interner Politik",
+        "is_correct": false
+      },
+      {
+        "text": "d) Preisverhandlung ohne Vorgespräch",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q25",
+    "content": "5. Was ist ein zentrales Auswahlkriterium bei Lieferantenauswahlprozessen?",
+    "answers": [
+      {
+        "text": "a) Sympathie des Ansprechpartners",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bonität und Qualität",
+        "is_correct": true
+      },
+      {
+        "text": "c) Anzahl der Vertriebskanäle",
+        "is_correct": false
+      },
+      {
+        "text": "d) Verkaufsstrategie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q26",
+    "content": "6. Was ist das Ziel der Nutzwertanalyse (NWA)?",
+    "answers": [
+      {
+        "text": "a) Rechtliche Bewertung von Angeboten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Steuerberechnung für Einkaufskosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Systematische Entscheidung bei alternativen Handlungsmöglichkeiten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Bewertung der Produktionsleistung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q27",
+    "content": "7. Welche Methode gehört zur Multi-Kriterien-Entscheidungsfindung?",
+    "answers": [
+      {
+        "text": "a) SWOT-Analyse",
+        "is_correct": false
+      },
+      {
+        "text": "b) MAUT (z. B. NWA)",
+        "is_correct": true
+      },
+      {
+        "text": "c) ABC-Analyse",
+        "is_correct": false
+      },
+      {
+        "text": "d) ABCDE-Modell",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q28",
+    "content": "8. Welche Aussage trifft auf das Scoring-Modell (NWA) zu?",
+    "answers": [
+      {
+        "text": "a) Nur monetäre Größen können berücksichtigt werden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gewichtungen müssen gleich verteilt sein",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es kombiniert qualitative und quantitative Kriterien",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es basiert nur auf historischen Daten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q29",
+    "content": "9. Wie werden in der NWA unterschiedliche Dimensionen vergleichbar gemacht?",
+    "answers": [
+      {
+        "text": "a) Durch Indexierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Durch dimensionslose Skalierung (z. B. Skala 1–7)",
+        "is_correct": true
+      },
+      {
+        "text": "c) Durch Währungsumrechnung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Durch Experteninterviews",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q30",
+    "content": "10. Was ist ein Nachteil der NWA?",
+    "answers": [
+      {
+        "text": "a) Keine Transparenz",
+        "is_correct": false
+      },
+      {
+        "text": "b) Vernachlässigung qualitativer Faktoren",
+        "is_correct": false
+      },
+      {
+        "text": "c) Subjektivität bei Gewichtung und Kriterienauswahl",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reine Einzelfallentscheidung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

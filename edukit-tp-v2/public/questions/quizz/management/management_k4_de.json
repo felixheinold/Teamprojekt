@@ -1,0 +1,506 @@
+[
+  {
+    "id": "management-k4-de-q1",
+    "content": "1.  Welche Art von Unternehmen ist der vorstandsdr?",
+    "answers": [
+      {
+        "text": "a) Ein großer Konzern mit vielen Tochtergesellschaften.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Ein spezialisierter Technologieanbieter.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein traditionelles Chemieunternehmen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein vertechnikter Softwarehersteller.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q2",
+    "content": "2.  Was ist der Hauptsparte von Martin Brüdermund?",
+    "answers": [
+      {
+        "text": "a) Softwareentwicklung",
+        "is_correct": true
+      },
+      {
+        "text": "b) Finanzdienstleistungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Chemische Produktion",
+        "is_correct": false
+      },
+      {
+        "text": "d) Energieversorgung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q3",
+    "content": "3.  Welche Art von Managementmodell wird in der Beschreibung des Unternehmens beschrieben?",
+    "answers": [
+      {
+        "text": "a) Ein hierarchisches Managementmodell.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein dezentrales Managementmodell.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein dualistisches System.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein Projektmanagementmodell.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q4",
+    "content": "4.  Welche der folgenden Aussagen beschreibt am besten die Rolle des Vorstands?",
+    "answers": [
+      {
+        "text": "a) Er ist verantwortlich für die tägliche Verwaltung des Unternehmens.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Er ist der oberste Entscheidungsträger im Unternehmen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Er überwacht die Geschäftstätigkeit des Unternehmens und trifft strategische Entscheidungen.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Er ist verantwortlich für die Finanzplanung des Unternehmens.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q5",
+    "content": "5.  Welche der folgenden Faktoren kann die Entscheidungsfindung des Vorstands beeinflussen?",
+    "answers": [
+      {
+        "text": "a) Nur die Unternehmensstrategie",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur die Finanzlage des Unternehmens",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Interessen der Aktionäre, Stakeholder und die langfristigen Unternehmensziele",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur die Arbeitsbedingungen der Mitarbeiter",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q6",
+    "content": "6.  Welche Art von Technologie wird im Unternehmen angeboten?",
+    "answers": [
+      {
+        "text": "a) Automatisierte Produktionslinien",
+        "is_correct": false
+      },
+      {
+        "text": "b) Cloud-basierte Softwarelösungen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Herstellung von Chemikalien",
+        "is_correct": false
+      },
+      {
+        "text": "d) Robotik und künstliche Intelligenz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q7",
+    "content": "7.  Welche der folgenden Aussagen beschreibt am besten die Bedeutung von Interessenkonflikten?",
+    "answers": [
+      {
+        "text": "a) Interessenkonflikte sind nur für große Unternehmen relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Interessenkonflikte können zu schlechten Entscheidungen führen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Interessenkonflikte sind ein häufiges Problem in Unternehmen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Interessenkonflikte sind nur in kleinen Unternehmen zu finden.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q8",
+    "content": "8.  Welche der folgenden Aussagen ist am besten zu dem Konzept der Agency Theorie?",
+    "answers": [
+      {
+        "text": "a) Die Agency Theorie ist nur für große Unternehmen relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Agency Theorie besagt, dass die Interessen der Eigentümer mit den Interessen der Management-Stellen in Konflikt geraten können.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Agency Theorie beschreibt die Beziehung zwischen Unternehmen und ihren Mitarbeitern.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Agency Theorie ist eine rein theoretische Theorie.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q9",
+    "content": "9.  Welche der folgenden Aussagen beschreibt am besten die Rolle des Vorstands in der Unternehmensführung?",
+    "answers": [
+      {
+        "text": "a) Der Vorstand ist nur verantwortlich für die Finanzplanung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der Vorstand ist verantwortlich für die strategische Ausrichtung des Unternehmens.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Der Vorstand ist verantwortlich für die tägliche Verwaltung des Unternehmens.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Der Vorstand ist nur für die Personalbeschaffung verantwortlich.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q10",
+    "content": "10. Was ist der Hauptsparte von Thomas Brüdermund?",
+    "answers": [
+      {
+        "text": "a) Softwareentwicklung",
+        "is_correct": true
+      },
+      {
+        "text": "b) Finanzdienstleistungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Chemische Produktion",
+        "is_correct": false
+      },
+      {
+        "text": "d) Energieversorgung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q11",
+    "content": "11. Welche der folgenden Aussagen trifft am besten auf das Unternehmen Arcandor zu?",
+    "answers": [
+      {
+        "text": "a) Arcandor ist ein großes und etabliertes Unternehmen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Arcandor ist ein kleiner und spezialisierter Anbieter.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Arcandor ist ein vertechnikter Softwarehersteller.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Arcandor ist ein multinationales Unternehmen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q12",
+    "content": "12. Welche der folgenden Aussagen beschreibt am besten die Beziehung zwischen dem deutschen Modell und dem internationalen Modell?",
+    "answers": [
+      {
+        "text": "a) Das deutsche Modell ist immer besser als das internationale Modell.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Das deutsche Modell ist ein Vorbild für das internationale Modell.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Das deutsche Modell ist ein einzigartiges System mit eigenen Besonderheiten.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Das internationale Modell ist immer die beste Lösung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q13",
+    "content": "13. Welche der folgenden Aussagen beschreibt am besten die Bedeutung der Unternehmensstruktur?",
+    "answers": [
+      {
+        "text": "a) Die Unternehmensstruktur ist irrelevant für die Unternehmensführung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Unternehmensstruktur beeinflusst die Entscheidungsfindung des Vorstands.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Unternehmensstruktur ist ein wichtiges Werkzeug für die strategische Planung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Unternehmensstruktur ist nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q14",
+    "content": "14. Welche der folgenden Aussagen beschreibt am besten die Rolle des Unternehmens-Management?",
+    "answers": [
+      {
+        "text": "a) Das Unternehmen-Management ist nur für die Finanzplanung verantwortlich.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Das Unternehmen-Management ist verantwortlich für die strategische Ausrichtung des Unternehmens.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Das Unternehmen-Management ist nur für die Personalbeschaffung verantwortlich.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Das Unternehmen-Management ist nur für die Einhaltung von Vorschriften verantwortlich.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q15",
+    "content": "15. Welche der folgenden Aussagen beschreibt am besten die Bedeutung von Wettbewerb?",
+    "answers": [
+      {
+        "text": "a) Wettbewerb ist nur ein Kostenfaktor.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wettbewerb ist wichtig für die Innovationskraft des Unternehmens.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wettbewerb ist ein wichtiger Faktor für die Rentabilität des Unternehmens.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Wettbewerb ist eine Gefahr für das Unternehmen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q16",
+    "content": "16. Welches der folgenden ist ein Beispiel für eine langfristige Unternehmensstrategie?",
+    "answers": [
+      {
+        "text": "a) Ein kurzfristiger Gewinnmaximierungsplan.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Plan zur Erschließung neuer Märkte.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein Plan zur Entwicklung neuer Produkte und Dienstleistungen.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein Plan zur Reduzierung der Produktionskosten.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q17",
+    "content": "17. Welches der folgenden ist ein Beispiel für eine Investition?",
+    "answers": [
+      {
+        "text": "a) Ein Schulungsangebot für Mitarbeiter.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Kauf von Maschinen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein Forschungsprojekt.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein Reisebudget.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "management-k4-de-q18",
+    "content": "18. Welche der folgenden Aussagen beschreibt am besten die Bedeutung von Finanzierungsmodellen?",
+    "answers": [
+      {
+        "text": "a) Finanzierungsmodelle sind nur für große Unternehmen relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Finanzierungsmodelle sind wichtig für die Sicherstellung der Liquidität des Unternehmens.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Finanzierungsmodelle sind ein wichtiger Bestandteil der Unternehmensstrategie.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Finanzierungsmodelle sind nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

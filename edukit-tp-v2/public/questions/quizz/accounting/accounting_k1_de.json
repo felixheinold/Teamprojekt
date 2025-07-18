@@ -1,0 +1,282 @@
+[
+  {
+    "id": "accounting-k1-de-q1",
+    "content": "1. Was ist das Ziel des externen Rechnungswesens?",
+    "answers": [
+      {
+        "text": "a) Nur Steuern zu berechnen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Interne Prozesse zu optimieren",
+        "is_correct": false
+      },
+      {
+        "text": "c) Finanzielle Lage des Unternehmens extern darzustellen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Investitionen über mehrere Perioden zu vergleichen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q2",
+    "content": "2. Was versteht man unter dem Realisationsprinzip?",
+    "answers": [
+      {
+        "text": "a) Aufwendungen werden verbucht, sobald sie bezahlt werden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Umsätze werden nur nach Zahlung realisiert",
+        "is_correct": false
+      },
+      {
+        "text": "c) Umsätze werden erfasst, wenn Risiken und Nutzen übergehen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Gewinne werden direkt bei Vertragsabschluss verbucht",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q3",
+    "content": "3. Was bedeutet das Matching Principle?",
+    "answers": [
+      {
+        "text": "a) Aufwendungen folgen immer direkt der Zahlung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Alle Aufwendungen werden am Jahresende erfasst",
+        "is_correct": false
+      },
+      {
+        "text": "c) Aufwendungen werden den Umsätzen derselben Periode zugeordnet",
+        "is_correct": true
+      },
+      {
+        "text": "d) Umsätze werden durch Marktpreise bewertet",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q4",
+    "content": "4. Wofür steht das Vorsichtsprinzip im Rechnungswesen?",
+    "answers": [
+      {
+        "text": "a) Gewinne werden vor Verlusten bilanziert",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verluste werden sofort erfasst, Gewinne nur bei Realisation",
+        "is_correct": true
+      },
+      {
+        "text": "c) Risiken werden ignoriert",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nur vergangene Werte werden berücksichtigt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q5",
+    "content": "5. Was beschreibt das Fortführungsprinzip?",
+    "answers": [
+      {
+        "text": "a) Alle Bilanzposten werden zum Marktwert angesetzt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Das Unternehmen wird dauerhaft als zahlungsunfähig angesehen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Das Unternehmen wird als fortbestehend angenommen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur laufende Projekte werden berücksichtigt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q6",
+    "content": "6. Welche Aussage zu Amsterdam Auto's ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Der Bargeldzuwachs entspricht dem wirtschaftlichen Erfolg",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der wirtschaftliche Erfolg ergibt sich aus dem Reinvermögenszuwachs",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur Verkaufszahlen zählen für den Erfolg",
+        "is_correct": false
+      },
+      {
+        "text": "d) Schulden haben keinen Einfluss",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q7",
+    "content": "7. Was ist unter Periodenabgrenzung zu verstehen?",
+    "answers": [
+      {
+        "text": "a) Alle Transaktionen werden jährlich zusammengefasst",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zahlungen werden strikt nach Eingangsdatum erfasst",
+        "is_correct": false
+      },
+      {
+        "text": "c) Leistungen und Aufwendungen werden der passenden Periode zugeordnet",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zahlungen werden doppelt gebucht",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q8",
+    "content": "8. Was ist das 'Matching nach sachlicher Abgrenzung'?",
+    "answers": [
+      {
+        "text": "a) Aufwendungen nach dem Erfassungsdatum buchen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Periodische Abschreibung auf alle Güter",
+        "is_correct": false
+      },
+      {
+        "text": "c) Aufwendungen den Umsätzen direkt zuordnen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Aufwendungen nur bei Verlusten buchen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q9",
+    "content": "9. Welche Funktion erfüllt das Rechnungswesen laut Vorlesung NICHT?",
+    "answers": [
+      {
+        "text": "a) Dokumentation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kontrolle",
+        "is_correct": false
+      },
+      {
+        "text": "c) Steuerzahlung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Planung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k1-de-q10",
+    "content": "10. Was ist laut VL ein häufiger Fehler beim Realisationsprinzip?",
+    "answers": [
+      {
+        "text": "a) Umsatz wird gebucht, obwohl Ware nicht geliefert wurde",
+        "is_correct": true
+      },
+      {
+        "text": "b) Umsatz wird doppelt gebucht",
+        "is_correct": false
+      },
+      {
+        "text": "c) Umsatz wird vergessen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Umsatz wird zu spät gebucht",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

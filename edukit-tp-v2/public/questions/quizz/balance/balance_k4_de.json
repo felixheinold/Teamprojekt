@@ -1,0 +1,282 @@
+[
+  {
+    "id": "balance-k4-de-q1",
+    "content": "1. Welcher Bewertungsgrundsatz verlangt, dass Vermögensgegenstände und Schulden zum Abschlussstichtag bewertet werden?",
+    "answers": [
+      {
+        "text": "a) Grundsatz der Vorsicht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Stichtagsprinzip",
+        "is_correct": true
+      },
+      {
+        "text": "c) Grundsatz der Bewertungsstetigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Grundsatz der Bilanzidentität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q2",
+    "content": "2. Was ist ein wertaufhellendes Ereignis?",
+    "answers": [
+      {
+        "text": "a) Ein Ereignis nach dem Bilanzstichtag ohne Bezug zur alten Periode",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine steuerliche Sonderabschreibung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein Ereignis nach dem Stichtag mit Relevanz für Bilanzansatz",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine gesetzliche Neuregelung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q3",
+    "content": "3. Was beschreibt das Imparitätsprinzip?",
+    "answers": [
+      {
+        "text": "a) Nur realisierte Verluste werden gebucht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gewinne und Verluste sind gleich zu behandeln",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verluste sind zu antizipieren, Gewinne nicht",
+        "is_correct": true
+      },
+      {
+        "text": "d) Vermögenswerte dürfen nie aufgewertet werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q4",
+    "content": "4. Welche Bewertungsmethode gilt bei der Zugangsbewertung für Vermögensgegenstände?",
+    "answers": [
+      {
+        "text": "a) Marktwert",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fair Value",
+        "is_correct": false
+      },
+      {
+        "text": "c) Anschaffungs- oder Herstellungskosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Höchstwertprinzip",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q5",
+    "content": "5. Was darf laut HGB NICHT in die Herstellungskosten einbezogen werden?",
+    "answers": [
+      {
+        "text": "a) Fertigungseinzelkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sondereinzelkosten der Fertigung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Vertriebskosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Materialgemeinkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q6",
+    "content": "6. Was gilt für Rückstellungen mit einer Restlaufzeit > 1 Jahr?",
+    "answers": [
+      {
+        "text": "a) Es besteht keine Bewertungspflicht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie dürfen nicht passiviert werden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie müssen abgezinst werden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie dürfen aufgewertet werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q7",
+    "content": "7. Was beschreibt das Niederstwertprinzip im Umlaufvermögen?",
+    "answers": [
+      {
+        "text": "a) Pflicht zur Bewertung mit dem niedrigeren Wert bei dauerhafter Wertminderung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Pflicht zur Bewertung mit dem niedrigeren Wert auch bei vorübergehender Wertminderung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Verbot der Wertminderung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bewertungswahlrecht für Vorräte",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q8",
+    "content": "8. Welche Aussage trifft auf den beizulegenden Zeitwert zu?",
+    "answers": [
+      {
+        "text": "a) Er entspricht immer dem Nennwert",
+        "is_correct": false
+      },
+      {
+        "text": "b) Er wird gesetzlich vorgeschrieben",
+        "is_correct": false
+      },
+      {
+        "text": "c) Er orientiert sich an Marktpreisen oder anerkannten Methoden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Er darf im HGB nicht verwendet werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q9",
+    "content": "9. Welche Bilanzpolitik beschreibt die gezielte Wahl eines Abschreibungsverfahrens?",
+    "answers": [
+      {
+        "text": "a) Reale Bilanzpolitik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Formale Bilanzpolitik",
+        "is_correct": false
+      },
+      {
+        "text": "c) Steuerpolitische Maßnahme",
+        "is_correct": false
+      },
+      {
+        "text": "d) Materielle Bilanzpolitik",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "balance-k4-de-q10",
+    "content": "10. Welcher Wertmaßstab gilt laut §253 HGB für Verbindlichkeiten?",
+    "answers": [
+      {
+        "text": "a) Barwert",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marktpreis",
+        "is_correct": false
+      },
+      {
+        "text": "c) Erfüllungsbetrag",
+        "is_correct": true
+      },
+      {
+        "text": "d) Abschreibungswert",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

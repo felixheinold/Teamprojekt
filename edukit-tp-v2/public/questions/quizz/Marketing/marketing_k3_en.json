@@ -1,0 +1,282 @@
+[
+  {
+    "id": "marketing-k3-en-q1",
+    "content": "Which of the following statements best describes the influence of market immigration on the German economy?",
+    "answers": [
+      {
+        "text": "a) The German economy is dominated by the increasing number of small companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The German economy is dominated by the increasing number of large multinational companies.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The German economy is dominated by the increasing number of local companies.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The German economy is dominated by the increasing number of international companies.",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q2",
+    "content": "What is the main difference between \"Customer Centric\" and \"Value-Based\" Marketing?",
+    "answers": [
+      {
+        "text": "a) Customer-Centric Marketing focuses on customer satisfaction, while value-based marketing focuses on added value for the customer.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Customer-Centric Marketing focuses on customer loyalty, while value-based marketing focuses on customer acquisition.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Customer-Centric Marketing focuses on customer loyalty, while value-based marketing focuses on customer acquisition.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Customer-Centric Marketing focuses on added value for the customer, while value-based marketing focuses on customer satisfaction.",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q3",
+    "content": "Which of the following marketing strategies is most effective to establish a brand in a new market?",
+    "answers": [
+      {
+        "text": "a) An intensive local advertising with a focus on regional products.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a global marketing campaign with a uniform message.",
+        "is_correct": false
+      },
+      {
+        "text": "c) A gradual introduction of the product and a local adjustment of the marketing strategy.",
+        "is_correct": true
+      },
+      {
+        "text": "d) a quick creation of a large advertising campaign.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q4",
+    "content": "What does \"Dark Social\" mean in the context of social media?",
+    "answers": [
+      {
+        "text": "a) Social media posts that are created and shared by the users themselves.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Social media posts that are created and shared by companies.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Social media posts that are shared by external influencers.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Social media posts that customers create and shared by customers themselves.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q5",
+    "content": "Which of the following statements best describes the meaning of data analysis in marketing?",
+    "answers": [
+      {
+        "text": "a) Data analysis is only relevant for large companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Data analysis is crucial to better understand customer needs and optimize marketing campaigns.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Data analysis is unnecessary for marketing activities.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Data analysis is only for the creation of advertisements.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q6",
+    "content": "What is the difference between \"branding\" and \"marketing\"?",
+    "answers": [
+      {
+        "text": "a) Branding is part of marketing while marketing is the goal.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Branding is the process of creating a brand identity, while marketing is the implementation of this identity.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Branding is a slow process while marketing is fast.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Branding is a complicated process while marketing is simple.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q7",
+    "content": "Which of the following strategies is best suited to increase customer loyalty?",
+    "answers": [
+      {
+        "text": "a) offer constant price reductions.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Obtain the customer feedback and respond to his needs.",
+        "is_correct": true
+      },
+      {
+        "text": "c) offer a large selection of products.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Reduce customer loyalty by increasing the costs to the customer.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q8",
+    "content": "What is \"Influencer Marketing\"?",
+    "answers": [
+      {
+        "text": "a) Marketing, where companies interact directly with customers.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marketing, in which influencers advertise products or services.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Marketing, in which companies spread their products via social media.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Marketing, in which customers advertise products.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q9",
+    "content": "Which of the following statements best describes the role of digital transformation in marketing?",
+    "answers": [
+      {
+        "text": "a) Digital transformation is the reduction in the customer base.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Digital transformation includes the integration of digital technologies in all marketing activities.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Digital transformation is the loss of the customer base.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Digital transformation is the loss of customers.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k3-en-q10",
+    "content": "What is \"A/B testing\" in marketing?",
+    "answers": [
+      {
+        "text": "a) A method of convincing customers to buy a product.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a method of testing different versions of a website or a marketing campaign to find out which works best.",
+        "is_correct": true
+      },
+      {
+        "text": "c) a method of encouraging customers to register a newsletter.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a method of reducing the costs of a marketing campaign.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

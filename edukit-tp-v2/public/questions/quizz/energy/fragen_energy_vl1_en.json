@@ -1,0 +1,282 @@
+[
+  {
+    "id": "energy-vl1-en-q1",
+    "content": "1. [ENÜ] Was umfasst die Energiewirtschaft laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Nur Stromproduktion",
+        "is_correct": false
+      },
+      {
+        "text": "b) Energiegewinnung, -umwandlung, -transport, -verteilung, -anwendung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Beschaffung von Rohstoffen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Lagerung von Energieträgern",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q2",
+    "content": "2. [ENÜ] Was ist die SI-Einheit der Energie?",
+    "answers": [
+      {
+        "text": "a) Kilowattstunde",
+        "is_correct": false
+      },
+      {
+        "text": "b) Newton",
+        "is_correct": false
+      },
+      {
+        "text": "c) Joule",
+        "is_correct": true
+      },
+      {
+        "text": "d) Volt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q3",
+    "content": "3. [ENÜ] Wieviel kWh entsprechen 1 kg Steinkohleeinheit (SKE)?",
+    "answers": [
+      {
+        "text": "a) 4,2 kWh",
+        "is_correct": false
+      },
+      {
+        "text": "b) 8,14 kWh",
+        "is_correct": true
+      },
+      {
+        "text": "c) 10 kWh",
+        "is_correct": false
+      },
+      {
+        "text": "d) 3,6 kWh",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q4",
+    "content": "4. [ENÜ] Was ist Primärenergie?",
+    "answers": [
+      {
+        "text": "a) Energie nach Umwandlung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Energie aus erneuerbaren Quellen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Energie, die in der Natur vorkommt und noch nicht umgewandelt wurde",
+        "is_correct": true
+      },
+      {
+        "text": "d) Strom aus Kraftwerken",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q5",
+    "content": "5. [ENÜ] Welche Energieform liegt dem Endverbraucher vor?",
+    "answers": [
+      {
+        "text": "a) Nutzenergie",
+        "is_correct": false
+      },
+      {
+        "text": "b) Endenergie",
+        "is_correct": true
+      },
+      {
+        "text": "c) Primärenergie",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sekundärenergie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q6",
+    "content": "6. [ENÜ] Was ist das Ziel bei energetischen Umwandlungsprozessen?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Verluste",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einsatz fossiler Brennstoffe",
+        "is_correct": false
+      },
+      {
+        "text": "c) Hoher Wirkungsgrad",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nutzung aller Energieträger gleichzeitig",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q7",
+    "content": "7. [ENÜ] Welche Energieeinheit ist in der Elektrizitätswirtschaft besonders relevant?",
+    "answers": [
+      {
+        "text": "a) Nm",
+        "is_correct": false
+      },
+      {
+        "text": "b) MJ",
+        "is_correct": false
+      },
+      {
+        "text": "c) kWh",
+        "is_correct": true
+      },
+      {
+        "text": "d) kcal",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q8",
+    "content": "8. [ENÜ] Was sind typische Beispiele für Sekundärenergie?",
+    "answers": [
+      {
+        "text": "a) Rohöl und Uran",
+        "is_correct": false
+      },
+      {
+        "text": "b) Strom und Heizöl",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sonnenstrahlung und Wind",
+        "is_correct": false
+      },
+      {
+        "text": "d) Dampf und Biogas",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q9",
+    "content": "9. [ENÜ] Welcher Sektor verbraucht in Deutschland den meisten Strom?",
+    "answers": [
+      {
+        "text": "a) Landwirtschaft",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gewerbe, Handel, Dienstleistungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Haushalte",
+        "is_correct": false
+      },
+      {
+        "text": "d) Industrie",
+        "is_correct": true
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "energy-vl1-en-q10",
+    "content": "10. [ENÜ] Welche Methode kommt im Operations Research der Energiewirtschaft zur Kraftwerkseinsatzplanung zum Einsatz?",
+    "answers": [
+      {
+        "text": "a) Monte Carlo Simulation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Unit Commitment Model",
+        "is_correct": true
+      },
+      {
+        "text": "c) SWOT-Analyse",
+        "is_correct": false
+      },
+      {
+        "text": "d) Netzplantechnik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "Energy Economics",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

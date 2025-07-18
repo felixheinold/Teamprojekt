@@ -1,0 +1,282 @@
+[
+  {
+    "id": "logistics-k1-de-q1",
+    "content": "1. Was ist laut Definition die Hauptaufgabe der Logistik?",
+    "answers": [
+      {
+        "text": "a) Steuerung der Finanzflüsse im Unternehmen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verwaltung von IT-Systemen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Planung, Implementierung und Kontrolle effizienter Vor- und Rückflüsse von Gütern, Dienstleistungen und Informationen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kundenbindung durch Marketingmaßnahmen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q2",
+    "content": "2. Welche Aussage zu den 7 R’s der Logistik ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Richtige Farbe, Ort, Produkt, Preis, Person, Information, Stimmung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Richtige Zeit, Ort, Produkt, Menge, Qualität, Kosten, Information",
+        "is_correct": true
+      },
+      {
+        "text": "c) Richtiger Kunde, Ort, Kanal, Preis, Rabatt, Steuer, Dokumentation",
+        "is_correct": false
+      },
+      {
+        "text": "d) Richtiger Empfänger, Ort, Tag, Jahr, Lagerort, Partner, Volumen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q3",
+    "content": "3. Was beschreibt die Supply Chain im Vergleich zur Logistik?",
+    "answers": [
+      {
+        "text": "a) Nur interne Lagerbewegungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Absatzfunktionen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein unternehmensübergreifendes Netzwerk logistischer Prozesse",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein System zur Preisgestaltung im Einkauf",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q4",
+    "content": "4. Welche Planungsebene ist im Supply Chain Management mit langfristigen, kapitalintensiven Entscheidungen verbunden?",
+    "answers": [
+      {
+        "text": "a) Operativ",
+        "is_correct": false
+      },
+      {
+        "text": "b) Strategisch",
+        "is_correct": true
+      },
+      {
+        "text": "c) Taktisch",
+        "is_correct": false
+      },
+      {
+        "text": "d) Disposition",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q5",
+    "content": "5. Welche Entscheidungen werden typischerweise auf der taktischen Ebene getroffen?",
+    "answers": [
+      {
+        "text": "a) Standortwahl",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lagerbestandsplanung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Maschineneinstellung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Qualitätsprüfung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q6",
+    "content": "6. Was ist ein typisches Ziel des Operations Research (OR)?",
+    "answers": [
+      {
+        "text": "a) Marketingoptimierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lösung logistischer Probleme mit mathematischen Methoden",
+        "is_correct": true
+      },
+      {
+        "text": "c) Abwicklung des Zahlungsverkehrs",
+        "is_correct": false
+      },
+      {
+        "text": "d) Schulung von Mitarbeitern im Vertrieb",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q7",
+    "content": "7. Was ist ein Beispiel für ein OR-Modell in der Logistik?",
+    "answers": [
+      {
+        "text": "a) Kundenumfrage",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lieferantenranking",
+        "is_correct": false
+      },
+      {
+        "text": "c) Klassisches Transportproblem mit Minimierung der Kosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Marktanalyse",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q8",
+    "content": "8. Wozu dienen Advanced Planning Systems (APS)?",
+    "answers": [
+      {
+        "text": "a) Zur Textverarbeitung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zur Budgetkontrolle",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zur Lösung komplexer Planungsprobleme im SCM auf Basis von ERP-Daten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zur Personalabrechnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q9",
+    "content": "9. Welche typischen Daten speist ein ERP-System in ein APS-System ein?",
+    "answers": [
+      {
+        "text": "a) Nur Marketingkennzahlen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Produktions-, Personal-, Vertriebsdaten etc.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Inhalte von Schulungen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Stimmungsanalysen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "logistics-k1-de-q10",
+    "content": "10. Welche Herausforderung adressiert die Biopharma Inc. Case Study?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Lagerumschlagshäufigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Optimierung von Transportkosten bei Kapazitätsüberhang",
+        "is_correct": true
+      },
+      {
+        "text": "c) Preiskalkulation für Endkunden",
+        "is_correct": false
+      },
+      {
+        "text": "d) Digitalisierung von CRM-Systemen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "production",
+    "module": "logistics",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

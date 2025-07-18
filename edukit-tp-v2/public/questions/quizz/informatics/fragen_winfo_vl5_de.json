@@ -1,0 +1,282 @@
+[
+  {
+    "id": "winfo-vl5-de-q1",
+    "content": "1. Was ist das Ziel von ERP-Systemen laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Optimierung einzelner Abteilungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Förderung individueller Softwareentwicklungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Unterstützung operativer Prozesse in allen wesentlichen Funktionsbereichen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Verwaltung externer Lieferantenbeziehungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q2",
+    "content": "2. Was ist ein wesentliches Merkmal von integrierten betrieblichen Informationssystemen?",
+    "answers": [
+      {
+        "text": "a) Nutzung vieler Insellösungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Individuelle Softwareentwicklung je Abteilung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Horizontale Integration über Funktionsbereiche hinweg",
+        "is_correct": true
+      },
+      {
+        "text": "d) Fokus auf Marketing",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q3",
+    "content": "3. Was versteht man unter einem Transaktionssystem?",
+    "answers": [
+      {
+        "text": "a) System zur Kontrolle von Marketingaktivitäten",
+        "is_correct": false
+      },
+      {
+        "text": "b) System zur Unterstützung von Transaktionen im betrieblichen Alltag",
+        "is_correct": true
+      },
+      {
+        "text": "c) System zur Planung von Finanzinvestitionen",
+        "is_correct": false
+      },
+      {
+        "text": "d) System zur Simulation von Produktionsprozessen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q4",
+    "content": "4. Wodurch wird die Integration in ERP-Systemen ermöglicht?",
+    "answers": [
+      {
+        "text": "a) Durch verteilte Datenhaltung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Durch Excel-Schnittstellen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Durch zentrale Datenbanksysteme",
+        "is_correct": true
+      },
+      {
+        "text": "d) Durch dezentrale Benutzerverwaltung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q5",
+    "content": "5. Was sind Stammdaten laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Täglich wechselnde Finanzdaten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Periodisch aktualisierte Grunddaten eines Unternehmens",
+        "is_correct": true
+      },
+      {
+        "text": "c) Lieferdaten eines bestimmten Produkts",
+        "is_correct": false
+      },
+      {
+        "text": "d) Social-Media-Aktivitäten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q6",
+    "content": "6. Was ist ein Beispiel für ein operatives Informationssystem?",
+    "answers": [
+      {
+        "text": "a) Excel",
+        "is_correct": false
+      },
+      {
+        "text": "b) Google Docs",
+        "is_correct": false
+      },
+      {
+        "text": "c) SAP ERP",
+        "is_correct": true
+      },
+      {
+        "text": "d) Outlook",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q7",
+    "content": "7. Was ist ein Beispiel für ein Büroinformationssystem?",
+    "answers": [
+      {
+        "text": "a) Produktionsplanungssystem",
+        "is_correct": false
+      },
+      {
+        "text": "b) SAP CRM",
+        "is_correct": false
+      },
+      {
+        "text": "c) Google Workspace",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lagerverwaltungssystem",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q8",
+    "content": "8. Was beschreibt ein zwischenbetriebliches Informationssystem (B2B)?",
+    "answers": [
+      {
+        "text": "a) System zur internen Kommunikation",
+        "is_correct": false
+      },
+      {
+        "text": "b) System zur Verwaltung von Endkundenbeziehungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verbindung der IS mehrerer Betriebe",
+        "is_correct": true
+      },
+      {
+        "text": "d) System zur Datenarchivierung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q9",
+    "content": "9. Was ist EDIFACT?",
+    "answers": [
+      {
+        "text": "a) Ein Modul für Projektmanagement",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Normformat für strukturierten elektronischen Datenaustausch",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein CRM-System",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Planungssoftware für Logistik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl5-de-q10",
+    "content": "10. Was beschreibt Vendor-Managed-Inventory (VMI)?",
+    "answers": [
+      {
+        "text": "a) Kunden bestimmen ihre Lagerstrategie selbst",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lieferanten verwalten Lagerbestände beim Kunden",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bestände werden zentral gelöscht",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kunden lagern direkt beim Lieferanten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "ERP- und Zwischenbetriebliche Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

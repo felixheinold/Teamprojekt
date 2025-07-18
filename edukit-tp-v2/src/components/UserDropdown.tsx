@@ -1,4 +1,3 @@
-import { useUser } from "../context/UserContext";
 import { useBackendUserContext } from "../context/BackendUserContext";
 import { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,15 +5,15 @@ import { useTranslation } from "react-i18next";
 
 const UserDropdown = () => {
   const { user, setUser } = useBackendUserContext();
+<<<<<<< HEAD
   //console.log("🔍 UserDropdown – aktueller User:", user);
+=======
+>>>>>>> fix-luca
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  // Kein User = kein Dropdown
-  if (!user) return null;
 
   const handleLogout = () => {
     setUser(null);
@@ -50,12 +49,16 @@ const UserDropdown = () => {
   const getInitials = () => {
     if (!user?.user_name) return "?";
     return user.user_name
-
       .split(" ")
       .map((name) => name[0]?.toUpperCase())
       .join("")
       .slice(0, 2);
   };
+
+  // ⬇️ Früher Return erst hier im JSX, NICHT vor den Hooks!
+  if (!user) {
+    return <></>;
+  }
 
   return (
     <div className="position-relative" ref={dropdownRef}>
@@ -63,10 +66,11 @@ const UserDropdown = () => {
         onClick={() => setOpen(!open)}
         className="border-0 bg-transparent p-0"
         style={{
-          width: "50px",
-          height: "50px",
+          width: "64px",
+          height: "64px",
           cursor: "pointer",
           backgroundColor: "#e2e6ea",
+          border: "2px solid #ffffffff",
           borderRadius: "50%",
           overflow: "hidden",
           display: "flex",
@@ -74,6 +78,7 @@ const UserDropdown = () => {
           justifyContent: "center",
           fontWeight: "bold",
           color: "#333",
+          boxShadow: "0 0 2px 3px rgba(255, 255, 255, 1)",
         }}
         aria-label={t("userDropdown.openMenu")}
         tabIndex={0}

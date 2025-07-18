@@ -1,0 +1,282 @@
+[
+  {
+    "id": "finance-k1-de-q1",
+    "content": "1. Was ist das Ziel eines Unternehmens laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Möglichst viele Mitarbeiter zu beschäftigen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Den Gewinn zu maximieren",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wert zu schaffen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Steuerlast zu minimieren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q2",
+    "content": "2. Was versteht man unter Investition?",
+    "answers": [
+      {
+        "text": "a) Eine Entscheidung mit Kapitalzufluss",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine rein operative Entscheidung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Entscheidung, die zunächst eine Auszahlung zur Folge hat",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine Steuerentscheidung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q3",
+    "content": "3. Was ist eine Finanzierung laut Definition der Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Eine operative Maßnahme zur Produktion",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Entscheidung, die zunächst einen Kapitalzufluss zur Folge hat",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein steuerlicher Vorgang",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Einlage durch Mitarbeiter",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q4",
+    "content": "4. Was ist das zentrale Unterscheidungsmerkmal von Eigen- und Fremdkapital?",
+    "answers": [
+      {
+        "text": "a) Der Zinssatz",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Laufzeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Rechtsstellung der Kapitalgeber",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Besteuerung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q5",
+    "content": "5. Was bezeichnet man als Kapitalkosten?",
+    "answers": [
+      {
+        "text": "a) Buchführungskosten eines Unternehmens",
+        "is_correct": false
+      },
+      {
+        "text": "b) Steuerlast auf Fremdkapitalzinsen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kosten, die sich am Risiko der Investition orientieren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Abschreibungskosten auf das Eigenkapital",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q6",
+    "content": "6. Welche Finanzierungsform umfasst typischerweise Anleihen?",
+    "answers": [
+      {
+        "text": "a) Beteiligungsfinanzierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Innenfinanzierung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Fremdfinanzierung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kreditverkauf",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q7",
+    "content": "7. Was ist ein Beispiel für eine Eigenkapitalmaßnahme?",
+    "answers": [
+      {
+        "text": "a) Kreditaufnahme bei der Bank",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nicht-ausgeschüttete Gewinne",
+        "is_correct": true
+      },
+      {
+        "text": "c) Kauf eines neuen Lagers",
+        "is_correct": false
+      },
+      {
+        "text": "d) Zahlung von Dividenden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q8",
+    "content": "8. Was bedeutet 'Bewertung' im finanzwirtschaftlichen Entscheidungsprozess?",
+    "answers": [
+      {
+        "text": "a) Das Verfassen eines Jahresberichts",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die rechtliche Prüfung von Verträgen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Der zweistufige Prozess der Zahlungsbetrachtung und -aggregation",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Einhaltung gesetzlicher Bilanzierungsvorschriften",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q9",
+    "content": "9. Was ist laut Vorlesung die zentrale Größe der Finanzanalyse?",
+    "answers": [
+      {
+        "text": "a) Bilanzsumme",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zahlungsströme",
+        "is_correct": true
+      },
+      {
+        "text": "c) Unternehmensgröße",
+        "is_correct": false
+      },
+      {
+        "text": "d) Gewinn- und Verlustrechnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "finance-k1-de-q10",
+    "content": "10. Was ist die Rolle der Finanzwirtschaft im Unternehmen?",
+    "answers": [
+      {
+        "text": "a) Nur die Kapitalbeschaffung zu regeln",
+        "is_correct": false
+      },
+      {
+        "text": "b) Keine Rolle – dies übernimmt das Rechnungswesen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Jede Entscheidung mit finanziellen Implikationen zu bewerten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur für börsennotierte Unternehmen relevant",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL1",
+    "lecture": "finance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

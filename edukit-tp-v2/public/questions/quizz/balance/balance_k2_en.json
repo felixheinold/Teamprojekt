@@ -1,0 +1,282 @@
+[
+  {
+    "id": "balance-k2-en-q1",
+    "content": "1. [ENÜ] Wer ist nach §1 HGB Kaufmann im Sinne des Handelsrechts?",
+    "answers": [
+      {
+        "text": "a) Jeder Unternehmer mit mehr als 5 Mitarbeitern",
+        "is_correct": false
+      },
+      {
+        "text": "b) Jede natürliche Person mit einem Gewerbeschein",
+        "is_correct": false
+      },
+      {
+        "text": "c) Jeder, der ein Handelsgewerbe betreibt",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur Kapitalgesellschaften",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q2",
+    "content": "2. [ENÜ] Was ist die zentrale Funktion der GoB im Rechnungswesen?",
+    "answers": [
+      {
+        "text": "a) Steuerliche Bewertung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sicherstellung gesetzlicher Vorschriften",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zweckgerechte Bilanzierung bei auslegungsbedürftigen Vorschriften",
+        "is_correct": true
+      },
+      {
+        "text": "d) Softwareintegration",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q3",
+    "content": "3. [ENÜ] Was umfasst das Vorsichtsprinzip im HGB?",
+    "answers": [
+      {
+        "text": "a) Nur die strikte Bewertung von Rückstellungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verbot unrealistischer Erträge, Betonung von Verlusten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bewertung von Vorräten zum Durchschnittswert",
+        "is_correct": false
+      },
+      {
+        "text": "d) Verpflichtung zur Sofortabschreibung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q4",
+    "content": "4. [ENÜ] Welches Prinzip verlangt die Berücksichtigung vorhersehbarer Verluste?",
+    "answers": [
+      {
+        "text": "a) Realisationsprinzip",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einzelbewertungsprinzip",
+        "is_correct": false
+      },
+      {
+        "text": "c) Imparitätsprinzip",
+        "is_correct": true
+      },
+      {
+        "text": "d) AHK-Prinzip",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q5",
+    "content": "5. [ENÜ] Was regelt das Anschaffungs- und Herstellungskostenprinzip (AHK)?",
+    "answers": [
+      {
+        "text": "a) Maximale Bewertung zum Marktwert",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bewertung mit niedrigstem Marktpreis",
+        "is_correct": false
+      },
+      {
+        "text": "c) Höchstbewertung von Aktiva zu AHK vermindert um AfA",
+        "is_correct": true
+      },
+      {
+        "text": "d) Bewertung mit Anschaffungskosten plus Zinsen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q6",
+    "content": "6. [ENÜ] Wofür steht das Niederstwertprinzip im Umlaufvermögen?",
+    "answers": [
+      {
+        "text": "a) Es gilt nicht für das Umlaufvermögen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Strikte Anwendung des niedrigeren Wertes bei Bewertung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Immer Bewertung zum höchsten historischen Preis",
+        "is_correct": false
+      },
+      {
+        "text": "d) Automatische Bewertung zum Einkaufspreis",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q7",
+    "content": "7. [ENÜ] Was ist der Grundsatz der Einzelbewertung?",
+    "answers": [
+      {
+        "text": "a) Gruppenbewertung von Vorräten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bewertung jeder Position einzeln, um Saldierung zu verhindern",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bewertung auf Basis von Erfahrungswerten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Anwendung nur für Passiva",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q8",
+    "content": "8. [ENÜ] Was besagt das Realisationsprinzip?",
+    "answers": [
+      {
+        "text": "a) Gewinne sind bei Vertragsschluss auszuweisen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gewinne dürfen nur bei wirtschaftlicher Realisierung ausgewiesen werden",
+        "is_correct": true
+      },
+      {
+        "text": "c) Alle Zahlungen gelten als realisiert",
+        "is_correct": false
+      },
+      {
+        "text": "d) Verluste werden immer sofort gebucht",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q9",
+    "content": "9. [ENÜ] Welche Aussage beschreibt den Grundsatz der Periodenabgrenzung?",
+    "answers": [
+      {
+        "text": "a) Alle Zahlungen sind zeitanteilig über 3 Jahre zu verteilen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Zahlungen zählen für die Erfolgsrechnung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Aufwand und Ertrag sind unabhängig vom Zahlungszeitpunkt periodenrichtig zuzuordnen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Aufwendungen müssen jährlich abgeschrieben werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "balance-k2-en-q10",
+    "content": "10. [ENÜ] Was regeln die Grundsätze ordnungsgemäßer Dokumentation (GoD)?",
+    "answers": [
+      {
+        "text": "a) Gestaltung des Geschäftsmodells",
+        "is_correct": false
+      },
+      {
+        "text": "b) Formelle und materielle Anforderungen an die Aufzeichnung buchungspflichtiger Vorgänge",
+        "is_correct": true
+      },
+      {
+        "text": "c) Besteuerung von Umsätzen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bildung von Rückstellungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "balance",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

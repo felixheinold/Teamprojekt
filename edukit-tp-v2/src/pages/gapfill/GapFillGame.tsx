@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./GapFillGame.css";
 import { useTranslation } from "react-i18next";
+import { useBackendUserContext } from "../../context/BackendUserContext";
 import i18n from "i18next";
 
 type Question = {
@@ -75,12 +76,13 @@ const exampleQuestions: Question[] = [
     answer: "2",
   },
 ];
-
 const shuffle = <T,>(array: T[]): T[] =>
   [...array].sort(() => Math.random() - 0.5);
 
 const GapFillGame = () => {
-  const { t } = useTranslation();
+  const { user, setUser, untrackedChanges, flushUser } =
+    useBackendUserContext();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const timeoutHandledRef = useRef(false);
@@ -148,7 +150,6 @@ const GapFillGame = () => {
       return combined.length > 0 ? combined : exampleQuestions;
     }
 
-    // Standardfall: einzelnes Kapitel
     const match = chapter?.match(/Kapitel (\d+)/i);
     const chapterKey = match ? `k${match[1]}` : null;
     if (!chapterKey) return exampleQuestions;
@@ -271,16 +272,55 @@ const GapFillGame = () => {
     setTimeout(
       () => {
         setShowFeedback(null);
-        handleNext();
+        handleNext(isCorrect);
       },
       isCorrect ? 1500 : 3000
     );
   };
 
-  const handleNext = () => {
+  const handleNext = async (isLastCorrect: boolean = false) => {
     timeoutHandledRef.current = false;
     setInput("");
     setTimer(timeLimit);
+
+    // Nur bei letzter Frage aktualisieren
+    if (currentIndex === questions.length - 1 && user) {
+      try {
+        const current = user.user_game_information.gapfill;
+
+        const finalScore = correctIds.length + (isLastCorrect ? 1 : 0);
+        const playedQuestions = questions.length;
+
+        const updatedUser = {
+          ...user,
+          user_game_information: {
+            ...user.user_game_information,
+            gapfill: {
+              ...current,
+              total_games: current.total_games + 1,
+              total_points: current.total_points + finalScore,
+              max_points: current.max_points + playedQuestions,
+              best_Score: Math.max(current.best_Score, finalScore),
+              accuracy:
+                (current.total_points + finalScore) /
+                (current.max_points + playedQuestions),
+              last_played: new Date().toISOString(),
+            },
+          },
+        };
+
+        setUser(updatedUser);
+        untrackedChanges();
+        await flushUser();
+        console.log("📊 GapFill flushUser erfolgreich");
+      } catch (err) {
+        console.error(
+          "❌ Fehler beim Aktualisieren der GapFill-Statistik:",
+          err
+        );
+      }
+    }
+
     setCurrentIndex((prev) => prev + 1);
   };
 
@@ -310,6 +350,7 @@ const GapFillGame = () => {
           allIds,
           isAllChapters,
           chapterCount,
+          finished: true,
         },
       });
     }

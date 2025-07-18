@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useBackendUserContext } from "../../context/BackendUserContext";
+
 import "./MemoryRound2.css";
 
 const shuffleArray = <T,>(array: T[]): T[] =>
@@ -18,6 +20,9 @@ const MemoryRound2 = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  const { user, setUser, untrackedChanges, flushUser } =
+    useBackendUserContext();
+
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
   const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
   const volume = Number(localStorage.getItem("volume") || "50") / 100;
@@ -65,7 +70,6 @@ const MemoryRound2 = () => {
   useEffect(() => {
     correctSound.current = new Audio("/sounds/correct.mp3");
     wrongSound.current = new Audio("/sounds/wrong.mp3");
-
     [correctSound.current, wrongSound.current].forEach((audio) => {
       if (audio) audio.volume = volume;
     });
@@ -100,23 +104,8 @@ const MemoryRound2 = () => {
       setDisabled(true);
 
       if (firstCard.pairId === card.pairId && firstCard.type !== card.type) {
+        if (soundEnabled) correctSound.current?.play();
         setFeedback("correct");
-
-        const statsKey = "userStats";
-        const gameKey = "memory";
-        const stored = localStorage.getItem(statsKey);
-        const allStats = stored ? JSON.parse(stored) : {};
-
-        if (!allStats[gameKey]) allStats[gameKey] = {};
-        if (!allStats[gameKey][module]) allStats[gameKey][module] = {};
-        if (!allStats[gameKey][module][chapter])
-          allStats[gameKey][module][chapter] = { correct: [] };
-
-        if (!allStats[gameKey][module][chapter].correct.includes(card.pairId)) {
-          allStats[gameKey][module][chapter].correct.push(card.pairId);
-          localStorage.setItem(statsKey, JSON.stringify(allStats));
-        }
-
         setTimeout(() => {
           setMatched((prev) => [...prev, ...newFlipped]);
           setFeedback(null);
@@ -149,7 +138,60 @@ const MemoryRound2 = () => {
 
   const allMatched = matched.length === cards.length;
 
-return (
+  const handleGameEnd = async () => {
+    const basePoints = pairs.length;
+    const maxPoints = basePoints * 4;
+    const extraTurns = Math.max(0, turn - basePoints);
+    const score = Math.max(basePoints, maxPoints - extraTurns * 2);
+
+    try {
+      if (user) {
+        const current = user.user_game_information.memory;
+        const updatedUser = {
+          ...user,
+          user_game_information: {
+            ...user.user_game_information,
+            memory: {
+              ...current,
+              total_games: current.total_games + 1,
+              total_points: current.total_points + score,
+              max_points: current.max_points + maxPoints,
+              best_Score: Math.max(current.best_Score, score),
+              accuracy:
+                (current.total_points + score) /
+                (current.max_points + maxPoints),
+              last_played: new Date().toISOString(),
+            },
+          },
+        };
+
+        setUser(updatedUser);
+        untrackedChanges();
+        await flushUser();
+        console.log("📊 Memory flushUser erfolgreich");
+      }
+    } catch (err) {
+      console.error("❌ Fehler beim Aktualisieren der Memory-Statistik:", err);
+    }
+
+    navigate("/memoryround2result", {
+      state: {
+        module,
+        chapter,
+        subject,
+        questionCount: pairs.length,
+        turns: turn - 1,
+        pairs,
+        isAllChapters,
+        chapterCount,
+        score,
+        maxPoints,
+        finished: true,
+      },
+    });
+  };
+
+  return (
     <div className="memoryr2-wrapper">
       {/* Abbrechen-Button */}
       <div className="cancel-button">
@@ -179,27 +221,21 @@ return (
           </div>
         )}
       </div>
- 
-      {/* Modul & Kapitelanzeige */}
+
       <div className="memory-header">{t(`modules.${module}`)}</div>
       <div className="memory-subheader">{chapter}</div>
-
-      {/* Titel */}
       <h1 className="memoryr2-title"> {t("memoryround2.title")} </h1>
 
-      {/* Statusleiste */}
       <div className="statusbar">
         <div>
           {matched.length / 2} / {cards.length / 2} {t("memoryround2.pairs")}
         </div>
         <div>
-          {" "}
           {t("memoryround2.plays")} {turn - 1}
         </div>
         <div>⏳ {timer}s</div>
       </div>
- 
-      {/* Spielfeld */}
+
       <div className="memory-grid">
         {cards.map((card) => {
           const isFlipped = flipped.includes(card.id);
@@ -234,7 +270,6 @@ return (
         })}
       </div>
 
-      {/* Legende */}
       <div className="d-flex gap-3 mt-2">
         <div
           className="px-4 py-2 rounded-pill text-dark fw-semibold"
@@ -249,26 +284,12 @@ return (
           {t("memoryround2.definition")}
         </div>
       </div>
- 
-      {/* Spiel beenden */}
+
       {allMatched && (
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
-          onClick={() =>
-            navigate("/memoryround2result", {
-              state: {
-                module,
-                chapter,
-                subject,
-                questionCount: pairs.length,
-                turns: turn - 1,
-                pairs,
-                isAllChapters,
-                chapterCount,
-              },
-            })
-          }
+          onClick={handleGameEnd}
           className="fw-bold text-white mt-4"
           style={{
             backgroundColor: "#9a7fc6",

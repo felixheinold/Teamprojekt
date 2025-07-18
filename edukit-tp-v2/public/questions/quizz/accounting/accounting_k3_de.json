@@ -1,0 +1,282 @@
+[
+  {
+    "id": "accounting-k3-de-q1",
+    "content": "1. Was ist ein zentraler Grund für Mehrdeutigkeit im externen Rechnungswesen?",
+    "answers": [
+      {
+        "text": "a) Unterschiedliche Steuergesetze in der EU",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wechselkursänderungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Gleiche Fakten können unterschiedlich interpretiert werden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Komplexität der Softwarelösungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q2",
+    "content": "2. Welche Abschreibungsmethode führt zu gleich hohen Abschreibungsbeträgen über die Jahre?",
+    "answers": [
+      {
+        "text": "a) Leistungsabschreibung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geometrisch-degressive Abschreibung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Lineare Abschreibung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Progressive Abschreibung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q3",
+    "content": "3. Wann ist eine außerplanmäßige Abschreibung erforderlich?",
+    "answers": [
+      {
+        "text": "a) Wenn der Buchwert unter dem Marktwert liegt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn die Restnutzungsdauer sich verlängert",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wenn Marktwert oder indirekter Wert unter dem Buchwert liegen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Immer nach Ablauf von fünf Jahren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q4",
+    "content": "4. Was bedeutet 'aktivieren' im Rechnungswesen?",
+    "answers": [
+      {
+        "text": "a) Sofortiger Aufwand in der GuV",
+        "is_correct": false
+      },
+      {
+        "text": "b) Rückwirkende Buchung von Umsätzen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Aufnahme eines Vermögenswerts in die Bilanz",
+        "is_correct": true
+      },
+      {
+        "text": "d) Abzug von Steuern",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q5",
+    "content": "5. Was spricht laut Vorlesung für das Aktivieren von Entwicklungskosten?",
+    "answers": [
+      {
+        "text": "a) Diese sind steuerfrei",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie entsprechen den Prinzipien der Periodenabgrenzung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie erfüllen die Kriterien eines Vermögensgegenstands",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie können nicht zuverlässig bewertet werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q6",
+    "content": "6. Welche Aussage über Rückstellungen ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie sind freiwillige Reserven für Investitionen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie stellen immer exakt bezifferbare Schulden dar",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie zeigen zukünftige Verpflichtungen mit ungewisser Höhe oder Termin",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie gehören zum Umlaufvermögen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q7",
+    "content": "7. Welche Methode der Vorratsbewertung führt bei steigenden Einkaufspreisen zum höchsten Gewinn?",
+    "answers": [
+      {
+        "text": "a) FIFO",
+        "is_correct": true
+      },
+      {
+        "text": "b) LIFO",
+        "is_correct": false
+      },
+      {
+        "text": "c) HIFO",
+        "is_correct": false
+      },
+      {
+        "text": "d) LOFO",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q8",
+    "content": "8. Welche Methode der Vorratsbewertung führt bei steigenden Preisen zur höchsten Vorratsbewertung?",
+    "answers": [
+      {
+        "text": "a) LIFO",
+        "is_correct": false
+      },
+      {
+        "text": "b) FIFO",
+        "is_correct": true
+      },
+      {
+        "text": "c) HIFO",
+        "is_correct": false
+      },
+      {
+        "text": "d) Durchschnitt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q9",
+    "content": "9. Welche Aussage über Teilkostenrechnung trifft zu?",
+    "answers": [
+      {
+        "text": "a) Sie berücksichtigt auch fixe Fertigungskosten in den Herstellungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie berücksichtigt nur variable Kosten in den Herstellungskosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie wird nur im externen Rechnungswesen verwendet",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie führt immer zu einem höheren Gewinn als Vollkostenrechnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "accounting-k3-de-q10",
+    "content": "10. Was ist das Matching Principle im Kontext der Herstellungskosten?",
+    "answers": [
+      {
+        "text": "a) Herstellungskosten werden sofort bei Produktion als Aufwand verbucht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Periodenaufwände werden aktiviert",
+        "is_correct": false
+      },
+      {
+        "text": "c) Herstellungskosten werden erst bei Verkauf der Produkte als Aufwand erfasst",
+        "is_correct": true
+      },
+      {
+        "text": "d) Herstellungskosten bleiben immer in der Bilanz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k3",
+    "lecture": "accounting",
+    "module": "finance",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

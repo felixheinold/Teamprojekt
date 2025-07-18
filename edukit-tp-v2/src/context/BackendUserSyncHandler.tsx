@@ -10,21 +10,28 @@ import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      console.log("🔁 Auth-State-Changed Trigger");
+
       if (firebaseUser && firebaseUser.emailVerified) {
-        const userData = await generalAPICallsService.getUserDataFromFirestore();
-        if (!user|| JSON.stringify(user) !== JSON.stringify(userData)){
-          setUser(userData);
-      }
+        try {
+          const userData =
+            await generalAPICallsService.getUserDataFromFirestore();
+
+          // Nur setzen, wenn sich die Daten geändert haben
+          if (!user || JSON.stringify(user) !== JSON.stringify(userData)) {
+            setUser(userData);
+          }
+        } catch (err) {
+          console.error("Fehler beim Laden der Userdaten:", err);
         }
-        
-      else{
+      } else {
         await flushUser();
         setUser(null);
       }
     });
 
-    return () => unsubscribe(); // Cleanup bei Unmount
-  }, [setUser, flushUser  ]);
+    return () => unsubscribe();
+  }, []);
 
-  return null; // kein UI, nur Sync
+  return null;
 };

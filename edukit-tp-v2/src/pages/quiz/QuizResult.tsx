@@ -16,38 +16,20 @@ const QuizResult = () => {
     questionCount,
     timeLimit,
     score = 0,
-    questions = [],
     correctIds = [],
     allIds = [],
     isAllChapters,
     chapterCount,
+    finished,
   } = location.state || {};
 
+  // Sicherheitsabbruch bei direktem Zugriff ohne Spielrunde
   useEffect(() => {
-    const statsKey = "userStats";
-    const gameKey = "quiz";
+    if (!finished) navigate("/modules");
+  }, [finished, navigate]);
 
-    const stored = localStorage.getItem(statsKey);
-    const allStats = stored ? JSON.parse(stored) : {};
-
-    const prev = allStats[gameKey] || {
-      totalGames: 0,
-      totalPoints: 0,
-      maxPoints: 0,
-      bestScore: 0,
-    };
-
-    const updated = {
-      totalGames: prev.totalGames + 0.5,
-      totalPoints: prev.totalPoints + 0.5 * score,
-      maxPoints: prev.maxPoints + 0.5 * questionCount,
-      bestScore: Math.max(prev.bestScore, score),
-    };
-
-    allStats[gameKey] = updated;
-    localStorage.setItem(statsKey, JSON.stringify(allStats));
-    localStorage.setItem("lastPlayed", gameKey);
-
+  // Fortschritt in localStorage aktualisieren
+  useEffect(() => {
     const progressKey = "progress";
     const storedProgress = localStorage.getItem(progressKey);
     const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
@@ -71,7 +53,7 @@ const QuizResult = () => {
     allProgress.quizTotal[module][chapter] = newTotal;
 
     localStorage.setItem(progressKey, JSON.stringify(allProgress));
-  }, [score, questionCount, module, chapter, correctIds, allIds]);
+  }, [module, chapter, correctIds, allIds]);
 
   return (
     <div className="quizresult-wrapper">

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brand-k5-en-q1",
+    "content": "1. What does the price premium approach to measuring brand equity describe?",
+    "answers": [
+      {
+        "text": "a) The frequency of discount campaigns",
+        "is_correct": false
+      },
+      {
+        "text": "b) The price consumers are willing to pay extra for a brand",
+        "is_correct": true
+      },
+      {
+        "text": "c) The comparison of stock levels",
+        "is_correct": false
+      },
+      {
+        "text": "d) The market share of competitors",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k5-en-q2",
+    "content": "2. Which advantage is attributed to brands in the context of risk reduction?",
+    "answers": [
+      {
+        "text": "a) They increase price sensitivity",
+        "is_correct": false
+      },
+      {
+        "text": "b) They foster irregular revenues",
+        "is_correct": false
+      },
+      {
+        "text": "c) They stabilize cash flows through brand loyalty",
+        "is_correct": true
+      },
+      {
+        "text": "d) They make investors more cautious",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  },
+  {
+    "id": "brand-k5-en-q3",
+    "content": "3. What does the sales premium approach measure?",
+    "answers": [
+      {
+        "text": "a) The price elasticity of demand",
+        "is_correct": false
+      },
+      {
+        "text": "b) The sales volume compared to unbranded products",
+        "is_correct": true
+      },
+      {
+        "text": "c) The production effort",
+        "is_correct": false
+      },
+      {
+        "text": "d) The number of brand licenses",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "brand",
+    "module": "brand",
+    "difficulty": null,
+    "type": null,
+    "language": "english"
+  }
+]

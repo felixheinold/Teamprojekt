@@ -1,0 +1,282 @@
+[
+  {
+    "id": "production-k2-en-q1",
+    "content": "1. [ENÜ] Was ist das Ziel der Produktionsprogrammplanung?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Lagerbestände",
+        "is_correct": false
+      },
+      {
+        "text": "b) Minimierung der Produktionsvielfalt",
+        "is_correct": false
+      },
+      {
+        "text": "c) Festlegung von Art, Menge und zeitlicher Verteilung der herzustellenden Produkte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Auswahl der besten Lieferanten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q2",
+    "content": "2. [ENÜ] Welche Größe wird im operativen Produktionsprogramm als variabel betrachtet?",
+    "answers": [
+      {
+        "text": "a) Kapazitäten der Maschinen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marktpreise",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktionsmengen der Produkte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Standorte",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q3",
+    "content": "3. [ENÜ] Was beschreibt der Deckungsbeitrag?",
+    "answers": [
+      {
+        "text": "a) Summe aus Fixkosten und variablen Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Differenz aus Verkaufspreis und variablen Kosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Produktionsmenge multipliziert mit dem Preis",
+        "is_correct": false
+      },
+      {
+        "text": "d) Marktpreis abzüglich Steuern",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q4",
+    "content": "4. [ENÜ] Wann wird die Gewinnschwelle erreicht?",
+    "answers": [
+      {
+        "text": "a) Wenn die variablen Kosten minimal sind",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn alle Deckungsbeiträge positiv sind",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wenn die Deckungsbeiträge die Fixkosten decken",
+        "is_correct": true
+      },
+      {
+        "text": "d) Wenn die Produktionsmengen gleich sind",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q5",
+    "content": "5. [ENÜ] Was ist bei der Beurteilung von Produktionsvorschlägen zu beachten?",
+    "answers": [
+      {
+        "text": "a) Nur der höchste DB entscheidet",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur fixe Kapazitäten zählen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Auslastung aller Kapazitäten muss berücksichtigt werden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es wird ausschließlich nach Marktpreis entschieden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q6",
+    "content": "6. [ENÜ] Welche Methode dient zur Optimierung des Produktionsprogramms bei mehreren Restriktionen?",
+    "answers": [
+      {
+        "text": "a) Netzplantechnik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kostenvergleichsrechnung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Lineare Programmierung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kapitalwertmethode",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q7",
+    "content": "7. [ENÜ] Was ist das Ziel der linearen Programmierung im Kontext der Produktionsplanung?",
+    "answers": [
+      {
+        "text": "a) Minimierung des Lagerraums",
+        "is_correct": false
+      },
+      {
+        "text": "b) Maximierung des Gesamtdeckungsbeitrags",
+        "is_correct": true
+      },
+      {
+        "text": "c) Berechnung der Steuerbelastung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Festlegung von Marktpreisen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q8",
+    "content": "8. [ENÜ] Welche Bedingung muss im LP-Modell zusätzlich zu den Kapazitätsrestriktionen erfüllt sein?",
+    "answers": [
+      {
+        "text": "a) Nichtnegativitätsbedingung",
+        "is_correct": true
+      },
+      {
+        "text": "b) Maximalbedingung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kapitalkostenkriterium",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kostenersatzgrenze",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q9",
+    "content": "9. [ENÜ] Welches Verfahren ist bei zwei Produkten für eine grafische Lösung geeignet?",
+    "answers": [
+      {
+        "text": "a) Simplex-Verfahren",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eckpunktmethode",
+        "is_correct": false
+      },
+      {
+        "text": "c) Graphische Lösung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Heuristikverfahren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "production-k2-en-q10",
+    "content": "10. [ENÜ] Was ist die Grundlage des Simplex-Verfahrens?",
+    "answers": [
+      {
+        "text": "a) Ausprobieren aller Kombinationen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Start im Ursprung und iteratives Verbessern zu Nachbarecken",
+        "is_correct": true
+      },
+      {
+        "text": "c) Rückwärtsrechnung von Endwerten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Heuristische Näherungslösung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

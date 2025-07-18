@@ -1,0 +1,282 @@
+[
+  {
+    "id": "planning-k6-en-q1",
+    "content": "1. What is the goal of production program planning?",
+    "answers": [
+      {
+        "text": "a) Steuerung des Absatzmarktes",
+        "is_correct": false
+      },
+      {
+        "text": "b) Festlegung von Produktmengen, Varianten und Zeitpunkten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Optimierung des Einkaufsprozesses",
+        "is_correct": false
+      },
+      {
+        "text": "d) Gestaltung der Arbeitsplätze",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q2",
+    "content": "2. Which data forms the basis of production program planning?",
+    "answers": [
+      {
+        "text": "a) Absatzprognosen, Lagerbestände, offene Kundenaufträge",
+        "is_correct": true
+      },
+      {
+        "text": "b) Werbebudget und Kundenzufriedenheit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Mitarbeiteranzahl und Schulungen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Standortlage und Immobilienwert",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q3",
+    "content": "3. What does primary requirement mean?",
+    "answers": [
+      {
+        "text": "a) Bedarf an Personal",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarf an Betriebsmitteln",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bedarf an verkaufsfähigen Produkten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Bedarf an Energie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q4",
+    "content": "4. What is the goal of program planning?",
+    "answers": [
+      {
+        "text": "a) Planung der Maschinenbelegung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Planung der Fertigungstiefe",
+        "is_correct": false
+      },
+      {
+        "text": "c) Deckung des Kundenbedarfs bei optimaler Kapazitätsauslastung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lageraufbau",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q5",
+    "content": "5. Which method is used for sales forecasting?",
+    "answers": [
+      {
+        "text": "a) MTM",
+        "is_correct": false
+      },
+      {
+        "text": "b) SWOT",
+        "is_correct": false
+      },
+      {
+        "text": "c) Regressionsanalyse",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lean Management",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q6",
+    "content": "6. What does secondary requirement refer to?",
+    "answers": [
+      {
+        "text": "a) Der Energieverbrauch der Maschinen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarf an Einzelteilen zur Herstellung des Primärbedarfs",
+        "is_correct": true
+      },
+      {
+        "text": "c) Der Bedarf an Mitarbeitern",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bedarf an Büroartikeln",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q7",
+    "content": "7. What is meant by tertiary requirement?",
+    "answers": [
+      {
+        "text": "a) Bedarf an Ersatzteilen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarf an Rohstoffen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bedarf an Hilfs- und Betriebsstoffen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Bedarf an Fertigprodukten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q8",
+    "content": "8. Which planning type directly considers customer orders?",
+    "answers": [
+      {
+        "text": "a) Absatzplanung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sekundärplanung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Auftragsgesteuerte Planung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Regressionsplanung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q9",
+    "content": "9. What is a goal of material requirements planning?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Lagerbestände",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarfsgerechte Materialversorgung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Reduktion der Personalkosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Verbesserung des Absatzes",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k6-en-q10",
+    "content": "10. Which type of bill of materials lists all assemblies and parts completely?",
+    "answers": [
+      {
+        "text": "a) Mengenübersichtsstückliste",
+        "is_correct": false
+      },
+      {
+        "text": "b) Strukturstückliste",
+        "is_correct": true
+      },
+      {
+        "text": "c) Baukastenstückliste",
+        "is_correct": false
+      },
+      {
+        "text": "d) Projektstückliste",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]
