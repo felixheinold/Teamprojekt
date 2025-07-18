@@ -8,14 +8,14 @@ from enum import Enum
 import json, os
 import tempfile
 import logging
-from google.cloud import pubsub_v1
+
 
 
 
 
 logger = logging.getLogger("uvicorn")
-publisher = pubsub_v1.PublisherClient()
-topic_path = publisher.topic_path("edukit-tp", "new-pdf")
+
+
 
 
 router = APIRouter (
@@ -138,10 +138,8 @@ async def upload_pdf(file: UploadFile = File(...),
       finally:
           os.unlink(temp.name)
     url = blob.public_url
-    future = publisher.publish(
-    topic_path,
-    data=json.dumps(data).encode("utf-8"))
-    logger.info(f"Nachricht per PubSub veröffentlicht HIERRR {future.result()}")
+    
+    logger.info(f"Nachricht per PubSub veröffentlicht HIERRR ")
     #print("final test: {url}")
     return {"url": url, "status": "saved pdf successfully"}
 
