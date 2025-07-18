@@ -1,8 +1,13 @@
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, HTTPException
 from typing import Optional
 from firebase import db
 import requests
 import datetime
+import traceback
+import logging
+
+logger = logging.Logger("uvicorn")
+
 
 
 router = APIRouter(
@@ -13,12 +18,29 @@ router = APIRouter(
 #Hole die aktuelle Highscore-Liste, bestehend aus Rang, Username und Highscore-Punktzahl
 @router.get("/get-current-leaderboard")
 async def get_current_leaderboard():
-    stat_ref = db.collection("statistics")
-    latest_doc = stat_ref.order_by("__name__", direction = "DESCENDING").limit(1).get()
-    if latest_doc:
-        return latest_doc[0].to_dict()
-    else: 
-        return {"error: Kein Leaderboard verfügbar"}
+    try:
+        stat_ref = db.collection("statistics")
+        latest_doc = stat_ref.order_by("timestamp", direction = "DESCENDING").limit(1).get()
+        logger.info(len(latest_doc))
+        if not latest_doc:
+            return {"error: Kein Leaderboard verfügbar"}
+        else: 
+            leaderboard_dict = latest_doc[0].to_dict()
+            leaderboard_list = leaderboard_dict["leaderboard"]
+            print("TestPRINT")
+            print("DICT-------")
+            print(leaderboard_dict)
+            print("LIST-----")
+            print(leaderboard_list)
+            logger.info("TestLOGGER")
+            logger.info(leaderboard_list)
+            #print(latest_doc[0].to_dict())
+            return leaderboard_list#latest_doc[0].to_dict()
+            
+    except Exception as e:
+        print("🔥 Fehler beim Laden des Leaderboards:", e)
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
 
 #async def get_current_leaderboard (limit: Optional[int] = Query(default = 10, ge=1)):
 #     leaderboard_ref = db.collection("statistics").document(datetime.utcnow().isoformat())

@@ -5,3 +5,4 @@ firebase-admin
 google-cloud-firestore
 python-multipart
 python-dotenv
+google-cloud-pubsub

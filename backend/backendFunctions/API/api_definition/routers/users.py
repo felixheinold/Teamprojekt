@@ -29,6 +29,7 @@ class User_Game_Information(BaseModel):
     highscore_table_ranking: int #an welcher Stelle in Bestenliste
     total_points: int #alle punkte aus allen Spielen jemals
     daily_points_goal: int
+    last_played_all_game_types: List[str]
     quiz: Game_Type
     memory: Game_Type
     gapfill: Game_Type
@@ -79,7 +80,6 @@ def get_user(user_id: str, field: Optional[str] = None):
     if not user_doc.exists:
         raise HTTPException(status_code=404, detail="User nicht gefunden")
     data = user_doc.to_dict()
-    print(data)
     if field:
         if field in data:
             return {field: data[field]}
@@ -106,10 +106,11 @@ async def create_user(create_user: CreateUser):
             highscore=0,
             highscore_table_ranking=0,
             total_points=0,
-            daily_points_goal=10,
-            quiz=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),  
-            memory=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = []),
-            gapfill=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [])
+            daily_points_goal=0,
+            last_played_all_game_types=[],
+            quiz=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [], answered_correctly_content = []),  
+            memory=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [], answered_correctly_content = []),
+            gapfill=Game_Type(total_games = 0, total_points = 0, max_points = 0, best_Score = 0, accuracy = 0.0 , last_played = "", repetition_content = [], answered_correctly_content = [])
         )
     )
     doc_ref = db.collection("users").document(user.user_id)

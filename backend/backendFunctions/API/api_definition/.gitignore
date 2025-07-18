@@ -1,1 +1,9 @@
 .env
+
+__pycache__/
+*.pyc
+
+
+edukit-tp-firebase-adminsdk-key-2.json
+
+edukit-tp-pub-sub-key.json

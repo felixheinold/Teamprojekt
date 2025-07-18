@@ -36,4 +36,5 @@ api.include_router(statistics.router)
 # Test-Endpoint
 @api.get("/")
 async def root():
+    print("Root wurde aufgerufen")
     return {"message": "API works!"}

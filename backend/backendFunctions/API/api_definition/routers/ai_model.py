@@ -5,8 +5,17 @@ from firebase import db
 from typing import Optional, Dict, List, Literal
 from google.cloud import firestore
 from enum import Enum
-import json
+import json, os
 import tempfile
+import logging
+from google.cloud import pubsub_v1
+
+#os.environ ["GOOGLE_APPLICATION_CREDENTIALS"] = "./edukit-tp-pub-sub-key.json"
+
+
+logger = logging.getLogger("uvicorn")
+publisher = pubsub_v1.PublisherClient()
+topic_path = publisher.topic_path("edukit-tp", "new-pdf")
 
 
 router = APIRouter (
@@ -60,18 +69,18 @@ async def update_game_unit(unit_id: str, guup: GameUnitUpdates):
     return {"status: game unit updated."}
 
 #einen Spielinhalt vollständig bekommen
-@router.get("/fetch-game-units")
+@router.get("/fetch-game-units") 
 async def fetch_game_units(
-    id: Optional [str] = Query(None),
-    title: Optional [str] = Query(None),  
+    id: Optional[str] = Query(None),
+    title: Optional[str] = Query(None),  
     #content: Optional [str],
     #answer: Optional [str],    
-    chapter: Optional [str] =  Query(None),   
-    lecture: Optional [str] = Query(None),
-    module: Optional [str] = Query(None),
+    chapter: Optional[str] =  Query(None),   
+    lecture: Optional[str] = Query(None),
+    module: Optional[str] = Query(None),
     difficulty: Optional[str] = Query(None),
     language: Optional[str] =  Query(None),
-    type: Optional [str] =  Query(None)
+    type: Optional[str] =  Query(None)
     ):
     filters = []
     if (id):
@@ -109,19 +118,32 @@ async def upload_pdf(file: UploadFile = File(...),
     if file.content_type != "application/pdf":
         return {"error": "Nur PDF-Dateien erlaubt"}
 
+    data = {
+    "bucket": "edukit-tp.firebasestorage.app", # oder dein tatsächlicher Bucket
+    "name": f"pdfs/{module}/{lecture}/{chapter}{file.filename}",     # z. B. Speicherpfad nach dem Upload
+    }
+
     bucket = storage.bucket()
     blob = bucket.blob(f"pdfs/{module}/{lecture}/{chapter}{file.filename}")
-
+    content = await file.read()
+    print(f"Datei gelesen, Größe: {len(content)} Bytes")
     # Temporäre Datei zum Hochladen
-    with tempfile.NamedTemporaryFile() as temp:
-        content = await file.read()
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp:
+      try:  
         temp.write(content)
         temp.flush()
+        temp.close()
+        logger.info("Temporäre Datei geschrieben und geschlossen --> {temp.name}")
         blob.upload_from_filename(temp.name, content_type="application/pdf")
-
+      finally:
+          os.unlink(temp.name)
     url = blob.public_url
+    future = publisher.publish(
+    topic_path,
+    data=json.dumps(data).encode("utf-8"))
+    logger.info(f"Nachricht per PubSub veröffentlicht HIERRR {future.result()}")
+    #print("final test: {url}")
     return {"url": url, "status": "saved pdf successfully"}
-
 
 
 # class Language(str, Enum):

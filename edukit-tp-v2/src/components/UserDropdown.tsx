@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 const UserDropdown = () => {
   const { user, setUser } = useBackendUserContext();
-  console.log("🔍 UserDropdown – aktueller User:", user);
+  //console.log("🔍 UserDropdown – aktueller User:", user);
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);

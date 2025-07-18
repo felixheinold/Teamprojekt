@@ -5,15 +5,18 @@ import { useBackendUserContext } from "./BackendUserContext";
 import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
 
  export const BackendUserSyncHandler = () => {
-  const { setUser, flushUser } = useBackendUserContext();
+  const { setUser, flushUser, user} = useBackendUserContext();
   const generalAPICallsService = new GeneralAPICallsService();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser && firebaseUser.emailVerified) {
         const userData = await generalAPICallsService.getUserDataFromFirestore();
-        setUser(userData);
+        if (!user|| JSON.stringify(user) !== JSON.stringify(userData)){
+          setUser(userData);
       }
+        }
+        
       else{
         await flushUser();
         setUser(null);

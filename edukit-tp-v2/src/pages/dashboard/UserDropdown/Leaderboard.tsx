@@ -3,11 +3,13 @@ import { useBackendUserContext } from "../../../context/BackendUserContext";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./Leaderboard.css";
+import { GeneralAPICallsService } from "../../../firebaseData/generalAPICallsService";
 
-type Player = {
-  username: string;
-  avatar?: string;
-  score: number;
+export type PlayerInLeaderboard = {
+  user_rank: number
+  user_name: string;
+  user_highscore: number;
+  user_profile_picture: string;
 };
 
 type UserStats = {
@@ -16,7 +18,7 @@ type UserStats = {
   };
 };
 
-const dummyPlayers: Player[] = [
+/*const dummyPlayers: Player[] = [
   { username: "Tom", score: 82, avatar: "avatar3.png" },
   { username: "Maya", score: 74, avatar: "avatar2.png" },
   { username: "Max", score: 65, avatar: "avatar4.png" },
@@ -26,49 +28,46 @@ const dummyPlayers: Player[] = [
   { username: "Leo", score: 33, avatar: "avatar9.png" },
   { username: "Anna", score: 29, avatar: "avatar20.png" },
   { username: "Ben", score: 24, avatar: "avatar8.png" },
-];
+];*/
 
 export default function Leaderboard() {
   const { user } = useBackendUserContext();
   const { t } = useTranslation();
-  const [players, setPlayers] = useState<Player[]>([]);
-  const [rank, setRank] = useState<number | null>(null);
+  //const [players, setPlayers] = useState<Player[]>([]);
+  //const [rank, setRank] = useState<number | null>(null);
+  const generalAPICallsService = new GeneralAPICallsService();
+  const [top3, setTop3] = useState<PlayerInLeaderboard[]>([]);
+  const [others, setOthers] = useState<PlayerInLeaderboard[]>([]);
+ 
 
   useEffect(() => {
-    const stats = JSON.parse(
-      localStorage.getItem("userStats") || "{}"
-    ) as UserStats;
-    const score = Object.values(stats).reduce(
-      (sum, val) =>
-        sum + (typeof val.totalPoints === "number" ? val.totalPoints : 0),
-      0
-    );
-
-    const currentPlayer: Player | null = user
-      ? {
-          username: user.user_name,
-          avatar: user.user_profile_picture,
-          score,
-        }
-      : null;
-
-    const combined = currentPlayer
-      ? [...dummyPlayers, currentPlayer]
-      : [...dummyPlayers];
-    const sorted = combined.sort((a, b) => b.score - a.score);
-
-    setPlayers(sorted);
-
-    if (currentPlayer) {
-      const myIndex = sorted.findIndex(
-        (p) => p.username === currentPlayer.username
-      );
-      setRank(myIndex + 1);
-    }
-  }, [user]);
-
-  const top3 = players.slice(0, 3);
-  const others = players.slice(3);
+      const fetchLeaderboard = async () => {
+        try {
+            const leaderboard: PlayerInLeaderboard [] = await generalAPICallsService.fetchCurrentLeaderboard();
+            console.log("in Leaderboard.tsx: ", leaderboard);
+            const top3Const: PlayerInLeaderboard[] = []; 
+            const othersConst: PlayerInLeaderboard[] = [];
+            leaderboard.forEach((player) =>{
+              
+              if(player.user_rank<4){
+                  top3Const.push(player);
+                }else{
+                  othersConst.push(player);
+                }
+            });
+            setTop3(top3Const);
+            setOthers(othersConst);
+            console.log("TOP3", top3Const);
+            console.log("OTHERS",othersConst);
+          }catch(error){
+            console.log("Fehler bei Abruf des Leaderboards, Fehler in Leaderboard.tsx");
+            console.log(error);
+          }
+      };
+      fetchLeaderboard();
+  }, []);
+  
+  
 
   return (
     <div className="leaderboard-wrapper">
@@ -84,9 +83,9 @@ export default function Leaderboard() {
             <strong>
               {index + 1}. {t("leaderboard.place")}
             </strong>
-            <div className="player-name">{player.username}</div>
+            <div className="player-name">{player.user_name}</div>
             <div className="player-score">
-              {player.score} {t("leaderboard.points")}
+              {player.user_highscore} {t("leaderboard.points")}
             </div>
           </div>
         ))}
@@ -97,16 +96,16 @@ export default function Leaderboard() {
           <div
             key={i}
             className={`leaderboard-entry ${
-              user?.user_name === p.username ? "highlight" : ""
+              user?.user_name === p.user_name ? "highlight" : ""
             }`}
           >
             <span className="entry-rank fw-bold">{i + 4}.</span>
             <div className="entry-user">
               <AvatarCircle player={p} size={40} />
-              <span>{p.username}</span>
+              <span>{p.user_name}</span>
             </div>
             <span className="entry-score fw-semibold">
-              {p.score} {t("leaderboard.points")}
+              {p.user_highscore} {t("leaderboard.points")}
             </span>
           </div>
         ))}
@@ -115,7 +114,7 @@ export default function Leaderboard() {
   );
 }
 
-function AvatarCircle({ player, size }: { player: Player; size: number }) {
+function AvatarCircle({ player, size }: { player: PlayerInLeaderboard; size: number }) {
   return (
     <div
       style={{
@@ -127,16 +126,16 @@ function AvatarCircle({ player, size }: { player: Player; size: number }) {
       }}
       className="d-flex align-items-center justify-content-center"
     >
-      {player.avatar ? (
+      {player.user_profile_picture ? (
         <img
-          src={`/avatars/${player.avatar}`}
-          alt={player.username}
+          src={`/avatars/${player.user_profile_picture}`}
+          alt={player.user_name}
           className="w-100 h-100"
           style={{ objectFit: "cover" }}
         />
       ) : (
         <span className="fw-bold text-dark" style={{ fontSize: size / 2.5 }}>
-          {player.username[0]}
+          {player.user_name[0]}
         </span>
       )}
     </div>

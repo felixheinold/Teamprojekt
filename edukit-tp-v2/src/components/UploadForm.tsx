@@ -46,7 +46,7 @@ const UploadForm = () => {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("module", selectedModule);
-    formData.append("subject", selectedSubject);
+    formData.append("lecture", selectedSubject);
     formData.append("chapter", selectedChapter);
 
     console.log("Upload gestartet:", {

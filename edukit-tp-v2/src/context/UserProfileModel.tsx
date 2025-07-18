@@ -1,10 +1,12 @@
 export type GameType = {
   total_games: number;
   total_points: number;
+  max_points: number,
   best_Score: number;
   accuracy: number;
   last_played: string;
   repetition_content: string[];
+  answered_correctly_content: string[];
 };
 
 export type UserGameInformation = {
@@ -12,6 +14,7 @@ export type UserGameInformation = {
   highscore_table_ranking: number;
   total_points: number;
   daily_points_goal: number;
+  last_played_all_game_types: string[]; //first position type, second position timestamp
   quiz: GameType;
   memory: GameType;
   gapfill: GameType;
