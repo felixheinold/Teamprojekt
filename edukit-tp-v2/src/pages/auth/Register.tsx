@@ -1,19 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import AvatarPicker from "../../components/AvatarPicker";
 import { useTranslation } from "react-i18next";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
-import "./Register.css";
-import { useEffect } from "react";
+import { AuthAPICallsService } from "../../firebaseData/authAPICallsService";
 import { auth } from "../../firebaseData/firebaseConfig";
+import "./Register.css";
 
 const Register = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
   const { t } = useTranslation();
   const authHandlingService = new AuthHandlingService();
+  const authAPICallsService = new AuthAPICallsService();
 
   const [form, setForm] = useState({
     username: "",
@@ -30,12 +31,13 @@ const Register = () => {
 
   useEffect(() => {
     auth.signOut().then(() => {
-      localStorage.clear();  // falls du was speicherst
+      localStorage.clear();
       sessionStorage.clear();
       setSignoutDone(true);
     });
   }, []);
-  if(!signoutDone) return <div>Wird geladen...</div>
+
+  if (!signoutDone) return <div>Wird geladen...</div>;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -44,29 +46,46 @@ const Register = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (form.password.length < 6) {
+      alert("Das Passwort muss mindestens 6 Zeichen lang sein.");
+      return;
+    }
+
     if (form.password !== form.confirmPassword) {
-      alert(
-        t("register.passwordMismatch") || "Passwörter stimmen nicht überein."
-      );
+      alert(t("register.passwordMismatch") || "Passwörter stimmen nicht überein.");
       return;
     }
 
     try {
+      const user = await authHandlingService.newRegistration(
+        form.username,
+        form.email,
+        form.password,
+        form.avatar
+      );
 
-       const user = await authHandlingService.newRegistration(form.username, form.email, form.password, form.avatar);
-       console.log("In register " + form.username, form.avatar);
-       alert(t("register.checkInbox"));
-       if (await authHandlingService.checkEmailVerified(user)){
-        navigate("/home");
-       }
+      // ✅ Backend aufrufen, um User in Firestore zu speichern
+      if (user && user.uid) {
+        await authAPICallsService.newUserAPICall(
+          user.uid,
+          form.username,
+          form.email,
+          form.avatar
+        );
+      }
 
-      setRegistrationInfoVisible(true); // Info anzeigen statt direkt navigieren
+      alert(t("register.checkInbox"));
+      setRegistrationInfoVisible(true);
     } catch (err: any) {
-      if (err.code === "wrong mail address format"){
+      if (err.code === "wrong mail address format") {
         alert(t("register.invalidEmailFormat"));
-      }else {
-         console.error("Registration error:", err);
-      alert(t("register.unknownError"));
+      } else if (err.message === "auth/weak-password") {
+        alert("Passwort ist zu schwach. Bitte wähle ein stärkeres Passwort mit mindestens 6 Zeichen.");
+      } else if (err.message === "auth/email-already-in-use") {
+        alert("Die E-Mail-Adresse wird bereits verwendet.");
+      } else {
+        console.error("Registration error:", err);
+        alert(t("register.unknownError"));
       }
     }
   };
@@ -154,9 +173,7 @@ const Register = () => {
                     name="confirmPassword"
                     type={showConfirmPassword ? "text" : "password"}
                     className="form-control"
-                    placeholder={
-                      t("register.confirmPassword") || "Passwort wiederholen"
-                    }
+                    placeholder={t("register.confirmPassword")}
                     onChange={handleChange}
                     required
                   />

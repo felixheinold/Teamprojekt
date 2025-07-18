@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "edukit-tp",
+  "private_key_id": "651e37ee48305bdc26e1418b236a2f2fcc190127",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZCtvepDRYs4gT\nyLyLoKIZlqqrhuCpri5kqlymxFXN8iAENCWaw2wwTIGN2DeSZz5wTiBO7UmbBO0A\nFnmOrOEGMooDSPQRpR1k/HsHmTfWLJ69Q9j5m8MasLgCDn3WhtBU2M4fsIRX2iLH\njPlmCBnXXWQMu/367ktzuGLNPc7OG4hy/R/Zhh0YE0uZ7osfscDdnZO8OsF/mdc6\n6Nbz1SP3V0GVf5s6vzueRH12rB7hodCHwA3+4UgWnxNJXUCeniqQMGbJIt6X/Fi1\nF8gpPy4PqkKhAsuHRjJWOmBgKBMVPVshXFmK0zpGuZsq/x9wSkn24FAniE2foNuu\ncyyBYXerAgMBAAECggEAXO7K3UaHCXH58qqxnMGvlvBN7LsIaG8l+0F9AYUwzkl9\nzv77GQzTPs0Lbg5mISBm+lRhfhoZObC+wBpfeyloAqzSLnzm0MVX1D1Nep/u6hxZ\n7eVmut4oiL2hVHQbCqfX/XSFscj1qd5DpRkmUrtmQTKCW/eE1RSCpy6M05/C9LnH\n6qVbPv3/Z48esf7pfuZaAkigJ7/Zp4Hfd699h9JsAlsnaPYDGYkXekSXM0Uxrd1c\nh+iL1Ge+EAbqwol/lySUg1lilSQgBMh8Tn41yRvkQZbO/Pl4KzLWlxT27uH4UgCc\n/n0QCUcj1pdg0Bj3uVETKojqi9aJqINgnjcJ4ncpSQKBgQD9e3c0zCetVuy3BnVG\noCg9aVbHQYqA3aFRpUSYnuB6R72lm5nT3HADDZblwDXe8WMLDho9owmAHJE1dfsy\nVVnS4uiM3ObShdwkODpdspZOXr2ia9Z8wKxoTfBwc+G5Apc1zmXPkcavFgxTq10r\nsKyiGtwsEDFb9KHjkH4UMwq12QKBgQDbMryiHd2DiEGKYVjui3GfJTG1FJJ4zslQ\n5lQoJsRumXZHWz0f6f8PAeaZ9nkfuH7Kro4HTlJ86Wjmh4BqVrZiq6c2dI88l2Mp\nQNF/udRRYT651e+P5u1pL2zaypSfsHhGuxz6TIxuT0uvKntzbvZ8GKVLey79m/hp\ny66MGheTIwKBgQCX6h/mL5hz5U2W3zL38dJMA86zOk90rd8ZnG/A/C7Seh5pmxiV\nBV7IJaPS6+AdThOqs3f8irKN6hEItj2my8o6fi0bBuT7NKhbuKsaLoawT01dgz2X\npK1vEY7RBlI4XBodcCZKQTaPBiq7Fk+PeKHtwSVE7yt1zeYcCSPWnUSE+QKBgD6y\nB2QzOJ2bhmuHJoGsXsZPRCVwCekF9GzwRFfrprmfqUYFobkUG8D2ITgeWEyrX5Cn\nVrZeP5e8xyVQ0nkX7jjQshYQRrvk7RbqlEF9LG5OazuKJmg5e+RfDTqTQOlf9zb7\n4/DvnicbBSHH++FrdpLOFdE+HZWqW+YevQEToXSTAoGAF23DwoME0o2Sf1+LE/j0\n5nUHOS+aUkKxGMhHoNYqm9Uov/RPStYwJDWtlVvuR8unkgXqlMIdBMxnFtKX87U6\nYmGsiou/LGE1sbU0uq1EjzyH6MKwrlN7SsPYd1pxwANfyLYN/Mp2ydE1xBUhM9mB\nVk+kuuEEvJuNfYEq7y665oA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubsub-fastapi-writer@edukit-tp.iam.gserviceaccount.com",
+  "client_id": "115309072811319057383",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-fastapi-writer%40edukit-tp.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

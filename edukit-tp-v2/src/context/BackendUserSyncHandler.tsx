@@ -10,6 +10,8 @@ export const BackendUserSyncHandler = () => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      console.log("🔁 Auth-State-Changed Trigger");
+
       if (firebaseUser && firebaseUser.emailVerified) {
         try {
           const userData =
