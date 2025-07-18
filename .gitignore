@@ -69,3 +69,6 @@ node_modules/
 .dataconnect
 
 .cpython-313.pyc
+
+*key*.json
+

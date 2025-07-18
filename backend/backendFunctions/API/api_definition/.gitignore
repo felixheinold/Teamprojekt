@@ -7,3 +7,6 @@ __pycache__/
 edukit-tp-firebase-adminsdk-key-2.json
 
 edukit-tp-pub-sub-key.json
+
+*key*.json
+
