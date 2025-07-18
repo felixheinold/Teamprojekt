@@ -39,6 +39,7 @@ const QuizGame = () => {
     QuizQuestion[]
   >([]);
   const [loading, setLoading] = useState(true);
+  const [correctIdsThisGame, setCorrectIdsThisGame] = useState<string[]>([]);
 
   const sampleQuestions: QuizQuestion[] = [
     {
@@ -193,7 +194,7 @@ const QuizGame = () => {
   const wrongSound = useRef<HTMLAudioElement | null>(null);
 
   const currentQuestion = questions[currentIndex];
-  const isLastQuestion = currentIndex + 1 === questionCount;
+  const isLastQuestion = currentIndex + 1 === questions.length;
   const postponedKey = `postponed_${module}_${chapter}`;
 
   useEffect(() => {
@@ -239,6 +240,10 @@ const QuizGame = () => {
     if (correct) {
       setScore((prev) => prev + 1);
       if (soundEnabled) correctSound.current?.play();
+
+      if (!correctIdsThisGame.includes(currentQuestion.id)) {
+        setCorrectIdsThisGame((prev) => [...prev, currentQuestion.id]);
+      }
     } else {
       if (soundEnabled) wrongSound.current?.play();
       const statsKey = "userStats";
@@ -325,7 +330,7 @@ const QuizGame = () => {
           timeLimit,
           score,
           questions,
-          correctIds,
+          correctIds: correctIdsThisGame,
           allIds: allChapterQuestions.map((q) => q.id),
           isAllChapters,
           chapterCount,
@@ -416,7 +421,10 @@ const QuizGame = () => {
 
       <div className="quiz-status">
         <span>
-          {t("quizgame.questionCount")} {currentIndex + 1} / {questionCount}
+          <span>
+            {t("quizgame.questionCount")} {currentIndex + 1} /{" "}
+            {questions.length}
+          </span>
         </span>
         <span>⏳ {timeLeft}s</span>
       </div>

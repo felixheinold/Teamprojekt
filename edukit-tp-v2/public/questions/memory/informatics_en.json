@@ -1,0 +1,102 @@
+[
+  {
+    "id": "informatics-k5-en-m1",
+    "term": "ERP system",
+    "definition": "Supports operational processes across all essential functional areas of a company."
+  },
+  {
+    "id": "informatics-k5-en-m2",
+    "term": "Horizontal integration",
+    "definition": "Interconnection of information systems across multiple departments."
+  },
+  {
+    "id": "informatics-k5-en-m3",
+    "term": "Transaction system",
+    "definition": "Used for operational support of recurring business processes."
+  },
+  {
+    "id": "informatics-k5-en-m4",
+    "term": "Central database",
+    "definition": "Foundation for integration in ERP systems through a shared data base."
+  },
+  {
+    "id": "informatics-k5-en-m5",
+    "term": "Master data",
+    "definition": "Periodically updated core data such as customer or product information."
+  },
+  {
+    "id": "informatics-k5-en-m6",
+    "term": "Operational system",
+    "definition": "System supporting daily business operations, e.g., SAP ERP."
+  },
+  {
+    "id": "informatics-k5-en-m7",
+    "term": "Office information system",
+    "definition": "Supports general tasks such as word processing and communication."
+  },
+  {
+    "id": "informatics-k5-en-m8",
+    "term": "Interorganizational system",
+    "definition": "Connects information systems of multiple companies for collaboration."
+  },
+  {
+    "id": "informatics-k5-en-m9",
+    "term": "EDIFACT",
+    "definition": "Standard format for structured electronic data interchange (EDI)."
+  },
+  {
+    "id": "informatics-k5-en-m10",
+    "term": "Vendor-managed inventory",
+    "definition": "Inventory at the customer is managed by the supplier."
+  },
+  {
+    "id": "informatics-k5-en-m11",
+    "term": "Materials management module",
+    "definition": "Part of an ERP system for managing inventory and procurement."
+  },
+  {
+    "id": "informatics-k5-en-m12",
+    "term": "Data silo",
+    "definition": "Isolated data storage without integration into other systems."
+  },
+  {
+    "id": "informatics-k5-en-m13",
+    "term": "Inventory management",
+    "definition": "Module function for tracking inventory movements and stock levels."
+  },
+  {
+    "id": "informatics-k5-en-m14",
+    "term": "Just-in-time",
+    "definition": "Production strategy aiming for minimal inventory levels."
+  },
+  {
+    "id": "informatics-k5-en-m15",
+    "term": "Workflow management",
+    "definition": "Coordinates tasks, processes, and users within information systems."
+  },
+  {
+    "id": "informatics-k5-en-m16",
+    "term": "Functional areas",
+    "definition": "Examples include procurement, production, and sales – all supported by ERP."
+  },
+  {
+    "id": "informatics-k5-en-m17",
+    "term": "User interface",
+    "definition": "Interface through which users interact with the system."
+  },
+  {
+    "id": "informatics-k5-en-m18",
+    "term": "Modularity",
+    "definition": "Design principle of ERP systems with flexibly combinable modules."
+  },
+  {
+    "id": "informatics-k5-en-m19",
+    "term": "Cloud ERP",
+    "definition": "ERP system operated and provided via the internet."
+  },
+  {
+    "id": "informatics-k5-en-m20",
+    "term": "Bill of materials",
+    "definition": "List of all components of a product, relevant for manufacturing systems."
+  }
+]

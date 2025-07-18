@@ -1,0 +1,282 @@
+[
+  {
+    "id": "informatics-k1-en-q1",
+    "content": "1. [ENÜ] Was ist das übergeordnete Ziel der Wirtschaftsinformatik?",
+    "answers": [
+      {
+        "text": "a) Entwicklung neuer Hardware",
+        "is_correct": false
+      },
+      {
+        "text": "b) Steueroptimierung für Unternehmen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Gestaltung des Zusammenspiels von IT, Individuum, Unternehmen und Gesellschaft",
+        "is_correct": true
+      },
+      {
+        "text": "d) Erstellung von Marketingstrategien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q2",
+    "content": "2. [ENÜ] Welche Perspektiven werden in der Wirtschaftsinformatik betrachtet?",
+    "answers": [
+      {
+        "text": "a) Ökonomisch, rechtlich, technisch",
+        "is_correct": false
+      },
+      {
+        "text": "b) Individuum, Unternehmen, Gesellschaft",
+        "is_correct": true
+      },
+      {
+        "text": "c) Personal, Produktion, Finanzen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Verwaltung, Politik, Umwelt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q3",
+    "content": "3. [ENÜ] Welche Auswirkungen hat Informationstechnologie auf die Gesellschaft laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Keine direkten Auswirkungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur im Bereich der Umwelt spürbar",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie beeinflusst Politik, Umwelt und Nachhaltigkeit",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie betrifft nur Großunternehmen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q4",
+    "content": "4. [ENÜ] Was ist ein Beispiel für unternehmerische Nutzung von IT laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Nur Webdesign",
+        "is_correct": false
+      },
+      {
+        "text": "b) Optimierung interner Prozesse, Kundeninteraktion und Vernetzung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Steuerberatungssysteme",
+        "is_correct": false
+      },
+      {
+        "text": "d) Desktop-Publishing",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q5",
+    "content": "5. [ENÜ] Was kennzeichnet digitale Geschäftsmodelle laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Fokus auf große Lagerhaltung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Hoher physischer Infrastrukturbedarf",
+        "is_correct": false
+      },
+      {
+        "text": "c) Geringe physische Infrastruktur, schnelle Adoption",
+        "is_correct": true
+      },
+      {
+        "text": "d) Konzentration auf lokale Märkte",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q6",
+    "content": "6. [ENÜ] Was ist laut Vorlesung ein zentrales Thema der Wirtschaftsinformatik?",
+    "answers": [
+      {
+        "text": "a) Lagerverwaltung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Digitalisierung von Geschäftsprozessen und Geschäftsmodellen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Preisgestaltung in Onlineshops",
+        "is_correct": false
+      },
+      {
+        "text": "d) Schulung von Vertriebspersonal",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q7",
+    "content": "7. [ENÜ] Wie ist Wirtschaftsinformatik disziplinär positioniert?",
+    "answers": [
+      {
+        "text": "a) Zwischen Physik und Mathematik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zwischen Informatik und Wirtschaftswissenschaften",
+        "is_correct": true
+      },
+      {
+        "text": "c) Zwischen Elektrotechnik und Medizin",
+        "is_correct": false
+      },
+      {
+        "text": "d) Zwischen Jura und Maschinenbau",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q8",
+    "content": "8. [ENÜ] Welche Institution organisiert die Community der Wirtschaftsinformatik im deutschsprachigen Raum?",
+    "answers": [
+      {
+        "text": "a) VDI",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Wirtschaftsinformatik e.V.",
+        "is_correct": true
+      },
+      {
+        "text": "c) BITKOM",
+        "is_correct": false
+      },
+      {
+        "text": "d) VDMA",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q9",
+    "content": "9. [ENÜ] Wie viele Studierende waren laut Vorlesung in Wirtschaftsinformatik-Studiengängen (D) eingeschrieben?",
+    "answers": [
+      {
+        "text": "a) Über 10.000",
+        "is_correct": false
+      },
+      {
+        "text": "b) Über 25.000",
+        "is_correct": false
+      },
+      {
+        "text": "c) Über 67.000",
+        "is_correct": true
+      },
+      {
+        "text": "d) Über 100.000",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "informatics-k1-en-q10",
+    "content": "10. [ENÜ] Was ist ein Ziel der Lehrveranstaltung laut Lernzielen?",
+    "answers": [
+      {
+        "text": "a) Programmierung mobiler Apps",
+        "is_correct": false
+      },
+      {
+        "text": "b) Beschreibung des Gegenstandsbereichs der Wirtschaftsinformatik",
+        "is_correct": true
+      },
+      {
+        "text": "c) Einführung in SAP-Zertifizierungen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Buchhaltung in ERP-Systemen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "Information Systems",
+    "module": "Introduction",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

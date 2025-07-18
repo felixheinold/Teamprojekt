@@ -74,7 +74,7 @@ const QuizStart = () => {
       {/* Tutorial Video */}
       <div className="quiztutorial-video">
         <iframe
-          src="https://www.youtube.com/embed/0eBODygaYG4"
+          src="https://www.youtube.com/embed/A1Z67KyYiX4"
           title="YouTube Video Tutorial"
           allowFullScreen
         ></iframe>

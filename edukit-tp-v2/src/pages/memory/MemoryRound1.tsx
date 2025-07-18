@@ -129,32 +129,8 @@ const MemoryRound1 = () => {
         return;
       }
 
-      if (isAllChapters) {
-        const promises = Array.from({ length: chapterCount }, (_, i) => {
-          const chapterKey = `k${i + 1}`;
-          const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
-          return fetch(path)
-            .then((res) => (res.ok ? res.json() : []))
-            .catch(() => []);
-        });
+      const path = `/questions/memory/${subjectKey}_${langKey}.json`;
 
-        const allResults = await Promise.all(promises);
-        const combined = allResults.flat();
-        const data = combined.length > 0 ? combined : initialPairs;
-        setSelectedPairs(shuffleArray(data).slice(0, questionCount));
-        return;
-      }
-
-      // Standardfall: einzelnes Kapitel
-      const match = chapter?.match(/Kapitel (\d+)/i);
-      const chapterKey = match ? `k${match[1]}` : null;
-
-      if (!chapterKey) {
-        setSelectedPairs(shuffleArray(initialPairs).slice(0, questionCount));
-        return;
-      }
-
-      const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
       try {
         const res = await fetch(path);
         if (!res.ok) throw new Error("Datei nicht gefunden");
@@ -167,7 +143,7 @@ const MemoryRound1 = () => {
     };
 
     fetchPairs();
-  }, [module, chapter, questionCount]);
+  }, [subject, questionCount, i18n.language]);
 
   useEffect(() => {
     const updateProgressMemoryTotal = async () => {
@@ -176,32 +152,15 @@ const MemoryRound1 = () => {
 
       if (!subjectKey) return;
 
+      const path = `/questions/memory/${subjectKey}_${langKey}.json`;
+
       let allPairs: MemoryPair[] = [];
-
-      if (isAllChapters) {
-        const promises = Array.from({ length: chapterCount }, (_, i) => {
-          const chapterKey = `k${i + 1}`;
-          const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
-          return fetch(path)
-            .then((res) => (res.ok ? res.json() : []))
-            .catch(() => []);
-        });
-
-        const results = await Promise.all(promises);
-        allPairs = results.flat();
-      } else {
-        const match = chapter?.match(/Kapitel (\d+)/i);
-        const chapterKey = match ? `k${match[1]}` : null;
-        if (!chapterKey) return;
-
-        const path = `/questions/memory/${subjectKey}_${chapterKey}_${langKey}.json`;
-        try {
-          const res = await fetch(path);
-          if (!res.ok) throw new Error("not found");
-          allPairs = await res.json();
-        } catch {
-          allPairs = initialPairs;
-        }
+      try {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error("not found");
+        allPairs = await res.json();
+      } catch {
+        allPairs = initialPairs;
       }
 
       const allIds = allPairs.map((pair) => pair.id);
@@ -218,7 +177,7 @@ const MemoryRound1 = () => {
     };
 
     updateProgressMemoryTotal();
-  }, [module, chapter, subject, isAllChapters, chapterCount]);
+  }, [module, chapter, subject]);
 
   const terms = useMemo(
     () =>

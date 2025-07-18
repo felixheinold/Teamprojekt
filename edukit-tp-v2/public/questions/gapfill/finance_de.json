@@ -1,0 +1,102 @@
+[
+  {
+    "id": "finance-k1-de-01",
+    "sentence": "Der Zeitwert des Geldes berücksichtigt, dass Zahlungen zu unterschiedlichen Zeitpunkten einen unterschiedlichen ___ haben.",
+    "answer": "Wert"
+  },
+  {
+    "id": "finance-k1-de-02",
+    "sentence": "Eine ___ ist eine Schuldverschreibung, bei der der Emittent dem Käufer regelmäßige Zinszahlungen schuldet.",
+    "answer": "Anleihe"
+  },
+  {
+    "id": "finance-k1-de-03",
+    "sentence": "Nullkuponanleihen zahlen während der Laufzeit keine ___ aus.",
+    "answer": "Zinsen"
+  },
+  {
+    "id": "finance-k1-de-04",
+    "sentence": "Das ___ beschreibt die Abzinsung zukünftiger Zahlungen auf den heutigen Wert.",
+    "answer": "Barwertkonzept"
+  },
+  {
+    "id": "finance-k1-de-05",
+    "sentence": "Floating Rate Notes haben ___ Zinszahlungen.",
+    "answer": "variable"
+  },
+  {
+    "id": "finance-k1-de-06",
+    "sentence": "Ein hoher ___ einer Anleihe kann auf ein höheres Ausfallrisiko hindeuten.",
+    "answer": "Risikoaufschlag"
+  },
+  {
+    "id": "finance-k1-de-07",
+    "sentence": "Die Bewertung einer Anleihe basiert auf dem erwarteten Zahlungsstrom und dem aktuellen ___ .",
+    "answer": "Zinssatz"
+  },
+  {
+    "id": "finance-k1-de-08",
+    "sentence": "Bei unterjähriger Verzinsung tritt der Effekt des ___ auf.",
+    "answer": "Zinseszins"
+  },
+  {
+    "id": "finance-k1-de-09",
+    "sentence": "Die ___ beschreibt den Zinssatz, bei dem eine Investition denselben Endwert ergibt wie bei unterjähriger Verzinsung.",
+    "answer": "effektive Jahresverzinsung"
+  },
+  {
+    "id": "finance-k1-de-10",
+    "sentence": "Ein ___ ist ein Beispiel für eine hybride Anleiheform.",
+    "answer": "Wandelanleihe"
+  },
+  {
+    "id": "finance-k1-de-11",
+    "sentence": "Ratings von Anleihen dienen der Einschätzung der ___ des Emittenten.",
+    "answer": "Bonität"
+  },
+  {
+    "id": "finance-k1-de-12",
+    "sentence": "Anleihen können durch Sicherheiten wie ___ besichert werden.",
+    "answer": "Aktienbestände"
+  },
+  {
+    "id": "finance-k1-de-13",
+    "sentence": "___ sind vertragliche Zusatzvereinbarungen bei Anleihen.",
+    "answer": "Covenants"
+  },
+  {
+    "id": "finance-k1-de-14",
+    "sentence": "Das ___ misst, wie stark eine Anleihe auf Zinsänderungen reagiert.",
+    "answer": "Durationsmaß"
+  },
+  {
+    "id": "finance-k1-de-15",
+    "sentence": "Ein Zahlungsstrom über mehrere Perioden kann mit Rentenformeln ___ werden.",
+    "answer": "bewertet"
+  },
+  {
+    "id": "finance-k1-de-16",
+    "sentence": "Eine Investition führt typischerweise zu einem anfänglichen ___.",
+    "answer": "Mittelabfluss"
+  },
+  {
+    "id": "finance-k1-de-17",
+    "sentence": "Die ___ ist die Herkunft von Mitteln für ein Unternehmen.",
+    "answer": "Finanzierung"
+  },
+  {
+    "id": "finance-k1-de-18",
+    "sentence": "Das Verhältnis von Eigenkapital zu Fremdkapital bestimmt die ___ Struktur eines Unternehmens.",
+    "answer": "Kapital"
+  },
+  {
+    "id": "finance-k1-de-19",
+    "sentence": "Bei der ___ handelt es sich um eine Entscheidung über Kapitalverwendung.",
+    "answer": "Investition"
+  },
+  {
+    "id": "finance-k1-de-20",
+    "sentence": "Ein ___ gibt an, wie viel zukünftige Zahlungen heute wert sind.",
+    "answer": "Barwert"
+  }
+]

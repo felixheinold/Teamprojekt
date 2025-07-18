@@ -1,0 +1,102 @@
+[
+  {
+    "id": "balance-k2-de-m1",
+    "term": "Kaufmann (§1 HGB)",
+    "definition": "Wer ein Handelsgewerbe betreibt, gilt als Kaufmann nach Handelsrecht."
+  },
+  {
+    "id": "balance-k2-de-m2",
+    "term": "GoB (Grundsätze ordnungsgemäßer Buchführung)",
+    "definition": "Dienen als Auslegungshilfe zur zweckgerechten Bilanzierung."
+  },
+  {
+    "id": "balance-k2-de-m3",
+    "term": "Vorsichtsprinzip",
+    "definition": "Betont Verluste und verbietet unrealistische Erträge im HGB."
+  },
+  {
+    "id": "balance-k2-de-m4",
+    "term": "Imparitätsprinzip",
+    "definition": "Verlangt die Berücksichtigung vorhersehbarer Verluste."
+  },
+  {
+    "id": "balance-k2-de-m5",
+    "term": "AHK-Prinzip",
+    "definition": "Aktiva dürfen höchstens zu Anschaffungs- oder Herstellungskosten abzüglich AfA bewertet werden."
+  },
+  {
+    "id": "balance-k2-de-m6",
+    "term": "Niederstwertprinzip",
+    "definition": "Umlaufvermögen ist zum niedrigeren von Anschaffungs- oder Zeitwert zu bewerten."
+  },
+  {
+    "id": "balance-k2-de-m7",
+    "term": "Einzelbewertungsprinzip",
+    "definition": "Jede Bilanzposition ist einzeln zu bewerten – Saldierungen sind unzulässig."
+  },
+  {
+    "id": "balance-k2-de-m8",
+    "term": "Realisationsprinzip",
+    "definition": "Gewinne dürfen erst bei wirtschaftlicher Realisierung ausgewiesen werden."
+  },
+  {
+    "id": "balance-k2-de-m9",
+    "term": "Periodenabgrenzung",
+    "definition": "Aufwand und Ertrag sind unabhängig vom Zahlungszeitpunkt korrekt der Periode zuzuordnen."
+  },
+  {
+    "id": "balance-k2-de-m10",
+    "term": "GoD (Dokumentation)",
+    "definition": "Regeln die formellen und inhaltlichen Anforderungen an buchführungspflichtige Aufzeichnungen."
+  },
+  {
+    "id": "balance-k2-de-m11",
+    "term": "Handelsbilanz",
+    "definition": "Wird nach HGB aufgestellt und dient primär Informations- und Rechenschaftszwecken."
+  },
+  {
+    "id": "balance-k2-de-m12",
+    "term": "Steuerbilanz",
+    "definition": "Erfolgt auf Basis steuerlicher Vorschriften zur Ermittlung der Steuerlast."
+  },
+  {
+    "id": "balance-k2-de-m13",
+    "term": "Rückstellung",
+    "definition": "Verbindlichkeit, deren Höhe oder Fälligkeit ungewiss ist."
+  },
+  {
+    "id": "balance-k2-de-m14",
+    "term": "Aktivierungsverbot",
+    "definition": "Untersagt die Bilanzierung bestimmter immaterieller Vermögenswerte."
+  },
+  {
+    "id": "balance-k2-de-m15",
+    "term": "Aktivierungswahlrecht",
+    "definition": "Erlaubt, bestimmte Posten (z. B. Entwicklungskosten) zu bilanzieren – aber nicht verpflichtend."
+  },
+  {
+    "id": "balance-k2-de-m16",
+    "term": "Bilanzidentität",
+    "definition": "Eröffnungsbilanz des Folgejahres muss mit der Schlussbilanz des Vorjahres übereinstimmen."
+  },
+  {
+    "id": "balance-k2-de-m17",
+    "term": "Inventur",
+    "definition": "Körperliche, mengenmäßige und wertmäßige Erfassung aller Vermögensgegenstände."
+  },
+  {
+    "id": "balance-k2-de-m18",
+    "term": "Anschaffungskosten",
+    "definition": "Preis des Guts inkl. Nebenkosten abzüglich Preisnachlässe."
+  },
+  {
+    "id": "balance-k2-de-m19",
+    "term": "Abschreibung",
+    "definition": "Wertminderung von Vermögensgegenständen über die Zeit."
+  },
+  {
+    "id": "balance-k2-de-m20",
+    "term": "Inventar",
+    "definition": "Ausführliches Verzeichnis aller Vermögenswerte und Schulden eines Unternehmens."
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "energy-k2-en-m1",
+    "term": "Security of supply",
+    "definition": "A key goal of energy policy according to §1 EnWG."
+  },
+  {
+    "id": "energy-k2-en-m2",
+    "term": "Renewable energies",
+    "definition": "Energy sources such as wind, solar and biomass with low emissions."
+  },
+  {
+    "id": "energy-k2-en-m3",
+    "term": "CO₂ emission factor",
+    "definition": "Metric for evaluating greenhouse gas emissions per kWh of electricity."
+  },
+  {
+    "id": "energy-k2-en-m4",
+    "term": "Photovoltaics",
+    "definition": "Technology for directly converting sunlight into electricity."
+  },
+  {
+    "id": "energy-k2-en-m5",
+    "term": "80% target",
+    "definition": "Target share of renewables in gross electricity consumption by 2030 (Germany)."
+  },
+  {
+    "id": "energy-k2-en-m6",
+    "term": "Greenhouse gas neutrality",
+    "definition": "Germany’s target for achieving net-zero emissions by 2045."
+  },
+  {
+    "id": "energy-k2-en-m7",
+    "term": "Merit-order effect",
+    "definition": "Renewables displace more expensive power plants due to lower marginal costs."
+  },
+  {
+    "id": "energy-k2-en-m8",
+    "term": "Fluctuation",
+    "definition": "Challenge caused by weather-dependent generation from wind and solar."
+  },
+  {
+    "id": "energy-k2-en-m9",
+    "term": "EEG",
+    "definition": "Law defining expansion targets and subsidies for renewable energies in Germany."
+  },
+  {
+    "id": "energy-k2-en-m10",
+    "term": "Electricity exchange price",
+    "definition": "Often reduced by renewable feed-in due to the merit-order effect."
+  },
+  {
+    "id": "energy-k2-en-m11",
+    "term": "Battery storage",
+    "definition": "Important for grid stability through short-term balancing power."
+  },
+  {
+    "id": "energy-k2-en-m12",
+    "term": "Mineral oil",
+    "definition": "Main energy source in Germany’s final energy consumption (as of 2023)."
+  },
+  {
+    "id": "energy-k2-en-m13",
+    "term": "Volatility",
+    "definition": "Characteristic of renewable generation with fluctuating feed-in."
+  },
+  {
+    "id": "energy-k2-en-m14",
+    "term": "Nuclear energy",
+    "definition": "Not classified as renewable – politically controversial."
+  },
+  {
+    "id": "energy-k2-en-m15",
+    "term": "EEG surcharge",
+    "definition": "Financed by electricity customers to support renewable energy expansion."
+  },
+  {
+    "id": "energy-k2-en-m16",
+    "term": "Kilowatt-hour",
+    "definition": "Unit of measurement for electrical energy."
+  },
+  {
+    "id": "energy-k2-en-m17",
+    "term": "Grid expansion",
+    "definition": "Necessary to integrate decentralized renewable generation."
+  },
+  {
+    "id": "energy-k2-en-m18",
+    "term": "Demand-side management",
+    "definition": "Strategy for stabilizing the grid by controlling electricity consumption."
+  },
+  {
+    "id": "energy-k2-en-m19",
+    "term": "Carbon pricing",
+    "definition": "Instrument to reduce greenhouse gas emissions in the energy sector."
+  },
+  {
+    "id": "energy-k2-en-m20",
+    "term": "Sector coupling",
+    "definition": "Integration of electricity, heat, transport and industry for the energy transition."
+  }
+]

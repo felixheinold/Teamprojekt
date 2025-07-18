@@ -1,0 +1,282 @@
+[
+  {
+    "id": "informatics-k6-de-q1",
+    "content": "1. Was ist ein zentrales Ziel von CRM-Systemen?",
+    "answers": [
+      {
+        "text": "a) Steuerung von Produktion und Logistik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Aufbau und Pflege von Kundenprofilen zur Optimierung der Kundenbeziehung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Datenanalyse im Controlling",
+        "is_correct": false
+      },
+      {
+        "text": "d) Automatisierung interner Verwaltungsprozesse",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q2",
+    "content": "2. Was ist KEIN Bestandteil der CRM-Architektur?",
+    "answers": [
+      {
+        "text": "a) Operatives CRM",
+        "is_correct": false
+      },
+      {
+        "text": "b) Analytisches CRM",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kommunikatives CRM",
+        "is_correct": false
+      },
+      {
+        "text": "d) Strategisches CRM",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q3",
+    "content": "3. Was ist typischerweise ein Aufgabenfeld des operativen CRM?",
+    "answers": [
+      {
+        "text": "a) Churn Prediction",
+        "is_correct": false
+      },
+      {
+        "text": "b) Leadmanagement im Vertrieb",
+        "is_correct": true
+      },
+      {
+        "text": "c) Dashboard-Erstellung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Data Mining",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q4",
+    "content": "4. Welche Aktivität gehört zum analytischen CRM?",
+    "answers": [
+      {
+        "text": "a) Kundenbeschwerde-Management",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kundenberatung im Call Center",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kundenprofilierung und Segmentierung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kampagnenplanung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q5",
+    "content": "5. Wofür steht die Abkürzung CRM?",
+    "answers": [
+      {
+        "text": "a) Customer Retail Management",
+        "is_correct": false
+      },
+      {
+        "text": "b) Customer Resource Management",
+        "is_correct": false
+      },
+      {
+        "text": "c) Customer Relationship Management",
+        "is_correct": true
+      },
+      {
+        "text": "d) Customer Reporting Model",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q6",
+    "content": "6. Was ist Business Intelligence & Analytics (BI&A)?",
+    "answers": [
+      {
+        "text": "a) Eine CRM-Methode zur Kundenbindung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Begriff für operative ERP-Systeme",
+        "is_correct": false
+      },
+      {
+        "text": "c) Systeme zur Analyse von Geschäftsdaten zur Entscheidungsunterstützung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein Kommunikationstool für Sales",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q7",
+    "content": "7. Was ist ein Data Warehouse?",
+    "answers": [
+      {
+        "text": "a) Eine Plattform zur Datenvisualisierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine operative Echtzeitdatenbank",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine zentrale, konsistente Datenbasis für Analysezwecke",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine Kundenmanagementsoftware",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q8",
+    "content": "8. Worin liegt der Unterschied zwischen Data Mart und Data Warehouse?",
+    "answers": [
+      {
+        "text": "a) Data Mart enthält externe Daten, Warehouse nur interne",
+        "is_correct": false
+      },
+      {
+        "text": "b) Data Mart ist kleinerer, thematisch fokussierter Teilausschnitt eines Data Warehouses",
+        "is_correct": true
+      },
+      {
+        "text": "c) Data Mart ist der rechtliche Rahmen des Data Warehouses",
+        "is_correct": false
+      },
+      {
+        "text": "d) Es gibt keinen Unterschied",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q9",
+    "content": "9. Was ist ein Data Lake?",
+    "answers": [
+      {
+        "text": "a) Ein Pool externer Datenlieferanten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Lagerort für strukturierte, standardisierte Daten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein Speicher für große Mengen unstrukturierter Daten im Rohformat",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine BI-Auswertungssoftware",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k6-de-q10",
+    "content": "10. Was ist das Ziel von BI&A-Systemen laut Definition?",
+    "answers": [
+      {
+        "text": "a) Erstellung von Social Media Kampagnen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verbesserung interner Kommunikation",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verbesserung des Marktverständnisses und schnellere Entscheidungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Planung von Steuerzahlungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k6",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "CRM & BI&A Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

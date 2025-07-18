@@ -1,0 +1,127 @@
+[
+  {
+    "id": "management-k1-en-m1",
+    "term": "Control",
+    "definition": "Objective management function for monitoring and steering business processes."
+  },
+  {
+    "id": "management-k1-en-m2",
+    "term": "Personnel management",
+    "definition": "Person-related management function for leading and motivating employees."
+  },
+  {
+    "id": "management-k1-en-m3",
+    "term": "Input",
+    "definition": "Resource utilization that should be optimized according to the economic principle."
+  },
+  {
+    "id": "management-k1-en-m4",
+    "term": "Non-delegation rule",
+    "definition": "Leadership decisions must be made by the company’s top management itself."
+  },
+  {
+    "id": "management-k1-en-m5",
+    "term": "Outcomes",
+    "definition": "Element in the action structure model alongside goals and measures."
+  },
+  {
+    "id": "management-k1-en-m6",
+    "term": "Company value",
+    "definition": "Central goal in the shareholder approach for increasing owner value."
+  },
+  {
+    "id": "management-k1-en-m7",
+    "term": "Stakeholders",
+    "definition": "Interest groups whose concerns are to be considered in the stakeholder approach."
+  },
+  {
+    "id": "management-k1-en-m8",
+    "term": "Suppliers",
+    "definition": "Key external stakeholders alongside customers and employees."
+  },
+  {
+    "id": "management-k1-en-m9",
+    "term": "Return on total capital",
+    "definition": "Success metric for measuring the return on invested capital."
+  },
+  {
+    "id": "management-k1-en-m10",
+    "term": "Probability",
+    "definition": "Basis for decisions under risk in decision trees."
+  },
+  {
+    "id": "management-k1-en-m11",
+    "term": "Uncertainty",
+    "definition": "Decision situation without known probabilities of occurrence."
+  },
+  {
+    "id": "management-k1-en-m12",
+    "term": "(μ,σ) rule",
+    "definition": "Decision rule that considers both expected value and risk simultaneously."
+  },
+  {
+    "id": "management-k1-en-m13",
+    "term": "Utility analysis",
+    "definition": "Additive model for evaluating multiple alternatives based on weighted goal achievement."
+  },
+  {
+    "id": "management-k1-en-m14",
+    "term": "Preference independence",
+    "definition": "Requirement for goals in the additive model to avoid distortions."
+  },
+  {
+    "id": "management-k1-en-m15",
+    "term": "Hurwicz rule",
+    "definition": "Decision rule that weights optimistic and pessimistic outcomes."
+  },
+  {
+    "id": "management-k1-en-m16",
+    "term": "St. Petersburg paradox",
+    "definition": "Example illustrating the problem of infinite expected values under risk."
+  },
+  {
+    "id": "management-k1-en-m17",
+    "term": "Maximin rule",
+    "definition": "Decision rule that considers the worst possible outcome of an alternative."
+  },
+  {
+    "id": "management-k1-en-m18",
+    "term": "Wealth maximization",
+    "definition": "Target value of shareholder value from an owner’s perspective."
+  },
+  {
+    "id": "management-k1-en-m19",
+    "term": "Laplace rule",
+    "definition": "Decision rule that assumes equal probabilities for environmental states."
+  },
+  {
+    "id": "management-k1-en-m20",
+    "term": "Goal weighting",
+    "definition": "Component of utility analysis to differentiate between the importance of goals."
+  },
+  {
+    "id": "management-k1-en-m21",
+    "term": "Bandwidth effect",
+    "definition": "Problem in the additive model due to distorted weighting with different scales."
+  },
+  {
+    "id": "management-k1-en-m22",
+    "term": "μ rule",
+    "definition": "Decision under risk based only on the expected value."
+  },
+  {
+    "id": "management-k1-en-m23",
+    "term": "Stock price",
+    "definition": "Market indicator for company value in the shareholder approach."
+  },
+  {
+    "id": "management-k1-en-m24",
+    "term": "Multi-criteria decision",
+    "definition": "Decision situation with multiple, often conflicting goals."
+  },
+  {
+    "id": "management-k1-en-m25",
+    "term": "Erich Gutenberg",
+    "definition": "Co-founder of classical management theory alongside Henri Fayol."
+  }
+]

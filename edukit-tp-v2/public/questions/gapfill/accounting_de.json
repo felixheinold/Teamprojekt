@@ -1,0 +1,102 @@
+[
+  {
+    "id": "accounting-k1-de-01",
+    "sentence": "Das ___ Rechnungswesen richtet sich an externe Interessenten wie Kapitalgeber oder den Staat.",
+    "answer": "externe"
+  },
+  {
+    "id": "accounting-k1-de-02",
+    "sentence": "Im internen Rechnungswesen dürfen gesetzliche ___ verlassen werden.",
+    "answer": "Rechnungslegungsstandards"
+  },
+  {
+    "id": "accounting-k1-de-03",
+    "sentence": "___ Kosten treten nur im internen Rechnungswesen auf.",
+    "answer": "Kalkulatorische"
+  },
+  {
+    "id": "accounting-k1-de-04",
+    "sentence": "Die Bilanz zeigt eine Momentaufnahme der ___ Situation eines Unternehmens.",
+    "answer": "wirtschaftlichen"
+  },
+  {
+    "id": "accounting-k1-de-05",
+    "sentence": "___ stellen bestehende Verpflichtungen gegenüber externen Anspruchsgruppen dar.",
+    "answer": "Schulden"
+  },
+  {
+    "id": "accounting-k1-de-06",
+    "sentence": "Das Eigenkapital ergibt sich aus der Differenz zwischen Vermögen und ___ .",
+    "answer": "Schulden"
+  },
+  {
+    "id": "accounting-k1-de-07",
+    "sentence": "Die Gewinn- und Verlustrechnung misst den wirtschaftlichen Erfolg über eine ___ .",
+    "answer": "Periode"
+  },
+  {
+    "id": "accounting-k1-de-08",
+    "sentence": "Das Matching Principle ordnet Aufwendungen den ___ zu.",
+    "answer": "Umsatzerlösen"
+  },
+  {
+    "id": "accounting-k1-de-09",
+    "sentence": "Die Bewertung der Umsatzerlöse erfolgt nach dem ___ .",
+    "answer": "Realisationsprinzip"
+  },
+  {
+    "id": "accounting-k1-de-10",
+    "sentence": "Die lineare Abschreibung verteilt die ___ gleichmäßig über die Perioden.",
+    "answer": "Abschreibungen"
+  },
+  {
+    "id": "accounting-k1-de-11",
+    "sentence": "Ein Unternehmen aktiviert eine Ausgabe, wenn diese über mehrere ___ genutzt wird.",
+    "answer": "Perioden"
+  },
+  {
+    "id": "accounting-k1-de-12",
+    "sentence": "Das Vorsichtsprinzip führt dazu, dass viele immaterielle Werte nicht in der ___ erscheinen.",
+    "answer": "Bilanz"
+  },
+  {
+    "id": "accounting-k1-de-13",
+    "sentence": "Kalkulatorische Zinsen berücksichtigen die Opportunitätskosten des ___ .",
+    "answer": "Eigenkapitals"
+  },
+  {
+    "id": "accounting-k1-de-14",
+    "sentence": "Kalkulatorische Abschreibungen basieren oft auf den ___ .",
+    "answer": "Wiederbeschaffungskosten"
+  },
+  {
+    "id": "accounting-k1-de-15",
+    "sentence": "___ ermöglichen die Umsetzung von Prinzipien im Rechnungswesen.",
+    "answer": "Bilanz und GuV"
+  },
+  {
+    "id": "accounting-k1-de-16",
+    "sentence": "Ein Aktivposten muss zukünftigen wirtschaftlichen Nutzen bringen und in ___ messbar sein.",
+    "answer": "Geldeinheiten"
+  },
+  {
+    "id": "accounting-k1-de-17",
+    "sentence": "Das Worksheet Approach dient zur Trennung von ___ und Aufwendungen.",
+    "answer": "Zahlungen"
+  },
+  {
+    "id": "accounting-k1-de-18",
+    "sentence": "Die Konsistenzregel besagt, dass Unternehmen nicht beliebig zwischen ___ wechseln dürfen.",
+    "answer": "Abschreibungsmethoden"
+  },
+  {
+    "id": "accounting-k1-de-19",
+    "sentence": "Die Kapitalflussrechnung zeigt Veränderungen im ___ über eine Periode.",
+    "answer": "Zahlungsfluss"
+  },
+  {
+    "id": "accounting-k1-de-20",
+    "sentence": "Die Bewertung von Vorräten erfolgt häufig zu ___ oder niedrigeren Werten.",
+    "answer": "Anschaffungskosten"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "planning-k1-de-01",
+    "sentence": "Die ___ ist ein zentrales Element der integrierten Produktionsplanung zur Organisation der Abläufe.",
+    "answer": "Strukturplanung"
+  },
+  {
+    "id": "planning-k1-de-02",
+    "sentence": "Bei der ___ werden Daten zur aktuellen Fabrik erfasst und bewertet.",
+    "answer": "Datenerhebung"
+  },
+  {
+    "id": "planning-k1-de-03",
+    "sentence": "Die ___ dient der Identifikation von Verschwendungen im Wertstrom.",
+    "answer": "Wertstromanalyse"
+  },
+  {
+    "id": "planning-k1-de-04",
+    "sentence": "Ein ___ visualisiert Transportmengen zwischen Bereichen.",
+    "answer": "Sankey-Diagramm"
+  },
+  {
+    "id": "planning-k1-de-05",
+    "sentence": "Zur Planung der Montage wird häufig ein ___ verwendet.",
+    "answer": "Montagevorranggraph"
+  },
+  {
+    "id": "planning-k1-de-06",
+    "sentence": "Das Ziel der ___ ist die Transformation des Groblayouts in ein Feinlayout.",
+    "answer": "Detailplanung"
+  },
+  {
+    "id": "planning-k1-de-07",
+    "sentence": "Ein ___ wird genutzt, um Anordnung und Bewegung der Produktionseinheiten zu analysieren.",
+    "answer": "Spaghetti-Diagramm"
+  },
+  {
+    "id": "planning-k1-de-08",
+    "sentence": "Die ___ stellt eine Kombination aus quantitativer und qualitativer Planung dar.",
+    "answer": "Produktionsplanung"
+  },
+  {
+    "id": "planning-k1-de-09",
+    "sentence": "Die ___ zeigt auf, wie oft bestimmte Produkte in bestimmten Zeiträumen benötigt werden.",
+    "answer": "XYZ-Analyse"
+  },
+  {
+    "id": "planning-k1-de-10",
+    "sentence": "___ helfen bei der automatisierten Entscheidungsunterstützung innerhalb der PPS.",
+    "answer": "IT-Systeme"
+  },
+  {
+    "id": "planning-k1-de-11",
+    "sentence": "Im Rahmen der ___ werden Anforderungen für Produktionsstandorte abgeleitet.",
+    "answer": "Strukturdimensionierung"
+  },
+  {
+    "id": "planning-k1-de-12",
+    "sentence": "Ein ___ ordnet Produkte nach Bedeutung und Verbrauch.",
+    "answer": "ABC-Analyse"
+  },
+  {
+    "id": "planning-k1-de-13",
+    "sentence": "Die ___ simuliert Produktionsabläufe zur Validierung der Planung.",
+    "answer": "Ablaufsimulation"
+  },
+  {
+    "id": "planning-k1-de-14",
+    "sentence": "Das ___ zeigt die Idealstruktur einer Produktion ohne Restriktionen.",
+    "answer": "ideale Layout"
+  },
+  {
+    "id": "planning-k1-de-15",
+    "sentence": "Ein ___ unterstützt durch digitale Visualisierung beim Planungsprozess.",
+    "answer": "Live-Diagramm"
+  },
+  {
+    "id": "planning-k1-de-16",
+    "sentence": "Die ___ ist ein Kriterium zur Wahl geeigneter Montagesysteme.",
+    "answer": "Automatisierungsgrad"
+  },
+  {
+    "id": "planning-k1-de-17",
+    "sentence": "Ein ___ beschreibt die logischen Abhängigkeiten von Arbeitsschritten.",
+    "answer": "Montagevorranggraph"
+  },
+  {
+    "id": "planning-k1-de-18",
+    "sentence": "Die ___ ist entscheidend für die Auswahl passender Betriebsmittel.",
+    "answer": "Flächenbestimmung"
+  },
+  {
+    "id": "planning-k1-de-19",
+    "sentence": "Die ___ fasst Anforderungen an Transporttechnik innerhalb der Anlage zusammen.",
+    "answer": "Fördertechnik"
+  },
+  {
+    "id": "planning-k1-de-20",
+    "sentence": "Bei der ___ wird die reale Anordnung von Objekten in der Produktion festgelegt.",
+    "answer": "Feinlayout"
+  }
+]

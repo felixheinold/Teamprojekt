@@ -1,0 +1,102 @@
+[
+  {
+    "id": "balance-k1-de-01",
+    "sentence": "Der Jahresabschluss besteht aus Bilanz, GuV und gegebenenfalls einem ___ .",
+    "answer": "Anhang"
+  },
+  {
+    "id": "balance-k1-de-02",
+    "sentence": "Der Grundsatz der ___ ist zentraler Bestandteil ordnungsgemäßer Buchführung.",
+    "answer": "Vorsicht"
+  },
+  {
+    "id": "balance-k1-de-03",
+    "sentence": "Das Handelsgesetzbuch (HGB) ist in insgesamt ___ Bücher gegliedert.",
+    "answer": "fünf"
+  },
+  {
+    "id": "balance-k1-de-04",
+    "sentence": "Das ___ regelt die handelsrechtliche Rechnungslegung in Deutschland.",
+    "answer": "HGB"
+  },
+  {
+    "id": "balance-k1-de-05",
+    "sentence": "Der Jahresabschluss bildet die Grundlage für die ___ des Periodenerfolgs.",
+    "answer": "Ermittlung"
+  },
+  {
+    "id": "balance-k1-de-06",
+    "sentence": "Der Grundsatz der ___ verlangt eine vollständige Erfassung aller Vermögenswerte.",
+    "answer": "Vollständigkeit"
+  },
+  {
+    "id": "balance-k1-de-07",
+    "sentence": "Nach dem ___ dürfen Gewinne erst bei Realisierung ausgewiesen werden.",
+    "answer": "Realisationsprinzip"
+  },
+  {
+    "id": "balance-k1-de-08",
+    "sentence": "Die ___ Inventur erfasst Vermögenswerte zum Bilanzstichtag.",
+    "answer": "Stichtags"
+  },
+  {
+    "id": "balance-k1-de-09",
+    "sentence": "Nach dem Niederstwertprinzip ist der ___ Wert für die Bilanzierung maßgeblich.",
+    "answer": "niedrigere"
+  },
+  {
+    "id": "balance-k1-de-10",
+    "sentence": "Eine Bilanz ist in ___ und Passiva unterteilt.",
+    "answer": "Aktiva"
+  },
+  {
+    "id": "balance-k1-de-11",
+    "sentence": "___ Kapital bezeichnet das Fremdkapital eines Unternehmens.",
+    "answer": "Verbindliches"
+  },
+  {
+    "id": "balance-k1-de-12",
+    "sentence": "Die Bilanzidentität verlangt, dass Anfangs- und ___ übereinstimmen.",
+    "answer": "Schlussbilanz"
+  },
+  {
+    "id": "balance-k1-de-13",
+    "sentence": "Das HGB enthält im dritten Buch die Vorschriften über ___ .",
+    "answer": "Handelsbücher"
+  },
+  {
+    "id": "balance-k1-de-14",
+    "sentence": "Die Grundsätze ordnungsgemäßer Inventur (GoI) betreffen die ___ .",
+    "answer": "Bestandsaufnahme"
+  },
+  {
+    "id": "balance-k1-de-15",
+    "sentence": "Die ___ Bilanzkontinuität verlangt die Beibehaltung der Gliederung.",
+    "answer": "formelle"
+  },
+  {
+    "id": "balance-k1-de-16",
+    "sentence": "Das Anschaffungs- und ___ kostenprinzip begrenzt die Wertansätze.",
+    "answer": "Herstellungs"
+  },
+  {
+    "id": "balance-k1-de-17",
+    "sentence": "Das ___ Prinzip verhindert den Ausweis nicht realisierter Gewinne.",
+    "answer": "Imparitäts"
+  },
+  {
+    "id": "balance-k1-de-18",
+    "sentence": "Der Grundsatz der ___ verlangt sachgerechte Bewertung ohne Willkür.",
+    "answer": "Richtigkeit"
+  },
+  {
+    "id": "balance-k1-de-19",
+    "sentence": "Die GoB umfassen auch die Grundsätze ordnungsgemäßer ___ .",
+    "answer": "Dokumentation"
+  },
+  {
+    "id": "balance-k1-de-20",
+    "sentence": "Die GoBil definieren Anforderungen an die ___ und materielle Bilanzierung.",
+    "answer": "formelle"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "logistics-k2-en-m1",
+    "term": "Layout Planning",
+    "definition": "Targeted arrangement of layout elements to optimize logistical objectives."
+  },
+  {
+    "id": "logistics-k2-en-m2",
+    "term": "Production Layout",
+    "definition": "Layout type with fixed workflows and short transport paths."
+  },
+  {
+    "id": "logistics-k2-en-m3",
+    "term": "Fixed-Position Layout",
+    "definition": "Layout where the product remains stationary and resources move."
+  },
+  {
+    "id": "logistics-k2-en-m4",
+    "term": "Process-Oriented Layout",
+    "definition": "Layout with individual transport paths between functional areas."
+  },
+  {
+    "id": "logistics-k2-en-m5",
+    "term": "Cellular Layout",
+    "definition": "Grouping of similar products in production cells."
+  },
+  {
+    "id": "logistics-k2-en-m6",
+    "term": "Quadratic Assignment Problem (QAP)",
+    "definition": "Mathematical model for optimizing the arrangement of layout elements based on transport costs."
+  },
+  {
+    "id": "logistics-k2-en-m7",
+    "term": "Distance Matrix",
+    "definition": "Matrix containing distances between possible positions of layout elements."
+  },
+  {
+    "id": "logistics-k2-en-m8",
+    "term": "Frequency Matrix",
+    "definition": "Matrix indicating how often two layout elements interact."
+  },
+  {
+    "id": "logistics-k2-en-m9",
+    "term": "Pairwise Exchange Method",
+    "definition": "Heuristic for solving the QAP by swapping positions of layout elements for improvement."
+  },
+  {
+    "id": "logistics-k2-en-m10",
+    "term": "Layout Element (LE)",
+    "definition": "An element to be placed in the layout, e.g., a machine or workstation."
+  },
+  {
+    "id": "logistics-k2-en-m11",
+    "term": "Material Flow Orientation",
+    "definition": "Designing the layout to minimize transport distances."
+  },
+  {
+    "id": "logistics-k2-en-m12",
+    "term": "Flow Production",
+    "definition": "Production along a line with a fixed sequence of operations."
+  },
+  {
+    "id": "logistics-k2-en-m13",
+    "term": "Flexibility",
+    "definition": "The layout’s ability to adapt to changes in product or volume."
+  },
+  {
+    "id": "logistics-k2-en-m14",
+    "term": "Throughput Time",
+    "definition": "Time span from the start to completion of a product within the layout."
+  },
+  {
+    "id": "logistics-k2-en-m15",
+    "term": "Equipment Arrangement",
+    "definition": "Placement of technical facilities within the production area."
+  },
+  {
+    "id": "logistics-k2-en-m16",
+    "term": "Job Shop Production",
+    "definition": "Layout elements grouped by function; high flexibility but long paths."
+  },
+  {
+    "id": "logistics-k2-en-m17",
+    "term": "Transport Effort",
+    "definition": "Measure of material or product movements within the layout."
+  },
+  {
+    "id": "logistics-k2-en-m18",
+    "term": "Service System Layout",
+    "definition": "Layout type for services, e.g., hair salons or banks."
+  },
+  {
+    "id": "logistics-k2-en-m19",
+    "term": "Transport Costs",
+    "definition": "Costs incurred due to internal material movements."
+  },
+  {
+    "id": "logistics-k2-en-m20",
+    "term": "QAP Optimization Objective",
+    "definition": "Minimization of the sum of distance × frequency between layout element pairs."
+  }
+]

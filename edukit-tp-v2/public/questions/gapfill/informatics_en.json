@@ -1,0 +1,102 @@
+[
+  {
+    "id": "informatics-k1-en-01",
+    "sentence": "A CRM system is used to build ___ with customers.",
+    "answer": "relationships"
+  },
+  {
+    "id": "informatics-k1-en-02",
+    "sentence": "The ___ CRM analyzes customer data for decision support.",
+    "answer": "analytical"
+  },
+  {
+    "id": "informatics-k1-en-03",
+    "sentence": "___ CRM includes all communication channels with customers.",
+    "answer": "Communicative"
+  },
+  {
+    "id": "informatics-k1-en-04",
+    "sentence": "An ___ is a system that perceives its environment and reacts to it.",
+    "answer": "agent"
+  },
+  {
+    "id": "informatics-k1-en-05",
+    "sentence": "The PEAS model describes performance, environment, ___ and sensors.",
+    "answer": "actuators"
+  },
+  {
+    "id": "informatics-k1-en-06",
+    "sentence": "In ___ learning, training data with known target values is used.",
+    "answer": "supervised"
+  },
+  {
+    "id": "informatics-k1-en-07",
+    "sentence": "A decision tree can be created using the ___ algorithm.",
+    "answer": "ID3"
+  },
+  {
+    "id": "informatics-k1-en-08",
+    "sentence": "Digital platforms promote ___ between producers and consumers.",
+    "answer": "exchange"
+  },
+  {
+    "id": "informatics-k1-en-09",
+    "sentence": "A ___ market brings together at least two user groups.",
+    "answer": "two-sided"
+  },
+  {
+    "id": "informatics-k1-en-10",
+    "sentence": "Accessibility is a key goal in ___ systems.",
+    "answer": "interactive"
+  },
+  {
+    "id": "informatics-k1-en-11",
+    "sentence": "A prosumer is both a consumer and a ___ .",
+    "answer": "producer"
+  },
+  {
+    "id": "informatics-k1-en-12",
+    "sentence": "The term ___ refers to the ability to process natural language.",
+    "answer": "natural language processing"
+  },
+  {
+    "id": "informatics-k1-en-13",
+    "sentence": "___ refers to the user experience in interacting with a system.",
+    "answer": "User Experience"
+  },
+  {
+    "id": "informatics-k1-en-14",
+    "sentence": "An ___ CRM system improves the efficiency of operational processes.",
+    "answer": "operational"
+  },
+  {
+    "id": "informatics-k1-en-15",
+    "sentence": "AI stands for ___ intelligence.",
+    "answer": "artificial"
+  },
+  {
+    "id": "informatics-k1-en-16",
+    "sentence": "___ refers to the understanding and implementation of human emotions.",
+    "answer": "Affective computing"
+  },
+  {
+    "id": "informatics-k1-en-17",
+    "sentence": "The ___ describes the interaction between humans and machines.",
+    "answer": "interface"
+  },
+  {
+    "id": "informatics-k1-en-18",
+    "sentence": "___ systems are transforming our daily lives through intelligent functions.",
+    "answer": "AI-based"
+  },
+  {
+    "id": "informatics-k1-en-19",
+    "sentence": "In the platform economy, ___ mass is a key success factor.",
+    "answer": "critical"
+  },
+  {
+    "id": "informatics-k1-en-20",
+    "sentence": "___ is a subfield of AI for interpreting visual information.",
+    "answer": "Computer Vision"
+  }
+]

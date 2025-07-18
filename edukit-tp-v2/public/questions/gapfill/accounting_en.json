@@ -1,0 +1,102 @@
+[
+  {
+    "id": "accounting-k1-en-01",
+    "sentence": "___ accounting is aimed at external stakeholders such as investors or the state.",
+    "answer": "External"
+  },
+  {
+    "id": "accounting-k1-en-02",
+    "sentence": "In internal accounting, legal ___ may be deviated from.",
+    "answer": "accounting standards"
+  },
+  {
+    "id": "accounting-k1-en-03",
+    "sentence": "___ costs only occur in internal accounting.",
+    "answer": "Imputed"
+  },
+  {
+    "id": "accounting-k1-en-04",
+    "sentence": "The balance sheet shows a snapshot of a company’s ___ situation.",
+    "answer": "financial"
+  },
+  {
+    "id": "accounting-k1-en-05",
+    "sentence": "___ represent existing obligations to external stakeholders.",
+    "answer": "Liabilities"
+  },
+  {
+    "id": "accounting-k1-en-06",
+    "sentence": "Equity results from the difference between assets and ___ .",
+    "answer": "liabilities"
+  },
+  {
+    "id": "accounting-k1-en-07",
+    "sentence": "The income statement measures financial performance over a ___ .",
+    "answer": "period"
+  },
+  {
+    "id": "accounting-k1-en-08",
+    "sentence": "The matching principle assigns expenses to the related ___ .",
+    "answer": "revenues"
+  },
+  {
+    "id": "accounting-k1-en-09",
+    "sentence": "Revenue recognition follows the ___ principle.",
+    "answer": "realization"
+  },
+  {
+    "id": "accounting-k1-en-10",
+    "sentence": "Straight-line depreciation allocates ___ evenly over periods.",
+    "answer": "depreciation"
+  },
+  {
+    "id": "accounting-k1-en-11",
+    "sentence": "A company capitalizes an expense if it is used over multiple ___ .",
+    "answer": "periods"
+  },
+  {
+    "id": "accounting-k1-en-12",
+    "sentence": "The prudence principle results in many intangible assets not appearing on the ___ .",
+    "answer": "balance sheet"
+  },
+  {
+    "id": "accounting-k1-en-13",
+    "sentence": "Imputed interest considers the opportunity cost of ___ .",
+    "answer": "equity"
+  },
+  {
+    "id": "accounting-k1-en-14",
+    "sentence": "Imputed depreciation is often based on ___ costs.",
+    "answer": "replacement"
+  },
+  {
+    "id": "accounting-k1-en-15",
+    "sentence": "___ enable the implementation of accounting principles.",
+    "answer": "Balance sheet and income statement"
+  },
+  {
+    "id": "accounting-k1-en-16",
+    "sentence": "An asset must provide future economic benefits and be measurable in ___ .",
+    "answer": "monetary units"
+  },
+  {
+    "id": "accounting-k1-en-17",
+    "sentence": "The worksheet approach serves to separate ___ and expenses.",
+    "answer": "payments"
+  },
+  {
+    "id": "accounting-k1-en-18",
+    "sentence": "The consistency rule states that companies may not arbitrarily switch between ___ .",
+    "answer": "depreciation methods"
+  },
+  {
+    "id": "accounting-k1-en-19",
+    "sentence": "The cash flow statement shows changes in ___ over a period.",
+    "answer": "cash flow"
+  },
+  {
+    "id": "accounting-k1-en-20",
+    "sentence": "Inventories are often valued at acquisition cost or ___ value.",
+    "answer": "lower"
+  }
+]

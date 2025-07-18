@@ -1,0 +1,102 @@
+[
+  {
+    "id": "logistics-k2-de-m1",
+    "term": "Layoutplanung",
+    "definition": "Zielgerichtete Anordnung von Anordnungsobjekten zur Optimierung logistischer Zielgrößen."
+  },
+  {
+    "id": "logistics-k2-de-m2",
+    "term": "Produktionslayout",
+    "definition": "Layoutform mit festen Arbeitsabläufen und kurzen Transportwegen."
+  },
+  {
+    "id": "logistics-k2-de-m3",
+    "term": "Fixierte Position Layout",
+    "definition": "Layout, bei dem das Produkt stationär bleibt und Ressourcen sich bewegen."
+  },
+  {
+    "id": "logistics-k2-de-m4",
+    "term": "Prozessorientiertes Layout",
+    "definition": "Layout mit individuellen Transportwegen zwischen funktionalen Bereichen."
+  },
+  {
+    "id": "logistics-k2-de-m5",
+    "term": "Zellulares Layout",
+    "definition": "Gruppierung ähnlicher Produkte in Produktionszellen."
+  },
+  {
+    "id": "logistics-k2-de-m6",
+    "term": "Quadratisches Zuordnungsproblem (QZP)",
+    "definition": "Mathematisches Modell zur Optimierung der Anordnung von AOs anhand Transportkosten."
+  },
+  {
+    "id": "logistics-k2-de-m7",
+    "term": "Distanzmatrix",
+    "definition": "Matrix, die die Entfernungen zwischen möglichen Positionen von AOs enthält."
+  },
+  {
+    "id": "logistics-k2-de-m8",
+    "term": "Häufigkeitsmatrix",
+    "definition": "Matrix, die angibt, wie oft zwei AOs miteinander interagieren."
+  },
+  {
+    "id": "logistics-k2-de-m9",
+    "term": "Zweiertauschverfahren",
+    "definition": "Heuristik zur Lösung des QZP durch Tausch von AO-Positionen zur Verbesserung."
+  },
+  {
+    "id": "logistics-k2-de-m10",
+    "term": "Anordnungsobjekt (AO)",
+    "definition": "Zu platzierendes Element im Layout, z. B. Maschine oder Arbeitsplatz."
+  },
+  {
+    "id": "logistics-k2-de-m11",
+    "term": "Materialflussorientierung",
+    "definition": "Ausrichtung des Layouts auf minimale Transportdistanzen."
+  },
+  {
+    "id": "logistics-k2-de-m12",
+    "term": "Fließfertigung",
+    "definition": "Produktion entlang einer Linie mit fester Reihenfolge der Bearbeitung."
+  },
+  {
+    "id": "logistics-k2-de-m13",
+    "term": "Flexibilität",
+    "definition": "Fähigkeit des Layouts, auf Änderungen in Produkt oder Menge zu reagieren."
+  },
+  {
+    "id": "logistics-k2-de-m14",
+    "term": "Durchlaufzeit",
+    "definition": "Zeitspanne vom Start bis zur Fertigstellung eines Produkts im Layout."
+  },
+  {
+    "id": "logistics-k2-de-m15",
+    "term": "Betriebsmittelanordnung",
+    "definition": "Positionierung technischer Einrichtungen im Produktionsbereich."
+  },
+  {
+    "id": "logistics-k2-de-m16",
+    "term": "Werkstattfertigung",
+    "definition": "AO nach Funktion gruppiert, hohe Flexibilität, aber lange Wege."
+  },
+  {
+    "id": "logistics-k2-de-m17",
+    "term": "Transportaufwand",
+    "definition": "Maß für die Bewegungen von Material oder Produkten im Layout."
+  },
+  {
+    "id": "logistics-k2-de-m18",
+    "term": "Service-System-Layout",
+    "definition": "Layoutform für Dienstleistungen, z. B. bei Friseuren oder Banken."
+  },
+  {
+    "id": "logistics-k2-de-m19",
+    "term": "Transportkosten",
+    "definition": "Kosten, die durch innerbetriebliche Bewegungen entstehen."
+  },
+  {
+    "id": "logistics-k2-de-m20",
+    "term": "Optimierungsziel im QZP",
+    "definition": "Minimierung der Summe aus Distanz × Häufigkeit zwischen AO-Paaren."
+  }
+]

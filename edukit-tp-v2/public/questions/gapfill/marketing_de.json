@@ -1,0 +1,102 @@
+[
+  {
+    "id": "marketing-k1-de-01",
+    "sentence": "Eine Segmentierung nach demografischen Merkmalen berücksichtigt z. B. Alter und ___ .",
+    "answer": "Geschlecht"
+  },
+  {
+    "id": "marketing-k1-de-02",
+    "sentence": "Probabilistische Modelle ermitteln ___ statt eindeutiger Kaufentscheidungen.",
+    "answer": "Wahrscheinlichkeiten"
+  },
+  {
+    "id": "marketing-k1-de-03",
+    "sentence": "Die Gutenberg-Preisfunktion weist im mittleren Bereich eine ___ Preiselastizität auf.",
+    "answer": "geringe"
+  },
+  {
+    "id": "marketing-k1-de-04",
+    "sentence": "Involvement beschreibt die ___ des Konsumenten zur Informationsverarbeitung.",
+    "answer": "Aktivierung"
+  },
+  {
+    "id": "marketing-k1-de-05",
+    "sentence": "Die Kreuzpreiselastizität ist bei komplementären Gütern ___ .",
+    "answer": "negativ"
+  },
+  {
+    "id": "marketing-k1-de-06",
+    "sentence": "Das Ziel von Positionierung ist es, eine klare Position im ___ des Kunden zu erreichen.",
+    "answer": "Kopf"
+  },
+  {
+    "id": "marketing-k1-de-07",
+    "sentence": "Die Preiselastizität berechnet sich als relative Änderung des Absatzes durch die relative Änderung des ___ .",
+    "answer": "Preises"
+  },
+  {
+    "id": "marketing-k1-de-08",
+    "sentence": "Das Ziel der Marktforschung ist die Gewinnung von ___ Informationen.",
+    "answer": "entscheidungsrelevanten"
+  },
+  {
+    "id": "marketing-k1-de-09",
+    "sentence": "Bei High-Involvement-Käufen ist der Entscheidungsprozess eher ___ .",
+    "answer": "komplex"
+  },
+  {
+    "id": "marketing-k1-de-10",
+    "sentence": "Die vier P des Marketing-Mix sind Produkt, Preis, ___ und Vertrieb.",
+    "answer": "Kommunikation"
+  },
+  {
+    "id": "marketing-k1-de-11",
+    "sentence": "Ein hoher Markenwert kann zu einer höheren ___ führen.",
+    "answer": "Preisbereitschaft"
+  },
+  {
+    "id": "marketing-k1-de-12",
+    "sentence": "Preisdifferenzierung liegt vor, wenn für das gleiche Produkt unterschiedliche ___ verlangt werden.",
+    "answer": "Preise"
+  },
+  {
+    "id": "marketing-k1-de-13",
+    "sentence": "Die Preis-A___satz-Funktion lautet x = a – ___ * p.",
+    "answer": "b"
+  },
+  {
+    "id": "marketing-k1-de-14",
+    "sentence": "Laut Maslow zählen ___-bedürfnisse zu den grundlegenden menschlichen Bedürfnissen.",
+    "answer": "Existenz"
+  },
+  {
+    "id": "marketing-k1-de-15",
+    "sentence": "Segmentierung, Targeting und ___ sind Schritte im STP-Prozess.",
+    "answer": "Positionierung"
+  },
+  {
+    "id": "marketing-k1-de-16",
+    "sentence": "Eine hohe Preiselastizität bedeutet, dass der Absatz bei Preisänderungen stark ___ .",
+    "answer": "reagiert"
+  },
+  {
+    "id": "marketing-k1-de-17",
+    "sentence": "Eine psychografische Segmentierung berücksichtigt ___ und Lebensstile.",
+    "answer": "Werte"
+  },
+  {
+    "id": "marketing-k1-de-18",
+    "sentence": "Ein Produkt ist aus Marketingsicht ein Bündel von ___ für den Kunden.",
+    "answer": "Eigenschaften"
+  },
+  {
+    "id": "marketing-k1-de-19",
+    "sentence": "Ein Produktprogramm ist umso breiter, je mehr ___ ein Unternehmen anbietet.",
+    "answer": "Produktlinien"
+  },
+  {
+    "id": "marketing-k1-de-20",
+    "sentence": "Einstellungen bestehen aus kognitiver, affektiver und ___ Komponente.",
+    "answer": "konativer"
+  }
+]

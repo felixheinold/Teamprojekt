@@ -1,0 +1,102 @@
+[
+  {
+    "id": "informatics-k5-de-m1",
+    "term": "ERP-System",
+    "definition": "Unterstützt operative Prozesse in allen wesentlichen Funktionsbereichen eines Unternehmens."
+  },
+  {
+    "id": "informatics-k5-de-m2",
+    "term": "Horizontale Integration",
+    "definition": "Vernetzung von Informationssystemen über mehrere Abteilungen hinweg."
+  },
+  {
+    "id": "informatics-k5-de-m3",
+    "term": "Transaktionssystem",
+    "definition": "Dient zur operativen Unterstützung wiederkehrender Geschäftsprozesse."
+  },
+  {
+    "id": "informatics-k5-de-m4",
+    "term": "Zentrale Datenbank",
+    "definition": "Grundlage für Integration in ERP-Systemen durch gemeinsame Datenbasis."
+  },
+  {
+    "id": "informatics-k5-de-m5",
+    "term": "Stammdaten",
+    "definition": "Periodisch aktualisierte Grunddaten wie Kunden- oder Produktinformationen."
+  },
+  {
+    "id": "informatics-k5-de-m6",
+    "term": "Operatives System",
+    "definition": "System zur Unterstützung des täglichen Geschäftsbetriebs, z. B. SAP ERP."
+  },
+  {
+    "id": "informatics-k5-de-m7",
+    "term": "Büroinformationssystem",
+    "definition": "Unterstützt allgemeine Tätigkeiten wie Textverarbeitung und Kommunikation."
+  },
+  {
+    "id": "informatics-k5-de-m8",
+    "term": "Zwischenbetriebliches System",
+    "definition": "Verbindet Informationssysteme mehrerer Unternehmen zur Zusammenarbeit."
+  },
+  {
+    "id": "informatics-k5-de-m9",
+    "term": "EDIFACT",
+    "definition": "Standardformat für strukturierten elektronischen Datenaustausch (EDI)."
+  },
+  {
+    "id": "informatics-k5-de-m10",
+    "term": "Vendor-Managed-Inventory",
+    "definition": "Lagerbestände beim Kunden werden durch den Lieferanten verwaltet."
+  },
+  {
+    "id": "informatics-k5-de-m11",
+    "term": "Materialwirtschaftsmodul",
+    "definition": "Teil eines ERP-Systems zur Verwaltung von Lagerbeständen und Beschaffung."
+  },
+  {
+    "id": "informatics-k5-de-m12",
+    "term": "Datensilo",
+    "definition": "Isolierte Datenhaltung ohne Integration in andere Systeme."
+  },
+  {
+    "id": "informatics-k5-de-m13",
+    "term": "Bestandsführung",
+    "definition": "Modulfunktion zur Nachverfolgung von Lagerbewegungen und Beständen."
+  },
+  {
+    "id": "informatics-k5-de-m14",
+    "term": "Just-in-Time",
+    "definition": "Produktionsstrategie mit möglichst geringer Lagerhaltung."
+  },
+  {
+    "id": "informatics-k5-de-m15",
+    "term": "Workflow-Management",
+    "definition": "Koordiniert Aufgaben, Abläufe und Benutzer innerhalb von Informationssystemen."
+  },
+  {
+    "id": "informatics-k5-de-m16",
+    "term": "Funktionsbereiche",
+    "definition": "Beispiele sind Beschaffung, Produktion, Vertrieb – alle durch ERP unterstützt."
+  },
+  {
+    "id": "informatics-k5-de-m17",
+    "term": "Benutzerschnittstelle",
+    "definition": "Oberfläche, über die Anwender mit dem System interagieren."
+  },
+  {
+    "id": "informatics-k5-de-m18",
+    "term": "Modularität",
+    "definition": "Strukturprinzip von ERP-Systemen mit flexibel kombinierbaren Bausteinen."
+  },
+  {
+    "id": "informatics-k5-de-m19",
+    "term": "Cloud-ERP",
+    "definition": "ERP-System, das über das Internet betrieben und bereitgestellt wird."
+  },
+  {
+    "id": "informatics-k5-de-m20",
+    "term": "Stückliste",
+    "definition": "Liste aller Bestandteile eines Produkts, relevant für Fertigungssysteme."
+  }
+]

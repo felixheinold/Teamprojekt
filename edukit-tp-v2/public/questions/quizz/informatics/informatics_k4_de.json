@@ -1,0 +1,282 @@
+[
+  {
+    "id": "informatics-k4-de-q1",
+    "content": "1. Was versteht man unter einer Organisation laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Eine gewinnorientierte Plattform",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine soziale Einheit mit strukturierter Zielverfolgung und Umweltbezug",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein öffentlich-rechtlicher Verband",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine digitale Informationsplattform",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q2",
+    "content": "2. Was ist eine Wertschöpfungskette gemäß Porter?",
+    "answers": [
+      {
+        "text": "a) Die Summe der eingesetzten Ressourcen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Sequenz nicht zusammenhängender Kostenstellen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Aufeinander aufbauende Aktivitäten zur Erstellung eines Gutes oder einer Dienstleistung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine reine Finanzbuchhaltungseinheit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q3",
+    "content": "3. Welche der folgenden Aktivitäten zählt zu den Unterstützungsaktivitäten in Porters Wertkette?",
+    "answers": [
+      {
+        "text": "a) Produktion",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marketing & Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "c) Technologieentwicklung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ausgangslogistik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q4",
+    "content": "4. Was versteht man unter einer Markttransaktion?",
+    "answers": [
+      {
+        "text": "a) Interne Prozessoptimierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bilaterale Übertragung von Verfügungsrechten zwischen Marktteilnehmern",
+        "is_correct": true
+      },
+      {
+        "text": "c) Rekrutierung neuer Mitarbeiter",
+        "is_correct": false
+      },
+      {
+        "text": "d) Digitalisierung eines Unternehmens",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q5",
+    "content": "5. Was zählt NICHT zu den Phasen einer Markttransaktion?",
+    "answers": [
+      {
+        "text": "a) Informationsphase",
+        "is_correct": false
+      },
+      {
+        "text": "b) Innovationsphase",
+        "is_correct": true
+      },
+      {
+        "text": "c) Abwicklungsphase",
+        "is_correct": false
+      },
+      {
+        "text": "d) Verkaufsfolgephase",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q6",
+    "content": "6. Was sind Transaktionskosten?",
+    "answers": [
+      {
+        "text": "a) Kosten für die Produktentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Steuern auf Unternehmensgewinne",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kosten, die durch den Gütertausch im Markt entstehen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Interne Lagerkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q7",
+    "content": "7. Was beschreibt Digitalisierung im technischen Sinne?",
+    "answers": [
+      {
+        "text": "a) Einführung agiler Methoden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Umwandlung analoger Werte in digitale Form",
+        "is_correct": true
+      },
+      {
+        "text": "c) Einführung neuer Marketingkanäle",
+        "is_correct": false
+      },
+      {
+        "text": "d) Erhöhung der Unternehmenseffizienz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q8",
+    "content": "8. Was ist der Unterschied zwischen Digitalisierung und digitaler Transformation?",
+    "answers": [
+      {
+        "text": "a) Digitalisierung ist ein Prozess der Kommunikation, Transformation ein technischer Begriff",
+        "is_correct": false
+      },
+      {
+        "text": "b) Digitalisierung ist technikgetrieben, Transformation umfasst tiefgreifende organisatorische Veränderungen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Es gibt keinen Unterschied",
+        "is_correct": false
+      },
+      {
+        "text": "d) Transformation ist ein Synonym für Digitalisierung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q9",
+    "content": "9. Was ist ein zentrales Ziel des Geschäftsprozessmanagements?",
+    "answers": [
+      {
+        "text": "a) Entwicklung von Hardware",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gestaltung und Analyse des gesamten Prozesslebenszyklus",
+        "is_correct": true
+      },
+      {
+        "text": "c) Erhöhung der Anzahl von Standorten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Marketingsteuerung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "informatics-k4-de-q10",
+    "content": "10. Was beschreibt das IT-Produktivitätsparadoxon?",
+    "answers": [
+      {
+        "text": "a) IT erhöht in jedem Fall die Produktivität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Effekte von IT-Investitionen sind immer sofort messbar",
+        "is_correct": false
+      },
+      {
+        "text": "c) IT ist in den Statistiken kaum als Produktivitätsfaktor sichtbar",
+        "is_correct": true
+      },
+      {
+        "text": "d) IT wird selten genutzt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Digitale Organisation",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

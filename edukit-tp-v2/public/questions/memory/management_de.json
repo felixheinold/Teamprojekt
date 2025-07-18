@@ -1,0 +1,127 @@
+[
+  {
+    "id": "management-k1-de-m1",
+    "term": "Kontrolle",
+    "definition": "Sachbezogene Managementfunktion zur Überprüfung und Steuerung von Unternehmensprozessen."
+  },
+  {
+    "id": "management-k1-de-m2",
+    "term": "Personalführung",
+    "definition": "Personenbezogene Managementfunktion zur Leitung und Motivation von Mitarbeitenden."
+  },
+  {
+    "id": "management-k1-de-m3",
+    "term": "Input",
+    "definition": "Ressourceneinsatz, der im ökonomischen Prinzip optimiert werden soll."
+  },
+  {
+    "id": "management-k1-de-m4",
+    "term": "Delegationsverbot",
+    "definition": "Führungsentscheidungen müssen von der Unternehmensleitung selbst getroffen werden."
+  },
+  {
+    "id": "management-k1-de-m5",
+    "term": "Wirkungen",
+    "definition": "Element im Handlungsstrukturmodell neben Zielen und Maßnahmen."
+  },
+  {
+    "id": "management-k1-de-m6",
+    "term": "Unternehmenswert",
+    "definition": "Zentrales Ziel im Shareholder-Ansatz zur Wertsteigerung für Eigentümer."
+  },
+  {
+    "id": "management-k1-de-m7",
+    "term": "Stakeholder",
+    "definition": "Anspruchsgruppen, deren Interessen im Stakeholder-Ansatz berücksichtigt werden sollen."
+  },
+  {
+    "id": "management-k1-de-m8",
+    "term": "Lieferanten",
+    "definition": "Wichtige externe Stakeholder neben Kunden und Mitarbeitenden."
+  },
+  {
+    "id": "management-k1-de-m9",
+    "term": "Gesamtkapitalrendite",
+    "definition": "Erfolgskennzahl zur Messung der Verzinsung des eingesetzten Kapitals."
+  },
+  {
+    "id": "management-k1-de-m10",
+    "term": "Wahrscheinlichkeit",
+    "definition": "Grundlage für Entscheidungen unter Risiko im Entscheidungsbaum."
+  },
+  {
+    "id": "management-k1-de-m11",
+    "term": "Ungewissheit",
+    "definition": "Entscheidungssituation ohne bekannte Eintrittswahrscheinlichkeiten."
+  },
+  {
+    "id": "management-k1-de-m12",
+    "term": "(μ,σ)-Regel",
+    "definition": "Entscheidungsregel, die Erwartungswert und Streuung gleichzeitig berücksichtigt."
+  },
+  {
+    "id": "management-k1-de-m13",
+    "term": "Nutzwertanalyse",
+    "definition": "Additives Modell zur Bewertung mehrerer Alternativen anhand gewichteter Zielerreichung."
+  },
+  {
+    "id": "management-k1-de-m14",
+    "term": "Präferenzunabhängigkeit",
+    "definition": "Anforderung an Ziele im additiven Modell zur Vermeidung von Verzerrungen."
+  },
+  {
+    "id": "management-k1-de-m15",
+    "term": "Hurwicz-Regel",
+    "definition": "Entscheidungsregel mit Gewichtung von Optimismus- und Pessimismusanteil."
+  },
+  {
+    "id": "management-k1-de-m16",
+    "term": "Petersburg-Spiel",
+    "definition": "Beispiel zur Problematik unbegrenzter Erwartungswerte bei Entscheidungen unter Risiko."
+  },
+  {
+    "id": "management-k1-de-m17",
+    "term": "Maximin-Regel",
+    "definition": "Entscheidungsregel, die den schlechtesten möglichen Ausgang einer Alternative berücksichtigt."
+  },
+  {
+    "id": "management-k1-de-m18",
+    "term": "Vermögensmaximierung",
+    "definition": "Zielgröße des Shareholder Value aus Eigentümersicht."
+  },
+  {
+    "id": "management-k1-de-m19",
+    "term": "Laplace-Regel",
+    "definition": "Entscheidungsregel, die von gleichen Wahrscheinlichkeiten für Umweltzustände ausgeht."
+  },
+  {
+    "id": "management-k1-de-m20",
+    "term": "Zielgewichtung",
+    "definition": "Teil der Nutzwertanalyse zur Differenzierung von Zielbedeutungen."
+  },
+  {
+    "id": "management-k1-de-m21",
+    "term": "Bandbreiteneffekt",
+    "definition": "Problem im additiven Modell durch verzerrte Gewichtung bei unterschiedlichen Skalen."
+  },
+  {
+    "id": "management-k1-de-m22",
+    "term": "μ-Regel",
+    "definition": "Entscheidung bei Risiko nur auf Basis des Erwartungswertes."
+  },
+  {
+    "id": "management-k1-de-m23",
+    "term": "Aktienkurs",
+    "definition": "Marktindikator für den Unternehmenswert im Shareholder-Ansatz."
+  },
+  {
+    "id": "management-k1-de-m24",
+    "term": "Multikriterielle Entscheidung",
+    "definition": "Entscheidungssituation mit mehreren, oft konkurrierenden Zielgrößen."
+  },
+  {
+    "id": "management-k1-de-m25",
+    "term": "Erich Gutenberg",
+    "definition": "Mitbegründer der klassischen Managementlehre gemeinsam mit Henri Fayol."
+  }
+]

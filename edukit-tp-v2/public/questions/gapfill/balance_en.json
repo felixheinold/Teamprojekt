@@ -1,0 +1,102 @@
+[
+  {
+    "id": "balance-k1-en-01",
+    "sentence": "The annual financial statement consists of the balance sheet, income statement, and possibly a ___ .",
+    "answer": "notes"
+  },
+  {
+    "id": "balance-k1-en-02",
+    "sentence": "The principle of ___ is a core part of proper accounting.",
+    "answer": "prudence"
+  },
+  {
+    "id": "balance-k1-en-03",
+    "sentence": "The Commercial Code (HGB) is divided into a total of ___ books.",
+    "answer": "five"
+  },
+  {
+    "id": "balance-k1-en-04",
+    "sentence": "The ___ regulates commercial accounting in Germany.",
+    "answer": "HGB"
+  },
+  {
+    "id": "balance-k1-en-05",
+    "sentence": "The annual statement forms the basis for the ___ of period profit.",
+    "answer": "determination"
+  },
+  {
+    "id": "balance-k1-en-06",
+    "sentence": "The principle of ___ requires full recording of all assets.",
+    "answer": "completeness"
+  },
+  {
+    "id": "balance-k1-en-07",
+    "sentence": "According to the ___, profits may only be reported when realized.",
+    "answer": "realization principle"
+  },
+  {
+    "id": "balance-k1-en-08",
+    "sentence": "The ___ inventory records assets on the balance sheet date.",
+    "answer": "stichtag"
+  },
+  {
+    "id": "balance-k1-en-09",
+    "sentence": "According to the lower of cost or market principle, the ___ value is decisive for accounting.",
+    "answer": "lower"
+  },
+  {
+    "id": "balance-k1-en-10",
+    "sentence": "A balance sheet is divided into assets and ___ .",
+    "answer": "liabilities"
+  },
+  {
+    "id": "balance-k1-en-11",
+    "sentence": "___ capital refers to the company’s liabilities.",
+    "answer": "Debt"
+  },
+  {
+    "id": "balance-k1-en-12",
+    "sentence": "The balance sheet identity requires beginning and ___ balance sheets to match.",
+    "answer": "ending"
+  },
+  {
+    "id": "balance-k1-en-13",
+    "sentence": "The HGB’s third book contains the regulations on ___ .",
+    "answer": "commercial books"
+  },
+  {
+    "id": "balance-k1-en-14",
+    "sentence": "The principles of proper inventory (GoI) concern the ___ .",
+    "answer": "stocktaking"
+  },
+  {
+    "id": "balance-k1-en-15",
+    "sentence": "The principle of ___ balance sheet continuity requires consistency in structure.",
+    "answer": "formal"
+  },
+  {
+    "id": "balance-k1-en-16",
+    "sentence": "The acquisition and ___ cost principle limits asset values.",
+    "answer": "production"
+  },
+  {
+    "id": "balance-k1-en-17",
+    "sentence": "The ___ principle prevents the reporting of unrealized gains.",
+    "answer": "imparity"
+  },
+  {
+    "id": "balance-k1-en-18",
+    "sentence": "The principle of ___ requires fair and unbiased valuation.",
+    "answer": "accuracy"
+  },
+  {
+    "id": "balance-k1-en-19",
+    "sentence": "The GoB also include the principles of proper ___ .",
+    "answer": "documentation"
+  },
+  {
+    "id": "balance-k1-en-20",
+    "sentence": "The GoBil define requirements for ___ and material accounting.",
+    "answer": "formal"
+  }
+]

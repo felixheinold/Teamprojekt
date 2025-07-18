@@ -1,0 +1,77 @@
+[
+  {
+    "id": "finance-k1-en-q1",
+    "term": "Liquidity",
+    "definition": "Ability to meet payment obligations on time."
+  },
+  {
+    "id": "finance-k1-en-q2",
+    "term": "Investment",
+    "definition": "Use of financial resources to acquire assets."
+  },
+  {
+    "id": "finance-k1-en-q3",
+    "term": "Depreciation",
+    "definition": "Reduction in the value of fixed assets due to use or time."
+  },
+  {
+    "id": "finance-k1-en-q4",
+    "term": "Balance Sheet",
+    "definition": "Statement of assets and liabilities at a specific point in time."
+  },
+  {
+    "id": "finance-k1-en-q5",
+    "term": "Equity",
+    "definition": "Funds provided to the company by its owners."
+  },
+  {
+    "id": "finance-k1-en-q6",
+    "term": "Liabilities",
+    "definition": "Capital provided by third parties (e.g. banks)."
+  },
+  {
+    "id": "finance-k1-en-q7",
+    "term": "Return",
+    "definition": "Earnings from an investment relative to the capital invested."
+  },
+  {
+    "id": "finance-k1-en-q8",
+    "term": "Liquidity Ratio",
+    "definition": "Metric to assess short-term solvency."
+  },
+  {
+    "id": "finance-k1-en-q9",
+    "term": "Break-even Point",
+    "definition": "Point at which revenue equals costs."
+  },
+  {
+    "id": "finance-k1-en-q10",
+    "term": "Costing",
+    "definition": "Determination of the costs and prices of products or services."
+  },
+  {
+    "id": "finance-k1-en-q11",
+    "term": "Cash Discount",
+    "definition": "Price reduction for payment within a specific time frame."
+  },
+  {
+    "id": "finance-k1-en-q12",
+    "term": "Contribution Margin",
+    "definition": "Difference between revenue and variable costs."
+  },
+  {
+    "id": "finance-k1-en-q13",
+    "term": "Fixed Costs",
+    "definition": "Costs that do not vary with production volume."
+  },
+  {
+    "id": "finance-k1-en-q14",
+    "term": "Variable Costs",
+    "definition": "Costs that vary with production volume."
+  },
+  {
+    "id": "finance-k1-en-q15",
+    "term": "Income Statement (P&L)",
+    "definition": "Statement of expenses and revenues over an accounting period."
+  }
+]

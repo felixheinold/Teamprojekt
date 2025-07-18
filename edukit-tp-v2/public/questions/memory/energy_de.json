@@ -1,0 +1,102 @@
+[
+  {
+    "id": "energy-k2-de-m1",
+    "term": "Versorgungssicherheit",
+    "definition": "Ein zentrales Ziel der Energiepolitik laut §1 EnWG."
+  },
+  {
+    "id": "energy-k2-de-m2",
+    "term": "Erneuerbare Energien",
+    "definition": "Energiequellen wie Wind, Sonne und Biomasse mit niedrigen Emissionen."
+  },
+  {
+    "id": "energy-k2-de-m3",
+    "term": "CO₂-Emissionsfaktor",
+    "definition": "Kennwert zur Bewertung des Treibhausgasausstoßes pro kWh Strom."
+  },
+  {
+    "id": "energy-k2-de-m4",
+    "term": "Photovoltaik",
+    "definition": "Technologie zur direkten Umwandlung von Sonnenlicht in Strom."
+  },
+  {
+    "id": "energy-k2-de-m5",
+    "term": "80 %-Ziel",
+    "definition": "Anteil erneuerbarer Energien am Stromverbrauch bis 2030 laut deutscher Politik."
+  },
+  {
+    "id": "energy-k2-de-m6",
+    "term": "Treibhausgasneutralität",
+    "definition": "Ziel Deutschlands bis zum Jahr 2045."
+  },
+  {
+    "id": "energy-k2-de-m7",
+    "term": "Merit-Order-Effekt",
+    "definition": "Verdrängung teurer Kraftwerke durch erneuerbare Energien mit niedrigen Grenzkosten."
+  },
+  {
+    "id": "energy-k2-de-m8",
+    "term": "Fluktuation",
+    "definition": "Herausforderung durch wetterabhängige Erzeugung bei Wind- und Solarenergie."
+  },
+  {
+    "id": "energy-k2-de-m9",
+    "term": "EEG",
+    "definition": "Gesetz, das Ausbauziele und Vergütungen für erneuerbare Energien festlegt."
+  },
+  {
+    "id": "energy-k2-de-m10",
+    "term": "Strombörsenpreis",
+    "definition": "Wird durch erneuerbare Einspeisung durch Merit-Order häufig gesenkt."
+  },
+  {
+    "id": "energy-k2-de-m11",
+    "term": "Batteriespeicher",
+    "definition": "Wichtig für Netzstabilität durch kurzfristige Regelenergie."
+  },
+  {
+    "id": "energy-k2-de-m12",
+    "term": "Mineralöl",
+    "definition": "Hauptenergiequelle im deutschen Endenergieverbrauch (Stand 2023)."
+  },
+  {
+    "id": "energy-k2-de-m13",
+    "term": "Volatilität",
+    "definition": "Eigenschaft erneuerbarer Erzeugung mit schwankender Einspeisung."
+  },
+  {
+    "id": "energy-k2-de-m14",
+    "term": "Kernenergie",
+    "definition": "Nicht als erneuerbare Energie eingestuft – politisch umstritten."
+  },
+  {
+    "id": "energy-k2-de-m15",
+    "term": "EEG-Umlage",
+    "definition": "Wurde durch Stromkunden finanziert zur Förderung erneuerbarer Energien."
+  },
+  {
+    "id": "energy-k2-de-m16",
+    "term": "Kilowattstunde",
+    "definition": "Maßeinheit für elektrische Energie."
+  },
+  {
+    "id": "energy-k2-de-m17",
+    "term": "Netzausbau",
+    "definition": "Notwendig zur Integration dezentraler erneuerbarer Erzeugung."
+  },
+  {
+    "id": "energy-k2-de-m18",
+    "term": "Lastmanagement",
+    "definition": "Strategie zur Stabilisierung des Netzes durch Verbrauchssteuerung."
+  },
+  {
+    "id": "energy-k2-de-m19",
+    "term": "CO₂-Bepreisung",
+    "definition": "Instrument zur Reduktion von Treibhausgasemissionen im Energiesektor."
+  },
+  {
+    "id": "energy-k2-de-m20",
+    "term": "Sektorenkopplung",
+    "definition": "Integration von Strom, Wärme, Verkehr und Industrie zur Energiewende."
+  }
+]

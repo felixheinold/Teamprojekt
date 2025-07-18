@@ -1,0 +1,102 @@
+[
+  {
+    "id": "logistics-k1-de-01",
+    "sentence": "Logistik ist die Planung, Implementierung und Kontrolle von effizienten, effektiven Vor- und Rückflüssen sowie der ___ von Gütern.",
+    "answer": "Lagerung"
+  },
+  {
+    "id": "logistics-k1-de-02",
+    "sentence": "Ziel der Logistik ist es, den Kunden am richtigen Ort, zur richtigen Zeit mit dem richtigen Produkt und der richtigen ___ zu versorgen.",
+    "answer": "Qualität"
+  },
+  {
+    "id": "logistics-k1-de-03",
+    "sentence": "Das Supply Chain Management umfasst auch die ___ von Stakeholdern entlang der Lieferkette.",
+    "answer": "Koordination"
+  },
+  {
+    "id": "logistics-k1-de-04",
+    "sentence": "Die drei klassischen 'R' der Logistik sind: das richtige Produkt, zur richtigen Zeit, am richtigen ___.",
+    "answer": "Ort"
+  },
+  {
+    "id": "logistics-k1-de-05",
+    "sentence": "___ Logistik bezieht sich auf Prozesse zwischen verschiedenen Unternehmen oder Standorten.",
+    "answer": "Inter"
+  },
+  {
+    "id": "logistics-k1-de-06",
+    "sentence": "Die operative Planungsebene erstellt ___ umsetzbare Vorgaben für Prozesse.",
+    "answer": "unmittelbar"
+  },
+  {
+    "id": "logistics-k1-de-07",
+    "sentence": "Taktisches Supply Chain Management plant Ressourcen wie Personal und ___ .",
+    "answer": "Lagerbestände"
+  },
+  {
+    "id": "logistics-k1-de-08",
+    "sentence": "Strategische Planung betrifft langfristige Entscheidungen mit hohem ___aufwand.",
+    "answer": "Kapital"
+  },
+  {
+    "id": "logistics-k1-de-09",
+    "sentence": "Ein Beispiel für ein klassisches Logistikproblem ist das ___problem.",
+    "answer": "Transport"
+  },
+  {
+    "id": "logistics-k1-de-10",
+    "sentence": "In einem Supply Chain Network fließen Material, Information und ___.",
+    "answer": "Wert"
+  },
+  {
+    "id": "logistics-k1-de-11",
+    "sentence": "Die ___ beschreibt ein komplexes, unternehmensübergreifendes logistikbezogenes System.",
+    "answer": "Supply Chain"
+  },
+  {
+    "id": "logistics-k1-de-12",
+    "sentence": "Reverse Logistics beschäftigt sich mit dem Rückfluss von Verpackungen und ___ .",
+    "answer": "Reststoffen"
+  },
+  {
+    "id": "logistics-k1-de-13",
+    "sentence": "In einem OR-Modell werden logistische Probleme als ___ formuliert.",
+    "answer": "Optimierungsprobleme"
+  },
+  {
+    "id": "logistics-k1-de-14",
+    "sentence": "Ziel des Scheduling ist die optimale ___ von Aufträgen zu Ressourcen.",
+    "answer": "Zuweisung"
+  },
+  {
+    "id": "logistics-k1-de-15",
+    "sentence": "Die Vogel-Methode dient der Erstellung einer ersten ___ im Transportproblem.",
+    "answer": "Basislösung"
+  },
+  {
+    "id": "logistics-k1-de-16",
+    "sentence": "In ERP-Systemen sind operative Daten meist vollständig und sehr ___ .",
+    "answer": "detailliert"
+  },
+  {
+    "id": "logistics-k1-de-17",
+    "sentence": "Ein Graph mit Knoten und Kanten stellt typischerweise ein ___ dar.",
+    "answer": "Logistiknetzwerk"
+  },
+  {
+    "id": "logistics-k1-de-18",
+    "sentence": "Die Disposition ist eine typische Aufgabe der ___ Planung.",
+    "answer": "operativen"
+  },
+  {
+    "id": "logistics-k1-de-19",
+    "sentence": "Ein wichtiges Ziel im SCM ist die Minimierung der ___.",
+    "answer": "Gesamtkosten"
+  },
+  {
+    "id": "logistics-k1-de-20",
+    "sentence": "Das Scheduling erfolgt typischerweise auf ___ Ebene.",
+    "answer": "operativer"
+  }
+]

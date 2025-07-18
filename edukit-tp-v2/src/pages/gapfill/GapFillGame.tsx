@@ -136,25 +136,7 @@ const GapFillGame = () => {
 
     if (!subjectKey) return exampleQuestions;
 
-    if (isAllChapters) {
-      const promises = Array.from({ length: chapterCount }, (_, i) => {
-        const chapterKey = `k${i + 1}`;
-        const path = `/questions/gapfill/${subjectKey}_${chapterKey}_${langKey}.json`;
-        return fetch(path)
-          .then((res) => (res.ok ? res.json() : []))
-          .catch(() => []);
-      });
-
-      const allResults = await Promise.all(promises);
-      const combined = allResults.flat();
-      return combined.length > 0 ? combined : exampleQuestions;
-    }
-
-    const match = chapter?.match(/Kapitel (\d+)/i);
-    const chapterKey = match ? `k${match[1]}` : null;
-    if (!chapterKey) return exampleQuestions;
-
-    const path = `/questions/gapfill/${subjectKey}_${chapterKey}_${langKey}.json`;
+    const path = `/questions/gapfill/${subjectKey}_${langKey}.json`;
 
     try {
       const res = await fetch(path);

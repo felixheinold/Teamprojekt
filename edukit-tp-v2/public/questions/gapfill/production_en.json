@@ -1,0 +1,102 @@
+[
+  {
+    "id": "production-k1-en-01",
+    "sentence": "The bullwhip effect describes the phenomenon that ___ amplify along supply chains.",
+    "answer": "demand fluctuations"
+  },
+  {
+    "id": "production-k1-en-02",
+    "sentence": "A positive ___ covers the variable unit costs.",
+    "answer": "contribution margin"
+  },
+  {
+    "id": "production-k1-en-03",
+    "sentence": "Production program planning determines which products are to be produced in what quantities and at what ___ .",
+    "answer": "points in time"
+  },
+  {
+    "id": "production-k1-en-04",
+    "sentence": "Demand planning is the basis for the ___ of materials.",
+    "answer": "procurement"
+  },
+  {
+    "id": "production-k1-en-05",
+    "sentence": "The ___ shows the quantitative relationships between final products and components.",
+    "answer": "bill of materials"
+  },
+  {
+    "id": "production-k1-en-06",
+    "sentence": "The ripple effect describes the structural ___ during disruptions in the supply chain.",
+    "answer": "dynamics"
+  },
+  {
+    "id": "production-k1-en-07",
+    "sentence": "Primary demand refers to the demand for marketable ___ .",
+    "answer": "products"
+  },
+  {
+    "id": "production-k1-en-08",
+    "sentence": "Production planning consists of strategic, tactical and ___ planning.",
+    "answer": "operational"
+  },
+  {
+    "id": "production-k1-en-09",
+    "sentence": "Consumption-based demand planning is based on ___ consumption data.",
+    "answer": "historical"
+  },
+  {
+    "id": "production-k1-en-10",
+    "sentence": "In a lean supply chain, disruptions can have ___ impacts.",
+    "answer": "negative"
+  },
+  {
+    "id": "production-k1-en-11",
+    "sentence": "Sustainability encompasses ecological, economic and ___ aspects.",
+    "answer": "social"
+  },
+  {
+    "id": "production-k1-en-12",
+    "sentence": "The goal of circular economy is the ___ of resources.",
+    "answer": "reuse"
+  },
+  {
+    "id": "production-k1-en-13",
+    "sentence": "Production systems consist of input, ___ and output.",
+    "answer": "throughput"
+  },
+  {
+    "id": "production-k1-en-14",
+    "sentence": "Production control ensures the ___ of production plans.",
+    "answer": "execution"
+  },
+  {
+    "id": "production-k1-en-15",
+    "sentence": "Logistics includes planning, execution and control of ___ and information flow.",
+    "answer": "material"
+  },
+  {
+    "id": "production-k1-en-16",
+    "sentence": "The ___ is the difference between sales revenue and the value of external goods.",
+    "answer": "value added"
+  },
+  {
+    "id": "production-k1-en-17",
+    "sentence": "A Gozinto graph is a graphical representation of the ___ .",
+    "answer": "product structure"
+  },
+  {
+    "id": "production-k1-en-18",
+    "sentence": "___ describes the transformation of inputs into outputs.",
+    "answer": "production"
+  },
+  {
+    "id": "production-k1-en-19",
+    "sentence": "A supply chain includes all activities from raw material to the ___ .",
+    "answer": "end customer"
+  },
+  {
+    "id": "production-k1-en-20",
+    "sentence": "Demand planning distinguishes between deterministic and ___ .",
+    "answer": "stochastic"
+  }
+]

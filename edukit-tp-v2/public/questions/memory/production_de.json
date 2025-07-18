@@ -1,0 +1,102 @@
+[
+  {
+    "id": "production-k2-de-m1",
+    "term": "Produktionsprogrammplanung",
+    "definition": "Festlegung von Art, Menge und zeitlicher Verteilung der herzustellenden Produkte"
+  },
+  {
+    "id": "production-k2-de-m2",
+    "term": "Operatives Produktionsprogramm",
+    "definition": "Hier sind die Produktionsmengen der Produkte variabel"
+  },
+  {
+    "id": "production-k2-de-m3",
+    "term": "Deckungsbeitrag",
+    "definition": "Differenz aus Verkaufspreis und variablen Kosten"
+  },
+  {
+    "id": "production-k2-de-m4",
+    "term": "Gewinnschwelle",
+    "definition": "Wird erreicht, wenn die Deckungsbeiträge die Fixkosten decken"
+  },
+  {
+    "id": "production-k2-de-m5",
+    "term": "Produktionsvorschlagsbewertung",
+    "definition": "Auslastung aller Kapazitäten muss berücksichtigt werden"
+  },
+  {
+    "id": "production-k2-de-m6",
+    "term": "Lineare Programmierung",
+    "definition": "Optimierung des Produktionsprogramms bei mehreren Restriktionen"
+  },
+  {
+    "id": "production-k2-de-m7",
+    "term": "Ziel der LP in der Produktionsplanung",
+    "definition": "Maximierung des Gesamtdeckungsbeitrags"
+  },
+  {
+    "id": "production-k2-de-m8",
+    "term": "Nichtnegativitätsbedingung",
+    "definition": "Werte in der LP dürfen nicht negativ sein"
+  },
+  {
+    "id": "production-k2-de-m9",
+    "term": "Grafische Lösung",
+    "definition": "Geeignet für zwei Produkte zur Visualisierung der LP"
+  },
+  {
+    "id": "production-k2-de-m10",
+    "term": "Simplex-Verfahren",
+    "definition": "Start im Ursprung und iteratives Verbessern zu Nachbarecken"
+  },
+  {
+    "id": "production-k2-de-m11",
+    "term": "Ziel der Bedarfsermittlung",
+    "definition": "Zeitgerechte und exakte Ermittlung benötigter Güter"
+  },
+  {
+    "id": "production-k2-de-m12",
+    "term": "Bedarfsermittlungsarten",
+    "definition": "Produktionsprogrammgesteuert und verbrauchsorientiert"
+  },
+  {
+    "id": "production-k2-de-m13",
+    "term": "Produktionsprogrammgesteuerte Bedarfsermittlung",
+    "definition": "Deterministisch und programmgebunden"
+  },
+  {
+    "id": "production-k2-de-m14",
+    "term": "Verbrauchsorientierte Bedarfsermittlung",
+    "definition": "Basiert auf Vergangenheitswerten oder Prognosen"
+  },
+  {
+    "id": "production-k2-de-m15",
+    "term": "Kapazitätsauslastung",
+    "definition": "Wichtiger Faktor zur Bewertung von Produktionsvorschlägen"
+  },
+  {
+    "id": "production-k2-de-m16",
+    "term": "Optimierungsmethoden",
+    "definition": "Lineare Programmierung als mathematischer Ansatz"
+  },
+  {
+    "id": "production-k2-de-m17",
+    "term": "Produktionsmenge",
+    "definition": "Zentrale Entscheidungsgröße im operativen Programm"
+  },
+  {
+    "id": "production-k2-de-m18",
+    "term": "Fixkosten",
+    "definition": "Werden durch Deckungsbeiträge gedeckt, um Gewinn zu erzielen"
+  },
+  {
+    "id": "production-k2-de-m19",
+    "term": "Produktionsstruktur",
+    "definition": "Grundlage für programmgebundene Bedarfsermittlung"
+  },
+  {
+    "id": "production-k2-de-m20",
+    "term": "Deterministisches Verfahren",
+    "definition": "Geht von festen, bekannten Größen aus"
+  }
+]

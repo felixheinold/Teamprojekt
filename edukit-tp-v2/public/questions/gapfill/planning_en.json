@@ -1,0 +1,102 @@
+[
+  {
+    "id": "planning-k1-en-01",
+    "sentence": "___ is a central element of integrated production planning for organizing processes.",
+    "answer": "Structure planning"
+  },
+  {
+    "id": "planning-k1-en-02",
+    "sentence": "During ___, data about the current factory is collected and evaluated.",
+    "answer": "Data collection"
+  },
+  {
+    "id": "planning-k1-en-03",
+    "sentence": "The ___ is used to identify waste in the value stream.",
+    "answer": "Value stream analysis"
+  },
+  {
+    "id": "planning-k1-en-04",
+    "sentence": "A ___ visualizes transport quantities between areas.",
+    "answer": "Sankey diagram"
+  },
+  {
+    "id": "planning-k1-en-05",
+    "sentence": "For assembly planning, a ___ is often used.",
+    "answer": "precedence diagram"
+  },
+  {
+    "id": "planning-k1-en-06",
+    "sentence": "The goal of ___ is the transformation of the rough layout into a detailed layout.",
+    "answer": "Detailed planning"
+  },
+  {
+    "id": "planning-k1-en-07",
+    "sentence": "A ___ is used to analyze the arrangement and movement of production units.",
+    "answer": "spaghetti diagram"
+  },
+  {
+    "id": "planning-k1-en-08",
+    "sentence": "___ combines quantitative and qualitative planning aspects.",
+    "answer": "Production planning"
+  },
+  {
+    "id": "planning-k1-en-09",
+    "sentence": "The ___ shows how often specific products are needed over time.",
+    "answer": "XYZ analysis"
+  },
+  {
+    "id": "planning-k1-en-10",
+    "sentence": "___ support automated decision-making within production control.",
+    "answer": "IT systems"
+  },
+  {
+    "id": "planning-k1-en-11",
+    "sentence": "___ derives requirements for production site setup.",
+    "answer": "Structure dimensioning"
+  },
+  {
+    "id": "planning-k1-en-12",
+    "sentence": "An ___ classifies products based on importance and consumption.",
+    "answer": "ABC analysis"
+  },
+  {
+    "id": "planning-k1-en-13",
+    "sentence": "___ simulates production processes to validate planning.",
+    "answer": "Process simulation"
+  },
+  {
+    "id": "planning-k1-en-14",
+    "sentence": "The ___ represents the ideal production structure without constraints.",
+    "answer": "ideal layout"
+  },
+  {
+    "id": "planning-k1-en-15",
+    "sentence": "A ___ supports planning through digital visualization.",
+    "answer": "live diagram"
+  },
+  {
+    "id": "planning-k1-en-16",
+    "sentence": "___ is a criterion for selecting appropriate assembly systems.",
+    "answer": "Degree of automation"
+  },
+  {
+    "id": "planning-k1-en-17",
+    "sentence": "A ___ describes the logical dependencies of work steps.",
+    "answer": "assembly precedence diagram"
+  },
+  {
+    "id": "planning-k1-en-18",
+    "sentence": "___ is essential for selecting suitable equipment.",
+    "answer": "Space allocation"
+  },
+  {
+    "id": "planning-k1-en-19",
+    "sentence": "___ summarizes requirements for transport systems within the plant.",
+    "answer": "Conveyor technology"
+  },
+  {
+    "id": "planning-k1-en-20",
+    "sentence": "___ defines the actual arrangement of objects in production.",
+    "answer": "Detailed layout"
+  }
+]

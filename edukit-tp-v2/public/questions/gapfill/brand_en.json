@@ -1,0 +1,102 @@
+[
+  {
+    "id": "brand-k1-en-01",
+    "sentence": "Brand elements aim to enhance brand awareness and facilitate a strong, favorable, and ___ brand image.",
+    "answer": "unique"
+  },
+  {
+    "id": "brand-k1-en-02",
+    "sentence": "Memorability, meaningfulness, and ___ are key criteria for choosing effective brand elements.",
+    "answer": "likability"
+  },
+  {
+    "id": "brand-k1-en-03",
+    "sentence": "Brand names often capture the ___ theme of a product.",
+    "answer": "central"
+  },
+  {
+    "id": "brand-k1-en-04",
+    "sentence": "Leveraging secondary associations involves linking the brand to entities like ___ or people.",
+    "answer": "places"
+  },
+  {
+    "id": "brand-k1-en-05",
+    "sentence": "High levels of fit in brand extensions facilitate ___ of brand knowledge.",
+    "answer": "transfer"
+  },
+  {
+    "id": "brand-k1-en-06",
+    "sentence": "Brand equity can be measured using a price ___ approach.",
+    "answer": "premium"
+  },
+  {
+    "id": "brand-k1-en-07",
+    "sentence": "___ branding strategy focuses on the individual product, not the company.",
+    "answer": "Single"
+  },
+  {
+    "id": "brand-k1-en-08",
+    "sentence": "In a ___ branding strategy, all products share the same company name.",
+    "answer": "company"
+  },
+  {
+    "id": "brand-k1-en-09",
+    "sentence": "Strong brands allow for ___ brand extensions across product categories.",
+    "answer": "distant"
+  },
+  {
+    "id": "brand-k1-en-10",
+    "sentence": "The brand architecture defines the ___ and interrelationships of brands.",
+    "answer": "roles"
+  },
+  {
+    "id": "brand-k1-en-11",
+    "sentence": "The transfer process underlies the logic of brand ___ .",
+    "answer": "extensions"
+  },
+  {
+    "id": "brand-k1-en-12",
+    "sentence": "___ refers to the coherence of brand-specific meanings in extensions.",
+    "answer": "Consistency"
+  },
+  {
+    "id": "brand-k1-en-13",
+    "sentence": "Brands with broad associative networks show high ___ .",
+    "answer": "extendibility"
+  },
+  {
+    "id": "brand-k1-en-14",
+    "sentence": "Good brand names should be meaningful, ___ , and unique.",
+    "answer": "fitting"
+  },
+  {
+    "id": "brand-k1-en-15",
+    "sentence": "Protectability is a criterion used when selecting ___ elements.",
+    "answer": "brand"
+  },
+  {
+    "id": "brand-k1-en-16",
+    "sentence": "___ strategies manage the strength of spillover effects between brands.",
+    "answer": "Architecture"
+  },
+  {
+    "id": "brand-k1-en-17",
+    "sentence": "One advantage of single branding is reduced risk of negative ___ .",
+    "answer": "spillovers"
+  },
+  {
+    "id": "brand-k1-en-18",
+    "sentence": "The Van Westendorp method is used to determine ___ sensitivity.",
+    "answer": "price"
+  },
+  {
+    "id": "brand-k1-en-19",
+    "sentence": "___ elements like jingles and characters help identify the brand.",
+    "answer": "Trademarkable"
+  },
+  {
+    "id": "brand-k1-en-20",
+    "sentence": "Successful brand ___ requires consistency in strategy and messaging.",
+    "answer": "building"
+  }
+]

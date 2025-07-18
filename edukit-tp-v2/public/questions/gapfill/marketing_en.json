@@ -1,0 +1,102 @@
+[
+  {
+    "id": "marketing-k1-en-01",
+    "sentence": "Segmentation based on demographic characteristics takes into account, e.g., age and ___ .",
+    "answer": "gender"
+  },
+  {
+    "id": "marketing-k1-en-02",
+    "sentence": "Probabilistic models determine ___ instead of clear purchase decisions.",
+    "answer": "probabilities"
+  },
+  {
+    "id": "marketing-k1-en-03",
+    "sentence": "The Gutenberg price function shows a ___ price elasticity in the middle range.",
+    "answer": "low"
+  },
+  {
+    "id": "marketing-k1-en-04",
+    "sentence": "Involvement describes the consumer's ___ to process information.",
+    "answer": "activation"
+  },
+  {
+    "id": "marketing-k1-en-05",
+    "sentence": "The cross-price elasticity is ___ for complementary goods.",
+    "answer": "negative"
+  },
+  {
+    "id": "marketing-k1-en-06",
+    "sentence": "The goal of positioning is to achieve a clear position in the customer’s ___ .",
+    "answer": "mind"
+  },
+  {
+    "id": "marketing-k1-en-07",
+    "sentence": "Price elasticity is calculated as the relative change in sales divided by the relative change in ___ .",
+    "answer": "price"
+  },
+  {
+    "id": "marketing-k1-en-08",
+    "sentence": "The goal of market research is to obtain ___ information.",
+    "answer": "decision-relevant"
+  },
+  {
+    "id": "marketing-k1-en-09",
+    "sentence": "For high-involvement purchases, the decision-making process is rather ___ .",
+    "answer": "complex"
+  },
+  {
+    "id": "marketing-k1-en-10",
+    "sentence": "The four Ps of the marketing mix are product, price, ___ and place.",
+    "answer": "promotion"
+  },
+  {
+    "id": "marketing-k1-en-11",
+    "sentence": "A high brand value can lead to a higher ___ .",
+    "answer": "willingness to pay"
+  },
+  {
+    "id": "marketing-k1-en-12",
+    "sentence": "Price differentiation exists when different ___ are charged for the same product.",
+    "answer": "prices"
+  },
+  {
+    "id": "marketing-k1-en-13",
+    "sentence": "The price-sales function is x = a – ___ * p.",
+    "answer": "b"
+  },
+  {
+    "id": "marketing-k1-en-14",
+    "sentence": "According to Maslow, ___ needs are among the basic human needs.",
+    "answer": "existence"
+  },
+  {
+    "id": "marketing-k1-en-15",
+    "sentence": "Segmentation, targeting and ___ are steps in the STP process.",
+    "answer": "positioning"
+  },
+  {
+    "id": "marketing-k1-en-16",
+    "sentence": "High price elasticity means that sales ___ significantly with price changes.",
+    "answer": "responds"
+  },
+  {
+    "id": "marketing-k1-en-17",
+    "sentence": "Psychographic segmentation takes ___ and lifestyles into account.",
+    "answer": "values"
+  },
+  {
+    "id": "marketing-k1-en-18",
+    "sentence": "From a marketing perspective, a product is a bundle of ___ for the customer.",
+    "answer": "attributes"
+  },
+  {
+    "id": "marketing-k1-en-19",
+    "sentence": "A product range is broader the more ___ a company offers.",
+    "answer": "product lines"
+  },
+  {
+    "id": "marketing-k1-en-20",
+    "sentence": "Attitudes consist of cognitive, affective, and ___ components.",
+    "answer": "conative"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "informatics-k1-de-01",
+    "sentence": "Ein CRM-System dient dem Aufbau von ___ mit Kunden.",
+    "answer": "Beziehungen"
+  },
+  {
+    "id": "informatics-k1-de-02",
+    "sentence": "Das ___ CRM analysiert Kundendaten zur Entscheidungsunterstützung.",
+    "answer": "analytische"
+  },
+  {
+    "id": "informatics-k1-de-03",
+    "sentence": "___ CRM umfasst alle Kommunikationskanäle mit Kunden.",
+    "answer": "Kommunikatives"
+  },
+  {
+    "id": "informatics-k1-de-04",
+    "sentence": "Ein ___ ist ein System, das seine Umgebung wahrnimmt und darauf reagiert.",
+    "answer": "Agent"
+  },
+  {
+    "id": "informatics-k1-de-05",
+    "sentence": "Das PEAS-Modell beschreibt Leistung, Umwelt, ___ und Sensoren.",
+    "answer": "Aktuatoren"
+  },
+  {
+    "id": "informatics-k1-de-06",
+    "sentence": "Beim ___ Lernen werden Trainingsdaten mit bekannten Zielwerten verwendet.",
+    "answer": "überwachten"
+  },
+  {
+    "id": "informatics-k1-de-07",
+    "sentence": "Ein Entscheidungsbaum kann mit dem ___ Algorithmus erzeugt werden.",
+    "answer": "ID3"
+  },
+  {
+    "id": "informatics-k1-de-08",
+    "sentence": "Digitale Plattformen fördern den ___ zwischen Produzenten und Konsumenten.",
+    "answer": "Austausch"
+  },
+  {
+    "id": "informatics-k1-de-09",
+    "sentence": "Ein ___ Markt bringt mindestens zwei Nutzergruppen zusammen.",
+    "answer": "zweiseitiger"
+  },
+  {
+    "id": "informatics-k1-de-10",
+    "sentence": "Barrierefreiheit ist ein zentrales Ziel bei ___ Systemen.",
+    "answer": "interaktiven"
+  },
+  {
+    "id": "informatics-k1-de-11",
+    "sentence": "Ein Prosumer ist gleichzeitig Konsument und ___ .",
+    "answer": "Produzent"
+  },
+  {
+    "id": "informatics-k1-de-12",
+    "sentence": "Der Begriff ___ beschreibt die Fähigkeit zur Verarbeitung natürlicher Sprache.",
+    "answer": "Sprachverarbeitung"
+  },
+  {
+    "id": "informatics-k1-de-13",
+    "sentence": "Die ___ beschreibt die Nutzererfahrung im Umgang mit einem System.",
+    "answer": "User Experience"
+  },
+  {
+    "id": "informatics-k1-de-14",
+    "sentence": "Ein ___ CRM-System verbessert die Effizienz operativer Prozesse.",
+    "answer": "operatives"
+  },
+  {
+    "id": "informatics-k1-de-15",
+    "sentence": "KI steht für ___ Intelligenz.",
+    "answer": "künstliche"
+  },
+  {
+    "id": "informatics-k1-de-16",
+    "sentence": "Bei der ___ geht es um das Verstehen und Umsetzen menschlicher Emotionen.",
+    "answer": "Affektverarbeitung"
+  },
+  {
+    "id": "informatics-k1-de-17",
+    "sentence": "Der ___ beschreibt die Interaktion zwischen Mensch und Maschine.",
+    "answer": "Interface"
+  },
+  {
+    "id": "informatics-k1-de-18",
+    "sentence": "___ Systeme verändern unser tägliches Leben durch intelligente Funktionen.",
+    "answer": "KI-basierte"
+  },
+  {
+    "id": "informatics-k1-de-19",
+    "sentence": "In der Plattformökonomie ist die ___ Masse ein zentraler Erfolgsfaktor.",
+    "answer": "kritische"
+  },
+  {
+    "id": "informatics-k1-de-20",
+    "sentence": "Die ___ ist eine Disziplin der KI zur Interpretation visueller Informationen.",
+    "answer": "Computer Vision"
+  }
+]

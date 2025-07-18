@@ -1,0 +1,102 @@
+[
+  {
+    "id": "planning-k4-en-m1",
+    "term": "Low-cost factory",
+    "definition": "Factory focused on minimizing production costs."
+  },
+  {
+    "id": "planning-k4-en-m2",
+    "term": "Customer-specific factory",
+    "definition": "Manufactures customized products in large quantities."
+  },
+  {
+    "id": "planning-k4-en-m3",
+    "term": "Responsive factory",
+    "definition": "Market-oriented factory with high delivery capability."
+  },
+  {
+    "id": "planning-k4-en-m4",
+    "term": "Rough layout planning",
+    "definition": "Key activity within concept planning."
+  },
+  {
+    "id": "planning-k4-en-m5",
+    "term": "Modularity",
+    "definition": "Use of standardized functional units."
+  },
+  {
+    "id": "planning-k4-en-m6",
+    "term": "Ramp-up and series support",
+    "definition": "Ensures production ramp-up and target achievement."
+  },
+  {
+    "id": "planning-k4-en-m7",
+    "term": "Greenfield approach",
+    "definition": "Factory planning from scratch without existing structures."
+  },
+  {
+    "id": "planning-k4-en-m8",
+    "term": "Process flexibility",
+    "definition": "Ability to implement known variants on short notice."
+  },
+  {
+    "id": "planning-k4-en-m9",
+    "term": "Detail planning",
+    "definition": "Involves the detailed design of operational equipment."
+  },
+  {
+    "id": "planning-k4-en-m10",
+    "term": "Routing flexibility",
+    "definition": "Ability to choose between different production routes."
+  },
+  {
+    "id": "planning-k4-en-m11",
+    "term": "Breathing factory",
+    "definition": "Adjusts capacity to fluctuating demand."
+  },
+  {
+    "id": "planning-k4-en-m12",
+    "term": "Goal definition",
+    "definition": "Derives concrete planning parameters for the factory."
+  },
+  {
+    "id": "planning-k4-en-m13",
+    "term": "Volume flexibility",
+    "definition": "Allows adjustment of production capacity."
+  },
+  {
+    "id": "planning-k4-en-m14",
+    "term": "Phase following concept planning",
+    "definition": "Detail planning."
+  },
+  {
+    "id": "planning-k4-en-m15",
+    "term": "Lot size 1",
+    "definition": "Typical for customer-specific production under series conditions."
+  },
+  {
+    "id": "planning-k4-en-m16",
+    "term": "Compatibility",
+    "definition": "Achieved through standardized machine interfaces."
+  },
+  {
+    "id": "planning-k4-en-m17",
+    "term": "Concept planning",
+    "definition": "Goal: develop and evaluate rough layout variants."
+  },
+  {
+    "id": "planning-k4-en-m18",
+    "term": "Routing flexibility",
+    "definition": "Ability to choose between different process paths."
+  },
+  {
+    "id": "planning-k4-en-m19",
+    "term": "Standardized infrastructure",
+    "definition": "Increases a factory’s ability to adapt."
+  },
+  {
+    "id": "planning-k4-en-m20",
+    "term": "Implementation monitoring",
+    "definition": "Monitors construction, conversion, and commissioning of the factory."
+  }
+]

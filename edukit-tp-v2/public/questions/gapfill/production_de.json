@@ -1,0 +1,102 @@
+[
+  {
+    "id": "production-k1-de-01",
+    "sentence": "Der Bullwhip-Effekt beschreibt das Phänomen, dass sich ___ über Lieferketten hinweg verstärken.",
+    "answer": "Nachfrageschwankungen"
+  },
+  {
+    "id": "production-k1-de-02",
+    "sentence": "Ein positiver ___ deckt die variablen Stückkosten ab.",
+    "answer": "Deckungsbeitrag"
+  },
+  {
+    "id": "production-k1-de-03",
+    "sentence": "Die Produktionsprogrammplanung legt fest, welche Produkte in welchen Mengen und zu welchen ___ hergestellt werden.",
+    "answer": "Zeitpunkten"
+  },
+  {
+    "id": "production-k1-de-04",
+    "sentence": "Die Bedarfsermittlung ist die Grundlage für die ___ der Materialien.",
+    "answer": "Beschaffung"
+  },
+  {
+    "id": "production-k1-de-05",
+    "sentence": "Die ___ zeigt die mengenmäßigen Beziehungen zwischen Endprodukten und Komponenten.",
+    "answer": "Stückliste"
+  },
+  {
+    "id": "production-k1-de-06",
+    "sentence": "Der Ripple-Effekt beschreibt die strukturelle ___ bei Störungen in der Lieferkette.",
+    "answer": "Dynamik"
+  },
+  {
+    "id": "production-k1-de-07",
+    "sentence": "Primärbedarf ist der Bedarf an verkaufsfähigen ___ .",
+    "answer": "Produkten"
+  },
+  {
+    "id": "production-k1-de-08",
+    "sentence": "Die Produktionsplanung besteht aus strategischer, taktischer und ___ Planung.",
+    "answer": "operativer"
+  },
+  {
+    "id": "production-k1-de-09",
+    "sentence": "Die verbrauchsorientierte Bedarfsermittlung basiert auf ___ Verbrauchsdaten.",
+    "answer": "historischen"
+  },
+  {
+    "id": "production-k1-de-10",
+    "sentence": "In einer Lean Supply Chain können Störungen ___ Auswirkungen haben.",
+    "answer": "negative"
+  },
+  {
+    "id": "production-k1-de-11",
+    "sentence": "Nachhaltigkeit umfasst ökologische, ökonomische und ___ Aspekte.",
+    "answer": "soziale"
+  },
+  {
+    "id": "production-k1-de-12",
+    "sentence": "Das Ziel von Circular Economy ist die ___ von Ressourcen.",
+    "answer": "Wiederverwendung"
+  },
+  {
+    "id": "production-k1-de-13",
+    "sentence": "Produktionssysteme bestehen aus Input, ___ und Output.",
+    "answer": "Throughput"
+  },
+  {
+    "id": "production-k1-de-14",
+    "sentence": "Die Produktionssteuerung sorgt für die ___ der Produktionspläne.",
+    "answer": "Umsetzung"
+  },
+  {
+    "id": "production-k1-de-15",
+    "sentence": "Logistik umfasst Planung, Durchführung und Kontrolle des ___- und Informationsflusses.",
+    "answer": "Material"
+  },
+  {
+    "id": "production-k1-de-16",
+    "sentence": "Der ___ ist der Unterschied zwischen Verkaufserlös und dem Wert externer Güter.",
+    "answer": "Wertschöpfung"
+  },
+  {
+    "id": "production-k1-de-17",
+    "sentence": "Ein Gozinto-Graph ist eine grafische Darstellung der ___ .",
+    "answer": "Erzeugnisstruktur"
+  },
+  {
+    "id": "production-k1-de-18",
+    "sentence": "___ beschreibt die Transformation von Inputs zu Outputs.",
+    "answer": "Produktion"
+  },
+  {
+    "id": "production-k1-de-19",
+    "sentence": "Eine Supply Chain umfasst alle Aktivitäten vom Rohstoff bis zum ___ .",
+    "answer": "Endkunden"
+  },
+  {
+    "id": "production-k1-de-20",
+    "sentence": "Die Bedarfsermittlung unterscheidet zwischen deterministisch und ___ .",
+    "answer": "stochastisch"
+  }
+]

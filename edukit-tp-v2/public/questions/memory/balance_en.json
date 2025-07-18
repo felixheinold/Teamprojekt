@@ -1,0 +1,102 @@
+[
+  {
+    "id": "finance-k2-en-m1",
+    "term": "Merchant (§1 HGB)",
+    "definition": "Anyone who operates a commercial business is considered a merchant under commercial law."
+  },
+  {
+    "id": "finance-k2-en-m2",
+    "term": "GAAP (German Generally Accepted Accounting Principles)",
+    "definition": "Serve as interpretation guidelines for appropriate financial reporting."
+  },
+  {
+    "id": "finance-k2-en-m3",
+    "term": "Prudence Principle",
+    "definition": "Emphasizes losses and prohibits unrealistic profits under German law."
+  },
+  {
+    "id": "finance-k2-en-m4",
+    "term": "Imparity Principle",
+    "definition": "Requires recognition of foreseeable losses."
+  },
+  {
+    "id": "finance-k2-en-m5",
+    "term": "AHK Principle",
+    "definition": "Assets must not be valued higher than their acquisition or production costs less depreciation."
+  },
+  {
+    "id": "finance-k2-en-m6",
+    "term": "Lower of Cost or Market Principle",
+    "definition": "Current assets must be valued at the lower of acquisition cost or market value."
+  },
+  {
+    "id": "finance-k2-en-m7",
+    "term": "Individual Valuation Principle",
+    "definition": "Each item on the balance sheet must be valued separately – no offsetting allowed."
+  },
+  {
+    "id": "finance-k2-en-m8",
+    "term": "Realization Principle",
+    "definition": "Profits may only be recognized when they are economically realized."
+  },
+  {
+    "id": "finance-k2-en-m9",
+    "term": "Accrual Principle",
+    "definition": "Income and expenses must be allocated to the correct period, regardless of payment date."
+  },
+  {
+    "id": "finance-k2-en-m10",
+    "term": "GoD (Documentation)",
+    "definition": "Define the formal and material requirements for accounting records."
+  },
+  {
+    "id": "finance-k2-en-m11",
+    "term": "Commercial Balance Sheet",
+    "definition": "Prepared under HGB and primarily serves information and accountability purposes."
+  },
+  {
+    "id": "finance-k2-en-m12",
+    "term": "Tax Balance Sheet",
+    "definition": "Prepared according to tax regulations to determine tax liabilities."
+  },
+  {
+    "id": "finance-k2-en-m13",
+    "term": "Provision",
+    "definition": "A liability with uncertain amount or timing."
+  },
+  {
+    "id": "finance-k2-en-m14",
+    "term": "Capitalization Ban",
+    "definition": "Prohibits the recognition of certain intangible assets on the balance sheet."
+  },
+  {
+    "id": "finance-k2-en-m15",
+    "term": "Capitalization Option",
+    "definition": "Allows optional recognition of certain items (e.g., development costs)."
+  },
+  {
+    "id": "finance-k2-en-m16",
+    "term": "Balance Sheet Identity",
+    "definition": "The opening balance of the new year must match the prior year’s closing balance."
+  },
+  {
+    "id": "finance-k2-en-m17",
+    "term": "Inventory Count",
+    "definition": "Physical, quantitative and value-based recording of all assets."
+  },
+  {
+    "id": "finance-k2-en-m18",
+    "term": "Acquisition Cost",
+    "definition": "Price of an asset incl. ancillary costs minus any discounts."
+  },
+  {
+    "id": "finance-k2-en-m19",
+    "term": "Depreciation",
+    "definition": "Reduction in value of an asset over time."
+  },
+  {
+    "id": "finance-k2-en-m20",
+    "term": "Inventory List",
+    "definition": "Detailed listing of all a company’s assets and liabilities."
+  }
+]
