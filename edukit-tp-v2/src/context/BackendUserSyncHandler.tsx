@@ -4,24 +4,25 @@ import { auth } from "../firebaseData/firebaseConfig";
 import { useBackendUserContext } from "./BackendUserContext";
 import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
 
- export const BackendUserSyncHandler = () => {
+export const BackendUserSyncHandler = () => {
   const { setUser, flushUser } = useBackendUserContext();
   const generalAPICallsService = new GeneralAPICallsService();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      console.log("🔁 Auth-State-Changed Trigger");
+
       if (firebaseUser && firebaseUser.emailVerified) {
         const userData = await generalAPICallsService.getUserDataFromFirestore();
         setUser(userData);
-      }
-      else{
+      } else {
         await flushUser();
         setUser(null);
       }
     });
 
-    return () => unsubscribe(); // Cleanup bei Unmount
-  }, [setUser, flushUser  ]);
+    return () => unsubscribe();
+  }, []); // ✅ Nur einmalig beim Mount
 
-  return null; // kein UI, nur Sync
+  return null;
 };
