@@ -1,0 +1,422 @@
+[
+  {
+    "id": "pb-uf-k2-en-q1",
+    "content": "1. Which of the following is the best description of the management concept?",
+    "answers": [
+      {
+        "text": "a) a simple organization that does tasks.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The systematic planning and control of companies to achieve their goals.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the management of resources by a single person.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a method to motivate employees.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q2",
+    "content": "2. Which of the following statements best meets the importance of \"efficiency\" in management?",
+    "answers": [
+      {
+        "text": "a) Efficiency is only important if it increases profitability.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Efficiency is a central goal that maximizes productivity and resource use.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Efficiency is only relevant for small companies.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Efficiency is a question of personal preferences.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q3",
+    "content": "3. Which of the following statements best describes the role of \"organization\" in management?",
+    "answers": [
+      {
+        "text": "a) The organization is only a tool for achieving goals.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The organization is a system that defines tasks and responsibilities and promotes cooperation between different departments.",
+        "is_correct": true
+      },
+      {
+        "text": "c) The organization is only an organizational structure.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The organization is a single person.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q4",
+    "content": "4. How does the \"corporate center\" strategy affect decision -making in management?",
+    "answers": [
+      {
+        "text": "a) It leads to uncritical decision -making.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It is a central part of strategic planning and decision -making.",
+        "is_correct": true
+      },
+      {
+        "text": "c) It is only based on the opinion of the employees.",
+        "is_correct": false
+      },
+      {
+        "text": "d) It is irrelevant for corporate management.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q5",
+    "content": "5. Which of the following statements is the main goal of management in a company?",
+    "answers": [
+      {
+        "text": "a) The achievement of profits for shareholders.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the fulfillment of the needs of customers.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The optimization of resource use.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the creation of a large and complex organization.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q6",
+    "content": "6. Which of the following statements is most relevant for employee motivation?",
+    "answers": [
+      {
+        "text": "a) Employees are only motivated if they receive high salaries.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Employees are motivated if they have a high workload.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Employees are motivated if they can participate in the corporate goals and goals.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Employees are only motivated if they are interested in their own tasks.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q7",
+    "content": "7. What is an important aspect of the \"internal and external networks\" in corporate management?",
+    "answers": [
+      {
+        "text": "a) The reduction of internal communication.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The strengthening of relationships with external partners and customers.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the isolation from the outside world.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ignoring the needs of customers.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q8",
+    "content": "8. Which of the following statements describes the fundamental importance of \"informal coordination\"?",
+    "answers": [
+      {
+        "text": "a) Informal coordination is only relevant for small companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Informal coordination is important to improve cooperation and increase efficiency.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Informal coordination is irrelevant for corporate management.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Informal coordination is only for the manager.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q9",
+    "content": "9. Which of the following statements is the biggest difference between \"informal\" and \"formally\" coordination?",
+    "answers": [
+      {
+        "text": "a) Informal coordination is always formal.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Informal coordination is uncomplicated, while formally coordination is complex.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Formal coordination is always uncomplicated, while informal coordination is complex.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Informal coordination is always complex, while formally coordination is simple.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q10",
+    "content": "10. Which of the following statements is most relevant for strategic planning in a company?",
+    "answers": [
+      {
+        "text": "a) The company only focuses on short -term profitability.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The company looks at the long -term goals and the strategic orientation.",
+        "is_correct": true
+      },
+      {
+        "text": "c) The company ignores the needs of customers.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The company is only focused on the internal organization.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q11",
+    "content": "11. What is the main purpose of the \"procedures\" in management?",
+    "answers": [
+      {
+        "text": "a) the achievement of new products.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The improvement of the work processes and the standardization of processes.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Avoiding errors.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the increase in costs.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q12",
+    "content": "12. Which of the following statements best describes the role of the \"organizational structure\"?",
+    "answers": [
+      {
+        "text": "a) The organizational structure is just a document.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The organizational structure is a system that defines the tasks and responsibilities and promotes cooperation between different departments.",
+        "is_correct": true
+      },
+      {
+        "text": "c) The organizational structure is a personal project.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The organizational structure is independent of the corporate strategy.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q13",
+    "content": "13. Which of the following statements does the main objective of the \"guaranteed control\" represent?",
+    "answers": [
+      {
+        "text": "a) the achievement of profit.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the ensure that the company's processes and activities work properly.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the reduction of the costs.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Avoidance of risks.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q14",
+    "content": "14. Which of the following statements best describes the meaning of the \"mechanistic\" coordination?",
+    "answers": [
+      {
+        "text": "a) Mechanistic coordination is only relevant for small companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Mechanistic coordination is important to improve efficiency and performance.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Mechanistic coordination is irrelevant for corporate management.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Mechanistic coordination is only for the manager.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k2-en-q15",
+    "content": "15. What is the main goal of the \"individual selections\"?",
+    "answers": [
+      {
+        "text": "a) The achievement of profits for shareholders.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the achievement of opportunities for the employees.",
+        "is_correct": true
+      },
+      {
+        "text": "c) improving working conditions.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the reduction of the costs.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 2",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

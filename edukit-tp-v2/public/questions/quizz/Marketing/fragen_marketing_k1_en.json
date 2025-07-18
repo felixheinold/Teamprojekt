@@ -1,0 +1,506 @@
+[
+  {
+    "id": "pb-k1-en-q1",
+    "content": "What is the main goal of information marketing?",
+    "answers": [
+      {
+        "text": "a) The spread of advertising",
+        "is_correct": false
+      },
+      {
+        "text": "b) the creation of product and service concepts",
+        "is_correct": true
+      },
+      {
+        "text": "c) the analysis of customer needs and behavior",
+        "is_correct": false
+      },
+      {
+        "text": "d) The optimization of sales strategies",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q2",
+    "content": "Which of the following is * not * a typical use of information marketing?",
+    "answers": [
+      {
+        "text": "a) the development of marketing campaigns",
+        "is_correct": false
+      },
+      {
+        "text": "b) The implementation of customer surveys",
+        "is_correct": false
+      },
+      {
+        "text": "c) the analysis of market data",
+        "is_correct": true
+      },
+      {
+        "text": "d) the creation of marketing content",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q3",
+    "content": "Which of the following statements about information marketing is * not * correct?",
+    "answers": [
+      {
+        "text": "a) Information is an essential part of the marketing mix",
+        "is_correct": false
+      },
+      {
+        "text": "b) Information is an important part of the customer relationship",
+        "is_correct": false
+      },
+      {
+        "text": "c) Information is an essential part of the corporate strategy",
+        "is_correct": false
+      },
+      {
+        "text": "d) Information is not relevant for all market segments",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q4",
+    "content": "What is the main function of scientific analysis in the context of information marketing?",
+    "answers": [
+      {
+        "text": "a) the promotion of brand awareness",
+        "is_correct": false
+      },
+      {
+        "text": "b) the development of marketing strategies",
+        "is_correct": false
+      },
+      {
+        "text": "c) The implementation of market research and analyzes",
+        "is_correct": true
+      },
+      {
+        "text": "d) the creation of advertising plans",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q5",
+    "content": "Which of the following marketing concepts is * best * to improve customer satisfaction?",
+    "answers": [
+      {
+        "text": "a) Product management",
+        "is_correct": false
+      },
+      {
+        "text": "b) customer loyalty",
+        "is_correct": true
+      },
+      {
+        "text": "c) brand awareness",
+        "is_correct": false
+      },
+      {
+        "text": "d) Price sales",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q6",
+    "content": "Which aspect of information marketing is most often taken into account by the \"connection of company success marketing\"?",
+    "answers": [
+      {
+        "text": "a) The analysis of competitors",
+        "is_correct": false
+      },
+      {
+        "text": "b) The analysis of resources",
+        "is_correct": false
+      },
+      {
+        "text": "c) the connection company success marketing",
+        "is_correct": true
+      },
+      {
+        "text": "d) The optimization of sales strategies",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q7",
+    "content": "What is the term \"information\" in the context of information marketing?",
+    "answers": [
+      {
+        "text": "a) A general term for all marketing activities",
+        "is_correct": false
+      },
+      {
+        "text": "b) The systematic collection and analysis of data",
+        "is_correct": true
+      },
+      {
+        "text": "c) The type of marketing materials used to communicate information",
+        "is_correct": false
+      },
+      {
+        "text": "d) a form of customer relationship",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q8",
+    "content": "Which of the following statements describes the meaning of \"information\" for the success of information marketing?",
+    "answers": [
+      {
+        "text": "a) Information is irrelevant for success.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Information is the basis for a successful marketing strategy.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Information is a means of improving the customer relationship.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Information is only relevant for large companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q9",
+    "content": "Which of the following marketing activities is * best * to use the \"information\"?",
+    "answers": [
+      {
+        "text": "a) The creation of advertising plans",
+        "is_correct": false
+      },
+      {
+        "text": "b) The implementation of customer surveys",
+        "is_correct": true
+      },
+      {
+        "text": "c) the development of marketing content",
+        "is_correct": false
+      },
+      {
+        "text": "d) the analysis of competitors",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q10",
+    "content": "What is the difference between \"information\" and \"information\" in the context of information marketing?",
+    "answers": [
+      {
+        "text": "a) \"Information\" is always the same.",
+        "is_correct": false
+      },
+      {
+        "text": "b) \"Information\" is a metaphor for the type of information that is relevant for marketing.",
+        "is_correct": true
+      },
+      {
+        "text": "c) \"Information\" is only relevant for certain types of companies.",
+        "is_correct": false
+      },
+      {
+        "text": "d) \"Information\" is always negative.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q11",
+    "content": "Which of the following statements about information marketing is * best *?",
+    "answers": [
+      {
+        "text": "a) Information is a means of improving customer relationships.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Information is a means of improving product development.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Information is a means of improving the competitive strategy.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Information is a means of improving corporate management.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q12",
+    "content": "What is an example of \"information\"-based marketing product?",
+    "answers": [
+      {
+        "text": "a) a traditional print magazine",
+        "is_correct": false
+      },
+      {
+        "text": "b) an online blog",
+        "is_correct": false
+      },
+      {
+        "text": "c) a product based on customer feedback",
+        "is_correct": true
+      },
+      {
+        "text": "d) a television advertising",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q13",
+    "content": "How does information marketing influence the decision -making process of a company?",
+    "answers": [
+      {
+        "text": "a) It only improves decision -making.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It improves decision -making considerably.",
+        "is_correct": true
+      },
+      {
+        "text": "c) It only improves decision -making in certain situations.",
+        "is_correct": false
+      },
+      {
+        "text": "d) It does not improve decision making.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q14",
+    "content": "What is \"information\" in the context of information marketing?",
+    "answers": [
+      {
+        "text": "a) a collection of data about customers.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the type of information that is relevant for the decision -making and the development of strategies.",
+        "is_correct": true
+      },
+      {
+        "text": "c) a form of customer relationship.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a method for measuring the success of marketing campaigns.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q15",
+    "content": "Which of the following statements best describes the role of information in the modern economy?",
+    "answers": [
+      {
+        "text": "a) Information is always an obstacle to economic development.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Information is an essential part of economic development.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Information is only relevant for highly qualified specialists.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Information is only relevant for large companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q16",
+    "content": "What is \"information\" in the context of information marketing?",
+    "answers": [
+      {
+        "text": "a) a company that collects and analyzes information.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a product that contains information.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the type of information that is relevant for the decision -making and the development of strategies.",
+        "is_correct": true
+      },
+      {
+        "text": "d) A marketing tool to improve customer relationships.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q17",
+    "content": "Which of the following strategies is best suited to use information?",
+    "answers": [
+      {
+        "text": "a) only to ignore the information.",
+        "is_correct": false
+      },
+      {
+        "text": "b) only to analyze the information.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Using information to understand and meet customer needs.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ignore information because they are irrelevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k1-en-q18",
+    "content": "What is an example of a \"information\" marketing strategy?",
+    "answers": [
+      {
+        "text": "a) A marketing strategy based on the sale of products.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a marketing strategy based on building a strong brand.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a marketing strategy based on the collection and analysis of customer feedback.",
+        "is_correct": true
+      },
+      {
+        "text": "d) a marketing strategy based on the price comparison.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

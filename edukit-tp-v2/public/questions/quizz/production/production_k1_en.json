@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ip-log-k1-en-q1",
+    "content": "1. [ENÜ] Was ist laut Corsten (1994) unter Produktion zu verstehen?",
+    "answers": [
+      {
+        "text": "a) Der Vertrieb fertiger Produkte",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Planung logistischer Prozesse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Kombination von Gütern zur Erstellung anderer Güter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Der Einkauf von Rohstoffen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q2",
+    "content": "2. [ENÜ] Welche Elemente gehören zu den Inputs im Produktionsprozess?",
+    "answers": [
+      {
+        "text": "a) Marketing, Vertrieb, Personal",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kapital, Information, Werbung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Material, Energie, Arbeitsleistung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kommunikation, Finanzierung, Controlling",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q3",
+    "content": "3. [ENÜ] Wofür steht der Begriff Throughput im Produktionsprozess?",
+    "answers": [
+      {
+        "text": "a) Auslieferung an den Kunden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Rücktransport und Entsorgung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verarbeitungsprozess zwischen Input und Output",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eingangskontrolle der Waren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q4",
+    "content": "4. [ENÜ] Welche Aussage zur Rolle der Produktion im Unternehmenskreislauf ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Produktion ist ausschließlich für die Finanzierung zuständig",
+        "is_correct": false
+      },
+      {
+        "text": "b) Produktion liefert Güter und Dienstleistungen zur Wertschöpfung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Produktion ist nicht mit der Umwelt verknüpft",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktion beeinflusst keine Geldströme",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q5",
+    "content": "5. [ENÜ] Was ist laut Goetschalckx eine Aufgabe der Logistik?",
+    "answers": [
+      {
+        "text": "a) Kontrolle der Produktentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Planung und Umsetzung effizienter Güter- und Informationsflüsse",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ausschließliche Lagerhaltung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Definition der Unternehmenskultur",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q6",
+    "content": "6. [ENÜ] Welche Aussage gehört NICHT zu den 7 R’s der Logistik?",
+    "answers": [
+      {
+        "text": "a) Richtiges Produkt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Richtiger Preis",
+        "is_correct": true
+      },
+      {
+        "text": "c) Richtige Menge",
+        "is_correct": false
+      },
+      {
+        "text": "d) Richtige Information",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q7",
+    "content": "7. [ENÜ] Was bedeutet Logistik ursprünglich unter Napoleon?",
+    "answers": [
+      {
+        "text": "a) Steuerberatung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kriegstaktik",
+        "is_correct": false
+      },
+      {
+        "text": "c) Versorgung und Transportsteuerung kriegswichtiger Güter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Geheimdienstliche Kommunikation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q8",
+    "content": "8. [ENÜ] Wie ist Logistik heute definiert?",
+    "answers": [
+      {
+        "text": "a) Synonym für Logik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Teilgebiet der Buchhaltung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zeit-, kosten- und mengenoptimierte Verteilung von Gütern und Dienstleistungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Steuerung der Personaleinsatzpläne",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q9",
+    "content": "9. [ENÜ] Was stellt das Bindeglied zwischen Lieferanten, Unternehmen und Kunden dar?",
+    "answers": [
+      {
+        "text": "a) Produktion",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einkauf",
+        "is_correct": false
+      },
+      {
+        "text": "c) Logistik",
+        "is_correct": true
+      },
+      {
+        "text": "d) Marketing",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k1-en-q10",
+    "content": "10. [ENÜ] Was kennzeichnet innovative Produktionssysteme wie Bioraffinerien?",
+    "answers": [
+      {
+        "text": "a) Einwegverarbeitung und Massenfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verwertung fossiler Brennstoffe zur Stromerzeugung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ganzheitliche Nutzung von Biomasse zur Herstellung vielfältiger Produkte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Fokus auf Zwischenlagerung und Reimport",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 1",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Motivation & Basics",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

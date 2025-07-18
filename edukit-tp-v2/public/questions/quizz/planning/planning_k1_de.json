@@ -1,0 +1,422 @@
+[
+  {
+    "id": "ip-ip-k1-de-q1",
+    "content": "1.  Welche Art von Produktionssystem wird in der Beschreibung hervorgehoben?",
+    "answers": [
+      {
+        "text": "a) Autonome Systeme",
+        "is_correct": true
+      },
+      {
+        "text": "b) Künstliche Intelligenz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verteilte Systeme",
+        "is_correct": false
+      },
+      {
+        "text": "d) Komplexe Systeme",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q2",
+    "content": "2.  Welche der folgenden Aussagen beschreibt am besten die Hauptfunktion der \"magischen Dreiecks\"-Konzept?",
+    "answers": [
+      {
+        "text": "a) Die Optimierung von Produktionsprozessen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Reduzierung von Kosten und die Erhöhung der Produktqualität.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Integration von verschiedenen Produktionsmethoden.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Verbesserung der Kundenzufriedenheit.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q3",
+    "content": "3.  Welche der folgenden ist eine Eigenschaft der \"vernetzten\" Welt?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung von Ressourcenverbrauch.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Förderung von Innovationen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Verbesserung der Kommunikation und Zusammenarbeit.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Minimierung von Umweltrisiken.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q4",
+    "content": "4.  Was ist der Hauptzweck der \"digitalen Transformation\" im Kontext der Produktentwicklung?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der Produktionskosten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Verbesserung der Kundenerfahrung.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Integration digitaler Technologien in alle Produktionsprozesse.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Optimierung der Lieferkette.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q5",
+    "content": "5.  Welche der folgenden Aussagen beschreibt am besten die Rolle der \"veränderten Arbeitsbedingungen\"?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der Arbeitsbelastung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Förderung von Innovationen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Anpassung an neue Technologien und Prozesse.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Verbesserung der Mitarbeiterzufriedenheit.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q6",
+    "content": "6.  Welche der folgenden Informationen wird im Text hervorgehoben?",
+    "answers": [
+      {
+        "text": "a) Die Bedeutung von Nachhaltigkeit.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Die Vorteile von Automatisierung.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Rolle der Kundenfeedback.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Vorteile von globaler Vernetzung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q7",
+    "content": "7.  Welche der folgenden ist eine Folge der \"veränderten Arbeitsbedingungen\"?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der Arbeitsbelastung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Förderung von Innovationen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Anpassung an neue Technologien.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Verbesserung der Mitarbeiterzufriedenheit.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q8",
+    "content": "8.  Welches der folgenden ist ein Beispiel für eine \"szenische Lernfrage\"?",
+    "answers": [
+      {
+        "text": "a) \"Welche Produktionsmethoden sind am effizientesten?\"",
+        "is_correct": true
+      },
+      {
+        "text": "b) \"Wie können wir unsere Kundenzufriedenheit verbessern?\"",
+        "is_correct": false
+      },
+      {
+        "text": "c) \"Wie können wir unsere Lieferkette optimieren?\"",
+        "is_correct": false
+      },
+      {
+        "text": "d) \"Welche neuen Materialien sind für die Produktion geeignet?\"",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q9",
+    "content": "9.  Welche der folgenden Aussagen beschreibt am besten das Ziel der \"digitalen Wirtschaft\"?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der Arbeitskosten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Förderung von Innovationen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Verbesserung der Effizienz und Produktivität.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Minimierung der Umweltbelastung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q10",
+    "content": "10. Welchen Aspekt der \"digitalen Transformation\" wird im Text besonders hervorgehoben?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der Rohstoffverbrauch.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Integration von verschiedenen Produktionsmethoden.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Verbesserung der Kundenbindung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Optimierung der Logistik.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q11",
+    "content": "11. Welche der folgenden Aussagen ist am besten zur Beschreibung des Textes geeignet?",
+    "answers": [
+      {
+        "text": "a) Der Text ist eine akademische Arbeit.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der Text ist eine Anleitung für die Umsetzung von Produktionsprozessen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Der Text beschreibt die Entwicklung einer neuen Produktionsphilosophie.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Der Text ist ein Bericht über die Auswirkungen von Nachhaltigkeit auf die Wirtschaft.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q12",
+    "content": "12.  Welchen Vorteil wird im Text hervorgehoben?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der Produktionskosten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Förderung von Innovationen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Verbesserung der Kundenerfahrung.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Optimierung der Lieferkette.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q13",
+    "content": "13.  Welche der folgenden Aussagen spiegelt am besten die Bedeutung der \"vernetzten\" Welt wider?",
+    "answers": [
+      {
+        "text": "a) Die Reduzierung der Transportkosten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Förderung von Wettbewerb.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Verbesserung der Kommunikation und Zusammenarbeit.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Minimierung der Umweltbelastung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q14",
+    "content": "14. Was ist der zentrale Schwerpunkt des Textes?",
+    "answers": [
+      {
+        "text": "a) Die Geschichte der Produktentwicklung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Bedeutung der Lieferkette.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Auswirkungen der Digitalisierung auf die Produktion.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Optimierung der Ressourcen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q15",
+    "content": "15. Welche der folgenden Aussagen ist am besten beschreibt die Rolle des \"Produktvarianten\" in der Produktionsplanung?",
+    "answers": [
+      {
+        "text": "a) Sie sind nur eine Möglichkeit, die Produktqualität zu verbessern.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie ermöglichen die Anpassung an unterschiedliche Kundenbedürfnisse.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie sind nur für kleine Unternehmen geeignet.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie können nur in der Produktion eingesetzt werden.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

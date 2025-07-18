@@ -1,0 +1,282 @@
+[
+  {
+    "id": "fr-vl5-de-q1",
+    "content": "1. Welche Eigenschaft trifft auf Eigenkapital, aber nicht auf Fremdkapital zu?",
+    "answers": [
+      {
+        "text": "a) Recht auf Zinszahlung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Steuerliche Abzugsfähigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Beteiligung am Unternehmensgewinn",
+        "is_correct": true
+      },
+      {
+        "text": "d) Vorrangiger Anspruch bei Insolvenz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q2",
+    "content": "2. Was ist ein zentrales Merkmal von Stammaktien?",
+    "answers": [
+      {
+        "text": "a) Höhere Dividenden ohne Stimmrecht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fester Rückzahlungsbetrag am Laufzeitende",
+        "is_correct": false
+      },
+      {
+        "text": "c) Teilnahme- und Stimmrecht auf der Hauptversammlung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Steuerfreier Gewinnanteil",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q3",
+    "content": "3. Was unterscheidet Vorzugsaktien typischerweise von Stammaktien?",
+    "answers": [
+      {
+        "text": "a) Vorzugsaktien haben ein höheres Stimmrecht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Vorzugsaktien beinhalten ein Bezugsrecht",
+        "is_correct": false
+      },
+      {
+        "text": "c) Vorzugsaktien haben oft keinen Stimmrecht, aber höheren Dividendenanspruch",
+        "is_correct": true
+      },
+      {
+        "text": "d) Vorzugsaktien sind nicht handelbar",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q4",
+    "content": "4. Was versteht man unter 'Underpricing' bei einem Börsengang?",
+    "answers": [
+      {
+        "text": "a) Zu hoher Ausgabepreis",
+        "is_correct": false
+      },
+      {
+        "text": "b) Börsenpreis liegt unter dem Emissionsvolumen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Erster Börsenkurs liegt über dem Ausgabepreis",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kapitalerhöhung durch neue Aktien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q5",
+    "content": "5. Was ist ein IPO?",
+    "answers": [
+      {
+        "text": "a) Eine neue Steuerform für Unternehmen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erstmaliger Börsengang eines Unternehmens",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein Rückkaufprogramm von Aktien",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein Investment Portfolio Option",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q6",
+    "content": "6. Welche Kapitalerhöhungsform erlaubt dem Vorstand die Ausgabe neuer Aktien innerhalb eines Zeitraums?",
+    "answers": [
+      {
+        "text": "a) Ordentliche Kapitalerhöhung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Genehmigtes Kapital",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bedingte Kapitalerhöhung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kapitalherabsetzung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q7",
+    "content": "7. Was ist ein typisches Phänomen nach IPOs laut empirischen Beobachtungen?",
+    "answers": [
+      {
+        "text": "a) Höhere Langfrist-Performance als der Gesamtmarkt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kursverlust am ersten Handelstag",
+        "is_correct": false
+      },
+      {
+        "text": "c) Tendenziell unterdurchschnittliche Performance in den Folgejahren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kurssteigerung wegen Buybacks",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q8",
+    "content": "8. Was besagt das 'Dividend Puzzle'?",
+    "answers": [
+      {
+        "text": "a) Aktien ohne Dividende sind steuerlich begünstigt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Dividendenzahlungen steigen bei sinkenden Kursen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Trotz steuerlicher Nachteile sind Dividenden weit verbreitet",
+        "is_correct": true
+      },
+      {
+        "text": "d) Unternehmen verzichten generell auf Ausschüttungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q9",
+    "content": "9. Welche Wirkung hat eine Dividendenerhöhung typischerweise?",
+    "answers": [
+      {
+        "text": "a) Keine Auswirkung auf den Aktienkurs",
+        "is_correct": false
+      },
+      {
+        "text": "b) Signal für geringere Gewinne",
+        "is_correct": false
+      },
+      {
+        "text": "c) Positives Signal über künftige Gewinne und Kurssteigerung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Automatischer Rückgang des Kurswerts",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl5-de-q10",
+    "content": "10. Was beschreibt Steuerarbitrage im Zusammenhang mit Dividenden?",
+    "answers": [
+      {
+        "text": "a) Verkauf von Aktien vor Dividendenausschüttung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erwerb von Aktien durch niedrig besteuerte Investoren vor dem Ex-Dividenden-Termin",
+        "is_correct": true
+      },
+      {
+        "text": "c) Umgehung von Kapitalertragssteuer durch Fonds",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ausschüttung steuerfreier Gewinne",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL5",
+    "lecture": "Finanzierung",
+    "module": "Eigenkapitalfinanzierung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ip-log-k5-en-q1",
+    "content": "1. [ENÜ] Was beschreibt der Bullwhip-Effekt?",
+    "answers": [
+      {
+        "text": "a) Reduktion von Nachfrageschwankungen entlang der Lieferkette",
+        "is_correct": false
+      },
+      {
+        "text": "b) Stärkung der Lagerbestände beim Endkunden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verstärkung von Nachfrageschwankungen über mehrere Stufen der Lieferkette",
+        "is_correct": true
+      },
+      {
+        "text": "d) Optimierung der Transportlogistik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q2",
+    "content": "2. [ENÜ] Was ist eine dokumentierte Ursache des Bullwhip-Effekts?",
+    "answers": [
+      {
+        "text": "a) Lagerausfälle durch Streiks",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kampagnen von Procter & Gamble für Pampers",
+        "is_correct": true
+      },
+      {
+        "text": "c) Störungen durch Naturkatastrophen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktionsfehler in der Endmontage",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q3",
+    "content": "3. [ENÜ] Welche Auswirkung hat der Bullwhip-Effekt NICHT?",
+    "answers": [
+      {
+        "text": "a) Hohe Lagerbestände",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringere Kundenzufriedenheit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Geringe Schwankungen in der Produktion",
+        "is_correct": true
+      },
+      {
+        "text": "d) Unausgelastete Kapazitäten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q4",
+    "content": "4. [ENÜ] Welche Maßnahme wirkt dem Bullwhip-Effekt entgegen?",
+    "answers": [
+      {
+        "text": "a) Verlängerung der Wiederbeschaffungszeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erhöhung der Mindestbestellmengen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verbesserung des Informationsflusses über die Supply Chain",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reduktion der Lagerhaltungskosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q5",
+    "content": "5. [ENÜ] Was versteht man unter dem Ripple-Effekt?",
+    "answers": [
+      {
+        "text": "a) Schwankungen der Endverbraucherpreise",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verstärkung operativer Nachfrageeffekte",
+        "is_correct": false
+      },
+      {
+        "text": "c) Strukturelle Störung durch externe Ereignisse entlang der Supply Chain",
+        "is_correct": true
+      },
+      {
+        "text": "d) Verteilung logistischer Aufgaben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q6",
+    "content": "6. [ENÜ] Welche Ereignisse können Ripple-Effekte auslösen?",
+    "answers": [
+      {
+        "text": "a) Marketingkampagnen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Preisnachlässe",
+        "is_correct": false
+      },
+      {
+        "text": "c) Naturkatastrophen oder Kriege",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kundenumfragen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q7",
+    "content": "7. [ENÜ] Welche Maßnahme hilft NICHT gegen den Ripple-Effekt?",
+    "answers": [
+      {
+        "text": "a) Lieferantensegmentierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geografische Diversifikation",
+        "is_correct": false
+      },
+      {
+        "text": "c) Informationsblockade",
+        "is_correct": true
+      },
+      {
+        "text": "d) Postponement-Strategien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q8",
+    "content": "8. [ENÜ] Was ist eine mögliche Auswirkung von Lean-Praktiken im Falle einer Störung?",
+    "answers": [
+      {
+        "text": "a) Schnellere Wiederherstellung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringe Auswirkungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verstärkte Auswirkungen auf die gesamte SC",
+        "is_correct": true
+      },
+      {
+        "text": "d) Vermeidung von Koordination",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q9",
+    "content": "9. [ENÜ] Welche Strategie kann zur Minderung von Risiken bei Ripple-Effekten beitragen?",
+    "answers": [
+      {
+        "text": "a) Einzelbeschaffung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zentralisierung aller Standorte",
+        "is_correct": false
+      },
+      {
+        "text": "c) Mehrfachbeschaffung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reduzierung der Lagerbestände",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k5-en-q10",
+    "content": "10. [ENÜ] Was ist ein Unterschied zwischen Bullwhip- und Ripple-Effekt?",
+    "answers": [
+      {
+        "text": "a) Bullwhip betrifft nur die IT, Ripple nur die Logistik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bullwhip ist operativ, Ripple basiert auf außergewöhnlichen Risiken",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ripple tritt nur bei Absatzkrisen auf",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bullwhip entsteht nur in der Finanzabteilung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 5",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Bullwhip & Ripple Effect",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

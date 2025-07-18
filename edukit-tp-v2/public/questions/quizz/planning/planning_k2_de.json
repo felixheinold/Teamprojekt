@@ -1,0 +1,562 @@
+[
+  {
+    "id": "ip-ip-k1-de-q1",
+    "content": "1. Welche drei Zielgrößen umfasst das magische Dreieck der Produktion?",
+    "answers": [
+      {
+        "text": "a) Zeit, Qualität, Innovation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kosten, Zeit, Qualität",
+        "is_correct": true
+      },
+      {
+        "text": "c) Flexibilität, Kosten, Effizienz",
+        "is_correct": false
+      },
+      {
+        "text": "d) Qualität, Effizienz, Zeit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q2",
+    "content": "2. Welche industrielle Revolution begann ca. 1870?",
+    "answers": [
+      {
+        "text": "a) 1. Industrielle Revolution",
+        "is_correct": false
+      },
+      {
+        "text": "b) 2. Industrielle Revolution",
+        "is_correct": true
+      },
+      {
+        "text": "c) 3. Industrielle Revolution",
+        "is_correct": false
+      },
+      {
+        "text": "d) 4. Industrielle Revolution",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q3",
+    "content": "3. Wofür steht der Begriff Industrie 4.0?",
+    "answers": [
+      {
+        "text": "a) Digitalisierung von Schulen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Vierte industrielle Revolution",
+        "is_correct": true
+      },
+      {
+        "text": "c) Automatisierung der Landwirtschaft",
+        "is_correct": false
+      },
+      {
+        "text": "d) Neue Energieformen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q4",
+    "content": "4. Was ist ein Ziel von Industrie 4.0?",
+    "answers": [
+      {
+        "text": "a) Höhere Lagerbestände",
+        "is_correct": false
+      },
+      {
+        "text": "b) Manuelle Steuerung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Vernetzung der Produktionssysteme",
+        "is_correct": true
+      },
+      {
+        "text": "d) Längere Lieferzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q5",
+    "content": "5. Welche Systeme sind Teil eines Cyber-Physischen Systems (CPS)?",
+    "answers": [
+      {
+        "text": "a) Nur Sensoren",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eingebettete Systeme, Kommunikation, Mechatronik",
+        "is_correct": true
+      },
+      {
+        "text": "c) Mechanik und Hydraulik",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nur Datenbanken",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q6",
+    "content": "6. Was beschreibt der Begriff Megatrend?",
+    "answers": [
+      {
+        "text": "a) Kurzfristige Modeerscheinung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Regionale Entwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Langfristiger, gesellschaftlich relevanter Trend",
+        "is_correct": true
+      },
+      {
+        "text": "d) Marketingstrategie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q7",
+    "content": "7. Was bedeutet horizontale Integration?",
+    "answers": [
+      {
+        "text": "a) Einbindung externer Systeme in das eigene System",
+        "is_correct": true
+      },
+      {
+        "text": "b) Digitalisierung von Arbeitsplätzen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Roboterprogrammierung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Qualitätsmanagement",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q8",
+    "content": "8. Welche Fähigkeit gehört zum Reifegradmodell Industrie 4.0?",
+    "answers": [
+      {
+        "text": "a) Sichtbarkeit",
+        "is_correct": true
+      },
+      {
+        "text": "b) Redundanz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Einfachheit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kompression",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q9",
+    "content": "9. Was bedeutet 'Durchgängiges digitales Engineering'?",
+    "answers": [
+      {
+        "text": "a) Nutzung von Papierdokumenten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Simulation in der Produktion",
+        "is_correct": false
+      },
+      {
+        "text": "c) Digital Twin über alle Ebenen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Manuelle Steuerung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q10",
+    "content": "10. Was versteht man unter einer Smart Factory?",
+    "answers": [
+      {
+        "text": "a) Werk ohne Computer",
+        "is_correct": false
+      },
+      {
+        "text": "b) Automatisiertes Lager",
+        "is_correct": false
+      },
+      {
+        "text": "c) Intelligente, vernetzte Produktionsumgebung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Maschinenhandel",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q11",
+    "content": "11. Wofür steht CPPS?",
+    "answers": [
+      {
+        "text": "a) Computer Power System",
+        "is_correct": false
+      },
+      {
+        "text": "b) Cyber-Physisches Produktionssystem",
+        "is_correct": true
+      },
+      {
+        "text": "c) Centralized Production System",
+        "is_correct": false
+      },
+      {
+        "text": "d) Core Production Safety",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q12",
+    "content": "12. Welcher Trend fördert individualisierte Produkte?",
+    "answers": [
+      {
+        "text": "a) Digitalisierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nachhaltigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Individualisierung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Globalisierung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q13",
+    "content": "13. Was ist ein Ziel von Nachhaltigkeit in der Produktion?",
+    "answers": [
+      {
+        "text": "a) Mehr Ressourcenverbrauch",
+        "is_correct": false
+      },
+      {
+        "text": "b) Höhere CO₂-Emissionen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ressourcenschonende Verfahren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Geringere Produktqualität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q14",
+    "content": "14. Was ermöglicht vertikale Integration?",
+    "answers": [
+      {
+        "text": "a) Echtzeit-Kommunikation zwischen Produktionsebenen",
+        "is_correct": true
+      },
+      {
+        "text": "b) Verkauf über Internet",
+        "is_correct": false
+      },
+      {
+        "text": "c) Neue Werbestrategien",
+        "is_correct": false
+      },
+      {
+        "text": "d) Schulungen für Mitarbeiter",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q15",
+    "content": "15. Was ist ein zentrales Paradigma von Industrie 4.0?",
+    "answers": [
+      {
+        "text": "a) Zentrale Steuerung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Digitalisierung von Schulen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Autonome, dezentrale Steuerung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Hohe Lagerbestände",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q16",
+    "content": "16. Was ist ein Beispiel für durchgängiges digitales Engineering?",
+    "answers": [
+      {
+        "text": "a) Excel-Tabellen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Papierformulare",
+        "is_correct": false
+      },
+      {
+        "text": "c) Digitaler Zwilling",
+        "is_correct": true
+      },
+      {
+        "text": "d) Handschriftliche Skizzen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q17",
+    "content": "17. Was zeichnet ein Cyber-Physisches Produktionssystem aus?",
+    "answers": [
+      {
+        "text": "a) Autonome Kommunikation",
+        "is_correct": true
+      },
+      {
+        "text": "b) Verwendung von Stempelkarten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zentrale Koordination",
+        "is_correct": false
+      },
+      {
+        "text": "d) Papierbasierte Planung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q18",
+    "content": "18. Worin besteht ein Vorteil von Industrie 4.0?",
+    "answers": [
+      {
+        "text": "a) Geringere Transparenz",
+        "is_correct": false
+      },
+      {
+        "text": "b) Weniger Automatisierung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Schnellere Reaktion auf Kundenwünsche",
+        "is_correct": true
+      },
+      {
+        "text": "d) Längere Entwicklungszeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q19",
+    "content": "19. Welche Technologie spielt in Industrie 4.0 eine zentrale Rolle?",
+    "answers": [
+      {
+        "text": "a) Dampfmaschine",
+        "is_correct": false
+      },
+      {
+        "text": "b) Elektrizität",
+        "is_correct": false
+      },
+      {
+        "text": "c) Künstliche Intelligenz",
+        "is_correct": true
+      },
+      {
+        "text": "d) Schreibmaschine",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k1-de-q20",
+    "content": "20. Welche Revolution ermöglichte die variantenreiche Serienproduktion?",
+    "answers": [
+      {
+        "text": "a) 1. Industrielle Revolution",
+        "is_correct": false
+      },
+      {
+        "text": "b) 2. Industrielle Revolution",
+        "is_correct": false
+      },
+      {
+        "text": "c) 3. Industrielle Revolution",
+        "is_correct": true
+      },
+      {
+        "text": "d) 4. Industrielle Revolution",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 1",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "fr-vl2-de-q1",
+    "content": "1. Was ist eine Anleihe laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Eine Aktie mit variablem Kupon",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein verbrieftes, handelbares Forderungsrecht gegenüber einem Emittenten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine kurzfristige Kreditform",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Finanzierungsform für Privatpersonen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q2",
+    "content": "2. Welche Anleihe zahlt keine laufenden Zinsen?",
+    "answers": [
+      {
+        "text": "a) Kuponanleihe",
+        "is_correct": false
+      },
+      {
+        "text": "b) Floating Rate Note",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wandelanleihe",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nullkuponanleihe (Zerobond)",
+        "is_correct": true
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q3",
+    "content": "3. Was beschreibt der Zeitwert des Geldes?",
+    "answers": [
+      {
+        "text": "a) Geld verliert im Zeitablauf durch Inflation an Wert",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Zahlung in der Zukunft ist mehr wert als heute",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Zahlung ist umso weniger wert, je später sie erfolgt",
+        "is_correct": true
+      },
+      {
+        "text": "d) Geld hat unabhängig vom Zeitpunkt denselben Wert",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q4",
+    "content": "4. Was ist die Grundformel für den Barwert einer Zahlung?",
+    "answers": [
+      {
+        "text": "a) BW = C0 * (1 + r)",
+        "is_correct": false
+      },
+      {
+        "text": "b) BW = C1 / (1 + r)",
+        "is_correct": true
+      },
+      {
+        "text": "c) BW = C1 * r",
+        "is_correct": false
+      },
+      {
+        "text": "d) BW = (C1 + r) * C0",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q5",
+    "content": "5. Was ist das Yield to Maturity (YTM) einer Anleihe?",
+    "answers": [
+      {
+        "text": "a) Die durchschnittliche Auszahlung je Periode",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der Barwert der Rückzahlung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die erwartete Verzinsung bei Kauf und Halten bis zur Fälligkeit",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Differenz zwischen Nominal- und Marktwert",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q6",
+    "content": "6. Was gilt laut Vorlesung bei steigenden Zinssätzen für Anleihepreise?",
+    "answers": [
+      {
+        "text": "a) Sie steigen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie bleiben konstant",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie fallen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie sind unabhängig vom Zinssatz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q7",
+    "content": "7. Was beschreibt eine ewige Rente?",
+    "answers": [
+      {
+        "text": "a) Einen Zahlungsstrom mit festem Enddatum",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Zahlung, die unbegrenzt fortgeführt wird",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein Einmalbetrag, der verzinst wird",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Investition mit endlicher Laufzeit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q8",
+    "content": "8. Was sind Covenants in Anleiheverträgen?",
+    "answers": [
+      {
+        "text": "a) Steuerliche Abschreibungsregeln",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kündigungsfristen bei Ratenkrediten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Vertragliche Zusatzvereinbarungen zur Einschränkung des Emittenten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Inflationsanpassungen bei Zinssätzen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q9",
+    "content": "9. Was beschreibt eine endliche Rente mit konstantem Wachstum?",
+    "answers": [
+      {
+        "text": "a) Eine Rente, bei der die Zahlungen jedes Jahr gleich bleiben",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Zahlungsstrom mit sinkenden Zahlungen über Zeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Rente mit wachsendem Betrag über eine begrenzte Anzahl an Perioden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein ewiger Zahlungsstrom",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl2-de-q10",
+    "content": "10. Welche Aussage zu Ratings ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Ratings geben ausschließlich zukünftige Gewinne an",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ratings beeinflussen den Risikoaufschlag von Anleihen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ratings sind gesetzlich vorgeschrieben",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ratings gelten nur für Aktien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2+3",
+    "lecture": "Finanzierung",
+    "module": "Anleihen & Zahlungsströme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

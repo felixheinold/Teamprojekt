@@ -1,0 +1,282 @@
+[
+  {
+    "id": "energy-vl2-de-q1",
+    "content": "1. Was sind zentrale energiepolitische Ziele laut §1 EnWG?",
+    "answers": [
+      {
+        "text": "a) Autarkie, Digitalisierung, Innovation, Dezentralisierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Versorgungssicherheit, Umweltverträglichkeit, Wirtschaftlichkeit, Akzeptanz",
+        "is_correct": true
+      },
+      {
+        "text": "c) Effizienz, Ertrag, Redundanz, Wiederverwendung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Preisstabilität, Marktwachstum, Digitalisierung, Versorgungssicherheit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q2",
+    "content": "2. Welcher Brennstoff hatte 2023 den höchsten globalen Primärenergieverbrauch?",
+    "answers": [
+      {
+        "text": "a) Kohle",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erdöl",
+        "is_correct": true
+      },
+      {
+        "text": "c) Erdgas",
+        "is_correct": false
+      },
+      {
+        "text": "d) Erneuerbare",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q3",
+    "content": "3. Wie hoch war der CO2-Emissionsfaktor für den deutschen Strommix im Jahr 2023?",
+    "answers": [
+      {
+        "text": "a) ca. 850 g CO2/kWh",
+        "is_correct": false
+      },
+      {
+        "text": "b) ca. 600 g CO2/kWh",
+        "is_correct": false
+      },
+      {
+        "text": "c) ca. 450 g CO2/kWh",
+        "is_correct": true
+      },
+      {
+        "text": "d) ca. 250 g CO2/kWh",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q4",
+    "content": "4. Welcher Energieträger trägt laut Vorlesung maßgeblich zur CO2-Reduktion im Strommix bei?",
+    "answers": [
+      {
+        "text": "a) Erdgas",
+        "is_correct": false
+      },
+      {
+        "text": "b) Biomasse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Photovoltaik",
+        "is_correct": true
+      },
+      {
+        "text": "d) Braunkohle",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q5",
+    "content": "5. Welches Ziel hat Deutschland beim Anteil erneuerbarer Energien am Bruttostromverbrauch bis 2030?",
+    "answers": [
+      {
+        "text": "a) 60%",
+        "is_correct": false
+      },
+      {
+        "text": "b) 70%",
+        "is_correct": false
+      },
+      {
+        "text": "c) 80%",
+        "is_correct": true
+      },
+      {
+        "text": "d) 100%",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q6",
+    "content": "6. Welches Jahr wird als Ziel für die Treibhausgasneutralität in Deutschland genannt?",
+    "answers": [
+      {
+        "text": "a) 2040",
+        "is_correct": false
+      },
+      {
+        "text": "b) 2045",
+        "is_correct": true
+      },
+      {
+        "text": "c) 2050",
+        "is_correct": false
+      },
+      {
+        "text": "d) 2060",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q7",
+    "content": "7. Was beschreibt der 'Merit-Order-Effekt'?",
+    "answers": [
+      {
+        "text": "a) Höhere Nachfrage führt zu niedrigeren Preisen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erneuerbare verdrängen konventionelle Kraftwerke durch geringere Grenzkosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Kohlekraftwerke produzieren immer zuerst",
+        "is_correct": false
+      },
+      {
+        "text": "d) Strompreis steigt mit steigendem Windaufkommen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q8",
+    "content": "8. Was sind laut Szenarien T45 zentrale Herausforderungen für das Stromsystem?",
+    "answers": [
+      {
+        "text": "a) Geringer Strombedarf",
+        "is_correct": false
+      },
+      {
+        "text": "b) Importüberschüsse durch Kohle",
+        "is_correct": false
+      },
+      {
+        "text": "c) Hoher Strom- und Wasserstoffbedarf, fluktuierende Erzeugung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Unabhängigkeit von Stromimporten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q9",
+    "content": "9. Welche politische Maßnahme definiert Ausbauziele für erneuerbare Energien?",
+    "answers": [
+      {
+        "text": "a) EEG",
+        "is_correct": true
+      },
+      {
+        "text": "b) TEHG",
+        "is_correct": false
+      },
+      {
+        "text": "c) BImSchG",
+        "is_correct": false
+      },
+      {
+        "text": "d) KWK-G",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl2-de-q10",
+    "content": "10. Was bewirkt zunehmende Einspeisung erneuerbarer Energien am Strommarkt?",
+    "answers": [
+      {
+        "text": "a) Erhöhung des Strompreises",
+        "is_correct": false
+      },
+      {
+        "text": "b) Keine Veränderung im Markt",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verdrängung teurer Kraftwerke, Senkung des Börsenpreises",
+        "is_correct": true
+      },
+      {
+        "text": "d) Erhöhung der Importabhängigkeit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Energiewirtschaft",
+    "module": "Transformationspfade",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

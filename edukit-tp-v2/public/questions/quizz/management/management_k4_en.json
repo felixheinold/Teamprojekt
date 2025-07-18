@@ -1,0 +1,506 @@
+[
+  {
+    "id": "pb-uf-k4-en-q1",
+    "content": "1. What kind of company is the board of directors?",
+    "answers": [
+      {
+        "text": "a) A large group with many subsidiaries.",
+        "is_correct": true
+      },
+      {
+        "text": "b) a specialized technology provider.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a traditional chemical company.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a substitute software manufacturer.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q2",
+    "content": "2. What is Martin Brüdermund's main division?",
+    "answers": [
+      {
+        "text": "a) software development",
+        "is_correct": true
+      },
+      {
+        "text": "b) Financial services",
+        "is_correct": false
+      },
+      {
+        "text": "c) chemical production",
+        "is_correct": false
+      },
+      {
+        "text": "d) energy supply",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q3",
+    "content": "3. What type of management model is described in the description of the company?",
+    "answers": [
+      {
+        "text": "a) a hierarchical management model.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a decentralized management model.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a dualistic system.",
+        "is_correct": true
+      },
+      {
+        "text": "d) a project management model.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q4",
+    "content": "4. Which of the following statements best describes the role of the board?",
+    "answers": [
+      {
+        "text": "a) He is responsible for the company's daily administration.",
+        "is_correct": false
+      },
+      {
+        "text": "b) He is the top decision -maker in the company.",
+        "is_correct": false
+      },
+      {
+        "text": "c) He monitors the company's business and makes strategic decisions.",
+        "is_correct": true
+      },
+      {
+        "text": "d) He is responsible for the company's financial planning.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q5",
+    "content": "5. Which of the following factors can influence the decision -making of the board?",
+    "answers": [
+      {
+        "text": "a) only the corporate strategy",
+        "is_correct": false
+      },
+      {
+        "text": "b) only the financial situation of the company",
+        "is_correct": false
+      },
+      {
+        "text": "c) The interests of shareholders, stakeholders and the long -term corporate goals",
+        "is_correct": true
+      },
+      {
+        "text": "d) only the working conditions of the employees",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q6",
+    "content": "6. What type of technology is offered in the company?",
+    "answers": [
+      {
+        "text": "a) automated production lines",
+        "is_correct": false
+      },
+      {
+        "text": "b) Cloud-based software solutions",
+        "is_correct": true
+      },
+      {
+        "text": "c) Production of chemicals",
+        "is_correct": false
+      },
+      {
+        "text": "d) robotics and artificial intelligence",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q7",
+    "content": "7. Which of the following statements best describes the meaning of conflicts of interest?",
+    "answers": [
+      {
+        "text": "a) Interest conflicts are only relevant for large companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Interest conflicts can lead to bad decisions.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Interest conflicts are a common problem in companies.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Interest conflicts can only be found in small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q8",
+    "content": "8. Which of the following statements is best on the concept of agency theory?",
+    "answers": [
+      {
+        "text": "a) The agency theory is only relevant for large companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The agency theory states that the interests of the owners can conflict with the interests of the management positions.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Agency theory describes the relationship between companies and its employees.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Agency theory is a purely theoretical theory.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q9",
+    "content": "9. Which of the following statements best describes the role of the board in corporate management?",
+    "answers": [
+      {
+        "text": "a) The board is only responsible for financial planning.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The board is responsible for the strategic orientation of the company.",
+        "is_correct": true
+      },
+      {
+        "text": "c) The board is responsible for the company's daily administration.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The board is only responsible for recruiting.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q10",
+    "content": "10. What is the main division of Thomas Brüdermund?",
+    "answers": [
+      {
+        "text": "a) software development",
+        "is_correct": true
+      },
+      {
+        "text": "b) Financial services",
+        "is_correct": false
+      },
+      {
+        "text": "c) chemical production",
+        "is_correct": false
+      },
+      {
+        "text": "d) energy supply",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q11",
+    "content": "11. Which of the following statements best applies to the Arcandor company?",
+    "answers": [
+      {
+        "text": "a) Arcandor is a large and established company.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Arcandor is a small and specialized provider.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Arcandor is a substitute software manufacturer.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Arcandor is a multinational company.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q12",
+    "content": "12. Which of the following statements best describes the relationship between the German model and the international model?",
+    "answers": [
+      {
+        "text": "a) The German model is always better than the international model.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The German model is a model for the international model.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The German model is a unique system with its own special features.",
+        "is_correct": true
+      },
+      {
+        "text": "d) The international model is always the best solution.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q13",
+    "content": "13. Which of the following statements best describes the importance of the corporate structure?",
+    "answers": [
+      {
+        "text": "a) The corporate structure is irrelevant for corporate management.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The corporate structure influences the decision -making of the board.",
+        "is_correct": true
+      },
+      {
+        "text": "c) The corporate structure is an important tool for strategic planning.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The corporate structure is only relevant for small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q14",
+    "content": "14. Which of the following statements best describes the role of corporate management?",
+    "answers": [
+      {
+        "text": "a) Company management is only responsible for financial planning.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Company management is responsible for the strategic orientation of the company.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Company management is only responsible for recruiting.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Company management is only responsible for compliance with regulations.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q15",
+    "content": "15. Which of the following statements best describes the meaning of competition?",
+    "answers": [
+      {
+        "text": "a) Competition is only a cost factor.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Competition is important for the company's innovative strength.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Competition is an important factor in the company's profitability.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Competition is a danger to the company.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q16",
+    "content": "16. Which of the following is an example of a long -term corporate strategy?",
+    "answers": [
+      {
+        "text": "a) a short -term profit maximization plan.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a plan for the development of new markets.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a plan for the development of new products and services.",
+        "is_correct": true
+      },
+      {
+        "text": "d) a plan for reducing production costs.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q17",
+    "content": "17. Which of the following is an example of an investment?",
+    "answers": [
+      {
+        "text": "a) A training offer for employees.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a purchase of machines.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a research project.",
+        "is_correct": true
+      },
+      {
+        "text": "d) a travel budget.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-k4-en-q18",
+    "content": "18. Which of the following statements best describes the meaning of financing models?",
+    "answers": [
+      {
+        "text": "a) Financing models are only relevant for large companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Financing models are important for ensuring the liquidity of the company.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Financing models are an important part of the corporate strategy.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Financing models are only relevant for small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 4",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

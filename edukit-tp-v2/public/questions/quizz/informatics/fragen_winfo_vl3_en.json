@@ -1,0 +1,282 @@
+[
+  {
+    "id": "winfo-vl3-en-q1",
+    "content": "1. [ENÜ] Was ist laut Vorlesung ein zentrales Erkenntnisobjekt der Wirtschaftsinformatik?",
+    "answers": [
+      {
+        "text": "a) Steuerrecht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Informationssystem",
+        "is_correct": true
+      },
+      {
+        "text": "c) Organisationsstruktur",
+        "is_correct": false
+      },
+      {
+        "text": "d) Absatzplanung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q2",
+    "content": "2. [ENÜ] Wie werden Informationssysteme laut MAT-Modell beschrieben?",
+    "answers": [
+      {
+        "text": "a) Modell – Anwendung – Transformation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Maschine – Anwendung – Test",
+        "is_correct": false
+      },
+      {
+        "text": "c) Mensch – Aufgabe – Technik",
+        "is_correct": true
+      },
+      {
+        "text": "d) Methode – Aufgabe – Technologie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q3",
+    "content": "3. [ENÜ] Was beschreibt ein sozio-technisches System?",
+    "answers": [
+      {
+        "text": "a) Ein reines Softwaresystem",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zusammenspiel aus sozialen und technischen Komponenten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur technische Netzwerke",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nur menschliche Interaktion",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q4",
+    "content": "4. [ENÜ] Welche Eigenschaft beschreibt ein offenes System?",
+    "answers": [
+      {
+        "text": "a) Es ist unabhängig von seiner Umwelt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es besitzt nur interne Schnittstellen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es interagiert mit seiner Umwelt",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es besteht aus genau zwei Teilsystemen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q5",
+    "content": "5. [ENÜ] Was ist laut Vorlesung ein wesentliches Merkmal eines dynamischen Systems?",
+    "answers": [
+      {
+        "text": "a) Es verändert sich über die Zeit",
+        "is_correct": true
+      },
+      {
+        "text": "b) Es ist besonders groß",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es enthält keine Technik",
+        "is_correct": false
+      },
+      {
+        "text": "d) Es interagiert nicht mit anderen Systemen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q6",
+    "content": "6. [ENÜ] Was zählt zur technischen Infrastruktur eines Informationssystems?",
+    "answers": [
+      {
+        "text": "a) Personalstruktur",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geschäftsprozesse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Server, Netzwerke, Hardware",
+        "is_correct": true
+      },
+      {
+        "text": "d) Führungsstile",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q7",
+    "content": "7. [ENÜ] Was ist ein typisches Beispiel für Individualsoftware?",
+    "answers": [
+      {
+        "text": "a) Microsoft Office",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein für dm maßgeschneidertes Kassensystem",
+        "is_correct": true
+      },
+      {
+        "text": "c) WhatsApp",
+        "is_correct": false
+      },
+      {
+        "text": "d) SAP als Cloudlösung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q8",
+    "content": "8. [ENÜ] Wodurch unterscheiden sich System- und Anwendungssoftware?",
+    "answers": [
+      {
+        "text": "a) Systemsoftware ist ausschließlich mobil",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anwendungssoftware ist hardwareabhängig",
+        "is_correct": false
+      },
+      {
+        "text": "c) Systemsoftware steuert Ressourcen, Anwendungssoftware bietet Funktionalität",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es gibt keinen Unterschied",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q9",
+    "content": "9. [ENÜ] Welche Aussage zur Typisierung von IS nach Aufgaben ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Nur technologische Merkmale sind relevant",
+        "is_correct": false
+      },
+      {
+        "text": "b) Aufgaben werden in Steuer- und Lagerfunktionen aufgeteilt",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es wird zwischen Individual-, Gruppen- und Gesamtwirtschaftsaufgaben unterschieden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Aufgaben sind irrelevant für die Systemklassifikation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "winfo-vl3-en-q10",
+    "content": "10. [ENÜ] Was ist laut Vorlesung ein Beispiel für ein interorganisatorisches IS?",
+    "answers": [
+      {
+        "text": "a) CRM-System im Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "b) Global Track & Trace Netzwerk",
+        "is_correct": true
+      },
+      {
+        "text": "c) Persönliche Kalender-App",
+        "is_correct": false
+      },
+      {
+        "text": "d) Buchhaltungssoftware für Einzelpersonen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Information Systems",
+    "module": "Domain and Typology",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

@@ -1,0 +1,630 @@
+[
+  {
+    "id": "pb-k7-de-q1",
+    "content": "1. Welche Art von Vertriebssystem ist in der Beschreibung dargestellt?",
+    "answers": [
+      {
+        "text": "a) Direktvertrieb, reiner Online-Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "b) Rücknahme und Wiederverkauf",
+        "is_correct": false
+      },
+      {
+        "text": "c) Reiner Online-Vertrieb",
+        "is_correct": true
+      },
+      {
+        "text": "d) Multikanal-System",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q2",
+    "content": "2. Was ist der Hauptzweck der institutionellen Struktur?",
+    "answers": [
+      {
+        "text": "a) Die Sicherung von Lieferantenbeziehungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Optimierung der Lieferketten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Koordination von Vertriebsaktivitäten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Integration von Vertriebs- und Marketingaktivitäten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q3",
+    "content": "3. Welche Art von Vertriebs- und Marketingstrategie wird in der Beschreibung verwendet?",
+    "answers": [
+      {
+        "text": "a) Direkter Verkauf mit Fokus auf individuelle Kunden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Direkter Verkauf mit Fokus auf Gruppen und Großkunden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Koordination von Vertriebsaktivitäten und Marketingaktivitäten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Multikanal-Vertrieb mit Fokus auf individuelle Kunden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q4",
+    "content": "4. Welche Rolle spielt das Unternehmen als Management?",
+    "answers": [
+      {
+        "text": "a) Der Hauptvertriebsleiter",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Vermittlung von Vertriebsmitarbeitern",
+        "is_correct": false
+      },
+      {
+        "text": "c) Das Unternehmen als Management",
+        "is_correct": true
+      },
+      {
+        "text": "d) Der Vertriebsleiter",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q5",
+    "content": "5. Welche Art von Vertriebs- und Marketing-Kanäle werden in der Beschreibung genannt?",
+    "answers": [
+      {
+        "text": "a) Nur direkte Verkaufswege",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur indirekte Verkaufswege",
+        "is_correct": false
+      },
+      {
+        "text": "c) Direkter Verkauf, indirekter Verkauf, und Multikanal-Vertrieb",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur Online-Kanäle",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q6",
+    "content": "6. Was ist der Hauptunterschied zwischen reiner Online-Vertrieb und reiner Offline-Vertrieb?",
+    "answers": [
+      {
+        "text": "a) Reiner Online-Vertrieb ist immer besser als reiner Offline-Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "b) Reiner Online-Vertrieb ermöglicht eine größere Reichweite",
+        "is_correct": true
+      },
+      {
+        "text": "c) Reiner Offline-Vertrieb ist immer besser als reiner Online-Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "d) Reiner Online-Vertrieb ist immer weniger erfolgreich als reiner Offline-Vertrieb",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q7",
+    "content": "7. Welche Art von Informationen werden in der Beschreibung erwähnt?",
+    "answers": [
+      {
+        "text": "a) Nur Produktinformationen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Kundendaten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kunden- und Kunden-Informationen, Produktinformationen, und Unternehmenseigene Informationen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur Marketing-Informationen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q8",
+    "content": "8. Was ist die Bedeutung der \"Summe vertriebskanäle\"?",
+    "answers": [
+      {
+        "text": "a) Die Anzahl der einzelnen Verkaufswege",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Gesamtheit der Vertriebswege",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Art und Weise, wie die Vertriebswege miteinander verbunden sind",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q9",
+    "content": "9. Welche Art von Vertriebs- und Management-Aufgaben werden im Text genannt?",
+    "answers": [
+      {
+        "text": "a) Nur Vertriebsmanagement",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Management",
+        "is_correct": false
+      },
+      {
+        "text": "c) Beide Arten von Aufgaben",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur interne Aufgaben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q10",
+    "content": "10. Welche Technologie wird im Text erwähnt?",
+    "answers": [
+      {
+        "text": "a) Nur traditionelle Vertriebs-Technologie",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur mobile Technologie",
+        "is_correct": false
+      },
+      {
+        "text": "c) Informationstechnologie, Informationstechnologie, und Informationstechnologie",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q11",
+    "content": "11. Welchen Zweck erfüllt das Unternehmen \"informationvertriebsweg\"?",
+    "answers": [
+      {
+        "text": "a) Um die Kunden zu informieren",
+        "is_correct": false
+      },
+      {
+        "text": "b) Um die Kunden zu erreichen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Um die Kunden zu verwalten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q12",
+    "content": "12. Was ist der Hauptunterschied zwischen reiner und indirekter Vertrieb?",
+    "answers": [
+      {
+        "text": "a) Reiner Vertrieb ist immer besser als indirekter Vertrieb",
+        "is_correct": true
+      },
+      {
+        "text": "b) Direkter Vertrieb ist immer besser als indirekter Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "c) Reiner Vertrieb ist immer weniger erfolgreich als indirekter Vertrieb",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q13",
+    "content": "13. Welchen Vorteil hat das Multikanal-Vertriebssystem?",
+    "answers": [
+      {
+        "text": "a) Es ist immer die beste Vertriebsstrategie",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es ist immer die effektivste Vertriebsstrategie",
+        "is_correct": true
+      },
+      {
+        "text": "c) Es ist immer weniger erfolgreich als traditionelle Vertriebsstrategien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q14",
+    "content": "14. Welche Art von Vertriebs- und Marketing-Strategie wird in der Beschreibung verwendet?",
+    "answers": [
+      {
+        "text": "a) Direktvertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "b) Indirekter Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "c) Multikanal-Vertrieb",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q15",
+    "content": "15. Welche Art von Vertriebs- und Marketing-Kanäle werden in der Beschreibung genannt?",
+    "answers": [
+      {
+        "text": "a) Nur Direktvertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur indirekter Vertrieb",
+        "is_correct": false
+      },
+      {
+        "text": "c) Direkter Vertrieb, indirekter Vertrieb, und Multikanal-Vertrieb",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q16",
+    "content": "16. Was ist der Hauptunterschied zwischen reiner und indirekter Vertrieb?",
+    "answers": [
+      {
+        "text": "a) Reiner Vertrieb ist immer besser als indirekter Vertrieb",
+        "is_correct": true
+      },
+      {
+        "text": "b) Indirekter Vertrieb ermöglicht eine größere Reichweite",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q17",
+    "content": "17. Welche Art von Vertriebs- und Management-Fokus ist im Text dargestellt?",
+    "answers": [
+      {
+        "text": "a) Auf den Einzelkunden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Auf die Unternehmensstruktur",
+        "is_correct": true
+      },
+      {
+        "text": "c) Auf die gesamte Vertriebs- und Marketing-Strategie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q18",
+    "content": "18. Welche Art von Vertriebs- und Management-Aufgaben werden im Text genannt?",
+    "answers": [
+      {
+        "text": "a) Nur Vertriebsmanagement",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Management",
+        "is_correct": false
+      },
+      {
+        "text": "c) Beide Arten von Aufgaben",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q19",
+    "content": "19. Welche Rolle spielt die \"Information\" im Text?",
+    "answers": [
+      {
+        "text": "a) Sie ist der Hauptzweck der Vertriebsstrategie",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie ist ein wesentlicher Bestandteil der Vertriebsstrategie",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie wird nur in Marketing-Materialien verwendet",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q20",
+    "content": "20. Welche Art von Vertriebs- und Management-Prozess wird im Text beschrieben?",
+    "answers": [
+      {
+        "text": "a) Nur interne Prozesse",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur externe Prozesse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Beide Arten von Prozessen",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q21",
+    "content": "21. Was ist die \"Reinen\" Vertriebs- und Management-Prozess?",
+    "answers": [
+      {
+        "text": "a) Die Entwicklung von Vertriebsstrategien",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Entwicklung von Vertriebs- und Marketing-Strategien",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Erstellung von Vertriebs- und Marketing-Materialien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q22",
+    "content": "22. Welche Art von Vertriebs- und Management-Technologie wird im Text erwähnt?",
+    "answers": [
+      {
+        "text": "a) Nur traditionelle Technologie",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur mobile Technologie",
+        "is_correct": false
+      },
+      {
+        "text": "c) Informationstechnologie, Informationstechnologie, und Informationstechnologie",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q23",
+    "content": "23. Welchen Zweck erfüllt die \"Information\" im Text?",
+    "answers": [
+      {
+        "text": "a) Die Beschaffung von Informationen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Weitergabe von Informationen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Analyse von Informationen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q24",
+    "content": "24. Welchen Vorteil hat die \"Information\" im Text?",
+    "answers": [
+      {
+        "text": "a) Die Sicherung von Lieferantenbeziehungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Optimierung der Lieferketten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Integration von Vertriebs- und Marketing-Aktivitäten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k7-de-q25",
+    "content": "25. Welche Art von Vertriebs- und Management-Verfahren wird im Text beschrieben?",
+    "answers": [
+      {
+        "text": "a) Nur individuelle Verträge",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Massenverträge",
+        "is_correct": false
+      },
+      {
+        "text": "c) Beide Arten von Verfahren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 7",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

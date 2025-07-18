@@ -1,0 +1,446 @@
+[
+  {
+    "id": "pb-uf-k3-de-q1",
+    "content": "1.  Welche der folgenden Strategien wird typischerweise als \"strategische Analyse\" bezeichnet?",
+    "answers": [
+      {
+        "text": "a) Einmalige Entscheidungen über die Produktentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Entwicklung einer neuen Marketingkampagne",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Analyse der Wettbewerbslandschaft",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Implementierung einer neuen Software",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q2",
+    "content": "2.  Welche der folgenden Aussagen beschreibt am besten die Rolle eines \"Unternehmenswertanspruchsniveau\"?",
+    "answers": [
+      {
+        "text": "a) Es ist ein Maß für die finanzielle Leistungsfähigkeit des Unternehmens.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es ist ein Maß für die soziale Verantwortung des Unternehmens.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es ist ein Maß für die Fähigkeit des Unternehmens, langfristige Ziele zu erreichen.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es ist ein Maß für die Anzahl der Mitarbeiter.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q3",
+    "content": "3.  Welche der folgenden Aufgaben gehört zum Bereich der \"Operationalisierung\"?",
+    "answers": [
+      {
+        "text": "a) Die Entwicklung einer neuen Marketingkampagne",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Implementierung einer neuen Software",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Analyse der Wettbewerbslandschaft",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Erstellung von Präsentationen für Investoren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q4",
+    "content": "4.  Was bedeutet \"Market-Based View\" im Kontext von Wettbewerbsstrategie?",
+    "answers": [
+      {
+        "text": "a) Eine Strategie, die auf der Konkurrenz basiert.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Strategie, die auf der Analyse des Marktes basiert.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Strategie, die auf der Nutzung des Wettbewerbs als Chance basiert.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Strategie, die auf der Vermeidung des Wettbewerbs basiert.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q5",
+    "content": "5.  Welche der folgenden Aussagen beschreibt am besten die Bedeutung von \"Finanzplanung\"?",
+    "answers": [
+      {
+        "text": "a) Finanzplanung ist nur für große Unternehmen wichtig.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Finanzplanung ist ein wesentlicher Bestandteil der Unternehmensstrategie.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Finanzplanung konzentriert sich nur auf die Erzielung von Gewinn.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Finanzplanung ist nur für die Budgetierung des Budgets.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q6",
+    "content": "6.  Was ist ein \"Key Performance Indicator\" (KPI)?",
+    "answers": [
+      {
+        "text": "a) Eine Form der Unternehmenskommunikation.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Metrik, die zur Messung des Erfolgs eines Projekts verwendet wird.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine detaillierte Beschreibung der Unternehmensstrategie.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Analyse der Kundenbedürfnisse.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q7",
+    "content": "7.  Welche der folgenden Aussagen ist am besten zur Beschreibung der \"internen Kernkompetenzen\" relevant?",
+    "answers": [
+      {
+        "text": "a) Die Anzahl der Mitarbeiter, die in der Abteilung arbeiten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Fähigkeit des Unternehmens, bestimmte Produkte oder Dienstleistungen zu entwickeln.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Expertise des Unternehmens in einem bestimmten Marktsegment.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Anzahl der Investitionen, die in die Unternehmensentwicklung getätigt werden.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q8",
+    "content": "8.  Welche der folgenden Aussagen ist am besten zum Thema \"interne Strategie\" relevant?",
+    "answers": [
+      {
+        "text": "a) Die strategische Planung, die das Unternehmen für die Zukunft vorschlägt.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Die Entwicklung von Produkten oder Dienstleistungen, die auf den Kunden zugeschnitten sind.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Anpassung der Strategie an die sich ändernden Marktbedingungen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Entscheidungen über die Produktionsprozesse.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q9",
+    "content": "9.  Was bedeutet \"Change Management\" im Kontext von Unternehmensentwicklung?",
+    "answers": [
+      {
+        "text": "a) Die Einführung neuer Technologien.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Anpassung von Prozessen und Strukturen an neue Umstände.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Durchführung von Marketingkampagnen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Schulung der Mitarbeiter.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q10",
+    "content": "10. Was ist ein \"Wettbewerbsstrategie\" im Kontext der Unternehmensstrategie?",
+    "answers": [
+      {
+        "text": "a) Die Entwicklung von neuen Produkten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Analyse der Wettbewerber und die Entwicklung von Strategien, um sich von ihnen abzuheben.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Erstellung von Präsentationen für Investoren.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Organisation von Veranstaltungen für Kunden.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q11",
+    "content": "11. Welche der folgenden Aussagen beschreibt am besten die Bedeutung von \"Wettbewerbsstrategie\" im globalen Kontext?",
+    "answers": [
+      {
+        "text": "a) Die Wettbewerbsstrategie ist nur für Unternehmen in den USA relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Wettbewerbsstrategie ist für Unternehmen, die in verschiedenen Märkten tätig sind, von entscheidender Bedeutung.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Wettbewerbsstrategie ist nur für Unternehmen mit einem großen Marktanteil relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Wettbewerbsstrategie ist irrelevant für Unternehmen, die in einem kleinen Markt tätig sind.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q12",
+    "content": "12. Welche der folgenden Aussagen beschreibt am besten die Rolle von \"Finanzplanung\"?",
+    "answers": [
+      {
+        "text": "a) Finanzplanung ist nur für die Erzielung von Gewinn.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Finanzplanung ist ein wesentlicher Bestandteil der Unternehmensstrategie.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Finanzplanung konzentriert sich nur auf die Erzielung von Gewinn.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Finanzplanung ist nur für die Budgetierung des Budgets.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q13",
+    "content": "13. Welche der folgenden Aussagen beschreibt am besten \"Projektmanagement\"?",
+    "answers": [
+      {
+        "text": "a) Ein Prozess zur Planung und Steuerung von Projekten.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Die Erstellung von Marketingkampagnen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Organisation von Firmenveranstaltungen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Entwicklung von neuen Produkten.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q14",
+    "content": "14. Was ist \"Key Performance Indicator\" (KPI) im Kontext von Projektmanagement?",
+    "answers": [
+      {
+        "text": "a) Eine Metrik, die zur Messung des Erfolgs eines Projekts verwendet wird.",
+        "is_correct": true
+      },
+      {
+        "text": "b) Eine Form der Unternehmenskommunikation.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine detaillierte Beschreibung der Unternehmensstrategie.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Analyse der Kundenbedürfnisse.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q15",
+    "content": "15. Welche der folgenden Aussagen beschreibt am besten die Rolle von \"Stakeholder Management\"?",
+    "answers": [
+      {
+        "text": "a) Die Kommunikation mit Kunden.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Berücksichtigung der Interessen verschiedener Parteien, die an einem Projekt beteiligt sind.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Erstellung von Präsentationen für Investoren.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Durchführung von Marketingkampagnen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-uf-k3-de-q16",
+    "content": "16. Was ist \"SWOT-Analyse\"?",
+    "answers": [
+      {
+        "text": "a) Eine Analyse des Wettbewerbs.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Analyse der Stärken, Schwächen, Chancen und Risiken eines Unternehmens.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Analyse der Finanzlage eines Unternehmens.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 3",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

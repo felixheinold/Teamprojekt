@@ -1,0 +1,562 @@
+[
+  {
+    "id": "ip-ip-k11-en-q1",
+    "content": "1. [ENÜ] Was ist das Ziel des Earned Value Management (EVM)?",
+    "answers": [
+      {
+        "text": "a) Die Optimierung der Projektkosten nach Abschluss",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Minimierung des Ressourcenverbrauchs",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die objektive Bewertung von Projektfortschritt und Kosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die subjektive Einschätzung der Projektleitung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q2",
+    "content": "2. [ENÜ] Welche drei Parameter bilden das „magische Dreieck“ der Projektüberwachung?",
+    "answers": [
+      {
+        "text": "a) Qualität, Risiko, Ressourcen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Leistung, Dauer, Umsatz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kosten, Zeit, Leistung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Aufwand, Budget, Innovation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q3",
+    "content": "3. [ENÜ] Wofür steht die Kennzahl CPI im EVM?",
+    "answers": [
+      {
+        "text": "a) Cost Price Indicator",
+        "is_correct": false
+      },
+      {
+        "text": "b) Completion Plan Index",
+        "is_correct": false
+      },
+      {
+        "text": "c) Cost Performance Indicator",
+        "is_correct": true
+      },
+      {
+        "text": "d) Contractual Price Index",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q4",
+    "content": "4. [ENÜ] Wann wird bei der 0/100 EV-Technik ein Earned Value vergeben?",
+    "answers": [
+      {
+        "text": "a) Nach Fertigstellung von 50%",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bei Vertragsunterzeichnung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ausschließlich nach 100% Fertigstellung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nach Start des Arbeitspakets",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q5",
+    "content": "5. [ENÜ] Was wird im Leistungsverzeichnis typischerweise beschrieben?",
+    "answers": [
+      {
+        "text": "a) Nur der Preis der Anlage",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur das Design der Produktionshalle",
+        "is_correct": false
+      },
+      {
+        "text": "c) Alle vom Auftragnehmer auszuführenden Leistungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Personalstruktur des Auftraggebers",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q6",
+    "content": "6. [ENÜ] Welche Ausschreibungsform erlaubt nur ausgewählten Bietern die Angebotsabgabe?",
+    "answers": [
+      {
+        "text": "a) Öffentliche Ausschreibung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Freihändige Vergabe",
+        "is_correct": false
+      },
+      {
+        "text": "c) Beschränkte Ausschreibung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Interne Angebotsrunde",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q7",
+    "content": "7. [ENÜ] Welcher Vertragstyp eignet sich besonders für individuell gefertigte Produktionsanlagen?",
+    "answers": [
+      {
+        "text": "a) Mietvertrag",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kaufvertrag",
+        "is_correct": false
+      },
+      {
+        "text": "c) Werkvertrag",
+        "is_correct": true
+      },
+      {
+        "text": "d) Dienstvertrag",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q8",
+    "content": "8. [ENÜ] Welche Information liefert der Earned Value (EV)?",
+    "answers": [
+      {
+        "text": "a) Die maximalen Projektkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die geplanten Gesamtkosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Den Wert der tatsächlich erledigten Arbeit",
+        "is_correct": true
+      },
+      {
+        "text": "d) Den Termin der nächsten Besprechung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q9",
+    "content": "9. [ENÜ] Was ist ein Vorteil des Einsatzes von Generalunternehmern (GU)?",
+    "answers": [
+      {
+        "text": "a) Maximale Angebotsvielfalt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Volle Eigenleistung des Bauherrn",
+        "is_correct": false
+      },
+      {
+        "text": "c) Geringerer Koordinationsaufwand",
+        "is_correct": true
+      },
+      {
+        "text": "d) Geringe Projektkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q10",
+    "content": "10. [ENÜ] Welche Projektphase folgt typischerweise auf die Realisierungsvorbereitung?",
+    "answers": [
+      {
+        "text": "a) Datenanalyse",
+        "is_correct": false
+      },
+      {
+        "text": "b) Produktionshochlauf",
+        "is_correct": true
+      },
+      {
+        "text": "c) Konzeptplanung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktentwicklung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q11",
+    "content": "11. [ENÜ] Welche Leistung ist in einem Werkvertrag geschuldet?",
+    "answers": [
+      {
+        "text": "a) Ein konkreter Erfolg (z. B. fertige Anlage)",
+        "is_correct": true
+      },
+      {
+        "text": "b) Die dauerhafte Beratung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Lieferung von Material ohne Einbau",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Anweisung von Personal",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q12",
+    "content": "12. [ENÜ] Welche Bewertungskennzahl zeigt die Terminabweichung im EVM?",
+    "answers": [
+      {
+        "text": "a) SPI (Schedule Performance Index)",
+        "is_correct": true
+      },
+      {
+        "text": "b) CPI (Cost Performance Index)",
+        "is_correct": false
+      },
+      {
+        "text": "c) EV (Earned Value)",
+        "is_correct": false
+      },
+      {
+        "text": "d) PV (Planned Value)",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q13",
+    "content": "13. [ENÜ] Was ist das Ziel der Realisierungsüberwachung?",
+    "answers": [
+      {
+        "text": "a) Steuerung der Energieversorgung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einhaltung von Terminen, Qualität und Kosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Rekrutierung von Fachpersonal",
+        "is_correct": false
+      },
+      {
+        "text": "d) Schulung der Projektpartner",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q14",
+    "content": "14. [ENÜ] Was versteht man unter einer Ausschreibung?",
+    "answers": [
+      {
+        "text": "a) Ein mündliches Leistungsverzeichnis",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Einladung zur Angebotsabgabe durch Bieter",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die interne Projektvergabe im Unternehmen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Ausschlussliste für nicht zugelassene Lieferanten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q15",
+    "content": "15. [ENÜ] Welche Aufgabe hat ein Pflichtenheft?",
+    "answers": [
+      {
+        "text": "a) Es definiert die Qualitätskriterien für Lieferanten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es beschreibt die Projektziele allgemein",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es konkretisiert die Umsetzung der Anforderungen aus dem Lastenheft",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es legt die Personalstruktur im Projekt fest",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q16",
+    "content": "16. [ENÜ] Welche Vertragsart ist typisch für Wartungsleistungen?",
+    "answers": [
+      {
+        "text": "a) Werkvertrag",
+        "is_correct": false
+      },
+      {
+        "text": "b) Mietvertrag",
+        "is_correct": false
+      },
+      {
+        "text": "c) Dienstvertrag",
+        "is_correct": true
+      },
+      {
+        "text": "d) Optionsvertrag",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q17",
+    "content": "17. [ENÜ] Was ist ein Vorteil standardisierter Ausschreibungsunterlagen?",
+    "answers": [
+      {
+        "text": "a) Höhere Individualisierung pro Anbieter",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erleichterter Angebotsvergleich",
+        "is_correct": true
+      },
+      {
+        "text": "c) Geringerer Projektumfang",
+        "is_correct": false
+      },
+      {
+        "text": "d) Keine rechtlichen Bindungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q18",
+    "content": "18. [ENÜ] Welche Dokumente dienen der Vertragskontrolle in der Realisierungsphase?",
+    "answers": [
+      {
+        "text": "a) Lieferantenstammdaten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Flussdiagramme der Supply Chain",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bauzeitenplan und Zahlungsplan",
+        "is_correct": true
+      },
+      {
+        "text": "d) Umsatzsteuerbescheide",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q19",
+    "content": "19. [ENÜ] Was bedeutet die EV-Technik „50/50“?",
+    "answers": [
+      {
+        "text": "a) Der Earned Value wird nach 50% Zeit gutgeschrieben",
+        "is_correct": false
+      },
+      {
+        "text": "b) 50% EV zu Beginn, 50% nach Abschluss des Arbeitspakets",
+        "is_correct": true
+      },
+      {
+        "text": "c) 50% der Leistung wird subventioniert",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bei 50% Kosten erfolgt vollständige Auszahlung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k11-en-q20",
+    "content": "20. [ENÜ] Was ist ein Ziel der Realisierungsvorbereitung?",
+    "answers": [
+      {
+        "text": "a) Bau und Montage sofort beginnen zu können",
+        "is_correct": true
+      },
+      {
+        "text": "b) Alle Maschinen zu bestellen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Ausschreibung intern zu prüfen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Inbetriebnahme abzuschließen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 11",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

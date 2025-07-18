@@ -1,0 +1,282 @@
+[
+  {
+    "id": "energy-vl3-de-q1",
+    "content": "1. Was beschreibt ein SLP-Kunde im Stromsystem?",
+    "answers": [
+      {
+        "text": "a) Großverbraucher mit registrierter Lastgangmessung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Industriekunde mit Direktleitung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Standardlastprofil-Kunde, z. B. Haushalte mit Jahresverbrauch ≤ 100.000 kWh",
+        "is_correct": true
+      },
+      {
+        "text": "d) Prosumer mit Netzparität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q2",
+    "content": "2. Welche Hauptenergieträger nutzt die Industrie laut Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Biomasse und Wasserstoff",
+        "is_correct": false
+      },
+      {
+        "text": "b) Strom und Erdgas",
+        "is_correct": true
+      },
+      {
+        "text": "c) Wind und Solar",
+        "is_correct": false
+      },
+      {
+        "text": "d) Fernwärme und Öl",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q3",
+    "content": "3. Was versteht man unter Netzparität?",
+    "answers": [
+      {
+        "text": "a) Netzbetreiber arbeiten synchron",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erneuerbare erreichen denselben Wirkungsgrad wie fossile Quellen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Strom aus erneuerbaren Quellen kostet genauso viel wie Netzstrom",
+        "is_correct": true
+      },
+      {
+        "text": "d) Stromnetz ist stabil bei 50 Hz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q4",
+    "content": "4. Was ist ein Prosumer?",
+    "answers": [
+      {
+        "text": "a) Stromhändler im Großhandel",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verbraucher, der gleichzeitig Strom produziert und verbraucht",
+        "is_correct": true
+      },
+      {
+        "text": "c) Betreiber von Kohlekraftwerken",
+        "is_correct": false
+      },
+      {
+        "text": "d) Endkunde mit registrierter Leistungsmessung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q5",
+    "content": "5. Was sind Eigenverbrauchsquote und Autarkiegrad?",
+    "answers": [
+      {
+        "text": "a) Maße für Energieverluste im Stromnetz",
+        "is_correct": false
+      },
+      {
+        "text": "b) Metriken zur Energieeinspeisung bei Industrieanlagen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kenngrößen zur Bewertung von Eigenstromnutzung und Selbstversorgungsgrad",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kennzahlen für Energiehandel mit dem Ausland",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q6",
+    "content": "6. Welches Ziel verfolgt das Smart-Meter-Rollout?",
+    "answers": [
+      {
+        "text": "a) Einführung flächendeckender Stromspeicher",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einführung digitaler Stromzähler zur Steuerung flexibler Verbraucher",
+        "is_correct": true
+      },
+      {
+        "text": "c) Optimierung von Stromexporten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Abbau der EEG-Umlage",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q7",
+    "content": "7. Was beschreibt der Begriff Lastganglinie?",
+    "answers": [
+      {
+        "text": "a) Netzbelastung durch große Energieverbraucher",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verlauf der durchschnittlichen Stromproduktion pro Region",
+        "is_correct": false
+      },
+      {
+        "text": "c) Leistungsaufnahme eines Verbrauchers über die Zeit",
+        "is_correct": true
+      },
+      {
+        "text": "d) Verlauf der Tagesstrompreise",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q8",
+    "content": "8. Welche Branche weist die höchsten Energiekosten relativ zum Produktionswert auf?",
+    "answers": [
+      {
+        "text": "a) Maschinenbau",
+        "is_correct": false
+      },
+      {
+        "text": "b) Papierindustrie",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kohlebergbau",
+        "is_correct": true
+      },
+      {
+        "text": "d) Automobilindustrie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q9",
+    "content": "9. Was ist das Ziel der Energiewertstromanalyse?",
+    "answers": [
+      {
+        "text": "a) Entwicklung neuer Kraftwerke",
+        "is_correct": false
+      },
+      {
+        "text": "b) Senkung der Strompreise für Verbraucher",
+        "is_correct": false
+      },
+      {
+        "text": "c) Systematische Bewertung und Optimierung des Energieeinsatzes in Produktionsprozessen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Aufbau dezentraler Netze",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "energy-vl3-de-q10",
+    "content": "10. Welches Kriterium gehört zu den 8 Gestaltungsrichtlinien des Soll-Zustands?",
+    "answers": [
+      {
+        "text": "a) Abschaltung aller Energiequellen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zufällige Reihenfolge der Energieversorgung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Energieoptimale Abarbeitungsreihenfolge",
+        "is_correct": true
+      },
+      {
+        "text": "d) Senkung der Netzfrequenz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL3",
+    "lecture": "Energiewirtschaft",
+    "module": "Energie als Produktionsfaktor",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

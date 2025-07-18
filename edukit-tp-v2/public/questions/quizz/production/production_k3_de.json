@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ip-log-k4-de-q1",
+    "content": "1. Was beschreibt der Nettobestand im Lager?",
+    "answers": [
+      {
+        "text": "a) Bestellte Ware auf dem Transportweg",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fehlmengen im System",
+        "is_correct": false
+      },
+      {
+        "text": "c) Physisch vorhandene Ware im Lager",
+        "is_correct": true
+      },
+      {
+        "text": "d) Geplante Liefermenge",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q2",
+    "content": "2. Was zählt zum disponiblen Bestand?",
+    "answers": [
+      {
+        "text": "a) Nur der Nettobestand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur der Bestellbestand",
+        "is_correct": false
+      },
+      {
+        "text": "c) Nettobestand + Bestellbestand - Fehlbestand",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lagerabgang minus Sicherheitsbestand",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q3",
+    "content": "3. Was ist typisch für eine q-Politik?",
+    "answers": [
+      {
+        "text": "a) Bestellung bei Erreichen eines Zeitpunkts",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bestellung bei konstantem Abstand r",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bestellung einer festen Menge q",
+        "is_correct": true
+      },
+      {
+        "text": "d) Bestellung einer variablen Menge",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q4",
+    "content": "4. Welche Bedingung löst bei der s-Politik eine Bestellung aus?",
+    "answers": [
+      {
+        "text": "a) Feste Zeitintervalle",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sicherheitsbestand unterschritten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verfügbarkeit einer Transportmöglichkeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Disponibler Bestand unterschreitet Bestellpunkt s",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q5",
+    "content": "5. Was ist der Unterschied zwischen (s,q)- und (r,S)-Politik?",
+    "answers": [
+      {
+        "text": "a) Bestellzeitpunkt vs. Bestellmenge",
+        "is_correct": false
+      },
+      {
+        "text": "b) Meldebestand vs. Sicherheitsbestand",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ereignisgesteuerte vs. Zeitgesteuerte Bestellung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lager vs. Transportkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q6",
+    "content": "6. Welcher Vorteil ergibt sich bei der (r,S)-Politik?",
+    "answers": [
+      {
+        "text": "a) Kontinuierliche Überwachung entfällt",
+        "is_correct": true
+      },
+      {
+        "text": "b) Keine Sicherheitsbestände notwendig",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kleinere Losgrößen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kürzere Lieferzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q7",
+    "content": "7. Was ist ein Nachteil der (r,S)-Politik?",
+    "answers": [
+      {
+        "text": "a) Hoher Überwachungsaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Risikozeitraum ist länger (r+L)",
+        "is_correct": true
+      },
+      {
+        "text": "c) Teure Bestellkosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kein Pufferbestand möglich",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q8",
+    "content": "8. Was beschreibt der Sicherheitsbestand?",
+    "answers": [
+      {
+        "text": "a) Durchschnittsbestand des Lagers",
+        "is_correct": false
+      },
+      {
+        "text": "b) Reservemenge zur Deckung von Unsicherheiten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bedarf pro Periode",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bestandsmenge am Monatsanfang",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q9",
+    "content": "9. Was bestimmt den Bestellzeitpunkt bei der (s,q)-Politik?",
+    "answers": [
+      {
+        "text": "a) Ein fester Zeitplan",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarfsvorhersage",
+        "is_correct": false
+      },
+      {
+        "text": "c) Unterschreitung des Bestellpunkts s",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zykluszeit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-log-k4-de-q10",
+    "content": "10. Was beschreibt der α-Servicegrad?",
+    "answers": [
+      {
+        "text": "a) Erfüllbare Nachfrage je Bestellung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anteil der Aufträge ohne Lieferverzug",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wahrscheinlichkeit, dass der Bestand während der Wiederbeschaffungszeit ausreicht",
+        "is_correct": true
+      },
+      {
+        "text": "d) Verhältnis von Nachfrage zu Lagerumschlag",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Industrielle Produktion & Logistik",
+    "module": "Lagerhaltungs- und Bestellpolitiken",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

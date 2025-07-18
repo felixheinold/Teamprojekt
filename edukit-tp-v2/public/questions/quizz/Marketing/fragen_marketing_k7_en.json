@@ -1,0 +1,630 @@
+[
+  {
+    "id": "pb-k7-en-q1",
+    "content": "1. What type of sales system is shown in the description?",
+    "answers": [
+      {
+        "text": "a) Direct sales, pure online sales",
+        "is_correct": false
+      },
+      {
+        "text": "b) Returning and resale",
+        "is_correct": false
+      },
+      {
+        "text": "c) Reiner online sales",
+        "is_correct": true
+      },
+      {
+        "text": "d) multi-channel system",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q2",
+    "content": "2. What is the main purpose of the institutional structure?",
+    "answers": [
+      {
+        "text": "a) the securing of supplier relationships",
+        "is_correct": false
+      },
+      {
+        "text": "b) the optimization of the supply chains",
+        "is_correct": false
+      },
+      {
+        "text": "c) the coordination of sales activities",
+        "is_correct": true
+      },
+      {
+        "text": "d) The integration of sales and marketing activities",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q3",
+    "content": "3. What kind of sales and marketing strategy is used in the description?",
+    "answers": [
+      {
+        "text": "a) Direct sale with a focus on individual customers",
+        "is_correct": false
+      },
+      {
+        "text": "b) Direct sales with a focus on groups and major customers",
+        "is_correct": false
+      },
+      {
+        "text": "c) Coordination of sales activities and marketing activities",
+        "is_correct": true
+      },
+      {
+        "text": "d) Multi-channel sales with a focus on individual customers",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q4",
+    "content": "4. What role does the company play as management?",
+    "answers": [
+      {
+        "text": "a) The main sales manager",
+        "is_correct": false
+      },
+      {
+        "text": "b) The mediation of sales employees",
+        "is_correct": false
+      },
+      {
+        "text": "c) The company as management",
+        "is_correct": true
+      },
+      {
+        "text": "d) the sales manager",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q5",
+    "content": "5. What kind of sales and marketing channels are mentioned in the description?",
+    "answers": [
+      {
+        "text": "a) only direct sales routes",
+        "is_correct": false
+      },
+      {
+        "text": "b) only indirect sales routes",
+        "is_correct": false
+      },
+      {
+        "text": "c) Direct sale, indirect sale, and multi-channel sales",
+        "is_correct": true
+      },
+      {
+        "text": "d) only online channels",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q6",
+    "content": "6. What is the main difference between pure online sales and pure offline sales?",
+    "answers": [
+      {
+        "text": "a) Reiner online sales is always better than pure offline sales",
+        "is_correct": false
+      },
+      {
+        "text": "b) Pure online sales enables a greater range",
+        "is_correct": true
+      },
+      {
+        "text": "c) Reiner offline sales is always better than pure online sales",
+        "is_correct": false
+      },
+      {
+        "text": "d) Reiner online sales is always less successful than pure offline sales",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q7",
+    "content": "7. What kind of information are mentioned in the description?",
+    "answers": [
+      {
+        "text": "a) only product information",
+        "is_correct": false
+      },
+      {
+        "text": "b) only customer data",
+        "is_correct": false
+      },
+      {
+        "text": "c) Customer and customer information, product information, and company-owned information",
+        "is_correct": true
+      },
+      {
+        "text": "d) only marketing information",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q8",
+    "content": "8. What is the meaning of the \"sum sales channels\"?",
+    "answers": [
+      {
+        "text": "a) The number of individual sales routes",
+        "is_correct": false
+      },
+      {
+        "text": "b) the entirety of the sales channels",
+        "is_correct": true
+      },
+      {
+        "text": "c) the way the sales channels are connected to each other",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q9",
+    "content": "9. What kind of sales and management tasks are mentioned in the text?",
+    "answers": [
+      {
+        "text": "a) only sales management",
+        "is_correct": false
+      },
+      {
+        "text": "b) only management",
+        "is_correct": false
+      },
+      {
+        "text": "c) Both types of tasks",
+        "is_correct": true
+      },
+      {
+        "text": "d) only internal tasks",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q10",
+    "content": "10. What technology is mentioned in the text?",
+    "answers": [
+      {
+        "text": "a) only traditional sales technology",
+        "is_correct": false
+      },
+      {
+        "text": "b) only mobile technology",
+        "is_correct": false
+      },
+      {
+        "text": "c) Information technology, information technology, and information technology",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q11",
+    "content": "11. What is the purpose of the company \"information sales route\"?",
+    "answers": [
+      {
+        "text": "a) to inform customers",
+        "is_correct": false
+      },
+      {
+        "text": "b) to achieve customers",
+        "is_correct": true
+      },
+      {
+        "text": "c) to manage customers",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q12",
+    "content": "12. What is the main difference between pure and indirect sales?",
+    "answers": [
+      {
+        "text": "a) pure sales is always better than indirect sales",
+        "is_correct": true
+      },
+      {
+        "text": "b) Direct sales is always better than indirect sales",
+        "is_correct": false
+      },
+      {
+        "text": "c) Pure sales is always less successful than indirect sales",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q13",
+    "content": "13. What advantage does the multi-channel sales system have?",
+    "answers": [
+      {
+        "text": "a) It is always the best sales strategy",
+        "is_correct": false
+      },
+      {
+        "text": "b) It is always the most effective sales strategy",
+        "is_correct": true
+      },
+      {
+        "text": "c) It is less and less successful than traditional sales strategies",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q14",
+    "content": "14. What kind of sales and marketing strategy is used in the description?",
+    "answers": [
+      {
+        "text": "a) direct sales",
+        "is_correct": false
+      },
+      {
+        "text": "b) Indirect sales",
+        "is_correct": false
+      },
+      {
+        "text": "c) multi-channel sales",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q15",
+    "content": "15. What kind of sales and marketing channels are mentioned in the description?",
+    "answers": [
+      {
+        "text": "a) only direct sales",
+        "is_correct": false
+      },
+      {
+        "text": "b) only indirect sales",
+        "is_correct": false
+      },
+      {
+        "text": "c) Direct sales, indirect sales, and multi-channel sales",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q16",
+    "content": "16. What is the main difference between pure and indirect sales?",
+    "answers": [
+      {
+        "text": "a) pure sales is always better than indirect sales",
+        "is_correct": true
+      },
+      {
+        "text": "b) Indirect sales enables a greater range",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q17",
+    "content": "17. What kind of sales and management focus is shown in the text?",
+    "answers": [
+      {
+        "text": "a) on the individual customers",
+        "is_correct": false
+      },
+      {
+        "text": "b) on the corporate structure",
+        "is_correct": true
+      },
+      {
+        "text": "c) on the entire sales and marketing strategy",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q18",
+    "content": "18. What kind of sales and management tasks are mentioned in the text?",
+    "answers": [
+      {
+        "text": "a) only sales management",
+        "is_correct": false
+      },
+      {
+        "text": "b) only management",
+        "is_correct": false
+      },
+      {
+        "text": "c) Both types of tasks",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q19",
+    "content": "19. What role does the \"information\" play in the text?",
+    "answers": [
+      {
+        "text": "a) It is the main purpose of the sales strategy",
+        "is_correct": false
+      },
+      {
+        "text": "b) It is an essential part of the sales strategy",
+        "is_correct": true
+      },
+      {
+        "text": "c) It is only used in marketing materials",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q20",
+    "content": "20. What kind of sales and management process is described in the text?",
+    "answers": [
+      {
+        "text": "a) only internal processes",
+        "is_correct": false
+      },
+      {
+        "text": "b) only external processes",
+        "is_correct": false
+      },
+      {
+        "text": "c) Both types of processes",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q21",
+    "content": "21. What is the \"pure\" sales and management process?",
+    "answers": [
+      {
+        "text": "a) The development of sales strategies",
+        "is_correct": false
+      },
+      {
+        "text": "b) The development of sales and marketing strategies",
+        "is_correct": true
+      },
+      {
+        "text": "c) the creation of sales and marketing materials",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q22",
+    "content": "22. What kind of sales and management technology is mentioned in the text?",
+    "answers": [
+      {
+        "text": "a) only traditional technology",
+        "is_correct": false
+      },
+      {
+        "text": "b) only mobile technology",
+        "is_correct": false
+      },
+      {
+        "text": "c) Information technology, information technology, and information technology",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q23",
+    "content": "23. What is the purpose of the \"information\" in the text?",
+    "answers": [
+      {
+        "text": "a) The procurement of information",
+        "is_correct": false
+      },
+      {
+        "text": "b) the passing on of information",
+        "is_correct": true
+      },
+      {
+        "text": "c) the analysis of information",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q24",
+    "content": "24. What advantage does the \"information\" have in the text?",
+    "answers": [
+      {
+        "text": "a) the securing of supplier relationships",
+        "is_correct": false
+      },
+      {
+        "text": "b) the optimization of the supply chains",
+        "is_correct": true
+      },
+      {
+        "text": "c) The integration of sales and marketing activities",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-k7-en-q25",
+    "content": "25. What kind of sales and management procedures is described in the text?",
+    "answers": [
+      {
+        "text": "a) only individual contracts",
+        "is_correct": false
+      },
+      {
+        "text": "b) only mass contracts",
+        "is_correct": false
+      },
+      {
+        "text": "c) Both types of procedures",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

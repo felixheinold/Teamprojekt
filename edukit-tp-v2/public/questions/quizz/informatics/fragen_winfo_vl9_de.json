@@ -1,0 +1,282 @@
+[
+  {
+    "id": "winfo-vl9-de-q1",
+    "content": "1. Was beschreibt der Begriff 'Interaktion' im Kontext interaktiver Systeme?",
+    "answers": [
+      {
+        "text": "a) Kommunikation zwischen Unternehmen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wechselseitiges Handeln zwischen Benutzer und Computer",
+        "is_correct": true
+      },
+      {
+        "text": "c) Verbindung mehrerer Netzwerke",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nutzung von Maschinen durch mehrere Benutzer gleichzeitig",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q2",
+    "content": "2. Was versteht man unter 'Barrierefreiheit' im Sinne der Vorlesung?",
+    "answers": [
+      {
+        "text": "a) Systeme sind nur für IT-Experten nutzbar",
+        "is_correct": false
+      },
+      {
+        "text": "b) Jeder Nutzer kann unabhängig von seinen Fähigkeiten ein System bedienen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur mobile Anwendungen sind zugänglich",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nur in der Cloud verfügbare Software ist barrierefrei",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q3",
+    "content": "3. Welche drei Leitkriterien definiert ISO 9241-11 für Gebrauchstauglichkeit?",
+    "answers": [
+      {
+        "text": "a) Leistung, Zeit, Komfort",
+        "is_correct": false
+      },
+      {
+        "text": "b) Effizienz, Effektivität, Zufriedenstellung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Design, Technik, Zielgruppenorientierung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Datenqualität, Zugriff, Wartbarkeit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q4",
+    "content": "4. Was ist ein typisches Merkmal von User Experience (UX)?",
+    "answers": [
+      {
+        "text": "a) Bezieht sich nur auf die Phase nach der Nutzung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erfasst ausschließlich technische Aspekte",
+        "is_correct": false
+      },
+      {
+        "text": "c) Umfasst Wahrnehmungen und Reaktionen während, vor und nach der Nutzung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ist nur für mobile Systeme relevant",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q5",
+    "content": "5. Was ist ein Beispiel für ein interaktives System für Gruppen?",
+    "answers": [
+      {
+        "text": "a) Einzelbenutzerkalender",
+        "is_correct": false
+      },
+      {
+        "text": "b) Social Media Plattformen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Druckertreiber",
+        "is_correct": false
+      },
+      {
+        "text": "d) Antivirenprogramme",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q6",
+    "content": "6. Welche Art sozialer Interaktion zählt NICHT zu den in Gruppen diskutierten?",
+    "answers": [
+      {
+        "text": "a) Kooperation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Austausch",
+        "is_correct": false
+      },
+      {
+        "text": "c) Isolation",
+        "is_correct": true
+      },
+      {
+        "text": "d) Wettbewerb",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q7",
+    "content": "7. Was ist laut Johansen ein Kriterium zur Klassifikation von CSCW-Systemen?",
+    "answers": [
+      {
+        "text": "a) Energieeffizienz",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anzahl der Nutzer",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ort und Zeit der Nutzung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Hardwareanforderungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q8",
+    "content": "8. Was beschreibt das Technology Acceptance Model (TAM)?",
+    "answers": [
+      {
+        "text": "a) Modell zur Produktentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Modell zur Erklärung der Nutzung basierend auf Einstellung und wahrgenommener Nützlichkeit",
+        "is_correct": true
+      },
+      {
+        "text": "c) Regelwerk zur Softwareentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Marketingmodell zur Verkaufssteigerung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q9",
+    "content": "9. Was ist ein Kernelement der Theorie der effektiven Nutzung?",
+    "answers": [
+      {
+        "text": "a) Automatisierung aller Aufgaben",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lernen und Adaption an physische, Oberflächen- und Innenstruktur",
+        "is_correct": true
+      },
+      {
+        "text": "c) Speicherung großer Datenmengen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nutzung mobiler Apps",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl9-de-q10",
+    "content": "10. Was ist ein Beispiel für ein zentrales Ziel bei der Gestaltung interaktiver Systeme?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Produktionskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nutzerzentrierte Gestaltung und Berücksichtigung von Accessibility, Usability und UX",
+        "is_correct": true
+      },
+      {
+        "text": "c) Einsparung von Bildschirmfläche",
+        "is_correct": false
+      },
+      {
+        "text": "d) Minimale Anzahl an Dialogfeldern",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL9",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Interaktive Systeme",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

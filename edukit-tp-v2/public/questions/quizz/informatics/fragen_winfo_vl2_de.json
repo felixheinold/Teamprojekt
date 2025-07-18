@@ -1,0 +1,282 @@
+[
+  {
+    "id": "winfo-vl2-de-q1",
+    "content": "1. Was misst der Informationsgehalt laut Shannon?",
+    "answers": [
+      {
+        "text": "a) Die Anzahl der Zeichen in einer Nachricht",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die durchschnittliche Satzlänge",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Verringerung der Ungewissheit",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Verständlichkeit für den Empfänger",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q2",
+    "content": "2. Welche Formel wird zur Berechnung des Informationsgehalts verwendet?",
+    "answers": [
+      {
+        "text": "a) I = log10(p)",
+        "is_correct": false
+      },
+      {
+        "text": "b) I = p * q",
+        "is_correct": false
+      },
+      {
+        "text": "c) I = ld(1/p)",
+        "is_correct": true
+      },
+      {
+        "text": "d) I = √p",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q3",
+    "content": "3. Was bedeutet Entropie in der Informationstheorie?",
+    "answers": [
+      {
+        "text": "a) Die Wahrscheinlichkeit eines Fehlers",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der mittlere Informationsgehalt",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Rechenzeit eines Algorithmus",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Anzahl der Nachrichten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q4",
+    "content": "4. Welche drei Dimensionen beschreibt die Semiotik?",
+    "answers": [
+      {
+        "text": "a) Theorie, Praxis, Anwendung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Syntax, Semantik, Pragmatik",
+        "is_correct": true
+      },
+      {
+        "text": "c) Daten, Information, Wissen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Zeichen, Sprache, Bedeutung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q5",
+    "content": "5. Was beschreibt die Semantik in der Semiotik?",
+    "answers": [
+      {
+        "text": "a) Beziehung der Zeichen untereinander",
+        "is_correct": false
+      },
+      {
+        "text": "b) Beziehung der Zeichen zu Objekten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Beziehung von Zeichen zu Personen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Beziehung zwischen Sender und Empfänger",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q6",
+    "content": "6. Was ist laut Vorlesung eine Nachricht?",
+    "answers": [
+      {
+        "text": "a) Ein sichtbares Zeichen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Bedeutung ohne Medium",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bedeutungstragende Zeichen(-folge)",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur gesprochene Kommunikation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q7",
+    "content": "7. Was beschreibt Redundanz im Kontext von Nachrichten?",
+    "answers": [
+      {
+        "text": "a) Notwendige Wiederholungen zur Verstärkung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anteil der Nachricht, der ohne Informationsverlust weggelassen werden kann",
+        "is_correct": true
+      },
+      {
+        "text": "c) Fehler in der Übertragung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Mehrdeutigkeit der Zeichen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q8",
+    "content": "8. Was ist der Unterschied zwischen Informationsbedarf und -bedürfnis?",
+    "answers": [
+      {
+        "text": "a) Bedarf ist subjektiv, Bedürfnis ist objektiv",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarf ist technisch, Bedürfnis emotional",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bedarf ist aufgabenbezogen, Bedürfnis ist subjektives Verlangen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es gibt keinen Unterschied",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q9",
+    "content": "9. Was ist der Informationsstand?",
+    "answers": [
+      {
+        "text": "a) Summe der gespeicherten Informationen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Menge an Informationsbedarf",
+        "is_correct": false
+      },
+      {
+        "text": "c) Schnittmenge aus Bedarf, Bedürfnis, Nachfrage und Angebot",
+        "is_correct": true
+      },
+      {
+        "text": "d) Differenz zwischen Wunsch und Realität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "winfo-vl2-de-q10",
+    "content": "10. Welche Rolle spielt die Pragmatik in der Wirtschaftsinformatik besonders?",
+    "answers": [
+      {
+        "text": "a) Fokus auf Technik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fokus auf Bedeutung im Handlungskontext",
+        "is_correct": true
+      },
+      {
+        "text": "c) Fokus auf reine Syntax",
+        "is_correct": false
+      },
+      {
+        "text": "d) Fokus auf Speicherplatz",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL2",
+    "lecture": "Wirtschaftsinformatik",
+    "module": "Grundbegriffe",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

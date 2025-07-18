@@ -119,6 +119,16 @@ const QuizGame = () => {
   const shuffle = <T,>(array: T[]): T[] =>
     [...array].sort(() => Math.random() - 0.5);
 
+  const mapBackendToQuiz = (backendQuestion: any): QuizQuestion => {
+    return {
+      id: backendQuestion.id,
+      question: backendQuestion.content,
+      options: backendQuestion.answers.map((a: any) => a.text),
+      answer:
+        backendQuestion.answers.find((a: any) => a.is_correct)?.text || "",
+    };
+  };
+
   const loadQuizQuestions = async (): Promise<QuizQuestion[]> => {
     const subjectKey = subject?.toLowerCase();
     const langKey = i18n.language.startsWith("de") ? "de" : "en";
@@ -128,26 +138,29 @@ const QuizGame = () => {
     if (isAllChapters) {
       const promises = Array.from({ length: chapterCount }, (_, i) => {
         const chapterKey = `k${i + 1}`;
-        const path = `/questions/quiz/${subjectKey}_${chapterKey}_${langKey}.json`;
+        const path = `/questions/quizz/${subjectKey}/${subjectKey}_${chapterKey}_${langKey}.json`;
         return fetch(path)
           .then((res) => (res.ok ? res.json() : []))
           .catch(() => []);
       });
       const allResults = await Promise.all(promises);
       const combined = allResults.flat();
-      return combined.length > 0 ? combined : sampleQuestions;
+      return combined.length > 0
+        ? combined.map(mapBackendToQuiz)
+        : sampleQuestions;
     }
 
     const match = chapter?.match(/Kapitel (\d+)/i);
     const chapterKey = match ? `k${match[1]}` : null;
     if (!chapterKey) return sampleQuestions;
 
-    const path = `/questions/quiz/${subjectKey}_${chapterKey}_${langKey}.json`;
+    const path = `/questions/quizz/${subjectKey}/${subjectKey}_${chapterKey}_${langKey}.json`;
 
     try {
       const res = await fetch(path);
       if (!res.ok) throw new Error("Datei nicht gefunden");
-      return await res.json();
+      const data = await res.json();
+      return data.map(mapBackendToQuiz);
     } catch {
       return sampleQuestions;
     }

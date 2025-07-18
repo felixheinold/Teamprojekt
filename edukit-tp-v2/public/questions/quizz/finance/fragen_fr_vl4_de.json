@@ -1,0 +1,282 @@
+[
+  {
+    "id": "fr-vl4-de-q1",
+    "content": "1. Was ist das Ziel der Kapitalwertmethode?",
+    "answers": [
+      {
+        "text": "a) Minimierung der Amortisationsdauer",
+        "is_correct": false
+      },
+      {
+        "text": "b) Maximierung der internen Zinssätze",
+        "is_correct": false
+      },
+      {
+        "text": "c) Bewertung der Vorteilhaftigkeit eines Investitionsprojekts durch Vergleich mit den Kapitalkosten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Maximierung des Eigenkapitals",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q2",
+    "content": "2. Wann ist ein Projekt laut Kapitalwertmethode durchzuführen?",
+    "answers": [
+      {
+        "text": "a) Wenn der interne Zinssatz maximal ist",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn der Kapitalwert gleich 0 ist",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wenn der Kapitalwert positiv ist",
+        "is_correct": true
+      },
+      {
+        "text": "d) Wenn die Laufzeit unter 5 Jahren liegt",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q3",
+    "content": "3. Was ist eine Schwäche der Kapitalwertmethode bei Kapitalknappheit?",
+    "answers": [
+      {
+        "text": "a) Sie ist rechnerisch zu aufwendig",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie berücksichtigt keine Opportunitätskosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie liefert keine Auswahl unter konkurrierenden Projekten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie überschätzt laufende Ausgaben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q4",
+    "content": "4. Was wird bei der Amortisationsrechnung gemessen?",
+    "answers": [
+      {
+        "text": "a) Die Rendite des Kapitals",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der interne Zinssatz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Zeit bis zur Rückzahlung der Anfangsauszahlung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Der Kapitalwert des Projekts",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q5",
+    "content": "5. Wann gilt ein Projekt als lohnend nach der Amortisationsrechnung?",
+    "answers": [
+      {
+        "text": "a) Wenn es keinen Kapitalwert erzeugt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn die Amortisationsdauer unterhalb einer festgelegten Schwelle liegt",
+        "is_correct": true
+      },
+      {
+        "text": "c) Wenn der Barwert positiv ist",
+        "is_correct": false
+      },
+      {
+        "text": "d) Wenn die Renten konstant sind",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q6",
+    "content": "6. Was ist der interne Zinssatz (IZS)?",
+    "answers": [
+      {
+        "text": "a) Zinssatz mit maximaler Rückzahlung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zinssatz, bei dem der Kapitalwert gleich null ist",
+        "is_correct": true
+      },
+      {
+        "text": "c) Durchschnittszins aller Investitionen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Mindestverzinsung der Investoren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q7",
+    "content": "7. Was ist ein Nachteil der internen Zinssatzmethode (IZSM)?",
+    "answers": [
+      {
+        "text": "a) Sie ist theoretisch nicht fundiert",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie berücksichtigt keine Kapitalwertberechnung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie liefert bei mehreren Vorzeichenwechseln mehrere Ergebnisse",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie führt immer zur gleichen Entscheidung wie die Amortisationsrechnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q8",
+    "content": "8. Was ist bei sich gegenseitig ausschließenden Projekten ein Nachteil der IZSM?",
+    "answers": [
+      {
+        "text": "a) Keine Berücksichtigung des Zeitwerts",
+        "is_correct": false
+      },
+      {
+        "text": "b) Berücksichtigung zu vieler Perioden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Entscheidung kann je nach gefordertem Zinssatz variieren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie berücksichtigt nur die Anfangsauszahlung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q9",
+    "content": "9. Welche Methode wurde laut CFO-Umfrage theoretisch als überlegen eingestuft?",
+    "answers": [
+      {
+        "text": "a) IZSM",
+        "is_correct": false
+      },
+      {
+        "text": "b) Payback-Methode",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kapitalwertmethode",
+        "is_correct": true
+      },
+      {
+        "text": "d) Realoptionen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "fr-vl4-de-q10",
+    "content": "10. Was sind Externalitäten bei Investitionen?",
+    "answers": [
+      {
+        "text": "a) Kosten der Finanzierung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Interne Kostensenkungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Auswirkungen auf Dritte, die nicht über Marktpreise erfasst sind",
+        "is_correct": true
+      },
+      {
+        "text": "d) Währungsrisiken",
+        "is_correct": false
+      }
+    ],
+    "chapter": "VL4",
+    "lecture": "Finanzierung",
+    "module": "Investitionsentscheidungen",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

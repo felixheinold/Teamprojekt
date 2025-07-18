@@ -1,0 +1,446 @@
+[
+  {
+    "id": "pb-uf-kX-en-q1",
+    "content": "1. Which of the following strategies is most likely to increase productivity?",
+    "answers": [
+      {
+        "text": "a) Do not invest for investments in the further training of employees.",
+        "is_correct": false
+      },
+      {
+        "text": "b) implementation of a new CRM system.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Promotion of teamwork and the exchange of knowledge.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Establishment of project management tools.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q2",
+    "content": "2. What influence did the management have on the employees?",
+    "answers": [
+      {
+        "text": "a) It had a very direct control over the work processes.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It included the employees in the decision -making process.",
+        "is_correct": false
+      },
+      {
+        "text": "c) She motivated the employees and bound to the corporate goals.",
+        "is_correct": true
+      },
+      {
+        "text": "d) She invested the employees in the development of new products.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q3",
+    "content": "3. Which of the following statements best describes the role of management in corporate management?",
+    "answers": [
+      {
+        "text": "a) Management is only responsible for financial planning.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Management is responsible for the strategic planning and implementation of measures.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Management is mainly responsible for the operational implementation of the business processes.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Management is only responsible for personnel development.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q4",
+    "content": "4. How does the corporate structure influence decision making?",
+    "answers": [
+      {
+        "text": "a) The corporate structure leads to reducing decision -making.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The corporate structure influences decision -making by the hierarchy and responsibilities.",
+        "is_correct": true
+      },
+      {
+        "text": "c) The corporate structure is irrelevant for decision -making.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The corporate structure is only important for strategic planning.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q5",
+    "content": "5. Which of the following statements best describes the meaning of corporate efficiency?",
+    "answers": [
+      {
+        "text": "a) Efficiency is only relevant for financial planning.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Efficiency is an essential factor for competitiveness and long -term sustainability of a company.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Efficiency is not an important key figure for corporate management.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Efficiency is only relevant for small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q6",
+    "content": "6. What type of information is important for a well -founded decision -making?",
+    "answers": [
+      {
+        "text": "a) only numbers and statistics.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Both quantitative and qualitative information.",
+        "is_correct": true
+      },
+      {
+        "text": "c) only information that corresponds to your own interests.",
+        "is_correct": false
+      },
+      {
+        "text": "d) only information that is already known.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q7",
+    "content": "7. Which of the following statements is best for a successful company?",
+    "answers": [
+      {
+        "text": "a) only a great investor.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a strong team and a clear strategy.",
+        "is_correct": true
+      },
+      {
+        "text": "c) High personnel expenditure.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a low risk.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q8",
+    "content": "8. What is the difference between a corporate culture and company efficiency?",
+    "answers": [
+      {
+        "text": "a) A corporate culture is important for corporate efficiency.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Company efficiency is important for corporate culture.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Corporate efficiency is irrelevant for corporate culture.",
+        "is_correct": false
+      },
+      {
+        "text": "d) A corporate culture is only important for small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q9",
+    "content": "9. Which of the following statements is most relevant for corporate management?",
+    "answers": [
+      {
+        "text": "a) compliance with laws and regulations.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the development of a clear and effective strategy.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the optimization of the production processes.",
+        "is_correct": false
+      },
+      {
+        "text": "d) taking into account the needs of customers.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q10",
+    "content": "10. What influence does corporate efficiency have on corporate performance?",
+    "answers": [
+      {
+        "text": "a) It has little influence on corporate performance.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It has a significant influence on corporate performance by improving profitability, competitiveness and long -term sustainability.",
+        "is_correct": true
+      },
+      {
+        "text": "c) It has no influence on corporate benefit.",
+        "is_correct": false
+      },
+      {
+        "text": "d) It has no influence on corporate benefit.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q11",
+    "content": "11. How important is corporate efficiency compared to other factors such as innovation and customer relationships?",
+    "answers": [
+      {
+        "text": "a) Innovation and customer relationships are more important than company efficiency.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Innovation and customer relationships are equally important.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Innovation and customer relationships are important to different degrees.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Innovation and customer relationships are irrelevant.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q12",
+    "content": "12. Which of the following statements best describes the role of personnel development?",
+    "answers": [
+      {
+        "text": "a) Personnel development is only important for large companies.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Personnel development is an important part of corporate efficiency and company efficiency.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Personnel development is only important for employee satisfaction.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Personnel development is irrelevant for corporate management.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q13",
+    "content": "13. What is an important factor for a successful company?",
+    "answers": [
+      {
+        "text": "a) only the financing.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a strong team and a clear strategy.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Low personnel expenditure.",
+        "is_correct": false
+      },
+      {
+        "text": "d) only legal advice.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q14",
+    "content": "14. Which of the following statements is most relevant for corporate management?",
+    "answers": [
+      {
+        "text": "a) Management must always make all decisions.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Management must make the decisions of management.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Management must implement the decisions of management.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Management must ignore the decisions of management.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q15",
+    "content": "15. What advantage does good company efficiency offer for employees?",
+    "answers": [
+      {
+        "text": "a) It leads to unnecessary workload.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It increases the workload and can lead to stress and burnout.",
+        "is_correct": false
+      },
+      {
+        "text": "c) It improves working conditions and promotes motivation.",
+        "is_correct": true
+      },
+      {
+        "text": "d) It leads to a loss of work.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "pb-uf-kX-en-q16",
+    "content": "16. How does a strong team affect company efficiency?",
+    "answers": [
+      {
+        "text": "a) A strong team is irrelevant for company efficiency.",
+        "is_correct": false
+      },
+      {
+        "text": "b) A strong team is an essential factor for corporate efficiency by increasing efficiency, increasing productivity and promoting innovative strength.",
+        "is_correct": false
+      },
+      {
+        "text": "c) A strong team is only important for small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter X",
+    "lecture": "marketing",
+    "module": "Management and marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

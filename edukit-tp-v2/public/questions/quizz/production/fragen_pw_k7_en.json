@@ -1,0 +1,562 @@
+[
+  {
+    "id": "ip-log-k3-en-q1",
+    "content": "1. [ENÜ] Was ist das Ziel der Beschaffung im Produktionsprozess?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Lagerfläche",
+        "is_correct": false
+      },
+      {
+        "text": "b) Versorgung der Produktion mit notwendigen Materialien",
+        "is_correct": true
+      },
+      {
+        "text": "c) Verkauf von Fertigprodukten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Personalbereitstellung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q2",
+    "content": "2. [ENÜ] Was ist ein Vorteil der fallweisen Beschaffung?",
+    "answers": [
+      {
+        "text": "a) Geringer Planungsaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringe Lagerhaltungskosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Hohe Versorgungssicherheit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Hoher Automatisierungsgrad",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q3",
+    "content": "3. [ENÜ] Wann ist die Just-in-Time-Beschaffung besonders geeignet?",
+    "answers": [
+      {
+        "text": "a) Bei stark schwankendem Bedarf",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bei schlechter Lieferfähigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wenn Bedarf stetig und Produktion gut planbar ist",
+        "is_correct": true
+      },
+      {
+        "text": "d) Für einmalige Großaufträge",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q4",
+    "content": "4. [ENÜ] Welche Aussage zur ABC-Analyse ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Alle Materialien sind gleich wichtig",
+        "is_correct": false
+      },
+      {
+        "text": "b) A-Güter haben den geringsten Wertanteil",
+        "is_correct": false
+      },
+      {
+        "text": "c) C-Güter sind mengenmäßig häufig, aber geringwertig",
+        "is_correct": true
+      },
+      {
+        "text": "d) B-Güter verursachen die höchsten Kosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q5",
+    "content": "5. [ENÜ] Welche Güter eignen sich typischerweise für Vorratsbeschaffung?",
+    "answers": [
+      {
+        "text": "a) A-Güter",
+        "is_correct": false
+      },
+      {
+        "text": "b) B-Güter",
+        "is_correct": false
+      },
+      {
+        "text": "c) C-Güter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Alle Güter gleichermaßen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q6",
+    "content": "6. [ENÜ] Was ist das Ziel der Losgrößenplanung?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Produktionsmenge",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ermittlung optimaler Seriengrößen zur Minimierung der Kosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Lagerumschlag erhöhen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Personalbedarf reduzieren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q7",
+    "content": "7. [ENÜ] Welche Kosten steigen bei vielen kleinen Losen typischerweise?",
+    "answers": [
+      {
+        "text": "a) Lagerkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einrichtkosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Stückkosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Gemeinkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q8",
+    "content": "8. [ENÜ] Welche Kosten werden im Harris/Andler-Modell NICHT berücksichtigt?",
+    "answers": [
+      {
+        "text": "a) Lagerkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bestellkosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zinskosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Vertriebskosten",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q9",
+    "content": "9. [ENÜ] Wie lautet die Formel für die optimale Bestellmenge im Harris/Andler-Modell?",
+    "answers": [
+      {
+        "text": "a) q = p × D × h",
+        "is_correct": false
+      },
+      {
+        "text": "b) q = D / (Kf × p)",
+        "is_correct": false
+      },
+      {
+        "text": "c) q = √(2 × D × Kf / (p × h))",
+        "is_correct": true
+      },
+      {
+        "text": "d) q = D × p × h",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q10",
+    "content": "10. [ENÜ] Welche Aussage zur Lagerhaltung ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie ist ausschließlich für Produktionsausfälle verantwortlich",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie verursacht keine Kapitalbindungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie dient als Puffer zwischen Beschaffung und Produktion",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie reduziert Fehlmengenkosten vollständig",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q11",
+    "content": "11. [ENÜ] Was ist ein typischer Nachteil der Just-in-Time-Beschaffung?",
+    "answers": [
+      {
+        "text": "a) Erhöhte Lagerkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringe Transparenz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Geringe Versorgungssicherheit bei Lieferverzögerungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zu lange Vorlaufzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q12",
+    "content": "12. [ENÜ] Was beschreibt die Reichweite eines Lagers?",
+    "answers": [
+      {
+        "text": "a) Maximale Lagermenge eines Artikels",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zeitraum, für den der Lagerbestand bei gegebenem Verbrauch ausreicht",
+        "is_correct": true
+      },
+      {
+        "text": "c) Anzahl der Artikel pro Palette",
+        "is_correct": false
+      },
+      {
+        "text": "d) Anzahl der Tage bis zur Inventur",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q13",
+    "content": "13. [ENÜ] Was verursacht Fehlmengenkosten?",
+    "answers": [
+      {
+        "text": "a) Hohe Kapitalbindung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Überproduktion",
+        "is_correct": false
+      },
+      {
+        "text": "c) Fehlende Artikel zum benötigten Zeitpunkt",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lange Lagerdauer",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q14",
+    "content": "14. [ENÜ] Welche Zielgröße wird durch Bestandsmanagement direkt beeinflusst?",
+    "answers": [
+      {
+        "text": "a) Energieverbrauch",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kapitalbindung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Mitarbeitermotivation",
+        "is_correct": false
+      },
+      {
+        "text": "d) Marktanteil",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q15",
+    "content": "15. [ENÜ] Welche Maßnahme dient der staatlichen Versorgungssicherheit?",
+    "answers": [
+      {
+        "text": "a) Mindestlohnerhöhung",
+        "is_correct": false
+      },
+      {
+        "text": "b) ALANO-Projekt",
+        "is_correct": true
+      },
+      {
+        "text": "c) KfW-Investitionszuschuss",
+        "is_correct": false
+      },
+      {
+        "text": "d) CO₂-Zertifikate",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q16",
+    "content": "16. [ENÜ] Was versteht man unter 'Lagerumschlagshäufigkeit'?",
+    "answers": [
+      {
+        "text": "a) Zahl der vorrätigen Güter pro Jahr",
+        "is_correct": false
+      },
+      {
+        "text": "b) Durchschnittlicher Zeitraum zwischen zwei Lieferungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verhältnis von Lagerabgang zum durchschnittlichen Lagerbestand",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zahl der Regalplätze im Lager",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q17",
+    "content": "17. [ENÜ] Was ist eine typische Maßnahme zur Senkung der Lagerkosten?",
+    "answers": [
+      {
+        "text": "a) Erhöhung der Bestellmengen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einführung fester Losgrößen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verbesserung der Bedarfsvorhersage",
+        "is_correct": true
+      },
+      {
+        "text": "d) Vergrößerung des Sicherheitsbestands",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q18",
+    "content": "18. [ENÜ] Was bedeutet 'Sicherheitsbestand'?",
+    "answers": [
+      {
+        "text": "a) Der für Brandschutz reservierte Lagerbereich",
+        "is_correct": false
+      },
+      {
+        "text": "b) Mindestbestand zur Absicherung gegen Unsicherheiten in Bedarf oder Lieferzeit",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die teuersten Lagergüter",
+        "is_correct": false
+      },
+      {
+        "text": "d) Der Bestand, der immer zuerst verbraucht wird",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q19",
+    "content": "19. [ENÜ] Welche Aussage zur Materialbedarfsplanung ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie berücksichtigt nur C-Güter",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie erfolgt ausschließlich manuell",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie soll Materialverfügbarkeit sichern und Lagerkosten minimieren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie bezieht keine Vergangenheitswerte ein",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-log-k3-en-q20",
+    "content": "20. [ENÜ] Wofür steht das Akronym ALANO?",
+    "answers": [
+      {
+        "text": "a) Allgemeine Lagerhaltung Nordost",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anlagenoptimierung durch Losgrößenanpassung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Analytik und Logistik zur nationalen Notbevorratung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Automatisierte Lagersteuerung in Nordamerika",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 3",
+    "lecture": "Industrial Production & Logistics",
+    "module": "Inventory Management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

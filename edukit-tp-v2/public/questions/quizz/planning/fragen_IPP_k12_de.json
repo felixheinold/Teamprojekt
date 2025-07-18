@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ip-ip-k12-de-q1",
+    "content": "1. Was ist das Ziel von Hoshin Kanri?",
+    "answers": [
+      {
+        "text": "a) Kontrolle des täglichen Betriebs",
+        "is_correct": false
+      },
+      {
+        "text": "b) Steuerung langfristiger strategischer Ziele durch zielgerichtete Abstimmung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Einführung agiler Projektstrukturen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Planung der Fertigungslayouts",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q2",
+    "content": "2. Was stellt die X-Matrix im Hoshin Kanri dar?",
+    "answers": [
+      {
+        "text": "a) Eine Materialflussanalyse",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Datenbank für Kennzahlen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Visualisierung der Verknüpfung von Zielen, Maßnahmen, Verantwortlichen und Ergebnissen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine Investitionsrechnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q3",
+    "content": "3. Welche Funktion hat das Zielsystem im Produktionsumfeld?",
+    "answers": [
+      {
+        "text": "a) Motivation der Mitarbeitenden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Definition qualitativer und quantitativer Steuerungsgrößen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Kontrolle der Mitarbeiteranzahl",
+        "is_correct": false
+      },
+      {
+        "text": "d) Dokumentation gesetzlicher Vorgaben",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q4",
+    "content": "4. Welche Dimension gehört NICHT zum klassischen Zielsystem?",
+    "answers": [
+      {
+        "text": "a) Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Qualität",
+        "is_correct": false
+      },
+      {
+        "text": "d) Markenimage",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q5",
+    "content": "5. Was versteht man unter dem 'Shopfloor Management'?",
+    "answers": [
+      {
+        "text": "a) Einkaufsprozesssteuerung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Visualisierung und Steuerung direkt am Ort der Wertschöpfung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Lagerverwaltung in Echtzeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Vertriebscontrolling",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q6",
+    "content": "6. Welche Methode dient der zielgerichteten Umsetzung von Strategien im Hoshin Kanri?",
+    "answers": [
+      {
+        "text": "a) Ishikawa-Diagramm",
+        "is_correct": false
+      },
+      {
+        "text": "b) X-Matrix",
+        "is_correct": true
+      },
+      {
+        "text": "c) Wertstromanalyse",
+        "is_correct": false
+      },
+      {
+        "text": "d) MTM",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q7",
+    "content": "7. Was ist ein zentrales Element von Shopfloor-Visualisierung?",
+    "answers": [
+      {
+        "text": "a) Farbige Bodenmarkierungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Schichtplanung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zielkennzahlen und Abweichungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Maschinencodes",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q8",
+    "content": "8. Welche Bewertung erfolgt auf Basis qualitativer Einschätzungen?",
+    "answers": [
+      {
+        "text": "a) Nutzwertanalyse",
+        "is_correct": true
+      },
+      {
+        "text": "b) Regressionsanalyse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kostenvergleichsrechnung",
+        "is_correct": false
+      },
+      {
+        "text": "d) ROI-Berechnung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q9",
+    "content": "9. Was ist das Ziel des Daily Shopfloor Meetings?",
+    "answers": [
+      {
+        "text": "a) Strategiediskussionen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Finanzplanung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Tägliche Abstimmung zu Zielen, Problemen und Maßnahmen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Softwareentwicklung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k12-de-q10",
+    "content": "10. Was ist bei der Formulierung von Zielgrößen wichtig?",
+    "answers": [
+      {
+        "text": "a) Möglichst allgemein bleiben",
+        "is_correct": false
+      },
+      {
+        "text": "b) Messbar und beeinflussbar sein",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur qualitative Aussagen treffen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nicht kommuniziert werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 12",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

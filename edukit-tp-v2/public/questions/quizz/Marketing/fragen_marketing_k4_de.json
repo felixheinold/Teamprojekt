@@ -1,0 +1,422 @@
+[
+  {
+    "id": "pb-k4-de-q1",
+    "content": "Welche Art von Produktprofil ist in der Beschreibung am häufigsten?",
+    "answers": [
+      {
+        "text": "a) Verbrauchsgüter",
+        "is_correct": true
+      },
+      {
+        "text": "b) Industriegüter",
+        "is_correct": false
+      },
+      {
+        "text": "c) Motorprodukte",
+        "is_correct": false
+      },
+      {
+        "text": "d) Alle oben genannten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q2",
+    "content": "Welche der folgenden Aussagen beschreibt am besten die Methode zur Preisgestaltung in der Beschreibung?",
+    "answers": [
+      {
+        "text": "a) Die Preisgestaltung basiert ausschließlich auf dem Brutto-Gewinn.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Preisgestaltung basiert auf dem Gewinn- und Verlustrechnung.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Preisgestaltung basiert auf der Verkaufsentwicklung und dem Wettbewerb.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Preisgestaltung basiert auf der Kundenpräferenz.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q3",
+    "content": "Welche der folgenden Informationen ist am relevantesten für die Auswahl eines Auto-Modells?",
+    "answers": [
+      {
+        "text": "a) Die Farbe des Autos.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Marke des Autos.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Leistung des Autos.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Größe des Autos.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q4",
+    "content": "Welche Art von Informationen wird im Text als \"Informationen\" bezeichnet?",
+    "answers": [
+      {
+        "text": "a) Quantitative Daten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Qualitative Daten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktprofile",
+        "is_correct": true
+      },
+      {
+        "text": "d) Marketingstrategien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q5",
+    "content": "Welche der folgenden Aussagen ist am wahrscheinlichsten, dass die Beschreibung des Unternehmens auf den Markt zieht?",
+    "answers": [
+      {
+        "text": "a) Eine kleine, lokale Firma.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine große, internationale Automobilherstellung.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine spezialisierte Automobilwerkstatt.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Einzelhandelsboutique.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q6",
+    "content": "Was ist der Hauptzweck des Textes?",
+    "answers": [
+      {
+        "text": "a) Eine detaillierte Analyse der Automobilindustrie.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Beschreibung des Unternehmens und seiner Produkte.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Marketingstrategie für ein Auto-Modell.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Verkaufsanalyse.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q7",
+    "content": "Welche der folgenden Aussagen ist am wahrscheinlichsten, dass eine Firma mit dem Namen \"martin\" macht?",
+    "answers": [
+      {
+        "text": "a) Eine Firma für Automobilteile.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Firma für Softwareentwicklung.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Firma für Automobilproduktionsunternehmen.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eine Firma für Werbeagenturen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q8",
+    "content": "Welche der folgenden Informationen wird im Text erwähnt?",
+    "answers": [
+      {
+        "text": "a) Die Verwendung von künstlicher Intelligenz in der Automobilindustrie.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Bedeutung von Nachhaltigkeit in der Automobilindustrie.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Entwicklung von Elektroautos.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Verwendung von traditionellen Motoren.",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q9",
+    "content": "Welche Art von Produkt wird im Text beschrieben?",
+    "answers": [
+      {
+        "text": "a) Elektronische Geräte",
+        "is_correct": false
+      },
+      {
+        "text": "b) Autos",
+        "is_correct": true
+      },
+      {
+        "text": "c) Textilien",
+        "is_correct": false
+      },
+      {
+        "text": "d) Getränke",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q10",
+    "content": "Welche der folgenden Aussagen ist am relevantesten für die Bewertung von Automobilprodukten?",
+    "answers": [
+      {
+        "text": "a) Der Preis des Autos.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Marke des Autos.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Leistung des Autos.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Größe des Autos.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q11",
+    "content": "Welche der folgenden Aussagen ist am wahrscheinlichsten, dass eine Firma mit dem Namen \"richter\" macht?",
+    "answers": [
+      {
+        "text": "a) Eine Firma für Energieversorgung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Firma für Automobilherstellung.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine Firma für Softwareentwicklung.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine Firma für Möbel.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q12",
+    "content": "Was ist das Hauptziel des Textes?",
+    "answers": [
+      {
+        "text": "a) Die Verkaufszahlen von Automobilherstellern zu analysieren.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Das Marketing einer bestimmten Automobilmarke.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Produktentwicklung für ein bestimmtes Auto-Modell.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Kosten für die Produktion von Automobilen zu berechnen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q13",
+    "content": "Welche der folgenden Aussagen beschreibt am besten die Art der Produkte, die in der Beschreibung erwähnt werden?",
+    "answers": [
+      {
+        "text": "a) Nur Konsumgüter",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur Industriegüter",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ein Mix aus Konsumgütern und Industriegütern",
+        "is_correct": true
+      },
+      {
+        "text": "d) Nur Dienstleistungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q14",
+    "content": "Welches ist das Hauptziel des Textes?",
+    "answers": [
+      {
+        "text": "a) Die Erstellung von Marketingkampagnen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Beschreibung des Unternehmens.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Analyse des Marktes.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Entwicklung neuer Produkte.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "pb-k4-de-q15",
+    "content": "Welche der folgenden Informationen ist am relevantesten für die Auswahl eines Autos?",
+    "answers": [
+      {
+        "text": "a) Das Aussehen des Autos.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Leistung des Autos.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Größe des Autos.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Farbe des Autos.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "Marketing",
+    "module": "Management und Marketing",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

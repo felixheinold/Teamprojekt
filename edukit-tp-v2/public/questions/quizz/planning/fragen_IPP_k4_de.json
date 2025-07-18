@@ -1,0 +1,562 @@
+[
+  {
+    "id": "ip-ip-k4-de-q1",
+    "content": "1. Was versteht man unter einer 'Low-Cost-Fabrik'?",
+    "answers": [
+      {
+        "text": "a) Eine Fabrik mit besonders hoher Produktvielfalt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Fabrik mit Fokus auf minimale Produktionskosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Eine automatisierte Hochtechnologiefabrik",
+        "is_correct": false
+      },
+      {
+        "text": "d) Eine vollständig dezentrale Fertigungseinheit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q2",
+    "content": "2. Welcher Fabriktyp fokussiert sich auf die Herstellung kundenindividueller Produkte in großen Mengen?",
+    "answers": [
+      {
+        "text": "a) Variantenflexible Fabrik",
+        "is_correct": false
+      },
+      {
+        "text": "b) High-Tech-Fabrik",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kundenindividuelle Fabrik",
+        "is_correct": true
+      },
+      {
+        "text": "d) Atmende Fabrik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q3",
+    "content": "3. Was ist ein wesentliches Merkmal der 'Reaktionsschnellen Fabrik'?",
+    "answers": [
+      {
+        "text": "a) Einsatz recycelbarer Materialien",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fokus auf niedrige Produktionskosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Marktorientierung und schnelle Lieferfähigkeit",
+        "is_correct": true
+      },
+      {
+        "text": "d) Integration neuer Produkte in bestehende Linien",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q4",
+    "content": "4. Welche Planungsphase beinhaltet die Groblayoutplanung?",
+    "answers": [
+      {
+        "text": "a) Zielfestlegung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Konzeptplanung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Realisierungsüberwachung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Detailplanung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q5",
+    "content": "5. Welche Eigenschaft beschreibt den Wandlungsbefähiger 'Modularität'?",
+    "answers": [
+      {
+        "text": "a) Fähigkeit zur autonomen Bewegung von Systemen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gestaltung für verschiedene Anforderungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Nutzung standardisierter funktionaler Einheiten",
+        "is_correct": true
+      },
+      {
+        "text": "d) Atmungsfähigkeit durch Skalierung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q6",
+    "content": "6. Was ist das Ziel der Phase 'Hochlauf- und Serienbetreuung'?",
+    "answers": [
+      {
+        "text": "a) Layoutentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kontrolle des Baufortschritts",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktionsanlauf und Zielerreichung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Erhebung von Produktionsdaten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q7",
+    "content": "7. Was unterscheidet den Greenfield- vom Brownfield-Ansatz?",
+    "answers": [
+      {
+        "text": "a) Greenfield nutzt bestehende Strukturen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Brownfield ist günstiger als Greenfield",
+        "is_correct": false
+      },
+      {
+        "text": "c) Greenfield beginnt auf der grünen Wiese",
+        "is_correct": true
+      },
+      {
+        "text": "d) Brownfield wird nur bei Logistikplanung verwendet",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q8",
+    "content": "8. Was beschreibt die 'Prozessflexibilität'?",
+    "answers": [
+      {
+        "text": "a) Fähigkeit zur Integration neuer Produkte",
+        "is_correct": false
+      },
+      {
+        "text": "b) Fähigkeit, bekannte Varianten kurzfristig umzusetzen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Fähigkeit zur Veränderung der Mitarbeiterstruktur",
+        "is_correct": false
+      },
+      {
+        "text": "d) Fähigkeit zur Standortverlagerung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q9",
+    "content": "9. Was ist eine Aufgabe der Detailplanung?",
+    "answers": [
+      {
+        "text": "a) Entwicklung von Groblayoutvarianten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Definition strategischer Ziele",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ausplanung von Betriebseinrichtungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Auswahl des Standortes",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q10",
+    "content": "10. Welche Art der Flexibilität beschreibt die Möglichkeit, zwischen verschiedenen Fertigungswegen zu wählen?",
+    "answers": [
+      {
+        "text": "a) Variantenflexibilität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Prozessflexibilität",
+        "is_correct": false
+      },
+      {
+        "text": "c) Routingflexibilität",
+        "is_correct": true
+      },
+      {
+        "text": "d) Volumenflexibilität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q11",
+    "content": "11. Was ist ein typisches Merkmal der atmenden Fabrik?",
+    "answers": [
+      {
+        "text": "a) Fixe Produktionskapazitäten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Feste Personalanzahl",
+        "is_correct": false
+      },
+      {
+        "text": "c) Anpassung an schwankende Bedarfe",
+        "is_correct": true
+      },
+      {
+        "text": "d) Permanente Vollauslastung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q12",
+    "content": "12. Wozu dient die Phase der Zielfestlegung in der Fabrikplanung?",
+    "answers": [
+      {
+        "text": "a) Maschineninstallation",
+        "is_correct": false
+      },
+      {
+        "text": "b) Groblayoutentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ableitung konkreter Planungsparameter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Simulation des Betriebes",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q13",
+    "content": "13. Welche Flexibilität beschreibt die Anpassung der Fertigungskapazität?",
+    "answers": [
+      {
+        "text": "a) Routingflexibilität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Variantenflexibilität",
+        "is_correct": false
+      },
+      {
+        "text": "c) Volumenflexibilität",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zeitflexibilität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q14",
+    "content": "14. Welche Phase folgt auf die Konzeptplanung in der klassischen Fabrikplanung?",
+    "answers": [
+      {
+        "text": "a) Realisierungsüberwachung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zielfestlegung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Detailplanung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Hochlaufbetreuung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q15",
+    "content": "15. Welche Eigenschaft ist typisch für die kundenindividuelle Fabrik?",
+    "answers": [
+      {
+        "text": "a) Standardisierte Massenfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Losgröße 1 bei Serienbedingungen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ausschließlich manuelle Arbeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktion ohne Lager",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q16",
+    "content": "16. Was ist ein Beispiel für Wandlungsbefähiger 'Kompatibilität'?",
+    "answers": [
+      {
+        "text": "a) Maschinen mit standardisierten Schnittstellen",
+        "is_correct": true
+      },
+      {
+        "text": "b) Räumlich getrennte Produktionseinheiten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Fixe Fördertechniksysteme",
+        "is_correct": false
+      },
+      {
+        "text": "d) Papierbasierte Dokumentation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q17",
+    "content": "17. Was ist ein Ziel der Konzeptplanung?",
+    "answers": [
+      {
+        "text": "a) Entwicklung und Bewertung von Groblayoutvarianten",
+        "is_correct": true
+      },
+      {
+        "text": "b) Personalschulung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Installation von Produktionsmitteln",
+        "is_correct": false
+      },
+      {
+        "text": "d) Umsetzung der Instandhaltungsstrategie",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q18",
+    "content": "18. Was beschreibt die Routingflexibilität?",
+    "answers": [
+      {
+        "text": "a) Anpassung der Kapazität je nach Nachfrage",
+        "is_correct": false
+      },
+      {
+        "text": "b) Möglichkeit zur Umstellung auf neue Produkte",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wahlmöglichkeit zwischen verschiedenen Prozesswegen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Erweiterung der Lagerflächen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q19",
+    "content": "19. Welche Eigenschaft erhöht die Wandlungsfähigkeit einer Fabrik?",
+    "answers": [
+      {
+        "text": "a) Feste Auslastung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Redundante Prozesse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Hoher Automatisierungsgrad ohne Mensch",
+        "is_correct": false
+      },
+      {
+        "text": "d) Standardisierte Infrastruktur",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ip-ip-k4-de-q20",
+    "content": "20. Was ist Ziel der Realisierungsüberwachung?",
+    "answers": [
+      {
+        "text": "a) Kontrolle von Bau, Umbau und Inbetriebnahme",
+        "is_correct": true
+      },
+      {
+        "text": "b) Schulung der Mitarbeiter",
+        "is_correct": false
+      },
+      {
+        "text": "c) Detaillayoutplanung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Simulation von Fabrikprozessen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Kapitel 4",
+    "lecture": "IPP",
+    "module": "Integrierte Produktionsplanung",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

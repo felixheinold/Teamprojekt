@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "production-k2-de-q1",
+    "content": "1. Was ist das Ziel der Produktionsprogrammplanung?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Lagerbestände",
+        "is_correct": false
+      },
+      {
+        "text": "b) Minimierung der Produktionsvielfalt",
+        "is_correct": false
+      },
+      {
+        "text": "c) Festlegung von Art, Menge und zeitlicher Verteilung der herzustellenden Produkte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Auswahl der besten Lieferanten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q2",
+    "content": "2. Welche Größe wird im operativen Produktionsprogramm als variabel betrachtet?",
+    "answers": [
+      {
+        "text": "a) Kapazitäten der Maschinen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marktpreise",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktionsmengen der Produkte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Standorte",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q3",
+    "content": "3. Was beschreibt der Deckungsbeitrag?",
+    "answers": [
+      {
+        "text": "a) Summe aus Fixkosten und variablen Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Differenz aus Verkaufspreis und variablen Kosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Produktionsmenge multipliziert mit dem Preis",
+        "is_correct": false
+      },
+      {
+        "text": "d) Marktpreis abzüglich Steuern",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q4",
+    "content": "4. Wann wird die Gewinnschwelle erreicht?",
+    "answers": [
+      {
+        "text": "a) Wenn die variablen Kosten minimal sind",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn alle Deckungsbeiträge positiv sind",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wenn die Deckungsbeiträge die Fixkosten decken",
+        "is_correct": true
+      },
+      {
+        "text": "d) Wenn die Produktionsmengen gleich sind",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q5",
+    "content": "5. Was ist bei der Beurteilung von Produktionsvorschlägen zu beachten?",
+    "answers": [
+      {
+        "text": "a) Nur der höchste DB entscheidet",
+        "is_correct": false
+      },
+      {
+        "text": "b) Nur fixe Kapazitäten zählen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Auslastung aller Kapazitäten muss berücksichtigt werden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es wird ausschließlich nach Marktpreis entschieden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q6",
+    "content": "6. Welche Methode dient zur Optimierung des Produktionsprogramms bei mehreren Restriktionen?",
+    "answers": [
+      {
+        "text": "a) Netzplantechnik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kostenvergleichsrechnung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Lineare Programmierung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kapitalwertmethode",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q7",
+    "content": "7. Was ist das Ziel der linearen Programmierung im Kontext der Produktionsplanung?",
+    "answers": [
+      {
+        "text": "a) Minimierung des Lagerraums",
+        "is_correct": false
+      },
+      {
+        "text": "b) Maximierung des Gesamtdeckungsbeitrags",
+        "is_correct": true
+      },
+      {
+        "text": "c) Berechnung der Steuerbelastung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Festlegung von Marktpreisen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q8",
+    "content": "8. Welche Bedingung muss im LP-Modell zusätzlich zu den Kapazitätsrestriktionen erfüllt sein?",
+    "answers": [
+      {
+        "text": "a) Nichtnegativitätsbedingung",
+        "is_correct": true
+      },
+      {
+        "text": "b) Maximalbedingung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kapitalkostenkriterium",
+        "is_correct": false
+      },
+      {
+        "text": "d) Kostenersatzgrenze",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q9",
+    "content": "9. Welches Verfahren ist bei zwei Produkten für eine grafische Lösung geeignet?",
+    "answers": [
+      {
+        "text": "a) Simplex-Verfahren",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eckpunktmethode",
+        "is_correct": false
+      },
+      {
+        "text": "c) Graphische Lösung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Heuristikverfahren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q10",
+    "content": "10. Was ist die Grundlage des Simplex-Verfahrens?",
+    "answers": [
+      {
+        "text": "a) Ausprobieren aller Kombinationen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Start im Ursprung und iteratives Verbessern zu Nachbarecken",
+        "is_correct": true
+      },
+      {
+        "text": "c) Rückwärtsrechnung von Endwerten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Heuristische Näherungslösung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+   {
+    "id": "production-k2-de-q11",
+    "content": "1. Was ist das Hauptziel der Bedarfsermittlung?",
+    "answers": [
+      {
+        "text": "a) Senkung der Produktionskosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Vermeidung von Überstunden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zeitgerechte und exakte Ermittlung benötigter Güter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Maximierung des Verkaufs",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q12",
+    "content": "2. Wie lassen sich Verfahren der Bedarfsermittlung grundsätzlich unterscheiden?",
+    "answers": [
+      {
+        "text": "a) Strategisch und operativ",
+        "is_correct": false
+      },
+      {
+        "text": "b) Prognosebasiert und modellbasiert",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktionsprogrammgesteuert und verbrauchsorientiert",
+        "is_correct": true
+      },
+      {
+        "text": "d) Extern und intern",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q13",
+    "content": "3. Welche Aussage trifft auf die produktionsprogrammgesteuerte Bedarfsermittlung zu?",
+    "answers": [
+      {
+        "text": "a) Sie basiert auf vergangenen Verbrauchswerten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie verwendet keine Strukturinformationen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie ist deterministisch und programmgebunden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie ist zufallsbasiert",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q14",
+    "content": "4. Worauf basiert die verbrauchsorientierte Bedarfsermittlung?",
+    "answers": [
+      {
+        "text": "a) Auf Produktionsplänen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Auf Bedarfsmeldungen in Echtzeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Auf Vergangenheitswerten oder Prognosen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Auf Liefervereinbarungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q15",
+    "content": "5. Was beschreibt der Begriff 'Primärbedarf'?",
+    "answers": [
+      {
+        "text": "a) Bedarf an Ersatzteilen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bedarf an fertigen Erzeugnissen, Baugruppen und Ersatzteilen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bedarf an Personalressourcen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Bedarf an Betriebsstoffen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q16",
+    "content": "6. Was umfasst der Sekundärbedarf?",
+    "answers": [
+      {
+        "text": "a) Hilfs- und Betriebsstoffe",
+        "is_correct": false
+      },
+      {
+        "text": "b) Personalstunden",
+        "is_correct": false
+      },
+      {
+        "text": "c) Rohstoffe, Einzelteile und Baugruppen zur Erzeugung des Primärbedarfs",
+        "is_correct": true
+      },
+      {
+        "text": "d) Werkzeuge für die Wartung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q17",
+    "content": "7. Was zählt zum Tertiärbedarf?",
+    "answers": [
+      {
+        "text": "a) Ersatzteile",
+        "is_correct": false
+      },
+      {
+        "text": "b) Rohstoffe",
+        "is_correct": false
+      },
+      {
+        "text": "c) Betriebs- und Hilfsstoffe",
+        "is_correct": true
+      },
+      {
+        "text": "d) Maschinenstunden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q18",
+    "content": "8. Was wird in einem Gozinto-Graph dargestellt?",
+    "answers": [
+      {
+        "text": "a) Produktionszeiten je Artikel",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kosten pro Einheit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Erzeugnisstruktur zwischen Endprodukten, Baugruppen und Einzelteilen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lieferrouten der Zulieferer",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q19",
+    "content": "9. Welche Stücklistenform wird zur Bedarfsrechnung bei vielen Wiederholteilen verwendet?",
+    "answers": [
+      {
+        "text": "a) Mengenübersichtsstückliste",
+        "is_correct": false
+      },
+      {
+        "text": "b) Strukturstückliste",
+        "is_correct": false
+      },
+      {
+        "text": "c) Baukastenstückliste",
+        "is_correct": true
+      },
+      {
+        "text": "d) Variantenstückliste",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k2-de-q20",
+    "content": "10. Wann wird die verbrauchsorientierte Bedarfsermittlung eingesetzt?",
+    "answers": [
+      {
+        "text": "a) Wenn alle Stücklisten vollständig sind",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wenn Stücklisten fehlen oder Teile nicht erfasst sind",
+        "is_correct": true
+      },
+      {
+        "text": "c) Nur bei Primärbedarf",
+        "is_correct": false
+      },
+      {
+        "text": "d) Nur bei Lagerware",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+   {
+    "id": "production-k3-de-q21",
+    "content": "1. Was ist das Ziel der Beschaffung im Produktionsprozess?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Lagerfläche",
+        "is_correct": false
+      },
+      {
+        "text": "b) Versorgung der Produktion mit notwendigen Materialien",
+        "is_correct": true
+      },
+      {
+        "text": "c) Verkauf von Fertigprodukten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Personalbereitstellung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q22",
+    "content": "2. Was ist ein Vorteil der fallweisen Beschaffung?",
+    "answers": [
+      {
+        "text": "a) Geringer Planungsaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringe Lagerhaltungskosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Hohe Versorgungssicherheit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Hoher Automatisierungsgrad",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q23",
+    "content": "3. Wann ist die Just-in-Time-Beschaffung besonders geeignet?",
+    "answers": [
+      {
+        "text": "a) Bei stark schwankendem Bedarf",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bei schlechter Lieferfähigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "c) Wenn Bedarf stetig und Produktion gut planbar ist",
+        "is_correct": true
+      },
+      {
+        "text": "d) Für einmalige Großaufträge",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q24",
+    "content": "4. Welche Aussage zur ABC-Analyse ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Alle Materialien sind gleich wichtig",
+        "is_correct": false
+      },
+      {
+        "text": "b) A-Güter haben den geringsten Wertanteil",
+        "is_correct": false
+      },
+      {
+        "text": "c) C-Güter sind mengenmäßig häufig, aber geringwertig",
+        "is_correct": true
+      },
+      {
+        "text": "d) B-Güter verursachen die höchsten Kosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q25",
+    "content": "5. Welche Güter eignen sich typischerweise für Vorratsbeschaffung?",
+    "answers": [
+      {
+        "text": "a) A-Güter",
+        "is_correct": false
+      },
+      {
+        "text": "b) B-Güter",
+        "is_correct": false
+      },
+      {
+        "text": "c) C-Güter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Alle Güter gleichermaßen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q26",
+    "content": "6. Was ist das Ziel der Losgrößenplanung?",
+    "answers": [
+      {
+        "text": "a) Maximierung der Produktionsmenge",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ermittlung optimaler Seriengrößen zur Minimierung der Kosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Lagerumschlag erhöhen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Personalbedarf reduzieren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q27",
+    "content": "7. Welche Kosten steigen bei vielen kleinen Losen typischerweise?",
+    "answers": [
+      {
+        "text": "a) Lagerkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einrichtkosten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Stückkosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Gemeinkosten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q28",
+    "content": "8. Welche Kosten werden im Harris/Andler-Modell NICHT berücksichtigt?",
+    "answers": [
+      {
+        "text": "a) Lagerkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bestellkosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zinskosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Vertriebskosten",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q29",
+    "content": "9. Wie lautet die Formel für die optimale Bestellmenge im Harris/Andler-Modell?",
+    "answers": [
+      {
+        "text": "a) q = p × D × h",
+        "is_correct": false
+      },
+      {
+        "text": "b) q = D / (Kf × p)",
+        "is_correct": false
+      },
+      {
+        "text": "c) q = √(2 × D × Kf / (p × h))",
+        "is_correct": true
+      },
+      {
+        "text": "d) q = D × p × h",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q30",
+    "content": "10. Welche Aussage zur Lagerhaltung ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie ist ausschließlich für Produktionsausfälle verantwortlich",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie verursacht keine Kapitalbindungskosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie dient als Puffer zwischen Beschaffung und Produktion",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie reduziert Fehlmengenkosten vollständig",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q31",
+    "content": "11. Was ist ein typischer Nachteil der Just-in-Time-Beschaffung?",
+    "answers": [
+      {
+        "text": "a) Erhöhte Lagerkosten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Geringe Transparenz",
+        "is_correct": false
+      },
+      {
+        "text": "c) Geringe Versorgungssicherheit bei Lieferverzögerungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zu lange Vorlaufzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q32",
+    "content": "12. Was beschreibt die Reichweite eines Lagers?",
+    "answers": [
+      {
+        "text": "a) Maximale Lagermenge eines Artikels",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zeitraum, für den der Lagerbestand bei gegebenem Verbrauch ausreicht",
+        "is_correct": true
+      },
+      {
+        "text": "c) Anzahl der Artikel pro Palette",
+        "is_correct": false
+      },
+      {
+        "text": "d) Anzahl der Tage bis zur Inventur",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q33",
+    "content": "13. Was verursacht Fehlmengenkosten?",
+    "answers": [
+      {
+        "text": "a) Hohe Kapitalbindung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Überproduktion",
+        "is_correct": false
+      },
+      {
+        "text": "c) Fehlende Artikel zum benötigten Zeitpunkt",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lange Lagerdauer",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q34",
+    "content": "14. Welche Zielgröße wird durch Bestandsmanagement direkt beeinflusst?",
+    "answers": [
+      {
+        "text": "a) Energieverbrauch",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kapitalbindung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Mitarbeitermotivation",
+        "is_correct": false
+      },
+      {
+        "text": "d) Marktanteil",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q35",
+    "content": "15. Welche Maßnahme dient der staatlichen Versorgungssicherheit?",
+    "answers": [
+      {
+        "text": "a) Mindestlohnerhöhung",
+        "is_correct": false
+      },
+      {
+        "text": "b) ALANO-Projekt",
+        "is_correct": true
+      },
+      {
+        "text": "c) KfW-Investitionszuschuss",
+        "is_correct": false
+      },
+      {
+        "text": "d) CO₂-Zertifikate",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q36",
+    "content": "16. Was versteht man unter 'Lagerumschlagshäufigkeit'?",
+    "answers": [
+      {
+        "text": "a) Zahl der vorrätigen Güter pro Jahr",
+        "is_correct": false
+      },
+      {
+        "text": "b) Durchschnittlicher Zeitraum zwischen zwei Lieferungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verhältnis von Lagerabgang zum durchschnittlichen Lagerbestand",
+        "is_correct": true
+      },
+      {
+        "text": "d) Zahl der Regalplätze im Lager",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q37",
+    "content": "17. Was ist eine typische Maßnahme zur Senkung der Lagerkosten?",
+    "answers": [
+      {
+        "text": "a) Erhöhung der Bestellmengen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einführung fester Losgrößen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verbesserung der Bedarfsvorhersage",
+        "is_correct": true
+      },
+      {
+        "text": "d) Vergrößerung des Sicherheitsbestands",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q38",
+    "content": "18. Was bedeutet 'Sicherheitsbestand'?",
+    "answers": [
+      {
+        "text": "a) Der für Brandschutz reservierte Lagerbereich",
+        "is_correct": false
+      },
+      {
+        "text": "b) Mindestbestand zur Absicherung gegen Unsicherheiten in Bedarf oder Lieferzeit",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die teuersten Lagergüter",
+        "is_correct": false
+      },
+      {
+        "text": "d) Der Bestand, der immer zuerst verbraucht wird",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q39",
+    "content": "19. Welche Aussage zur Materialbedarfsplanung ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie berücksichtigt nur C-Güter",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie erfolgt ausschließlich manuell",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie soll Materialverfügbarkeit sichern und Lagerkosten minimieren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie bezieht keine Vergangenheitswerte ein",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "production-k3-de-q40",
+    "content": "20. Wofür steht das Akronym ALANO?",
+    "answers": [
+      {
+        "text": "a) Allgemeine Lagerhaltung Nordost",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anlagenoptimierung durch Losgrößenanpassung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Analytik und Logistik zur nationalen Notbevorratung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Automatisierte Lagersteuerung in Nordamerika",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]

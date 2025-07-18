@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ip-ip-k7-en-q1",
+    "content": "1. What is the task of structure development?",
+    "answers": [
+      {
+        "text": "a) Bildung räumlich angeordneter Funktionsbereiche",
+        "is_correct": false
+      },
+      {
+        "text": "b) Bildung funktionstüchtiger Struktureinheiten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ermittlung des Flächenbedarfs",
+        "is_correct": false
+      },
+      {
+        "text": "d) Aufstellung des Ideallayouts",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q2",
+    "content": "2. Which layout type is typical for final assembly in the automotive industry?",
+    "answers": [
+      {
+        "text": "a) Werkstattfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gruppenfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Baustellenfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Linienfertigung",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q3",
+    "content": "3. What does the utility analysis describe?",
+    "answers": [
+      {
+        "text": "a) Eine Methode zur Optimierung von Stücklisten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine qualitative Bewertung mehrerer Layoutvarianten",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ein Verfahren zur Lagerlogistik",
+        "is_correct": false
+      },
+      {
+        "text": "d) Ein Konzept der Materialflussplanung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q4",
+    "content": "4. Which type of layout has the highest level of detail?",
+    "answers": [
+      {
+        "text": "a) Generalbebauungsplan",
+        "is_correct": false
+      },
+      {
+        "text": "b) Groblayout",
+        "is_correct": false
+      },
+      {
+        "text": "c) Feinlayout",
+        "is_correct": true
+      },
+      {
+        "text": "d) Werkslayout",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q5",
+    "content": "5. Which statement about the ideal layout is correct?",
+    "answers": [
+      {
+        "text": "a) Es basiert auf dem Reallayout",
+        "is_correct": false
+      },
+      {
+        "text": "b) Es berücksichtigt bereits alle Restriktionen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Es ist flussgerecht und idealisiert",
+        "is_correct": true
+      },
+      {
+        "text": "d) Es stellt die exakten Maschinenpositionen dar",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q6",
+    "content": "6. What is the purpose of the net present value method in concept planning?",
+    "answers": [
+      {
+        "text": "a) Zum Aufbau des Layouts",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zur Bewertung der Wirtschaftlichkeit von Alternativen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Zur Definition des Materialflusses",
+        "is_correct": false
+      },
+      {
+        "text": "d) Zur Bestimmung von Stücklisten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q7",
+    "content": "7. Which method is suitable for estimating space requirements in early planning phases?",
+    "answers": [
+      {
+        "text": "a) Nutzwertanalyse",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kapitalwertmethode",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kennzahlenbasierte Verfahren",
+        "is_correct": true
+      },
+      {
+        "text": "d) Wertstromanalyse",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q8",
+    "content": "8. What is an advantage of space modularization?",
+    "answers": [
+      {
+        "text": "a) Geringerer Flächenbedarf",
+        "is_correct": false
+      },
+      {
+        "text": "b) Reduzierung des Planungsaufwands",
+        "is_correct": false
+      },
+      {
+        "text": "c) Höhere Layoutflexibilität",
+        "is_correct": true
+      },
+      {
+        "text": "d) Weniger Maschinenbedarf",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q9",
+    "content": "9. Which structure type applies to semiconductor manufacturing?",
+    "answers": [
+      {
+        "text": "a) Baustellenfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gruppenfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Werkstattfertigung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Linienfertigung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "ip-ip-k7-en-q10",
+    "content": "10. What does a rough layout represent?",
+    "answers": [
+      {
+        "text": "a) Die Anordnung von Maschinen in einer Werkstatt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Den exakten Standort aller Betriebsmittel",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Haupttransportwege innerhalb eines Fabrikgebäudes",
+        "is_correct": true
+      },
+      {
+        "text": "d) Das Investitionsvolumen eines Projekts",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Chapter 7",
+    "lecture": "IPP",
+    "module": "Integrated Production Planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

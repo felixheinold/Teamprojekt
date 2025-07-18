@@ -1,0 +1,842 @@
+[
+  {
+    "id": "production-k1-de-q1",
+    "content": "1. Was ist laut Corsten (1994) unter Produktion zu verstehen?",
+    "answers": [
+      {
+        "text": "a) Der Vertrieb fertiger Produkte",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Planung logistischer Prozesse",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Kombination von Gütern zur Erstellung anderer Güter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Der Einkauf von Rohstoffen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q2",
+    "content": "2. Welche Elemente gehören zu den Inputs im Produktionsprozess?",
+    "answers": [
+      {
+        "text": "a) Marketing, Vertrieb, Personal",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kapital, Information, Werbung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Material, Energie, Arbeitsleistung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kommunikation, Finanzierung, Controlling",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q3",
+    "content": "3. Wofür steht der Begriff Throughput im Produktionsprozess?",
+    "answers": [
+      {
+        "text": "a) Auslieferung an den Kunden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Rücktransport und Entsorgung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verarbeitungsprozess zwischen Input und Output",
+        "is_correct": true
+      },
+      {
+        "text": "d) Eingangskontrolle der Waren",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q4",
+    "content": "4. Welche Aussage zur Rolle der Produktion im Unternehmenskreislauf ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Produktion ist ausschließlich für die Finanzierung zuständig",
+        "is_correct": false
+      },
+      {
+        "text": "b) Produktion liefert Güter und Dienstleistungen zur Wertschöpfung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Produktion ist nicht mit der Umwelt verknüpft",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktion beeinflusst keine Geldströme",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q5",
+    "content": "5. Was ist laut Goetschalckx eine Aufgabe der Logistik?",
+    "answers": [
+      {
+        "text": "a) Kontrolle der Produktentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Planung und Umsetzung effizienter Güter- und Informationsflüsse",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ausschließliche Lagerhaltung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Definition der Unternehmenskultur",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q6",
+    "content": "6. Welche Aussage gehört NICHT zu den 7 R’s der Logistik?",
+    "answers": [
+      {
+        "text": "a) Richtiges Produkt",
+        "is_correct": false
+      },
+      {
+        "text": "b) Richtiger Preis",
+        "is_correct": true
+      },
+      {
+        "text": "c) Richtige Menge",
+        "is_correct": false
+      },
+      {
+        "text": "d) Richtige Information",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q7",
+    "content": "7. Was bedeutet Logistik ursprünglich unter Napoleon?",
+    "answers": [
+      {
+        "text": "a) Steuerberatung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Kriegstaktik",
+        "is_correct": false
+      },
+      {
+        "text": "c) Versorgung und Transportsteuerung kriegswichtiger Güter",
+        "is_correct": true
+      },
+      {
+        "text": "d) Geheimdienstliche Kommunikation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q8",
+    "content": "8. Wie ist Logistik heute definiert?",
+    "answers": [
+      {
+        "text": "a) Synonym für Logik",
+        "is_correct": false
+      },
+      {
+        "text": "b) Teilgebiet der Buchhaltung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zeit-, kosten- und mengenoptimierte Verteilung von Gütern und Dienstleistungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Steuerung der Personaleinsatzpläne",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q9",
+    "content": "9. Was stellt das Bindeglied zwischen Lieferanten, Unternehmen und Kunden dar?",
+    "answers": [
+      {
+        "text": "a) Produktion",
+        "is_correct": false
+      },
+      {
+        "text": "b) Einkauf",
+        "is_correct": false
+      },
+      {
+        "text": "c) Logistik",
+        "is_correct": true
+      },
+      {
+        "text": "d) Marketing",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q10",
+    "content": "10. Was kennzeichnet innovative Produktionssysteme wie Bioraffinerien?",
+    "answers": [
+      {
+        "text": "a) Einwegverarbeitung und Massenfertigung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verwertung fossiler Brennstoffe zur Stromerzeugung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ganzheitliche Nutzung von Biomasse zur Herstellung vielfältiger Produkte",
+        "is_correct": true
+      },
+      {
+        "text": "d) Fokus auf Zwischenlagerung und Reimport",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q11",
+    "content": "1. Was versteht man unter Wertschöpfung?",
+    "answers": [
+      {
+        "text": "a) Einkaufswert der Rohstoffe",
+        "is_correct": false
+      },
+      {
+        "text": "b) Verkaufswert des Outputs abzüglich extern bezogener Güter",
+        "is_correct": true
+      },
+      {
+        "text": "c) Gewinn nach Steuern",
+        "is_correct": false
+      },
+      {
+        "text": "d) Produktionskosten pro Einheit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q12",
+    "content": "2. Welche Aussage zur Wertschöpfungskette ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Sie endet mit dem Wareneingang im Lager",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie umfasst nur die Produktion selbst",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sie reicht von der Rohstoffgewinnung bis zum Endkunden",
+        "is_correct": true
+      },
+      {
+        "text": "d) Sie wird ausschließlich von Logistikdienstleistern organisiert",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q13",
+    "content": "3. Was ist eine Bioraffinerie laut Beispiel im Dokument?",
+    "answers": [
+      {
+        "text": "a) Eine petrochemische Produktionsanlage",
+        "is_correct": false
+      },
+      {
+        "text": "b) Ein Standort für Lagerhaltung fossiler Rohstoffe",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine Anlage zur Nutzung von Biomasse für vielseitige Produktgewinnung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Ein reines Entsorgungsunternehmen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q14",
+    "content": "4. Welche Station gehört zur Wertschöpfungskette der Lignocellulose-Bioraffinerie?",
+    "answers": [
+      {
+        "text": "a) Marketingmaßnahmen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gewinnung von Extraktstoffen",
+        "is_correct": true
+      },
+      {
+        "text": "c) Bankfinanzierung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Zollabwicklung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q15",
+    "content": "5. Was gehört NICHT zur Wertschöpfungskette?",
+    "answers": [
+      {
+        "text": "a) Transport vom Erzeuger zum Kunden",
+        "is_correct": false
+      },
+      {
+        "text": "b) Aufschluss von Rohstoffen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Steuerliche Abschreibung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lagerung und Trocknung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q16",
+    "content": "6. Was ist das Ziel der Produktionsplanung?",
+    "answers": [
+      {
+        "text": "a) Kontrolle von Rücklieferungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Auswahl optimaler Maßnahmen zur Erfüllung strategischer Vorgaben",
+        "is_correct": true
+      },
+      {
+        "text": "c) Minimierung von Verpackungsaufwand",
+        "is_correct": false
+      },
+      {
+        "text": "d) Abstimmung mit Finanzabteilung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q17",
+    "content": "7. Was ist Produktionssteuerung?",
+    "answers": [
+      {
+        "text": "a) Erstellung von Marketingstrategien",
+        "is_correct": false
+      },
+      {
+        "text": "b) Überwachung des Budgets",
+        "is_correct": false
+      },
+      {
+        "text": "c) Umsetzung der Pläne im täglichen Produktionsablauf",
+        "is_correct": true
+      },
+      {
+        "text": "d) Kontrolle der Auslieferungen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q18",
+    "content": "8. Was beschreibt das Produktionsmanagement?",
+    "answers": [
+      {
+        "text": "a) Pflege von Kundenbeziehungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Strategische Personalentwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Umsetzung strategischer Vorgaben im Bereich der Leistungserstellung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Entwicklung neuer Absatzmärkte",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q19",
+    "content": "9. Was ist typischer Output der Produktionsplanung?",
+    "answers": [
+      {
+        "text": "a) Gehaltsabrechnungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Investitionsentscheidungen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Produktionspläne",
+        "is_correct": true
+      },
+      {
+        "text": "d) Schulungsunterlagen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q20",
+    "content": "10. Welcher Begriff wird häufig synonym zur Wertschöpfungskette verwendet?",
+    "answers": [
+      {
+        "text": "a) Global Chain",
+        "is_correct": false
+      },
+      {
+        "text": "b) ERP-Prozess",
+        "is_correct": false
+      },
+      {
+        "text": "c) Supply Chain",
+        "is_correct": true
+      },
+      {
+        "text": "d) Customer Journey",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+    {
+    "id": "production-k1-de-q21",
+    "content": "1. Was ist ein typisches Ziel des strategischen Produktionsmanagements?",
+    "answers": [
+      {
+        "text": "a) Planung der Losgrößen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Auswahl der Maschinenbelegung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Sicherstellung der Wettbewerbsfähigkeit bei wechselnden Umweltbedingungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Erstellung eines Schichtplans",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q22",
+    "content": "2. Welcher Planungshorizont gilt für das strategische Produktionsmanagement?",
+    "answers": [
+      {
+        "text": "a) 1 Tag",
+        "is_correct": false
+      },
+      {
+        "text": "b) 1 – 2 Jahre",
+        "is_correct": false
+      },
+      {
+        "text": "c) < 1 Jahr",
+        "is_correct": false
+      },
+      {
+        "text": "d) Mehrere Jahre",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q23",
+    "content": "3. Was gehört NICHT zu den Aufgaben des strategischen Managements?",
+    "answers": [
+      {
+        "text": "a) Standortplanung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Forschung und Entwicklung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Kapazitätsplanung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Strategien zur Leistungserhaltung",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q24",
+    "content": "4. Was ist das Ziel des taktischen Produktionsmanagements?",
+    "answers": [
+      {
+        "text": "a) Steuerung von Absatzmärkten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Umsetzung operativer Kennzahlen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Konkretisierung strategischer Vorgaben in technologische Entscheidungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Einkauf von Rohmaterial",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q25",
+    "content": "5. Welcher Planungshorizont ist typisch für das taktische Management?",
+    "answers": [
+      {
+        "text": "a) Minuten bis Stunden",
+        "is_correct": false
+      },
+      {
+        "text": "b) 1 – 2 Jahre",
+        "is_correct": true
+      },
+      {
+        "text": "c) Mehr als 5 Jahre",
+        "is_correct": false
+      },
+      {
+        "text": "d) < 3 Monate",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q26",
+    "content": "6. Was zählt zur operativen Planungsebene?",
+    "answers": [
+      {
+        "text": "a) Standortschließungen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Forschung neuer Verfahren",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ablauf- und Reihenfolgeplanung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lieferantenauswahl",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q27",
+    "content": "7. Welche Aufgabe gehört zur Ablaufplanung?",
+    "answers": [
+      {
+        "text": "a) Erarbeitung des Produktprogramms",
+        "is_correct": false
+      },
+      {
+        "text": "b) Erstellung eines Investitionsplans",
+        "is_correct": false
+      },
+      {
+        "text": "c) Festlegung von Maschinenbelegung und Terminen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Definition der Recyclingquote",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q28",
+    "content": "8. Was ist eine typische Aufgabe der Produktionssteuerung?",
+    "answers": [
+      {
+        "text": "a) Auswahl neuer Technologien",
+        "is_correct": false
+      },
+      {
+        "text": "b) Standortwahl",
+        "is_correct": false
+      },
+      {
+        "text": "c) Auftragsveranlassung und Überwachung",
+        "is_correct": true
+      },
+      {
+        "text": "d) Schulung des Personals",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production-k1-de-q29",
+    "content": "9. Welche Ebene ist für Materialabrufe und Personaleinsatzplanung zuständig?",
+    "answers": [
+      {
+        "text": "a) Strategisch",
+        "is_correct": false
+      },
+      {
+        "text": "b) Taktisch",
+        "is_correct": false
+      },
+      {
+        "text": "c) Operativ",
+        "is_correct": true
+      },
+      {
+        "text": "d) Administrativ",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  },
+  {
+    "id": "production_k1-de-q30",
+    "content": "10. Was wird im taktischen Management über die Technologien entschieden?",
+    "answers": [
+      {
+        "text": "a) Maschinenlaufzeiten",
+        "is_correct": false
+      },
+      {
+        "text": "b) Logistische Grundausrichtung",
+        "is_correct": true
+      },
+      {
+        "text": "c) Verfügbare Energiequellen",
+        "is_correct": false
+      },
+      {
+        "text": "d) Mitarbeitermotivation",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "de"
+  }
+]

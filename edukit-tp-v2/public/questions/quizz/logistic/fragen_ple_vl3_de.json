@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ple-vl3-de-q1",
+    "content": "1. Was ist Scheduling in der Produktionsplanung?",
+    "answers": [
+      {
+        "text": "a) Festlegung der Produktqualität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Festlegung der Lagerpositionen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Zuordnung von Aufträgen zu Maschinen unter Nebenbedingungen",
+        "is_correct": true
+      },
+      {
+        "text": "d) Optimierung des Transportnetzwerks",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q2",
+    "content": "2. Welche Zielgröße steht typischerweise im Fokus beim Scheduling?",
+    "answers": [
+      {
+        "text": "a) Kapitalumschlag",
+        "is_correct": false
+      },
+      {
+        "text": "b) Minimierung der Setup-Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "c) Minimierung des Makespans",
+        "is_correct": true
+      },
+      {
+        "text": "d) Maximierung der Lagerreichweite",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q3",
+    "content": "3. Welche Maschinenumgebung beschreibt den Flow-Shop?",
+    "answers": [
+      {
+        "text": "a) Jobs laufen auf einer Maschine",
+        "is_correct": false
+      },
+      {
+        "text": "b) Jobs haben keine festgelegte Reihenfolge",
+        "is_correct": false
+      },
+      {
+        "text": "c) Jobs durchlaufen Maschinen in derselben Reihenfolge",
+        "is_correct": true
+      },
+      {
+        "text": "d) Jobs können auf jeder Maschine parallel bearbeitet werden",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q4",
+    "content": "4. Was bedeutet die Notation α|β|γ im Scheduling?",
+    "answers": [
+      {
+        "text": "a) Maschinenanzahl, Produktionskosten, Lagerzeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Maschinenumgebung, Auftragscharakteristik, Zielgröße",
+        "is_correct": true
+      },
+      {
+        "text": "c) Artikelgruppe, Mengenstruktur, Budget",
+        "is_correct": false
+      },
+      {
+        "text": "d) Auftragsart, Disposition, Lieferzeit",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q5",
+    "content": "5. Welche Regel minimiert die Summe der Fertigstellungszeiten in einer Ein-Maschinen-Umgebung?",
+    "answers": [
+      {
+        "text": "a) EDD",
+        "is_correct": false
+      },
+      {
+        "text": "b) WSPT",
+        "is_correct": false
+      },
+      {
+        "text": "c) LPT",
+        "is_correct": false
+      },
+      {
+        "text": "d) SPT",
+        "is_correct": true
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q6",
+    "content": "6. Was gibt der Wert Tj an?",
+    "answers": [
+      {
+        "text": "a) Prozesszeit eines Jobs",
+        "is_correct": false
+      },
+      {
+        "text": "b) Lieferzeitpunkt eines Auftrags",
+        "is_correct": false
+      },
+      {
+        "text": "c) Verspätung eines Jobs im Vergleich zum Liefertermin",
+        "is_correct": true
+      },
+      {
+        "text": "d) Lagerdauer eines Artikels",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q7",
+    "content": "7. Welche Aussage beschreibt den Unterschied zwischen SPT und WSPT?",
+    "answers": [
+      {
+        "text": "a) WSPT berücksichtigt Liefertermine",
+        "is_correct": false
+      },
+      {
+        "text": "b) WSPT ist gewichtete Version der SPT-Regel",
+        "is_correct": true
+      },
+      {
+        "text": "c) SPT berücksichtigt Maschinenwechsel",
+        "is_correct": false
+      },
+      {
+        "text": "d) SPT basiert auf zufälliger Jobauswahl",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q8",
+    "content": "8. Welche Regel wird bei der Minimierung von maximaler Lateness angewendet?",
+    "answers": [
+      {
+        "text": "a) SPT",
+        "is_correct": false
+      },
+      {
+        "text": "b) WSPT",
+        "is_correct": false
+      },
+      {
+        "text": "c) EDD",
+        "is_correct": true
+      },
+      {
+        "text": "d) LPT",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q9",
+    "content": "9. Welche Zielgröße wird mit Moore's Algorithmus minimiert?",
+    "answers": [
+      {
+        "text": "a) Gesamtfertigstellungszeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Anzahl verspäteter Jobs",
+        "is_correct": true
+      },
+      {
+        "text": "c) Produktionskosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Rüstzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "ple-vl3-de-q10",
+    "content": "10. Welche Aussage über Johnson’s Algorithmus ist korrekt?",
+    "answers": [
+      {
+        "text": "a) Nur für Job-Shop-Probleme geeignet",
+        "is_correct": false
+      },
+      {
+        "text": "b) Führt zur optimalen Lösung bei 2-Maschinen-Flow-Shops",
+        "is_correct": true
+      },
+      {
+        "text": "c) Ersetzt die WSPT-Regel",
+        "is_correct": false
+      },
+      {
+        "text": "d) Minimiert Transportzeiten",
+        "is_correct": false
+      }
+    ],
+    "chapter": "Vorlesung 3",
+    "lecture": "Produktion, Logistik und Entscheidungen",
+    "module": "Scheduling",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]
