@@ -1,104 +1,124 @@
-### Informationen zu Hosting+Firebase:
+# 📚 EduKIT-TP
 
-- "edukit-tp" stellt ein leeres React-Projekt dar, das aktuell auf der Domain "edukit-tp.me" gehostet wird
-- Firebase deployed genau das Projekt, dessen build-Ordner in "firebase.json" hinterlegt ist.
-- "edukit-tp" kann später entweder ersetzt oder aber mit entsprechenden Files ergänzt werden
-- bei jedem push auf den Branch main wird firebase automatisch durch GitHub redeployed
+**EduKIT-TP** ist eine interaktive Webanwendung zur spielerischen Prüfungsvorbereitung. Die Plattform basiert auf React (Vite) im Frontend, Node.js im Backend und wird über **Firebase** gehostet und deployed.
 
-### Hier kurz der Gameplan aufgelistet für einen groben Überlick
+---
 
-# AI-Assisted Learning Game
-
-An educational app/video game powered by deep learning, designed to teach concepts from the media industry — or another approved field — in an engaging and interactive way.
-
-## 🎯 Project Goal
-
-To develop a 2D or 3D educational game or app that uses artificial intelligence to assist users in the learning process. The game will include a deep learning model, such as a language model or content generator, embedded into the user experience (e.g., as an NPC tutor or in-game assistant).
-
-## 🎮 Game Concepts
-
-This project explores multiple mini-games that support learning through interaction. Below are some initial game design ideas:
-
-### 1. Klassisches Quizduell (Baseline)
-
-- Multiple choice questions with 4 answer options
-- Players have a fixed time (e.g., 10 seconds) to respond
-- Questions are categorized (e.g., by lecture chapters)
-- Scoring: Correct answers and faster response times yield more points
-- Answer validation using structured data (e.g., JSON: `"richtig": "C"`)
-- Modes: Single-player or versus AI
-
-### 2. Lückentext-Spiel (Fill-in-the-Blank)
-
-- Short educational text with 1–2 missing terms
-- Players drag and drop or select correct terms
-- Example: “Die Bilanz besteht aus **_ und _**.”
-- Validation through comparison with expected terms (e.g., `["Aktiva", "Passiva"]`)
-
-### 3. Memory mit Fachbegriffen (Memory Match Game)
-
-- Classic memory game with a learning twist
-- Cards show either a term and its definition, or a question and its correct answer
-- Players flip two cards per turn; matched pairs disappear
-- Matching logic based on defined pairs (e.g., `"Umlaufvermögen": "Vermögen, das nicht dauerhaft dem Unternehmen dient"`)
-
-More mini-games may be developed based on user testing and feedback.
-
-## 📌 Task Description
-
-This project is part of a university course assignment with the following goals:
-
-- Design and develop an AI-assisted educational application or video game.
-- Implement deep learning algorithms (e.g., fine-tuned language models, RAG, etc.) into the application.
-- Focus on learning topics relevant to the media industry, or another approved topic.
-- Create a dataset for training the model, then fine-tune and integrate the model into the game.
-- Ensure the final product works effectively through testing.
-
-## 🚀 Implementation Plan
-
-### 1. Research
-
-- Game mechanics and educational app structure
-- Suitable deep learning techniques (LLMs, RAG, transformers, etc.)
-
-### 2. Design
-
-- Define the game concept and educational goals
-- Choose between 2D or 3D environment based on complexity and hardware limits
-
-### 3. Development
-
-- Build the basic game structure using chosen game engine or framework
-- Implement AI features (e.g., an NPC assistant using a fine-tuned LLM)
-
-### 4. AI Integration
-
-- Create and preprocess a custom dataset
-- Fine-tune a deep learning model using the dataset
-- Integrate the trained model into the game (via local inference or API)
-
-### 5. Testing
-
-- User and system testing to ensure performance and educational value
-
-## 🔧 Technologies & Tools
-
-- **Programming Language**: Python (for ML components), possibly C#/JavaScript (for game logic)
-- **Game Engine**: Unity, Godot, Unreal Engine, or custom-built
-- **Deep Learning Frameworks**: PyTorch, Hugging Face Transformers
-- **Model Types**: BERT variants, GPT-like models, Retrieval-Augmented Generation (RAG)
-- **Platform**: Linux (for training on bwUniCluster), Windows/macOS (for development)
-
-## 📁 Repository Structure
-
-```bash
-ai-learning-game/
-├── data/                 # Dataset for model training
-├── models/               # Fine-tuned model checkpoints
-├── game/                 # Game or app source code
-├── ai/                   # AI integration (model loading, API)
-├── docs/                 # Design documents, notes
-├── tests/                # Test scripts
-└── README.md             # Project overview
+## 📁 Projektstruktur
 
 ```
+main/
+├── .github/               # GitHub Actions (CI/CD)
+├── backend/               # Node.js / Express-API (optional)
+├── edukit-tp-v2/          # React-Vite-Frontend
+│   ├── public/            # Statische Assets
+│   ├── src/               # Hauptcode der App (Pages, Komponenten, Hooks etc.)
+│   ├── dist/              # Build-Output (wird automatisch erzeugt)
+│   ├── settings.json      # Einstellungen und Modul-/Kapitel-Metadaten
+│   └── vite.config.ts     # Vite-Konfiguration
+├── functions/             # (optional) Firebase Functions (z. B. PDF-Upload)
+├── firebase.json          # Firebase Konfiguration (Hosting & Functions)
+├── .firebaserc.json       # Firebase Projektzuordnung
+├── .gitignore             # Git-Konfig
+└── README.md              # Diese Datei
+```
+
+---
+
+## 🚀 Hosting & Deployment (Firebase)
+
+- Das Projekt ist unter der Domain **[edukit-tp.me](https://edukit-tp.me)** erreichbar.
+- Gehostet und deployed wird über **Firebase Hosting**.
+- Das Verzeichnis `edukit-tp-v2/dist` wird automatisch als Root-Build-Ordner verwendet (siehe `firebase.json`).
+- Das leere Projekt `edukit-tp` wurde in Firebase erstellt und dient aktuell als Container für das Hosting.
+- Bei jedem Push auf den `main`-Branch wird automatisch ein **Redeploy über GitHub Actions** ausgelöst (CI/CD).
+
+### 🔄 Automatisches Deployment
+
+> ✅ Bei jedem Push auf `main` wird Firebase automatisch über GitHub neu deployed.  
+> 🔁 Der jeweils aktuelle Build wird direkt auf der Produktionsdomain live geschaltet.
+
+---
+
+## 🧠 Lokale Entwicklung
+
+### 🗃 Frontend starten
+
+```bash
+cd edukit-tp-v2
+npm install
+npm run dev
+```
+
+> Die App ist danach unter `http://localhost:5173` erreichbar.
+
+### 🛠 Backend starten (optional)
+
+---
+
+## 🧠 Fragenstruktur
+
+### 📂 Pfad
+
+Alle Fragen liegen unter:
+
+```
+/questions/quiz/
+```
+
+### 📌 Dateibenennung
+
+```
+fragen_<modul>_<vorlesung>_<sprache>.json
+```
+
+**Beispiel:**
+
+```bash
+fragen_energy_vl1_de.json
+fragen_fr_vl2_en.json
+```
+
+### 📀 Quiz-Fragenformat (Backend)
+
+```json
+{
+  "id": "frage-id-123",
+  "content": "Was ist die Hauptstadt von Frankreich?",
+  "answers": [
+    { "text": "Berlin", "is_correct": false },
+    { "text": "Madrid", "is_correct": false },
+    { "text": "Paris", "is_correct": true },
+    { "text": "Rom", "is_correct": false }
+  ],
+  "lecture": "VL1",
+  "module": "energy",
+  "chapter": "Kapitel 1",
+  "language": "de"
+}
+```
+
+Diese werden in der App mit `mapToQuizQuestion()` ins Frontend-Format umgewandelt.
+
+---
+
+## 🧹 Features
+
+- ✅ Minigames: Quiz & Gapfill
+- 🌍 Mehrsprachigkeit (Deutsch/Englisch via i18n)
+- 🧠 Merkliste („Frage später wiederholen“)
+- 📈 Fortschrittsstatistiken pro Kapitel
+- ⏳ Zeitlimit & Punktevergabe
+- 🎵 Sounds & visuelles Feedback
+- ↺ Automatischer Redeploy bei Änderungen (`main`)
+
+---
+
+## 📦 Verwendete Technologien
+
+- [React + Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Firebase Hosting](https://firebase.google.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [i18next](https://www.i18next.com/)
+- [React Router](https://reactrouter.com/)
