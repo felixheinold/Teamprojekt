@@ -1,6 +1,6 @@
 [
   {
-    "id": "ip-ip-k1-de-q1",
+    "id": "planning-k1-de-q1",
     "content": "1.  Welche Art von Produktionssystem wird in der Beschreibung hervorgehoben?",
     "answers": [
       {
@@ -20,15 +20,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q2",
+    "id": "planning-k1-de-q2",
     "content": "2.  Welche der folgenden Aussagen beschreibt am besten die Hauptfunktion der \"magischen Dreiecks\"-Konzept?",
     "answers": [
       {
@@ -48,15 +48,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q3",
+    "id": "planning-k1-de-q3",
     "content": "3.  Welche der folgenden ist eine Eigenschaft der \"vernetzten\" Welt?",
     "answers": [
       {
@@ -76,15 +76,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q4",
+    "id": "planning-k1-de-q4",
     "content": "4.  Was ist der Hauptzweck der \"digitalen Transformation\" im Kontext der Produktentwicklung?",
     "answers": [
       {
@@ -104,15 +104,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q5",
+    "id": "planning-k1-de-q5",
     "content": "5.  Welche der folgenden Aussagen beschreibt am besten die Rolle der \"veränderten Arbeitsbedingungen\"?",
     "answers": [
       {
@@ -132,15 +132,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q6",
+    "id": "planning-k1-de-q6",
     "content": "6.  Welche der folgenden Informationen wird im Text hervorgehoben?",
     "answers": [
       {
@@ -160,15 +160,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q7",
+    "id": "planning-k1-de-q7",
     "content": "7.  Welche der folgenden ist eine Folge der \"veränderten Arbeitsbedingungen\"?",
     "answers": [
       {
@@ -188,15 +188,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q8",
+    "id": "planning-k1-de-q8",
     "content": "8.  Welches der folgenden ist ein Beispiel für eine \"szenische Lernfrage\"?",
     "answers": [
       {
@@ -216,15 +216,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q9",
+    "id": "planning-k1-de-q9",
     "content": "9.  Welche der folgenden Aussagen beschreibt am besten das Ziel der \"digitalen Wirtschaft\"?",
     "answers": [
       {
@@ -244,15 +244,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q10",
+    "id": "planning-k1-de-q10",
     "content": "10. Welchen Aspekt der \"digitalen Transformation\" wird im Text besonders hervorgehoben?",
     "answers": [
       {
@@ -272,15 +272,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q11",
+    "id": "planning-k1-de-q11",
     "content": "11. Welche der folgenden Aussagen ist am besten zur Beschreibung des Textes geeignet?",
     "answers": [
       {
@@ -300,15 +300,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q12",
+    "id": "planning-k1-de-q12",
     "content": "12.  Welchen Vorteil wird im Text hervorgehoben?",
     "answers": [
       {
@@ -328,15 +328,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q13",
+    "id": "planning-k1-de-q13",
     "content": "13.  Welche der folgenden Aussagen spiegelt am besten die Bedeutung der \"vernetzten\" Welt wider?",
     "answers": [
       {
@@ -356,15 +356,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q14",
+    "id": "planning-k1-de-q14",
     "content": "14. Was ist der zentrale Schwerpunkt des Textes?",
     "answers": [
       {
@@ -384,15 +384,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "ip-ip-k1-de-q15",
+    "id": "planning-k1-de-q15",
     "content": "15. Welche der folgenden Aussagen ist am besten beschreibt die Rolle des \"Produktvarianten\" in der Produktionsplanung?",
     "answers": [
       {
@@ -412,9 +412,9 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 1",
-    "lecture": "IPP",
-    "module": "Integrierte Produktionsplanung",
+    "chapter": "k1",
+    "lecture": "planning",
+    "module": "planning",
     "difficulty": null,
     "type": null,
     "language": "deutsch"

@@ -1,6 +1,6 @@
 [
   {
-    "id": "pb-uf-k3-de-q1",
+    "id": "management-k3-de-q1",
     "content": "1.  Welche der folgenden Strategien wird typischerweise als \"strategische Analyse\" bezeichnet?",
     "answers": [
       {
@@ -20,15 +20,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q2",
+    "id": "management-k3-de-q2",
     "content": "2.  Welche der folgenden Aussagen beschreibt am besten die Rolle eines \"Unternehmenswertanspruchsniveau\"?",
     "answers": [
       {
@@ -48,15 +48,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q3",
+    "id": "management-k3-de-q3",
     "content": "3.  Welche der folgenden Aufgaben gehört zum Bereich der \"Operationalisierung\"?",
     "answers": [
       {
@@ -76,15 +76,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q4",
+    "id": "management-k3-de-q4",
     "content": "4.  Was bedeutet \"Market-Based View\" im Kontext von Wettbewerbsstrategie?",
     "answers": [
       {
@@ -104,15 +104,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q5",
+    "id": "management-k3-de-q5",
     "content": "5.  Welche der folgenden Aussagen beschreibt am besten die Bedeutung von \"Finanzplanung\"?",
     "answers": [
       {
@@ -132,15 +132,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q6",
+    "id": "management-k3-de-q6",
     "content": "6.  Was ist ein \"Key Performance Indicator\" (KPI)?",
     "answers": [
       {
@@ -160,15 +160,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q7",
+    "id": "management-k3-de-q7",
     "content": "7.  Welche der folgenden Aussagen ist am besten zur Beschreibung der \"internen Kernkompetenzen\" relevant?",
     "answers": [
       {
@@ -188,15 +188,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q8",
+    "id": "management-k3-de-q8",
     "content": "8.  Welche der folgenden Aussagen ist am besten zum Thema \"interne Strategie\" relevant?",
     "answers": [
       {
@@ -216,15 +216,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q9",
+    "id": "management-k3-de-q9",
     "content": "9.  Was bedeutet \"Change Management\" im Kontext von Unternehmensentwicklung?",
     "answers": [
       {
@@ -244,15 +244,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q10",
+    "id": "management-k3-de-q10",
     "content": "10. Was ist ein \"Wettbewerbsstrategie\" im Kontext der Unternehmensstrategie?",
     "answers": [
       {
@@ -272,15 +272,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q11",
+    "id": "management-k3-de-q11",
     "content": "11. Welche der folgenden Aussagen beschreibt am besten die Bedeutung von \"Wettbewerbsstrategie\" im globalen Kontext?",
     "answers": [
       {
@@ -300,15 +300,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q12",
+    "id": "management-k3-de-q12",
     "content": "12. Welche der folgenden Aussagen beschreibt am besten die Rolle von \"Finanzplanung\"?",
     "answers": [
       {
@@ -328,15 +328,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q13",
+    "id": "management-k3-de-q13",
     "content": "13. Welche der folgenden Aussagen beschreibt am besten \"Projektmanagement\"?",
     "answers": [
       {
@@ -356,15 +356,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q14",
+    "id": "management-k3-de-q14",
     "content": "14. Was ist \"Key Performance Indicator\" (KPI) im Kontext von Projektmanagement?",
     "answers": [
       {
@@ -384,15 +384,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q15",
+    "id": "management-k3-de-q15",
     "content": "15. Welche der folgenden Aussagen beschreibt am besten die Rolle von \"Stakeholder Management\"?",
     "answers": [
       {
@@ -412,15 +412,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"
   },
   {
-    "id": "pb-uf-k3-de-q16",
+    "id": "management-k3-de-q16",
     "content": "16. Was ist \"SWOT-Analyse\"?",
     "answers": [
       {
@@ -436,9 +436,9 @@
         "is_correct": false
       }
     ],
-    "chapter": "Kapitel 3",
-    "lecture": "Marketing",
-    "module": "Management und Marketing",
+    "chapter": "k3",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "deutsch"

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "marketing-k4-en-q1",
+    "content": "What kind of product profile is the most common in the description?",
+    "answers": [
+      {
+        "text": "a) Consumer goods",
+        "is_correct": true
+      },
+      {
+        "text": "b) industrial goods",
+        "is_correct": false
+      },
+      {
+        "text": "c) motor products",
+        "is_correct": false
+      },
+      {
+        "text": "d) all above",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q2",
+    "content": "Which of the following statements best describes the method of pricing in the description?",
+    "answers": [
+      {
+        "text": "a) The pricing is based exclusively on the gross profit.",
+        "is_correct": false
+      },
+      {
+        "text": "b) The pricing is based on the profit and loss account.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The pricing is based on sales development and competition.",
+        "is_correct": true
+      },
+      {
+        "text": "d) The pricing is based on the customer preference.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q3",
+    "content": "Which of the following information is most relevant for the selection of a car model?",
+    "answers": [
+      {
+        "text": "a) The color of the car.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the brand of the car.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The performance of the car.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the size of the car.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q4",
+    "content": "What kind of information is described in the text as \"information\"?",
+    "answers": [
+      {
+        "text": "a) Quantitative data",
+        "is_correct": false
+      },
+      {
+        "text": "b) qualitative data",
+        "is_correct": false
+      },
+      {
+        "text": "c) Product profiles",
+        "is_correct": true
+      },
+      {
+        "text": "d) Marketing strategies",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q5",
+    "content": "Which of the following statements is most likely that the company's description is moving onto the market?",
+    "answers": [
+      {
+        "text": "a) a small, local company.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a large, international automotive production.",
+        "is_correct": true
+      },
+      {
+        "text": "c) a specialized automotive workshop.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a retail boutique.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q6",
+    "content": "What is the main purpose of the text?",
+    "answers": [
+      {
+        "text": "a) A detailed analysis of the automotive industry.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a description of the company and its products.",
+        "is_correct": true
+      },
+      {
+        "text": "c) a marketing strategy for a car model.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a sales analysis.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q7",
+    "content": "Which of the following statements is most likely that a company called \"Martin\"?",
+    "answers": [
+      {
+        "text": "a) a company for automotive parts.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a company for software development.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a company for automotive production companies.",
+        "is_correct": true
+      },
+      {
+        "text": "d) a company for advertising agencies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q8",
+    "content": "Which of the following information is mentioned in the text?",
+    "answers": [
+      {
+        "text": "a) The use of artificial intelligence in the automotive industry.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the importance of sustainability in the automotive industry.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the development of electric cars.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the use of traditional engines.",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q9",
+    "content": "What type of product is described in the text?",
+    "answers": [
+      {
+        "text": "a) electronic devices",
+        "is_correct": false
+      },
+      {
+        "text": "b) cars",
+        "is_correct": true
+      },
+      {
+        "text": "c) textiles",
+        "is_correct": false
+      },
+      {
+        "text": "d) drinks",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q10",
+    "content": "Which of the following statements is most relevant for the evaluation of automotive products?",
+    "answers": [
+      {
+        "text": "a) The price of the car.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the brand of the car.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The performance of the car.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the size of the car.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q11",
+    "content": "Which of the following statements is most likely that a company called \"Richter\"?",
+    "answers": [
+      {
+        "text": "a) a company for energy supply.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a company for automobile production.",
+        "is_correct": true
+      },
+      {
+        "text": "c) a company for software development.",
+        "is_correct": false
+      },
+      {
+        "text": "d) a company for furniture.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q12",
+    "content": "What is the main goal of the text?",
+    "answers": [
+      {
+        "text": "a) to analyze the sales figures of automobile manufacturers.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Marketing of a certain automobile brand.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Product development for a specific car model.",
+        "is_correct": true
+      },
+      {
+        "text": "d) to calculate the costs for the production of automobiles.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q13",
+    "content": "Which of the following statements best describes the type of products mentioned in the description?",
+    "answers": [
+      {
+        "text": "a) only consumer goods",
+        "is_correct": false
+      },
+      {
+        "text": "b) only industrial goods",
+        "is_correct": false
+      },
+      {
+        "text": "c) a mix of consumer goods and industrial goods",
+        "is_correct": true
+      },
+      {
+        "text": "d) only services",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q14",
+    "content": "What is the main goal of the text?",
+    "answers": [
+      {
+        "text": "a) the creation of marketing campaigns.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the description of the company.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the analysis of the market.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the development of new products.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k4-en-q15",
+    "content": "Which of the following information is most relevant for the selection of a car?",
+    "answers": [
+      {
+        "text": "a) The appearance of the car.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the performance of the car.",
+        "is_correct": false
+      },
+      {
+        "text": "c) The size of the car.",
+        "is_correct": true
+      },
+      {
+        "text": "d) The color of the car.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k4",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

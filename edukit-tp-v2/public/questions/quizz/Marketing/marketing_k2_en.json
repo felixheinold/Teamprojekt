@@ -1,0 +1,498 @@
+[
+  {
+    "id": "marketing-k2-en-q1",
+    "content": "Which type of segmentation is typically the strongest?",
+    "answers": [
+      {
+        "text": "a) segmentation based on demographic characteristics",
+        "is_correct": false
+      },
+      {
+        "text": "b) segmentation based on psychographic characteristics",
+        "is_correct": true
+      },
+      {
+        "text": "c) Segmentation based on demographic characteristics and psychographic characteristics",
+        "is_correct": false
+      },
+      {
+        "text": "d) Segmentation based on demographic features only",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q2",
+    "content": "What is the purpose of the \"Information Tide Initiative\"?",
+    "answers": [
+      {
+        "text": "a) the improvement in customer relationships.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the increase in brand awareness.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the promotion of sales growth.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the increase in customer satisfaction.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q3",
+    "content": "What type of data is used for segmentation?",
+    "answers": [
+      {
+        "text": "a) only statistical data.",
+        "is_correct": false
+      },
+      {
+        "text": "b) only qualitative data.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a combination of quantitative and qualitative data.",
+        "is_correct": true
+      },
+      {
+        "text": "d) only historical data.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q4",
+    "content": "How can the selection of target segments be improved?",
+    "answers": [
+      {
+        "text": "a) by creating broad segments.",
+        "is_correct": false
+      },
+      {
+        "text": "b) by analyzing data and the identification of specific needs and wishes of the customers.",
+        "is_correct": true
+      },
+      {
+        "text": "c) by using established segmentation criteria.",
+        "is_correct": false
+      },
+      {
+        "text": "d) by taking marketing campaigns into account.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q5",
+    "content": "What is the difference between \"individual probabilities segment access\" and \"segment size\"?",
+    "answers": [
+      {
+        "text": "a) Individual probabilities segment access are always larger than segment size.",
+        "is_correct": true
+      },
+      {
+        "text": "b) segment size is always greater than individual probabilities segment.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Individual probabilities segment access and segment size are the same.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Individual probabilities segment access are only relevant for small segments.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q6",
+    "content": "Which of the following statements about information positioning is best suited?",
+    "answers": [
+      {
+        "text": "a) Information positioning only focuses on the creation of advertising messages.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Information positioning focuses on the creation of products.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Information positioning is a strategic process that takes into account different aspects.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Information positioning is only relevant for small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q7",
+    "content": "What is an example of a \"visualization of willingness to agree\"?",
+    "answers": [
+      {
+        "text": "a) a representation of sales growth.",
+        "is_correct": false
+      },
+      {
+        "text": "b) a graphic that shows the age groups of customers.",
+        "is_correct": true
+      },
+      {
+        "text": "c) a table that lists the age groups of customers.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Statistics that shows the average sales per customer.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q8",
+    "content": "Which of the following points is particularly important for the successful implementation of information positioning?",
+    "answers": [
+      {
+        "text": "a) the creation of excessively detailed segments.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Taking into account the needs and wishes of the customers.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the use of established segmentation criteria.",
+        "is_correct": false
+      },
+      {
+        "text": "d) The focus on the creation of advertising messages.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q9",
+    "content": "What is an example of an \"organizationist help\"?",
+    "answers": [
+      {
+        "text": "a) An expert who specializes in a certain industry.",
+        "is_correct": false
+      },
+      {
+        "text": "b) an employee who specializes in the creation of segments.",
+        "is_correct": false
+      },
+      {
+        "text": "c) An employee who supports the strategic direction of the marketing campaigns.",
+        "is_correct": true
+      },
+      {
+        "text": "d) an employee who specializes in the creation of marketing materials.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q10",
+    "content": "What kind of data is most important for segmentation?",
+    "answers": [
+      {
+        "text": "a) Quantitative data.",
+        "is_correct": false
+      },
+      {
+        "text": "b) qualitative data.",
+        "is_correct": false
+      },
+      {
+        "text": "c) a combination of quantitative and qualitative data.",
+        "is_correct": true
+      },
+      {
+        "text": "d) only historical data.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q11",
+    "content": "Which of the following statements is least relevant for information positioning?",
+    "answers": [
+      {
+        "text": "a) The analysis of customer behavior.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the identification of target groups.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the creation of advertising messages.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the assessment of the competitive situation.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q12",
+    "content": "Why is information positioning a strategic process?",
+    "answers": [
+      {
+        "text": "a) It is only relevant for marketing experts.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It is a strategic process that takes into account different aspects.",
+        "is_correct": true
+      },
+      {
+        "text": "c) It is only relevant for small companies.",
+        "is_correct": false
+      },
+      {
+        "text": "d) It is only for the creation of advertising messages.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q13",
+    "content": "Which of the following statements best describes the role of information positioning?",
+    "answers": [
+      {
+        "text": "a) It only serves to create advertising messages.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It is a strategic process that takes into account different aspects.",
+        "is_correct": true
+      },
+      {
+        "text": "c) It is a method to improve customer relationships.",
+        "is_correct": false
+      },
+      {
+        "text": "d) It is only relevant for small companies.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q14",
+    "content": "What does \"behavioral relevant measurement\" mean?",
+    "answers": [
+      {
+        "text": "a) the measurement of customer preferences.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the measurement of customer behavior.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the measurement of financial performance.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the measurement of the production costs.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q15",
+    "content": "What kind of information is most important for segmentation?",
+    "answers": [
+      {
+        "text": "a) Information about the products.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Information about customers.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Information about competitors.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Information about the marketing campaigns.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q16",
+    "content": "What is an example of a \"cluster analysis step\"?",
+    "answers": [
+      {
+        "text": "a) the analysis of customer requests.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the analysis of customer behavior.",
+        "is_correct": true
+      },
+      {
+        "text": "c) the analysis of the competitive situation.",
+        "is_correct": false
+      },
+      {
+        "text": "d) the analysis of the marketing campaigns.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q17",
+    "content": "What is the advantage of \"individual probabilities segment access\"?",
+    "answers": [
+      {
+        "text": "a) the creation of excessively detailed segments.",
+        "is_correct": false
+      },
+      {
+        "text": "b) the creation of segment sizes.",
+        "is_correct": false
+      },
+      {
+        "text": "c) the creation of segments with individual probabilities.",
+        "is_correct": true
+      },
+      {
+        "text": "d) the creation of segments with segment size.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "marketing-k2-en-q18",
+    "content": "Which of the following statements is best describes the role of \"information positioning\"?",
+    "answers": [
+      {
+        "text": "a) It's just a marketing tool.",
+        "is_correct": false
+      },
+      {
+        "text": "b) It is a strategic process that takes into account different aspects.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k2",
+    "lecture": "marketing",
+    "module": "management",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

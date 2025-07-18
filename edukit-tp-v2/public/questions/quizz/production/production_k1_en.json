@@ -1,282 +1,321 @@
-[
-  {
-    "id": "ip-log-k1-en-q1",
-    "content": "1. [ENÜ] Was ist laut Corsten (1994) unter Produktion zu verstehen?",
+[  {
+    "id": "production-k1-en-q1",
+    "content": "1. According to Corsten (1994), what is meant by production?",
     "answers": [
-      {
-        "text": "a) Der Vertrieb fertiger Produkte",
-        "is_correct": false
-      },
-      {
-        "text": "b) Die Planung logistischer Prozesse",
-        "is_correct": false
-      },
-      {
-        "text": "c) Die Kombination von Gütern zur Erstellung anderer Güter",
-        "is_correct": true
-      },
-      {
-        "text": "d) Der Einkauf von Rohstoffen",
-        "is_correct": false
-      }
+      { "text": "a) The distribution of finished products", "is_correct": false },
+      { "text": "b) The planning of logistical processes", "is_correct": false },
+      { "text": "c) The combination of goods to produce other goods", "is_correct": true },
+      { "text": "d) The procurement of raw materials", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q2",
-    "content": "2. [ENÜ] Welche Elemente gehören zu den Inputs im Produktionsprozess?",
+    "id": "production-k1-en-q2",
+    "content": "2. Which elements are inputs in the production process?",
     "answers": [
-      {
-        "text": "a) Marketing, Vertrieb, Personal",
-        "is_correct": false
-      },
-      {
-        "text": "b) Kapital, Information, Werbung",
-        "is_correct": false
-      },
-      {
-        "text": "c) Material, Energie, Arbeitsleistung",
-        "is_correct": true
-      },
-      {
-        "text": "d) Kommunikation, Finanzierung, Controlling",
-        "is_correct": false
-      }
+      { "text": "a) Marketing, sales, human resources", "is_correct": false },
+      { "text": "b) Capital, information, advertising", "is_correct": false },
+      { "text": "c) Materials, energy, labor", "is_correct": true },
+      { "text": "d) Communication, financing, controlling", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q3",
-    "content": "3. [ENÜ] Wofür steht der Begriff Throughput im Produktionsprozess?",
+    "id": "production-k1-en-q3",
+    "content": "3. What does the term 'throughput' refer to in the production process?",
     "answers": [
-      {
-        "text": "a) Auslieferung an den Kunden",
-        "is_correct": false
-      },
-      {
-        "text": "b) Rücktransport und Entsorgung",
-        "is_correct": false
-      },
-      {
-        "text": "c) Verarbeitungsprozess zwischen Input und Output",
-        "is_correct": true
-      },
-      {
-        "text": "d) Eingangskontrolle der Waren",
-        "is_correct": false
-      }
+      { "text": "a) Delivery to the customer", "is_correct": false },
+      { "text": "b) Return transport and disposal", "is_correct": false },
+      { "text": "c) Processing stage between input and output", "is_correct": true },
+      { "text": "d) Incoming goods inspection", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q4",
-    "content": "4. [ENÜ] Welche Aussage zur Rolle der Produktion im Unternehmenskreislauf ist korrekt?",
+    "id": "production-k1-en-q4",
+    "content": "4. Which statement correctly describes the role of production in the business cycle?",
     "answers": [
-      {
-        "text": "a) Produktion ist ausschließlich für die Finanzierung zuständig",
-        "is_correct": false
-      },
-      {
-        "text": "b) Produktion liefert Güter und Dienstleistungen zur Wertschöpfung",
-        "is_correct": true
-      },
-      {
-        "text": "c) Produktion ist nicht mit der Umwelt verknüpft",
-        "is_correct": false
-      },
-      {
-        "text": "d) Produktion beeinflusst keine Geldströme",
-        "is_correct": false
-      }
+      { "text": "a) Production is solely responsible for financing", "is_correct": false },
+      { "text": "b) Production delivers goods and services to create value", "is_correct": true },
+      { "text": "c) Production is not connected to the environment", "is_correct": false },
+      { "text": "d) Production has no influence on cash flows", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q5",
-    "content": "5. [ENÜ] Was ist laut Goetschalckx eine Aufgabe der Logistik?",
+    "id": "production-k1-en-q5",
+    "content": "5. According to Goetschalckx, what is a task of logistics?",
     "answers": [
-      {
-        "text": "a) Kontrolle der Produktentwicklung",
-        "is_correct": false
-      },
-      {
-        "text": "b) Planung und Umsetzung effizienter Güter- und Informationsflüsse",
-        "is_correct": true
-      },
-      {
-        "text": "c) Ausschließliche Lagerhaltung",
-        "is_correct": false
-      },
-      {
-        "text": "d) Definition der Unternehmenskultur",
-        "is_correct": false
-      }
+      { "text": "a) Control of product development", "is_correct": false },
+      { "text": "b) Planning and execution of efficient material and information flows", "is_correct": true },
+      { "text": "c) Exclusive warehousing", "is_correct": false },
+      { "text": "d) Defining corporate culture", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q6",
-    "content": "6. [ENÜ] Welche Aussage gehört NICHT zu den 7 R’s der Logistik?",
+    "id": "production-k1-en-q6",
+    "content": "6. Which statement is NOT part of the 7 R's of logistics?",
     "answers": [
-      {
-        "text": "a) Richtiges Produkt",
-        "is_correct": false
-      },
-      {
-        "text": "b) Richtiger Preis",
-        "is_correct": true
-      },
-      {
-        "text": "c) Richtige Menge",
-        "is_correct": false
-      },
-      {
-        "text": "d) Richtige Information",
-        "is_correct": false
-      }
+      { "text": "a) Right product", "is_correct": false },
+      { "text": "b) Right price", "is_correct": true },
+      { "text": "c) Right quantity", "is_correct": false },
+      { "text": "d) Right information", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q7",
-    "content": "7. [ENÜ] Was bedeutet Logistik ursprünglich unter Napoleon?",
+    "id": "production-k1-en-q7",
+    "content": "7. What did logistics originally mean under Napoleon?",
     "answers": [
-      {
-        "text": "a) Steuerberatung",
-        "is_correct": false
-      },
-      {
-        "text": "b) Kriegstaktik",
-        "is_correct": false
-      },
-      {
-        "text": "c) Versorgung und Transportsteuerung kriegswichtiger Güter",
-        "is_correct": true
-      },
-      {
-        "text": "d) Geheimdienstliche Kommunikation",
-        "is_correct": false
-      }
+      { "text": "a) Tax consultancy", "is_correct": false },
+      { "text": "b) War tactics", "is_correct": false },
+      { "text": "c) Supply and transportation control of war-critical goods", "is_correct": true },
+      { "text": "d) Secret service communication", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q8",
-    "content": "8. [ENÜ] Wie ist Logistik heute definiert?",
+    "id": "production-k1-en-q8",
+    "content": "8. How is logistics defined today?",
     "answers": [
-      {
-        "text": "a) Synonym für Logik",
-        "is_correct": false
-      },
-      {
-        "text": "b) Teilgebiet der Buchhaltung",
-        "is_correct": false
-      },
-      {
-        "text": "c) Zeit-, kosten- und mengenoptimierte Verteilung von Gütern und Dienstleistungen",
-        "is_correct": true
-      },
-      {
-        "text": "d) Steuerung der Personaleinsatzpläne",
-        "is_correct": false
-      }
+      { "text": "a) Synonym for logic", "is_correct": false },
+      { "text": "b) Subfield of accounting", "is_correct": false },
+      { "text": "c) Time-, cost-, and volume-optimized distribution of goods and services", "is_correct": true },
+      { "text": "d) Personnel scheduling", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q9",
-    "content": "9. [ENÜ] Was stellt das Bindeglied zwischen Lieferanten, Unternehmen und Kunden dar?",
+    "id": "production-k1-en-q9",
+    "content": "9. What represents the link between suppliers, companies, and customers?",
     "answers": [
-      {
-        "text": "a) Produktion",
-        "is_correct": false
-      },
-      {
-        "text": "b) Einkauf",
-        "is_correct": false
-      },
-      {
-        "text": "c) Logistik",
-        "is_correct": true
-      },
-      {
-        "text": "d) Marketing",
-        "is_correct": false
-      }
+      { "text": "a) Production", "is_correct": false },
+      { "text": "b) Procurement", "is_correct": false },
+      { "text": "c) Logistics", "is_correct": true },
+      { "text": "d) Marketing", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
   },
   {
-    "id": "ip-log-k1-en-q10",
-    "content": "10. [ENÜ] Was kennzeichnet innovative Produktionssysteme wie Bioraffinerien?",
+    "id": "production-k1-en-q10",
+    "content": "10. What characterizes innovative production systems like biorefineries?",
     "answers": [
-      {
-        "text": "a) Einwegverarbeitung und Massenfertigung",
-        "is_correct": false
-      },
-      {
-        "text": "b) Verwertung fossiler Brennstoffe zur Stromerzeugung",
-        "is_correct": false
-      },
-      {
-        "text": "c) Ganzheitliche Nutzung von Biomasse zur Herstellung vielfältiger Produkte",
-        "is_correct": true
-      },
-      {
-        "text": "d) Fokus auf Zwischenlagerung und Reimport",
-        "is_correct": false
-      }
+      { "text": "a) Single-use processing and mass production", "is_correct": false },
+      { "text": "b) Use of fossil fuels for electricity generation", "is_correct": false },
+      { "text": "c) Holistic utilization of biomass to produce various products", "is_correct": true },
+      { "text": "d) Focus on interim storage and re-import", "is_correct": false }
     ],
-    "chapter": "Chapter 1",
-    "lecture": "Industrial Production & Logistics",
-    "module": "Motivation & Basics",
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
     "difficulty": null,
     "type": null,
-    "language": "englisch"
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q11",
+    "content": "1. What is meant by value creation?",
+    "answers": [
+      { "text": "a) Purchase value of raw materials", "is_correct": false },
+      { "text": "b) Sales value of output minus externally sourced goods", "is_correct": true },
+      { "text": "c) Profit after taxes", "is_correct": false },
+      { "text": "d) Production cost per unit", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q12",
+    "content": "2. Which statement about the value chain is correct?",
+    "answers": [
+      { "text": "a) It ends with the receipt of goods in the warehouse", "is_correct": false },
+      { "text": "b) It includes only the production itself", "is_correct": false },
+      { "text": "c) It ranges from raw material extraction to the end customer", "is_correct": true },
+      { "text": "d) It is exclusively organized by logistics service providers", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q13",
+    "content": "3. What is a biorefinery according to the example in the document?",
+    "answers": [
+      { "text": "a) A petrochemical production facility", "is_correct": false },
+      { "text": "b) A storage site for fossil raw materials", "is_correct": false },
+      { "text": "c) A facility that uses biomass to produce a wide range of products", "is_correct": true },
+      { "text": "d) A pure waste disposal company", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q14",
+    "content": "4. Which station is part of the value chain of the lignocellulosic biorefinery?",
+    "answers": [
+      { "text": "a) Marketing activities", "is_correct": false },
+      { "text": "b) Extraction of extractives", "is_correct": true },
+      { "text": "c) Bank financing", "is_correct": false },
+      { "text": "d) Customs clearance", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q15",
+    "content": "5. What is NOT part of the value chain?",
+    "answers": [
+      { "text": "a) Transport from producer to customer", "is_correct": false },
+      { "text": "b) Processing of raw materials", "is_correct": false },
+      { "text": "c) Tax depreciation", "is_correct": true },
+      { "text": "d) Storage and drying", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q16",
+    "content": "6. What is the goal of production planning?",
+    "answers": [
+      { "text": "a) Control of returns", "is_correct": false },
+      { "text": "b) Selection of optimal measures to meet strategic goals", "is_correct": true },
+      { "text": "c) Minimization of packaging effort", "is_correct": false },
+      { "text": "d) Coordination with the finance department", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q17",
+    "content": "7. What is production control?",
+    "answers": [
+      { "text": "a) Development of marketing strategies", "is_correct": false },
+      { "text": "b) Monitoring of the budget", "is_correct": false },
+      { "text": "c) Implementation of plans in daily production", "is_correct": true },
+      { "text": "d) Control of deliveries", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q18",
+    "content": "8. What does production management describe?",
+    "answers": [
+      { "text": "a) Maintaining customer relationships", "is_correct": false },
+      { "text": "b) Strategic human resources development", "is_correct": false },
+      { "text": "c) Implementation of strategic objectives in operations", "is_correct": true },
+      { "text": "d) Development of new markets", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q19",
+    "content": "9. What is a typical output of production planning?",
+    "answers": [
+      { "text": "a) Payrolls", "is_correct": false },
+      { "text": "b) Investment decisions", "is_correct": false },
+      { "text": "c) Production schedules", "is_correct": true },
+      { "text": "d) Training materials", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
+  },
+  {
+    "id": "production-k1-en-q20",
+    "content": "10. Which term is often used synonymously with value chain?",
+    "answers": [
+      { "text": "a) Global chain", "is_correct": false },
+      { "text": "b) ERP process", "is_correct": false },
+      { "text": "c) Supply chain", "is_correct": true },
+      { "text": "d) Customer journey", "is_correct": false }
+    ],
+    "chapter": "k1",
+    "lecture": "production",
+    "module": "production",
+    "difficulty": null,
+    "type": null,
+    "language": "en"
   }
 ]

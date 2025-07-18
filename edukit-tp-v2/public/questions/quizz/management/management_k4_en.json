@@ -1,6 +1,6 @@
 [
   {
-    "id": "pb-uf-k4-en-q1",
+    "id": "management-k4-en-q1",
     "content": "1. What kind of company is the board of directors?",
     "answers": [
       {
@@ -20,15 +20,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q2",
+    "id": "management-k4-en-q2",
     "content": "2. What is Martin Brüdermund's main division?",
     "answers": [
       {
@@ -48,15 +48,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q3",
+    "id": "management-k4-en-q3",
     "content": "3. What type of management model is described in the description of the company?",
     "answers": [
       {
@@ -76,15 +76,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q4",
+    "id": "management-k4-en-q4",
     "content": "4. Which of the following statements best describes the role of the board?",
     "answers": [
       {
@@ -104,15 +104,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q5",
+    "id": "management-k4-en-q5",
     "content": "5. Which of the following factors can influence the decision -making of the board?",
     "answers": [
       {
@@ -132,15 +132,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q6",
+    "id": "management-k4-en-q6",
     "content": "6. What type of technology is offered in the company?",
     "answers": [
       {
@@ -160,15 +160,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q7",
+    "id": "management-k4-en-q7",
     "content": "7. Which of the following statements best describes the meaning of conflicts of interest?",
     "answers": [
       {
@@ -188,15 +188,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q8",
+    "id": "management-k4-en-q8",
     "content": "8. Which of the following statements is best on the concept of agency theory?",
     "answers": [
       {
@@ -216,15 +216,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q9",
+    "id": "management-k4-en-q9",
     "content": "9. Which of the following statements best describes the role of the board in corporate management?",
     "answers": [
       {
@@ -244,15 +244,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q10",
+    "id": "management-k4-en-q10",
     "content": "10. What is the main division of Thomas Brüdermund?",
     "answers": [
       {
@@ -272,15 +272,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q11",
+    "id": "management-k4-en-q11",
     "content": "11. Which of the following statements best applies to the Arcandor company?",
     "answers": [
       {
@@ -300,15 +300,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q12",
+    "id": "management-k4-en-q12",
     "content": "12. Which of the following statements best describes the relationship between the German model and the international model?",
     "answers": [
       {
@@ -328,15 +328,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q13",
+    "id": "management-k4-en-q13",
     "content": "13. Which of the following statements best describes the importance of the corporate structure?",
     "answers": [
       {
@@ -356,15 +356,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q14",
+    "id": "management-k4-en-q14",
     "content": "14. Which of the following statements best describes the role of corporate management?",
     "answers": [
       {
@@ -384,15 +384,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q15",
+    "id": "management-k4-en-q15",
     "content": "15. Which of the following statements best describes the meaning of competition?",
     "answers": [
       {
@@ -412,15 +412,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q16",
+    "id": "management-k4-en-q16",
     "content": "16. Which of the following is an example of a long -term corporate strategy?",
     "answers": [
       {
@@ -440,15 +440,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q17",
+    "id": "management-k4-en-q17",
     "content": "17. Which of the following is an example of an investment?",
     "answers": [
       {
@@ -468,15 +468,15 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"
   },
   {
-    "id": "pb-uf-k4-en-q18",
+    "id": "management-k4-en-q18",
     "content": "18. Which of the following statements best describes the meaning of financing models?",
     "answers": [
       {
@@ -496,9 +496,9 @@
         "is_correct": false
       }
     ],
-    "chapter": "Chapter 4",
-    "lecture": "marketing",
-    "module": "Management and marketing",
+    "chapter": "k4",
+    "lecture": "management",
+    "module": "management",
     "difficulty": null,
     "type": null,
     "language": "englisch"

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "planning-k5-en-q1",
+    "content": "1. What forms the basis for defining goals in the planning process?",
+    "answers": [
+      {
+        "text": "a) Die aktuelle Wettbewerbsstrategie",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Unternehmensziele",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die geplante Automatisierung",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die vorliegende Logistikstruktur",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q2",
+    "content": "2. What is the goal of the magic triangle in goal setting?",
+    "answers": [
+      {
+        "text": "a) Maximale Flexibilität in allen Prozessen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Gleichzeitige Optimierung von Personal, Material und Maschinen",
+        "is_correct": false
+      },
+      {
+        "text": "c) Ausgewogenes Verhältnis von Zeit, Kosten und Qualität",
+        "is_correct": true
+      },
+      {
+        "text": "d) Minimierung der Planungskomplexität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q3",
+    "content": "3. Which goal dimension is considered when setting project milestones?",
+    "answers": [
+      {
+        "text": "a) Qualität",
+        "is_correct": false
+      },
+      {
+        "text": "b) Zeit",
+        "is_correct": true
+      },
+      {
+        "text": "c) Kosten",
+        "is_correct": false
+      },
+      {
+        "text": "d) Flexibilität",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q4",
+    "content": "4. What is a component of the target system in the extended magic triangle?",
+    "answers": [
+      {
+        "text": "a) Nachhaltigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "b) Wandlungsfähigkeit",
+        "is_correct": true
+      },
+      {
+        "text": "c) Innovationsfähigkeit",
+        "is_correct": false
+      },
+      {
+        "text": "d) Energieverbrauch",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q5",
+    "content": "5. Which analysis is required for site profiling?",
+    "answers": [
+      {
+        "text": "a) Lieferkettenanalyse",
+        "is_correct": false
+      },
+      {
+        "text": "b) Standortkostenrechnung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Unternehmens- und Umfeldanalyse",
+        "is_correct": true
+      },
+      {
+        "text": "d) Szenariotechnik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q6",
+    "content": "6. What describes the goal of site profiling?",
+    "answers": [
+      {
+        "text": "a) Reduktion des Lagerbestandes",
+        "is_correct": false
+      },
+      {
+        "text": "b) Analyse der Transportwege und Warenströme",
+        "is_correct": true
+      },
+      {
+        "text": "c) Auswahl der Lieferanten für die Montage",
+        "is_correct": false
+      },
+      {
+        "text": "d) Festlegung des Maschinenlayouts",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q7",
+    "content": "7. What is the order penetration point?",
+    "answers": [
+      {
+        "text": "a) Der Beginn der Produktionsplanung",
+        "is_correct": false
+      },
+      {
+        "text": "b) Der Punkt der Montageplanung",
+        "is_correct": false
+      },
+      {
+        "text": "c) Der Punkt, an dem ein Produkt einem Kunden zugewiesen wird",
+        "is_correct": true
+      },
+      {
+        "text": "d) Der Standort der Endmontage",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q8",
+    "content": "8. Which type of factory is particularly suitable for high product variety?",
+    "answers": [
+      {
+        "text": "a) Low-Cost-Fabrik",
+        "is_correct": false
+      },
+      {
+        "text": "b) High-Tech-Fabrik",
+        "is_correct": false
+      },
+      {
+        "text": "c) Variantenflexible Fabrik",
+        "is_correct": true
+      },
+      {
+        "text": "d) Reaktionsschnelle Fabrik",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q9",
+    "content": "9. Which wage type is increasingly unsuitable for highly automated processes?",
+    "answers": [
+      {
+        "text": "a) Zeitlohn",
+        "is_correct": false
+      },
+      {
+        "text": "b) Akkordlohn",
+        "is_correct": true
+      },
+      {
+        "text": "c) Prämienlohn",
+        "is_correct": false
+      },
+      {
+        "text": "d) Mischlohn",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  },
+  {
+    "id": "planning-k5-en-q10",
+    "content": "10. What does target costing describe?",
+    "answers": [
+      {
+        "text": "a) Planung von Projektmeilensteinen",
+        "is_correct": false
+      },
+      {
+        "text": "b) Aufbau eines Zielsystems",
+        "is_correct": false
+      },
+      {
+        "text": "c) Rückwärtsgerichtete Kostenplanung vom Marktpreis aus",
+        "is_correct": true
+      },
+      {
+        "text": "d) Budgetplanung für Personalressourcen",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k5",
+    "lecture": "planning",
+    "module": "planning",
+    "difficulty": null,
+    "type": null,
+    "language": "englisch"
+  }
+]

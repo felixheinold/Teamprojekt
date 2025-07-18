@@ -1,0 +1,338 @@
+[
+  {
+    "id": "marketing-k8-de-q1",
+    "content": "1.  Was ist der Hauptzweck der \"Information-Driven Metrics\" (ICM) in Bezug auf Marketing?",
+    "answers": [
+      {
+        "text": "a) Die Messung der Kundenzufriedenheit.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Analyse von Finanzkennzahlen zur Verbesserung der Rentabilität.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Optimierung der Produktlinie.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Erfassung von Kundeninformationen.",
+        "is_correct": true
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q2",
+    "content": "2.  Welche der folgenden Aussagen beschreibt am besten die Bedeutung von \"Information-Driven Metrics\" (ICM) im Kontext von Marketing?",
+    "answers": [
+      {
+        "text": "a) ICM sind nur für kleine Unternehmen relevant.",
+        "is_correct": false
+      },
+      {
+        "text": "b) ICM sind eine wichtige Grundlage für strategische Entscheidungen im Marketing.",
+        "is_correct": true
+      },
+      {
+        "text": "c) ICM ermöglichen es Unternehmen, die Kundenbedürfnisse besser zu verstehen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) ICM sind hauptsächlich auf die Messung der Kundenzufriedenheit ausgerichtet.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q3",
+    "content": "3.  Was ist die Hauptursache für die \"Information-Driven Metrics\" (ICM) in Marketing?",
+    "answers": [
+      {
+        "text": "a) Die Abhängigkeit von traditionellen statistischen Analysen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Notwendigkeit, die Kundenbedürfnisse zu verstehen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Vermeidung von Kosten für die Datenanalyse.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Erfüllung von regulatorischen Anforderungen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q4",
+    "content": "4.  Wie beeinflussen \"Information-Driven Metrics\" (ICM) die Entscheidungsfindung im Marketing?",
+    "answers": [
+      {
+        "text": "a) Sie führen nur zu einer Verringerung der Marketingkosten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Sie ermöglichen es Unternehmen, fundiertere Entscheidungen zu treffen, die auf Kundeninformationen basieren.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Sie zwingen Unternehmen, neue Marketingstrategien zu entwickeln.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Sie führen nur zu einer erhöhten Kundenbindung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q5",
+    "content": "5.  Was versteht man unter \"Information-Driven Metrics\" (ICM) im Hinblick auf die Kundenzufriedenheit?",
+    "answers": [
+      {
+        "text": "a) Die Messung der Kundenbewertungen in sozialen Medien.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Analyse von Kundenfeedback und -erfahrungen, um die Kundenzufriedenheit zu messen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Erstellung von Marketingkampagnen zur Verbesserung der Kundenzufriedenheit.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Entwicklung neuer Produktvarianten basierend auf Kundenfeedback.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q6",
+    "content": "6.  Welche der folgenden Aussagen beschreibt am besten die Rolle von \"Information-Driven Metrics\" (ICM) bei der strategischen Planung in Marketing?",
+    "answers": [
+      {
+        "text": "a) ICM sind nur für die kurzfristige Optimierung der Marketingaktivitäten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) ICM ermöglichen es Unternehmen, die Kundenbedürfnisse besser zu verstehen und strategische Entscheidungen zu treffen.",
+        "is_correct": true
+      },
+      {
+        "text": "c) ICM sind irrelevant für die langfristige Marketingstrategie.",
+        "is_correct": false
+      },
+      {
+        "text": "d) ICM sind ausschließlich für die Erfassung von Kundeninformationen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q7",
+    "content": "7.  Was ist ein potenzielles Problem, das bei der Anwendung von \"Information-Driven Metrics\" (ICM) im Marketing auftreten kann?",
+    "answers": [
+      {
+        "text": "a) Die Gefahr, dass die Daten falsch interpretiert werden.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Schwierigkeit, die Daten effektiv zu analysieren.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Die Abhängigkeit von unvollständigen oder ungenauen Daten.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Möglichkeit, dass die Daten zu stark von den Kunden beeinflusst werden.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q8",
+    "content": "8.  Wie können \"Information-Driven Metrics\" (ICM) zur Verbesserung der Kundenzufriedenheit beitragen?",
+    "answers": [
+      {
+        "text": "a) Durch die Erhöhung des Preises für Kunden.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Durch die Verbesserung der Produktqualität und -service.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Durch die Automatisierung von Marketingaktivitäten.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Durch die Vermeidung von Kundeninteraktionen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q9",
+    "content": "9.  Welche der folgenden Aussagen ist am besten zur Beschreibung der Rolle von \"Information-Driven Metrics\" (ICM) im Kontext der Kundenakquisitionsstrategie?",
+    "answers": [
+      {
+        "text": "a) ICM sind nur relevant für die Kundenbindung.",
+        "is_correct": false
+      },
+      {
+        "text": "b) ICM helfen Unternehmen, neue Kunden zu gewinnen.",
+        "is_correct": false
+      },
+      {
+        "text": "c) ICM können dazu beitragen, die Kosten für die Kundenakquisition zu senken.",
+        "is_correct": true
+      },
+      {
+        "text": "d) ICM sind irrelevant für die Kundenakquisitionsstrategie.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q10",
+    "content": "10. Welche der folgenden Aussagen stellt die beste Definition von \"Information-Driven Metrics\" (ICM) dar?",
+    "answers": [
+      {
+        "text": "a) Eine Messung der Kundenzufriedenheit.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Eine Analyse von Finanzkennzahlen zur Verbesserung der Rentabilität.",
+        "is_correct": false
+      },
+      {
+        "text": "c) Eine umfassende Analyse der Kundenbedürfnisse und -verhalten.",
+        "is_correct": true
+      },
+      {
+        "text": "d) Die Erstellung von Marketingkampagnen zur Steigerung der Markenbekanntheit.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q11",
+    "content": "11.  Was ist der Hauptzweck der \"Information-Driven Metrics\" (ICM) im Kontext der Kundenbeziehungsmanagement (CRM)?",
+    "answers": [
+      {
+        "text": "a) Die Erfassung von Kundendaten.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Die Analyse von Kundendaten, um das Kundenbeziehungsmanagement zu verbessern.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Die Automatisierung von Vertriebsprozessen.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Die Optimierung der Produktentwicklung.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  },
+  {
+    "id": "marketing-k8-de-q12",
+    "content": "12. Was ist die Hauptmotivation für die Implementierung von \"Information-Driven Metrics\" (ICM) in einem Unternehmen?",
+    "answers": [
+      {
+        "text": "a) Um die Wettbewerber zu übertreffen.",
+        "is_correct": false
+      },
+      {
+        "text": "b) Um die Kundenzufriedenheit zu verbessern und die Rentabilität zu steigern.",
+        "is_correct": true
+      },
+      {
+        "text": "c) Um die Mitarbeiter zu motivieren.",
+        "is_correct": false
+      },
+      {
+        "text": "d) Um die regulatorischen Anforderungen zu erfüllen.",
+        "is_correct": false
+      }
+    ],
+    "chapter": "k8",
+    "lecture": "Marketing",
+    "module": "Management",
+    "difficulty": null,
+    "type": null,
+    "language": "deutsch"
+  }
+]
