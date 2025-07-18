@@ -22,11 +22,24 @@ const User = () => {
 
   const handleSave = () => {
     if (!user) return;
+
+    const trimmedName = form.user_name.trim();
+    const trimmedMail = form.user_mail.trim();
+
+    const noChanges =
+      trimmedName === user.user_name && trimmedMail === user.user_mail;
+
+    if (noChanges) {
+      setEditMode(false); // Nur UI schließen
+      return;
+    }
+
     const updatedUser = {
       ...user,
-      user_name: form.user_name,
-      user_mail: form.user_mail,
+      user_name: trimmedName,
+      user_mail: trimmedMail,
     };
+
     setUser(updatedUser);
     setEditMode(false);
     alert(t("user.updated"));

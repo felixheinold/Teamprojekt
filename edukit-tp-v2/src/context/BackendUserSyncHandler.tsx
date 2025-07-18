@@ -4,24 +4,32 @@ import { auth } from "../firebaseData/firebaseConfig";
 import { useBackendUserContext } from "./BackendUserContext";
 import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
 
- export const BackendUserSyncHandler = () => {
-  const { setUser, flushUser } = useBackendUserContext();
+export const BackendUserSyncHandler = () => {
+  const { setUser, flushUser, user } = useBackendUserContext();
   const generalAPICallsService = new GeneralAPICallsService();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser && firebaseUser.emailVerified) {
-        const userData = await generalAPICallsService.getUserDataFromFirestore();
-        setUser(userData);
-      }
-      else{
+        try {
+          const userData =
+            await generalAPICallsService.getUserDataFromFirestore();
+
+          // Nur setzen, wenn sich die Daten geändert haben
+          if (!user || JSON.stringify(user) !== JSON.stringify(userData)) {
+            setUser(userData);
+          }
+        } catch (err) {
+          console.error("Fehler beim Laden der Userdaten:", err);
+        }
+      } else {
         await flushUser();
         setUser(null);
       }
     });
 
-    return () => unsubscribe(); // Cleanup bei Unmount
-  }, [setUser, flushUser  ]);
+    return () => unsubscribe();
+  }, []);
 
-  return null; // kein UI, nur Sync
+  return null;
 };

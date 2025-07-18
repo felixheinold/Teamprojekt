@@ -17,40 +17,21 @@ const MemoryRound2Result = () => {
     timeLimit = 20,
     turns = 0,
     pairs = [],
+    score = 0,
+    correctIds = [],
+    allIds = [],
     isAllChapters,
     chapterCount,
+    finished,
   } = location.state || {};
 
-  const basePoints = pairs.length;
-  const maxPoints = basePoints * 4;
-  const extraTurns = Math.max(0, turns - basePoints);
-  const score = Math.max(basePoints, maxPoints - extraTurns * 2);
-
+  // Sicherheitsabbruch bei direktem Zugriff ohne Spielrunde
   useEffect(() => {
-    const statsKey = "userStats";
-    const gameKey = "memory";
+    if (!finished) navigate("/modules");
+  }, [finished, navigate]);
 
-    const stored = localStorage.getItem(statsKey);
-    const allStats = stored ? JSON.parse(stored) : {};
-
-    const prev = allStats[gameKey] || {
-      totalGames: 0,
-      totalPoints: 0,
-      maxPoints: 0,
-      bestScore: 0,
-    };
-
-    const updated = {
-      totalGames: prev.totalGames + 1,
-      totalPoints: prev.totalPoints + score,
-      maxPoints: prev.maxPoints + maxPoints,
-      bestScore: Math.max(prev.bestScore, score),
-    };
-
-    allStats[gameKey] = updated;
-    localStorage.setItem(statsKey, JSON.stringify(allStats));
-    localStorage.setItem("lastPlayed", gameKey);
-
+  // Fortschritt in localStorage aktualisieren
+  useEffect(() => {
     const progressKey = "progress";
     const storedProgress = localStorage.getItem(progressKey);
     const allProgress = storedProgress ? JSON.parse(storedProgress) : {};
@@ -66,7 +47,7 @@ const MemoryRound2Result = () => {
     allProgress.memory[module][chapter] = combined;
 
     localStorage.setItem(progressKey, JSON.stringify(allProgress));
-  }, [score, maxPoints, pairs, module, chapter]);
+  }, [pairs, module, chapter]);
 
   return (
     <div className="memoryr2result-wrapper">

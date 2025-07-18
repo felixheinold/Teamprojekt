@@ -20,19 +20,29 @@ export class  GeneralAPICallsService {
 
 // API Call for updating user data
 
-async updateUserDataInFirestore (user: UserProfile){
-    const url = this.baseURL + "/users/update-whole-user/" + user.user_id;
-    const userBody = JSON.stringify(user);
-    const res = await fetch(url, {
-        method: "PUT",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: userBody
-    })
-    const data = await res.json();
-    return data;
+async updateUserDataInFirestore(user: UserProfile) {
+  const url = this.baseURL + "/users/update-whole-user/" + user.user_id;
+  const userBody = JSON.stringify({ user_updates: user });
+
+  const res = await fetch(url, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: userBody,
+  });
+
+  // 🔍 Prüfe explizit auf Fehlermeldung (z. B. 422 Unprocessable Content)
+  if (!res.ok) {
+    const text = await res.text(); // Nicht immer JSON!
+    console.error(`❌ Fehler beim User-Update (${res.status}):`, text);
+    throw new Error(`Backend-Fehler ${res.status}: ${text}`);
+  }
+
+  const data = await res.json();
+  return data;
 }
+
 
 
 // API Call for current values of an user object --> current state in firestore

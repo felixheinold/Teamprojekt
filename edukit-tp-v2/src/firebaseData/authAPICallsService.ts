@@ -19,6 +19,7 @@ export class AuthAPICallsService{
     name,
     picture
   };
+   console.log("📦 Sending new user to backend:", body); 
 
   try {
     const response = await fetch(url, {

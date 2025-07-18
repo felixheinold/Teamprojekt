@@ -1,12 +1,11 @@
 import { useState, useEffect, createContext, useContext } from "react";
-import { useUser } from "./UserContext";
 import { GeneralAPICallsService } from "../firebaseData/generalAPICallsService";
 import { UserProfile } from "./UserProfileModel";
 
 type BackendUserContextType = {
   user: UserProfile | null;
   setUser: (user: UserProfile | null) => void;
-  flushUser: () => Promise<void>;
+  flushUser: (dataOverride?: UserProfile) => Promise<void>;
   untrackedChanges: () => void;
   hasUntrackedChanges: boolean;
 };
@@ -36,16 +35,30 @@ export const BackendUserProvider = ({
 
   const untrackedChanges = () => setHasUntrackedChanges(true);
 
-  const flushUser = async () => {
-    if (user && hasUntrackedChanges) {
-      try {
-        await generalAPICallsService.updateUserDataInFirestore(user);
-        setHasUntrackedChanges(false);
-      } catch (err) {
-        console.error(
-          "Error while saving user in Firestore. Error message from BackendUserContext.tsx"
-        );
-      }
+  const flushUser = async (dataOverride?: UserProfile) => {
+    const dataToSave = dataOverride ?? user;
+
+    if (!dataToSave || !hasUntrackedChanges) return;
+
+    // 🔒 Sanity Check vor dem Flush
+    const quiz = dataToSave.user_game_information?.quiz;
+    if (
+      quiz &&
+      (isNaN(quiz.accuracy) ||
+        !isFinite(quiz.accuracy) ||
+        quiz.accuracy === null)
+    ) {
+      console.warn("❌ Ungültiger accuracy-Wert. Flush abgebrochen.");
+      return;
+    }
+
+    try {
+      await generalAPICallsService.updateUserDataInFirestore(dataToSave);
+      setHasUntrackedChanges(false);
+      console.log("✅ flushUser erfolgreich");
+      console.log("📦 JSON.stringify(user):", JSON.stringify(user, null, 2));
+    } catch (err) {
+      console.error("❌ Fehler beim Speichern in Firestore (flushUser).", err);
     }
   };
 
@@ -54,7 +67,6 @@ export const BackendUserProvider = ({
       const innerFlush = async () => {
         if (hasUntrackedChanges) {
           await flushUser();
-          //navigator.sendBeacon("/api/user/save", JSON.stringify(user)); // oder flushUser()
         }
       };
       innerFlush();

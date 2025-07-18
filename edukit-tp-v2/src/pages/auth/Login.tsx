@@ -1,15 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useUser } from "../../context/UserContext";
 import AuthLayout from "./AuthLayout";
 import { AuthHandlingService } from "../../firebaseData/authHandlingService";
-import { AuthAPICallsService } from "../../firebaseData/authAPICallsService";
-import { useBackendUserContext } from "../../context/BackendUserContext";
-import { GeneralAPICallsService } from "../../firebaseData/generalAPICallsService";
 import { useTranslation } from "react-i18next";
-import "./Login.css"; // NEU: CSS importieren
+import "./Login.css";
 import { AuthPopupError } from "../../firebaseData/firebaseDataModels";
-import { useEffect } from "react";
 import { auth } from "../../firebaseData/firebaseConfig";
 
 const Login = () => {
@@ -17,9 +12,6 @@ const Login = () => {
   const { t } = useTranslation();
 
   const authHandlingService = new AuthHandlingService();
-  const authAPICallsService = new AuthAPICallsService();
-  const { setUser } = useBackendUserContext();
-  const generalAPICallsService = new GeneralAPICallsService();
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -30,7 +22,7 @@ const Login = () => {
 
   useEffect(() => {
     auth.signOut().then(() => {
-      localStorage.clear(); // falls du was speicherst
+      localStorage.clear();
       sessionStorage.clear();
       setSignoutDone(true);
     });
@@ -55,17 +47,8 @@ const Login = () => {
         const firebaseUser = auth.currentUser;
 
         if (firebaseUser) {
-          // Backend-Daten abrufen
-          const userData =
-            await generalAPICallsService.getUserDataFromFirestore(
-              firebaseUser.uid
-            );
-
-          // In globalen Kontext setzen
-          setUser(userData);
-
+          // KEIN Backend-Call und KEIN setUser mehr hier
           navigate("/home");
-          console.log("USERDATA VOM BACKEND:", userData);
         } else {
           throw new Error("Firebase user is null after login");
         }
